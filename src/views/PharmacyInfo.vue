@@ -319,7 +319,7 @@ const clearSearch = () => {
 .back-button {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;  /* Desktop: bên trái */
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -337,7 +337,7 @@ const clearSearch = () => {
 
 .back-button:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: translateX(5px);
+  transform: translateX(-5px);  /* Desktop: hover sang trái */
 }
 
 /* Hamburger Menu Button (Hidden on desktop) */
@@ -889,8 +889,13 @@ const clearSearch = () => {
   .back-button {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0;  /* Mobile: chuyển sang bên phải */
+    left: auto;
     padding: 0.5rem 1rem;
+  }
+
+  .back-button:hover {
+    transform: translateX(5px);  /* Mobile: hover sang phải */
   }
 
   .back-button span {

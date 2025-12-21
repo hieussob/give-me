@@ -1,6 +1,7 @@
 // Danh mục dược liệu theo bảng chữ cái
 export const alphabetCategories = [
   { id: 'all', name: 'Tất cả', letter: 'ALL', count: 0 },
+  { id: 'A', name: 'Chữ A', letter: 'A', count: 0 },
   { id: 'B', name: 'Chữ B', letter: 'B', count: 0 },
   { id: 'C', name: 'Chữ C', letter: 'C', count: 0 },
   { id: 'D', name: 'Chữ Đ', letter: 'Đ', count: 0 },
@@ -317,6 +318,25 @@ export const medicines = [
     contraindications: ["Tỳ vị hư hàn, thấp trọc không dùng", "Cảm mạo phong hàn không dùng"],
     origin: "Chiết Giang, Tứ Xuyên (Trung Quốc)",
     description: "Mạch Môn Đông dưỡng âm nhuận phế, chữa ho khan khô họng hiệu quả."
+  },
+  {
+    id: 16,
+    name: "Ác Thật",
+    firstLetter: "A",
+    scientificName: "Actaea dahurica (Turcz.) Franch.",
+    family: "Họ Mao lương (Ranunculaceae)",
+    categoryId: 'ranunculaceae',
+    image: "https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?w=800",
+    usedParts: "Quả chín khô",
+    properties: "Vị đắng, cay, tính ấm, có độc",
+    meridians: "Quy kinh tâm, can",
+    mainIngredients: ["Alkaloid", "Saponin", "Flavonoid", "Diterpenoid"],
+    uses: ["Hoạt huyết chỉ thống", "Tiêu thũng tán kết", "Giải độc tiêu thũng"],
+    indications: ["Nguyệt kinh bất điều", "Nhũ ung đau thống", "Ung thũng sang độc", "Ngã thương ứ huyết"],
+    dosage: "3-6g, sắc uống (cần pháo chế)",
+    contraindications: ["Phụ nữ có thai tuyệt đối không dùng", "Hư chứng không dùng", "Không dùng quá liều"],
+    origin: "Trung Quốc, Mông Cổ, Viễn Đông Nga",
+    description: "Ác Thật có tác dụng hoạt huyết mạnh, thường dùng điều trị phụ khoa và ung thũng, cần thận trọng khi sử dụng do có độc."
   }
 ]
 

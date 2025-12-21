@@ -105,6 +105,9 @@ function startMeditation() {
   displayThought.value = thought.value
   thoughtFading.value = false
 
+  // Bật nhạc khi bắt đầu meditation
+  window.dispatchEvent(new CustomEvent('play-music'))
+
   if (fadeOut.value) {
     setTimeout(() => thoughtFading.value = true, 2000)
     setTimeout(() => {
