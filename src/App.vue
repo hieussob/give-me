@@ -1,8 +1,12 @@
 <template>
   <router-view />
+  <AudioPlayer />
+  <LanguageSwitcher />
 </template>
 
 <script setup>
+import AudioPlayer from './components/AudioPlayer.vue'
+import LanguageSwitcher from './components/LanguageSwitcher.vue'
 </script>
 
 <style>

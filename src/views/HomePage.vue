@@ -5,38 +5,38 @@
     <div class="home-container">
       <div class="logo-section">
         <div class="logo-glow"></div>
-        <h1 class="main-title">Welcome</h1>
-        <p class="subtitle">Choose your journey</p>
+        <h1 class="main-title">{{ t('welcomeTitle') }}</h1>
+        <p class="subtitle">{{ t('welcomeSubtitle') }}</p>
       </div>
 
       <div class="options-grid">
-        <!-- Option 1: Meditation -->
-        <router-link to="/meditation" class="option-card meditation-card">
-          <div class="card-icon">🧘‍♂️</div>
-          <h2 class="card-title">Pixel Thoughts</h2>
+        <!-- Option 1: Pharmacy Info -->
+        <router-link to="/pharmacy" class="option-card pharmacy-card">
+          <div class="card-icon">🌿</div>
+          <h2 class="card-title">{{ t('pharmacyTitle') }}</h2>
           <p class="card-description">
-            60 giây thiền định để giải thoát những suy nghĩ của bạn
+            {{ t('pharmacyDesc') }}
           </p>
           <div class="card-footer">
-            <span class="card-link">Bắt đầu thư giãn →</span>
+            <span class="card-link">{{ t('pharmacyBtn') }} →</span>
           </div>
         </router-link>
 
-        <!-- Option 2: Pharmacy Info -->
-        <router-link to="/pharmacy" class="option-card pharmacy-card">
-          <div class="card-icon">🌿</div>
-          <h2 class="card-title">Thông Tin Dược Liệu</h2>
+        <!-- Option 2: Message Form (Coming Soon) -->
+        <div class="option-card meditation-card disabled">
+          <div class="card-icon">💌</div>
+          <h2 class="card-title">{{ t('meditationTitle') }}</h2>
           <p class="card-description">
-            Tra cứu thông tin chi tiết về các loại dược liệu thiên nhiên
+            {{ t('meditationDesc') }}
           </p>
           <div class="card-footer">
-            <span class="card-link">Khám phá ngay →</span>
+            <span class="card-link">{{ t('meditationBtn') }}...</span>
           </div>
-        </router-link>
+        </div>
       </div>
 
       <footer class="home-footer">
-        <p>Made with ♥ by Your Name</p>
+        <p>{{ t('footer') }}</p>
       </footer>
     </div>
   </div>
@@ -44,6 +44,9 @@
 
 <script setup>
 import StarField from '../components/StarField.vue'
+import { useI18n } from '../i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

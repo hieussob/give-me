@@ -1,205 +1,338 @@
+// Danh mục dược liệu theo bảng chữ cái
+export const alphabetCategories = [
+  { id: 'all', name: 'Tất cả', letter: 'ALL', count: 0 },
+  { id: 'B', name: 'Chữ B', letter: 'B', count: 0 },
+  { id: 'C', name: 'Chữ C', letter: 'C', count: 0 },
+  { id: 'D', name: 'Chữ Đ', letter: 'Đ', count: 0 },
+  { id: 'G', name: 'Chữ G', letter: 'G', count: 0 },
+  { id: 'H', name: 'Chữ H', letter: 'H', count: 0 },
+  { id: 'M', name: 'Chữ M', letter: 'M', count: 0 },
+  { id: 'N', name: 'Chữ N', letter: 'N', count: 0 },
+  { id: 'P', name: 'Chữ P', letter: 'P', count: 0 },
+  { id: 'T', name: 'Chữ T', letter: 'T', count: 0 },
+  { id: 'X', name: 'Chữ X', letter: 'X', count: 0 }
+]
+
+// Danh mục dược liệu theo họ thực vật
+export const familyCategories = [
+  { id: 'all', name: 'Tất cả dược liệu', icon: '🌿', count: 0 },
+  { id: 'ranunculaceae', name: 'Họ Mao lương', icon: '🌼', count: 0 },
+  { id: 'araliaceae', name: 'Họ Ngũ gia bì', icon: '🌳', count: 0 },
+  { id: 'fabaceae', name: 'Họ Đậu', icon: '🫘', count: 0 },
+  { id: 'apiaceae', name: 'Họ Hoa tán', icon: '🪴', count: 0 },
+  { id: 'asteraceae', name: 'Họ Cúc', icon: '🌻', count: 0 },
+  { id: 'polyporaceae', name: 'Họ Nấm đa công', icon: '🍄', count: 0 },
+  { id: 'scrophulariaceae', name: 'Họ Huyền sâm', icon: '🌾', count: 0 },
+  { id: 'zingiberaceae', name: 'Họ Gừng', icon: '🫚', count: 0 },
+  { id: 'lamiaceae', name: 'Họ Bạc hà', icon: '🌿', count: 0 },
+  { id: 'liliaceae', name: 'Họ Loa kèn', icon: '🌷', count: 0 }
+]
+
+// Backward compatibility
+export const categories = alphabetCategories
+
+// Dữ liệu dược liệu chi tiết (15 dược liệu)
 export const medicines = [
   {
     id: 1,
     name: "Hoàng Liên",
-    scientificName: "Coptis chinensis Franch",
-    family: "Mao lương (Ranunculaceae)",
-    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400",
-    usedParts: "Rễ và thân rễ",
+    firstLetter: "H",
+    scientificName: "Coptis chinensis Franch.",
+    family: "Họ Mao lương (Ranunculaceae)",
+    categoryId: 'ranunculaceae',
+    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800",
+    usedParts: "Rễ và thân rễ khô",
     properties: "Vị đắng, tính hàn",
-    mainIngredients: ["Berberin", "Palmatine", "Coptisin"],
-    uses: [
-      "Thanh nhiệt giải độc",
-      "Táo tả chỉ lỵ",
-      "Trừ phiền chỉ khát",
-      "Tả hỏa giải độc"
-    ],
-    indications: [
-      "Nhiệt độc ỷ thống",
-      "Cao nhiệt phiền táo",
-      "Thấp nhiệt bức trung",
-      "Khẩu thiệt sinh sang"
-    ],
+    meridians: "Quy kinh tâm, tỳ, vị, can, đảm, đại tràng",
+    mainIngredients: ["Berberin (5-8%)", "Palmatine", "Coptisin", "Worenine"],
+    uses: ["Thanh nhiệt táo thấp", "Tả hỏa giải độc", "Trừ phiền chỉ khát"],
+    indications: ["Cao nhiệt phiền táo", "Thấp nhiệt tả lỵ", "Khẩu thiệt sinh sang"],
     dosage: "3-10g, sắc uống",
-    contraindications: "Chống chỉ định cho người tỳ vị hư hàn, thực tích ẩm hàn.",
-    description: "Hoàng Liên là một trong những vị dược liệu quý giá trong Đông y, có tác dụng thanh nhiệt giải độc rất tốt."
+    contraindications: ["Tỳ vị hư hàn không dùng", "Không dùng cho phụ nữ có thai"],
+    origin: "Trung Quốc, trồng ở vùng núi cao Việt Nam",
+    description: "Hoàng Liên là vị dược quý, thanh nhiệt giải độc rất mạnh, điều trị nhiễm khuẩn hiệu quả."
   },
   {
     id: 2,
-    name: "Nhân Sâm",
-    scientificName: "Panax ginseng C.A.Mey",
-    family: "Ngũ gia bì (Araliaceae)",
-    image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400",
-    usedParts: "Rễ",
-    properties: "Vị ngọt, đắng, tính bình",
-    mainIngredients: ["Ginsenoside", "Polysaccharide", "Peptide"],
-    uses: [
-      "Đại bổ nguyên khí",
-      "Phục mạch cố thoát",
-      "Bổ tỳ ích phế",
-      "Sinh tân chỉ khát"
-    ],
-    indications: [
-      "Thể hư dục thoát",
-      "Chi lãnh mạch vi",
-      "Tỳ hư thực thiểu",
-      "Phế hư huyền xuyễn"
-    ],
-    dosage: "3-9g, sắc uống hoặc ngậm",
-    contraindications: "Kiêng dùng cho người thực chứng, hỏa vượng.",
-    description: "Nhân sâm là vị thuốc quý được mệnh danh là 'vua của các loại dược liệu bổ', có tác dụng bổ khí rất mạnh."
+    name: "Bạch Thược",
+    firstLetter: "B",
+    scientificName: "Paeonia lactiflora Pall.",
+    family: "Họ Mao lương (Ranunculaceae)",
+    categoryId: 'ranunculaceae',
+    image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800",
+    usedParts: "Rễ củ khô",
+    properties: "Vị đắng, chua, tính vi hàn",
+    meridians: "Quy kinh can, tỳ",
+    mainIngredients: ["Paeoniflorin", "Albiflorin", "Benzoylpaeoniflorin", "Tannin"],
+    uses: ["Dưỡng huyết liễm âm", "Nhu can chỉ thống", "Bình can ức dương"],
+    indications: ["Huyết hư phúc thống", "Nguyệt kinh bất điều", "Tự hãn đạo hãn"],
+    dosage: "6-15g, sắc uống",
+    contraindications: ["Hư hàn táo tả không nên dùng"],
+    origin: "Trung Quốc, Mông Cổ, trồng ở miền Bắc Việt Nam",
+    description: "Bạch Thược dưỡng huyết nhu can, là dược liệu quan trọng trong điều trị phụ khoa."
   },
   {
     id: 3,
-    name: "Cam Thảo",
-    scientificName: "Glycyrrhiza uralensis Fisch",
-    family: "Đậu (Fabaceae)",
-    usedParts: "Rễ và thân rễ",
-    image: "https://images.unsplash.com/photo-1603909308542-edae7c9fa4cc?w=400",
-    properties: "Vị ngọt, tính bình",
-    mainIngredients: ["Glycyrrhizin", "Flavonoid", "Polysaccharide"],
-    uses: [
-      "Bổ tỳ ích khí",
-      "Thanh nhiệt giải độc",
-      "Chỉ khái tường đàm",
-      "Hoà dung chư dược"
-    ],
-    indications: [
-      "Tỳ vị hư nhược",
-      "Khái tấu đàm đa",
-      "Viêm họng đau rát",
-      "Chống độc thực phẩm"
-    ],
-    dosage: "2-10g, sắc uống",
-    contraindications: "Không dùng kéo dài với liều cao.",
-    description: "Cam thảo có mặt trong hầu hết các bài thuốc Đông y, có tác dụng hoà hoà dược tính và giảm độc."
+    name: "Nhân Sâm",
+    firstLetter: "N",
+    scientificName: "Panax ginseng C.A.Mey.",
+    family: "Họ Ngũ gia bì (Araliaceae)",
+    categoryId: 'araliaceae',
+    image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800",
+    usedParts: "Rễ khô",
+    properties: "Vị ngọt, đắng, tính ấm",
+    meridians: "Quy kinh tỳ, phế, tâm",
+    mainIngredients: ["Ginsenoside Rb1, Rg1", "Polysaccharide", "Peptide", "Vitamin B"],
+    uses: ["Đại bổ nguyên khí", "Phục mạch cố thoát", "Bổ tỳ ích phế", "An thần ích trí"],
+    indications: ["Thể hư dục thoát", "Tỳ hư thực thiểu", "Kinh tễ thất miên"],
+    dosage: "3-9g, sắc uống hoặc ngậm",
+    contraindications: ["Thực chứng, hỏa vượng không dùng", "Không dùng chung với Li lô"],
+    origin: "Hàn Quốc, Trung Quốc, Nga",
+    description: "Nhân Sâm - vua của dược liệu bổ, tăng cường thể lực và miễn dịch mạnh mẽ."
   },
   {
     id: 4,
-    name: "Đương Quy",
-    scientificName: "Angelica sinensis (Oliv.) Diels",
-    family: "Hoa tán (Apiaceae)",
-    image: "https://images.unsplash.com/photo-1574890928928-23d6e5e6e078?w=400",
-    usedParts: "Rễ",
-    properties: "Vị ngọt, cay, tính ấm",
-    mainIngredients: ["Ferulic acid", "Ligustilide", "Polysaccharide"],
-    uses: [
-      "Bổ huyết hoạt huyết",
-      "Điều kinh chỉ thống",
-      "Nhuận tràng thông tiện"
-    ],
-    indications: [
-      "Huyết hư ủy hoàng",
-      "Nguyệt kinh bất điều",
-      "Kinh bế thống kinh",
-      "Trường táo biến bí"
-    ],
-    dosage: "6-12g, sắc uống",
-    contraindications: "Chống chỉ định với người ẩm nhiệt trung mãn, đại tiện đường tả.",
-    description: "Đương Quy là vị thuốc bổ huyết hàng đầu, được gọi là 'thánh dược phụ khoa'."
+    name: "Tam Thất",
+    firstLetter: "T",
+    scientificName: "Panax notoginseng (Burk.) F.H.Chen",
+    family: "Họ Ngũ gia bì (Araliaceae)",
+    categoryId: 'araliaceae',
+    image: "https://images.unsplash.com/photo-1606854207717-a96c6e41bfc2?w=800",
+    usedParts: "Rễ củ khô",
+    properties: "Vị ngọt, đắng, tính ấm",
+    meridians: "Quy kinh can, vị",
+    mainIngredients: ["Notoginsenoside R1", "Ginsenoside Rb1, Rg1", "Saponin (7-12%)"],
+    uses: ["Tán ứ chỉ huyết", "Tiêu thũng định thống", "Hoạt huyết bổ hư"],
+    indications: ["Chấn thương xuất huyết", "Ứ huyết thũng thống", "Thổ huyết nữu huyết"],
+    dosage: "3-9g, nghiền bột uống 1-3g",
+    contraindications: ["Thai phụ kiêng dùng"],
+    origin: "Vân Nam, Quảng Tây (Trung Quốc)",
+    description: "Tam Thất cầm máu, hoạt huyết xuất sắc, dùng chữa chấn thương hiệu quả."
   },
   {
     id: 5,
-    name: "Bạch Truật",
-    scientificName: "Atractylodes macrocephala Koidz",
-    family: "Cúc (Asteraceae)",
-    image: "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400",
-    usedParts: "Thân rễ",
-    properties: "Vị ngọt, đắng, tính ấm",
-    mainIngredients: ["Atractylon", "Polysaccharide", "Vitamin A"],
-    uses: [
-      "Kiện tỳ ích khí",
-      "Táo thấp lợi thủy",
-      "Chỉ hãn an thai"
-    ],
-    indications: [
-      "Tỳ hư thực thiểu",
-      "Phúc trướng tiết tả",
-      "Thủy thũng",
-      "Thai động bất an"
-    ],
-    dosage: "6-12g, sắc uống",
-    contraindications: "Dùng thận trọng với người âm hư táo nhiệt.",
-    description: "Bạch Truật là vị thuốc bổ tỳ quan trọng, thường được dùng trong các bài thuốc điều trị tiêu hóa."
+    name: "Cam Thảo",
+    firstLetter: "C",
+    scientificName: "Glycyrrhiza uralensis Fisch.",
+    family: "Họ Đậu (Fabaceae)",
+    categoryId: 'fabaceae',
+    image: "https://images.unsplash.com/photo-1603909308542-edae7c9fa4cc?w=800",
+    usedParts: "Rễ và thân rễ khô",
+    properties: "Vị ngọt, tính bình",
+    meridians: "Quy kinh tâm, phế, tỳ, vị",
+    mainIngredients: ["Glycyrrhizin (2-25%)", "Liquiritin", "Isoliquiritin", "Polysaccharide"],
+    uses: ["Bổ tỳ ích khí", "Thanh nhiệt giải độc", "Chỉ khái tường đàm", "Hoà dung chư dược"],
+    indications: ["Tỳ vị hư nhược", "Khái tấu đàm đa", "Viêm họng loét dạ dày"],
+    dosage: "2-10g, sắc uống",
+    contraindications: ["Không dùng kéo dài liều cao", "Thận trọng với phù thũng, cao huyết áp"],
+    origin: "Mông Cổ, Tân Cương (Trung Quốc)",
+    description: "Cam Thảo hoà dược, có mặt trong hầu hết bài thuốc, giảm độc tăng hiệu quả."
   },
   {
     id: 6,
     name: "Hoàng Kỳ",
-    scientificName: "Astragalus membranaceus (Fisch.) Bge",
-    family: "Đậu (Fabaceae)",
-    image: "https://images.unsplash.com/photo-1609428505484-e112e7a3f5bc?w=400",
-    usedParts: "Rễ",
+    firstLetter: "H",
+    scientificName: "Astragalus membranaceus (Fisch.) Bge.",
+    family: "Họ Đậu (Fabaceae)",
+    categoryId: 'fabaceae',
+    image: "https://images.unsplash.com/photo-1609428505484-e112e7a3f5bc?w=800",
+    usedParts: "Rễ khô",
     properties: "Vị ngọt, tính ấm",
-    mainIngredients: ["Astragaloside", "Flavonoid", "Polysaccharide"],
-    uses: [
-      "Bổ khí thăng dương",
-      "Cố biểu chỉ hãn",
-      "Lợi thủy tiêu thũng",
-      "Thác độc sinh cơ"
-    ],
-    indications: [
-      "Khí hư phạp lực",
-      "Thực thiểu tiện đường",
-      "Trung khí hạ hãm",
-      "Cửu tiết bất liễm"
-    ],
+    meridians: "Quy kinh tỳ, phế",
+    mainIngredients: ["Astragaloside I-VIII", "Flavonoid", "Polysaccharide (8-10%)"],
+    uses: ["Bổ khí thăng dương", "Cố biểu chỉ hãn", "Lợi thủy tiêu thũng", "Thác độc sinh cơ"],
+    indications: ["Khí hư phạp lực", "Trung khí hạ hãm", "Biểu hư tự hãn", "Thủy thũng"],
     dosage: "9-30g, sắc uống",
-    contraindications: "Kiêng dùng khi có biểu thực tà thịnh, thực hỏa nội uất.",
-    description: "Hoàng Kỳ là vị thuốc bổ khí rất phổ biến, có tác dụng tăng cường miễn dịch và chống mệt mỏi."
+    contraindications: ["Biểu thực tà thịnh, thực hỏa nội uất không dùng"],
+    origin: "Nội Mông, Sơn Tây (Trung Quốc)",
+    description: "Hoàng Kỳ bổ khí mạnh, tăng miễn dịch, chống mệt mỏi cho người suy nhược."
   },
   {
     id: 7,
-    name: "Phục Linh",
-    scientificName: "Poria cocos (Schw.) Wolf",
-    family: "Nấm đa công (Polyporaceae)",
-    image: "https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=400",
-    usedParts: "Quân hạch",
-    properties: "Vị ngọt, đạm, tính bình",
-    mainIngredients: ["Pachyman", "Ergosterol", "Protein"],
-    uses: [
-      "Lợi thủy thấm thấp",
-      "Kiện tỳ yên tâm"
-    ],
-    indications: [
-      "Tiểu tiện bất lợi",
-      "Thủy thũng đàm ẩm",
-      "Tỳ hư tả lỵ",
-      "Tâm thần bất an"
-    ],
-    dosage: "10-15g, sắc uống",
-    contraindications: "Dùng thận trọng với người hư hàn trượt tinh.",
-    description: "Phục Linh là vị thuốc lợi thủy kiện tỳ, yên tâm thần rất hay được sử dụng trong Đông y."
+    name: "Đương Quy",
+    firstLetter: "Đ",
+    scientificName: "Angelica sinensis (Oliv.) Diels",
+    family: "Họ Hoa tán (Apiaceae)",
+    categoryId: 'apiaceae',
+    image: "https://images.unsplash.com/photo-1574890928928-23d6e5e6e078?w=800",
+    usedParts: "Rễ khô",
+    properties: "Vị ngọt, cay, tính ấm",
+    meridians: "Quy kinh can, tâm, tỳ",
+    mainIngredients: ["Ferulic acid", "Ligustilide", "Polysaccharide", "Vitamin B12, E"],
+    uses: ["Bổ huyết hoạt huyết", "Điều kinh chỉ thống", "Nhuận tràng thông tiện"],
+    indications: ["Huyết hư ủy hoàng", "Nguyệt kinh bất điều", "Kinh bế thống kinh"],
+    dosage: "6-12g, sắc uống hoặc ngâm rượu",
+    contraindications: ["Ẩm nhiệt trung mãn, đại tiện đường tả không dùng"],
+    origin: "Cam Túc (Trung Quốc)",
+    description: "Đương Quy - thánh dược phụ khoa, bổ huyết hoạt huyết điều kinh xuất sắc."
   },
   {
     id: 8,
+    name: "Xuyên Khung",
+    firstLetter: "X",
+    scientificName: "Ligusticum chuanxiong Hort.",
+    family: "Họ Hoa tán (Apiaceae)",
+    categoryId: 'apiaceae',
+    image: "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?w=800",
+    usedParts: "Thân rễ khô",
+    properties: "Vị cay, tính ấm",
+    meridians: "Quy kinh can, đảm, tâm bao",
+    mainIngredients: ["Tetramethylpyrazine", "Ferulic acid", "Ligustilide", "Tinh dầu"],
+    uses: ["Hoạt huyết hành khí", "Khư phong chỉ thống"],
+    indications: ["Nguyệt kinh bất điều", "Thống kinh kinh bế", "Đầu thống phong thấp"],
+    dosage: "3-10g, sắc uống",
+    contraindications: ["Âm hư hỏa vượng, nguyệt kinh quá đa không dùng"],
+    origin: "Tứ Xuyên (Trung Quốc)",
+    description: "Xuyên Khung hoạt huyết, chữa đau đầu, đau bụng kinh rất hiệu quả."
+  },
+  {
+    id: 9,
+    name: "Bạch Truật",
+    firstLetter: "B",
+    scientificName: "Atractylodes macrocephala Koidz.",
+    family: "Họ Cúc (Asteraceae)",
+    categoryId: 'asteraceae',
+    image: "https://images.unsplash.com/photo-1615485500834-bc10199bc5c4?w=800",
+    usedParts: "Thân rễ khô",
+    properties: "Vị ngọt, đắng, tính ấm",
+    meridians: "Quy kinh tỳ, vị",
+    mainIngredients: ["Atractylon", "Atractylenolide I, II, III", "Polysaccharide"],
+    uses: ["Kiện tỳ ích khí", "Táo thấp lợi thủy", "Chỉ hãn an thai"],
+    indications: ["Tỳ hư thực thiểu", "Phúc trướng tiết tả", "Thai động bất an"],
+    dosage: "6-12g, sắc uống",
+    contraindications: ["Âm hư táo nhiệt thận trọng"],
+    origin: "Chiết Giang (Trung Quốc)",
+    description: "Bạch Truật bổ tỳ, điều trị tiêu hóa kém, ăn không tiêu hiệu quả."
+  },
+  {
+    id: 10,
+    name: "Phục Linh",
+    firstLetter: "P",
+    scientificName: "Poria cocos (Schw.) Wolf",
+    family: "Họ Nấm đa công (Polyporaceae)",
+    categoryId: 'polyporaceae',
+    image: "https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=800",
+    usedParts: "Quân hạch (khối nấm)",
+    properties: "Vị ngọt, đạm, tính bình",
+    meridians: "Quy kinh tâm, phế, tỳ, thận",
+    mainIngredients: ["Pachyman", "Ergosterol", "Protein", "Lecithin"],
+    uses: ["Lợi thủy thấm thấp", "Kiện tỳ yên tâm"],
+    indications: ["Tiểu tiện bất lợi", "Thủy thũng đàm ẩm", "Tâm thần bất an"],
+    dosage: "10-15g, sắc uống",
+    contraindications: ["Hư hàn trượng tinh thận trọng"],
+    origin: "Vân Nam, An Huy (Trung Quốc)",
+    description: "Phục Linh lợi thủy, yên tâm thần, kiện tỳ, dùng rất phổ biến."
+  },
+  {
+    id: 11,
     name: "Địa Hoàng",
-    scientificName: "Rehmannia glutinosa Libosch",
-    family: "Huyền sâm (Scrophulariaceae)",
-    image: "https://images.unsplash.com/photo-1615485500834-bc10199bc5c4?w=400",
-    usedParts: "Củ",
-    properties: "Vị ngọt, tính hàn (Sinh địa hoàng) / tính vi ấm (Thục địa hoàng)",
-    mainIngredients: ["Catalpol", "Rehmannioside", "Saccharide"],
-    uses: [
-      "Thanh nhiệt lương huyết (Sinh)",
-      "Dưỡng âm sinh tân (Sinh)",
-      "Bổ huyết nhuận táo (Thục)"
-    ],
-    indications: [
-      "Nhiệt nhập doanh huyết",
-      "Ôn độc phát ban",
-      "Huyết nhiệt vọng hành",
-      "Gan thận âm hư"
-    ],
+    firstLetter: "Đ",
+    scientificName: "Rehmannia glutinosa Libosch.",
+    family: "Họ Huyền sâm (Scrophulariaceae)",
+    categoryId: 'scrophulariaceae',
+    image: "https://images.unsplash.com/photo-1598966739654-5e9daa6865a8?w=800",
+    usedParts: "Củ tươi hoặc khô",
+    properties: "Vị ngọt, đắng, tính hàn (Sinh) / Vi ấm (Thục)",
+    meridians: "Quy kinh tâm, can, thận",
+    mainIngredients: ["Catalpol", "Rehmannioside A-D", "Saccharide", "Amino acid"],
+    uses: ["Thanh nhiệt lương huyết (Sinh)", "Dưỡng âm sinh tân (Sinh)", "Bổ huyết (Thục)"],
+    indications: ["Nhiệt nhập doanh huyết", "Huyết nhiệt vọng hành", "Gan thận âm hư"],
     dosage: "9-15g (Sinh), 9-30g (Thục), sắc uống",
-    contraindications: "Tỳ hư thấp trệ, khí trệ đàm đa không nên dùng.",
-    description: "Địa Hoàng có hai dạng: Sinh địa hoàng thanh nhiệt, Thục địa hoàng bổ huyết, đều là dược liệu quan trọng."
+    contraindications: ["Tỳ hư thấp trệ không dùng Sinh", "Khí trệ đàm đa không dùng Thục"],
+    origin: "Hà Nam (Trung Quốc)",
+    description: "Địa Hoàng: Sinh thanh nhiệt, Thục bổ huyết, đều là dược quan trọng."
+  },
+  {
+    id: 12,
+    name: "Gừng Tươi",
+    firstLetter: "G",
+    scientificName: "Zingiber officinale Rosc.",
+    family: "Họ Gừng (Zingiberaceae)",
+    categoryId: 'zingiberaceae',
+    image: "https://images.unsplash.com/photo-1599639956034-c5c4c2d6aa8c?w=800",
+    usedParts: "Thân rễ tươi",
+    properties: "Vị cay, tính ấm",
+    meridians: "Quy kinh phế, tỳ, vị",
+    mainIngredients: ["Gingerol", "Shogaol", "Zingiberene", "Tinh dầu (1-3%)"],
+    uses: ["Giải biểu tán hàn", "Ôn trung chỉ ẩu", "Ôn phế chỉ khái", "Giải độc"],
+    indications: ["Phong hàn cảm mạo", "Vị hàn ẩu thổ", "Hàn đàm khái tấu"],
+    dosage: "3-10g (khô) hoặc 10-30g (tươi), sắc uống",
+    contraindications: ["Âm hư nội nhiệt không dùng"],
+    origin: "Việt Nam, Trung Quốc, Ấn Độ",
+    description: "Gừng tươi tán hàn, trị cảm lạnh, nôn mửa rất tốt, dùng phổ biến."
+  },
+  {
+    id: 13,
+    name: "Nghệ",
+    firstLetter: "N",
+    scientificName: "Curcuma longa L.",
+    family: "Họ Gừng (Zingiberaceae)",
+    categoryId: 'zingiberaceae',
+    image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800",
+    usedParts: "Thân rễ khô",
+    properties: "Vị cay, đắng, tính ấm",
+    meridians: "Quy kinh can, tỳ",
+    mainIngredients: ["Curcumin (3-5%)", "Ar-turmerone", "Zingiberene", "Tinh dầu"],
+    uses: ["Hoạt huyết hành khí", "Thông kinh chỉ thống", "Khư ứ trừ thấp"],
+    indications: ["Nguyệt kinh bất điều", "Phong thấp tý thống", "Ung chủng sưng thống"],
+    dosage: "3-10g, sắc uống",
+    contraindications: ["Thai phụ kiêng dùng", "Huyết hư vô ứ không dùng"],
+    origin: "Việt Nam, Ấn Độ",
+    description: "Nghệ hoạt huyết chống viêm mạnh, chữa loét dạ dày rất hiệu quả."
+  },
+  {
+    id: 14,
+    name: "Hoàng Cầm",
+    firstLetter: "H",
+    scientificName: "Scutellaria baicalensis Georgi",
+    family: "Họ Bạc hà (Lamiaceae)",
+    categoryId: 'lamiaceae',
+    image: "https://images.unsplash.com/photo-1616671276441-2f2c277b8bf6?w=800",
+    usedParts: "Rễ khô",
+    properties: "Vị đắng, tính hàn",
+    meridians: "Quy kinh phế, đảm, tỳ, vị, đại tràng",
+    mainIngredients: ["Baicalin (8-12%)", "Baicalein", "Wogonin", "Flavonoid"],
+    uses: ["Thanh nhiệt táo thấp", "Tả hỏa giải độc", "Chỉ huyết an thai"],
+    indications: ["Thấp ôn thử nhiệt", "Hạ nhiệt tả lỵ", "Phế nhiệt khái tấu"],
+    dosage: "3-10g, sắc uống",
+    contraindications: ["Tỳ phế hư hàn không dùng"],
+    origin: "Nội Mông, Hà Bắc (Trung Quốc)",
+    description: "Hoàng Cầm thanh nhiệt, chữa viêm phổi, viêm gan, tiêu chảy hiệu quả."
+  },
+  {
+    id: 15,
+    name: "Mạch Môn Đông",
+    firstLetter: "M",
+    scientificName: "Ophiopogon japonicus (Thunb.) Ker-Gawl.",
+    family: "Họ Loa kèn (Liliaceae)",
+    categoryId: 'liliaceae',
+    image: "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=800",
+    usedParts: "Củ khô",
+    properties: "Vị ngọt, mi đắng, tính vi hàn",
+    meridians: "Quy kinh tâm, phế, vị",
+    mainIngredients: ["Ophiopogonin A-D", "Polysaccharide", "Saponin", "Amino acid"],
+    uses: ["Dưỡng âm sinh tân", "Nhuận phế thanh tâm"],
+    indications: ["Phế táo can khái", "Âm hư lao tấu", "Tân thương khẩu khát", "Thất miên"],
+    dosage: "6-12g, sắc uống",
+    contraindications: ["Tỳ vị hư hàn, thấp trọc không dùng", "Cảm mạo phong hàn không dùng"],
+    origin: "Chiết Giang, Tứ Xuyên (Trung Quốc)",
+    description: "Mạch Môn Đông dưỡng âm nhuận phế, chữa ho khan khô họng hiệu quả."
   }
 ]
 
-export const categories = [
-  { id: 'all', name: 'Tất cả', icon: '🌿' },
-  { id: 'bo-khi', name: 'Bổ khí', icon: '⚡' },
-  { id: 'bo-huyet', name: 'Bổ huyết', icon: '❤️' },
-  { id: 'thanh-nhiet', name: 'Thanh nhiệt', icon: '❄️' },
-  { id: 'kien-ty', name: 'Kiện tỳ', icon: '🛡️' }
-]
+// Tính count cho mỗi category
+alphabetCategories.forEach(cat => {
+  if (cat.id === 'all') {
+    cat.count = medicines.length
+  } else {
+    cat.count = medicines.filter(m => m.firstLetter === cat.letter).length
+  }
+})
+
+familyCategories.forEach(cat => {
+  if (cat.id === 'all') {
+    cat.count = medicines.length
+  } else {
+    cat.count = medicines.filter(m => m.categoryId === cat.id).length
+  }
+})

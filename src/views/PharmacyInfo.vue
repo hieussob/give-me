@@ -1,589 +1,837 @@
 <template>
-  <div class="pharmacy-page">
-    <!-- Header -->
-    <header class="pharmacy-header">
-      <div class="container">
-        <router-link to="/" class="back-link">
+  <div class="pharmacy-container">
+    <StarField />
+    
+    <div class="content-wrapper">
+      <!-- Header -->
+      <div class="header">
+        <!-- Hamburger Menu Button (Mobile only) -->
+        <button @click="toggleSidebar" class="hamburger-btn" :class="{ 'hidden': sidebarOpen }">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+
+        <router-link to="/" class="back-button">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M19 12H5M12 19l-7-7 7-7"/>
           </svg>
-          <span>Trang chủ</span>
+          <span>{{ t('home') }}</span>
         </router-link>
         
-        <h1 class="page-title">🌿 Thông Tin Dược Liệu</h1>
-        <p class="page-subtitle">Tra cứu thông tin các loại dược liệu thiên nhiên</p>
+        <h1 class="title">{{ t('title') }}</h1>
+        <p class="subtitle">{{ t('subtitle') }}</p>
       </div>
-    </header>
 
-    <!-- Search & Filter -->
-    <section class="search-section">
-      <div class="container">
-        <div class="search-box">
-          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"/>
-            <path d="m21 21-4.35-4.35"/>
-          </svg>
-          <input 
-            type="text" 
-            v-model="searchQuery" 
-            placeholder="Tìm kiếm dược liệu..."
-            class="search-input"
-          />
+      <!-- Overlay (Mobile only) -->
+      <div v-if="sidebarOpen" @click="closeSidebar" class="sidebar-overlay"></div>
+
+      <!-- Main Content: 2 columns -->
+      <div class="pharmacy-content">
+        <!-- Left Sidebar: Categories -->
+        <div class="sidebar" :class="{ 'open': sidebarOpen }">
+          <h2 class="sidebar-title">{{ t('categories') }}</h2>
+          
+          <!-- Search Box -->
+          <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input 
+              v-model="searchQuery" 
+              type="text" 
+              :placeholder="t('search')" 
+              class="search-input"
+            />
+            <button v-if="searchQuery" @click="clearSearch" class="clear-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mode Toggle -->
+          <div class="mode-toggle">
+            <button 
+              @click="sortMode = 'alphabet'" 
+              :class="['mode-btn', { active: sortMode === 'alphabet' }]"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6h16M4 12h16M4 18h7"/>
+              </svg>
+              <span>{{ t('sortByAlphabet') }}</span>
+            </button>
+            <button 
+              @click="sortMode = 'family'" 
+              :class="['mode-btn', { active: sortMode === 'family' }]"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <span>{{ t('sortByFamily') }}</span>
+            </button>
+          </div>
+
+          <div class="category-list">
+            <button 
+              v-for="category in currentCategories" 
+              :key="category.id"
+              @click="selectCategory(category.id)"
+              :class="['category-item', { active: selectedCategory === category.id }]"
+            >
+              <!-- Alphabet mode: show letter -->
+              <span v-if="sortMode === 'alphabet'" class="category-letter">{{ category.letter }}</span>
+              
+              <!-- Family mode: show icon -->
+              <span v-else class="category-icon">{{ category.icon }}</span>
+              
+              <div class="category-info">
+                <span class="category-name">{{ category.name }}</span>
+                <span class="category-count">{{ category.count }}</span>
+              </div>
+            </button>
+          </div>
         </div>
 
-        <div class="categories">
-          <button 
-            v-for="cat in categories" 
-            :key="cat.id"
-            @click="selectedCategory = cat.id"
-            :class="['category-btn', { active: selectedCategory === cat.id }]"
-          >
-            <span class="cat-icon">{{ cat.icon }}</span>
-            <span>{{ cat.name }}</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Medicine Grid -->
-    <section class="medicines-section">
-      <div class="container">
-        <div class="medicines-grid">
-          <div 
-            v-for="medicine in filteredMedicines" 
-            :key="medicine.id"
-            class="medicine-card"
-            @click="openDetail(medicine)"
-          >
-            <div class="card-image">
-              <img :src="medicine.image" :alt="medicine.name" />
-              <div class="card-overlay"></div>
+        <!-- Right Panel: Medicine List and Detail -->
+        <div class="main-panel">
+          <!-- Medicine Grid -->
+          <div v-if="!selectedMedicine" class="medicine-grid">
+            <div 
+              v-for="medicine in filteredMedicines" 
+              :key="medicine.id"
+              @click="selectMedicine(medicine)"
+              class="medicine-card"
+            >
+              <div class="medicine-image" :style="{ backgroundImage: `url(${medicine.image})` }"></div>
+              <div class="medicine-info">
+                <h3 class="medicine-name">{{ medicine.name }}</h3>
+                <p class="medicine-scientific">{{ medicine.scientificName }}</p>
+                <p class="medicine-family">{{ medicine.family }}</p>
+                <button class="view-detail-btn">Xem chi tiết →</button>
+              </div>
             </div>
-            <div class="card-content">
-              <h3 class="medicine-name">{{ medicine.name }}</h3>
-              <p class="scientific-name">{{ medicine.scientificName }}</p>
-              <p class="family">{{ medicine.family }}</p>
-              <div class="properties">
-                <span class="property-tag">{{ medicine.properties }}</span>
+          </div>
+
+          <!-- Medicine Detail -->
+          <div v-else class="medicine-detail">
+            <button @click="selectedMedicine = null" class="back-btn">← Quay lại</button>
+            
+            <div class="detail-content">
+              <div class="detail-header">
+                <div class="detail-image" :style="{ backgroundImage: `url(${selectedMedicine.image})` }"></div>
+                <div class="detail-title-section">
+                  <h2 class="detail-name">{{ selectedMedicine.name }}</h2>
+                  <p class="detail-scientific">{{ selectedMedicine.scientificName }}</p>
+                  <p class="detail-family">{{ selectedMedicine.family }}</p>
+                </div>
+              </div>
+
+              <div class="detail-sections">
+                <div class="detail-row">
+                  <div class="detail-label">Bộ phận dùng:</div>
+                  <div class="detail-value">{{ selectedMedicine.usedParts }}</div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Tính vị:</div>
+                  <div class="detail-value">{{ selectedMedicine.properties }}</div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Quy kinh:</div>
+                  <div class="detail-value">{{ selectedMedicine.meridians }}</div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Thành phần chính:</div>
+                  <div class="detail-value">
+                    <ul>
+                      <li v-for="(ingredient, index) in selectedMedicine.mainIngredients" :key="index">
+                        {{ ingredient }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Công dụng:</div>
+                  <div class="detail-value">
+                    <ul>
+                      <li v-for="(use, index) in selectedMedicine.uses" :key="index">
+                        {{ use }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Chỉ định:</div>
+                  <div class="detail-value">
+                    <ul>
+                      <li v-for="(indication, index) in selectedMedicine.indications" :key="index">
+                        {{ indication }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Liều dùng:</div>
+                  <div class="detail-value">{{ selectedMedicine.dosage }}</div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Chống chỉ định:</div>
+                  <div class="detail-value">
+                    <ul>
+                      <li v-for="(contra, index) in selectedMedicine.contraindications" :key="index">
+                        {{ contra }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-label">Nguồn gốc:</div>
+                  <div class="detail-value">{{ selectedMedicine.origin }}</div>
+                </div>
+
+                <div class="detail-row description">
+                  <div class="detail-label">Mô tả:</div>
+                  <div class="detail-value">{{ selectedMedicine.description }}</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div v-if="filteredMedicines.length === 0" class="no-results">
-          <p>🔍 Không tìm thấy dược liệu phù hợp</p>
-        </div>
       </div>
-    </section>
-
-    <!-- Detail Modal -->
-    <transition name="modal">
-      <div v-if="selectedMedicine" class="modal-overlay" @click="closeDetail">
-        <div class="modal-content" @click.stop>
-          <button class="close-btn" @click="closeDetail">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 6L6 18M6 6l12 12"/>
-            </svg>
-          </button>
-
-          <div class="modal-header">
-            <img :src="selectedMedicine.image" :alt="selectedMedicine.name" class="detail-image" />
-            <div class="detail-info">
-              <h2>{{ selectedMedicine.name }}</h2>
-              <p class="scientific">{{ selectedMedicine.scientificName }}</p>
-              <p class="family-tag">{{ selectedMedicine.family }}</p>
-            </div>
-          </div>
-
-          <div class="modal-body">
-            <div class="info-section">
-              <h3>📝 Mô tả</h3>
-              <p>{{ selectedMedicine.description }}</p>
-            </div>
-
-            <div class="info-section">
-              <h3>🌱 Bộ phận dùng</h3>
-              <p>{{ selectedMedicine.usedParts }}</p>
-            </div>
-
-            <div class="info-section">
-              <h3>⚖️ Tính vị</h3>
-              <p>{{ selectedMedicine.properties }}</p>
-            </div>
-
-            <div class="info-section">
-              <h3>🧪 Thành phần chính</h3>
-              <ul class="ingredient-list">
-                <li v-for="(ingredient, idx) in selectedMedicine.mainIngredients" :key="idx">
-                  {{ ingredient }}
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h3>💊 Công dụng</h3>
-              <ul class="uses-list">
-                <li v-for="(use, idx) in selectedMedicine.uses" :key="idx">
-                  {{ use }}
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h3>🎯 Chỉ định</h3>
-              <ul class="indication-list">
-                <li v-for="(indication, idx) in selectedMedicine.indications" :key="idx">
-                  {{ indication }}
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-section">
-              <h3>💉 Liều lượng</h3>
-              <p class="dosage">{{ selectedMedicine.dosage }}</p>
-            </div>
-
-            <div class="info-section warning">
-              <h3>⚠️ Chống chỉ định</h3>
-              <p>{{ selectedMedicine.contraindications }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </transition>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { medicines, categories } from '../data/medicineData'
+import { ref, computed, watch } from 'vue'
+import StarField from '../components/StarField.vue'
+import { alphabetCategories, familyCategories, medicines } from '../data/medicineData.js'
+import { useI18n } from '../i18n'
 
-const searchQuery = ref('')
+const { t } = useI18n()
+
 const selectedCategory = ref('all')
 const selectedMedicine = ref(null)
+const sidebarOpen = ref(false)
+const searchQuery = ref('')
+const sortMode = ref('alphabet') // 'alphabet' or 'family'
+
+// Add firstLetter property to medicines if not exist
+medicines.forEach(medicine => {
+  if (!medicine.firstLetter) {
+    medicine.firstLetter = medicine.name.charAt(0).toUpperCase()
+  }
+})
+
+// Reset selected category when switching mode
+watch(sortMode, () => {
+  selectedCategory.value = 'all'
+  selectedMedicine.value = null
+})
+
+const currentCategories = computed(() => {
+  return sortMode.value === 'alphabet' ? alphabetCategories : familyCategories
+})
 
 const filteredMedicines = computed(() => {
   let result = medicines
 
-  if (searchQuery.value) {
+  // Filter by search query
+  if (searchQuery.value.trim()) {
     const query = searchQuery.value.toLowerCase()
     result = result.filter(m => 
       m.name.toLowerCase().includes(query) ||
       m.scientificName.toLowerCase().includes(query) ||
-      m.description.toLowerCase().includes(query)
+      m.family.toLowerCase().includes(query)
     )
+  }
+
+  // Filter by selected category
+  if (selectedCategory.value !== 'all') {
+    if (sortMode.value === 'alphabet') {
+      const selectedLetter = alphabetCategories.find(c => c.id === selectedCategory.value)?.letter
+      result = result.filter(m => m.firstLetter === selectedLetter)
+    } else {
+      result = result.filter(m => m.categoryId === selectedCategory.value)
+    }
   }
 
   return result
 })
 
-function openDetail(medicine) {
-  selectedMedicine.value = medicine
-  document.body.style.overflow = 'hidden'
+const selectCategory = (categoryId) => {
+  selectedCategory.value = categoryId
+  selectedMedicine.value = null // Reset selection when changing category
+  closeSidebar() // Close sidebar after selecting category on mobile
 }
 
-function closeDetail() {
-  selectedMedicine.value = null
-  document.body.style.overflow = 'auto'
+const selectMedicine = (medicine) => {
+  selectedMedicine.value = medicine
+}
+
+const toggleSidebar = () => {
+  sidebarOpen.value = !sidebarOpen.value
+}
+
+const closeSidebar = () => {
+  sidebarOpen.value = false
+}
+
+const clearSearch = () => {
+  searchQuery.value = ''
 }
 </script>
 
 <style scoped>
-.pharmacy-page {
+.pharmacy-container {
+  width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  padding-bottom: 60px;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  position: relative;
+  overflow-x: hidden;
 }
 
-.container {
-  max-width: 1200px;
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-/* Header */
-.pharmacy-header {
-  background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
-  padding: 40px 0;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-top: 0;
 }
 
-.back-link {
+.back-button {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.8);
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
   text-decoration: none;
-  font-size: 14px;
-  margin-bottom: 20px;
-  transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.back-link:hover {
-  color: #fff;
-  transform: translateX(-4px);
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
 }
 
-.page-title {
-  font-size: 42px;
+/* Hamburger Menu Button (Hidden on desktop) */
+.hamburger-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  opacity: 1;
+}
+
+.hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Sidebar Overlay (Mobile only) */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.title {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #fff;
-  margin: 0 0 12px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
 }
 
-.page-subtitle {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
+.subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* Search Section */
-.search-section {
-  margin-bottom: 40px;
+.pharmacy-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
 }
 
+/* Sidebar Styles */
+.sidebar {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Search Box */
 .search-box {
   position: relative;
-  max-width: 600px;
-  margin: 0 auto 32px;
+  margin-bottom: 1rem;
 }
 
 .search-icon {
   position: absolute;
-  left: 16px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
 }
 
 .search-input {
   width: 100%;
-  padding: 16px 16px 16px 48px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  color: #fff;
-  font-size: 16px;
-  transition: all 0.3s;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #22c55e;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+  padding: 0.75rem 2.5rem 0.75rem 2.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .search-input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Categories */
-.categories {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+.search-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.5);
 }
 
-.category-btn {
+.clear-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Mode Toggle */
+.mode-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.35rem;
+  border-radius: 10px;
+}
+
+.mode-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
-.category-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+.mode-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.category-btn.active {
-  background: #22c55e;
-  border-color: #22c55e;
-  color: #fff;
+.mode-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
 }
 
-.cat-icon {
-  font-size: 18px;
+.mode-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  text-align: left;
+}
+
+.category-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.category-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  transform: translateX(5px);
+}
+
+.category-letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-item.active .category-letter {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.category-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.category-count {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.category-item.active .category-count {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Main Panel Styles */
+.main-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 600px;
 }
 
 /* Medicine Grid */
-.medicines-grid {
+.medicine-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .medicine-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .medicine-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(34, 197, 94, 0.2);
-  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.5);
 }
 
-.card-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-image img {
+.medicine-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.medicine-card:hover .card-image img {
-  transform: scale(1.1);
-}
-
-.card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-}
-
-.card-content {
-  padding: 20px;
+.medicine-info {
+  padding: 1.25rem;
 }
 
 .medicine-name {
-  font-size: 22px;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #4ade80;
-  margin: 0 0 8px 0;
+  color: white;
+  margin-bottom: 0.5rem;
 }
 
-.scientific-name {
-  font-size: 14px;
+.medicine-scientific {
+  font-size: 0.85rem;
   font-style: italic;
   color: rgba(255, 255, 255, 0.6);
-  margin: 0 0 8px 0;
+  margin-bottom: 0.5rem;
 }
 
-.family {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0 0 16px 0;
+.medicine-family {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
 }
 
-.property-tag {
-  display: inline-block;
-  padding: 6px 12px;
-  background: rgba(34, 197, 94, 0.2);
-  border: 1px solid rgba(34, 197, 94, 0.4);
-  border-radius: 12px;
-  font-size: 12px;
-  color: #4ade80;
-}
-
-/* No Results */
-.no-results {
-  text-align: center;
-  padding: 60px 20px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 18px;
-}
-
-/* Modal */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.modal-content {
-  background: #1e293b;
-  border: 1px solid rgba(34, 197, 94, 0.3);
-  border-radius: 20px;
-  max-width: 800px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.1);
+.view-detail-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s;
-  z-index: 10;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
-.close-btn:hover {
+.view-detail-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Medicine Detail */
+.medicine-detail {
+  color: white;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: rotate(90deg);
+  transform: translateX(-5px);
 }
 
-.modal-header {
+.detail-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-header {
   display: flex;
-  gap: 24px;
-  padding: 32px;
-  background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .detail-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 300px;
+  height: 300px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
 }
 
-.detail-info h2 {
-  font-size: 32px;
-  color: #fff;
-  margin: 0 0 12px 0;
+.detail-title-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.scientific {
-  font-size: 16px;
+.detail-name {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+}
+
+.detail-scientific {
+  font-size: 1.1rem;
   font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.detail-family {
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
-  margin: 0 0 8px 0;
 }
 
-.family-tag {
-  display: inline-block;
-  padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  font-size: 14px;
-  color: #fff;
+.detail-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.modal-body {
-  padding: 32px;
+.detail-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border-left: 3px solid rgba(102, 126, 234, 0.5);
 }
 
-.info-section {
-  margin-bottom: 28px;
+.detail-row.description {
+  grid-template-columns: 1fr;
 }
 
-.info-section h3 {
-  font-size: 20px;
-  color: #4ade80;
-  margin: 0 0 12px 0;
+.detail-label {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
 }
 
-.info-section p {
+.detail-value {
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.7;
-  margin: 0;
+  line-height: 1.6;
 }
 
-.ingredient-list,
-.uses-list,
-.indication-list {
+.detail-value ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.ingredient-list li,
-.uses-list li,
-.indication-list li {
-  color: rgba(255, 255, 255, 0.8);
-  padding: 8px 0;
-  padding-left: 24px;
+.detail-value li {
+  padding-left: 1.5rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
-.ingredient-list li::before,
-.uses-list li::before,
-.indication-list li::before {
-  content: '•';
+.detail-value li::before {
+  content: "•";
   position: absolute;
-  left: 8px;
-  color: #4ade80;
-  font-size: 20px;
+  left: 0;
+  color: #667eea;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
-.dosage {
-  background: rgba(34, 197, 94, 0.1);
-  border-left: 3px solid #22c55e;
-  padding: 12px 16px;
-  border-radius: 4px;
-  color: #4ade80 !important;
-  font-weight: 500;
-}
-
-.info-section.warning {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 12px;
-  padding: 16px;
-}
-
-.info-section.warning h3 {
-  color: #f87171;
-}
-
-.info-section.warning p {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Modal Animation */
-.modal-enter-active, .modal-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.modal-enter-from, .modal-leave-to {
-  opacity: 0;
-}
-
-.modal-enter-active .modal-content,
-.modal-leave-active .modal-content {
-  transition: transform 0.3s ease;
-}
-
-.modal-enter-from .modal-content,
-.modal-leave-to .modal-content {
-  transform: scale(0.9);
-}
-
-@media (max-width: 768px) {
-  .page-title {
-    font-size: 32px;
+/* Responsive */
+@media (max-width: 1024px) {
+  .pharmacy-content {
+    grid-template-columns: 250px 1fr;
   }
 
-  .modal-header {
+  .detail-header {
     flex-direction: column;
   }
 
@@ -591,9 +839,85 @@ function closeDetail() {
     width: 100%;
     height: 250px;
   }
+}
 
-  .medicines-grid {
+@media (max-width: 768px) {
+  /* Show hamburger button on mobile */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Show overlay when sidebar is open */
+  .sidebar-overlay {
+    display: block;
+  }
+
+  .pharmacy-content {
     grid-template-columns: 1fr;
   }
+
+  /* Sidebar mobile styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 999;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .medicine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .back-button span {
+    display: none;
+  }
+
+  .header {
+    padding-top: 60px;
+  }
+}
+
+/* Scrollbar Styles */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.7);
 }
 </style>
