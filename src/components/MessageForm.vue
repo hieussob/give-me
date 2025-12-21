@@ -49,7 +49,7 @@
 import { ref, reactive } from 'vue'
 import emailjs from '@emailjs/browser'
 
-const emit = defineEmits(['close'])
+const emit = defineEmits(['close', 'message-sent'])
 
 const loading = ref(false)
 const statusMessage = ref('')
@@ -124,6 +124,9 @@ async function handleSubmit() {
       statusMessage.value = '✅ Tin nhắn đã được gửi thành công!'
       statusType.value = 'success'
       console.log('✅ Email gửi thành công!')
+      
+      // Bật nhạc sau khi gửi thành công
+      window.dispatchEvent(new CustomEvent('play-music'))
       
       // Reset form
       setTimeout(() => {

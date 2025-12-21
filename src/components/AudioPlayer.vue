@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const audioRef = ref(null)
 const isPlaying = ref(false)
@@ -34,6 +34,20 @@ const togglePlay = () => {
   isPlaying.value = !isPlaying.value
 }
 
+// Hàm để bật nhạc từ bên ngoài
+const playMusic = () => {
+  if (audioRef.value && !isPlaying.value) {
+    audioRef.value.play().then(() => {
+      isPlaying.value = true
+    }).catch(err => {
+      console.error('Không thể phát nhạc:', err)
+    })
+  }
+}
+
+// Expose playMusic để component cha có thể gọi
+defineExpose({ playMusic })
+
 // Auto play when mounted (with user interaction required)
 onMounted(() => {
   if (audioRef.value) {
@@ -45,6 +59,14 @@ onMounted(() => {
       isPlaying.value = false
     })
   }
+  
+  // Lắng nghe sự kiện bật nhạc từ MessageForm
+  window.addEventListener('play-music', playMusic)
+})
+
+// Cleanup khi component unmount
+onBeforeUnmount(() => {
+  window.removeEventListener('play-music', playMusic)
 })
 </script>
 

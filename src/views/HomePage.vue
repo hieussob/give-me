@@ -23,7 +23,7 @@
         </router-link>
 
         <!-- Option 2: Message Form (Coming Soon) -->
-        <div class="option-card meditation-card disabled">
+        <router-link to="/meditation" class="option-card meditation-card disabled">
           <div class="card-icon">💌</div>
           <h2 class="card-title">{{ t('meditationTitle') }}</h2>
           <p class="card-description">
@@ -32,7 +32,7 @@
           <div class="card-footer">
             <span class="card-link">{{ t('meditationBtn') }}...</span>
           </div>
-        </div>
+        </router-link>
       </div>
 
       <footer class="home-footer">
