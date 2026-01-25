@@ -85,7 +85,9 @@
               <span v-if="sortMode === 'alphabet'" class="category-letter">{{ category.letter }}</span>
               
               <!-- Family mode: show icon -->
-              <span v-else class="category-icon">{{ category.icon }}</span>
+              <span v-else class="category-icon">
+                <i :class="category.icon"></i>
+              </span>
               
               <div class="category-info">
                 <span class="category-name">{{ category.name }}</span>
@@ -215,10 +217,16 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import StarField from '../components/StarField.vue'
-import { alphabetCategories, familyCategories, medicines } from '../data/medicineData.js'
+import { getMedicineData } from '../data/index.js'
 import { useI18n } from '../i18n'
 
-const { t } = useI18n()
+const { t, currentLang } = useI18n()
+
+// Get medicine data based on current language
+const medicineData = computed(() => getMedicineData(currentLang.value))
+const alphabetCategories = computed(() => medicineData.value.alphabetCategories)
+const familyCategories = computed(() => medicineData.value.familyCategories)
+const medicines = computed(() => medicineData.value.medicines)
 
 const selectedCategory = ref('all')
 const selectedMedicine = ref(null)
@@ -227,11 +235,13 @@ const searchQuery = ref('')
 const sortMode = ref('alphabet') // 'alphabet' or 'family'
 
 // Add firstLetter property to medicines if not exist
-medicines.forEach(medicine => {
-  if (!medicine.firstLetter) {
-    medicine.firstLetter = medicine.name.charAt(0).toUpperCase()
-  }
-})
+watch(medicines, (newMedicines) => {
+  newMedicines.forEach(medicine => {
+    if (!medicine.firstLetter) {
+      medicine.firstLetter = medicine.name.charAt(0).toUpperCase()
+    }
+  })
+}, { immediate: true })
 
 // Reset selected category when switching mode
 watch(sortMode, () => {
@@ -240,11 +250,11 @@ watch(sortMode, () => {
 })
 
 const currentCategories = computed(() => {
-  return sortMode.value === 'alphabet' ? alphabetCategories : familyCategories
+  return sortMode.value === 'alphabet' ? alphabetCategories.value : familyCategories.value
 })
 
 const filteredMedicines = computed(() => {
-  let result = medicines
+  let result = medicines.value
 
   // Filter by search query
   if (searchQuery.value.trim()) {
@@ -290,6 +300,13 @@ const closeSidebar = () => {
 const clearSearch = () => {
   searchQuery.value = ''
 }
+
+// Watch for language changes and reset selections
+watch(currentLang, () => {
+  selectedCategory.value = 'all'
+  selectedMedicine.value = null
+  searchQuery.value = ''
+})
 </script>
 
 <style scoped>
