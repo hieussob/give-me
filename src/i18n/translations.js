@@ -43,6 +43,12 @@ export const translations = {
     // Medicine card
     viewDetail: 'Xem chi tiết',
     backToList: 'Quay lại',
+    showing: 'Hiển thị',
+    of: 'trên',
+    medicines: 'dược liệu',
+    loadMore: 'Tải thêm',
+    remaining: 'còn lại',
+    loading: 'Đang tải',
     
     // Medicine detail
     usedParts: 'Bộ phận dùng:',
@@ -111,6 +117,12 @@ export const translations = {
     // Medicine card
     viewDetail: 'View Details',
     backToList: 'Back',
+    showing: 'Showing',
+    of: 'of',
+    medicines: 'medicines',
+    loadMore: 'Load More',
+    remaining: 'remaining',
+    loading: 'Loading',
     
     // Medicine detail
     usedParts: 'Used Parts:',

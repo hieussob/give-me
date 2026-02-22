@@ -1,7 +1,5 @@
 <template>
   <div class="pharmacy-container">
-    <StarField />
-    
     <div class="content-wrapper">
       <!-- Header -->
       <div class="header">
@@ -100,26 +98,49 @@
         <!-- Right Panel: Medicine List and Detail -->
         <div class="main-panel">
           <!-- Medicine Grid -->
-          <div v-if="!selectedMedicine" class="medicine-grid">
-            <div 
-              v-for="medicine in filteredMedicines" 
-              :key="medicine.id"
-              @click="selectMedicine(medicine)"
-              class="medicine-card"
-            >
-              <div class="medicine-image" :style="{ backgroundImage: `url(${medicine.image})` }"></div>
-              <div class="medicine-info">
-                <h3 class="medicine-name">{{ medicine.name }}</h3>
-                <p class="medicine-scientific">{{ medicine.scientificName }}</p>
-                <p class="medicine-family">{{ medicine.family }}</p>
-                <button class="view-detail-btn">Xem chi tiết →</button>
+          <div v-if="!selectedMedicine" class="medicine-list-wrapper">
+            <!-- <div class="medicine-count-info">
+              <span>{{ t('showing') }} {{ filteredMedicines.length }} {{ t('of') }} {{ allFilteredMedicines.length }} {{ t('medicines') }}</span>
+            </div> -->
+            <div class="medicine-grid">
+              <div 
+                v-for="(medicine, index) in filteredMedicines" 
+                :key="medicine.id"
+                @click="selectMedicine(medicine)"
+                class="medicine-card"
+              >
+                <div 
+                  class="medicine-image" 
+                  :class="{ 'lazy-image': index >= 10 }"
+                  :data-bg="medicine.image"
+                  :style="index < 10 ? { backgroundImage: `url(${medicine.image})` } : {}"
+                >
+                  <div v-if="index >= 10" class="image-placeholder"></div>
+                </div>
+                <div class="medicine-info">
+                  <h3 class="medicine-name">{{ medicine.name }}</h3>
+                  <p class="medicine-scientific">{{ medicine.scientificName }}</p>
+                  <p class="medicine-family">{{ medicine.family }}</p>
+                  <button class="view-detail-btn">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>{{ t('viewDetail') }}</span>
+                  </button>
+                </div>
               </div>
+            </div>
+            <div class="scroll-sentinel"></div>
+            <div v-if="hasMore" class="loading-indicator">
+              <div class="spinner"></div>
+              <span>{{ t('loading') }}...</span>
             </div>
           </div>
 
           <!-- Medicine Detail -->
           <div v-else class="medicine-detail">
-            <button @click="selectedMedicine = null" class="back-btn">← Quay lại</button>
+            <button @click="selectedMedicine = null" class="back-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>{{ t('backToList') }}</span>
+            </button>
             
             <div class="detail-content">
               <div class="detail-header">
@@ -133,22 +154,34 @@
 
               <div class="detail-sections">
                 <div class="detail-row">
-                  <div class="detail-label">Bộ phận dùng:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>{{ t('usedParts') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.usedParts }}</div>
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Tính vị:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>{{ t('properties') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.properties }}</div>
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Quy kinh:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-yin-yang"></i>
+                    <span>{{ t('meridians') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.meridians }}</div>
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Thành phần chính:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>{{ t('mainIngredients') }}</span>
+                  </div>
                   <div class="detail-value">
                     <ul>
                       <li v-for="(ingredient, index) in selectedMedicine.mainIngredients" :key="index">
@@ -159,7 +192,10 @@
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Công dụng:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>{{ t('uses') }}</span>
+                  </div>
                   <div class="detail-value">
                     <ul>
                       <li v-for="(use, index) in selectedMedicine.uses" :key="index">
@@ -170,7 +206,10 @@
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Chỉ định:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <span>{{ t('indications') }}</span>
+                  </div>
                   <div class="detail-value">
                     <ul>
                       <li v-for="(indication, index) in selectedMedicine.indications" :key="index">
@@ -181,12 +220,18 @@
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Liều dùng:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-pills"></i>
+                    <span>{{ t('dosage') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.dosage }}</div>
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Chống chỉ định:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>{{ t('contraindications') }}</span>
+                  </div>
                   <div class="detail-value">
                     <ul>
                       <li v-for="(contra, index) in selectedMedicine.contraindications" :key="index">
@@ -197,12 +242,18 @@
                 </div>
 
                 <div class="detail-row">
-                  <div class="detail-label">Nguồn gốc:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>{{ t('origin') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.origin }}</div>
                 </div>
 
                 <div class="detail-row description">
-                  <div class="detail-label">Mô tả:</div>
+                  <div class="detail-label">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>{{ t('description') }}</span>
+                  </div>
                   <div class="detail-value">{{ selectedMedicine.description }}</div>
                 </div>
               </div>
@@ -215,8 +266,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
-import StarField from '../components/StarField.vue'
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { getMedicineData } from '../data/index.js'
 import { useI18n } from '../i18n'
 
@@ -234,6 +284,13 @@ const sidebarOpen = ref(false)
 const searchQuery = ref('')
 const sortMode = ref('alphabet') // 'alphabet' or 'family'
 
+// Pagination
+const itemsPerPage = ref(20)
+const currentPage = ref(1)
+const imageObserver = ref(null)
+const scrollObserver = ref(null)
+const isLoadingMore = ref(false)
+
 // Add firstLetter property to medicines if not exist
 watch(medicines, (newMedicines) => {
   newMedicines.forEach(medicine => {
@@ -247,13 +304,19 @@ watch(medicines, (newMedicines) => {
 watch(sortMode, () => {
   selectedCategory.value = 'all'
   selectedMedicine.value = null
+  currentPage.value = 1
+})
+
+// Reset pagination on search
+watch(searchQuery, () => {
+  currentPage.value = 1
 })
 
 const currentCategories = computed(() => {
   return sortMode.value === 'alphabet' ? alphabetCategories.value : familyCategories.value
 })
 
-const filteredMedicines = computed(() => {
+const allFilteredMedicines = computed(() => {
   let result = medicines.value
 
   // Filter by search query
@@ -269,7 +332,7 @@ const filteredMedicines = computed(() => {
   // Filter by selected category
   if (selectedCategory.value !== 'all') {
     if (sortMode.value === 'alphabet') {
-      const selectedLetter = alphabetCategories.find(c => c.id === selectedCategory.value)?.letter
+      const selectedLetter = alphabetCategories.value.find(c => c.id === selectedCategory.value)?.letter
       result = result.filter(m => m.firstLetter === selectedLetter)
     } else {
       result = result.filter(m => m.categoryId === selectedCategory.value)
@@ -279,10 +342,36 @@ const filteredMedicines = computed(() => {
   return result
 })
 
+// Paginated medicines
+const filteredMedicines = computed(() => {
+  const start = 0
+  const end = currentPage.value * itemsPerPage.value
+  return allFilteredMedicines.value.slice(start, end)
+})
+
+const hasMore = computed(() => {
+  return filteredMedicines.value.length < allFilteredMedicines.value.length
+})
+
+const totalPages = computed(() => {
+  return Math.ceil(allFilteredMedicines.value.length / itemsPerPage.value)
+})
+
 const selectCategory = (categoryId) => {
   selectedCategory.value = categoryId
   selectedMedicine.value = null // Reset selection when changing category
+  currentPage.value = 1 // Reset pagination
   closeSidebar() // Close sidebar after selecting category on mobile
+}
+
+const loadMore = () => {
+  if (hasMore.value && !isLoadingMore.value) {
+    isLoadingMore.value = true
+    currentPage.value++
+    setTimeout(() => {
+      isLoadingMore.value = false
+    }, 300)
+  }
 }
 
 const selectMedicine = (medicine) => {
@@ -301,11 +390,101 @@ const clearSearch = () => {
   searchQuery.value = ''
 }
 
+// Lazy loading images
+const setupLazyLoading = () => {
+  try {
+    const images = document.querySelectorAll('.lazy-image:not(.loaded)')
+    
+    if (images.length === 0) return
+    
+    if (imageObserver.value) {
+      imageObserver.value.disconnect()
+    }
+
+    imageObserver.value = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target
+          const bgUrl = img.getAttribute('data-bg')
+          if (bgUrl) {
+            // Set background image
+            img.style.backgroundImage = `url(${bgUrl})`
+            // Mark as loaded
+            img.classList.add('loaded')
+            imageObserver.value.unobserve(img)
+            console.log('Image loaded:', bgUrl)
+          }
+        }
+      })
+    }, {
+      rootMargin: '200px' // Load images earlier
+    })
+
+    images.forEach(img => imageObserver.value.observe(img))
+  } catch (error) {
+    console.error('Lazy loading setup error:', error)
+  }
+}
+
+// Infinite scroll
+const setupInfiniteScroll = () => {
+  try {
+    const sentinel = document.querySelector('.scroll-sentinel')
+    
+    if (!sentinel) return
+    
+    if (scrollObserver.value) {
+      scrollObserver.value.disconnect()
+    }
+
+    scrollObserver.value = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && hasMore.value && !isLoadingMore.value) {
+          loadMore()
+        }
+      })
+    }, {
+      rootMargin: '200px'
+    })
+
+    scrollObserver.value.observe(sentinel)
+  } catch (error) {
+    console.error('Infinite scroll setup error:', error)
+  }
+}
+
+// Setup lazy loading after DOM updates
+let setupTimer = null
+watch(filteredMedicines, async () => {
+  if (setupTimer) clearTimeout(setupTimer)
+  setupTimer = setTimeout(async () => {
+    await nextTick()
+    setupLazyLoading()
+    setupInfiniteScroll()
+  }, 100)
+})
+
+onMounted(async () => {
+  await nextTick()
+  setupLazyLoading()
+  setupInfiniteScroll()
+})
+
+onUnmounted(() => {
+  if (imageObserver.value) {
+    imageObserver.value.disconnect()
+  }
+  if (scrollObserver.value) {
+    scrollObserver.value.disconnect()
+  }
+})
+
 // Watch for language changes and reset selections
 watch(currentLang, () => {
   selectedCategory.value = 'all'
   selectedMedicine.value = null
   searchQuery.value = ''
+  currentPage.value = 1
 })
 </script>
 
@@ -313,43 +492,83 @@ watch(currentLang, () => {
 .pharmacy-container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  background: 
+    linear-gradient(135deg, rgba(26, 47, 31, 0.95) 0%, rgba(15, 31, 21, 0.98) 100%),
+    radial-gradient(circle at 30% 20%, rgba(76, 175, 80, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(102, 187, 106, 0.12) 0%, transparent 50%),
+    linear-gradient(to bottom, #0a1810, #1a2f1f);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.pharmacy-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234caf50' fill-opacity='0.04'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  animation: subtleMove 40s ease-in-out infinite;
+}
+
+@keyframes subtleMove {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+}
+
+.pharmacy-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 15% 15%, rgba(129, 199, 132, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(76, 175, 80, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(102, 187, 106, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .content-wrapper {
   position: relative;
   z-index: 2;
-  padding: 2rem;
-  max-width: 1400px;
+  padding: 1.5rem;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   position: relative;
-  padding-top: 0;
+  padding: 2rem 0;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .back-button {
   position: absolute;
-  top: 0;
-  left: 0;  /* Desktop: bên trái */
+  top: 0.5rem;
+  left: 0.5rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 0.875rem 1.5rem;
+  background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .back-button:hover {
@@ -399,47 +618,52 @@ watch(currentLang, () => {
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 50%, #81c784 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .pharmacy-content {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 320px 1fr;
   gap: 2rem;
   align-items: start;
 }
 
 /* Sidebar Styles */
 .sidebar {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   position: sticky;
-  top: 2rem;
-  max-height: calc(100vh - 4rem);
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
   overflow-y: auto;
 }
 
 .sidebar-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: white;
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(76, 175, 80, 0.3);
+  letter-spacing: -0.01em;
 }
 
 /* Search Box */
@@ -475,7 +699,8 @@ watch(currentLang, () => {
 .search-input:focus {
   outline: none;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(102, 126, 234, 0.5);
+  border-color: rgba(76, 175, 80, 0.6);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
 }
 
 .clear-btn {
@@ -533,9 +758,9 @@ watch(currentLang, () => {
 }
 
 .mode-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
   color: white;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
 }
 
 .mode-btn svg {
@@ -552,13 +777,13 @@ watch(currentLang, () => {
 .category-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  gap: 0.875rem;
+  padding: 0.875rem 1.125rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: white;
   text-align: left;
 }
@@ -569,7 +794,7 @@ watch(currentLang, () => {
 }
 
 .category-item.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
   border-color: transparent;
   transform: translateX(5px);
 }
@@ -625,53 +850,147 @@ watch(currentLang, () => {
 
 /* Main Panel Styles */
 .main-panel {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  min-height: 700px;
+}
+
+.medicine-list-wrapper {
+  width: 100%;
+}
+
+.medicine-count-info {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(76, 175, 80, 0.3);
 }
 
 /* Medicine Grid */
 .medicine-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .medicine-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.5), rgba(102, 187, 106, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.medicine-card:hover::before {
+  opacity: 1;
 }
 
 .medicine-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 48px rgba(76, 175, 80, 0.35);
+  border-color: rgba(76, 175, 80, 0.6);
 }
 
 .medicine-image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.lazy-image:not(.loaded) {
+  background-image: none;
+}
+
+.lazy-image .image-placeholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.lazy-image.loaded .image-placeholder {
+  display: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.medicine-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(102, 187, 106, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.medicine-card:hover .medicine-image::after {
+  opacity: 1;
 }
 
 .medicine-info {
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .medicine-name {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: white;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
 }
 
 .medicine-scientific {
@@ -688,21 +1007,90 @@ watch(currentLang, () => {
 }
 
 .view-detail-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.75rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.view-detail-btn i {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .view-detail-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5);
+}
+
+.view-detail-btn:hover i {
+  transform: scale(1.2);
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-sentinel {
+  height: 1px;
+  visibility: hidden;
+}
+
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(76, 175, 80, 0.2);
+  border-top-color: rgba(76, 175, 80, 0.8);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.all-loaded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 3rem 0 2rem;
+  padding: 1rem;
+  color: rgba(76, 175, 80, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.all-loaded i {
+  font-size: 1.2rem;
+}
+
+.all-loaded i {
+  font-size: 1.2rem;
 }
 
 /* Medicine Detail */
@@ -721,11 +1109,22 @@ watch(currentLang, () => {
   font-weight: 500;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-btn i {
+  transition: transform 0.3s ease;
 }
 
 .back-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateX(-5px);
+}
+
+.back-btn:hover i {
+  transform: translateX(-3px);
 }
 
 .detail-content {
@@ -771,7 +1170,7 @@ watch(currentLang, () => {
 .detail-name {
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 50%, #81c784 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -800,10 +1199,17 @@ watch(currentLang, () => {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 1.25rem;
   background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-  border-left: 3px solid rgba(102, 126, 234, 0.5);
+  border-radius: 10px;
+  border-left: 3px solid rgba(76, 175, 80, 0.5);
+  transition: all 0.3s ease;
+}
+
+.detail-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: rgba(76, 175, 80, 0.8);
+  transform: translateX(5px);
 }
 
 .detail-row.description {
@@ -814,6 +1220,16 @@ watch(currentLang, () => {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-label i {
+  font-size: 1.2rem;
+  color: #4caf50;
+  width: 24px;
+  text-align: center;
 }
 
 .detail-value {
@@ -837,7 +1253,7 @@ watch(currentLang, () => {
   content: "•";
   position: absolute;
   left: 0;
-  color: #667eea;
+  color: #4caf50;
   font-size: 1.5rem;
   line-height: 1;
 }
@@ -845,7 +1261,25 @@ watch(currentLang, () => {
 /* Responsive */
 @media (max-width: 1024px) {
   .pharmacy-content {
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .main-panel {
+    padding: 2rem;
+  }
+
+  .medicine-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
   }
 
   .detail-header {
@@ -892,6 +1326,11 @@ watch(currentLang, () => {
 
   .medicine-grid {
     grid-template-columns: 1fr;
+  }
+
+  .medicine-count-info {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
   }
 
   .detail-row {

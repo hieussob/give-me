@@ -16,7 +16,7 @@
     </transition>
 
     <main class="panel" :class="{ 'meditation-mode': running }">
-      <h1 class="title" v-if="!running">Pixel Thoughts — 60s</h1>
+      <h1 class="title" v-if="!running">Pixel Thoughts</h1>
 
       <div v-if="!running" class="input-area">
         <textarea 
