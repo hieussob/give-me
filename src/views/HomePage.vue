@@ -1,11 +1,11 @@
 <template>
   <div class="home-page">
     <SproutField :running="false" />
-    
+
     <div class="home-container">
       <div class="logo-section">
         <div class="logo-glow"></div>
-        <h1 class="main-title">{{ t('welcomeTitle') }}</h1>
+        <h1 class="main-title">{{ t("welcomeTitle") }}</h1>
         <!-- <p class="subtitle">{{ t('welcomeSubtitle') }}</p> -->
       </div>
 
@@ -13,40 +13,43 @@
         <!-- Option 1: Pharmacy Info -->
         <router-link to="/pharmacy" class="option-card pharmacy-card">
           <div class="card-icon">🌿</div>
-          <h2 class="card-title">{{ t('pharmacyTitle') }}</h2>
+          <h2 class="card-title">{{ t("pharmacyTitle") }}</h2>
           <p class="card-description">
-            {{ t('pharmacyDesc') }}
+            {{ t("pharmacyDesc") }}
           </p>
           <div class="card-footer">
-            <span class="card-link">{{ t('pharmacyBtn') }} →</span>
+            <span class="card-link">{{ t("pharmacyBtn") }} →</span>
           </div>
         </router-link>
 
         <!-- Option 2: Message Form (Coming Soon) -->
-        <router-link to="/meditation" class="option-card meditation-card disabled">
+        <router-link
+          to="/meditation"
+          class="option-card meditation-card disabled"
+        >
           <div class="card-icon">💌</div>
-          <h2 class="card-title">{{ t('meditationTitle') }}</h2>
+          <h2 class="card-title">{{ t("meditationTitle") }}</h2>
           <p class="card-description">
-            {{ t('meditationDesc') }}
+            {{ t("meditationDesc") }}
           </p>
           <div class="card-footer">
-            <span class="card-link">{{ t('meditationBtn') }}...</span>
+            <span class="card-link">{{ t("meditationBtn") }}...</span>
           </div>
         </router-link>
       </div>
 
       <footer class="home-footer">
-        <p>{{ t('footer') }}</p>
+        <p>{{ t("footer") }}</p>
       </footer>
     </div>
   </div>
 </template>
 
 <script setup>
-import SproutField from '../components/SproutField.vue'
-import { useI18n } from '../i18n'
+import SproutField from "../components/SproutField.vue";
+import { useI18n } from "../i18n";
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -56,15 +59,20 @@ const { t } = useI18n()
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(ellipse at bottom, #020617 0%, #03061a 50%, #020617 100%);
+  background: radial-gradient(
+    ellipse at bottom,
+    #020617 0%,
+    #03061a 50%,
+    #020617 100%
+  );
   overflow: hidden;
 }
 
 .home-container {
   position: relative;
   z-index: 10;
-  width: min(1200px, 95vw);
-  padding: 40px 20px;
+  width: 95vw;
+  padding: 0;
   text-align: center;
 }
 
@@ -93,13 +101,18 @@ const { t } = useI18n()
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(96, 165, 250, 0.3) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(96, 165, 250, 0.3) 0%,
+    transparent 70%
+  );
   filter: blur(60px);
   animation: pulse 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -165,13 +178,19 @@ const { t } = useI18n()
 }
 
 .option-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 24px;
   padding: 2px;
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.5), rgba(6, 182, 212, 0.5));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    135deg,
+    rgba(96, 165, 250, 0.5),
+    rgba(6, 182, 212, 0.5)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
@@ -203,7 +222,8 @@ const { t } = useI18n()
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -267,8 +287,12 @@ const { t } = useI18n()
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .home-footer p {
