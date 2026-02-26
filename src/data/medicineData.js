@@ -4,7 +4,8 @@ export const alphabetCategories = [
   { id: "A", name: "Chữ A", letter: "A", count: 0 },
   { id: "B", name: "Chữ B", letter: "B", count: 0 },
   { id: "C", name: "Chữ C", letter: "C", count: 0 },
-  { id: "D", name: "Chữ Đ", letter: "Đ", count: 0 },
+  { id: "D", name: "Chữ D", letter: "D", count: 0 },
+  { id: "Đ", name: "Chữ Đ", letter: "Đ", count: 0 },
   { id: "G", name: "Chữ G", letter: "G", count: 0 },
   { id: "H", name: "Chữ H", letter: "H", count: 0 },
   { id: "I", name: "Chữ I", letter: "I", count: 0 },
@@ -2037,7 +2038,7 @@ export const medicines = [
   {
     id: 138,
     name: "Đinh Lăng",
-    firstLetter: "D",
+    firstLetter: "Đ",
     scientificName: "Polyscias fruticosa (L.) Harms.",
     family: "Họ Nhân sâm (Araliaceae)",
     categoryId: "araliaceae",
