@@ -63,15 +63,15 @@ export const translations = {
     description: 'Mô tả:',
     
     // HomePage
-    welcomeTitle: 'Welcome',
-    welcomeSubtitle: 'Choose your journey',
-    meditationTitle: 'Pixel Thoughts',
+    welcomeTitle: 'Chào mừng bạn đến với ứng dụng Dược Liệu Truyền Thống',
+    welcomeSubtitle: 'Hãy chọn hành trình của bạn',
+    meditationTitle: 'Chia sẻ với tôi những suy nghĩ của bạn',
     meditationDesc: '60 giây thiền định để giải thoát những suy nghĩ của bạn',
     meditationBtn: 'Bắt đầu thư giãn',
     pharmacyTitle: 'Dược Liệu Truyền Thống',
     pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y với giao diện 2 cột trực quan',
     pharmacyBtn: 'Khám phá ngay',
-    footer: 'Made with ♥ by Your Name'
+    footer: 'Được làm bởi VyChau'
   },
   
   en: {
@@ -145,7 +145,7 @@ export const translations = {
     pharmacyTitle: 'Traditional Medicines',
     pharmacyDesc: 'Explore traditional Eastern medicines with intuitive 2-column layout',
     pharmacyBtn: 'Explore Now',
-    footer: 'Made with ♥ by Your Name'
+    footer: 'Made with ♥ by VyChau'
   }
 }
 
