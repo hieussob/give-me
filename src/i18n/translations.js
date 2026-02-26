@@ -63,7 +63,7 @@ export const translations = {
     description: 'Mô tả:',
     
     // HomePage
-    welcomeTitle: 'Chào mừng bạn đến với ứng dụng Dược Liệu Truyền Thống',
+    welcomeTitle: 'Chào mừng bạn đến xứ sở VyChau',
     welcomeSubtitle: 'Hãy chọn hành trình của bạn',
     meditationTitle: 'Chia sẻ với tôi những suy nghĩ của bạn',
     meditationDesc: '60 giây thiền định để giải thoát những suy nghĩ của bạn',
