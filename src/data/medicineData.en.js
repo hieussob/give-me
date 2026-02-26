@@ -20,12 +20,10 @@ export const alphabetCategories = [
 // Family categories in English
 export const familyCategories = [
   { id: "all", name: "All Medicines", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "ranunculaceae", name: "Ranunculaceae", icon: "fa-solid fa-seedling", count: 0 },
   { id: "araliaceae", name: "Araliaceae", icon: "fa-solid fa-tree", count: 0 },
   { id: "fabaceae", name: "Fabaceae (Legume)", icon: "fa-solid fa-seedling", count: 0 },
   { id: "apiaceae", name: "Apiaceae", icon: "fa-solid fa-spa", count: 0 },
   { id: "asteraceae", name: "Asteraceae", icon: "fa-solid fa-sun", count: 0 },
-  { id: "polyporaceae", name: "Polyporaceae", icon: "fa-solid fa-cannabis", count: 0 },
   { id: "scrophulariaceae", name: "Scrophulariaceae", icon: "fa-solid fa-wheat-awn", count: 0 },
   { id: "zingiberaceae", name: "Zingiberaceae (Ginger)", icon: "fa-solid fa-mortar-pestle", count: 0 },
   { id: "lamiaceae", name: "Lamiaceae (Mint)", icon: "fa-solid fa-leaf", count: 0 },
@@ -52,7 +50,6 @@ export const familyCategories = [
   { id: "amaranthaceae", name: "Amaranthaceae", icon: "fa-solid fa-wheat-awn", count: 0 },
   { id: "anacardiaceae", name: "Anacardiaceae", icon: "fa-solid fa-apple-whole", count: 0 },
   { id: "polygonaceae", name: "Polygonaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "polypodiaceae", name: "Polypodiaceae", icon: "fa-solid fa-leaf", count: 0 },
   { id: "moraceae", name: "Moraceae (Mulberry)", icon: "fa-solid fa-apple-whole", count: 0 },
   { id: "saururaceae", name: "Saururaceae", icon: "fa-solid fa-leaf", count: 0 },
   { id: "bromeliaceae", name: "Bromeliaceae", icon: "fa-solid fa-seedling", count: 0 },
@@ -81,8 +78,6 @@ export const familyCategories = [
   { id: "sapotaceae", name: "Sapotaceae", icon: "fa-solid fa-apple-whole", count: 0 },
   { id: "acoraceae", name: "Acoraceae", icon: "fa-solid fa-leaf", count: 0 },
   { id: "theaceae", name: "Theaceae (Tea)", icon: "fa-solid fa-mug-hot", count: 0 },
-  { id: "crassulaceae", name: "Crassulaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "boraginaceae", name: "Boraginaceae", icon: "fa-solid fa-leaf", count: 0 },
 ];
 
 // Backward compatibility

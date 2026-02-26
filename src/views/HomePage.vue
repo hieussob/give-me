@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <StarField :running="false" />
+    <SproutField :running="false" />
     
     <div class="home-container">
       <div class="logo-section">
@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import StarField from '../components/StarField.vue'
+import SproutField from '../components/SproutField.vue'
 import { useI18n } from '../i18n'
 
 const { t } = useI18n()

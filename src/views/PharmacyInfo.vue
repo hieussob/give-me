@@ -626,6 +626,7 @@ watch(currentLang, () => {
   background-clip: text;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+  font-family: none;
 }
 
 .subtitle {
