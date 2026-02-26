@@ -6,7 +6,7 @@
       <div class="logo-section">
         <div class="logo-glow"></div>
         <h1 class="main-title">{{ t('welcomeTitle') }}</h1>
-        <p class="subtitle">{{ t('welcomeSubtitle') }}</p>
+        <!-- <p class="subtitle">{{ t('welcomeSubtitle') }}</p> -->
       </div>
 
       <div class="options-grid">
@@ -111,9 +111,8 @@ const { t } = useI18n()
 
 .main-title {
   position: relative;
-  font-size: 56px;
   font-weight: 700;
-  margin: 0 0 16px 0;
+  /* margin: 0 0 16px 0; */
   background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 50%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
