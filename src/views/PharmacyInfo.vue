@@ -5,7 +5,7 @@
       <div class="header">
         <!-- Hamburger Menu Button (Mobile only) -->
         <button @click="toggleSidebar" class="hamburger-btn" :class="{ 'hidden': sidebarOpen }">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 12h18M3 6h18M3 18h18"/>
           </svg>
         </button>
@@ -579,19 +579,20 @@ watch(currentLang, () => {
 /* Hamburger Menu Button (Hidden on desktop) */
 .hamburger-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.5rem;
+  right: 0.5rem;
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 0.875rem;
+  background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1001;
   opacity: 1;
 }
@@ -647,9 +648,8 @@ watch(currentLang, () => {
 .sidebar {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
-  border-radius: 20px;
   padding: 2rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* border: 1px solid rgba(255, 255, 255, 0.15); */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 1.5rem;
@@ -1259,7 +1259,19 @@ watch(currentLang, () => {
   line-height: 1;
 }
 
-/* Responsive */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .pharmacy-content {
+    grid-template-columns: 300px 1fr;
+    gap: 1.75rem;
+  }
+
+  .medicine-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.75rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .pharmacy-content {
     grid-template-columns: 280px 1fr;
@@ -1267,29 +1279,44 @@ watch(currentLang, () => {
   }
 
   .content-wrapper {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .title {
     font-size: 2.5rem;
   }
 
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
   .main-panel {
     padding: 2rem;
+    min-height: 600px;
   }
 
   .medicine-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
+  }
+
+  .medicine-image {
+    height: 180px;
   }
 
   .detail-header {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .detail-image {
     width: 100%;
     height: 250px;
+  }
+
+  .detail-row {
+    grid-template-columns: 180px 1fr;
+    gap: 1.25rem;
   }
 }
 
@@ -1297,6 +1324,7 @@ watch(currentLang, () => {
   /* Show hamburger button on mobile */
   .hamburger-btn {
     display: flex;
+    padding: 0.625rem 1rem;
   }
 
   /* Show overlay when sidebar is open */
@@ -1308,25 +1336,148 @@ watch(currentLang, () => {
     grid-template-columns: 1fr;
   }
 
+  .content-wrapper {
+    padding: 1rem;
+  }
+
   /* Sidebar mobile styles */
   .sidebar {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 280px;
+    width: 85%;
+    max-width: 320px;
     height: 100vh;
     max-height: 100vh;
     z-index: 999;
     transition: left 0.3s ease;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem 1.25rem;
   }
 
   .sidebar.open {
     left: 0;
   }
 
+  .sidebar-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .search-box {
+    margin-bottom: 0.875rem;
+  }
+
+  .search-input {
+    padding: 0.625rem 2.25rem 0.625rem 2.5rem;
+    font-size: 0.875rem;
+  }
+
+  .mode-toggle {
+    margin-bottom: 0.875rem;
+  }
+
+  .mode-btn {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8rem;
+  }
+
+  .mode-btn span {
+    display: none;
+  }
+
+  .mode-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .category-item {
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .category-letter,
+  .category-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.3rem;
+  }
+
+  .category-name {
+    font-size: 0.9rem;
+  }
+
+  .category-count {
+    font-size: 0.7rem;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+    padding-top: 60px;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: auto;
+    padding: 0.625rem 1rem;
+  }
+
+  .back-button:hover {
+    transform: translateX(-5px);
+  }
+
+  .back-button span {
+    display: none;
+  }
+
+  .main-panel {
+    padding: 1.5rem;
+    min-height: 500px;
+  }
+
   .medicine-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .medicine-card {
+    border-radius: 14px;
+  }
+
+  .medicine-image {
+    height: 170px;
+  }
+
+  .medicine-info {
+    padding: 1.25rem;
+  }
+
+  .medicine-name {
+    font-size: 1.2rem;
+  }
+
+  .medicine-scientific {
+    font-size: 0.8rem;
+  }
+
+  .medicine-family {
+    font-size: 0.85rem;
+  }
+
+  .view-detail-btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.85rem;
   }
 
   .medicine-count-info {
@@ -1334,33 +1485,290 @@ watch(currentLang, () => {
     padding: 0.75rem 1rem;
   }
 
+  .detail-header {
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .detail-image {
+    height: 220px;
+  }
+
+  .detail-name {
+    font-size: 1.75rem;
+  }
+
+  .detail-scientific {
+    font-size: 1rem;
+  }
+
+  .detail-family {
+    font-size: 0.95rem;
+  }
+
   .detail-row {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+    padding: 1rem;
   }
 
-  .title {
-    font-size: 2rem;
+  .detail-label {
+    font-size: 0.95rem;
   }
 
-  .back-button {
-    position: absolute;
-    top: 0;
-    right: 0;  /* Mobile: chuyển sang bên phải */
-    left: auto;
-    padding: 0.5rem 1rem;
+  .detail-value {
+    font-size: 0.9rem;
   }
 
-  .back-button:hover {
-    transform: translateX(5px);  /* Mobile: hover sang phải */
+  .back-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 
-  .back-button span {
-    display: none;
+  .loading-indicator,
+  .all-loaded {
+    margin: 2rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .spinner {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-btn {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .hamburger-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .content-wrapper {
+    padding: 0.75rem;
+  }
+
+  .sidebar {
+    width: 90%;
+    max-width: 280px;
+    padding: 1.25rem 1rem;
+  }
+
+  .sidebar-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .search-input {
+    padding: 0.5rem 2rem 0.5rem 2.25rem;
+    font-size: 0.8rem;
+  }
+
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    left: 10px;
+  }
+
+  .mode-toggle {
+    padding: 0.25rem;
+  }
+
+  .mode-btn {
+    padding: 0.45rem 0.5rem;
+  }
+
+  .mode-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .category-item {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .category-letter,
+  .category-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+
+  .category-name {
+    font-size: 0.85rem;
   }
 
   .header {
-    padding-top: 60px;
+    padding: 1.25rem 0;
+    padding-top: 50px;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .back-button {
+    top: 0.5rem;
+    left: 0.5rem;
+    right: auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .back-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .main-panel {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .medicine-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .medicine-card {
+    border-radius: 12px;
+  }
+
+  .medicine-image {
+    height: 160px;
+  }
+
+  .medicine-info {
+    padding: 1rem;
+  }
+
+  .medicine-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .medicine-scientific {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .medicine-family {
+    font-size: 0.8rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .view-detail-btn {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.8rem;
+  }
+
+  .detail-header {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .detail-image {
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .detail-name {
+    font-size: 1.5rem;
+  }
+
+  .detail-scientific {
+    font-size: 0.95rem;
+  }
+
+  .detail-family {
+    font-size: 0.9rem;
+  }
+
+  .detail-row {
+    padding: 0.875rem;
+    gap: 0.625rem;
+  }
+
+  .detail-label {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .detail-label i {
+    font-size: 1.1rem;
+    width: 20px;
+  }
+
+  .detail-value {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .detail-value li {
+    padding-left: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .back-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .loading-indicator,
+  .all-loaded {
+    margin: 1.5rem 0 1rem;
+    font-size: 0.85rem;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border-width: 2.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .main-panel {
+    padding: 1rem;
+  }
+
+  .medicine-image {
+    height: 140px;
+  }
+
+  .medicine-name {
+    font-size: 1rem;
+  }
+
+  .medicine-info {
+    padding: 0.875rem;
+  }
+
+  .detail-name {
+    font-size: 1.35rem;
+  }
+
+  .detail-image {
+    height: 180px;
   }
 }
 

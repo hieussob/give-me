@@ -348,17 +348,184 @@ async function handleSubmit() {
   border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form-overlay {
+    padding: 16px;
+  }
+
+  .form-container {
+    padding: 32px 28px;
+    border-radius: 18px;
+  }
+
+  .close-btn {
+    top: 16px;
+    right: 16px;
+  }
+
+  .form-title {
+    font-size: 26px;
+  }
+
+  .form-subtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 13px 14px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 640px) {
+  .form-overlay {
+    padding: 12px;
+  }
+
   .form-container {
     padding: 28px 24px;
+    border-radius: 16px;
   }
-  
+
+  .close-btn {
+    top: 14px;
+    right: 14px;
+    padding: 6px;
+  }
+
+  .close-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
   .form-title {
     font-size: 24px;
   }
-  
+
   .form-subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
     font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .form-group textarea {
+    min-height: 110px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  .status-message {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-overlay {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 24px 20px;
+  }
+
+  .close-btn {
+    top: 12px;
+    right: 12px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form-subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .status-message {
+    font-size: 12px;
+    padding: 9px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-container {
+    padding: 20px 16px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .form-subtitle {
+    font-size: 11px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 13px;
   }
 }
 </style>

@@ -301,9 +301,40 @@ const { t } = useI18n();
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .home-container {
+    width: 92vw;
+  }
+
+  .logo-section {
+    margin-bottom: 50px;
+  }
+
+  .options-grid {
+    gap: 28px;
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 768px) {
+  .home-container {
+    width: 90vw;
+    padding: 20px 0;
+  }
+
+  .logo-section {
+    margin-bottom: 40px;
+  }
+
+  .logo-glow {
+    width: 200px;
+    height: 200px;
+  }
+
   .main-title {
-    font-size: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
   }
 
   .subtitle {
@@ -313,19 +344,125 @@ const { t } = useI18n();
 
   .options-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    margin-bottom: 40px;
   }
 
   .option-card {
-    padding: 36px 24px;
+    padding: 32px 20px;
+    border-radius: 20px;
   }
 
   .card-icon {
-    font-size: 48px;
+    font-size: 52px;
+    margin-bottom: 20px;
   }
 
   .card-title {
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .card-description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    min-height: auto;
+  }
+
+  .card-link {
+    font-size: 14px;
+  }
+
+  .home-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .home-footer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    width: 88vw;
+    padding: 15px 0;
+  }
+
+  .logo-section {
+    margin-bottom: 30px;
+  }
+
+  .logo-glow {
+    width: 150px;
+    height: 150px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .options-grid {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .option-card {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+
+  .card-icon {
+    font-size: 44px;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .card-link {
+    font-size: 13px;
+  }
+
+  .home-footer {
+    margin-top: 25px;
+    padding-top: 18px;
+  }
+
+  .home-footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .option-card {
+    padding: 24px 16px;
+  }
+
+  .card-icon {
+    font-size: 40px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 13px;
   }
 }
 </style>

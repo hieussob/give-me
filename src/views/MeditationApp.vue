@@ -1,7 +1,9 @@
 <template>
   <div class="app">
-    <StarField :running="running" />
+    <!-- <PeachBlossomField :running="running" /> -->
+    <SproutField :running="running" />
 
+    <!-- <StarField :running="running" /> -->
     <!-- Back button -->
     <router-link to="/" class="back-button">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -26,7 +28,7 @@
           class="thought-input"
         ></textarea>
         <div class="controls">
-          <label class="fade-check">
+          <label class="fade-check" style="opacity: 0;">
             <input type="checkbox" v-model="fadeOut" /> Fade away
           </label>
           <button :disabled="!thoughtTrimmed" @click="startMeditation" class="btn">Release</button>
@@ -69,6 +71,8 @@
 <script setup>
 import { ref, computed, onBeforeUnmount } from 'vue'
 import StarField from '../components/StarField.vue'
+import PeachBlossomField from '../components/PeachBlossomField.vue'
+import SproutField from '../components/SproutField.vue'
 import MessageForm from '../components/MessageForm.vue'
 
 const thought = ref('')
