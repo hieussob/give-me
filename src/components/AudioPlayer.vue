@@ -20,8 +20,8 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const audioRef = ref(null)
 const isPlaying = ref(false)
-// Using a direct MP3 link - you can replace this with your own audio file
-const audioSrc = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
+// Using local audio file
+const audioSrc = '/ahihi.mp3'
 
 const togglePlay = () => {
   if (!audioRef.value) return
@@ -45,8 +45,16 @@ const playMusic = () => {
   }
 }
 
-// Expose playMusic để component cha có thể gọi
-defineExpose({ playMusic })
+// Hàm để tắt nhạc từ bên ngoài
+const pauseMusic = () => {
+  if (audioRef.value && isPlaying.value) {
+    audioRef.value.pause()
+    isPlaying.value = false
+  }
+}
+
+// Expose playMusic và pauseMusic để component cha có thể gọi
+defineExpose({ playMusic, pauseMusic })
 
 // Auto play when mounted (with user interaction required)
 onMounted(() => {
@@ -60,13 +68,15 @@ onMounted(() => {
     })
   }
   
-  // Lắng nghe sự kiện bật nhạc từ MessageForm
+  // Lắng nghe sự kiện bật/tắt nhạc
   window.addEventListener('play-music', playMusic)
+  window.addEventListener('stop-music', pauseMusic)
 })
 
 // Cleanup khi component unmount
 onBeforeUnmount(() => {
   window.removeEventListener('play-music', playMusic)
+  window.removeEventListener('stop-music', pauseMusic)
 })
 </script>
 

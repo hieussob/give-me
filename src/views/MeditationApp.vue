@@ -139,6 +139,9 @@ function stopMeditation() {
   thoughtFading.value = false
   displayThought.value = ''
   
+  // Tắt nhạc khi kết thúc meditation
+  window.dispatchEvent(new CustomEvent('stop-music'))
+  
   setTimeout(() => {
     showForm.value = true
   }, 500)
