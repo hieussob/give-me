@@ -377,7 +377,7 @@ export const medicines = [
     scientificName: "Solanum procumbens Lour.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://cdnphoto.dantri.com.vn/udAT4KUzUMbr9UdTP2EmYZ375ko=/thumb_w/990/2021/06/06/85tac-dung-cua-ca-gai-leodocx-1622945614330.jpeg",
+    image: "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
     usedParts: "Whole aerial parts (harvest year-round, sun dry)",
     properties: "Slightly bitter taste",
     meridians: "Lung, Liver meridians",

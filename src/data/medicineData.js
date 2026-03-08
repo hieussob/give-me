@@ -717,7 +717,7 @@ export const medicines = [
     scientificName: "Solanum procumbens Lour.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://cdnphoto.dantri.com.vn/udAT4KUzUMbr9UdTP2EmYZ375ko=/thumb_w/990/2021/06/06/85tac-dung-cua-ca-gai-leodocx-1622945614330.jpeg",
+    image: "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
     usedParts: "Toàn thân trên mặt đất (thu hái quanh năm, phơi khô)",
     properties: "Vị hơi đắng",
     meridians: "Quy kinh phế, can",
