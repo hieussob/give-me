@@ -79,6 +79,7 @@ export const familyCategories = [
   { id: "theaceae", name: "Họ Chè", icon: "fa-solid fa-mug-hot", count: 0 },
   { id: "crassulaceae", name: "Họ Thuốc bỏng", icon: "fa-solid fa-leaf", count: 0 },
   { id: "boraginaceae", name: "Họ Vòi voi", icon: "fa-solid fa-leaf", count: 0 },
+  { id: "rhizophoraceae", name: "Họ Đước", icon: "fa-solid fa-tree", count: 0 },
 ];
 
 // Backward compatibility
@@ -2412,6 +2413,182 @@ export const medicines = [
       "Việt Nam (được trồng ở nhiều địa phương làm cây cảnh và lấy lá làm thuốc). Châu Á nhiệt đới",
     description:
       "Đơn lá đỏ (còn gọi Đơn mặt trời, Đơn tía) là cây nhỏ thuộc họ Thầu dầu cao chừng 1m. Lá mọc đối hình bầu dục ngược thuôn, mặt trên màu lục bóng, mặt dưới màu tía, mép có răng cưa. Hoa mọc thành bông ở nách lá hay ở ngọn, cùng gốc hoặc khác gốc. Quả nang 3 mảnh, hạt hình cầu màu nâu nhạt. Cây ra hoa vào mùa hè. Chứa flavonoid (kaempferol, quercetin, isoscutellarein), triterpenoid (acid arjunolic, acid oleanolic), coumarin (scopoletin), sterol và hợp chất phenol. Vị đắng, tính hàn. Thanh nhiệt giải độc, khu phong trừ thấp, lợi tiểu, giảm đau. Chủ trị mụn nhọt, mẩn ngứa, ban chẩn mày đay, tiêu chảy lỏng lâu ngày, đại tiện ra máu.",
+  },
+  {
+    id: 139,
+    name: "Đước",
+    firstLetter: "Đ",
+    scientificName: "Rhizophora apiculata Bl.",
+    family: "Họ Đước (Rhizophoraceae)",
+    categoryId: "rhizophoraceae",
+    image: "https://dantocmiennui-media.baotintuc.vn/images/57c5aab70c5efc5a98d240302ffc6edba650419a22ef4e43451defc60ac264ec686fa08bc9936d08d64033868d8eca1e/150035-1-1.jpg",
+    usedParts: "Vỏ cây (thu hái quanh năm, bóc vỏ, phơi khô). Rễ (đào lấy, rửa sạch, phơi khô)",
+    properties: "Vị đắng, chát, tính mát",
+    meridians: "Quy kinh can, đại tràng, phế",
+    mainIngredients: [
+      "Tanin (hàm lượng cao)",
+      "Flavonoid",
+      "Saponin",
+      "Triterpenoid",
+      "Sapogenin steroid (hecogenin, tigogenin)",
+    ],
+    uses: [
+      "Làm săn",
+      "Cầm máu",
+      "Chống viêm",
+      "Chữa viêm họng",
+      "Chữa tiêu chảy",
+      "Chữa lỵ",
+      "Chữa đái ra máu",
+      "Điều trị bệnh tiểu đường",
+      "Chữa thấp khớp",
+    ],
+    indications: [
+      "Viêm họng",
+      "Tiêu chảy",
+      "Lỵ",
+      "Đái ra máu",
+      "Tiểu đường",
+      "Thấp khớp",
+      "Vết thương",
+      "Vết loét",
+    ],
+    dosage: "Vỏ cây: 10-20g sắc uống. Rễ: 15-30g sắc uống để chữa thấp khớp. Dùng ngoài: sắc nước để rửa vết thương, vết loét",
+    contraindications: [
+      "Người tỳ vị hư hàn thận trọng",
+      "Thai phụ thận trọng",
+      "Không dùng quá liều",
+    ],
+    origin: "Việt Nam (rừng Đước Cà Mau, vùng ven biển miền Bắc, Trung, Nam). Vùng nhiệt đới Bắc bán cầu",
+    description:
+      "Đước đôi (còn gọi Đước bộp) là cây gỗ mọc ven biển vùng nhiệt đới cao đến 30m, đường kính gốc thân 40-60cm. Có nhiều rễ chống mọc xoè ra quanh gốc thân như cái nơm to để chống đỡ cây khỏi đổ. Lá dày, hình bầu dục, đầu nhọn, gốc tù, mặt dưới có chấm đen. Cụm hoa là xim hai hoa ở nách lá. Hoa màu vàng nhạt hoặc trắng dài 1,5-2cm. Quả hình quả lê dài 2-2,5cm, màu nâu, rễ mầm hình trụ thõng xuống màu xanh lục dài 20-38cm (cây thai sinh). Ra hoa quanh năm, quả chín tháng 6-11. Phổ biến trong rừng Sú, Vẹt, trên đất phù sa nhiều bùn, nơi ngập thuỷ triều. Vỏ chứa nhiều tanin có tác dụng làm săn, cầm máu, chữa viêm họng, trị tiêu chảy, lỵ, đái ra máu. Ở Ấn Độ dùng điều trị tiểu đường. Ở Campuchia dùng rễ chữa thấp khớp. Vỏ còn dùng nhuộm lưới và thuộc da. Gỗ cứng nặng dùng xây dựng, làm khung nhà, trụ cầu. Rừng Đước cung cấp hàng chục tấn lá khô/ha mỗi năm, tạo mùn làm thức ăn cho tôm cá. Ngoài Đước đôi còn có Đước nhọn (R. mucronata) và Đước chằng (R. stylosa) cũng có tác dụng tương tự.",
+  },
+  {
+    id: 140,
+    name: "Trang",
+    firstLetter: "T",
+    scientificName: "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
+    family: "Họ Đước (Rhizophoraceae)",
+    categoryId: "rhizophoraceae",
+    image: "https://cdn.tgdd.vn/Files/2023/01/31/1506263/tim-hieu-y-nghia-cay-bong-trang-hinh-anh-cach-trong-cham-soc-tai-nha-202301311557479763.jpg",
+    usedParts:
+      "Vỏ cây, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Quả thu hái khi chín để làm thức ăn gia súc",
+    properties: "Vị đắng, chát, tính mát",
+    meridians: "Chưa xác định rõ",
+    mainIngredients: [
+      "Tanin",
+      "Acid hữu cơ",
+      "Flavonoid",
+      "Hợp chất phenol",
+    ],
+    uses: [
+      "Nhuộm lưới",
+      "Chữa tiểu đường",
+      "Bảo vệ đê biển",
+      "Nuôi ong mật",
+      "Làm thức ăn gia súc",
+    ],
+    indications: ["Tiểu đường", "Bệnh đường tiêu hóa"],
+    dosage:
+      "Vỏ cây: 10-15g phối hợp với Gừng khô, Hồ tiêu và nước Hoa hồng sắc uống để chữa tiểu đường (theo kinh nghiệm Ấn Độ). Quả: dùng làm thức ăn cho lợn",
+    contraindications: [
+      "Người tỳ vị hư hàn thận trọng",
+      "Không dùng quá liều",
+    ],
+    origin:
+      "Việt Nam (rừng ngập mặn từ Quảng Ninh đến Long An, Minh Hải, Kiên Giang; người dân Thái Bình, Hà Nam trồng làm cây bảo vệ đê). Đông Nam Á, ven biển Trung Quốc, Ấn Độ",
+    description:
+      "Cây Trang, còn gọi là Vẹt đìa, Vẹt khang, thuộc chi Kandelia họ Đước (Rhizophoraceae). Ở Việt Nam có 2 loài: Cây Trang ở Miền Bắc thuộc loài K. obovata Sheue, Liu & Young và cây Trang ở Miền Nam thuộc loài K. candel (L.) Druce. Đây là cây gỗ nhỏ cao 5-7m, sống ở nơi đất ngập thủy triều hằng ngày, không có rễ thở. Lá mọc đối, có phiến thon dài 5-12cm, rộng 2,5-5cm, mép lá thường cuốn xuống, lá kèm dài 2cm. Cụm hoa là xim lưỡng phân, mang nhiều hoa trắng, cánh hoa dài 14mm, chẻ hai và rìa thành sợi dài; nhị nhiều; cuống hoa dài 2,5-5mm. Quả dài 1-1,5cm, có đài cuốn xuống. Rễ mầm hình trụ dài 15-30cm ở đầu mỗi quả (khi rụng cắm xuống bùn, phát triển thành cây mới - cây thai sinh). Mùa hoa, quả: tháng 5-10. Loài này phân bố ở các nước Đông Nam Á, cũng có ở ven biển Trung Quốc, Ấn Độ. Ở Việt Nam, cây Trang mọc ở rừng ngập mặn từ Quảng Ninh đến Long An, Minh Hải, Kiên Giang. Người dân vùng ven biển Thái Bình, Hà Nam trồng làm cây bảo vệ đê ven biển và nuôi ong mật. Vỏ Trang chứa tanin, dùng để nhuộm lưới đánh cá. Ở Ấn Độ người ta phối hợp vỏ Trang với Gừng khô, Hồ tiêu và nước Hoa hồng để làm thuốc trị bệnh tiểu đường. Quả Trang ăn được, thường dùng để nuôi lợn. Cây Trang và cây Đước đều thuộc họ Đước (Rhizophoraceae), đều sống trong rừng ngập mặn, có rễ mầm dài (thai sinh), đều chứa tanin trong vỏ và có tác dụng y học tương tự. Tuy nhiên cây Trang nhỏ hơn (5-7m so với 20-30m của Đước), không có rễ chống như Đước, và quả Trang có thể làm thức ăn gia súc. Cả hai loài cây này đều đóng vai trò quan trọng trong bảo vệ bờ biển, chống xói mòn và cung cấp môi trường sống cho sinh vật biển.",
+  },
+  {
+    id: 141,
+    name: "Dà",
+    firstLetter: "D",
+    scientificName: "Ceriops tagal (Perr.) C. B. Rob.",
+    family: "Họ Đước (Rhizophoraceae)",
+    categoryId: "rhizophoraceae",
+    image: "https://tracuuduoclieu.vn/wp-content/uploads/2018/03/ceriops20tagal20perr-20c-b-20rob.jpg",
+    usedParts:
+      "Vỏ cây, Chồi non, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Chồi non thu hái khi cần dùng. Quả thu hái khi chín",
+    properties: "Vị đắng, chát, tính mát",
+    meridians: "Chưa xác định rõ",
+    mainIngredients: [
+      "Tanin",
+      "Acid hữu cơ",
+      "Flavonoid",
+      "Hợp chất phenol",
+    ],
+    uses: [
+      "Làm săn",
+      "Cầm máu",
+      "Chữa sốt rét",
+      "Nhuộm lưới, buồm, dây câu",
+      "Thuộc da",
+      "Ăn trầu",
+    ],
+    indications: [
+      "Vết thương chảy máu",
+      "Sốt rét",
+      "Chảy máu ngoài da",
+    ],
+    dosage:
+      "Vỏ cây: đắp ngoài để cầm máu vết thương. Nước sắc chồi non: uống chữa sốt rét (theo kinh nghiệm Châu Phi). Quả: ăn được",
+    contraindications: [
+      "Người tỳ vị hư hàn thận trọng",
+      "Không dùng quá liều",
+    ],
+    origin:
+      "Đông Phi đến Nam Á, Australia, Melanesia. Ở Việt Nam: bãi lầy ven biển, thường mọc lẫn với Đước và Vẹt (hoặc thành rừng thuần loại)",
+    description:
+      "Cây Dà, hay Dà vôi, Dà đỏ, Dà nét (Ceriops tagal (Perr.) C. B. Rob.) thuộc họ Đước (Rhizophoraceae). Cây Dà phân bố từ Đông Phi tới Nam Á, Australia và Melanesia. Ở Việt Nam, cây này gặp ở các bãi lầy ven biển, thường mọc lẫn với cây Đước và Vẹt (hoặc thành rừng thuần loại). Đây là cây gỗ nhỡ, có khi cao tới 10-15m, đường kính thân tới 20cm. Vỏ thân màu xám sáng. Quanh gốc cũng có nhiều rễ chống nhỏ. Lá nguyên hình bầu dục, mọc đối, tập trung ở phần cuối các cành. Lá kèm hình mũi mác. Cụm hoa là một xim ở nách lá hay đầu cành, gồm 5-10 hoa. Đài hợp, tồn tại trên quả. Cánh hoa thuôn, mỏng, dính nhau ở gốc, màu trắng, sau chuyển sang màu nâu, đỉnh có 3 phần phụ hình chuỳ. Nhị gấp đôi số cánh, không đều nhau. Bầu nửa dưới, 3 ô, mỗi ô chứa 2 noãn. Quả hình trứng, rễ mầm dài hình trụ, hơi có cạnh (cây thai sinh). Quả tháng 5-8. Vỏ cây Dà chứa nhiều tanin, có tác dụng làm săn, dùng đắp cầm máu vết thương. Ở Châu Phi, có nơi dùng nước sắc chồi cây Dà để chữa bệnh sốt rét. Vỏ Dà cũng được dùng để ăn trầu, nhuộm lưới, buồm và dây câu. Có thể pha với thuốc nhuộm khác để nhuộm màu đỏ hoặc đen. Gỗ Dà dùng trong xây dựng, đóng thuyền và làm than củi cho nhiệt lượng cao. Quả Dà cũng có thể ăn được. Cây Dà cùng họ với Đước và Trang (Rhizophoraceae), đều sống trong rừng ngập mặn, có rễ mầm dài (thai sinh), chứa tanin trong vỏ. Cây Dà có kích thước trung bình (10-15m) giữa Trang (5-7m) và Đước (20-30m), có rễ chống nhỏ, vỏ dùng chữa sốt rét và nhuộm nhiều màu sắc.",
+  },
+  {
+    id: 142,
+    name: "Vẹt",
+    firstLetter: "V",
+    scientificName: "Bruguiera gymnorrhiza (L.) Lam.",
+    family: "Họ Đước (Rhizophoraceae)",
+    categoryId: "rhizophoraceae",
+    image: "https://caythuoc.org/wp-content/uploads/2020/12/cay-vet-dia.jpg",
+    usedParts:
+      "Vỏ cây, Lá, Rễ mầm, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Lá thu hái khi cần dùng. Rễ mầm thu hái khi chín để chế biến thức ăn gia súc",
+    properties: "Vị chát, đắng, tính mát",
+    meridians: "Chưa xác định rõ",
+    mainIngredients: [
+      "Tanin",
+      "Acid hữu cơ",
+      "Flavonoid",
+      "Hợp chất phenol",
+      "Tinh bột (trong rễ mầm)",
+    ],
+    uses: [
+      "Làm săn",
+      "Cầm máu",
+      "Chữa tiêu chảy",
+      "Chữa sốt rét",
+      "Cải thiện ung bướu",
+      "Trị vết bỏng, loét",
+      "Nhuộm vải, lưới",
+      "Thuộc da",
+    ],
+    indications: [
+      "Tiêu chảy",
+      "Sốt rét",
+      "Chảy máu",
+      "Vết bỏng",
+      "Loét ác tính",
+      "Ung bướu",
+    ],
+    dosage:
+      "Vỏ cây: 10-20g sắc uống chữa tiêu chảy, sốt rét. Dùng ngoài: đắp vỏ cầm máu hoặc trị vết bỏng, loét. Lá Vẹt đen: dùng cải thiện bệnh ung bướu. Rễ mầm: chế biến thành thức ăn gia súc. Quả: dùng để ăn trầu",
+    contraindications: [
+      "Người tỳ vị hư hàn thận trọng",
+      "Không dùng quá liều",
+    ],
+    origin:
+      "Châu Á nhiệt đới. Ở Việt Nam: đất bùn ngập thủy triều, dọc bờ biển khu vực duyên hải miền Trung, các tỉnh Nam Bộ từ Đồng Nai đến Cà Mau. Có thể mọc trên đất khô mặn ít khi thuỷ triều ngập",
+    description:
+      "Cây Vẹt (Bruguiera gymnorrhiza (L.) Lam.) thuộc họ Đước (Rhizophoraceae). Cây Vẹt phân bố chủ yếu ở các nước nhiệt đới Châu Á. Ở Việt Nam, cây thường mọc ở nơi có đất bùn, ngập thuỷ triều, dọc bờ biển khu vực duyên hải miền Trung, các tỉnh Nam Bộ từ Đồng Nai đến Cà Mau. Cây cũng có thể mọc trên đất khô mặn ít khi thuỷ triều ngập. Vẹt là cây gỗ, cao khoảng 10m, có rễ thở hình trụ, cong như đầu gối (khác với rễ chống của Đước). Lá dai, hình bầu dục, dài 8-11cm, rộng 3-5cm, tù ở gốc, nhọn ở đầu, cuống lá dài 2-4cm. Hoa đơn độc ở nách lá, màu trắng sau chuyển thành màu nâu, thõng xuống. Quả có hình thoi, rễ mầm mập, nhọn đầu, hơi có góc (cây thai sinh). Mùa hoa, quả: tháng 3-6, có cây ra hoa gần như quanh năm. Vỏ cây Vẹt chứa nhiều tanin, vị chát, có tác dụng làm săn, dùng để nhuộm vải, lưới và thuộc da. Lá Vẹt đen (Bruguiera sexangula) có thể dùng để cải thiện bệnh ung bướu. Vỏ Vẹt đen được dùng để trị tiêu chảy, bệnh sốt rét. Ở Campuchia vỏ Vẹt dùng làm thuốc trị tiêu chảy. Rễ mầm chứa nhiều tinh bột, có thể chế biến làm thức ăn gia súc. Quả dùng để ăn trầu. Ở Ấn Độ, vỏ Vẹt được dùng để cầm máu hoặc trị vết bỏng, loét ác tính. Gỗ Vẹt cứng rắn, dùng làm nhà, xẻ ván, làm tà vẹt và làm củi. Than của cây Đước và Vẹt rất được ưa chuộng vì ít khói, nhiệt lượng cao (1 Kg than Đước cho 6675 Kcalo, than Vẹt cho 6375 Kcalo). Một số loài cùng chi như cây Vẹt đen (Bruguiera sexangula (Lour.) Poir.), cao 30-40m, sinh trưởng nhanh. Vẹt trụ (B. cylindrica (L.) Bl.), cũng có công dụng như trên. Rễ non của cây Vẹt trụ có thể nấu ăn như rau. Cây Vẹt cùng họ với Đước, Trang và Dà (Rhizophoraceae), đều sống trong rừng ngập mặn, có rễ mầm dài (thai sinh), chứa tanin trong vỏ. Điểm đặc trưng của Vẹt là có rễ thở hình trụ cong như đầu gối, khác với rễ chống xoè rộng của Đước.",
   },
   {
     id: 67,
