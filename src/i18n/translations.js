@@ -71,7 +71,22 @@ export const translations = {
     pharmacyTitle: 'Dược Liệu Truyền Thống',
     pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y với giao diện 2 cột trực quan',
     pharmacyBtn: 'Khám phá ngay',
-    footer: 'Được làm bởi VyChau'
+    footer: 'Được làm bởi VyChau',
+    
+    // Meditation App
+    pixelThoughts: 'Chia sẻ với tôi',
+    thoughtPlaceholder: 'Nhập những gì đang trong tâm trí bạn...',
+    fadeAway: 'Mờ dần',
+    releaseBtn: 'Giải phóng',
+    stopBtn: 'Dừng',
+    meditationFooter: 'Được làm với ♥ — thư giãn 60 giây',
+    message1: 'Hãy hít thở sâu...',
+    message2: 'Chú ý đến thế giới xung quanh bạn.',
+    message3: 'Suy nghĩ của bạn chỉ là những đám mây trôi qua.',
+    message4: 'Khoảnh khắc này chỉ là tạm thời.',
+    message5: 'Hãy buông bỏ những lo lắng.',
+    message6: 'Bạn đang an toàn và bình yên.',
+    message7: 'Mọi thứ sẽ ổn thôi.'
   },
   
   en: {
@@ -145,7 +160,22 @@ export const translations = {
     pharmacyTitle: 'Traditional Medicines',
     pharmacyDesc: 'Explore traditional Eastern medicines with intuitive 2-column layout',
     pharmacyBtn: 'Explore Now',
-    footer: 'Made with ♥ by VyChau'
+    footer: 'Made with ♥ by VyChau',
+    
+    // Meditation App
+    pixelThoughts: 'Pixel Thoughts',
+    thoughtPlaceholder: 'Type something that\'s on your mind...',
+    fadeAway: 'Fade away',
+    releaseBtn: 'Release',
+    stopBtn: 'Stop',
+    meditationFooter: 'Made with ♥ — small 60s relaxation',
+    message1: 'Take a deep breath...',
+    message2: 'Notice the world around you.',
+    message3: 'Your thoughts are just clouds passing by.',
+    message4: 'This moment is temporary.',
+    message5: 'Let go of your worries.',
+    message6: 'You are safe and calm.',
+    message7: 'Everything will be okay.'
   }
 }
 

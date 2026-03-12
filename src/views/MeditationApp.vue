@@ -9,7 +9,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M19 12H5M12 19l-7-7 7-7"/>
       </svg>
-      <span>Trang chủ</span>
+      <span>{{ t('home') }}</span>
     </router-link>
 
     <!-- Message Form -->
@@ -18,20 +18,20 @@
     </transition>
 
     <main class="panel" :class="{ 'meditation-mode': running }">
-      <h1 class="title" v-if="!running">Pixel Thoughts</h1>
+      <h1 class="title" v-if="!running">{{ t('pixelThoughts') }}</h1>
 
       <div v-if="!running" class="input-area">
         <textarea 
           v-model="thought" 
-          placeholder="Type something that's on your mind..." 
+          :placeholder="t('thoughtPlaceholder')" 
           rows="3"
           class="thought-input"
         ></textarea>
         <div class="controls">
           <label class="fade-check" style="opacity: 0;">
-            <input type="checkbox" v-model="fadeOut" /> Fade away
+            <input type="checkbox" v-model="fadeOut" /> {{ t('fadeAway') }}
           </label>
-          <button :disabled="!thoughtTrimmed" @click="startMeditation" class="btn">Release</button>
+          <button :disabled="!thoughtTrimmed" @click="startMeditation" class="btn">{{ t('releaseBtn') }}</button>
         </div>
       </div>
 
@@ -60,10 +60,10 @@
             <text x="18" y="20.35" class="percentage">{{ secondsLeft }}</text>
           </svg>
         </div>
-        <button class="btn muted" @click="stopMeditation">Stop</button>
+        <button class="btn muted" @click="stopMeditation">{{ t('stopBtn') }}</button>
       </div>
 
-      <p class="footer" v-if="!running">Made with ♥ — small 60s relaxation</p>
+      <p class="footer" v-if="!running">{{ t('meditationFooter') }}</p>
     </main>
   </div>
 </template>
@@ -74,6 +74,9 @@ import StarField from '../components/StarField.vue'
 import PeachBlossomField from '../components/PeachBlossomField.vue'
 import SproutField from '../components/SproutField.vue'
 import MessageForm from '../components/MessageForm.vue'
+import { useI18n } from '../i18n'
+
+const { t } = useI18n()
 
 const thought = ref('')
 const displayThought = ref('')
@@ -87,18 +90,19 @@ let timer = null
 
 const thoughtTrimmed = computed(() => thought.value.trim().length > 0)
 const progress = computed(() => ((duration - secondsLeft.value) / duration) * 100)
-const messages = [
-  "Take a deep breath...",
-  "Notice the world around you.",
-  "Your thoughts are just clouds passing by.",
-  "This moment is temporary.",
-  "Let go of your worries.",
-  "You are safe and calm.",
-  "Everything will be okay."
-]
+
+const messages = computed(() => [
+  t.value('message1'),
+  t.value('message2'),
+  t.value('message3'),
+  t.value('message4'),
+  t.value('message5'),
+  t.value('message6'),
+  t.value('message7')
+])
 
 const currentMessageIndex = ref(0)
-const currentMessage = computed(() => messages[currentMessageIndex.value])
+const currentMessage = computed(() => messages.value[currentMessageIndex.value])
 let messageTimer = null
 
 function startMeditation() {
@@ -126,7 +130,7 @@ function startMeditation() {
   }, 1000)
 
   messageTimer = setInterval(() => {
-    if (currentMessageIndex.value < messages.length - 1) {
+    if (currentMessageIndex.value < messages.value.length - 1) {
       currentMessageIndex.value++
     }
   }, 8000)
