@@ -1,6 +1,6 @@
 <template>
   <div class="audio-player">
-    <button @click="togglePlay" class="audio-btn" :class="{ playing: isPlaying }">
+    <button type="button" @click="togglePlay" class="audio-btn" :class="{ playing: isPlaying }">
       <svg v-if="!isPlaying" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M8 5v14l11-7z"/>
       </svg>
@@ -20,23 +20,111 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const audioRef = ref(null)
 const isPlaying = ref(false)
-const hasTriedAutoplay = ref(false)
 // Using local audio file
 const audioSrc = '/ahihi.mp3'
-const interactionEvents = ['click', 'touchstart', 'keydown', 'mousemove', 'scroll']
 
 let fadeInTimer = null
-let autoplayUnmuteTimer = null
+let removeAudioStateListeners = null
+let removeFirstInteractionListeners = null
 
-const togglePlay = () => {
-  if (!audioRef.value) return
-  
-  if (isPlaying.value) {
-    audioRef.value.pause()
-  } else {
-    audioRef.value.play()
+const playOnFirstInteraction = async (event) => {
+  const audio = audioRef.value
+  if (!audio || isPlaying.value) return
+
+  // Skip clicks on the player itself to avoid double toggle with the button click handler.
+  const target = event?.target
+  if (target && typeof target.closest === 'function' && target.closest('.audio-player')) {
+    return
   }
-  isPlaying.value = !isPlaying.value
+
+  try {
+    await audio.play()
+    fadeInVolume()
+    syncPlayingState()
+    if (removeFirstInteractionListeners) {
+      removeFirstInteractionListeners()
+      removeFirstInteractionListeners = null
+    }
+  } catch (err) {
+    syncPlayingState()
+    // Keep listeners active so the next user interaction can retry.
+  }
+}
+
+const bindFirstInteractionListeners = () => {
+  const options = { passive: true }
+  document.addEventListener('click', playOnFirstInteraction, options)
+  document.addEventListener('touchstart', playOnFirstInteraction, options)
+  document.addEventListener('pointerdown', playOnFirstInteraction, options)
+
+  removeFirstInteractionListeners = () => {
+    document.removeEventListener('click', playOnFirstInteraction, options)
+    document.removeEventListener('touchstart', playOnFirstInteraction, options)
+    document.removeEventListener('pointerdown', playOnFirstInteraction, options)
+  }
+}
+
+const handlePageShow = () => {
+  syncPlayingState()
+}
+
+const handleVisibilityChange = () => {
+  syncPlayingState()
+}
+
+const syncPlayingState = () => {
+  const audio = audioRef.value
+  isPlaying.value = !!(audio && !audio.paused && !audio.ended)
+}
+
+const bindAudioStateListeners = () => {
+  const audio = audioRef.value
+  if (!audio) return
+
+  const onPlay = () => {
+    isPlaying.value = true
+  }
+
+  const onPauseLike = () => {
+    isPlaying.value = false
+  }
+
+  audio.addEventListener('play', onPlay)
+  audio.addEventListener('playing', onPlay)
+  audio.addEventListener('pause', onPauseLike)
+  audio.addEventListener('ended', onPauseLike)
+  audio.addEventListener('error', onPauseLike)
+  audio.addEventListener('emptied', onPauseLike)
+  audio.addEventListener('abort', onPauseLike)
+
+  removeAudioStateListeners = () => {
+    audio.removeEventListener('play', onPlay)
+    audio.removeEventListener('playing', onPlay)
+    audio.removeEventListener('pause', onPauseLike)
+    audio.removeEventListener('ended', onPauseLike)
+    audio.removeEventListener('error', onPauseLike)
+    audio.removeEventListener('emptied', onPauseLike)
+    audio.removeEventListener('abort', onPauseLike)
+  }
+}
+
+const togglePlay = async () => {
+  const audio = audioRef.value
+  if (!audio) return
+
+  if (!audio.paused && !audio.ended) {
+    audio.pause()
+    syncPlayingState()
+  } else {
+    try {
+      await audio.play()
+      fadeInVolume()
+    } catch (err) {
+      console.error('Khong the phat nhac:', err)
+    } finally {
+      syncPlayingState()
+    }
+  }
 }
 
 // Hàm để set volume (bắt đầu từ 0 rồi tăng dần)
@@ -66,9 +154,11 @@ const fadeInVolume = () => {
 const playMusic = () => {
   if (audioRef.value && !isPlaying.value) {
     audioRef.value.play().then(() => {
-      isPlaying.value = true
+      fadeInVolume()
+      syncPlayingState()
     }).catch(err => {
       console.error('Không thể phát nhạc:', err)
+      syncPlayingState()
     })
   }
 }
@@ -77,89 +167,52 @@ const playMusic = () => {
 const pauseMusic = () => {
   if (audioRef.value && isPlaying.value) {
     audioRef.value.pause()
-    isPlaying.value = false
+    syncPlayingState()
   }
 }
 
 // Expose playMusic và pauseMusic để component cha có thể gọi
 defineExpose({ playMusic, pauseMusic })
 
-const removeInteractionListeners = () => {
-  interactionEvents.forEach((eventName) => {
-    document.removeEventListener(eventName, tryAutoplayOnInteraction)
-  })
-}
-
-// Hàm để tự động phát nhạc khi có tương tác đầu tiên
-const tryAutoplayOnInteraction = () => {
-  if (!hasTriedAutoplay.value && audioRef.value && !isPlaying.value) {
-    audioRef.value.muted = false
-    audioRef.value.play().then(() => {
-      isPlaying.value = true
-      hasTriedAutoplay.value = true
-      fadeInVolume()
-      removeInteractionListeners()
-    }).catch(() => {
-      // Still blocked, keep listeners active
-    })
-  }
-}
-
-// Auto play when mounted (with user interaction required)
+// Keep initial state paused; user explicitly clicks to play.
 onMounted(() => {
   if (audioRef.value) {
-    // Chiến lược 1: Thử play với muted=true trước
-    audioRef.value.muted = true
-    audioRef.value.play().then(() => {
-      // Nếu play được với muted, thử unmute ngay
-      autoplayUnmuteTimer = setTimeout(() => {
-        if (!audioRef.value) return
-        audioRef.value.muted = false
-        isPlaying.value = true
-        hasTriedAutoplay.value = true
-        fadeInVolume()
-      }, 100)
-    }).catch(() => {
-      // Chiến lược 2: Không được với muted, thử unmute và play
-      audioRef.value.muted = false
-      audioRef.value.play().then(() => {
-        isPlaying.value = true
-        hasTriedAutoplay.value = true
-        fadeInVolume()
-      }).catch(() => {
-        // Chiến lược 3: Autoplay bị chặn hoàn toàn, đợi user tương tác
-        isPlaying.value = false
-        // Thêm nhiều loại event listeners để catch bất kỳ tương tác nào
-        document.addEventListener('click', tryAutoplayOnInteraction, { once: false })
-        document.addEventListener('touchstart', tryAutoplayOnInteraction, { once: false })
-        document.addEventListener('keydown', tryAutoplayOnInteraction, { once: false })
-        document.addEventListener('mousemove', tryAutoplayOnInteraction, { once: true })
-        document.addEventListener('scroll', tryAutoplayOnInteraction, { once: true })
-      })
-    })
+    bindAudioStateListeners()
+    bindFirstInteractionListeners()
+    audioRef.value.muted = false
+    audioRef.value.pause()
+    audioRef.value.currentTime = 0
+    syncPlayingState()
   }
-  
+
   // Lắng nghe sự kiện bật/tắt nhạc
   window.addEventListener('play-music', playMusic)
   window.addEventListener('stop-music', pauseMusic)
+  window.addEventListener('pageshow', handlePageShow)
+  document.addEventListener('visibilitychange', handleVisibilityChange)
 })
 
 // Cleanup khi component unmount
 onBeforeUnmount(() => {
-  removeInteractionListeners()
+  if (removeAudioStateListeners) {
+    removeAudioStateListeners()
+    removeAudioStateListeners = null
+  }
+  if (removeFirstInteractionListeners) {
+    removeFirstInteractionListeners()
+    removeFirstInteractionListeners = null
+  }
   if (fadeInTimer) {
     clearInterval(fadeInTimer)
     fadeInTimer = null
-  }
-  if (autoplayUnmuteTimer) {
-    clearTimeout(autoplayUnmuteTimer)
-    autoplayUnmuteTimer = null
   }
   if (audioRef.value) {
     audioRef.value.pause()
   }
   window.removeEventListener('play-music', playMusic)
   window.removeEventListener('stop-music', pauseMusic)
+  window.removeEventListener('pageshow', handlePageShow)
+  document.removeEventListener('visibilitychange', handleVisibilityChange)
 })
 </script>
 
