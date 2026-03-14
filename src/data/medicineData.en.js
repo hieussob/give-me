@@ -1081,7 +1081,7 @@ export const medicines = [
     scientificName: "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
     family: "Rhizophoraceae (Mangrove)",
     categoryId: "rhizophoraceae",
-    image: "https://cdn.tgdd.vn/Files/2023/01/31/1506263/tim-hieu-y-nghia-cay-bong-trang-hinh-anh-cach-trong-cham-soc-tai-nha-202301311557479763.jpg",
+    image: "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
     usedParts: "Bark, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest ripe fruits for livestock feed",
     properties: "Bitter, astringent taste, cool nature",
     meridians: "Not clearly determined",

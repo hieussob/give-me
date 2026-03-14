@@ -2470,7 +2470,7 @@ export const medicines = [
     scientificName: "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
     family: "Họ Đước (Rhizophoraceae)",
     categoryId: "rhizophoraceae",
-    image: "https://cdn.tgdd.vn/Files/2023/01/31/1506263/tim-hieu-y-nghia-cay-bong-trang-hinh-anh-cach-trong-cham-soc-tai-nha-202301311557479763.jpg",
+    image: "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
     usedParts:
       "Vỏ cây, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Quả thu hái khi chín để làm thức ăn gia súc",
     properties: "Vị đắng, chát, tính mát",
