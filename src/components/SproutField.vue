@@ -25,9 +25,11 @@ function initCanvas() {
   const c = canvas.value
   ctx = c.getContext('2d')
   resize()
-  createSprouts(70)
-  createParticles(80)
-  createMist(50)
+  // Reduce object count on mobile to maintain smooth frame rate
+  const mobile = window.innerWidth < 768
+  createSprouts(mobile ? 35 : 70)
+  createParticles(mobile ? 40 : 80)
+  createMist(mobile ? 25 : 50)
 }
 
 function resize() {

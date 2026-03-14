@@ -270,16 +270,16 @@
 
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
-import { getMedicineData } from '../data/index.js'
+import { getMedicineData, loadMedicineData } from '../data/index.js'
 import { useI18n } from '../i18n'
 
 const { t, currentLang } = useI18n()
 
-// Get medicine data based on current language
-const medicineData = computed(() => getMedicineData(currentLang.value))
-const alphabetCategories = computed(() => medicineData.value.alphabetCategories)
-const familyCategories = computed(() => medicineData.value.familyCategories)
-const medicines = computed(() => medicineData.value.medicines)
+// Reactive medicine data — starts with current language (sync), switches async on language change
+const rawMedicineData = ref(getMedicineData(currentLang.value))
+const alphabetCategories = computed(() => rawMedicineData.value.alphabetCategories)
+const familyCategories = computed(() => rawMedicineData.value.familyCategories)
+const medicines = computed(() => rawMedicineData.value.medicines)
 
 const selectedCategory = ref('all')
 const selectedMedicine = ref(null)
@@ -287,7 +287,14 @@ const sidebarOpen = ref(false)
 const searchQuery = ref('')
 const sortMode = ref('alphabet') // 'alphabet' or 'family'
 
-// Pagination
+// Enrich medicines with firstLetter without mutating source data
+const enrichedMedicines = computed(() =>
+  medicines.value.map(m => ({
+    ...m,
+    firstLetter: m.firstLetter || m.name.charAt(0).toUpperCase()
+  }))
+)
+
 const itemsPerPage = ref(20)
 const currentPage = ref(1)
 const imageObserver = ref(null)
@@ -296,15 +303,6 @@ const isLoadingMore = ref(false)
 let setupTimer = null
 let loadMoreTimer = null
 
-// Add firstLetter property to medicines if not exist
-watch(medicines, (newMedicines) => {
-  newMedicines.forEach(medicine => {
-    if (!medicine.firstLetter) {
-      medicine.firstLetter = medicine.name.charAt(0).toUpperCase()
-    }
-  })
-}, { immediate: true })
-
 // Reset selected category when switching mode
 watch(sortMode, () => {
   selectedCategory.value = 'all'
@@ -312,9 +310,15 @@ watch(sortMode, () => {
   currentPage.value = 1
 })
 
-// Reset pagination on search
-watch(searchQuery, () => {
-  currentPage.value = 1
+// Debounced search term — filter only runs after user stops typing for 200ms
+const debouncedSearch = ref('')
+let searchDebounceTimer = null
+watch(searchQuery, (val) => {
+  if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+  searchDebounceTimer = setTimeout(() => {
+    debouncedSearch.value = val
+    currentPage.value = 1
+  }, 200)
 })
 
 const currentCategories = computed(() => {
@@ -322,12 +326,12 @@ const currentCategories = computed(() => {
 })
 
 const allFilteredMedicines = computed(() => {
-  let result = medicines.value
+  let result = enrichedMedicines.value
 
   // Filter by search query
-  if (searchQuery.value.trim()) {
-    const query = searchQuery.value.toLowerCase()
-    result = result.filter(m => 
+  if (debouncedSearch.value.trim()) {
+    const query = debouncedSearch.value.toLowerCase()
+    result = result.filter(m =>
       m.name.toLowerCase().includes(query) ||
       m.scientificName.toLowerCase().includes(query) ||
       m.family.toLowerCase().includes(query)
@@ -406,6 +410,10 @@ const closeSidebar = () => {
 
 const clearSearch = () => {
   searchQuery.value = ''
+  // Cancel any pending debounce and clear immediately
+  if (searchDebounceTimer) clearTimeout(searchDebounceTimer)
+  debouncedSearch.value = ''
+  currentPage.value = 1
 }
 
 // Lazy loading images
@@ -430,7 +438,6 @@ const setupLazyLoading = () => {
             // Mark as loaded
             img.classList.add('loaded')
             imageObserver.value.unobserve(img)
-            console.log('Image loaded:', bgUrl)
           }
         }
       })
@@ -496,6 +503,10 @@ onUnmounted(() => {
     clearTimeout(loadMoreTimer)
     loadMoreTimer = null
   }
+  if (searchDebounceTimer) {
+    clearTimeout(searchDebounceTimer)
+    searchDebounceTimer = null
+  }
   if (imageObserver.value) {
     imageObserver.value.disconnect()
   }
@@ -504,8 +515,9 @@ onUnmounted(() => {
   }
 })
 
-// Watch for language changes and reset selections
-watch(currentLang, () => {
+// Watch for language changes and reload data + reset selections
+watch(currentLang, async (lang) => {
+  rawMedicineData.value = await loadMedicineData(lang)
   selectedCategory.value = 'all'
   selectedMedicine.value = null
   searchQuery.value = ''
