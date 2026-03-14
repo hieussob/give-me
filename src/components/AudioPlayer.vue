@@ -20,6 +20,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const audioRef = ref(null)
 const isPlaying = ref(false)
+const hasTriedAutoplay = ref(false)
 // Using local audio file
 const audioSrc = '/ahihi.mp3'
 
@@ -32,6 +33,21 @@ const togglePlay = () => {
     audioRef.value.play()
   }
   isPlaying.value = !isPlaying.value
+}
+
+// Hàm để set volume (bắt đầu từ 0 rồi tăng dần)
+const fadeInVolume = () => {
+  if (!audioRef.value) return
+  audioRef.value.volume = 0
+  let vol = 0
+  const fadeIn = setInterval(() => {
+    if (vol < 1) {
+      vol += 0.1
+      audioRef.value.volume = Math.min(vol, 1)
+    } else {
+      clearInterval(fadeIn)
+    }
+  }, 100)
 }
 
 // Hàm để bật nhạc từ bên ngoài
@@ -56,15 +72,56 @@ const pauseMusic = () => {
 // Expose playMusic và pauseMusic để component cha có thể gọi
 defineExpose({ playMusic, pauseMusic })
 
+// Hàm để tự động phát nhạc khi có tương tác đầu tiên
+const tryAutoplayOnInteraction = () => {
+  if (!hasTriedAutoplay.value && audioRef.value && !isPlaying.value) {
+    audioRef.value.muted = false
+    audioRef.value.play().then(() => {
+      isPlaying.value = true
+      hasTriedAutoplay.value = true
+      fadeInVolume()
+      // Remove event listeners sau khi đã phát thành công
+      document.removeEventListener('click', tryAutoplayOnInteraction)
+      document.removeEventListener('touchstart', tryAutoplayOnInteraction)
+      document.removeEventListener('keydown', tryAutoplayOnInteraction)
+      document.removeEventListener('mousemove', tryAutoplayOnInteraction)
+      document.removeEventListener('scroll', tryAutoplayOnInteraction)
+    }).catch(() => {
+      // Still blocked, keep listeners active
+    })
+  }
+}
+
 // Auto play when mounted (with user interaction required)
 onMounted(() => {
   if (audioRef.value) {
-    // Try to autoplay, but it may be blocked by browser policy
+    // Chiến lược 1: Thử play với muted=true trước
+    audioRef.value.muted = true
     audioRef.value.play().then(() => {
-      isPlaying.value = true
+      // Nếu play được với muted, thử unmute ngay
+      setTimeout(() => {
+        audioRef.value.muted = false
+        isPlaying.value = true
+        hasTriedAutoplay.value = true
+        fadeInVolume()
+      }, 100)
     }).catch(() => {
-      // Autoplay was prevented, user needs to click play button
-      isPlaying.value = false
+      // Chiến lược 2: Không được với muted, thử unmute và play
+      audioRef.value.muted = false
+      audioRef.value.play().then(() => {
+        isPlaying.value = true
+        hasTriedAutoplay.value = true
+        fadeInVolume()
+      }).catch(() => {
+        // Chiến lược 3: Autoplay bị chặn hoàn toàn, đợi user tương tác
+        isPlaying.value = false
+        // Thêm nhiều loại event listeners để catch bất kỳ tương tác nào
+        document.addEventListener('click', tryAutoplayOnInteraction, { once: false })
+        document.addEventListener('touchstart', tryAutoplayOnInteraction, { once: false })
+        document.addEventListener('keydown', tryAutoplayOnInteraction, { once: false })
+        document.addEventListener('mousemove', tryAutoplayOnInteraction, { once: true })
+        document.addEventListener('scroll', tryAutoplayOnInteraction, { once: true })
+      })
     })
   }
   
@@ -75,6 +132,12 @@ onMounted(() => {
 
 // Cleanup khi component unmount
 onBeforeUnmount(() => {
+  // Remove tất cả event listeners
+  document.removeEventListener('click', tryAutoplayOnInteraction)
+  document.removeEventListener('touchstart', tryAutoplayOnInteraction)
+  document.removeEventListener('keydown', tryAutoplayOnInteraction)
+  document.removeEventListener('mousemove', tryAutoplayOnInteraction)
+  document.removeEventListener('scroll', tryAutoplayOnInteraction)
   window.removeEventListener('play-music', playMusic)
   window.removeEventListener('stop-music', pauseMusic)
 })

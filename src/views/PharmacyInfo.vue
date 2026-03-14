@@ -901,6 +901,7 @@ watch(currentLang, () => {
   padding: 2px;
   background: linear-gradient(135deg, rgba(76, 175, 80, 0.5), rgba(102, 187, 106, 0.5));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   opacity: 0;
