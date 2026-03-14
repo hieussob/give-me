@@ -1,40 +1,40 @@
 <template>
   <div class="form-overlay" @click.self="$emit('close')">
     <div class="form-container">
-      <button class="close-btn" @click="$emit('close')" aria-label="Đóng">
+      <button class="close-btn" @click="$emit('close')" :aria-label="t('msgClose')">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M18 6L6 18M6 6l12 12"/>
         </svg>
       </button>
 
-      <h2 class="form-title">✨ Gửi tin nhắn ẩn danh</h2>
-      <p class="form-subtitle">Chia sẻ suy nghĩ của bạn sau khoảnh khắc thiền định. Hoàn toàn ẩn danh.</p>
+      <h2 class="form-title">{{ t('msgFormTitle') }}</h2>
+      <p class="form-subtitle">{{ t('msgFormSubtitle') }}</p>
 
       <form @submit.prevent="handleSubmit">
         <div class="form-group">
-          <label for="name">Tên hiển thị (tùy chọn)</label>
+          <label for="name">{{ t('msgNameLabel') }}</label>
           <input 
             type="text" 
             id="name" 
             v-model="formData.name" 
-            placeholder="Để trống nếu muốn hoàn toàn ẩn danh..."
+            :placeholder="t('msgNamePlaceholder')"
           />
         </div>
 
         <div class="form-group">
-          <label for="message">Tin nhắn</label>
+          <label for="message">{{ t('msgMessageLabel') }}</label>
           <textarea 
             id="message" 
             v-model="formData.message" 
             required
             rows="6"
-            placeholder="Viết điều gì đó bạn muốn chia sẻ..."
+            :placeholder="t('msgMessagePlaceholder')"
           ></textarea>
         </div>
 
         <button type="submit" class="submit-btn" :disabled="loading">
-          <span v-if="!loading">📨 Gửi tin nhắn</span>
-          <span v-else>⏳ Đang gửi...</span>
+          <span v-if="!loading">{{ t('msgSubmitBtn') }}</span>
+          <span v-else>{{ t('msgSendingBtn') }}</span>
         </button>
 
         <p v-if="statusMessage" class="status-message" :class="statusType">
@@ -48,8 +48,11 @@
 <script setup>
 import { ref, reactive } from 'vue'
 import emailjs from '@emailjs/browser'
+import { useI18n } from '../i18n'
 
 const emit = defineEmits(['close', 'message-sent'])
+
+const { t } = useI18n()
 
 const loading = ref(false)
 const statusMessage = ref('')
@@ -83,7 +86,7 @@ async function handleSubmit() {
   
   // Kiểm tra cấu hình trước khi gửi
   if (!isConfigured) {
-    statusMessage.value = '⚠️ Chưa cấu hình EmailJS! Xem file EMAILJS_SETUP.md để setup.'
+    statusMessage.value = t.value('msgErrorNotConfigured')
     statusType.value = 'error'
     loading.value = false
     console.error('❌ EmailJS chưa được cấu hình. Vui lòng cập nhật EMAILJS_CONFIG trong MessageForm.vue')
@@ -113,7 +116,7 @@ async function handleSubmit() {
       EMAILJS_CONFIG.serviceId,
       EMAILJS_CONFIG.templateId,
       {
-        from_name: formData.name || 'Người dùng ẩn danh',
+        from_name: formData.name || t.value('msgAnonymousUser'),
         message: formData.message,
         timestamp: timestamp,
         to_email: 'hieusob@gmail.com'
@@ -121,7 +124,7 @@ async function handleSubmit() {
     )
     
     if (response.status === 200) {
-      statusMessage.value = '✅ Tin nhắn đã được gửi thành công!'
+      statusMessage.value = t.value('msgSuccess')
       statusType.value = 'success'
       console.log('✅ Email gửi thành công!')
       
@@ -142,21 +145,18 @@ async function handleSubmit() {
     if (error.text) {
       // Lỗi từ EmailJS API
       if (error.text.includes('Invalid')) {
-        statusMessage.value = '❌ Service ID hoặc Template ID không đúng!'
+        statusMessage.value = t.value('msgErrorInvalid')
       } else if (error.text.includes('Unauthorized')) {
-        statusMessage.value = '❌ Public Key không hợp lệ!'
+        statusMessage.value = t.value('msgErrorUnauthorized')
       } else {
-        statusMessage.value = `❌ Lỗi EmailJS: ${error.text}`
+        statusMessage.value = `❌ EmailJS: ${error.text}`
       }
     } else if (error.status === 404) {
-      statusMessage.value = '❌ Không tìm thấy Service hoặc Template! Kiểm tra lại ID.'
+      statusMessage.value = t.value('msgError404')
     } else if (error.status === 403) {
-      statusMessage.value = '❌ Public Key không hợp lệ hoặc chưa được kích hoạt!'
+      statusMessage.value = t.value('msgError403')
     } else {
-      statusMessage.value = '❌ Có lỗi xảy ra! Vui lòng kiểm tra console và file EMAILJS_SETUP.md'
-    }
-    
-    statusType.value = 'error'
+      statusMessage.value = t.value('msgErrorGeneral')
     
     // Log chi tiết để debug
     console.error('Chi tiết lỗi:', {

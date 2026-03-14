@@ -86,7 +86,26 @@ export const translations = {
     message4: 'Khoảnh khắc này chỉ là tạm thời.',
     message5: 'Hãy buông bỏ những lo lắng.',
     message6: 'Bạn đang an toàn và bình yên.',
-    message7: 'Mọi thứ sẽ ổn thôi.'
+    message7: 'Mọi thứ sẽ ổn thôi.',
+
+    // MessageForm
+    msgClose: 'Đóng',
+    msgFormTitle: '✨ Gửi tin nhắn ẩn danh',
+    msgFormSubtitle: 'Chia sẻ suy nghĩ của bạn sau khoảnh khắc thiền định. Hoàn toàn ẩn danh.',
+    msgNameLabel: 'Tên hiển thị (tùy chọn)',
+    msgNamePlaceholder: 'Để trống nếu muốn hoàn toàn ẩn danh...',
+    msgMessageLabel: 'Tin nhắn',
+    msgMessagePlaceholder: 'Viết điều gì đó bạn muốn chia sẻ...',
+    msgSubmitBtn: '📨 Gửi tin nhắn',
+    msgSendingBtn: '⏳ Đang gửi...',
+    msgAnonymousUser: 'Người dùng ẩn danh',
+    msgSuccess: '✅ Tin nhắn đã được gửi thành công!',
+    msgErrorNotConfigured: '⚠️ Chưa cấu hình EmailJS! Xem file EMAILJS_SETUP.md để setup.',
+    msgErrorInvalid: '❌ Service ID hoặc Template ID không đúng!',
+    msgErrorUnauthorized: '❌ Public Key không hợp lệ!',
+    msgError404: '❌ Không tìm thấy Service hoặc Template! Kiểm tra lại ID.',
+    msgError403: '❌ Public Key không hợp lệ hoặc chưa được kích hoạt!',
+    msgErrorGeneral: '❌ Có lỗi xảy ra! Vui lòng kiểm tra console và file EMAILJS_SETUP.md'
   },
   
   en: {
@@ -175,7 +194,26 @@ export const translations = {
     message4: 'This moment is temporary.',
     message5: 'Let go of your worries.',
     message6: 'You are safe and calm.',
-    message7: 'Everything will be okay.'
+    message7: 'Everything will be okay.',
+
+    // MessageForm
+    msgClose: 'Close',
+    msgFormTitle: '✨ Send Anonymous Message',
+    msgFormSubtitle: 'Share your thoughts after your meditation moment. Completely anonymous.',
+    msgNameLabel: 'Display Name (optional)',
+    msgNamePlaceholder: 'Leave blank to stay completely anonymous...',
+    msgMessageLabel: 'Message',
+    msgMessagePlaceholder: 'Write something you want to share...',
+    msgSubmitBtn: '📨 Send Message',
+    msgSendingBtn: '⏳ Sending...',
+    msgAnonymousUser: 'Anonymous User',
+    msgSuccess: '✅ Message sent successfully!',
+    msgErrorNotConfigured: '⚠️ EmailJS not configured! See EMAILJS_SETUP.md to set up.',
+    msgErrorInvalid: '❌ Service ID or Template ID is incorrect!',
+    msgErrorUnauthorized: '❌ Invalid Public Key!',
+    msgError404: '❌ Service or Template not found! Check your IDs.',
+    msgError403: '❌ Invalid or unactivated Public Key!',
+    msgErrorGeneral: '❌ An error occurred! Please check the console and EMAILJS_SETUP.md'
   }
 }
 
