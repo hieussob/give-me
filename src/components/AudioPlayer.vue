@@ -23,6 +23,10 @@ const isPlaying = ref(false)
 const hasTriedAutoplay = ref(false)
 // Using local audio file
 const audioSrc = '/ahihi.mp3'
+const interactionEvents = ['click', 'touchstart', 'keydown', 'mousemove', 'scroll']
+
+let fadeInTimer = null
+let autoplayUnmuteTimer = null
 
 const togglePlay = () => {
   if (!audioRef.value) return
@@ -38,14 +42,22 @@ const togglePlay = () => {
 // Hàm để set volume (bắt đầu từ 0 rồi tăng dần)
 const fadeInVolume = () => {
   if (!audioRef.value) return
+  if (fadeInTimer) clearInterval(fadeInTimer)
+
   audioRef.value.volume = 0
   let vol = 0
-  const fadeIn = setInterval(() => {
+  fadeInTimer = setInterval(() => {
     if (vol < 1) {
       vol += 0.1
+      if (!audioRef.value) {
+        clearInterval(fadeInTimer)
+        fadeInTimer = null
+        return
+      }
       audioRef.value.volume = Math.min(vol, 1)
     } else {
-      clearInterval(fadeIn)
+      clearInterval(fadeInTimer)
+      fadeInTimer = null
     }
   }, 100)
 }
@@ -72,6 +84,12 @@ const pauseMusic = () => {
 // Expose playMusic và pauseMusic để component cha có thể gọi
 defineExpose({ playMusic, pauseMusic })
 
+const removeInteractionListeners = () => {
+  interactionEvents.forEach((eventName) => {
+    document.removeEventListener(eventName, tryAutoplayOnInteraction)
+  })
+}
+
 // Hàm để tự động phát nhạc khi có tương tác đầu tiên
 const tryAutoplayOnInteraction = () => {
   if (!hasTriedAutoplay.value && audioRef.value && !isPlaying.value) {
@@ -80,12 +98,7 @@ const tryAutoplayOnInteraction = () => {
       isPlaying.value = true
       hasTriedAutoplay.value = true
       fadeInVolume()
-      // Remove event listeners sau khi đã phát thành công
-      document.removeEventListener('click', tryAutoplayOnInteraction)
-      document.removeEventListener('touchstart', tryAutoplayOnInteraction)
-      document.removeEventListener('keydown', tryAutoplayOnInteraction)
-      document.removeEventListener('mousemove', tryAutoplayOnInteraction)
-      document.removeEventListener('scroll', tryAutoplayOnInteraction)
+      removeInteractionListeners()
     }).catch(() => {
       // Still blocked, keep listeners active
     })
@@ -99,7 +112,8 @@ onMounted(() => {
     audioRef.value.muted = true
     audioRef.value.play().then(() => {
       // Nếu play được với muted, thử unmute ngay
-      setTimeout(() => {
+      autoplayUnmuteTimer = setTimeout(() => {
+        if (!audioRef.value) return
         audioRef.value.muted = false
         isPlaying.value = true
         hasTriedAutoplay.value = true
@@ -132,12 +146,18 @@ onMounted(() => {
 
 // Cleanup khi component unmount
 onBeforeUnmount(() => {
-  // Remove tất cả event listeners
-  document.removeEventListener('click', tryAutoplayOnInteraction)
-  document.removeEventListener('touchstart', tryAutoplayOnInteraction)
-  document.removeEventListener('keydown', tryAutoplayOnInteraction)
-  document.removeEventListener('mousemove', tryAutoplayOnInteraction)
-  document.removeEventListener('scroll', tryAutoplayOnInteraction)
+  removeInteractionListeners()
+  if (fadeInTimer) {
+    clearInterval(fadeInTimer)
+    fadeInTimer = null
+  }
+  if (autoplayUnmuteTimer) {
+    clearTimeout(autoplayUnmuteTimer)
+    autoplayUnmuteTimer = null
+  }
+  if (audioRef.value) {
+    audioRef.value.pause()
+  }
   window.removeEventListener('play-music', playMusic)
   window.removeEventListener('stop-music', pauseMusic)
 })

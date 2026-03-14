@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onBeforeUnmount } from 'vue'
 import emailjs from '@emailjs/browser'
 import { useI18n } from '../i18n'
 
@@ -62,6 +62,7 @@ const formData = reactive({
   name: '',
   message: ''
 })
+let closeFormTimer = null
 
 // ⚠️ CẤU HÌNH EMAILJS - THAY ĐỔI 3 GIÁ TRỊ NÀY
 const EMAILJS_CONFIG = {
@@ -132,7 +133,8 @@ async function handleSubmit() {
       window.dispatchEvent(new CustomEvent('play-music'))
       
       // Reset form
-      setTimeout(() => {
+      if (closeFormTimer) clearTimeout(closeFormTimer)
+      closeFormTimer = setTimeout(() => {
         formData.name = ''
         formData.message = ''
         emit('close')
@@ -157,7 +159,10 @@ async function handleSubmit() {
       statusMessage.value = t.value('msgError403')
     } else {
       statusMessage.value = t.value('msgErrorGeneral')
-    
+    }
+
+    statusType.value = 'error'
+
     // Log chi tiết để debug
     console.error('Chi tiết lỗi:', {
       error,
@@ -168,6 +173,13 @@ async function handleSubmit() {
     loading.value = false
   }
 }
+
+onBeforeUnmount(() => {
+  if (closeFormTimer) {
+    clearTimeout(closeFormTimer)
+    closeFormTimer = null
+  }
+})
 </script>
 
 <style scoped>

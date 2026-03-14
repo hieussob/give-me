@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="header">
         <!-- Hamburger Menu Button (Mobile only) -->
-        <button @click="toggleSidebar" class="hamburger-btn" :class="{ 'hidden': sidebarOpen }">
+        <button type="button" @click="toggleSidebar" class="hamburger-btn" :class="{ 'hidden': sidebarOpen }">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 12h18M3 6h18M3 18h18"/>
           </svg>
@@ -42,7 +42,7 @@
               :placeholder="t('search')" 
               class="search-input"
             />
-            <button v-if="searchQuery" @click="clearSearch" class="clear-btn">
+            <button type="button" v-if="searchQuery" @click="clearSearch" class="clear-btn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 6L6 18M6 6l12 12"/>
               </svg>
@@ -52,6 +52,7 @@
           <!-- Mode Toggle -->
           <div class="mode-toggle">
             <button 
+              type="button"
               @click="sortMode = 'alphabet'" 
               :class="['mode-btn', { active: sortMode === 'alphabet' }]"
             >
@@ -61,6 +62,7 @@
               <span>{{ t('sortByAlphabet') }}</span>
             </button>
             <button 
+              type="button"
               @click="sortMode = 'family'" 
               :class="['mode-btn', { active: sortMode === 'family' }]"
             >
@@ -74,6 +76,7 @@
 
           <div class="category-list">
             <button 
+              type="button"
               v-for="category in currentCategories" 
               :key="category.id"
               @click="selectCategory(category.id)"
@@ -121,7 +124,7 @@
                   <h3 class="medicine-name">{{ medicine.name }}</h3>
                   <p class="medicine-scientific">{{ medicine.scientificName }}</p>
                   <p class="medicine-family">{{ medicine.family }}</p>
-                  <button class="view-detail-btn">
+                  <button type="button" class="view-detail-btn">
                     <i class="fa-solid fa-circle-info"></i>
                     <span>{{ t('viewDetail') }}</span>
                   </button>
@@ -137,7 +140,7 @@
 
           <!-- Medicine Detail -->
           <div v-else class="medicine-detail">
-            <button @click="selectedMedicine = null" class="back-btn">
+            <button type="button" @click="backToList" class="back-btn">
               <i class="fa-solid fa-arrow-left"></i>
               <span>{{ t('backToList') }}</span>
             </button>
@@ -290,6 +293,8 @@ const currentPage = ref(1)
 const imageObserver = ref(null)
 const scrollObserver = ref(null)
 const isLoadingMore = ref(false)
+let setupTimer = null
+let loadMoreTimer = null
 
 // Add firstLetter property to medicines if not exist
 watch(medicines, (newMedicines) => {
@@ -368,14 +373,27 @@ const loadMore = () => {
   if (hasMore.value && !isLoadingMore.value) {
     isLoadingMore.value = true
     currentPage.value++
-    setTimeout(() => {
+    if (loadMoreTimer) clearTimeout(loadMoreTimer)
+    loadMoreTimer = setTimeout(() => {
       isLoadingMore.value = false
     }, 300)
   }
 }
 
+const scrollToTop = () => {
+  if (typeof window !== 'undefined') {
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
+}
+
 const selectMedicine = (medicine) => {
   selectedMedicine.value = medicine
+  scrollToTop()
+}
+
+const backToList = () => {
+  selectedMedicine.value = null
+  scrollToTop()
 }
 
 const toggleSidebar = () => {
@@ -454,7 +472,6 @@ const setupInfiniteScroll = () => {
 }
 
 // Setup lazy loading after DOM updates
-let setupTimer = null
 watch(filteredMedicines, async () => {
   if (setupTimer) clearTimeout(setupTimer)
   setupTimer = setTimeout(async () => {
@@ -471,6 +488,14 @@ onMounted(async () => {
 })
 
 onUnmounted(() => {
+  if (setupTimer) {
+    clearTimeout(setupTimer)
+    setupTimer = null
+  }
+  if (loadMoreTimer) {
+    clearTimeout(loadMoreTimer)
+    loadMoreTimer = null
+  }
   if (imageObserver.value) {
     imageObserver.value.disconnect()
   }
@@ -499,6 +524,7 @@ watch(currentLang, () => {
     linear-gradient(to bottom, #0a1810, #1a2f1f);
   position: relative;
   overflow: hidden;
+  overflow-anchor: none;
 }
 
 .pharmacy-container::before {

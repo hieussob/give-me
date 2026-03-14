@@ -421,20 +421,22 @@ function draw() {
   animId = requestAnimationFrame(draw)
 }
 
+const handleResize = () => {
+  resize()
+  createTrees()
+  createBlossoms()
+  createLeaves()
+  time = 0
+}
+
 onMounted(() => {
   initCanvas()
-  window.addEventListener('resize', () => {
-    resize()
-    createTrees()
-    createBlossoms()
-    createLeaves()
-    time = 0
-  })
+  window.addEventListener('resize', handleResize)
   draw()
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', resize)
+  window.removeEventListener('resize', handleResize)
   cancelAnimationFrame(animId)
 })
 

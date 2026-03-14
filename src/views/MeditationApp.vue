@@ -130,9 +130,18 @@ const currentMessage = computed(
   () => messages.value[currentMessageIndex.value],
 );
 let messageTimer = null;
+let thoughtFadeTimer = null;
+let thoughtClearTimer = null;
+let formOpenTimer = null;
 
 function startMeditation() {
   if (!thoughtTrimmed.value) return;
+  clearInterval(timer);
+  clearInterval(messageTimer);
+  clearTimeout(thoughtFadeTimer);
+  clearTimeout(thoughtClearTimer);
+  clearTimeout(formOpenTimer);
+
   running.value = true;
   secondsLeft.value = duration;
   currentMessageIndex.value = 0;
@@ -143,8 +152,8 @@ function startMeditation() {
   window.dispatchEvent(new CustomEvent("play-music"));
 
   if (fadeOut.value) {
-    setTimeout(() => (thoughtFading.value = true), 2000);
-    setTimeout(() => {
+    thoughtFadeTimer = setTimeout(() => (thoughtFading.value = true), 2000);
+    thoughtClearTimer = setTimeout(() => {
       displayThought.value = "";
       thought.value = "";
     }, 5000);
@@ -166,13 +175,16 @@ function stopMeditation() {
   running.value = false;
   clearInterval(timer);
   clearInterval(messageTimer);
+  clearTimeout(thoughtFadeTimer);
+  clearTimeout(thoughtClearTimer);
+  clearTimeout(formOpenTimer);
   thoughtFading.value = false;
   displayThought.value = "";
 
   // Tắt nhạc khi kết thúc meditation
   window.dispatchEvent(new CustomEvent("stop-music"));
 
-  setTimeout(() => {
+  formOpenTimer = setTimeout(() => {
     showForm.value = true;
   }, 500);
 }
@@ -180,6 +192,9 @@ function stopMeditation() {
 onBeforeUnmount(() => {
   clearInterval(timer);
   clearInterval(messageTimer);
+  clearTimeout(thoughtFadeTimer);
+  clearTimeout(thoughtClearTimer);
+  clearTimeout(formOpenTimer);
 });
 </script>
 
