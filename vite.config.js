@@ -8,9 +8,11 @@ export default defineConfig({
     // Produce smaller, more cache-friendly chunks
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Vue runtime in its own chunk
-          'vendor-vue': ['vue', 'vue-router'],
+        // rolldown-vite expects manualChunks as a function
+        manualChunks(id) {
+          if (/[\\/]node_modules[\\/](vue|@vue|vue-router)[\\/]/.test(id)) {
+            return 'vendor-vue'
+          }
         }
       }
     },
