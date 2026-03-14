@@ -2862,7 +2862,7 @@ export const medicines = [
       "Coleus amboinicus Lour. (Synonym: Plectranthus amboinicus (Lour.) Spreng.)",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=800",
+    image: "https://images.unsplash.https://wikiduoclieu.org/wp-content/uploads/2019/03/hung-chanh-584.jpg",
     usedParts:
       "Lá, ngọn non (Folium et Gemma Plectranthi) tươi hoặc phơi âm khô",
     properties: "Vị cay, tính ấm",
@@ -2952,7 +2952,7 @@ export const medicines = [
     scientificName: "Ocimum gratissimum L.",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=800",
+    image: "https://vietplantex.vn/wp-content/uploads/2024/06/5tinh_dau_huong_nhu_vietplantex-3.png",
     usedParts:
       "Đoạn đầu cành có hoặc không có hoa (Herba Ocimi gratissimi). Thu hái, phơi trong bóng râm hoặc sấy nhẹ cho đến khô",
     properties: "Vị cay, tính ấm",
