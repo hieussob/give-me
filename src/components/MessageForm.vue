@@ -250,10 +250,8 @@ onBeforeUnmount(() => {
 .form-title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 8px;
-  background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px; 
+  color: #4ade80;
   background-clip: text;
 }
 
@@ -312,7 +310,7 @@ onBeforeUnmount(() => {
 .submit-btn {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
+  background-color: #09711e;
   border: none;
   border-radius: 10px;
   color: #fff;

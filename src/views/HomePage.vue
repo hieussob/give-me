@@ -126,11 +126,14 @@ const { t } = useI18n();
   position: relative;
   font-weight: 700;
   /* margin: 0 0 16px 0; */
-  background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 50%, #a78bfa 100%);
+  /* background: linear-gradient(135deg, #205699 0%, #8c8012 100%, #0db718 0%); */
+  /* background: linear-gradient(to bottom, #FFF8DC 0%, #FFD700 30%, #D4AF37 60%, #B8962E 100%); */
+  background: linear-gradient(to bottom, #F7E7A9 0%, #FFD700 40%, #C9A227 70%, #A67C00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -262,13 +265,13 @@ const { t } = useI18n();
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
-  color: #60a5fa;
+  color: #4ade80;
   transition: all 0.3s;
 }
 
 .option-card:hover .card-link {
   transform: translateX(4px);
-  color: #06b6d4;
+  color: #4ade80;
 }
 
 .pharmacy-card .card-link {

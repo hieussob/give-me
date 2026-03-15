@@ -63,13 +63,13 @@ export const translations = {
     description: 'Mô tả:',
     
     // HomePage
-    welcomeTitle: 'Chào mừng bạn đến xứ sở VyChau',
+    welcomeTitle: 'Chào mừng bạn đến với Ayuna',
     welcomeSubtitle: 'Hãy chọn hành trình của bạn',
     meditationTitle: 'Chia sẻ với tôi những suy nghĩ của bạn',
     meditationDesc: '60 giây thiền định để giải thoát những suy nghĩ của bạn',
     meditationBtn: 'Bắt đầu thư giãn',
     pharmacyTitle: 'Dược Liệu Truyền Thống',
-    pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y với giao diện 2 cột trực quan',
+    pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y',
     pharmacyBtn: 'Khám phá ngay',
     footer: 'Được làm bởi VyChau',
     
@@ -171,13 +171,13 @@ export const translations = {
     description: 'Description:',
     
     // HomePage
-    welcomeTitle: 'Welcome',
+    welcomeTitle: 'Welcome to Ayuna',
     welcomeSubtitle: 'Choose your journey',
     meditationTitle: 'Pixel Thoughts',
     meditationDesc: '60 seconds of meditation to release your thoughts',
     meditationBtn: 'Start Relaxing',
     pharmacyTitle: 'Traditional Medicines',
-    pharmacyDesc: 'Explore traditional Eastern medicines with intuitive 2-column layout',
+    pharmacyDesc: 'Explore traditional Eastern medicines',
     pharmacyBtn: 'Explore Now',
     footer: 'Made with ♥ by VyChau',
     
