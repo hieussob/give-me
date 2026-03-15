@@ -228,7 +228,10 @@ onBeforeUnmount(() => {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   */
+  background: linear-gradient(to bottom, #F7E7A9 0%, #FFD700 40%, #C9A227 70%, #A67C00 100%);
+
   border: none;
   color: white;
   cursor: pointer;

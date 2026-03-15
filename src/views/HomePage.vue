@@ -403,7 +403,8 @@ const { t } = useI18n();
   }
 
   .main-title {
-    font-size: 2rem;
+    font-size: 21px;
+    /* font-size: 2rem; */
     letter-spacing: 0.5px;
   }
 
