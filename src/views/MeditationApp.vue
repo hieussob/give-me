@@ -9,7 +9,7 @@
         :key="seed.id"
         class="floating-dandelion-seed"
         :style="seed.style"
-      ></span>
+      ><i></i></span>
     </div>
 
     <!-- <StarField :running="running" /> -->

@@ -50,7 +50,6 @@
   transform: translateX(-50%);
   background: hsla(var(--seed-hue, 205), 95%, 96%, 0.96);
   box-shadow:
-    0 0 calc(var(--seed-size, 6px) * 1.4) calc(var(--seed-size, 6px) * 0.28) hsla(var(--seed-hue, 205), 90%, 95%, 0.3),
     0 calc(var(--seed-size, 6px) * -0.84) 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.72),
     calc(var(--seed-size, 6px) * 0.6) calc(var(--seed-size, 6px) * -0.6) 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.7),
     calc(var(--seed-size, 6px) * 0.84) 0 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.68),
@@ -1001,3 +1000,22 @@
     font-size: 10px;
   }
 }
+/* Halo layer — pure radial-gradient inside a true circle, no box-shadow → no rectangle */
+.floating-dandelion-seed i {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: calc(var(--seed-size, 6px) * 5);
+  height: calc(var(--seed-size, 6px) * 5);
+  left: calc(50% - var(--seed-size, 6px) * 2.5);
+  top: calc(4% - var(--seed-size, 6px) * 2.5);
+  background: radial-gradient(
+    circle,
+    hsla(var(--seed-hue, 205), 90%, 98%, 0.28) 0%,
+    hsla(var(--seed-hue, 205), 85%, 93%, 0.14) 35%,
+    hsla(var(--seed-hue, 205), 80%, 88%, 0.05) 60%,
+    transparent 75%
+  );
+  pointer-events: none;
+}
+

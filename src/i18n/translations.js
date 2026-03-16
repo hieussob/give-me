@@ -71,7 +71,7 @@ export const translations = {
     pharmacyTitle: 'Dược Liệu Truyền Thống',
     pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y',
     pharmacyBtn: 'Khám phá ngay',
-    footer: 'Được làm bởi VyChau',
+    footer: 'Được tạo bởi VyChau',
     
     // Meditation App
     pixelThoughts: 'Chia sẻ với tôi',
