@@ -29,20 +29,12 @@
   width: var(--seed-size, 6px);
   height: calc(var(--seed-size, 6px) * 2.2);
   opacity: var(--seed-opacity, 0.5);
-  background: radial-gradient(
-    circle at 50% 18%,
-    hsla(var(--seed-hue, 205), 95%, 96%, 0.4) 0%,
-    hsla(var(--seed-hue, 205), 85%, 88%, 0.2) 36%,
-    hsla(var(--seed-hue, 205), 70%, 80%, 0) 72%
-  );
+  background: transparent;
+  border-radius: 999px;
   transform: translate3d(0, 0, 0) rotate(var(--seed-rot, 0deg));
   transform-origin: 50% 18%;
   will-change: transform, opacity;
-  box-shadow:
-    0 0 calc(var(--seed-size, 6px) * 1.8) hsla(var(--seed-hue, 205), 88%, 90%, 0.34),
-    0 0 calc(var(--seed-size, 6px) * 3.6) hsla(var(--seed-hue, 205), 80%, 84%, 0.2);
-  filter: drop-shadow(0 0 10px hsla(var(--seed-hue, 205), 85%, 86%, 0.9));
-  mix-blend-mode: screen;
+  isolation: isolate;
   animation: floatingDandelionFall var(--seed-duration, 20s) linear infinite;
   animation-delay: var(--seed-delay, 0s);
 }
@@ -58,6 +50,7 @@
   transform: translateX(-50%);
   background: hsla(var(--seed-hue, 205), 95%, 96%, 0.96);
   box-shadow:
+    0 0 calc(var(--seed-size, 6px) * 1.4) calc(var(--seed-size, 6px) * 0.28) hsla(var(--seed-hue, 205), 90%, 95%, 0.3),
     0 calc(var(--seed-size, 6px) * -0.84) 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.72),
     calc(var(--seed-size, 6px) * 0.6) calc(var(--seed-size, 6px) * -0.6) 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.7),
     calc(var(--seed-size, 6px) * 0.84) 0 0 0 hsla(var(--seed-hue, 205), 90%, 95%, 0.68),
