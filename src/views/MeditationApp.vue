@@ -3,6 +3,15 @@
     <!-- <PeachBlossomField :running="running" /> -->
     <SproutField :running="running" />
 
+    <div v-if="running" class="floating-dandelion-layer" aria-hidden="true">
+      <span
+        v-for="seed in floatingDandelions"
+        :key="seed.id"
+        class="floating-dandelion-seed"
+        :style="seed.style"
+      ></span>
+    </div>
+
     <!-- <StarField :running="running" /> -->
     <!-- Back button -->
     <router-link to="/" class="back-button">
@@ -161,6 +170,7 @@ const thoughtFading = ref(false);
 const duration = 60;
 const secondsLeft = ref(duration);
 const showForm = ref(false);
+const floatingDandelions = ref([]);
 let timer = null;
 
 const thoughtTrimmed = computed(() => thought.value.trim().length > 0);
@@ -188,6 +198,34 @@ let thoughtClearTimer = null;
 let formOpenTimer = null;
 let autoStopTimer = null;
 
+function createFloatingDandelions() {
+  const count = window.innerWidth < 768 ? 18 : 28;
+  floatingDandelions.value = Array.from({ length: count }, (_, index) => {
+    const size = 6 + Math.random() * 5;
+    const startX = Math.random() * 100;
+    const durationSec = 14 + Math.random() * 16;
+    const delaySec = -Math.random() * 24;
+    const driftX = -45 + Math.random() * 90;
+    const sway = 6 + Math.random() * 18;
+    const opacity = 0.35 + Math.random() * 0.3;
+    const rotate = Math.floor(Math.random() * 360);
+
+    return {
+      id: `seed-${index}-${Date.now()}`,
+      style: {
+        "--seed-x": `${startX.toFixed(2)}%`,
+        "--seed-size": `${size.toFixed(2)}px`,
+        "--seed-duration": `${durationSec.toFixed(2)}s`,
+        "--seed-delay": `${delaySec.toFixed(2)}s`,
+        "--seed-drift": `${driftX.toFixed(2)}px`,
+        "--seed-sway": `${sway.toFixed(2)}px`,
+        "--seed-opacity": `${opacity.toFixed(2)}`,
+        "--seed-rot": `${rotate}deg`,
+      },
+    };
+  });
+}
+
 function startMeditation() {
   if (!thoughtTrimmed.value) return;
   clearInterval(timer);
@@ -198,6 +236,7 @@ function startMeditation() {
   clearTimeout(autoStopTimer);
 
   running.value = true;
+  createFloatingDandelions();
   secondsLeft.value = duration;
   currentMessageIndex.value = 0;
   displayThought.value = thought.value;
@@ -248,6 +287,7 @@ function stopMeditation() {
   clearTimeout(formOpenTimer);
   clearTimeout(autoStopTimer);
   thoughtFading.value = false;
+  floatingDandelions.value = [];
   displayThought.value = "";
 
   // Tắt nhạc khi kết thúc meditation
