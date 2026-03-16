@@ -199,16 +199,18 @@ let formOpenTimer = null;
 let autoStopTimer = null;
 
 function createFloatingDandelions() {
-  const count = window.innerWidth < 768 ? 18 : 28;
+  const count = window.innerWidth < 768 ? 24 : 40;
   floatingDandelions.value = Array.from({ length: count }, (_, index) => {
-    const size = 6 + Math.random() * 5;
+    const size = 5 + Math.random() * 4;
     const startX = Math.random() * 100;
-    const durationSec = 14 + Math.random() * 16;
-    const delaySec = -Math.random() * 24;
-    const driftX = -45 + Math.random() * 90;
-    const sway = 6 + Math.random() * 18;
-    const opacity = 0.35 + Math.random() * 0.3;
+    const durationSec = 18 + Math.random() * 18;
+    const delaySec = -Math.random() * 30;
+    const driftX = -60 + Math.random() * 120;
+    const sway = 12 + Math.random() * 18;
+    const opacity = 0.5 + Math.random() * 0.28;
     const rotate = Math.floor(Math.random() * 360);
+    const stem = 8 + Math.random() * 8;
+    const hue = 194 + Math.random() * 24;
 
     return {
       id: `seed-${index}-${Date.now()}`,
@@ -221,6 +223,8 @@ function createFloatingDandelions() {
         "--seed-sway": `${sway.toFixed(2)}px`,
         "--seed-opacity": `${opacity.toFixed(2)}`,
         "--seed-rot": `${rotate}deg`,
+        "--seed-stem": `${stem.toFixed(2)}px`,
+        "--seed-hue": `${hue.toFixed(2)}`,
       },
     };
   });

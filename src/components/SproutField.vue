@@ -94,9 +94,9 @@ function createMist(n) {
   for (let i = 0; i < n; i++) {
     mist.push({
       x: Math.random() * width,
-      y: -Math.random() * height * 0.5, // Bắt đầu từ trên cao
+      y: height + Math.random() * height * 0.35, // Bắt đầu từ phía dưới để bay lên
       size: Math.random() * 8 + 3,
-      speedY: Math.random() * 0.8 + 0.4, // Tốc độ rơi nhanh hơn
+      speedY: -(Math.random() * 0.8 + 0.4), // Tốc độ bay lên
       speedX: (Math.random() - 0.5) * 0.5,
       alpha: Math.random() * 0.5 + 0.3, // Alpha cao hơn để thấy rõ
       pulsePhase: Math.random() * Math.PI * 2,
@@ -322,15 +322,15 @@ function drawParticles() {
 }
 
 function drawMist() {
-  // Vẽ sương mù và giọt sương rơi từ trên xuống
+  // Vẽ sương mù và giọt sương bay từ dưới lên
   for (const m of mist) {
     m.y += m.speedY
     m.x += m.speedX + Math.sin(time * 0.5 + m.y * 0.01) * 0.3
     m.pulsePhase += m.pulseSpeed
     
     // Reset khi ra khỏi màn hình
-    if (m.y > height + m.size * 2) {
-      m.y = -m.size * 2
+    if (m.y < -m.size * 2) {
+      m.y = height + m.size * 2
       m.x = Math.random() * width
     }
     if (m.x < -m.size) m.x = width + m.size
