@@ -49,9 +49,62 @@
       </div>
 
       <div v-else class="meditation">
-        <!-- Thought text inside sun - fades into center glow -->
+        <!-- Dandelion shrinks and dissolves into background -->
         <div class="thought-sun" :class="{ fading: fadeOut && thoughtFading }">
-          <div class="sun-glow"></div>
+          <div class="dandelion-wrap">
+            <!-- Ambient glow behind the dandelion -->
+            <div class="dandel-glow"></div>
+            <!-- Dandelion SVG -->
+            <svg class="dandelion-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Stem -->
+              <path d="M100 172 Q96 155 100 118" stroke="rgba(251,191,36,0.7)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              <!-- Spokes (center 100,118) -->
+              <g class="dandelion-spokes">
+                <line x1="100" y1="118" x2="100" y2="56"  stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="140" y2="72"  stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="156" y2="100" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="148" y2="134" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="124" y2="156" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="76"  y2="156" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="52"  y2="134" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="44"  y2="100" stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <line x1="100" y1="118" x2="60"  y2="72"  stroke="rgba(251,191,36,0.8)" stroke-width="1.3"/>
+                <!-- Half-length spokes between -->
+                <line x1="100" y1="118" x2="122" y2="62"  stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="150" y2="86"  stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="144" y2="118" stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="114" y2="148" stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="86"  y2="148" stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="56"  y2="118" stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="50"  y2="86"  stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+                <line x1="100" y1="118" x2="78"  y2="62"  stroke="rgba(251,191,36,0.55)" stroke-width="1"/>
+              </g>
+              <!-- Seed heads at end of each spoke -->
+              <g class="dandelion-seeds">
+                <circle cx="100" cy="56"  r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="140" cy="72"  r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="156" cy="100" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="148" cy="134" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="124" cy="156" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="76"  cy="156" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="52"  cy="134" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="44"  cy="100" r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="60"  cy="72"  r="4.5" fill="rgba(254,240,138,0.95)"/>
+                <circle cx="122" cy="62"  r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="150" cy="86"  r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="144" cy="118" r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="114" cy="148" r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="86"  cy="148" r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="56"  cy="118" r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="50"  cy="86"  r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <circle cx="78"  cy="62"  r="3.2" fill="rgba(254,240,138,0.8)"/>
+                <!-- Center -->
+                <circle cx="100" cy="118" r="7" fill="rgba(251,191,36,1)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="dandel-mist" aria-hidden="true"></div>
+          <div class="dandel-snow-merge" aria-hidden="true"></div>
           <p class="thought-text">{{ displayThought }}</p>
         </div>
 
@@ -133,6 +186,7 @@ let messageTimer = null;
 let thoughtFadeTimer = null;
 let thoughtClearTimer = null;
 let formOpenTimer = null;
+let autoStopTimer = null;
 
 function startMeditation() {
   if (!thoughtTrimmed.value) return;
@@ -141,6 +195,7 @@ function startMeditation() {
   clearTimeout(thoughtFadeTimer);
   clearTimeout(thoughtClearTimer);
   clearTimeout(formOpenTimer);
+  clearTimeout(autoStopTimer);
 
   running.value = true;
   secondsLeft.value = duration;
@@ -152,16 +207,29 @@ function startMeditation() {
   window.dispatchEvent(new CustomEvent("play-music"));
 
   if (fadeOut.value) {
-    thoughtFadeTimer = setTimeout(() => (thoughtFading.value = true), 2000);
+    // Fade out text after 5s; dandelion shrinks on its own via 60s CSS animation
+    thoughtFadeTimer = setTimeout(() => (thoughtFading.value = true), 5000);
     thoughtClearTimer = setTimeout(() => {
       displayThought.value = "";
       thought.value = "";
-    }, 5000);
+    }, 9000);
   }
 
   timer = setInterval(() => {
-    if (secondsLeft.value > 0) secondsLeft.value--;
-    else stopMeditation();
+    if (secondsLeft.value > 1) {
+      secondsLeft.value--;
+      return;
+    }
+
+    // Hit 0 exactly at 60s, then keep scene briefly for snow-merge dissolve.
+    secondsLeft.value = 0;
+    clearInterval(timer);
+    timer = null;
+
+    const dissolveHoldMs = fadeOut.value ? 1600 : 0;
+    autoStopTimer = setTimeout(() => {
+      stopMeditation();
+    }, dissolveHoldMs);
   }, 1000);
 
   messageTimer = setInterval(() => {
@@ -178,6 +246,7 @@ function stopMeditation() {
   clearTimeout(thoughtFadeTimer);
   clearTimeout(thoughtClearTimer);
   clearTimeout(formOpenTimer);
+  clearTimeout(autoStopTimer);
   thoughtFading.value = false;
   displayThought.value = "";
 
@@ -195,6 +264,7 @@ onBeforeUnmount(() => {
   clearTimeout(thoughtFadeTimer);
   clearTimeout(thoughtClearTimer);
   clearTimeout(formOpenTimer);
+  clearTimeout(autoStopTimer);
 });
 </script>
 

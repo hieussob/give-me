@@ -78,7 +78,7 @@ export const translations = {
     thoughtPlaceholder: 'Nhập những gì đang trong tâm trí bạn...',
     fadeAway: 'Mờ dần',
     releaseBtn: 'Giải phóng',
-    stopBtn: 'Dừng',
+    stopBtn: 'Bỏ qua',
     meditationFooter: 'Được làm với ♥ — thư giãn 60 giây',
     message1: 'Hãy hít thở sâu...',
     message2: 'Chú ý đến thế giới xung quanh bạn.',
