@@ -16,6 +16,7 @@ const props = defineProps({
 const canvas = ref(null)
 const wrap = ref(null)
 let ctx, width, height, animId
+let resizeObserver = null
 let sprouts = []
 let particles = []
 let mist = []
@@ -32,15 +33,50 @@ function initCanvas() {
   createMist(mobile ? 25 : 50)
 }
 
+function remapSceneToViewport(oldWidth, oldHeight, newWidth, newHeight) {
+  if (!oldWidth || !oldHeight) return
+
+  const scaleX = newWidth / oldWidth
+  const scaleY = newHeight / oldHeight
+
+  for (const s of sprouts) {
+    s.x *= scaleX
+    s.y *= scaleY
+    // Keep plant roots anchored near the new bottom edge.
+    s.baseY = newHeight - 20
+  }
+
+  for (const p of particles) {
+    p.x *= scaleX
+    p.y *= scaleY
+  }
+
+  for (const m of mist) {
+    m.x *= scaleX
+    m.y *= scaleY
+  }
+}
+
 function resize() {
   const c = canvas.value
+  if (!c || !wrap.value || !ctx) return
+
+  const oldWidth = width
+  const oldHeight = height
+
   width = wrap.value.clientWidth
   height = wrap.value.clientHeight
-  c.width = width * devicePixelRatio
-  c.height = height * devicePixelRatio
+
+  const dpr = window.devicePixelRatio || 1
+  c.width = Math.floor(width * dpr)
+  c.height = Math.floor(height * dpr)
   c.style.width = width + 'px'
   c.style.height = height + 'px'
-  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0)
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+
+  if (sprouts.length || particles.length || mist.length) {
+    remapSceneToViewport(oldWidth, oldHeight, width, height)
+  }
 }
 
 function createSprouts(n) {
@@ -430,11 +466,22 @@ function draw() {
 onMounted(() => {
   initCanvas()
   window.addEventListener('resize', resize)
+
+  // Handles zoom/layout changes that don't always emit classic resize reliably.
+  resizeObserver = new ResizeObserver(() => {
+    resize()
+  })
+  resizeObserver.observe(wrap.value)
+
   draw()
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', resize)
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+    resizeObserver = null
+  }
   cancelAnimationFrame(animId)
 })
 
