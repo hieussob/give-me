@@ -658,14 +658,15 @@ watch(currentLang, async (lang) => {
 
 .title {
   font-size: 3rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 50%, #81c784 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 700;
+  color: #7adf86;
   margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
-  font-family: none;
+  font-family: inherit;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .subtitle {
