@@ -36,6 +36,12 @@
     <main class="panel" :class="{ 'meditation-mode': running }">
       <h1 class="title" v-if="!running">{{ t("pixelThoughts") }}</h1>
 
+      <transition v-if="running" name="slogan" mode="out-in">
+        <p class="message" :key="messageKey">
+          {{ displayMessage }}
+        </p>
+      </transition>
+
       <div
         class="thought-sun"
         :class="{ fading: fadeOut && thoughtFading, preview: !running }"
@@ -119,13 +125,6 @@
       </div>
 
       <div v-if="running" class="meditation">
-        <!-- Slogan animation - scales up gradually -->
-        <transition name="slogan" mode="out-in">
-          <p class="message" :key="messageKey">
-            {{ displayMessage }}
-          </p>
-        </transition>
-
         <div class="timer" style="opacity: 0;">
           <svg viewBox="0 0 36 36" class="circular-chart">
             <path
@@ -149,7 +148,7 @@
         </button>
       </div>
 
-      <p class="footer" v-if="!running">{{ t("meditationFooter") }}</p>
+      <p class="footer" style="display: none;" v-if="!running">{{ t("meditationFooter") }}</p>
     </main>
   </div>
 </template>
@@ -314,7 +313,7 @@ function startMeditation() {
         scheduleClosingSequence();
       }
     }
-  }, 4500);
+  }, 4000);
 }
 
 function scheduleClosingSequence() {

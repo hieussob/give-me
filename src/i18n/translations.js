@@ -75,7 +75,7 @@ export const translations = {
     
     // Meditation App
     pixelThoughts: 'Hãy đặt suy nghĩ khiến bạn bận tâm vào bồ công anh',
-    thoughtPlaceholder: 'Điều gì đang làm bạn phiền lòng?',
+    thoughtPlaceholder: 'Điều gì khiến bạn phiền lòng?',
     fadeAway: 'Mờ dần',
     releaseBtn: 'Gửi đi',
     stopBtn: 'Bỏ qua',
