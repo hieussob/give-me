@@ -66,10 +66,10 @@ export const translations = {
     welcomeTitle: 'Chào mừng bạn đến với Ayuna',
     welcomeSubtitle: 'Hãy chọn hành trình của bạn',
     meditationTitle: 'Chia sẻ với tôi những suy nghĩ của bạn',
-    meditationDesc: '60 giây thiền định để giải thoát những suy nghĩ của bạn',
+    meditationDesc: 'Gửi đi những suy nghĩ của bạn 60 giây tĩnh lặng để buông bỏ những điều khiến bạn nặng lòng',
     meditationBtn: 'Bắt đầu thư giãn',
-    pharmacyTitle: 'Dược Liệu Truyền Thống',
-    pharmacyDesc: 'Khám phá kho tàng dược liệu Đông y',
+    pharmacyTitle: 'Dược liệu truyền thống',
+    pharmacyDesc: 'Khám phá kho tàng dược liệu y học cổ truyền',
     pharmacyBtn: 'Khám phá ngay',
     footer: 'Được tạo bởi VyChau',
     
