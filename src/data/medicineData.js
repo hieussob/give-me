@@ -20,65 +20,220 @@ export const alphabetCategories = [
 // Danh mục dược liệu theo họ thực vật
 export const familyCategories = [
   { id: "all", name: "Tất cả dược liệu", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "araliaceae", name: "Họ Ngũ gia bì", icon: "fa-solid fa-tree", count: 0 },
+  {
+    id: "araliaceae",
+    name: "Họ Ngũ gia bì",
+    icon: "fa-solid fa-tree",
+    count: 0,
+  },
   { id: "fabaceae", name: "Họ Đậu", icon: "fa-solid fa-seedling", count: 0 },
   { id: "apiaceae", name: "Họ Hoa tán", icon: "fa-solid fa-spa", count: 0 },
   { id: "asteraceae", name: "Họ Cúc", icon: "fa-solid fa-sun", count: 0 },
-  { id: "zingiberaceae", name: "Họ Gừng", icon: "fa-solid fa-mortar-pestle", count: 0 },
+  {
+    id: "zingiberaceae",
+    name: "Họ Gừng",
+    icon: "fa-solid fa-mortar-pestle",
+    count: 0,
+  },
   { id: "lamiaceae", name: "Họ Bạc hà", icon: "fa-solid fa-leaf", count: 0 },
   { id: "apocynaceae", name: "Họ Trúc đào", icon: "fa-solid fa-sun", count: 0 },
   { id: "rubiaceae", name: "Họ Cà phê", icon: "fa-solid fa-mug-hot", count: 0 },
-  { id: "stemonaceae", name: "Họ Bách bộ", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "stemonaceae",
+    name: "Họ Bách bộ",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "myrtaceae", name: "Họ Sim", icon: "fa-solid fa-leaf", count: 0 },
   { id: "brassicaceae", name: "Họ Cải", icon: "fa-solid fa-carrot", count: 0 },
   { id: "araceae", name: "Họ Ráy", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "menispermaceae", name: "Họ Tiết dê", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "menispermaceae",
+    name: "Họ Tiết dê",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "rutaceae", name: "Họ Cam", icon: "fa-solid fa-lemon", count: 0 },
   { id: "malvaceae", name: "Họ Bông", icon: "fa-solid fa-heart", count: 0 },
   { id: "solanaceae", name: "Họ Cà", icon: "fa-solid fa-pepper-hot", count: 0 },
-  { id: "plantaginaceae", name: "Họ Mã đề", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "cibotiaceae", name: "Họ Dương xỉ", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "plantaginaceae",
+    name: "Họ Mã đề",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "cibotiaceae",
+    name: "Họ Dương xỉ",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "vitaceae", name: "Họ Nho", icon: "fa-solid fa-wine-bottle", count: 0 },
-  { id: "moringaceae", name: "Họ Chùm ngây", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "phyllanthaceae", name: "Họ Diệp hạ châu", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "moringaceae",
+    name: "Họ Chùm ngây",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "phyllanthaceae",
+    name: "Họ Diệp hạ châu",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "musaceae", name: "Họ Chuối", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "erythroxylaceae", name: "Họ Coca", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "euphorbiaceae", name: "Họ Thầu dầu", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "erythroxylaceae",
+    name: "Họ Coca",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "euphorbiaceae",
+    name: "Họ Thầu dầu",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "poaceae", name: "Họ Lúa", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "amaranthaceae", name: "Họ Rau dền", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "anacardiaceae", name: "Họ Đào lộn hột", icon: "fa-solid fa-apple-whole", count: 0 },
-  { id: "polygonaceae", name: "Họ Rau răm", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "polypodiaceae", name: "Họ Dương xỉ thận", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "moraceae", name: "Họ Dâu tằm", icon: "fa-solid fa-apple-whole", count: 0 },
+  {
+    id: "amaranthaceae",
+    name: "Họ Rau dền",
+    icon: "fa-solid fa-wheat-awn",
+    count: 0,
+  },
+  {
+    id: "anacardiaceae",
+    name: "Họ Đào lộn hột",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
+  {
+    id: "polygonaceae",
+    name: "Họ Rau răm",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "polypodiaceae",
+    name: "Họ Dương xỉ thận",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "moraceae",
+    name: "Họ Dâu tằm",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
   { id: "saururaceae", name: "Họ Lá giấp", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "bromeliaceae", name: "Họ Dứa", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "asparagaceae", name: "Họ Măng tây", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "bromeliaceae",
+    name: "Họ Dứa",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "asparagaceae",
+    name: "Họ Măng tây",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "urticaceae", name: "Họ Gai", icon: "fa-solid fa-leaf", count: 0 },
   { id: "oleaceae", name: "Họ Nhài", icon: "fa-solid fa-spa", count: 0 },
   { id: "acanthaceae", name: "Họ Ô rô", icon: "fa-solid fa-leaf", count: 0 },
   { id: "cyperaceae", name: "Họ Cói", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "oxalidaceae", name: "Họ Chua me đất", icon: "fa-solid fa-star", count: 0 },
-  { id: "caprifoliaceae", name: "Họ Cơm cháy", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "oxalidaceae",
+    name: "Họ Chua me đất",
+    icon: "fa-solid fa-star",
+    count: 0,
+  },
+  {
+    id: "caprifoliaceae",
+    name: "Họ Cơm cháy",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "pandanaceae", name: "Họ Dứa dại", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "piperaceae", name: "Họ Hồ tiêu", icon: "fa-solid fa-pepper-hot", count: 0 },
-  { id: "passifloraceae", name: "Họ Lạc tiên", icon: "fa-solid fa-clover", count: 0 },
-  { id: "bignoniaceae", name: "Họ Chùm ớt", icon: "fa-solid fa-fire", count: 0 },
-  { id: "commelinaceae", name: "Họ Thài lài", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "asphodelaceae", name: "Họ Lô hội", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "piperaceae",
+    name: "Họ Hồ tiêu",
+    icon: "fa-solid fa-pepper-hot",
+    count: 0,
+  },
+  {
+    id: "passifloraceae",
+    name: "Họ Lạc tiên",
+    icon: "fa-solid fa-clover",
+    count: 0,
+  },
+  {
+    id: "bignoniaceae",
+    name: "Họ Chùm ớt",
+    icon: "fa-solid fa-fire",
+    count: 0,
+  },
+  {
+    id: "commelinaceae",
+    name: "Họ Thài lài",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "asphodelaceae",
+    name: "Họ Lô hội",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "lauraceae", name: "Họ Long não", icon: "fa-solid fa-tree", count: 0 },
-  { id: "lythraceae", name: "Họ Bằng lăng", icon: "fa-solid fa-star", count: 0 },
-  { id: "loganiaceae", name: "Họ Mã tiền", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "lythraceae",
+    name: "Họ Bằng lăng",
+    icon: "fa-solid fa-star",
+    count: 0,
+  },
+  {
+    id: "loganiaceae",
+    name: "Họ Mã tiền",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "costaceae", name: "Họ Mía dò", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "amaryllidaceae", name: "Họ Thủy tiên", icon: "fa-solid fa-spa", count: 0 },
+  {
+    id: "amaryllidaceae",
+    name: "Họ Thủy tiên",
+    icon: "fa-solid fa-spa",
+    count: 0,
+  },
   { id: "iridaceae", name: "Họ Lay dơn", icon: "fa-solid fa-clover", count: 0 },
   { id: "nelumbonaceae", name: "Họ Sen", icon: "fa-solid fa-spa", count: 0 },
   { id: "combretaceae", name: "Họ Bàng", icon: "fa-solid fa-tree", count: 0 },
-  { id: "rhamnaceae", name: "Họ Táo", icon: "fa-solid fa-apple-whole", count: 0 },
-  { id: "sapotaceae", name: "Họ Hồng xiêm", icon: "fa-solid fa-apple-whole", count: 0 },
+  {
+    id: "rhamnaceae",
+    name: "Họ Táo",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
+  {
+    id: "sapotaceae",
+    name: "Họ Hồng xiêm",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
   { id: "acoraceae", name: "Họ Xương bồ", icon: "fa-solid fa-leaf", count: 0 },
   { id: "theaceae", name: "Họ Chè", icon: "fa-solid fa-mug-hot", count: 0 },
-  { id: "crassulaceae", name: "Họ Thuốc bỏng", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "boraginaceae", name: "Họ Vòi voi", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "crassulaceae",
+    name: "Họ Thuốc bỏng",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "boraginaceae",
+    name: "Họ Vòi voi",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "rhizophoraceae", name: "Họ Đước", icon: "fa-solid fa-tree", count: 0 },
 ];
 
@@ -345,7 +500,8 @@ export const medicines = [
       "Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.",
     family: "Họ Hoa tán (Apiaceae)",
     categoryId: "apiaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/10/cay-Bach-chi-e1601816663847.jpg",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/10/cay-Bach-chi-e1601816663847.jpg",
     usedParts:
       "Rễ củ (thu hoạch vào mùa hạ khi lá bắt đầu úa vàng, phơi nắng hay sấy ở 40-50°C đến khô)",
     properties: "Vị cay, hơi đắng, tính ấm",
@@ -388,7 +544,8 @@ export const medicines = [
     scientificName: "Eucalyptus camaldulensis Dehnh.",
     family: "Họ Sim (Myrtaceae)",
     categoryId: "myrtaceae",
-    image: "https://xuongtretruc.com/wp-content/uploads/2020/12/cay-bach-dang-1.jpg",
+    image:
+      "https://xuongtretruc.com/wp-content/uploads/2020/12/cay-bach-dang-1.jpg",
     usedParts: "Tinh dầu chiết từ lá",
     properties: "Vị cay, tính mát",
     meridians: "Quy kinh phế",
@@ -434,7 +591,8 @@ export const medicines = [
     scientificName: "Sinapis alba L. (Brassica hirta Moench)",
     family: "Họ Cải (Brassicaceae)",
     categoryId: "brassicaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/06/bach-gioi-tu-2-2.jpg",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/06/bach-gioi-tu-2-2.jpg",
     usedParts: "Hạt (thu hái vào tháng 3-5 khi quả già, lấy hạt phơi khô)",
     properties: "Vị cay nóng, tính ấm",
     meridians: "Quy kinh phế",
@@ -478,7 +636,8 @@ export const medicines = [
     scientificName: "Scleromitrion diffusum (Willd.) R.J.Wang",
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
-    image: "https://nhathuocthanthien.com.vn/wp-content/uploads/2019/09/dgm_nttt_bach-hoa-xa-thiet-thao.jpg",
+    image:
+      "https://nhathuocthanthien.com.vn/wp-content/uploads/2019/09/dgm_nttt_bach-hoa-xa-thiet-thao.jpg",
     usedParts: "Toàn cây (thu hái phơi khô)",
     properties: "Vị đắng, chua, tính hàn",
     meridians: "Quy kinh phế, can, bàng quang",
@@ -518,7 +677,8 @@ export const medicines = [
     scientificName: "Typhonium trilobatum (L.) Schott.",
     family: "Họ Ráy (Araceae)",
     categoryId: "araceae",
-    image: "https://cdnv2.tgdd.vn/mwg-static/common/News/1408342/lieu-dung-cach-dung-luu-y-khi-su-dung-ban-ha-6.jpg",
+    image:
+      "https://cdnv2.tgdd.vn/mwg-static/common/News/1408342/lieu-dung-cach-dung-luu-y-khi-su-dung-ban-ha-6.jpg",
     usedParts:
       "Thân rễ già được chế biến thành phiến khô (thu hoạch vào tháng 8-9, khi cây lụi)",
     properties: "Vị nhạt, gây tê lưỡi, tính ấm",
@@ -586,7 +746,8 @@ export const medicines = [
     scientificName: "Citrus maxima (Burm.) Merr.",
     family: "Họ Cam (Rutaceae)",
     categoryId: "rutaceae",
-    image: "https://media.vov.vn/sites/default/files/styles/large/public/2022-12/4_79.jpg",
+    image:
+      "https://media.vov.vn/sites/default/files/styles/large/public/2022-12/4_79.jpg",
     usedParts: "Vỏ quả (ngoài ra còn dùng lá, dịch quả, hạt)",
     properties: "Vị đắng, cay, tính ấm",
     meridians: "Quy kinh phế, tỳ, vị",
@@ -668,13 +829,119 @@ export const medicines = [
       "Bụp Giấm (còn gọi Cây giấm, Đay nhật) là cây sống một năm thuộc họ Bông có vị chua, giàu vitamin C và acid hữu cơ. Đài hoa màu đỏ sáng dùng làm rau, trà, nước giải khát, chữa huyết áp cao và bệnh tim mạch.",
   },
   {
+    id: 143,
+    name: "Bồ Công Anh",
+    firstLetter: "B",
+    scientificName: "Taraxacum officinale Weber ex F.H.Wigg. (Taraxacum spp.)",
+    synonyms: ["Rau bồ cóc", "Diếp hoang", "Rau lưỡi cày"],
+
+    family: "Họ Cúc (Asteraceae)",
+    categoryId: "asteraceae",
+
+    image:
+      "https://quatangphale.com.vn/uploads/tin-tuc-su-kien/2019_06/y-nghia-hoa-bo-cong-anh-h4.jpg",
+
+    usedParts:
+      "Toàn cây (thu hái khi cây ra hoa, rửa sạch, dùng tươi hoặc phơi khô)",
+
+    properties: "Vị đắng, hơi ngọt, tính mát",
+
+    meridians: "Quy kinh can, vị",
+
+    mainIngredients: [
+      "Triterpenoid (taraxasterol)",
+      "Flavonoid",
+      "Inulin",
+      "Acid phenolic",
+      "Sesquiterpene lactone (chất đắng)",
+      "Vitamin (A, C)",
+    ],
+
+    pharmacology: [
+      "Kháng viêm",
+      "Kháng khuẩn nhẹ",
+      "Lợi mật (tốt cho gan mật)",
+      "Chống oxy hóa",
+      "Lợi tiểu",
+    ],
+
+    uses: [
+      "Thanh nhiệt giải độc",
+      "Lợi tiểu",
+      "Tiêu viêm",
+      "Hỗ trợ tiêu hóa",
+      "Mát gan",
+    ],
+
+    indications: [
+      "Mụn nhọt, viêm da nhẹ",
+      "Viêm họng",
+      "Khó tiêu",
+      "Phù nhẹ",
+      "Hỗ trợ viêm tuyến vú (theo y học cổ truyền)",
+    ],
+
+    dosage:
+      "10-20g khô (30-60g tươi), sắc uống hoặc hãm như trà; dùng ngoài: giã nát đắp",
+
+    preparationMethods: [
+      "Sắc uống",
+      "Hãm trà",
+      "Giã đắp ngoài",
+      "Nấu nước uống hàng ngày",
+    ],
+
+    contraindications: [
+      "Tỳ vị hư hàn (dễ tiêu chảy, lạnh bụng) thận trọng",
+      "Người dị ứng họ Cúc (Asteraceae) cần lưu ý",
+      "Phụ nữ mang thai nên dùng theo tư vấn chuyên môn",
+    ],
+
+    sideEffects: [
+      "Có thể gây rối loạn tiêu hóa nhẹ nếu dùng nhiều",
+      "Hiếm gặp dị ứng (phát ban)",
+    ],
+
+    interactions: [
+      "Có thể tăng tác dụng thuốc lợi tiểu",
+      "Thận trọng khi dùng cùng thuốc điều trị gan mật",
+    ],
+
+    origin:
+      "Có nguồn gốc ở vùng ôn đới Bắc bán cầu; mọc hoang ở châu Âu, châu Á, Bắc Mỹ; tại Việt Nam gặp ở vùng khí hậu mát",
+
+    distributionInVietnam: "Chủ yếu ở vùng núi phía Bắc, nơi có khí hậu mát",
+
+    description:
+      "Cây thân thảo sống lâu năm, lá mọc sát đất, phiến lá xẻ răng cưa sâu. Cụm hoa hình đầu màu vàng, khi già tạo quả có lông trắng phát tán theo gió. Toàn cây được dùng làm dược liệu với tác dụng thanh nhiệt, giải độc, lợi tiểu và hỗ trợ tiêu hóa.",
+
+    identification: [
+      "Hoa vàng, mọc đơn độc trên cuống dài",
+      "Lá xẻ sâu giống răng cưa",
+      "Có nhựa trắng khi bẻ",
+    ],
+
+    harvestTime: "Thu hái tốt nhất khi cây đang ra hoa",
+
+    storage: "Phơi khô, bảo quản nơi khô ráo, tránh ẩm mốc",
+
+    note: "Cần phân biệt với loài thường gọi là bồ công anh Việt Nam là :contentReference[oaicite:0]{index=0}, khác với :contentReference[oaicite:1]{index=1} về đặc điểm và thành phần dược lý.",
+
+    rating: {
+      safety: 4, // độ an toàn (1-5)
+      effectiveness: 4, // hiệu quả (1-5)
+      popularity: 5, // độ phổ biến
+    },
+  },
+  {
     id: 31,
     name: "Cà Độc Dược",
     firstLetter: "C",
     scientificName: "Datura metel L.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://login.medlatec.vn//ImagePath/images/20220801/20220801_Mot-so-dac-diem-cua-cay-ca-doc-duoc.jpg",
+    image:
+      "https://login.medlatec.vn//ImagePath/images/20220801/20220801_Mot-so-dac-diem-cua-cay-ca-doc-duoc.jpg",
     usedParts:
       "Lá, hoa (thu hái vào tháng 5-6, 8-10, phơi hay sấy khô), hạt (từ quả chín nga màu nâu)",
     properties: "Vị hơi đắng, tính ấm, có độc",
@@ -718,7 +985,8 @@ export const medicines = [
     scientificName: "Solanum procumbens Lour.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
     usedParts: "Toàn thân trên mặt đất (thu hái quanh năm, phơi khô)",
     properties: "Vị hơi đắng",
     meridians: "Quy kinh phế, can",
@@ -803,7 +1071,8 @@ export const medicines = [
     scientificName: "Scoparia dulcis L.",
     family: "Họ Mã đề (Plantaginaceae)",
     categoryId: "plantaginaceae",
-    image: "https://images.baodantoc.vn/uploads/2020/Th%C3%A1ng_12/Ng%C3%A0y-28/Thanh/135-1-b7df7ffeb7cca404c7509c622f7dc092.jpg",
+    image:
+      "https://images.baodantoc.vn/uploads/2020/Th%C3%A1ng_12/Ng%C3%A0y-28/Thanh/135-1-b7df7ffeb7cca404c7509c622f7dc092.jpg",
     usedParts:
       "Toàn cây kể cả rễ (thu hái vào mùa xuân hè, rửa sạch, thái nhỏ dùng tươi hoặc phơi sấy khô)",
     properties: "Vị ngọt (đắng sau hơi ngọt)",
@@ -851,7 +1120,8 @@ export const medicines = [
     scientificName: "Cibotium barometz (L.) J. Sm.",
     family: "Họ Dương xỉ (Cibotiaceae)",
     categoryId: "cibotiaceae",
-    image: "https://www.vinmec.com/static/uploads/20210629_080129_474624_cay_cau_tich_max_1800x1800_jpg_6fca08e59c.jpg",
+    image:
+      "https://www.vinmec.com/static/uploads/20210629_080129_474624_cay_cau_tich_max_1800x1800_jpg_6fca08e59c.jpg",
     usedParts:
       "Thân rễ (Rhizoma Cibotii) đã chế biến và làm khô (thu hái mùa hạ hoặc đông, cạo hoặc đốt hết lông, rửa sạch, đồ mềm, thái phiến và phơi khô)",
     properties: "Vị ngọt, tính ấm",
@@ -895,7 +1165,8 @@ export const medicines = [
     scientificName: "Lycium barbarum L. và Lycium chinense Mill.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://bizweb.dktcdn.net/100/392/499/products/1-4-600x480.jpg?v=1598281871147",
+    image:
+      "https://bizweb.dktcdn.net/100/392/499/products/1-4-600x480.jpg?v=1598281871147",
     usedParts:
       "Quả (Câu kỷ tử - thu mùa hè/thu khi quả đỏ vàng, phơi âm can rồi phơi nắng), Vỏ rễ (Địa cốt bì - thu đầu xuân/cuối thu, bóc vỏ rễ phơi khô)",
     properties: "Quả: vị ngọt, tính bình. Vỏ rễ: vị ngọt, đạm, tính hàn",
@@ -940,7 +1211,8 @@ export const medicines = [
     scientificName: "Citrus × aurantiifolia (Christm.) Swingle",
     family: "Họ Cam (Rutaceae)",
     categoryId: "rutaceae",
-    image: "https://camnangcaytrong.com/Uploads/UserFiles/images/Qua%20chanh%20ta.jpg",
+    image:
+      "https://camnangcaytrong.com/Uploads/UserFiles/images/Qua%20chanh%20ta.jpg",
     usedParts:
       "Lá và quả (lá thu hái quanh năm dùng tươi hoặc phơi trong râm, quả thu hái gần như quanh năm)",
     properties: "Lá: vị the, đắng, tính bình. Quả: vị chua, tính mát",
@@ -990,7 +1262,8 @@ export const medicines = [
     scientificName: "Cissus trilobus (Lour.) Merr.",
     family: "Họ Nho (Vitaceae)",
     categoryId: "vitaceae",
-    image: "https://file.hstatic.net/1000186502/article/cay-chia-voi-chua-thoat-vi-dia-dem-bao-dai-duong-3_a852399d52e44f20aa9a90b98c84435e_grande.png",
+    image:
+      "https://file.hstatic.net/1000186502/article/cay-chia-voi-chua-thoat-vi-dia-dem-bao-dai-duong-3_a852399d52e44f20aa9a90b98c84435e_grande.png",
     usedParts:
       "Rễ củ (thu hái quanh năm, thái mỏng phơi khô), Dây (cắt ngắn tẩm rượu sao)",
     properties: "Vị đắng, ngọt, tính bình",
@@ -1038,7 +1311,8 @@ export const medicines = [
     scientificName: "Moringa oleifera Lam.",
     family: "Họ Chùm ngây (Moringaceae)",
     categoryId: "moringaceae",
-    image: "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-chum-ngay.jpg",
+    image:
+      "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-chum-ngay.jpg",
     usedParts: "Rễ và toàn cây (lá, hoa, quả, hạt)",
     properties: "Vị ngọt, cay, tính ấm",
     meridians: "Quy kinh can, tâm, thận",
@@ -1085,7 +1359,8 @@ export const medicines = [
     scientificName: "Phyllanthus acidus (L.) Skeels",
     family: "Họ Diệp hạ châu (Phyllanthaceae)",
     categoryId: "phyllanthaceae",
-    image: "https://login.medlatec.vn//ImagePath/images/20221124/20221124_chum-ruot-2.jpg",
+    image:
+      "https://login.medlatec.vn//ImagePath/images/20221124/20221124_chum-ruot-2.jpg",
     usedParts:
       "Lá, quả, vỏ thân và rễ (thu hái lá, vỏ thân và vỏ rễ quanh năm, quả hái lúc chưa chín)",
     properties: "Quả: vị chua, ngọt nhạt, tính mát. Lá và rễ: tính nóng",
@@ -1141,7 +1416,8 @@ export const medicines = [
     scientificName: "Musa balbisiana Colla",
     family: "Họ Chuối (Musaceae)",
     categoryId: "musaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/chuoi-hot-1.jpg",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/chuoi-hot-1.jpg",
     usedParts: "Quả, củ, thân (thu hái quanh năm)",
     properties: "Vị ngọt, chát, tính mát",
     meridians: "Quy kinh tỳ, vị, đại tràng",
@@ -1189,7 +1465,8 @@ export const medicines = [
     scientificName: "Erythroxylum coca Lamk.",
     family: "Họ Coca (Erythroxylaceae)",
     categoryId: "erythroxylaceae",
-    image: "https://duoclieuhoangthanh.com/wp-content/uploads/2020/05/12-c%C3%B4-ca-1.jpg",
+    image:
+      "https://duoclieuhoangthanh.com/wp-content/uploads/2020/05/12-c%C3%B4-ca-1.jpg",
     usedParts: "Lá",
     properties: "Vị đắng, tính ấm",
     meridians: "Quy kinh thần kinh",
@@ -1218,7 +1495,8 @@ export const medicines = [
     scientificName: "Eclipta prostrata (L.) L.",
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
-    image: "https://cdn.tgdd.vn//News/1515615//co-muc-co-tac-dung-gi-12-tac-dung-cua-cay-co-muc-14-800x450-1.jpg",
+    image:
+      "https://cdn.tgdd.vn//News/1515615//co-muc-co-tac-dung-gi-12-tac-dung-cua-cay-co-muc-14-800x450-1.jpg",
     usedParts:
       "Toàn cây (dùng tươi giã ép lấy nước hoặc khô, thu hái quanh năm)",
     properties: "Vị ngọt, chua, tính hàn",
@@ -1267,7 +1545,8 @@ export const medicines = [
     scientificName: "Euphorbia hirta L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://cdnv2.tgdd.vn/mwg-static/common/News/1572207/co-sua-la-lon-cong-dung-lieu-dung-va-luu-y-khi-su-dung-5.jpg",
+    image:
+      "https://cdnv2.tgdd.vn/mwg-static/common/News/1572207/co-sua-la-lon-cong-dung-lieu-dung-va-luu-y-khi-su-dung-5.jpg",
     usedParts: "Toàn thân (thu hái quanh năm, dùng tươi hay phơi khô)",
     properties: "Vị cay, đắng, tính bình",
     meridians: "Quy kinh đại tràng, phế",
@@ -1314,7 +1593,8 @@ export const medicines = [
     scientificName: "Euphorbia thymifolia L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://trungtamthuoc.com/images/item/co-sua-la-nho-va-cong-dung-2.jpg",
+    image:
+      "https://trungtamthuoc.com/images/item/co-sua-la-nho-va-cong-dung-2.jpg",
     usedParts:
       "Toàn cây (thu hái quanh năm, tốt nhất vào mùa hè thu, rửa sạch, dùng tươi hay phơi khô)",
     properties: "Vị cay, đắng, tính bình",
@@ -1410,7 +1690,8 @@ export const medicines = [
     scientificName: "Achyranthes aspera L.",
     family: "Họ Rau dền (Amaranthaceae)",
     categoryId: "amaranthaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/11/cay-co-xuoc.jpg",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/11/cay-co-xuoc.jpg",
     usedParts:
       "Rễ (Radix Achyranthis asperae) - Thu hái cây quanh năm chủ yếu vào mùa hè thu, rửa sạch, thái nhỏ, dùng tươi hay phơi khô",
     properties: "Vị đắng chua, tính bình",
@@ -1463,7 +1744,8 @@ export const medicines = [
     scientificName: "Spondias dulcis G.Forst.",
     family: "Họ Đào lộn hột (Anacardiaceae)",
     categoryId: "anacardiaceae",
-    image: "https://file.hstatic.net/200000199139/file/oxi-house-cay-coc-4_fee7133decd34c6da4db1e9461b2e147_grande.jpg",
+    image:
+      "https://file.hstatic.net/200000199139/file/oxi-house-cay-coc-4_fee7133decd34c6da4db1e9461b2e147_grande.jpg",
     usedParts: "Lá, vỏ thân và quả - Dùng tươi hay phơi khô",
     properties: "Vị chua, tính bình",
     meridians: "Quy kinh tỳ vị, đại tràng",
@@ -1553,7 +1835,8 @@ export const medicines = [
       "Reynoutria japonica Houtt. (Synonym: Polygonum cuspidatum Siebold & Zucc.)",
     family: "Họ Rau răm (Polygonaceae)",
     categoryId: "polygonaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/cot-khi-cu.jpg",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/cot-khi-cu.jpg",
     usedParts: "Rễ củ (Radix Polygoni cuspidati) - Thu hoạch vào mùa thu",
     properties: "Trừ thấp, chỉ ho, hóa đờm",
     meridians: "Quy kinh phế, can",
@@ -2040,7 +2323,8 @@ export const medicines = [
     scientificName: "Polyscias fruticosa (L.) Harms.",
     family: "Họ Nhân sâm (Araliaceae)",
     categoryId: "araliaceae",
-    image: "https://duoclieupumat.com/wp-content/uploads/2018/11/15-09-17-45_54-_Copy-of-dinh-lang-la-nhon.jpg",
+    image:
+      "https://duoclieupumat.com/wp-content/uploads/2018/11/15-09-17-45_54-_Copy-of-dinh-lang-la-nhon.jpg",
     usedParts:
       "Rễ (thu hoạch ở cây từ 3-5 năm tuổi trở lên, đào rễ, rửa sạch đất cát, thái lát, phơi hoặc sấy khô dùng làm thuốc), Lá (thu hái quanh năm, dùng tươi hoặc phơi khô), Thân (có thể dùng làm dược liệu)",
     properties: "Vị ngọt, hơi đắng, tính mát",
@@ -2236,8 +2520,7 @@ export const medicines = [
     scientificName: "Plumeria rubra L.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image:
-      "https://caycanhhue.com/wp-content/uploads/2023/05/cay-su-dai-2.jpg",
+    image: "https://caycanhhue.com/wp-content/uploads/2023/05/cay-su-dai-2.jpg",
     usedParts:
       "Hoa (Flos Plumeriae rubrae), vỏ (Cortex Plumeriae rubrae), lá (Folium Plumeriae rubrae), nhựa (Resin Plumeriae rubrae). Hoa thu hái từ tháng 5-11, lá và nhựa thu hái quanh năm, vỏ cây tách ra đem phơi khô",
     properties: "Vị hơi ngọt, tính mát",
@@ -2421,8 +2704,10 @@ export const medicines = [
     scientificName: "Rhizophora apiculata Bl.",
     family: "Họ Đước (Rhizophoraceae)",
     categoryId: "rhizophoraceae",
-    image: "https://dantocmiennui-media.baotintuc.vn/images/57c5aab70c5efc5a98d240302ffc6edba650419a22ef4e43451defc60ac264ec686fa08bc9936d08d64033868d8eca1e/150035-1-1.jpg",
-    usedParts: "Vỏ cây (thu hái quanh năm, bóc vỏ, phơi khô). Rễ (đào lấy, rửa sạch, phơi khô)",
+    image:
+      "https://dantocmiennui-media.baotintuc.vn/images/57c5aab70c5efc5a98d240302ffc6edba650419a22ef4e43451defc60ac264ec686fa08bc9936d08d64033868d8eca1e/150035-1-1.jpg",
+    usedParts:
+      "Vỏ cây (thu hái quanh năm, bóc vỏ, phơi khô). Rễ (đào lấy, rửa sạch, phơi khô)",
     properties: "Vị đắng, chát, tính mát",
     meridians: "Quy kinh can, đại tràng, phế",
     mainIngredients: [
@@ -2453,13 +2738,15 @@ export const medicines = [
       "Vết thương",
       "Vết loét",
     ],
-    dosage: "Vỏ cây: 10-20g sắc uống. Rễ: 15-30g sắc uống để chữa thấp khớp. Dùng ngoài: sắc nước để rửa vết thương, vết loét",
+    dosage:
+      "Vỏ cây: 10-20g sắc uống. Rễ: 15-30g sắc uống để chữa thấp khớp. Dùng ngoài: sắc nước để rửa vết thương, vết loét",
     contraindications: [
       "Người tỳ vị hư hàn thận trọng",
       "Thai phụ thận trọng",
       "Không dùng quá liều",
     ],
-    origin: "Việt Nam (rừng Đước Cà Mau, vùng ven biển miền Bắc, Trung, Nam). Vùng nhiệt đới Bắc bán cầu",
+    origin:
+      "Việt Nam (rừng Đước Cà Mau, vùng ven biển miền Bắc, Trung, Nam). Vùng nhiệt đới Bắc bán cầu",
     description:
       "Đước đôi (còn gọi Đước bộp) là cây gỗ mọc ven biển vùng nhiệt đới cao đến 30m, đường kính gốc thân 40-60cm. Có nhiều rễ chống mọc xoè ra quanh gốc thân như cái nơm to để chống đỡ cây khỏi đổ. Lá dày, hình bầu dục, đầu nhọn, gốc tù, mặt dưới có chấm đen. Cụm hoa là xim hai hoa ở nách lá. Hoa màu vàng nhạt hoặc trắng dài 1,5-2cm. Quả hình quả lê dài 2-2,5cm, màu nâu, rễ mầm hình trụ thõng xuống màu xanh lục dài 20-38cm (cây thai sinh). Ra hoa quanh năm, quả chín tháng 6-11. Phổ biến trong rừng Sú, Vẹt, trên đất phù sa nhiều bùn, nơi ngập thuỷ triều. Vỏ chứa nhiều tanin có tác dụng làm săn, cầm máu, chữa viêm họng, trị tiêu chảy, lỵ, đái ra máu. Ở Ấn Độ dùng điều trị tiểu đường. Ở Campuchia dùng rễ chữa thấp khớp. Vỏ còn dùng nhuộm lưới và thuộc da. Gỗ cứng nặng dùng xây dựng, làm khung nhà, trụ cầu. Rừng Đước cung cấp hàng chục tấn lá khô/ha mỗi năm, tạo mùn làm thức ăn cho tôm cá. Ngoài Đước đôi còn có Đước nhọn (R. mucronata) và Đước chằng (R. stylosa) cũng có tác dụng tương tự.",
   },
@@ -2467,20 +2754,17 @@ export const medicines = [
     id: 140,
     name: "Trang",
     firstLetter: "T",
-    scientificName: "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
+    scientificName:
+      "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
     family: "Họ Đước (Rhizophoraceae)",
     categoryId: "rhizophoraceae",
-    image: "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
+    image:
+      "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
     usedParts:
       "Vỏ cây, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Quả thu hái khi chín để làm thức ăn gia súc",
     properties: "Vị đắng, chát, tính mát",
     meridians: "Chưa xác định rõ",
-    mainIngredients: [
-      "Tanin",
-      "Acid hữu cơ",
-      "Flavonoid",
-      "Hợp chất phenol",
-    ],
+    mainIngredients: ["Tanin", "Acid hữu cơ", "Flavonoid", "Hợp chất phenol"],
     uses: [
       "Nhuộm lưới",
       "Chữa tiểu đường",
@@ -2491,10 +2775,7 @@ export const medicines = [
     indications: ["Tiểu đường", "Bệnh đường tiêu hóa"],
     dosage:
       "Vỏ cây: 10-15g phối hợp với Gừng khô, Hồ tiêu và nước Hoa hồng sắc uống để chữa tiểu đường (theo kinh nghiệm Ấn Độ). Quả: dùng làm thức ăn cho lợn",
-    contraindications: [
-      "Người tỳ vị hư hàn thận trọng",
-      "Không dùng quá liều",
-    ],
+    contraindications: ["Người tỳ vị hư hàn thận trọng", "Không dùng quá liều"],
     origin:
       "Việt Nam (rừng ngập mặn từ Quảng Ninh đến Long An, Minh Hải, Kiên Giang; người dân Thái Bình, Hà Nam trồng làm cây bảo vệ đê). Đông Nam Á, ven biển Trung Quốc, Ấn Độ",
     description:
@@ -2507,17 +2788,13 @@ export const medicines = [
     scientificName: "Ceriops tagal (Perr.) C. B. Rob.",
     family: "Họ Đước (Rhizophoraceae)",
     categoryId: "rhizophoraceae",
-    image: "https://tracuuduoclieu.vn/wp-content/uploads/2018/03/ceriops20tagal20perr-20c-b-20rob.jpg",
+    image:
+      "https://tracuuduoclieu.vn/wp-content/uploads/2018/03/ceriops20tagal20perr-20c-b-20rob.jpg",
     usedParts:
       "Vỏ cây, Chồi non, Quả. Thu hoạch vỏ cây quanh năm từ cây trưởng thành, lột vỏ ngoài, phơi hoặc sấy khô. Chồi non thu hái khi cần dùng. Quả thu hái khi chín",
     properties: "Vị đắng, chát, tính mát",
     meridians: "Chưa xác định rõ",
-    mainIngredients: [
-      "Tanin",
-      "Acid hữu cơ",
-      "Flavonoid",
-      "Hợp chất phenol",
-    ],
+    mainIngredients: ["Tanin", "Acid hữu cơ", "Flavonoid", "Hợp chất phenol"],
     uses: [
       "Làm săn",
       "Cầm máu",
@@ -2526,17 +2803,10 @@ export const medicines = [
       "Thuộc da",
       "Ăn trầu",
     ],
-    indications: [
-      "Vết thương chảy máu",
-      "Sốt rét",
-      "Chảy máu ngoài da",
-    ],
+    indications: ["Vết thương chảy máu", "Sốt rét", "Chảy máu ngoài da"],
     dosage:
       "Vỏ cây: đắp ngoài để cầm máu vết thương. Nước sắc chồi non: uống chữa sốt rét (theo kinh nghiệm Châu Phi). Quả: ăn được",
-    contraindications: [
-      "Người tỳ vị hư hàn thận trọng",
-      "Không dùng quá liều",
-    ],
+    contraindications: ["Người tỳ vị hư hàn thận trọng", "Không dùng quá liều"],
     origin:
       "Đông Phi đến Nam Á, Australia, Melanesia. Ở Việt Nam: bãi lầy ven biển, thường mọc lẫn với Đước và Vẹt (hoặc thành rừng thuần loại)",
     description:
@@ -2581,10 +2851,7 @@ export const medicines = [
     ],
     dosage:
       "Vỏ cây: 10-20g sắc uống chữa tiêu chảy, sốt rét. Dùng ngoài: đắp vỏ cầm máu hoặc trị vết bỏng, loét. Lá Vẹt đen: dùng cải thiện bệnh ung bướu. Rễ mầm: chế biến thành thức ăn gia súc. Quả: dùng để ăn trầu",
-    contraindications: [
-      "Người tỳ vị hư hàn thận trọng",
-      "Không dùng quá liều",
-    ],
+    contraindications: ["Người tỳ vị hư hàn thận trọng", "Không dùng quá liều"],
     origin:
       "Châu Á nhiệt đới. Ở Việt Nam: đất bùn ngập thủy triều, dọc bờ biển khu vực duyên hải miền Trung, các tỉnh Nam Bộ từ Đồng Nai đến Cà Mau. Có thể mọc trên đất khô mặn ít khi thuỷ triều ngập",
     description:
@@ -2862,7 +3129,8 @@ export const medicines = [
       "Coleus amboinicus Lour. (Synonym: Plectranthus amboinicus (Lour.) Spreng.)",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://images.unsplash.https://wikiduoclieu.org/wp-content/uploads/2019/03/hung-chanh-584.jpg",
+    image:
+      "https://images.unsplash.https://wikiduoclieu.org/wp-content/uploads/2019/03/hung-chanh-584.jpg",
     usedParts:
       "Lá, ngọn non (Folium et Gemma Plectranthi) tươi hoặc phơi âm khô",
     properties: "Vị cay, tính ấm",
@@ -2952,7 +3220,8 @@ export const medicines = [
     scientificName: "Ocimum gratissimum L.",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://vietplantex.vn/wp-content/uploads/2024/06/5tinh_dau_huong_nhu_vietplantex-3.png",
+    image:
+      "https://vietplantex.vn/wp-content/uploads/2024/06/5tinh_dau_huong_nhu_vietplantex-3.png",
     usedParts:
       "Đoạn đầu cành có hoặc không có hoa (Herba Ocimi gratissimi). Thu hái, phơi trong bóng râm hoặc sấy nhẹ cho đến khô",
     properties: "Vị cay, tính ấm",
@@ -3065,7 +3334,8 @@ export const medicines = [
       "Leonurus japonicus Houtt. (Synonym: Leonurus heterophyllus Sweet)",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://mplant.ump.edu.vn/wp-content/uploads/2021/01/ichmau-816x459.jpg",
+    image:
+      "https://mplant.ump.edu.vn/wp-content/uploads/2021/01/ichmau-816x459.jpg",
     usedParts:
       "Phần trên mặt đất (Herba Leonuri); quả (còn gọi là Sung úy tử – Fructus Leonuri)",
     properties: "Vị đắng, cay, tính vi hàn",
@@ -3103,7 +3373,8 @@ export const medicines = [
     scientificName: "Averrhoa carambola L.",
     family: "Họ Chua me đất (Oxalidaceae)",
     categoryId: "oxalidaceae",
-    image: "https://trangtrisanvuon.vn/wp-content/uploads/2023/10/khe-ngot-min.jpg",
+    image:
+      "https://trangtrisanvuon.vn/wp-content/uploads/2023/10/khe-ngot-min.jpg",
     usedParts:
       "Lá, vỏ cây thu hái quanh năm. Lá dùng tươi, vỏ sao vàng. Hoa, quả thu hái vào mùa hạ, thu, dùng tươi",
     properties: "Vị chua, chát, tính bình",

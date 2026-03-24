@@ -21,64 +21,284 @@ export const alphabetCategories = [
 export const familyCategories = [
   { id: "all", name: "All Medicines", icon: "fa-solid fa-leaf", count: 0 },
   { id: "araliaceae", name: "Araliaceae", icon: "fa-solid fa-tree", count: 0 },
-  { id: "fabaceae", name: "Fabaceae (Legume)", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "fabaceae",
+    name: "Fabaceae (Legume)",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "apiaceae", name: "Apiaceae", icon: "fa-solid fa-spa", count: 0 },
   { id: "asteraceae", name: "Asteraceae", icon: "fa-solid fa-sun", count: 0 },
-  { id: "scrophulariaceae", name: "Scrophulariaceae", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "zingiberaceae", name: "Zingiberaceae (Ginger)", icon: "fa-solid fa-mortar-pestle", count: 0 },
-  { id: "lamiaceae", name: "Lamiaceae (Mint)", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "scrophulariaceae",
+    name: "Scrophulariaceae",
+    icon: "fa-solid fa-wheat-awn",
+    count: 0,
+  },
+  {
+    id: "zingiberaceae",
+    name: "Zingiberaceae (Ginger)",
+    icon: "fa-solid fa-mortar-pestle",
+    count: 0,
+  },
+  {
+    id: "lamiaceae",
+    name: "Lamiaceae (Mint)",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "liliaceae", name: "Liliaceae", icon: "fa-solid fa-clover", count: 0 },
   { id: "apocynaceae", name: "Apocynaceae", icon: "fa-solid fa-sun", count: 0 },
-  { id: "rubiaceae", name: "Rubiaceae (Coffee)", icon: "fa-solid fa-mug-hot", count: 0 },
-  { id: "stemonaceae", name: "Stemonaceae", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "rubiaceae",
+    name: "Rubiaceae (Coffee)",
+    icon: "fa-solid fa-mug-hot",
+    count: 0,
+  },
+  {
+    id: "stemonaceae",
+    name: "Stemonaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "myrtaceae", name: "Myrtaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "brassicaceae", name: "Brassicaceae", icon: "fa-solid fa-carrot", count: 0 },
+  {
+    id: "brassicaceae",
+    name: "Brassicaceae",
+    icon: "fa-solid fa-carrot",
+    count: 0,
+  },
   { id: "araceae", name: "Araceae", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "menispermaceae", name: "Menispermaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "rutaceae", name: "Rutaceae (Citrus)", icon: "fa-solid fa-lemon", count: 0 },
+  {
+    id: "menispermaceae",
+    name: "Menispermaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "rutaceae",
+    name: "Rutaceae (Citrus)",
+    icon: "fa-solid fa-lemon",
+    count: 0,
+  },
   { id: "malvaceae", name: "Malvaceae", icon: "fa-solid fa-heart", count: 0 },
-  { id: "solanaceae", name: "Solanaceae", icon: "fa-solid fa-pepper-hot", count: 0 },
-  { id: "plantaginaceae", name: "Plantaginaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "cibotiaceae", name: "Cibotiaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "vitaceae", name: "Vitaceae (Grape)", icon: "fa-solid fa-wine-bottle", count: 0 },
-  { id: "moringaceae", name: "Moringaceae", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "phyllanthaceae", name: "Phyllanthaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "musaceae", name: "Musaceae (Banana)", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "erythroxylaceae", name: "Erythroxylaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "euphorbiaceae", name: "Euphorbiaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "poaceae", name: "Poaceae (Grass)", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "amaranthaceae", name: "Amaranthaceae", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "anacardiaceae", name: "Anacardiaceae", icon: "fa-solid fa-apple-whole", count: 0 },
-  { id: "polygonaceae", name: "Polygonaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "moraceae", name: "Moraceae (Mulberry)", icon: "fa-solid fa-apple-whole", count: 0 },
-  { id: "saururaceae", name: "Saururaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "bromeliaceae", name: "Bromeliaceae", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "asparagaceae", name: "Asparagaceae", icon: "fa-solid fa-leaf", count: 0 },
+  {
+    id: "solanaceae",
+    name: "Solanaceae",
+    icon: "fa-solid fa-pepper-hot",
+    count: 0,
+  },
+  {
+    id: "plantaginaceae",
+    name: "Plantaginaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "cibotiaceae",
+    name: "Cibotiaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "vitaceae",
+    name: "Vitaceae (Grape)",
+    icon: "fa-solid fa-wine-bottle",
+    count: 0,
+  },
+  {
+    id: "moringaceae",
+    name: "Moringaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "phyllanthaceae",
+    name: "Phyllanthaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "musaceae",
+    name: "Musaceae (Banana)",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "erythroxylaceae",
+    name: "Erythroxylaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "euphorbiaceae",
+    name: "Euphorbiaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "poaceae",
+    name: "Poaceae (Grass)",
+    icon: "fa-solid fa-wheat-awn",
+    count: 0,
+  },
+  {
+    id: "amaranthaceae",
+    name: "Amaranthaceae",
+    icon: "fa-solid fa-wheat-awn",
+    count: 0,
+  },
+  {
+    id: "anacardiaceae",
+    name: "Anacardiaceae",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
+  {
+    id: "polygonaceae",
+    name: "Polygonaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "moraceae",
+    name: "Moraceae (Mulberry)",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
+  {
+    id: "saururaceae",
+    name: "Saururaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "bromeliaceae",
+    name: "Bromeliaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "asparagaceae",
+    name: "Asparagaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
   { id: "urticaceae", name: "Urticaceae", icon: "fa-solid fa-leaf", count: 0 },
   { id: "oleaceae", name: "Oleaceae", icon: "fa-solid fa-spa", count: 0 },
-  { id: "acanthaceae", name: "Acanthaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "cyperaceae", name: "Cyperaceae", icon: "fa-solid fa-wheat-awn", count: 0 },
-  { id: "oxalidaceae", name: "Oxalidaceae", icon: "fa-solid fa-star", count: 0 },
-  { id: "caprifoliaceae", name: "Caprifoliaceae", icon: "fa-solid fa-seedling", count: 0 },
-  { id: "pandanaceae", name: "Pandanaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "piperaceae", name: "Piperaceae (Pepper)", icon: "fa-solid fa-pepper-hot", count: 0 },
-  { id: "passifloraceae", name: "Passifloraceae", icon: "fa-solid fa-clover", count: 0 },
-  { id: "bignoniaceae", name: "Bignoniaceae", icon: "fa-solid fa-fire", count: 0 },
-  { id: "commelinaceae", name: "Commelinaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "asphodelaceae", name: "Asphodelaceae", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "acanthaceae",
+    name: "Acanthaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "cyperaceae",
+    name: "Cyperaceae",
+    icon: "fa-solid fa-wheat-awn",
+    count: 0,
+  },
+  {
+    id: "oxalidaceae",
+    name: "Oxalidaceae",
+    icon: "fa-solid fa-star",
+    count: 0,
+  },
+  {
+    id: "caprifoliaceae",
+    name: "Caprifoliaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
+  {
+    id: "pandanaceae",
+    name: "Pandanaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "piperaceae",
+    name: "Piperaceae (Pepper)",
+    icon: "fa-solid fa-pepper-hot",
+    count: 0,
+  },
+  {
+    id: "passifloraceae",
+    name: "Passifloraceae",
+    icon: "fa-solid fa-clover",
+    count: 0,
+  },
+  {
+    id: "bignoniaceae",
+    name: "Bignoniaceae",
+    icon: "fa-solid fa-fire",
+    count: 0,
+  },
+  {
+    id: "commelinaceae",
+    name: "Commelinaceae",
+    icon: "fa-solid fa-leaf",
+    count: 0,
+  },
+  {
+    id: "asphodelaceae",
+    name: "Asphodelaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "lauraceae", name: "Lauraceae", icon: "fa-solid fa-tree", count: 0 },
   { id: "lythraceae", name: "Lythraceae", icon: "fa-solid fa-star", count: 0 },
-  { id: "loganiaceae", name: "Loganiaceae", icon: "fa-solid fa-seedling", count: 0 },
+  {
+    id: "loganiaceae",
+    name: "Loganiaceae",
+    icon: "fa-solid fa-seedling",
+    count: 0,
+  },
   { id: "costaceae", name: "Costaceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "amaryllidaceae", name: "Amaryllidaceae", icon: "fa-solid fa-spa", count: 0 },
+  {
+    id: "amaryllidaceae",
+    name: "Amaryllidaceae",
+    icon: "fa-solid fa-spa",
+    count: 0,
+  },
   { id: "iridaceae", name: "Iridaceae", icon: "fa-solid fa-clover", count: 0 },
-  { id: "nelumbonaceae", name: "Nelumbonaceae (Lotus)", icon: "fa-solid fa-spa", count: 0 },
-  { id: "combretaceae", name: "Combretaceae", icon: "fa-solid fa-tree", count: 0 },
-  { id: "rhamnaceae", name: "Rhamnaceae", icon: "fa-solid fa-apple-whole", count: 0 },
-  { id: "sapotaceae", name: "Sapotaceae", icon: "fa-solid fa-apple-whole", count: 0 },
+  {
+    id: "nelumbonaceae",
+    name: "Nelumbonaceae (Lotus)",
+    icon: "fa-solid fa-spa",
+    count: 0,
+  },
+  {
+    id: "combretaceae",
+    name: "Combretaceae",
+    icon: "fa-solid fa-tree",
+    count: 0,
+  },
+  {
+    id: "rhamnaceae",
+    name: "Rhamnaceae",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
+  {
+    id: "sapotaceae",
+    name: "Sapotaceae",
+    icon: "fa-solid fa-apple-whole",
+    count: 0,
+  },
   { id: "acoraceae", name: "Acoraceae", icon: "fa-solid fa-leaf", count: 0 },
-  { id: "theaceae", name: "Theaceae (Tea)", icon: "fa-solid fa-mug-hot", count: 0 },
-  { id: "rhizophoraceae", name: "Rhizophoraceae (Mangrove)", icon: "fa-solid fa-tree", count: 0 },
+  {
+    id: "theaceae",
+    name: "Theaceae (Tea)",
+    icon: "fa-solid fa-mug-hot",
+    count: 0,
+  },
+  {
+    id: "rhizophoraceae",
+    name: "Rhizophoraceae (Mangrove)",
+    icon: "fa-solid fa-tree",
+    count: 0,
+  },
 ];
 
 // Backward compatibility
@@ -93,17 +313,43 @@ export const medicines = [
     scientificName: "Cynara scolymus L.",
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/actiso/actiso%201.png",
-    usedParts: "Leaves (harvested year-round, stripped for leaf blades), Flower heads (harvested before blooming)",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/actiso/actiso%201.png",
+    usedParts:
+      "Leaves (harvested year-round, stripped for leaf blades), Flower heads (harvested before blooming)",
     properties: "Bitter taste, cool nature",
     meridians: "Liver, Gallbladder, Kidney meridians",
-    mainIngredients: ["Cynarin", "Chlorogenic acid", "Caffeoylquinic acid", "Flavonoids (cynaroside, scolymoside)", "Inulin", "Vitamins (A, B1, B2, C)", "Minerals (Mn, P, Fe)"],
-    uses: ["Liver protection", "Liver detoxification", "Diuretic", "Cholagogue", "Blood lipid lowering"],
-    indications: ["Impaired liver function", "Hyperlipidemia", "Digestive disorders", "Edema due to kidney dysfunction"],
-    dosage: "Leaves: decoction, extract, pills, oral solution, syrup, tea. Flowers: fresh as food or dried as tea",
-    contraindications: ["People with gallstones should use with caution", "Breastfeeding women may experience reduced milk production"],
+    mainIngredients: [
+      "Cynarin",
+      "Chlorogenic acid",
+      "Caffeoylquinic acid",
+      "Flavonoids (cynaroside, scolymoside)",
+      "Inulin",
+      "Vitamins (A, B1, B2, C)",
+      "Minerals (Mn, P, Fe)",
+    ],
+    uses: [
+      "Liver protection",
+      "Liver detoxification",
+      "Diuretic",
+      "Cholagogue",
+      "Blood lipid lowering",
+    ],
+    indications: [
+      "Impaired liver function",
+      "Hyperlipidemia",
+      "Digestive disorders",
+      "Edema due to kidney dysfunction",
+    ],
+    dosage:
+      "Leaves: decoction, extract, pills, oral solution, syrup, tea. Flowers: fresh as food or dried as tea",
+    contraindications: [
+      "People with gallstones should use with caution",
+      "Breastfeeding women may experience reduced milk production",
+    ],
     origin: "Dalat, Sapa, Tam Dao (Vietnam), can be grown in lowlands",
-    description: "Artichoke is a valuable medicinal herb with powerful liver protection and detoxification effects, helps lower blood lipids, promotes diuresis and improves digestion. Widely cultivated in Dalat."
+    description:
+      "Artichoke is a valuable medicinal herb with powerful liver protection and detoxification effects, helps lower blood lipids, promotes diuresis and improves digestion. Widely cultivated in Dalat.",
   },
   {
     id: 18,
@@ -112,17 +358,41 @@ export const medicines = [
     scientificName: "Ayapana triplinervis (Vahl) R.M.King & H.Rob.",
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20d%C3%B3t/ba%20d%C3%B3t.jpg",
-    usedParts: "Leaves or whole aerial parts (harvest before flowering, usually in summer)",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20d%C3%B3t/ba%20d%C3%B3t.jpg",
+    usedParts:
+      "Leaves or whole aerial parts (harvest before flowering, usually in summer)",
     properties: "Pungent, bitter taste, warm nature",
     meridians: "Liver, Spleen, Stomach meridians",
-    mainIngredients: ["Coumarins (herniarin, ayapin)", "Essential oil (thymohydroquinone dimethyl ether)", "Fatty acids", "Fatty alcohols"],
-    uses: ["Anti-inflammatory", "Relieves menstrual cramps", "Hemostatic", "Treats colds and fever", "Treats digestive disorders"],
-    indications: ["Cold and fever", "Menstrual cramps", "Digestive disorders", "External bleeding"],
-    dosage: "Dried leaves: decoction. Fresh leaves: crushed and applied topically for hemostasis",
-    contraindications: ["Pregnant women should use with caution", "Do not overdose"],
-    origin: "Native to the Americas, introduced to Vietnam long ago, later naturalized",
-    description: "Ba Dot (also called Bả dột, Cà dót, Mần tưới tía) is an herbaceous plant with anti-inflammatory, analgesic, and hemostatic effects, commonly used in folk medicine to treat colds, fever and digestive disorders."
+    mainIngredients: [
+      "Coumarins (herniarin, ayapin)",
+      "Essential oil (thymohydroquinone dimethyl ether)",
+      "Fatty acids",
+      "Fatty alcohols",
+    ],
+    uses: [
+      "Anti-inflammatory",
+      "Relieves menstrual cramps",
+      "Hemostatic",
+      "Treats colds and fever",
+      "Treats digestive disorders",
+    ],
+    indications: [
+      "Cold and fever",
+      "Menstrual cramps",
+      "Digestive disorders",
+      "External bleeding",
+    ],
+    dosage:
+      "Dried leaves: decoction. Fresh leaves: crushed and applied topically for hemostasis",
+    contraindications: [
+      "Pregnant women should use with caution",
+      "Do not overdose",
+    ],
+    origin:
+      "Native to the Americas, introduced to Vietnam long ago, later naturalized",
+    description:
+      "Ba Dot (also called Bả dột, Cà dót, Mần tưới tía) is an herbaceous plant with anti-inflammatory, analgesic, and hemostatic effects, commonly used in folk medicine to treat colds, fever and digestive disorders.",
   },
   {
     id: 19,
@@ -131,17 +401,44 @@ export const medicines = [
     scientificName: "Rauvolfia tetraphylla L.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20g%E1%BA%A1c/ba%20g%E1%BA%A1c.jpg",
-    usedParts: "Root bark and roots (harvest in autumn/winter, peel root bark or cut into small sections)",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20g%E1%BA%A1c/ba%20g%E1%BA%A1c.jpg",
+    usedParts:
+      "Root bark and roots (harvest in autumn/winter, peel root bark or cut into small sections)",
     properties: "Bitter taste, cold nature",
     meridians: "Heart, Liver meridians",
-    mainIngredients: ["Reserpine", "Deserpidine", "Rescinnamine", "Ajmaline", "Ajmalicine", "Tetraphyllicine"],
-    uses: ["Antihypertensive", "Antiarrhythmic", "Sedative", "Tranquilizing effect"],
-    indications: ["Hypertension", "Arrhythmia", "Restlessness and anxiety", "Insomnia"],
-    dosage: "As prescribed by doctor (contains powerful alkaloids, use with caution)",
-    contraindications: ["Pregnant and breastfeeding women should not use", "People with depression should not use", "Gastric/duodenal ulcer patients use with caution", "Use only as prescribed by doctor"],
-    origin: "Native to Central America, cultivated in midland and lowland Northern Vietnam",
-    description: "Four-leaf Snakeroot (also called La phu mộc, Ba gạc Cuba) is an important medicinal herb containing alkaloids with antihypertensive and antiarrhythmic effects. Must be used with caution as prescribed by doctor."
+    mainIngredients: [
+      "Reserpine",
+      "Deserpidine",
+      "Rescinnamine",
+      "Ajmaline",
+      "Ajmalicine",
+      "Tetraphyllicine",
+    ],
+    uses: [
+      "Antihypertensive",
+      "Antiarrhythmic",
+      "Sedative",
+      "Tranquilizing effect",
+    ],
+    indications: [
+      "Hypertension",
+      "Arrhythmia",
+      "Restlessness and anxiety",
+      "Insomnia",
+    ],
+    dosage:
+      "As prescribed by doctor (contains powerful alkaloids, use with caution)",
+    contraindications: [
+      "Pregnant and breastfeeding women should not use",
+      "People with depression should not use",
+      "Gastric/duodenal ulcer patients use with caution",
+      "Use only as prescribed by doctor",
+    ],
+    origin:
+      "Native to Central America, cultivated in midland and lowland Northern Vietnam",
+    description:
+      "Four-leaf Snakeroot (also called La phu mộc, Ba gạc Cuba) is an important medicinal herb containing alkaloids with antihypertensive and antiarrhythmic effects. Must be used with caution as prescribed by doctor.",
   },
   {
     id: 20,
@@ -150,17 +447,46 @@ export const medicines = [
     scientificName: "Gynochthodes officinalis (F.C.How) Razafim. & B.Bremer",
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20k%C3%ADch/ba%20k%C3%ADch%201.png",
-    usedParts: "Roots (dried in sun or oven, can remove woody core when processing)",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ba%20k%C3%ADch/ba%20k%C3%ADch%201.png",
+    usedParts:
+      "Roots (dried in sun or oven, can remove woody core when processing)",
     properties: "Sweet, pungent taste, warm nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Iridoid glycosides (monotropein, asperuloside)", "Anthraquinones (physcion, rubiadin)", "Polysaccharides", "Organic acids", "Essential oils"],
-    uses: ["Tonifies kidney yang", "Strengthens tendons and bones", "Dispels wind-dampness", "Regulates menstruation"],
-    indications: ["Impotence", "Spermatorrhea", "Cold uterus", "Female infertility", "Irregular menstruation", "Lower abdominal cold pain", "Wind-damp pain and numbness", "Weak tendons and bones", "Osteoporosis"],
-    dosage: "6-15g, decoction. Can be processed into Ba kich nhuc (remove woody core) or Diem ba kich nhuc (processed with salt), Chich ba kich (processed with Licorice)",
-    contraindications: ["Not for yin deficiency with excess fire", "Not for scanty dark urine", "Pregnant women use with caution"],
+    mainIngredients: [
+      "Iridoid glycosides (monotropein, asperuloside)",
+      "Anthraquinones (physcion, rubiadin)",
+      "Polysaccharides",
+      "Organic acids",
+      "Essential oils",
+    ],
+    uses: [
+      "Tonifies kidney yang",
+      "Strengthens tendons and bones",
+      "Dispels wind-dampness",
+      "Regulates menstruation",
+    ],
+    indications: [
+      "Impotence",
+      "Spermatorrhea",
+      "Cold uterus",
+      "Female infertility",
+      "Irregular menstruation",
+      "Lower abdominal cold pain",
+      "Wind-damp pain and numbness",
+      "Weak tendons and bones",
+      "Osteoporosis",
+    ],
+    dosage:
+      "6-15g, decoction. Can be processed into Ba kich nhuc (remove woody core) or Diem ba kich nhuc (processed with salt), Chich ba kich (processed with Licorice)",
+    contraindications: [
+      "Not for yin deficiency with excess fire",
+      "Not for scanty dark urine",
+      "Pregnant women use with caution",
+    ],
     origin: "Hoa Binh, Ha Tay (Vietnam); Guangxi, Yunnan (China)",
-    description: "Morinda Root (also called Ruột gà, Ba kích thiên) is a precious medicinal herb that tonifies kidney yang, strengthens tendons and bones, commonly used to treat impotence, cold uterus, wind-dampness and osteoporosis."
+    description:
+      "Morinda Root (also called Ruột gà, Ba kích thiên) is a precious medicinal herb that tonifies kidney yang, strengthens tendons and bones, commonly used to treat impotence, cold uterus, wind-dampness and osteoporosis.",
   },
   {
     id: 21,
@@ -170,16 +496,42 @@ export const medicines = [
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
     image: "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=800",
-    usedParts: "Aerial parts (harvest when plant just flowers, dry in shade or low heat 30-40°C), Essential oil, Menthol",
+    usedParts:
+      "Aerial parts (harvest when plant just flowers, dry in shade or low heat 30-40°C), Essential oil, Menthol",
     properties: "Pungent taste, cool nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Essential oil (Menthol 65-85%, Menthone, Iso-menthone, Piperitenone oxide, Carvone)", "Flavonoids (acacetin, eriocitrin, rutin, linarin)", "Phenolic acids (rosmarinic acid, lithospermic acid)"],
-    uses: ["Disperses wind-heat", "Clears head and eyes", "Promotes eruptions", "Antiseptic", "Cholagogue", "Aids digestion"],
-    indications: ["Cold and fever", "Nasal congestion", "Rhinitis", "Swelling and pain", "Nausea and vomiting", "Digestive disorders", "Headache"],
-    dosage: "3-6g, decoction (do not boil long). Essential oil: external massage or inhalation. Menthol: external or inhalation",
-    contraindications: ["Absolutely do not use for newborns (menthol can suppress breathing, cause suffocation)", "Use with caution for yin deficiency with blood dryness"],
-    origin: "Grows wild and cultivated in many regions of Vietnam (Sapa, Tam Dao, Ba Vi, Bac Can, Son La), Europe, Asia",
-    description: "Field Mint (also called Nạt nặm, Bạc hà nam) is a popular medicinal herb with cold-relieving, nasal-clearing, antiseptic and digestive aid effects. Mint essential oil with high menthol content is widely used in medicine and cosmetics."
+    mainIngredients: [
+      "Essential oil (Menthol 65-85%, Menthone, Iso-menthone, Piperitenone oxide, Carvone)",
+      "Flavonoids (acacetin, eriocitrin, rutin, linarin)",
+      "Phenolic acids (rosmarinic acid, lithospermic acid)",
+    ],
+    uses: [
+      "Disperses wind-heat",
+      "Clears head and eyes",
+      "Promotes eruptions",
+      "Antiseptic",
+      "Cholagogue",
+      "Aids digestion",
+    ],
+    indications: [
+      "Cold and fever",
+      "Nasal congestion",
+      "Rhinitis",
+      "Swelling and pain",
+      "Nausea and vomiting",
+      "Digestive disorders",
+      "Headache",
+    ],
+    dosage:
+      "3-6g, decoction (do not boil long). Essential oil: external massage or inhalation. Menthol: external or inhalation",
+    contraindications: [
+      "Absolutely do not use for newborns (menthol can suppress breathing, cause suffocation)",
+      "Use with caution for yin deficiency with blood dryness",
+    ],
+    origin:
+      "Grows wild and cultivated in many regions of Vietnam (Sapa, Tam Dao, Ba Vi, Bac Can, Son La), Europe, Asia",
+    description:
+      "Field Mint (also called Nạt nặm, Bạc hà nam) is a popular medicinal herb with cold-relieving, nasal-clearing, antiseptic and digestive aid effects. Mint essential oil with high menthol content is widely used in medicine and cosmetics.",
   },
   {
     id: 22,
@@ -189,35 +541,87 @@ export const medicines = [
     family: "Họ Bách bộ (Stemonaceae)",
     categoryId: "stemonaceae",
     image: "https://trungtamthuoc.com/images/others/cay-bach-bo-1-4468.jpg",
-    usedParts: "Tuberous roots (harvest in dry weather, wash clean of sand, partially cook or blanch in boiling water, sun dry or oven dry at 50-60°C)",
+    usedParts:
+      "Tuberous roots (harvest in dry weather, wash clean of sand, partially cook or blanch in boiling water, sun dry or oven dry at 50-60°C)",
     properties: "Sweet, bitter taste, neutral nature",
     meridians: "Lung meridian",
-    mainIngredients: ["Alkaloids (stemonine, tuberostemonine, isotuberostemonine, hypotuberostemonine, stemine, croomine, oxytuberostemonine)", "Glucides", "Lipids", "Proteins", "Organic acids (citric, malic, succinic)"],
-    uses: ["Moistens lung and stops cough", "Kills parasites and lice", "Antiseptic", "Treats parasites"],
-    indications: ["New or chronic cough", "Whooping cough", "Tuberculosis cough", "Chronic bronchitis", "Lice and scabies (external)", "Pinworms", "Vaginal itching (external)"],
-    dosage: "3-10g, decoction. External: decoction for bathing, washing or powder for topical application",
-    contraindications: ["Not for external cold with fever", "Use with caution for dry cough", "Pregnant women use with caution"],
+    mainIngredients: [
+      "Alkaloids (stemonine, tuberostemonine, isotuberostemonine, hypotuberostemonine, stemine, croomine, oxytuberostemonine)",
+      "Glucides",
+      "Lipids",
+      "Proteins",
+      "Organic acids (citric, malic, succinic)",
+    ],
+    uses: [
+      "Moistens lung and stops cough",
+      "Kills parasites and lice",
+      "Antiseptic",
+      "Treats parasites",
+    ],
+    indications: [
+      "New or chronic cough",
+      "Whooping cough",
+      "Tuberculosis cough",
+      "Chronic bronchitis",
+      "Lice and scabies (external)",
+      "Pinworms",
+      "Vaginal itching (external)",
+    ],
+    dosage:
+      "3-10g, decoction. External: decoction for bathing, washing or powder for topical application",
+    contraindications: [
+      "Not for external cold with fever",
+      "Use with caution for dry cough",
+      "Pregnant women use with caution",
+    ],
     origin: "Grows wild everywhere, especially in mountainous areas of Vietnam",
-    description: "Stemona Root (also called Dây ba mươi, Bà Phụ Thảo) is a precious medicinal herb for treating cough, especially effective for whooping cough, tuberculosis cough and chronic bronchitis. Also used externally to treat lice and scabies."
+    description:
+      "Stemona Root (also called Dây ba mươi, Bà Phụ Thảo) is a precious medicinal herb for treating cough, especially effective for whooping cough, tuberculosis cough and chronic bronchitis. Also used externally to treat lice and scabies.",
   },
   {
     id: 23,
     name: "Bach Chi",
     firstLetter: "B",
-    scientificName: "Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.",
+    scientificName:
+      "Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.",
     family: "Họ Hoa tán (Apiaceae)",
     categoryId: "apiaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/10/cay-Bach-chi-e1601816663847.jpg",
-    usedParts: "Tuberous roots (harvest in summer when leaves begin to yellow, sun dry or oven dry at 40-50°C until dry)",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/10/cay-Bach-chi-e1601816663847.jpg",
+    usedParts:
+      "Tuberous roots (harvest in summer when leaves begin to yellow, sun dry or oven dry at 40-50°C until dry)",
     properties: "Pungent, slightly bitter taste, warm nature",
     meridians: "Lung, Stomach, Large Intestine meridians",
-    mainIngredients: ["Coumarins (imperatorin, isoimperatorin, scopoletin, byak-angelicin)", "Essential oils"],
-    uses: ["Dispels wind and cold", "Opens orifices and stops pain", "Dries dampness and promotes eruptions", "Reduces swelling"],
-    indications: ["Wind-cold common cold", "Frontal headache", "Nasal congestion", "Runny nose due to sinusitis", "Toothache", "Boils and swelling", "Purulent wounds", "Wind-cold headache"],
+    mainIngredients: [
+      "Coumarins (imperatorin, isoimperatorin, scopoletin, byak-angelicin)",
+      "Essential oils",
+    ],
+    uses: [
+      "Dispels wind and cold",
+      "Opens orifices and stops pain",
+      "Dries dampness and promotes eruptions",
+      "Reduces swelling",
+    ],
+    indications: [
+      "Wind-cold common cold",
+      "Frontal headache",
+      "Nasal congestion",
+      "Runny nose due to sinusitis",
+      "Toothache",
+      "Boils and swelling",
+      "Purulent wounds",
+      "Wind-cold headache",
+    ],
     dosage: "3-10g, decoction. Can be used externally or soaked in alcohol",
-    contraindications: ["Not for yin deficiency with excess fire", "Not for blood heat", "High doses may cause convulsions, paralysis"],
-    origin: "Hanoi, Ninh Binh, Hung Yen, Hai Duong, Vinh Phuc, Lao Cai (Vietnam); Japan, Korea, China, Eastern Siberia",
-    description: "Angelica Root (also called Bách chiểu, Chỉ hương, Xuyên bạch chỉ) is a precious medicinal herb of the Apiaceae family with effects of dispelling wind and cold, clearing nose, treating headache and sinusitis effectively. Characteristic pungent aroma."
+    contraindications: [
+      "Not for yin deficiency with excess fire",
+      "Not for blood heat",
+      "High doses may cause convulsions, paralysis",
+    ],
+    origin:
+      "Hanoi, Ninh Binh, Hung Yen, Hai Duong, Vinh Phuc, Lao Cai (Vietnam); Japan, Korea, China, Eastern Siberia",
+    description:
+      "Angelica Root (also called Bách chiểu, Chỉ hương, Xuyên bạch chỉ) is a precious medicinal herb of the Apiaceae family with effects of dispelling wind and cold, clearing nose, treating headache and sinusitis effectively. Characteristic pungent aroma.",
   },
   {
     id: 24,
@@ -226,17 +630,45 @@ export const medicines = [
     scientificName: "Eucalyptus camaldulensis Dehnh.",
     family: "Họ Sim (Myrtaceae)",
     categoryId: "myrtaceae",
-    image: "https://xuongtretruc.com/wp-content/uploads/2020/12/cay-bach-dang-1.jpg",
+    image:
+      "https://xuongtretruc.com/wp-content/uploads/2020/12/cay-bach-dang-1.jpg",
     usedParts: "Essential oil extracted from leaves",
     properties: "Pungent taste, cool nature",
     meridians: "Lung meridian",
-    mainIngredients: ["Essential oil (0.9-1.4% dry weight)", "1,8-cineole (eucalyptol)", "p-cymene", "α-pinene", "Monoterpene/oxygenated monoterpene"],
-    uses: ["Antibacterial and antifungal", "Anti-inflammatory and antioxidant", "Immune support", "Respiratory support", "Pain relief and muscle relaxation"],
-    indications: ["Nasal congestion", "Cough", "Phlegm", "Respiratory infections", "Muscle pain", "Mild dermatitis"],
-    dosage: "Essential oil: steam inhalation (a few drops in hot water). External: massage (diluted with carrier oil). Do not apply pure essential oil directly to skin",
-    contraindications: ["Do not drink pure essential oil (can be toxic)", "Children under 2 years use with caution", "Pregnant and breastfeeding women use with caution", "People with allergies use with caution"],
-    origin: "Native to Australia, now widely cultivated worldwide (Asia, Africa, Europe, North America, South America, Vietnam)",
-    description: "Eucalyptus is a large tree of the Myrtaceae family, famous for its essential oil with strong antibacterial and anti-inflammatory effects. Commonly used for steam inhalation to support respiratory tract, reduce nasal congestion, cough and phlegm."
+    mainIngredients: [
+      "Essential oil (0.9-1.4% dry weight)",
+      "1,8-cineole (eucalyptol)",
+      "p-cymene",
+      "α-pinene",
+      "Monoterpene/oxygenated monoterpene",
+    ],
+    uses: [
+      "Antibacterial and antifungal",
+      "Anti-inflammatory and antioxidant",
+      "Immune support",
+      "Respiratory support",
+      "Pain relief and muscle relaxation",
+    ],
+    indications: [
+      "Nasal congestion",
+      "Cough",
+      "Phlegm",
+      "Respiratory infections",
+      "Muscle pain",
+      "Mild dermatitis",
+    ],
+    dosage:
+      "Essential oil: steam inhalation (a few drops in hot water). External: massage (diluted with carrier oil). Do not apply pure essential oil directly to skin",
+    contraindications: [
+      "Do not drink pure essential oil (can be toxic)",
+      "Children under 2 years use with caution",
+      "Pregnant and breastfeeding women use with caution",
+      "People with allergies use with caution",
+    ],
+    origin:
+      "Native to Australia, now widely cultivated worldwide (Asia, Africa, Europe, North America, South America, Vietnam)",
+    description:
+      "Eucalyptus is a large tree of the Myrtaceae family, famous for its essential oil with strong antibacterial and anti-inflammatory effects. Commonly used for steam inhalation to support respiratory tract, reduce nasal congestion, cough and phlegm.",
   },
   {
     id: 25,
@@ -245,17 +677,44 @@ export const medicines = [
     scientificName: "Sinapis alba L. (Brassica hirta Moench)",
     family: "Họ Cải (Brassicaceae)",
     categoryId: "brassicaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/06/bach-gioi-tu-2-2.jpg",
-    usedParts: "Seeds (harvest in March-May when fruit is ripe, collect seeds and sun dry)",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/06/bach-gioi-tu-2-2.jpg",
+    usedParts:
+      "Seeds (harvest in March-May when fruit is ripe, collect seeds and sun dry)",
     properties: "Pungent hot taste, warm nature",
     meridians: "Lung meridian",
-    mainIngredients: ["Glucosinolate (sinalbin)", "Alkaloid (sinapine)", "Essential oil (allyl isothiocyanate, 1-butene-4-thiocyanate)", "Enzyme myrosinase", "Sterol (brassicasterol)", "Mucilage"],
-    uses: ["Transforms phlegm and benefits qi", "Disperses cold and unblocks channels", "Reduces swelling and disperses nodules", "Treats abscesses"],
-    indications: ["Cough with much phlegm", "Cough and asthma", "Chest pain and fullness", "Joint pain and numbness", "Swelling and abscesses"],
-    dosage: "3-9g, decoction or powder in pills. External: crush and mix with vinegar, apply to swelling to dissolve abscesses",
-    contraindications: ["Not for lung deficiency with hemoptysis", "External use may cause skin redness, blistering", "Do not overdose"],
-    origin: "Widely cultivated in autumn-winter for vegetable greens (Vietnam, China)",
-    description: "White Mustard Seed (also called Hồ giới, Thục giới, Hạt cải trắng) is the seed of mustard plant, with effects of transforming phlegm and benefiting qi, treating cough and asthma and chest pain. Used externally to dissolve abscesses."
+    mainIngredients: [
+      "Glucosinolate (sinalbin)",
+      "Alkaloid (sinapine)",
+      "Essential oil (allyl isothiocyanate, 1-butene-4-thiocyanate)",
+      "Enzyme myrosinase",
+      "Sterol (brassicasterol)",
+      "Mucilage",
+    ],
+    uses: [
+      "Transforms phlegm and benefits qi",
+      "Disperses cold and unblocks channels",
+      "Reduces swelling and disperses nodules",
+      "Treats abscesses",
+    ],
+    indications: [
+      "Cough with much phlegm",
+      "Cough and asthma",
+      "Chest pain and fullness",
+      "Joint pain and numbness",
+      "Swelling and abscesses",
+    ],
+    dosage:
+      "3-9g, decoction or powder in pills. External: crush and mix with vinegar, apply to swelling to dissolve abscesses",
+    contraindications: [
+      "Not for lung deficiency with hemoptysis",
+      "External use may cause skin redness, blistering",
+      "Do not overdose",
+    ],
+    origin:
+      "Widely cultivated in autumn-winter for vegetable greens (Vietnam, China)",
+    description:
+      "White Mustard Seed (also called Hồ giới, Thục giới, Hạt cải trắng) is the seed of mustard plant, with effects of transforming phlegm and benefiting qi, treating cough and asthma and chest pain. Used externally to dissolve abscesses.",
   },
   {
     id: 26,
@@ -264,17 +723,43 @@ export const medicines = [
     scientificName: "Scleromitrion diffusum (Willd.) R.J.Wang",
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
-    image: "https://nhathuocthanthien.com.vn/wp-content/uploads/2019/09/dgm_nttt_bach-hoa-xa-thiet-thao.jpg",
+    image:
+      "https://nhathuocthanthien.com.vn/wp-content/uploads/2019/09/dgm_nttt_bach-hoa-xa-thiet-thao.jpg",
     usedParts: "Whole plant (harvest and sun dry)",
     properties: "Bitter, sour taste, cold nature",
     meridians: "Lung, Liver, Bladder meridians",
-    mainIngredients: ["Iridoids (Asperuloside, asperulosidic acid, geniposidic acid)", "Flavonoids (amentoflavone)", "Anthraquinones", "Phenolic compounds"],
-    uses: ["Clears heat and resolves toxicity", "Promotes urination and reduces jaundice", "Reduces swelling and disperses nodules", "Invigorates blood and stops pain"],
-    indications: ["Cough and asthma due to lung heat", "Urinary tract infection due to bladder damp-heat", "Tonsillitis", "Acute pharyngitis", "Trauma", "Snakebite", "Boils and tumors", "Acute hepatitis (jaundice)"],
-    dosage: "15-30g (fresh: 30-60g), decoction. External: crush and apply or decoct for washing",
-    contraindications: ["Not for spleen-stomach deficiency cold", "Pregnant women use with caution"],
-    origin: "Found in all 3 regions of Vietnam, grows in gardens along walkways",
-    description: "Spreading Hedyotis (also called Lưỡi rắn trắng, Cỏ lưỡi rắn hoa trắng) is a small grass of the Rubiaceae family, with strong heat-clearing and detoxifying effects, treating hepatitis, pharyngitis, snakebite and abscesses."
+    mainIngredients: [
+      "Iridoids (Asperuloside, asperulosidic acid, geniposidic acid)",
+      "Flavonoids (amentoflavone)",
+      "Anthraquinones",
+      "Phenolic compounds",
+    ],
+    uses: [
+      "Clears heat and resolves toxicity",
+      "Promotes urination and reduces jaundice",
+      "Reduces swelling and disperses nodules",
+      "Invigorates blood and stops pain",
+    ],
+    indications: [
+      "Cough and asthma due to lung heat",
+      "Urinary tract infection due to bladder damp-heat",
+      "Tonsillitis",
+      "Acute pharyngitis",
+      "Trauma",
+      "Snakebite",
+      "Boils and tumors",
+      "Acute hepatitis (jaundice)",
+    ],
+    dosage:
+      "15-30g (fresh: 30-60g), decoction. External: crush and apply or decoct for washing",
+    contraindications: [
+      "Not for spleen-stomach deficiency cold",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Found in all 3 regions of Vietnam, grows in gardens along walkways",
+    description:
+      "Spreading Hedyotis (also called Lưỡi rắn trắng, Cỏ lưỡi rắn hoa trắng) is a small grass of the Rubiaceae family, with strong heat-clearing and detoxifying effects, treating hepatitis, pharyngitis, snakebite and abscesses.",
   },
   {
     id: 27,
@@ -283,17 +768,39 @@ export const medicines = [
     scientificName: "Typhonium trilobatum (L.) Schott.",
     family: "Họ Ráy (Araceae)",
     categoryId: "araceae",
-    image: "https://cdnv2.tgdd.vn/mwg-static/common/News/1408342/lieu-dung-cach-dung-luu-y-khi-su-dung-ban-ha-6.jpg",
-    usedParts: "Old rhizome processed into dry slices (harvest in August-September, when plant withers)",
+    image:
+      "https://cdnv2.tgdd.vn/mwg-static/common/News/1408342/lieu-dung-cach-dung-luu-y-khi-su-dung-ban-ha-6.jpg",
+    usedParts:
+      "Old rhizome processed into dry slices (harvest in August-September, when plant withers)",
     properties: "Bland taste, causes tongue numbness, warm nature",
     meridians: "Lung, Spleen, Stomach meridians",
-    mainIngredients: ["Alkaloids", "Flavonoids", "Essential oils", "Volatile compounds"],
-    uses: ["Transforms phlegm and dries dampness", "Descends rebellious qi and stops vomiting", "Descends qi and stops cough"],
-    indications: ["Nausea and vomiting", "Abdominal distension", "Cough with much phlegm", "Dampness retention in obese people"],
-    dosage: "3-9g, decoction. Must be properly processed before use (cook, slice, sun/oven dry)",
-    contraindications: ["Absolutely do not use raw (toxic, causes strong irritation)", "Pregnant women should not use", "Yin deficiency with liver dryness use with caution"],
+    mainIngredients: [
+      "Alkaloids",
+      "Flavonoids",
+      "Essential oils",
+      "Volatile compounds",
+    ],
+    uses: [
+      "Transforms phlegm and dries dampness",
+      "Descends rebellious qi and stops vomiting",
+      "Descends qi and stops cough",
+    ],
+    indications: [
+      "Nausea and vomiting",
+      "Abdominal distension",
+      "Cough with much phlegm",
+      "Dampness retention in obese people",
+    ],
+    dosage:
+      "3-9g, decoction. Must be properly processed before use (cook, slice, sun/oven dry)",
+    contraindications: [
+      "Absolutely do not use raw (toxic, causes strong irritation)",
+      "Pregnant women should not use",
+      "Yin deficiency with liver dryness use with caution",
+    ],
     origin: "Vietnam, Southeast Asian countries",
-    description: "Bengal Arum (also called Củ chóc, Lá ba chìa, Chóc chuột, Bán hạ ba thùy) is a medicinal herb of the Araceae family with effects of transforming phlegm and stopping vomiting, treating cough with phlegm and abdominal distension. Must be properly processed as it is toxic when raw."
+    description:
+      "Bengal Arum (also called Củ chóc, Lá ba chìa, Chóc chuột, Bán hạ ba thùy) is a medicinal herb of the Araceae family with effects of transforming phlegm and stopping vomiting, treating cough with phlegm and abdominal distension. Must be properly processed as it is toxic when raw.",
   },
   {
     id: 28,
@@ -303,16 +810,34 @@ export const medicines = [
     family: "Họ Tiết dê (Menispermaceae)",
     categoryId: "menispermaceae",
     image: "https://trungtamthuoc.com/images/others/binh-voi-1845.jpg",
-    usedParts: "Tuber (swollen base of stem peeled of black skin, sliced thin and sun or oven dried)",
+    usedParts:
+      "Tuber (swollen base of stem peeled of black skin, sliced thin and sun or oven dried)",
     properties: "Bitter taste, cold nature",
     meridians: "Heart, Lung, Stomach meridians",
-    mainIngredients: ["Alkaloids (rotundine/tetrahydropalmatine, palmatine, cycleanine, stepharine, roemerine)"],
-    uses: ["Sedative and hypnotic", "Analgesic", "Anti-inflammatory", "Local anesthetic", "Anticholinesterase"],
-    indications: ["Insomnia", "Fever and heat", "Headache", "Stomach pain", "Cough with much phlegm", "Asthma and difficulty breathing"],
+    mainIngredients: [
+      "Alkaloids (rotundine/tetrahydropalmatine, palmatine, cycleanine, stepharine, roemerine)",
+    ],
+    uses: [
+      "Sedative and hypnotic",
+      "Analgesic",
+      "Anti-inflammatory",
+      "Local anesthetic",
+      "Anticholinesterase",
+    ],
+    indications: [
+      "Insomnia",
+      "Fever and heat",
+      "Headache",
+      "Stomach pain",
+      "Cough with much phlegm",
+      "Asthma and difficulty breathing",
+    ],
     dosage: "6-12g, decoction or powder",
     contraindications: ["Do not overdose", "Pregnant women use with caution"],
-    origin: "Ha Tay, Hoa Binh, Ha Giang, Tuyen Quang, Nam Dinh, Ha Nam, Ninh Binh, Cao Bang, Lang Son, Thanh Hoa (Vietnam)",
-    description: "Stephania (also called Ngãi tượng) is a vine of the Menispermaceae family with large tuber (can weigh up to 50 kg), containing alkaloids with sedative, hypnotic, and analgesic effects, treating insomnia and cough-asthma."
+    origin:
+      "Ha Tay, Hoa Binh, Ha Giang, Tuyen Quang, Nam Dinh, Ha Nam, Ninh Binh, Cao Bang, Lang Son, Thanh Hoa (Vietnam)",
+    description:
+      "Stephania (also called Ngãi tượng) is a vine of the Menispermaceae family with large tuber (can weigh up to 50 kg), containing alkaloids with sedative, hypnotic, and analgesic effects, treating insomnia and cough-asthma.",
   },
   {
     id: 29,
@@ -321,17 +846,46 @@ export const medicines = [
     scientificName: "Citrus maxima (Burm.) Merr.",
     family: "Họ Cam (Rutaceae)",
     categoryId: "rutaceae",
-    image: "https://media.vov.vn/sites/default/files/styles/large/public/2022-12/4_79.jpg",
+    image:
+      "https://media.vov.vn/sites/default/files/styles/large/public/2022-12/4_79.jpg",
     usedParts: "Fruit peel (also use leaves, fruit juice, seeds)",
     properties: "Bitter, pungent taste, warm nature",
     meridians: "Lung, Spleen, Stomach meridians",
-    mainIngredients: ["Coumarins", "Carotene", "Essential oil (0.8-1%, mainly d-limonene)", "Naringin (1.8-6%)", "Pectin (20-30%)", "Limonin", "Vitamins (C, B, B2, PP)", "Minerals (Ca, P, K)"],
-    uses: ["Treats gastric ulcers", "Strengthens blood vessel walls", "Lowers blood pressure", "Anticoagulant", "Transforms phlegm and stops cough", "Regulates qi and aids digestion"],
-    indications: ["Cough with much phlegm", "Asthma", "Abdominal fullness and indigestion", "Hernia pain", "Stomach pain", "Edema", "Swollen legs due to wind-dampness", "Vitamin C deficiency"],
-    dosage: "Fruit peel: 3-9g, decoction. Leaves: roasted for massage or boiled for steaming, soaking. Seeds: remove shell, roast, grind to powder for external application",
+    mainIngredients: [
+      "Coumarins",
+      "Carotene",
+      "Essential oil (0.8-1%, mainly d-limonene)",
+      "Naringin (1.8-6%)",
+      "Pectin (20-30%)",
+      "Limonin",
+      "Vitamins (C, B, B2, PP)",
+      "Minerals (Ca, P, K)",
+    ],
+    uses: [
+      "Treats gastric ulcers",
+      "Strengthens blood vessel walls",
+      "Lowers blood pressure",
+      "Anticoagulant",
+      "Transforms phlegm and stops cough",
+      "Regulates qi and aids digestion",
+    ],
+    indications: [
+      "Cough with much phlegm",
+      "Asthma",
+      "Abdominal fullness and indigestion",
+      "Hernia pain",
+      "Stomach pain",
+      "Edema",
+      "Swollen legs due to wind-dampness",
+      "Vitamin C deficiency",
+    ],
+    dosage:
+      "Fruit peel: 3-9g, decoction. Leaves: roasted for massage or boiled for steaming, soaking. Seeds: remove shell, roast, grind to powder for external application",
     contraindications: ["Spleen-stomach deficiency cold use with caution"],
-    origin: "India, Malaysia; widely cultivated in Vietnam (Doan Hung pomelo, Phuc Trach, Thanh Tra, Tan Trieu, Nam Roi...)",
-    description: "Pomelo (also called Chu loan) is a tree of the Rutaceae family with large fruit, peel contains naringin with effects of treating gastric ulcers, lowering blood pressure, anticoagulant. Used to treat cough with phlegm, asthma, indigestion and edema."
+    origin:
+      "India, Malaysia; widely cultivated in Vietnam (Doan Hung pomelo, Phuc Trach, Thanh Tra, Tan Trieu, Nam Roi...)",
+    description:
+      "Pomelo (also called Chu loan) is a tree of the Rutaceae family with large fruit, peel contains naringin with effects of treating gastric ulcers, lowering blood pressure, anticoagulant. Used to treat cough with phlegm, asthma, indigestion and edema.",
   },
   {
     id: 30,
@@ -344,13 +898,125 @@ export const medicines = [
     usedParts: "Leaves, seeds, flower calyces",
     properties: "Sour taste, cool nature",
     meridians: "Liver, Heart, Stomach meridians",
-    mainIngredients: ["Organic acids (citric acid, malic acid, tartaric acid)", "Flavonoids (gossypetin, hibiscin, hibiscitrin, hibiscetin, gossypitrin, sabdaritrin)", "Anthocyanins", "Vitamin C", "Calcium oxalate"],
-    uses: ["Aids digestion", "Treats liver-gallbladder diseases", "Treats cardiovascular-neurological diseases", "Lowers blood pressure", "Prevents arteriosclerosis", "Treats scurvy"],
-    indications: ["Digestive disorders", "Liver-gallbladder diseases", "Cardiovascular-neurological diseases", "High blood pressure", "Arteriosclerosis", "Vitamin C deficiency (scurvy)"],
-    dosage: "Flower calyces: decoction or steep like tea. Leaves: use as vegetable, seasoning to replace vinegar. Can make beverage, jam, syrup",
-    contraindications: ["Excessive use may cause nausea due to very sour taste"],
-    origin: "Native to West Africa, cultivated for shoots and flower calyces used as sour vegetable",
-    description: "Roselle (also called Cây giấm, Đay nhật) is an annual plant of the Malvaceae family with sour taste, rich in vitamin C and organic acids. Bright red flower calyces used as vegetable, tea, beverage, treating high blood pressure and cardiovascular diseases."
+    mainIngredients: [
+      "Organic acids (citric acid, malic acid, tartaric acid)",
+      "Flavonoids (gossypetin, hibiscin, hibiscitrin, hibiscetin, gossypitrin, sabdaritrin)",
+      "Anthocyanins",
+      "Vitamin C",
+      "Calcium oxalate",
+    ],
+    uses: [
+      "Aids digestion",
+      "Treats liver-gallbladder diseases",
+      "Treats cardiovascular-neurological diseases",
+      "Lowers blood pressure",
+      "Prevents arteriosclerosis",
+      "Treats scurvy",
+    ],
+    indications: [
+      "Digestive disorders",
+      "Liver-gallbladder diseases",
+      "Cardiovascular-neurological diseases",
+      "High blood pressure",
+      "Arteriosclerosis",
+      "Vitamin C deficiency (scurvy)",
+    ],
+    dosage:
+      "Flower calyces: decoction or steep like tea. Leaves: use as vegetable, seasoning to replace vinegar. Can make beverage, jam, syrup",
+    contraindications: [
+      "Excessive use may cause nausea due to very sour taste",
+    ],
+    origin:
+      "Native to West Africa, cultivated for shoots and flower calyces used as sour vegetable",
+    description:
+      "Roselle (also called Cây giấm, Đay nhật) is an annual plant of the Malvaceae family with sour taste, rich in vitamin C and organic acids. Bright red flower calyces used as vegetable, tea, beverage, treating high blood pressure and cardiovascular diseases.",
+  },
+  {
+    id: 143,
+    name: "Dandelion",
+    firstLetter: "D",
+
+    vietnameseName: "Bồ Công Anh",
+
+    scientificName: "Taraxacum officinale Weber ex F.H.Wigg. (Taraxacum spp.)",
+    family: "Asteraceae",
+    categoryId: "asteraceae",
+
+    image:
+      "https://quatangphale.com.vn/uploads/tin-tuc-su-kien/2019_06/y-nghia-hoa-bo-cong-anh-h4.jpg",
+
+    usedParts: "Whole plant, harvested during flowering; used fresh or dried",
+
+    properties: "Bitter, slightly sweet, cooling",
+
+    meridians: "Liver and Stomach meridians",
+
+    mainIngredients: [
+      "Triterpenoids (taraxasterol)",
+      "Flavonoids",
+      "Inulin",
+      "Phenolic acids",
+      "Sesquiterpene lactones",
+      "Vitamins (A, C)",
+    ],
+
+    pharmacology: [
+      "Anti-inflammatory",
+      "Mild antibacterial",
+      "Diuretic",
+      "Choleretic (supports bile secretion)",
+      "Antioxidant",
+    ],
+
+    uses: [
+      "Clears heat and detoxifies",
+      "Promotes urination",
+      "Reduces inflammation",
+      "Supports digestion",
+      "Supports liver function",
+    ],
+
+    indications: [
+      "Boils and minor skin infections",
+      "Sore throat",
+      "Indigestion",
+      "Mild edema",
+      "Adjunct treatment for mastitis (traditional use)",
+    ],
+
+    dosage:
+      "10–20 g dried herb (30–60 g fresh) as decoction or herbal tea; for external use, crush fresh plant and apply",
+
+    preparationMethods: [
+      "Decoction",
+      "Herbal tea infusion",
+      "Fresh poultice for topical application",
+    ],
+
+    contraindications: [
+      "Use with caution in patients with spleen–stomach deficiency cold patterns",
+      "People allergic to plants in the Asteraceae family should avoid use",
+      "Pregnant women should consult a healthcare professional before use",
+    ],
+
+    sideEffects: [
+      "Occasional mild gastrointestinal discomfort",
+      "Rare allergic reactions",
+    ],
+
+    origin:
+      "Native to temperate regions of the Northern Hemisphere; found growing wild in Europe, Asia, and North America; occurs in cooler mountainous regions of Vietnam",
+
+    description:
+      "Dandelion is a perennial herb in the Taraxacum genus of the Asteraceae family. It forms a basal rosette of deeply toothed leaves and produces bright yellow composite flower heads. The mature fruits bear a white pappus that aids wind dispersal. The whole plant is used medicinally for its detoxifying, diuretic, and digestive-supporting properties.",
+
+    identification: [
+      "Bright yellow flower heads borne singly on hollow stalks",
+      "Deeply toothed leaves forming a basal rosette",
+      "Milky latex exudes when the plant is broken",
+    ],
+
+    note: "In Vietnam, the name 'Bồ Công Anh' may also refer to Lactuca indica, which differs botanically and chemically from Taraxacum officinale.",
   },
   {
     id: 31,
@@ -359,17 +1025,43 @@ export const medicines = [
     scientificName: "Datura metel L.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://login.medlatec.vn//ImagePath/images/20220801/20220801_Mot-so-dac-diem-cua-cay-ca-doc-duoc.jpg",
-    usedParts: "Leaves, flowers (harvest in May-June, August-October, sun or oven dry), seeds (from ripe fruit turning brown)",
+    image:
+      "https://login.medlatec.vn//ImagePath/images/20220801/20220801_Mot-so-dac-diem-cua-cay-ca-doc-duoc.jpg",
+    usedParts:
+      "Leaves, flowers (harvest in May-June, August-October, sun or oven dry), seeds (from ripe fruit turning brown)",
     properties: "Slightly bitter taste, warm nature, toxic",
     meridians: "Lung, Heart, Liver meridians",
     mainIngredients: ["Alkaloids (scopolamine/hyoscine, hyoscyamine)"],
-    uses: ["Stops pain and stabilizes qi", "Calms asthma", "Analgesic and anesthetic", "Stops stomach pain", "Treats wind-dampness"],
-    indications: ["Wheezing cough and asthma", "Asthma", "Upper abdominal pain with cold sensation", "Wind-damp pain and numbness", "Chronic convulsions in children", "Gastric-intestinal ulcer pain", "Motion sickness nausea", "Toothache", "Epilepsy in children"],
-    dosage: "Leaves/Flowers: 0.3-0.6g, decoction or powder. Use only as prescribed by doctor due to toxicity",
-    contraindications: ["ABSOLUTELY DO NOT self-medicate (highly toxic)", "Pregnant women and young children must not use", "Overdose can cause serious effects: hallucinations, convulsions, death", "Use only under medical supervision"],
-    origin: "Grows wild along roadsides, wastelands; also cultivated ornamentally (Vietnam)",
-    description: "Devil's Trumpet (also called Cà diên, Mạn đà la) is a small plant of the Solanaceae family with large trumpet-shaped flowers, containing alkaloids with effects of treating asthma, pain relief and anesthesia. Highly toxic, absolutely do not self-medicate."
+    uses: [
+      "Stops pain and stabilizes qi",
+      "Calms asthma",
+      "Analgesic and anesthetic",
+      "Stops stomach pain",
+      "Treats wind-dampness",
+    ],
+    indications: [
+      "Wheezing cough and asthma",
+      "Asthma",
+      "Upper abdominal pain with cold sensation",
+      "Wind-damp pain and numbness",
+      "Chronic convulsions in children",
+      "Gastric-intestinal ulcer pain",
+      "Motion sickness nausea",
+      "Toothache",
+      "Epilepsy in children",
+    ],
+    dosage:
+      "Leaves/Flowers: 0.3-0.6g, decoction or powder. Use only as prescribed by doctor due to toxicity",
+    contraindications: [
+      "ABSOLUTELY DO NOT self-medicate (highly toxic)",
+      "Pregnant women and young children must not use",
+      "Overdose can cause serious effects: hallucinations, convulsions, death",
+      "Use only under medical supervision",
+    ],
+    origin:
+      "Grows wild along roadsides, wastelands; also cultivated ornamentally (Vietnam)",
+    description:
+      "Devil's Trumpet (also called Cà diên, Mạn đà la) is a small plant of the Solanaceae family with large trumpet-shaped flowers, containing alkaloids with effects of treating asthma, pain relief and anesthesia. Highly toxic, absolutely do not self-medicate.",
   },
   {
     id: 32,
@@ -378,36 +1070,91 @@ export const medicines = [
     scientificName: "Solanum procumbens Lour.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2019/07/16/ca_gai_leo_1.jpg",
     usedParts: "Whole aerial parts (harvest year-round, sun dry)",
     properties: "Slightly bitter taste",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Glycoalkaloid Steroid (Solanine, Solasodine and glycosides)", "Flavonoid"],
-    uses: ["Disperses wind-dampness", "Detoxifies", "Stops cough", "Relieves pain", "Hemostatic"],
-    indications: ["Wind-dampness", "Pain in tendons and bones", "Dry cough", "Whooping cough", "Allergies", "Liver cirrhosis", "Periodontal inflammation"],
-    dosage: "Dried whole plant: 10-20g, decoction or powder. Use as prescribed by doctor",
-    contraindications: ["Contains toxic alkaloid (solanine), use with caution", "Pregnant women consult doctor before use", "Do not overdose"],
-    origin: "Vietnam (coastal areas from Hai Phong to Binh Thuan, especially abundant from Thanh Hoa southward), tropical Asian countries",
-    description: "Ca Gai Leo (also called Cà gai dây, Cà quýnh, Gai cườm) is a small vine of the Solanaceae family, stems and leaves with yellow curved thorns, white-purple flowers, red berries. Contains glycoalkaloid and flavonoid, treats wind-dampness, dry cough, whooping cough, liver cirrhosis."
+    mainIngredients: [
+      "Glycoalkaloid Steroid (Solanine, Solasodine and glycosides)",
+      "Flavonoid",
+    ],
+    uses: [
+      "Disperses wind-dampness",
+      "Detoxifies",
+      "Stops cough",
+      "Relieves pain",
+      "Hemostatic",
+    ],
+    indications: [
+      "Wind-dampness",
+      "Pain in tendons and bones",
+      "Dry cough",
+      "Whooping cough",
+      "Allergies",
+      "Liver cirrhosis",
+      "Periodontal inflammation",
+    ],
+    dosage:
+      "Dried whole plant: 10-20g, decoction or powder. Use as prescribed by doctor",
+    contraindications: [
+      "Contains toxic alkaloid (solanine), use with caution",
+      "Pregnant women consult doctor before use",
+      "Do not overdose",
+    ],
+    origin:
+      "Vietnam (coastal areas from Hai Phong to Binh Thuan, especially abundant from Thanh Hoa southward), tropical Asian countries",
+    description:
+      "Ca Gai Leo (also called Cà gai dây, Cà quýnh, Gai cườm) is a small vine of the Solanaceae family, stems and leaves with yellow curved thorns, white-purple flowers, red berries. Contains glycoalkaloid and flavonoid, treats wind-dampness, dry cough, whooping cough, liver cirrhosis.",
   },
   {
     id: 33,
     name: "Ca Phe",
     firstLetter: "C",
-    scientificName: "Coffea spp. (C. arabica L., C. canephora Pierre, C. liberica var. dewevrei)",
+    scientificName:
+      "Coffea spp. (C. arabica L., C. canephora Pierre, C. liberica var. dewevrei)",
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
     image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800",
-    usedParts: "Sun-dried seeds of ripe fruit (grind and remove ripe fruit skin)",
+    usedParts:
+      "Sun-dried seeds of ripe fruit (grind and remove ripe fruit skin)",
     properties: "Stimulant nature",
     meridians: "Heart, Kidney, Liver meridians",
-    mainIngredients: ["Alkaloid (caffeine 2-3%, theobromine, theophylline, monomethyl xanthine)", "Acid caffeoylquinic (chlorogenic acid, feruloylquinic, p-coumaroylquinic)"],
-    uses: ["Stimulates nervous system", "Increases heart activity", "Vasoconstriction", "Diuretic", "Stimulates digestion", "Antibacterial", "Antioxidant", "Fat metabolism"],
-    indications: ["Sleepiness", "Fatigue", "Edema", "Indigestion", "Rheumatism", "Malaria fever", "Detoxifies alcohol and opium"],
-    dosage: "Roasted beans: extract with boiling water drink as beverage. Raw beans: crush and soak in wine. Leaves: 5-10g decoction. Use moderately, avoid abuse",
-    contraindications: ["People with insomnia should not use", "Overdose can cause nervous system depression", "People with high blood pressure, cardiovascular diseases use with caution", "Pregnant women and children should limit use"],
-    origin: "Tropical highlands of Africa, widely cultivated in South America, South Asia. Vietnam (Central Highlands, Lam Dong, Southeast) - world's #1 Robusta exporter",
-    description: "Ca Phe (Coffea spp.) is a small woody tree of the Rubiaceae family, seeds contain caffeine that stimulates nervous system, helps alertness, reduces fatigue. Used as popular beverage, treats edema, diuretic, digestion. Vietnam is world's largest Robusta coffee exporter."
+    mainIngredients: [
+      "Alkaloid (caffeine 2-3%, theobromine, theophylline, monomethyl xanthine)",
+      "Acid caffeoylquinic (chlorogenic acid, feruloylquinic, p-coumaroylquinic)",
+    ],
+    uses: [
+      "Stimulates nervous system",
+      "Increases heart activity",
+      "Vasoconstriction",
+      "Diuretic",
+      "Stimulates digestion",
+      "Antibacterial",
+      "Antioxidant",
+      "Fat metabolism",
+    ],
+    indications: [
+      "Sleepiness",
+      "Fatigue",
+      "Edema",
+      "Indigestion",
+      "Rheumatism",
+      "Malaria fever",
+      "Detoxifies alcohol and opium",
+    ],
+    dosage:
+      "Roasted beans: extract with boiling water drink as beverage. Raw beans: crush and soak in wine. Leaves: 5-10g decoction. Use moderately, avoid abuse",
+    contraindications: [
+      "People with insomnia should not use",
+      "Overdose can cause nervous system depression",
+      "People with high blood pressure, cardiovascular diseases use with caution",
+      "Pregnant women and children should limit use",
+    ],
+    origin:
+      "Tropical highlands of Africa, widely cultivated in South America, South Asia. Vietnam (Central Highlands, Lam Dong, Southeast) - world's #1 Robusta exporter",
+    description:
+      "Ca Phe (Coffea spp.) is a small woody tree of the Rubiaceae family, seeds contain caffeine that stimulates nervous system, helps alertness, reduces fatigue. Used as popular beverage, treats edema, diuretic, digestion. Vietnam is world's largest Robusta coffee exporter.",
   },
   {
     id: 34,
@@ -416,17 +1163,47 @@ export const medicines = [
     scientificName: "Scoparia dulcis L.",
     family: "Họ Mã đề (Plantaginaceae)",
     categoryId: "plantaginaceae",
-    image: "https://images.baodantoc.vn/uploads/2020/Th%C3%A1ng_12/Ng%C3%A0y-28/Thanh/135-1-b7df7ffeb7cca404c7509c622f7dc092.jpg",
-    usedParts: "Whole plant including roots (harvest in spring-summer, wash clean, cut small use fresh or sun/oven dry)",
+    image:
+      "https://images.baodantoc.vn/uploads/2020/Th%C3%A1ng_12/Ng%C3%A0y-28/Thanh/135-1-b7df7ffeb7cca404c7509c622f7dc092.jpg",
+    usedParts:
+      "Whole plant including roots (harvest in spring-summer, wash clean, cut small use fresh or sun/oven dry)",
     properties: "Sweet taste (bitter then slightly sweet)",
     meridians: "Lung, Liver, Spleen meridians",
-    mainIngredients: ["Diterpenoid (scoparic acid, scoparidol)", "Triterpene (betulinic acid)", "Alkaloid (benzoxazinoid derivatives)", "Flavonoid (hispidulin, sinensetin, nobiletin, apigenin, luteolin)"],
-    uses: ["Clears heat and reduces fever", "Detoxifies body", "Treats cough", "Treats sore throat", "Treats measles", "Regulates menstruation", "Relieves toothache"],
-    indications: ["Fever", "Cassava poisoning", "Intoxication", "Cough", "Sore throat", "Measles", "Excessive menstruation", "Toothache"],
-    dosage: "Dried whole plant: 10-20g, decoction. Fresh leaves: steep in water for mouthwash or chew for toothache. Can use fresh or dried",
-    contraindications: ["No special toxicity reports yet", "Consult doctor for long-term use"],
-    origin: "Southern China (Guangxi), India, Malaysia, Thailand, Americas. Vietnam: grows wild everywhere",
-    description: "Cam Thao Nam (also called Cam thảo đất, Dã cam thảo, Thổ cam thảo) is a plant of the Plantaginaceae family 0.4-0.7m tall, sweet taste, contains diterpenoid and flavonoid. Treats fever, detoxifies, cough, sore throat, measles, excessive menstruation and toothache."
+    mainIngredients: [
+      "Diterpenoid (scoparic acid, scoparidol)",
+      "Triterpene (betulinic acid)",
+      "Alkaloid (benzoxazinoid derivatives)",
+      "Flavonoid (hispidulin, sinensetin, nobiletin, apigenin, luteolin)",
+    ],
+    uses: [
+      "Clears heat and reduces fever",
+      "Detoxifies body",
+      "Treats cough",
+      "Treats sore throat",
+      "Treats measles",
+      "Regulates menstruation",
+      "Relieves toothache",
+    ],
+    indications: [
+      "Fever",
+      "Cassava poisoning",
+      "Intoxication",
+      "Cough",
+      "Sore throat",
+      "Measles",
+      "Excessive menstruation",
+      "Toothache",
+    ],
+    dosage:
+      "Dried whole plant: 10-20g, decoction. Fresh leaves: steep in water for mouthwash or chew for toothache. Can use fresh or dried",
+    contraindications: [
+      "No special toxicity reports yet",
+      "Consult doctor for long-term use",
+    ],
+    origin:
+      "Southern China (Guangxi), India, Malaysia, Thailand, Americas. Vietnam: grows wild everywhere",
+    description:
+      "Cam Thao Nam (also called Cam thảo đất, Dã cam thảo, Thổ cam thảo) is a plant of the Plantaginaceae family 0.4-0.7m tall, sweet taste, contains diterpenoid and flavonoid. Treats fever, detoxifies, cough, sore throat, measles, excessive menstruation and toothache.",
   },
   {
     id: 35,
@@ -435,17 +1212,43 @@ export const medicines = [
     scientificName: "Cibotium barometz (L.) J. Sm.",
     family: "Họ Dương xỉ (Cibotiaceae)",
     categoryId: "cibotiaceae",
-    image: "https://www.vinmec.com/static/uploads/20210629_080129_474624_cay_cau_tich_max_1800x1800_jpg_6fca08e59c.jpg",
-    usedParts: "Rhizome (Rhizoma Cibotii) processed and dried (harvest in summer or winter, scrape or burn off all hair, wash clean, soften, slice thin and sun dry)",
+    image:
+      "https://www.vinmec.com/static/uploads/20210629_080129_474624_cay_cau_tich_max_1800x1800_jpg_6fca08e59c.jpg",
+    usedParts:
+      "Rhizome (Rhizoma Cibotii) processed and dried (harvest in summer or winter, scrape or burn off all hair, wash clean, soften, slice thin and sun dry)",
     properties: "Sweet taste, warm nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Protocatechuic acid", "Caffeic acid", "Protocatechuic aldehyde", "Caffeoyl-glucopyranose (1-O-caffeoyl-D-glucopyranose, 3-O-caffeoyl-D-glucopyranose)", "Cibotiumbaroside B", "Cibotiglycerol"],
-    uses: ["Tonifies liver and kidneys", "Strengthens tendons and bones", "Dispels wind-dampness", "Hemostatic (golden hair - kim mao)"],
-    indications: ["Wind-cold-dampness", "Limb pain and fatigue", "Lower back pain", "Sciatica pain", "Frequent urination"],
-    dosage: "Dried rhizome: 6-12g, decoction or powder. Golden hair (kim mao): external hemostatic use",
-    contraindications: ["Use prescribed dosage", "People with yin deficiency and excess fire use with caution"],
-    origin: "Vietnam (grows wild everywhere in mountain forests), Laos, Cambodia, Philippines, Malaysia, Indonesia, southern China (Guangdong, Guangxi, Fujian, Yunnan)",
-    description: "Cau Tich (also called Lông cu ly, Cù liền, Lông khỉ, Kim mao) is a fern species with rhizome covered in soft golden-brown hair. Contains protocatechuic acid, caffeic acid and special compounds that inhibit osteoclasts. Tonifies liver-kidneys, strengthens tendons and bones, treats wind-dampness, lower back pain, sciatica."
+    mainIngredients: [
+      "Protocatechuic acid",
+      "Caffeic acid",
+      "Protocatechuic aldehyde",
+      "Caffeoyl-glucopyranose (1-O-caffeoyl-D-glucopyranose, 3-O-caffeoyl-D-glucopyranose)",
+      "Cibotiumbaroside B",
+      "Cibotiglycerol",
+    ],
+    uses: [
+      "Tonifies liver and kidneys",
+      "Strengthens tendons and bones",
+      "Dispels wind-dampness",
+      "Hemostatic (golden hair - kim mao)",
+    ],
+    indications: [
+      "Wind-cold-dampness",
+      "Limb pain and fatigue",
+      "Lower back pain",
+      "Sciatica pain",
+      "Frequent urination",
+    ],
+    dosage:
+      "Dried rhizome: 6-12g, decoction or powder. Golden hair (kim mao): external hemostatic use",
+    contraindications: [
+      "Use prescribed dosage",
+      "People with yin deficiency and excess fire use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild everywhere in mountain forests), Laos, Cambodia, Philippines, Malaysia, Indonesia, southern China (Guangdong, Guangxi, Fujian, Yunnan)",
+    description:
+      "Cau Tich (also called Lông cu ly, Cù liền, Lông khỉ, Kim mao) is a fern species with rhizome covered in soft golden-brown hair. Contains protocatechuic acid, caffeic acid and special compounds that inhibit osteoclasts. Tonifies liver-kidneys, strengthens tendons and bones, treats wind-dampness, lower back pain, sciatica.",
   },
   {
     id: 36,
@@ -454,17 +1257,46 @@ export const medicines = [
     scientificName: "Lycium barbarum L. và Lycium chinense Mill.",
     family: "Họ Cà (Solanaceae)",
     categoryId: "solanaceae",
-    image: "https://bizweb.dktcdn.net/100/392/499/products/1-4-600x480.jpg?v=1598281871147",
-    usedParts: "Fruit (Cau ky tu - harvest summer/autumn when fruit turns red-yellow, shade dry then sun dry), Root bark (Dia cot bi - harvest early spring/late autumn, peel root bark and sun dry)",
-    properties: "Fruit: sweet taste, neutral nature. Root bark: sweet, bland taste, cold nature",
-    meridians: "Fruit: Liver, Kidney meridians. Root bark: Lung, Liver, Kidney meridians",
-    mainIngredients: ["Fruit: Carotenoid (zeaxanthin dipalmitate), Betalain, Polysaccharide, Amino acids, Vitamins, Minerals", "Root bark: Alkaloid (kukoamin A & B, lyciumin), Coumarin, Sesquiterpenoid (lyciumide), Organic acids"],
-    uses: ["Fruit: Tonifies liver-kidneys", "Benefits essence", "Brightens eyes", "Root bark: Cools blood", "Eliminates bone steaming", "Clears lungs", "Reduces fire"],
-    indications: ["Consumptive deficiency", "Lower back and knee pain", "Dizziness and tinnitus", "Internal heat diabetes", "Blood deficiency blurred vision", "Yin deficiency afternoon fever", "Bone steaming night sweats", "Lung heat cough with blood"],
-    dosage: "Fruit: 6-12g, decoction, wine infusion or eat fresh. Root bark: 9-15g, decoction",
-    contraindications: ["Spleen-stomach deficiency cold with phlegm-dampness should not use fruit", "External cold with fever should not use root bark"],
+    image:
+      "https://bizweb.dktcdn.net/100/392/499/products/1-4-600x480.jpg?v=1598281871147",
+    usedParts:
+      "Fruit (Cau ky tu - harvest summer/autumn when fruit turns red-yellow, shade dry then sun dry), Root bark (Dia cot bi - harvest early spring/late autumn, peel root bark and sun dry)",
+    properties:
+      "Fruit: sweet taste, neutral nature. Root bark: sweet, bland taste, cold nature",
+    meridians:
+      "Fruit: Liver, Kidney meridians. Root bark: Lung, Liver, Kidney meridians",
+    mainIngredients: [
+      "Fruit: Carotenoid (zeaxanthin dipalmitate), Betalain, Polysaccharide, Amino acids, Vitamins, Minerals",
+      "Root bark: Alkaloid (kukoamin A & B, lyciumin), Coumarin, Sesquiterpenoid (lyciumide), Organic acids",
+    ],
+    uses: [
+      "Fruit: Tonifies liver-kidneys",
+      "Benefits essence",
+      "Brightens eyes",
+      "Root bark: Cools blood",
+      "Eliminates bone steaming",
+      "Clears lungs",
+      "Reduces fire",
+    ],
+    indications: [
+      "Consumptive deficiency",
+      "Lower back and knee pain",
+      "Dizziness and tinnitus",
+      "Internal heat diabetes",
+      "Blood deficiency blurred vision",
+      "Yin deficiency afternoon fever",
+      "Bone steaming night sweats",
+      "Lung heat cough with blood",
+    ],
+    dosage:
+      "Fruit: 6-12g, decoction, wine infusion or eat fresh. Root bark: 9-15g, decoction",
+    contraindications: [
+      "Spleen-stomach deficiency cold with phlegm-dampness should not use fruit",
+      "External cold with fever should not use root bark",
+    ],
     origin: "Cultivated and grows wild in Vietnam, China, Mongolia, Korea",
-    description: "Cau Ky (also called Củ khởi, Rau khởi, Khủ khởi) is a small thorny plant of the Solanaceae family, red-orange berries. Fruit (Cau ky tu) contains zeaxanthin good for eyes, tonifies liver-kidneys, benefits essence and brightens eyes. Root bark (Dia cot bi) contains kukoamin that lowers blood pressure, cools blood eliminates bone steaming, clears lungs."
+    description:
+      "Cau Ky (also called Củ khởi, Rau khởi, Khủ khởi) is a small thorny plant of the Solanaceae family, red-orange berries. Fruit (Cau ky tu) contains zeaxanthin good for eyes, tonifies liver-kidneys, benefits essence and brightens eyes. Root bark (Dia cot bi) contains kukoamin that lowers blood pressure, cools blood eliminates bone steaming, clears lungs.",
   },
   {
     id: 37,
@@ -473,17 +1305,50 @@ export const medicines = [
     scientificName: "Citrus × aurantiifolia (Christm.) Swingle",
     family: "Họ Cam (Rutaceae)",
     categoryId: "rutaceae",
-    image: "https://camnangcaytrong.com/Uploads/UserFiles/images/Qua%20chanh%20ta.jpg",
-    usedParts: "Leaves and fruit (leaves harvest year-round use fresh or shade dry, fruit harvest nearly year-round)",
-    properties: "Leaves: astringent, bitter taste, neutral nature. Fruit: sour taste, cool nature",
+    image:
+      "https://camnangcaytrong.com/Uploads/UserFiles/images/Qua%20chanh%20ta.jpg",
+    usedParts:
+      "Leaves and fruit (leaves harvest year-round use fresh or shade dry, fruit harvest nearly year-round)",
+    properties:
+      "Leaves: astringent, bitter taste, neutral nature. Fruit: sour taste, cool nature",
     meridians: "Liver, Stomach, Lung meridians",
-    mainIngredients: ["Leaf essential oil (Geranial 19.4%, Limonene 16.4%, Neral 11.4%, Nerol 9.5%, Geraniol 7.5%, Geranyl acetate 6.6%)", "Fruit peel: Flavonoid, Essential oil (Limonene 39.3%, β-pinene 28.4%)", "Fruit juice: Citric acid, Malic acid, Vitamins, Sugars, Minerals", "Seeds: Limonoid"],
-    uses: ["Clears heat", "Improves appetite", "Aids digestion", "Prevents scurvy", "Expels phlegm", "Treats cough", "Treats bile vomiting", "Disperses wind clears heat (leaves)", "Activates blood opens channels (leaves)", "Digestion"],
-    indications: ["Heat fever", "Poor appetite and digestion", "Vitamin C deficiency (scurvy)", "Cough with phlegm", "Bile vomiting", "Sore throat", "Wind-heat cold"],
-    dosage: "Fruit: squeeze juice to drink, mix with salt or honey. Leaves: 6-12g decoction or crush and apply externally. Fruit sucked with salt treats cough, sore throat",
-    contraindications: ["People with gastric-duodenal ulcers should limit use", "Excessive use may harm tooth enamel due to strong acidity"],
-    origin: "Southeast Asia, widely cultivated in Central and Southern Vietnam plains, tropical regions worldwide",
-    description: "Chanh Ta (also called Má điêu, Chứ hở câu, Mác vo) is a small woody tree of the Rutaceae family 3-4m tall with thorns, small green very sour fruit. Contains abundant citric acid, vitamin C and essential oil. Fruit clears heat, aids digestion, prevents scurvy, expels phlegm treats cough. Leaves disperse wind clear heat, activate blood open channels."
+    mainIngredients: [
+      "Leaf essential oil (Geranial 19.4%, Limonene 16.4%, Neral 11.4%, Nerol 9.5%, Geraniol 7.5%, Geranyl acetate 6.6%)",
+      "Fruit peel: Flavonoid, Essential oil (Limonene 39.3%, β-pinene 28.4%)",
+      "Fruit juice: Citric acid, Malic acid, Vitamins, Sugars, Minerals",
+      "Seeds: Limonoid",
+    ],
+    uses: [
+      "Clears heat",
+      "Improves appetite",
+      "Aids digestion",
+      "Prevents scurvy",
+      "Expels phlegm",
+      "Treats cough",
+      "Treats bile vomiting",
+      "Disperses wind clears heat (leaves)",
+      "Activates blood opens channels (leaves)",
+      "Digestion",
+    ],
+    indications: [
+      "Heat fever",
+      "Poor appetite and digestion",
+      "Vitamin C deficiency (scurvy)",
+      "Cough with phlegm",
+      "Bile vomiting",
+      "Sore throat",
+      "Wind-heat cold",
+    ],
+    dosage:
+      "Fruit: squeeze juice to drink, mix with salt or honey. Leaves: 6-12g decoction or crush and apply externally. Fruit sucked with salt treats cough, sore throat",
+    contraindications: [
+      "People with gastric-duodenal ulcers should limit use",
+      "Excessive use may harm tooth enamel due to strong acidity",
+    ],
+    origin:
+      "Southeast Asia, widely cultivated in Central and Southern Vietnam plains, tropical regions worldwide",
+    description:
+      "Chanh Ta (also called Má điêu, Chứ hở câu, Mác vo) is a small woody tree of the Rutaceae family 3-4m tall with thorns, small green very sour fruit. Contains abundant citric acid, vitamin C and essential oil. Fruit clears heat, aids digestion, prevents scurvy, expels phlegm treats cough. Leaves disperse wind clear heat, activate blood open channels.",
   },
   {
     id: 38,
@@ -492,17 +1357,47 @@ export const medicines = [
     scientificName: "Cissus trilobus (Lour.) Merr.",
     family: "Họ Nho (Vitaceae)",
     categoryId: "vitaceae",
-    image: "https://file.hstatic.net/1000186502/article/cay-chia-voi-chua-thoat-vi-dia-dem-bao-dai-duong-3_a852399d52e44f20aa9a90b98c84435e_grande.png",
-    usedParts: "Tuberous roots (harvest year-round, slice thin and sun dry), Vines (cut short, soak in wine and stir-fry)",
+    image:
+      "https://file.hstatic.net/1000186502/article/cay-chia-voi-chua-thoat-vi-dia-dem-bao-dai-duong-3_a852399d52e44f20aa9a90b98c84435e_grande.png",
+    usedParts:
+      "Tuberous roots (harvest year-round, slice thin and sun dry), Vines (cut short, soak in wine and stir-fry)",
     properties: "Bitter, sweet taste, neutral nature",
     meridians: "Liver, Kidney, Bone meridians",
-    mainIngredients: ["Phenolic", "Anthranoid", "Amino acids", "Saponin", "Organic acids"],
-    uses: ["Dispels wind-dampness", "Stops pain", "Activates blood", "Reduces swelling", "Treats boils and abscesses"],
-    indications: ["Bone pain", "Lower back pain", "Numbness and fatigue", "Headache", "Rheumatism", "Boils and abscesses", "Sores", "Hemorrhoids", "Burns"],
-    dosage: "Tuberous roots: 10-20g, decoction. Vines: cut short, soak in wine and stir-fry use. External: crush and apply to affected area",
-    contraindications: ["No special toxicity reports yet", "Pregnant women use with caution"],
-    origin: "Vietnam (plains and midlands of most provinces), Southern China, Laos, Cambodia, Thailand",
-    description: "Chia Voi (also called Bạch phấn đằng, Bạch liễm, Hồ đằng, Vét phông) is a vine of the Vitaceae family 2-4m long, stem covered with white powder. Contains phenolic, saponin and amino acids. Treats bone pain, lower back pain, rheumatism, boils and abscesses, sores, hemorrhoids, burns."
+    mainIngredients: [
+      "Phenolic",
+      "Anthranoid",
+      "Amino acids",
+      "Saponin",
+      "Organic acids",
+    ],
+    uses: [
+      "Dispels wind-dampness",
+      "Stops pain",
+      "Activates blood",
+      "Reduces swelling",
+      "Treats boils and abscesses",
+    ],
+    indications: [
+      "Bone pain",
+      "Lower back pain",
+      "Numbness and fatigue",
+      "Headache",
+      "Rheumatism",
+      "Boils and abscesses",
+      "Sores",
+      "Hemorrhoids",
+      "Burns",
+    ],
+    dosage:
+      "Tuberous roots: 10-20g, decoction. Vines: cut short, soak in wine and stir-fry use. External: crush and apply to affected area",
+    contraindications: [
+      "No special toxicity reports yet",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (plains and midlands of most provinces), Southern China, Laos, Cambodia, Thailand",
+    description:
+      "Chia Voi (also called Bạch phấn đằng, Bạch liễm, Hồ đằng, Vét phông) is a vine of the Vitaceae family 2-4m long, stem covered with white powder. Contains phenolic, saponin and amino acids. Treats bone pain, lower back pain, rheumatism, boils and abscesses, sores, hemorrhoids, burns.",
   },
   {
     id: 39,
@@ -511,17 +1406,46 @@ export const medicines = [
     scientificName: "Moringa oleifera Lam.",
     family: "Họ Chùm ngây (Moringaceae)",
     categoryId: "moringaceae",
-    image: "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-chum-ngay.jpg",
+    image:
+      "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-chum-ngay.jpg",
     usedParts: "Roots and whole plant (leaves, flowers, fruit, seeds)",
     properties: "Sweet, pungent taste, warm nature",
     meridians: "Liver, Heart, Kidney meridians",
-    mainIngredients: ["Roots: Benzyl glucosinolate (glucotropaeolin)", "Leaves/Flowers/Fruit: Carotenoid (lutein, luteoxanthin, zeaxanthin, β-carotene)", "Leaves: Flavonoid (quercetin, kaempferol), Omega-3, Omega-6", "Seeds: Seed oil (oleic acid 70-80%, palmitoleic 6-10%, stearic 4-10%, arachidic 2-4%)"],
-    uses: ["Liver protection", "Anti-inflammatory", "Prevents atherosclerosis", "Neuroprotection", "Antioxidant", "Cardiovascular protection", "Cardiac support", "Digestion"],
-    indications: ["Epilepsy", "Fainting", "Nervous exhaustion", "Digestive disorders", "Liver diseases", "Cardiovascular diseases"],
-    dosage: "Leaves: use as vegetable or decoction. Roots: 6-12g decoction. Seed oil: for eating or external application. Whole plant can be used fresh or dried",
-    contraindications: ["Seed oil may reduce fertility", "Pregnant women use roots with caution", "Use moderate dosage"],
-    origin: "Vietnam (southern provinces from Quang Nam southward), India, tropical regions",
-    description: "Chum Ngay (also called Bồn Bồn, Cải Ngựa) is a small tree of the Moringaceae family 5-10m tall, leaves tripinnate compound. Contains carotenoid, flavonoid, omega-3, omega-6 and seed oil. Has effects of liver protection, anti-inflammatory, antioxidant, cardiovascular protection. Roots treat epilepsy, nervous exhaustion. Leaves used as vegetable aid digestion."
+    mainIngredients: [
+      "Roots: Benzyl glucosinolate (glucotropaeolin)",
+      "Leaves/Flowers/Fruit: Carotenoid (lutein, luteoxanthin, zeaxanthin, β-carotene)",
+      "Leaves: Flavonoid (quercetin, kaempferol), Omega-3, Omega-6",
+      "Seeds: Seed oil (oleic acid 70-80%, palmitoleic 6-10%, stearic 4-10%, arachidic 2-4%)",
+    ],
+    uses: [
+      "Liver protection",
+      "Anti-inflammatory",
+      "Prevents atherosclerosis",
+      "Neuroprotection",
+      "Antioxidant",
+      "Cardiovascular protection",
+      "Cardiac support",
+      "Digestion",
+    ],
+    indications: [
+      "Epilepsy",
+      "Fainting",
+      "Nervous exhaustion",
+      "Digestive disorders",
+      "Liver diseases",
+      "Cardiovascular diseases",
+    ],
+    dosage:
+      "Leaves: use as vegetable or decoction. Roots: 6-12g decoction. Seed oil: for eating or external application. Whole plant can be used fresh or dried",
+    contraindications: [
+      "Seed oil may reduce fertility",
+      "Pregnant women use roots with caution",
+      "Use moderate dosage",
+    ],
+    origin:
+      "Vietnam (southern provinces from Quang Nam southward), India, tropical regions",
+    description:
+      "Chum Ngay (also called Bồn Bồn, Cải Ngựa) is a small tree of the Moringaceae family 5-10m tall, leaves tripinnate compound. Contains carotenoid, flavonoid, omega-3, omega-6 and seed oil. Has effects of liver protection, anti-inflammatory, antioxidant, cardiovascular protection. Roots treat epilepsy, nervous exhaustion. Leaves used as vegetable aid digestion.",
   },
   {
     id: 40,
@@ -530,17 +1454,57 @@ export const medicines = [
     scientificName: "Phyllanthus acidus (L.) Skeels",
     family: "Họ Diệp hạ châu (Phyllanthaceae)",
     categoryId: "phyllanthaceae",
-    image: "https://login.medlatec.vn//ImagePath/images/20221124/20221124_chum-ruot-2.jpg",
-    usedParts: "Leaves, fruit, bark and roots (harvest leaves, bark and root bark year-round, fruit harvest when unripe)",
-    properties: "Fruit: sour, slightly sweet taste, cool nature. Leaves and roots: hot nature",
+    image:
+      "https://login.medlatec.vn//ImagePath/images/20221124/20221124_chum-ruot-2.jpg",
+    usedParts:
+      "Leaves, fruit, bark and roots (harvest leaves, bark and root bark year-round, fruit harvest when unripe)",
+    properties:
+      "Fruit: sour, slightly sweet taste, cool nature. Leaves and roots: hot nature",
     meridians: "Liver, Spleen, Stomach meridians",
-    mainIngredients: ["Fruit: Vitamin C, Minerals", "Diterpenoid (phyllane A-B)", "Sesquiterpenoid (phyllanthusol A-B)", "Triterpenoid", "Flavonoid", "Phenolic compounds (hypogallic acid)"],
-    uses: ["Liver protection", "Lowers blood sugar", "Antioxidant", "Inhibits α-glucosidase", "Anti-inflammatory", "Antibacterial", "Clears heat", "Anti-snake venom", "Dissolves blood stasis", "Detoxifies", "Expels phlegm", "Antiseptic"],
-    indications: ["Liver diseases", "Diabetes", "Bacterial infections", "Heat fever", "Constipation", "Snake bite", "Blood stasis", "Inflammation", "Cough with phlegm"],
-    dosage: "Fruit: eat fresh or make beverage. Leaves/Root bark: 6-12g decoction. External: crush and apply to affected area (anti-snake venom)",
-    contraindications: ["Roots and seeds have purgative properties, do not overdose", "People with diarrhea use with caution", "Pregnant women use with caution"],
-    origin: "Tropical Americas, cultivated in Vietnam for ornamental purposes and fruit",
-    description: "Chum Ruot (also called Tầm ruột, Mác nhôm) is a small tree of the Phyllanthaceae family 3-5m tall, ribbed berries pale yellow sour taste. Contains diterpenoid, sesquiterpenoid, flavonoid and vitamin C. Has effects of liver protection, lowers blood sugar, antioxidant, antibacterial. Leaves and roots used for anti-snake venom, dissolve blood stasis, detoxify."
+    mainIngredients: [
+      "Fruit: Vitamin C, Minerals",
+      "Diterpenoid (phyllane A-B)",
+      "Sesquiterpenoid (phyllanthusol A-B)",
+      "Triterpenoid",
+      "Flavonoid",
+      "Phenolic compounds (hypogallic acid)",
+    ],
+    uses: [
+      "Liver protection",
+      "Lowers blood sugar",
+      "Antioxidant",
+      "Inhibits α-glucosidase",
+      "Anti-inflammatory",
+      "Antibacterial",
+      "Clears heat",
+      "Anti-snake venom",
+      "Dissolves blood stasis",
+      "Detoxifies",
+      "Expels phlegm",
+      "Antiseptic",
+    ],
+    indications: [
+      "Liver diseases",
+      "Diabetes",
+      "Bacterial infections",
+      "Heat fever",
+      "Constipation",
+      "Snake bite",
+      "Blood stasis",
+      "Inflammation",
+      "Cough with phlegm",
+    ],
+    dosage:
+      "Fruit: eat fresh or make beverage. Leaves/Root bark: 6-12g decoction. External: crush and apply to affected area (anti-snake venom)",
+    contraindications: [
+      "Roots and seeds have purgative properties, do not overdose",
+      "People with diarrhea use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Tropical Americas, cultivated in Vietnam for ornamental purposes and fruit",
+    description:
+      "Chum Ruot (also called Tầm ruột, Mác nhôm) is a small tree of the Phyllanthaceae family 3-5m tall, ribbed berries pale yellow sour taste. Contains diterpenoid, sesquiterpenoid, flavonoid and vitamin C. Has effects of liver protection, lowers blood sugar, antioxidant, antibacterial. Leaves and roots used for anti-snake venom, dissolve blood stasis, detoxify.",
   },
   {
     id: 41,
@@ -549,17 +1513,47 @@ export const medicines = [
     scientificName: "Musa balbisiana Colla",
     family: "Họ Chuối (Musaceae)",
     categoryId: "musaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/chuoi-hot-1.jpg",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/chuoi-hot-1.jpg",
     usedParts: "Fruit, rhizome, pseudostem (harvest year-round)",
     properties: "Sweet, astringent taste, cool nature",
     meridians: "Spleen, Stomach, Large Intestine meridians",
-    mainIngredients: ["Potassium, Chlorine", "12-pentacosen, Stigmasterol, 10-heneicosen", "Apiforol, Maruchantin-E", "Chlorogenic acid, (-)-epicatechin, Rutin", "Fruit: α-carotene, β-carotene, β-cryptoxanthin", "Seeds: Ferulic acid, Fatty acids (C16, C18), Polyphenol"],
-    uses: ["Anti-diabetes", "Antibacterial", "Anti-cancer", "Liver protection", "Treats abdominal pain", "Treats diarrhea", "Treats tinea versicolor", "Treats urinary stones"],
-    indications: ["Diabetes", "Abdominal pain", "Diarrhea", "Tinea versicolor", "Urinary stones", "Bacterial infections"],
-    dosage: "Fruit peel: 10-20g decoction. Fruit: eat fresh or dried. Sap: apply externally. Rhizome, pseudostem: decoction",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Do not eat excessively"],
-    origin: "Southeast Asia (native), Vietnam (grows wild in lowlands, cultivated for leaves and fruit)",
-    description: "Chuoi Hot (also called Chuối chát) is a plant of the Musaceae family with false stem 2-4m tall, ribbed fruit containing many large seeds. Contains potassium, chlorine, carotenoids, polyphenols and many natural compounds. Has effects of anti-diabetes, antibacterial, anti-cancer, liver protection. Fruit peel treats abdominal pain, diarrhea. Sap applied treats tinea versicolor. Fruit treats urinary stones."
+    mainIngredients: [
+      "Potassium, Chlorine",
+      "12-pentacosen, Stigmasterol, 10-heneicosen",
+      "Apiforol, Maruchantin-E",
+      "Chlorogenic acid, (-)-epicatechin, Rutin",
+      "Fruit: α-carotene, β-carotene, β-cryptoxanthin",
+      "Seeds: Ferulic acid, Fatty acids (C16, C18), Polyphenol",
+    ],
+    uses: [
+      "Anti-diabetes",
+      "Antibacterial",
+      "Anti-cancer",
+      "Liver protection",
+      "Treats abdominal pain",
+      "Treats diarrhea",
+      "Treats tinea versicolor",
+      "Treats urinary stones",
+    ],
+    indications: [
+      "Diabetes",
+      "Abdominal pain",
+      "Diarrhea",
+      "Tinea versicolor",
+      "Urinary stones",
+      "Bacterial infections",
+    ],
+    dosage:
+      "Fruit peel: 10-20g decoction. Fruit: eat fresh or dried. Sap: apply externally. Rhizome, pseudostem: decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Do not eat excessively",
+    ],
+    origin:
+      "Southeast Asia (native), Vietnam (grows wild in lowlands, cultivated for leaves and fruit)",
+    description:
+      "Chuoi Hot (also called Chuối chát) is a plant of the Musaceae family with false stem 2-4m tall, ribbed fruit containing many large seeds. Contains potassium, chlorine, carotenoids, polyphenols and many natural compounds. Has effects of anti-diabetes, antibacterial, anti-cancer, liver protection. Fruit peel treats abdominal pain, diarrhea. Sap applied treats tinea versicolor. Fruit treats urinary stones.",
   },
   {
     id: 42,
@@ -568,17 +1562,28 @@ export const medicines = [
     scientificName: "Erythroxylum coca Lamk.",
     family: "Họ Coca (Erythroxylaceae)",
     categoryId: "erythroxylaceae",
-    image: "https://duoclieuhoangthanh.com/wp-content/uploads/2020/05/12-c%C3%B4-ca-1.jpg",
+    image:
+      "https://duoclieuhoangthanh.com/wp-content/uploads/2020/05/12-c%C3%B4-ca-1.jpg",
     usedParts: "Leaves",
     properties: "Bitter taste, warm nature",
     meridians: "Nervous system meridians",
     mainIngredients: ["Alkaloid (Cocaine - main active ingredient)"],
     uses: ["Local anesthetic (formerly)"],
-    indications: ["Otolaryngology (anesthesia)", "Dentistry (anesthesia)", "Ophthalmology (anesthesia)"],
+    indications: [
+      "Otolaryngology (anesthesia)",
+      "Dentistry (anesthesia)",
+      "Ophthalmology (anesthesia)",
+    ],
     dosage: "NOW PROHIBITED - Do not use",
-    contraindications: ["ABSOLUTELY PROHIBITED (highly addictive)", "Currently trending toward global ban", "Strictly controlled substance", "Can only be used in medical research with special license"],
+    contraindications: [
+      "ABSOLUTELY PROHIBITED (highly addictive)",
+      "Currently trending toward global ban",
+      "Strictly controlled substance",
+      "Can only be used in medical research with special license",
+    ],
     origin: "Andes highlands of Peru, cultivated in Peru, Bolivia",
-    description: "Co Ca (Coca) is a shrub of the Erythroxylaceae family 1.5-2m tall, leaves contain cocaine alkaloid. Formerly used for local anesthesia in Otolaryngology, Dentistry, Ophthalmology. NOW PROHIBITED because it has strong addictive effects and is trending toward global ban."
+    description:
+      "Co Ca (Coca) is a shrub of the Erythroxylaceae family 1.5-2m tall, leaves contain cocaine alkaloid. Formerly used for local anesthesia in Otolaryngology, Dentistry, Ophthalmology. NOW PROHIBITED because it has strong addictive effects and is trending toward global ban.",
   },
   {
     id: 43,
@@ -587,17 +1592,48 @@ export const medicines = [
     scientificName: "Eclipta prostrata (L.) L.",
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
-    image: "https://cdn.tgdd.vn//News/1515615//co-muc-co-tac-dung-gi-12-tac-dung-cua-cay-co-muc-14-800x450-1.jpg",
-    usedParts: "Whole plant (use fresh crushed to extract juice or dried, harvest year-round)",
+    image:
+      "https://cdn.tgdd.vn//News/1515615//co-muc-co-tac-dung-gi-12-tac-dung-cua-cay-co-muc-14-800x450-1.jpg",
+    usedParts:
+      "Whole plant (use fresh crushed to extract juice or dried, harvest year-round)",
     properties: "Sweet, sour taste, cold nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Coumarin (wedelolactone)", "Alkaloid (ecliptin)", "Eclipta saponin", "Tannin", "Essential oil"],
-    uses: ["Tonifies liver-kidney yin", "Nourishes yin stops bleeding", "Hemostatic", "Treats coughing blood", "Treats fungal infections"],
-    indications: ["Liver-kidney yin deficiency", "Blood heat", "Coughing blood", "Vomiting blood", "Bloody stool", "Bloody urine", "Nosebleeds", "Subcutaneous bleeding", "Metrorrhagia", "Menorrhagia", "Oral thrush"],
-    dosage: "Whole plant: 9-15g decoction. Fresh: crush to extract juice drink or rinse mouth to treat fungus. Dried: decoction",
-    contraindications: ["Not for spleen-stomach deficiency cold", "Use with caution for people with diarrhea"],
+    mainIngredients: [
+      "Coumarin (wedelolactone)",
+      "Alkaloid (ecliptin)",
+      "Eclipta saponin",
+      "Tannin",
+      "Essential oil",
+    ],
+    uses: [
+      "Tonifies liver-kidney yin",
+      "Nourishes yin stops bleeding",
+      "Hemostatic",
+      "Treats coughing blood",
+      "Treats fungal infections",
+    ],
+    indications: [
+      "Liver-kidney yin deficiency",
+      "Blood heat",
+      "Coughing blood",
+      "Vomiting blood",
+      "Bloody stool",
+      "Bloody urine",
+      "Nosebleeds",
+      "Subcutaneous bleeding",
+      "Metrorrhagia",
+      "Menorrhagia",
+      "Oral thrush",
+    ],
+    dosage:
+      "Whole plant: 9-15g decoction. Fresh: crush to extract juice drink or rinse mouth to treat fungus. Dried: decoction",
+    contraindications: [
+      "Not for spleen-stomach deficiency cold",
+      "Use with caution for people with diarrhea",
+    ],
     origin: "Vietnam (grows wild everywhere)",
-    description: "Co Muc (also called Cỏ nhọ nồi, Hạn liên thảo) is an herbaceous plant of the Asteraceae family 30-50cm long, gray-black opposite leaves, small white flowers. Contains coumarin, alkaloid, saponin and tannin. Has effects of tonifying liver-kidney yin, nourishing yin stopping bleeding, hemostatic. Treats liver-kidney yin deficiency, blood heat syndromes, coughing blood, vomiting blood, bleeding. Crushed to extract juice rinse mouth treats fungus."
+    description:
+      "Co Muc (also called Cỏ nhọ nồi, Hạn liên thảo) is an herbaceous plant of the Asteraceae family 30-50cm long, gray-black opposite leaves, small white flowers. Contains coumarin, alkaloid, saponin and tannin. Has effects of tonifying liver-kidney yin, nourishing yin stopping bleeding, hemostatic. Treats liver-kidney yin deficiency, blood heat syndromes, coughing blood, vomiting blood, bleeding. Crushed to extract juice rinse mouth treats fungus.",
   },
   {
     id: 44,
@@ -606,17 +1642,46 @@ export const medicines = [
     scientificName: "Euphorbia hirta L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://cdnv2.tgdd.vn/mwg-static/common/News/1572207/co-sua-la-lon-cong-dung-lieu-dung-va-luu-y-khi-su-dung-5.jpg",
+    image:
+      "https://cdnv2.tgdd.vn/mwg-static/common/News/1572207/co-sua-la-lon-cong-dung-lieu-dung-va-luu-y-khi-su-dung-5.jpg",
     usedParts: "Whole plant (harvest year-round, use fresh or sun dry)",
     properties: "Pungent, bitter taste, neutral nature",
     meridians: "Large Intestine, Lung meridians",
-    mainIngredients: ["Flavonoid (quercetin, kaempferol, rutin)", "Tannin (euphorbin A, B, E)", "Phenolic acids (gallic acid, protocatechuic acid, caffeic acid, chlorogenic acid)", "Triterpenoid", "Phytosterol"],
-    uses: ["Anti-inflammatory", "Antibacterial", "Antispasmodic", "Treats dysentery", "Treats enteritis", "Promotes lactation", "Treats dermatitis", "Detoxifies"],
-    indications: ["Dysentery", "Enteritis", "Insufficient milk", "Dermatitis", "Itchy rash", "Eczema"],
-    dosage: "Dried whole plant: 10-15g decoction. Fresh: boil water for washing (treats dermatitis, itchy rash, eczema)",
-    contraindications: ["Plant sap may irritate skin, do not apply sap directly to skin", "Pregnant women use with caution"],
-    origin: "Pan-tropical regions, Vietnam (grows wild everywhere, in rocky soil, grasslands, pathways)",
-    description: "Co Sua La Lon (also called Cỏ sữa lá to, Cỏ sữa lông) is an herbaceous plant of the Euphorbiaceae family 15-40cm tall, entire plant with rough hair and white milky sap. Contains flavonoid, tannin, phenolic acids, triterpenoid. Has effects of anti-inflammatory, antibacterial, antispasmodic. Treats dysentery, enteritis, promotes lactation, dermatitis. Fresh boiled water for washing treats dermatitis, itchy rash, eczema."
+    mainIngredients: [
+      "Flavonoid (quercetin, kaempferol, rutin)",
+      "Tannin (euphorbin A, B, E)",
+      "Phenolic acids (gallic acid, protocatechuic acid, caffeic acid, chlorogenic acid)",
+      "Triterpenoid",
+      "Phytosterol",
+    ],
+    uses: [
+      "Anti-inflammatory",
+      "Antibacterial",
+      "Antispasmodic",
+      "Treats dysentery",
+      "Treats enteritis",
+      "Promotes lactation",
+      "Treats dermatitis",
+      "Detoxifies",
+    ],
+    indications: [
+      "Dysentery",
+      "Enteritis",
+      "Insufficient milk",
+      "Dermatitis",
+      "Itchy rash",
+      "Eczema",
+    ],
+    dosage:
+      "Dried whole plant: 10-15g decoction. Fresh: boil water for washing (treats dermatitis, itchy rash, eczema)",
+    contraindications: [
+      "Plant sap may irritate skin, do not apply sap directly to skin",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Pan-tropical regions, Vietnam (grows wild everywhere, in rocky soil, grasslands, pathways)",
+    description:
+      "Co Sua La Lon (also called Cỏ sữa lá to, Cỏ sữa lông) is an herbaceous plant of the Euphorbiaceae family 15-40cm tall, entire plant with rough hair and white milky sap. Contains flavonoid, tannin, phenolic acids, triterpenoid. Has effects of anti-inflammatory, antibacterial, antispasmodic. Treats dysentery, enteritis, promotes lactation, dermatitis. Fresh boiled water for washing treats dermatitis, itchy rash, eczema.",
   },
   {
     id: 45,
@@ -625,17 +1690,49 @@ export const medicines = [
     scientificName: "Euphorbia thymifolia L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://trungtamthuoc.com/images/item/co-sua-la-nho-va-cong-dung-2.jpg",
-    usedParts: "Whole plant (harvest year-round, best in summer-autumn, wash clean, use fresh or sun dry)",
+    image:
+      "https://trungtamthuoc.com/images/item/co-sua-la-nho-va-cong-dung-2.jpg",
+    usedParts:
+      "Whole plant (harvest year-round, best in summer-autumn, wash clean, use fresh or sun dry)",
     properties: "Pungent, bitter taste, neutral nature",
     meridians: "Large Intestine, Lung meridians",
-    mainIngredients: ["Terpenoid (euphorbol, campesterol, taraxerol)", "Flavonoid (quercetin, cosmosiin)", "Cinnamic acid (thymofolinoate A-B)", "Essential oil (cymol, carvacrol, limonene, isopinocamphenol)", "Tannin", "Roots: Taraxenol, Tirucallol, Sterol"],
-    uses: ["Treats bacillary dysentery", "Treats enteritis", "Treats diarrhea", "Promotes lactation", "Facilitates milk flow", "Treats skin diseases", "Treats wounds"],
-    indications: ["Bacillary dysentery", "Enteritis", "Diarrhea", "Postpartum insufficient milk", "Blocked milk", "Allergic dermatitis", "Skin itching", "Wounds"],
-    dosage: "Whole dried plant: 10-20g decoction. Fresh: crush and apply externally to wounds. Whole plant boiled water for bathing treats skin diseases",
-    contraindications: ["Plant sap may irritate skin, do not apply sap directly to skin", "Pregnant women use with caution"],
-    origin: "Tropical Asia, Africa, Australia. Vietnam: grows wild everywhere (roadsides, wasteland, fields)",
-    description: "Co Sua La Nho (also called Cỏ sữa lá nhỏ, Bã nắng) is a small herbaceous plant of the Euphorbiaceae family 5-20cm tall, entire plant smooth with white milky sap, small leaves. Contains terpenoid, flavonoid, essential oil and tannin. Treats bacillary dysentery, enteritis, diarrhea, promotes lactation after childbirth. Fresh crushed applied to wounds. Boiled water for bathing treats allergic dermatitis, skin itching."
+    mainIngredients: [
+      "Terpenoid (euphorbol, campesterol, taraxerol)",
+      "Flavonoid (quercetin, cosmosiin)",
+      "Cinnamic acid (thymofolinoate A-B)",
+      "Essential oil (cymol, carvacrol, limonene, isopinocamphenol)",
+      "Tannin",
+      "Roots: Taraxenol, Tirucallol, Sterol",
+    ],
+    uses: [
+      "Treats bacillary dysentery",
+      "Treats enteritis",
+      "Treats diarrhea",
+      "Promotes lactation",
+      "Facilitates milk flow",
+      "Treats skin diseases",
+      "Treats wounds",
+    ],
+    indications: [
+      "Bacillary dysentery",
+      "Enteritis",
+      "Diarrhea",
+      "Postpartum insufficient milk",
+      "Blocked milk",
+      "Allergic dermatitis",
+      "Skin itching",
+      "Wounds",
+    ],
+    dosage:
+      "Whole dried plant: 10-20g decoction. Fresh: crush and apply externally to wounds. Whole plant boiled water for bathing treats skin diseases",
+    contraindications: [
+      "Plant sap may irritate skin, do not apply sap directly to skin",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Tropical Asia, Africa, Australia. Vietnam: grows wild everywhere (roadsides, wasteland, fields)",
+    description:
+      "Co Sua La Nho (also called Cỏ sữa lá nhỏ, Bã nắng) is a small herbaceous plant of the Euphorbiaceae family 5-20cm tall, entire plant smooth with white milky sap, small leaves. Contains terpenoid, flavonoid, essential oil and tannin. Treats bacillary dysentery, enteritis, diarrhea, promotes lactation after childbirth. Fresh crushed applied to wounds. Boiled water for bathing treats allergic dermatitis, skin itching.",
   },
   {
     id: 46,
@@ -645,16 +1742,45 @@ export const medicines = [
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
     image: "https://cdn2.tuoitre.vn/thumb_w/1200/2017/hinh-3-1509351817342.jpg",
-    usedParts: "Flower heads (harvest in September-November when flowers just bloom, sun dry or shade dry)",
+    usedParts:
+      "Flower heads (harvest in September-November when flowers just bloom, sun dry or shade dry)",
     properties: "Sweet, bitter taste, slightly cold nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Flavonoid (apigenin, luteolin, acacetin)", "Essential oil (camphor, borneol, chrysanthenone)", "Sesquiterpene lactone", "Phenolic acids (chlorogenic acid, caffeic acid)", "Vitamins (A, B1, amino acids)"],
-    uses: ["Disperses wind clears heat", "Calms liver brightens eyes", "Clears heat detoxifies", "Antihypertensive", "Vasodilator", "Antibacterial"],
-    indications: ["Wind-heat cold", "Headache and dizziness", "Red swollen painful eyes", "Blurred vision", "Boils and sores", "High blood pressure", "Coronary artery disease"],
-    dosage: "Dried flowers: 5-10g, steep like tea or decoction. Can combine with other herbs",
-    contraindications: ["Spleen-stomach deficiency cold use with caution", "Pregnant women consult doctor", "Allergic individuals avoid"],
-    origin: "China (cultivated for thousands of years), now widely cultivated in Vietnam (Hanoi, Hai Duong, Hung Yen), East Asia",
-    description: "Cuc Hoa (Chrysanthemum) is an herbaceous plant of the Asteraceae family 30-100cm tall, flowers in many colors (white, yellow, purple). Contains flavonoid, essential oil, sesquiterpene lactone and phenolic acids. Has effects of dispersing wind clearing heat, calming liver brightening eyes, clearing heat detoxifying. Treats wind-heat cold, headache, red eyes, high blood pressure. Used as tea beverage."
+    mainIngredients: [
+      "Flavonoid (apigenin, luteolin, acacetin)",
+      "Essential oil (camphor, borneol, chrysanthenone)",
+      "Sesquiterpene lactone",
+      "Phenolic acids (chlorogenic acid, caffeic acid)",
+      "Vitamins (A, B1, amino acids)",
+    ],
+    uses: [
+      "Disperses wind clears heat",
+      "Calms liver brightens eyes",
+      "Clears heat detoxifies",
+      "Antihypertensive",
+      "Vasodilator",
+      "Antibacterial",
+    ],
+    indications: [
+      "Wind-heat cold",
+      "Headache and dizziness",
+      "Red swollen painful eyes",
+      "Blurred vision",
+      "Boils and sores",
+      "High blood pressure",
+      "Coronary artery disease",
+    ],
+    dosage:
+      "Dried flowers: 5-10g, steep like tea or decoction. Can combine with other herbs",
+    contraindications: [
+      "Spleen-stomach deficiency cold use with caution",
+      "Pregnant women consult doctor",
+      "Allergic individuals avoid",
+    ],
+    origin:
+      "China (cultivated for thousands of years), now widely cultivated in Vietnam (Hanoi, Hai Duong, Hung Yen), East Asia",
+    description:
+      "Cuc Hoa (Chrysanthemum) is an herbaceous plant of the Asteraceae family 30-100cm tall, flowers in many colors (white, yellow, purple). Contains flavonoid, essential oil, sesquiterpene lactone and phenolic acids. Has effects of dispersing wind clearing heat, calming liver brightening eyes, clearing heat detoxifying. Treats wind-heat cold, headache, red eyes, high blood pressure. Used as tea beverage.",
   },
   {
     id: 47,
@@ -663,17 +1789,52 @@ export const medicines = [
     scientificName: "Achyranthes aspera L.",
     family: "Họ Rau dền (Amaranthaceae)",
     categoryId: "amaranthaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/11/cay-co-xuoc.jpg",
-    usedParts: "Roots (Radix Achyranthis asperae) - Harvest year-round mainly in summer-autumn, wash clean, cut small, use fresh or sun dry",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/11/cay-co-xuoc.jpg",
+    usedParts:
+      "Roots (Radix Achyranthis asperae) - Harvest year-round mainly in summer-autumn, wash clean, cut small, use fresh or sun dry",
     properties: "Bitter, sour taste, neutral nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Saponin", "Alkaloid (betaine, achyranthin)", "Amino acid", "Steroid (stigmasterol)", "Triterpenoid (oleanolic acid and its glycoside)", "Phenolic", "Flavonoid"],
-    uses: ["Activates blood opens channels", "Tonifies liver-kidneys", "Strengthens tendons and bones", "Treats wind-dampness", "Treats lower back pain", "Treats joint pain", "Treats limb contracture", "Diuretic", "Regulates menstruation"],
-    indications: ["Wind-dampness, joint pain", "Lower back pain, knee pain", "Limb contracture and weakness", "Irregular menstruation", "Amenorrhea with abdominal pain", "Urinary retention", "Painful urination"],
-    dosage: "Roots: 6-15g decoction. Fresh can use 15-30g. Can soak in wine to treat wind-dampness joint pain",
-    contraindications: ["Pregnant women must not use (has blood-activating channel-opening effects)", "People with excessive menstruation use with caution", "People with spleen-stomach deficiency use with caution"],
-    origin: "Pan-tropical species. Vietnam (grows wild everywhere on grasslands, roadsides, thickets), Asia, Africa, Americas, Australia",
-    description: "Co Xuoc (also called Ngưu tất nam) is an herbaceous plant of the Amaranthaceae family 20-50cm tall (sometimes up to 1m), young stem square in cross-section with many white hairs. Leaves simple opposite in cross arrangement, wavy leaf margins. Flower spike at branch tips 30-40cm long covered with white hairs. Roots contain saponin, alkaloid (betaine, achyranthin), amino acids, steroids, triterpenoids, phenolic and flavonoid. Roots have effects of activating blood opening channels, tonifying liver-kidneys, strengthening tendons and bones, treating wind-dampness lower back pain joint pain, limb contracture, irregular menstruation, amenorrhea, urinary retention. In Vietnam, Co Xuoc is used as substitute for nguu tat in traditional medicine."
+    mainIngredients: [
+      "Saponin",
+      "Alkaloid (betaine, achyranthin)",
+      "Amino acid",
+      "Steroid (stigmasterol)",
+      "Triterpenoid (oleanolic acid and its glycoside)",
+      "Phenolic",
+      "Flavonoid",
+    ],
+    uses: [
+      "Activates blood opens channels",
+      "Tonifies liver-kidneys",
+      "Strengthens tendons and bones",
+      "Treats wind-dampness",
+      "Treats lower back pain",
+      "Treats joint pain",
+      "Treats limb contracture",
+      "Diuretic",
+      "Regulates menstruation",
+    ],
+    indications: [
+      "Wind-dampness, joint pain",
+      "Lower back pain, knee pain",
+      "Limb contracture and weakness",
+      "Irregular menstruation",
+      "Amenorrhea with abdominal pain",
+      "Urinary retention",
+      "Painful urination",
+    ],
+    dosage:
+      "Roots: 6-15g decoction. Fresh can use 15-30g. Can soak in wine to treat wind-dampness joint pain",
+    contraindications: [
+      "Pregnant women must not use (has blood-activating channel-opening effects)",
+      "People with excessive menstruation use with caution",
+      "People with spleen-stomach deficiency use with caution",
+    ],
+    origin:
+      "Pan-tropical species. Vietnam (grows wild everywhere on grasslands, roadsides, thickets), Asia, Africa, Americas, Australia",
+    description:
+      "Co Xuoc (also called Ngưu tất nam) is an herbaceous plant of the Amaranthaceae family 20-50cm tall (sometimes up to 1m), young stem square in cross-section with many white hairs. Leaves simple opposite in cross arrangement, wavy leaf margins. Flower spike at branch tips 30-40cm long covered with white hairs. Roots contain saponin, alkaloid (betaine, achyranthin), amino acids, steroids, triterpenoids, phenolic and flavonoid. Roots have effects of activating blood opening channels, tonifying liver-kidneys, strengthening tendons and bones, treating wind-dampness lower back pain joint pain, limb contracture, irregular menstruation, amenorrhea, urinary retention. In Vietnam, Co Xuoc is used as substitute for nguu tat in traditional medicine.",
   },
   {
     id: 48,
@@ -682,17 +1843,40 @@ export const medicines = [
     scientificName: "Spondias dulcis G.Forst.",
     family: "Họ Đào lộn hột (Anacardiaceae)",
     categoryId: "anacardiaceae",
-    image: "https://file.hstatic.net/200000199139/file/oxi-house-cay-coc-4_fee7133decd34c6da4db1e9461b2e147_grande.jpg",
+    image:
+      "https://file.hstatic.net/200000199139/file/oxi-house-cay-coc-4_fee7133decd34c6da4db1e9461b2e147_grande.jpg",
     usedParts: "Leaves, bark and fruit - Use fresh or sun dry",
     properties: "Sour taste, neutral nature",
     meridians: "Spleen, Stomach, Large Intestine meridians",
-    mainIngredients: ["Gallic acid", "Ellagic acid and derivatives", "Ellagitannin", "Hydroxybenzoic acid", "Hydroxycinnamic acid", "Acylquinic acid", "Flavonoid (quercetin, myricetin, kaempferol)"],
-    uses: ["Anti-diarrheal", "Stimulates digestion", "Fruit supplements vitamin C", "Clears heat", "Anti-inflammatory"],
-    indications: ["Diarrhea", "Digestive disorders", "Vitamin C deficiency", "Internal heat"],
-    dosage: "Bark: 10-20g decoction (often combined with chieu lieu bark, turmeric to treat diarrhea). Ripe fruit: eat fresh. Leaves: external use or boil water to drink",
+    mainIngredients: [
+      "Gallic acid",
+      "Ellagic acid and derivatives",
+      "Ellagitannin",
+      "Hydroxybenzoic acid",
+      "Hydroxycinnamic acid",
+      "Acylquinic acid",
+      "Flavonoid (quercetin, myricetin, kaempferol)",
+    ],
+    uses: [
+      "Anti-diarrheal",
+      "Stimulates digestion",
+      "Fruit supplements vitamin C",
+      "Clears heat",
+      "Anti-inflammatory",
+    ],
+    indications: [
+      "Diarrhea",
+      "Digestive disorders",
+      "Vitamin C deficiency",
+      "Internal heat",
+    ],
+    dosage:
+      "Bark: 10-20g decoction (often combined with chieu lieu bark, turmeric to treat diarrhea). Ripe fruit: eat fresh. Leaves: external use or boil water to drink",
     contraindications: ["People with gastritis should limit eating sour fruit"],
-    origin: "Origin from tropical Southeast Asia or South Asia. Vietnam: widely cultivated in southern provinces, especially Southern and Southeastern regions",
-    description: "Coc (also called Sấu tàu) is a medium tree of the Anacardiaceae family 5-10m tall, branches with many white dots. Leaves alternate 4-5 pairs, leaflets lanceolate, serrated margins. Drupe oval, when ripe yellow, sour taste, commonly eaten. Contains gallic acid, ellagic acid, ellagitannin, hydroxybenzoic acid, hydroxycinnamic acid and flavonoid. Fruit rich in vitamin C, nutritious when eaten fresh. Tree bark combined with chieu lieu bark, turmeric decoction treats diarrhea. Tree grows well in humid tropical and subtropical regions, light-loving, drought-tolerant."
+    origin:
+      "Origin from tropical Southeast Asia or South Asia. Vietnam: widely cultivated in southern provinces, especially Southern and Southeastern regions",
+    description:
+      "Coc (also called Sấu tàu) is a medium tree of the Anacardiaceae family 5-10m tall, branches with many white dots. Leaves alternate 4-5 pairs, leaflets lanceolate, serrated margins. Drupe oval, when ripe yellow, sour taste, commonly eaten. Contains gallic acid, ellagic acid, ellagitannin, hydroxybenzoic acid, hydroxycinnamic acid and flavonoid. Fruit rich in vitamin C, nutritious when eaten fresh. Tree bark combined with chieu lieu bark, turmeric decoction treats diarrhea. Tree grows well in humid tropical and subtropical regions, light-loving, drought-tolerant.",
   },
   {
     id: 49,
@@ -702,54 +1886,137 @@ export const medicines = [
     family: "Họ Bông (Malvaceae)",
     categoryId: "malvaceae",
     image: "https://cdn2.tuoitre.vn/zoom/700_525/2017/hinh-2-1509005310772.jpg",
-    usedParts: "Whole aerial parts (Herba Abutili indici) - Harvest in summer-autumn, sun or oven dry, can powder for gradual use. Use fresh or dried",
+    usedParts:
+      "Whole aerial parts (Herba Abutili indici) - Harvest in summer-autumn, sun or oven dry, can powder for gradual use. Use fresh or dried",
     properties: "Relieves surface heat",
     meridians: "Lung, Bladder meridians",
-    mainIngredients: ["Phenolic compounds (p-Hydroxybenzoic acid, gallic acid, 4-O-β-Glucosylbenzoic acid, caffeic acid, fumaric acid, p-coumaric acid) and derivatives", "Flavonoid", "Triterpene (β-Amyrin, Lupeol)", "Alkaloid (vasicine)", "Amide (Methyl triacontanoate)"],
-    uses: ["Relieves surface heat", "Activates blood", "Diuretic", "Treats wind-heat cold", "Reduces fever", "Promotes urination"],
-    indications: ["Wind-heat cold", "High fever", "Headache", "Tinnitus", "Deafness", "Fever with jaundice", "Dark yellow urine", "Painful urination", "Burning urination", "Edema", "Skin sores and itching", "Allergies"],
+    mainIngredients: [
+      "Phenolic compounds (p-Hydroxybenzoic acid, gallic acid, 4-O-β-Glucosylbenzoic acid, caffeic acid, fumaric acid, p-coumaric acid) and derivatives",
+      "Flavonoid",
+      "Triterpene (β-Amyrin, Lupeol)",
+      "Alkaloid (vasicine)",
+      "Amide (Methyl triacontanoate)",
+    ],
+    uses: [
+      "Relieves surface heat",
+      "Activates blood",
+      "Diuretic",
+      "Treats wind-heat cold",
+      "Reduces fever",
+      "Promotes urination",
+    ],
+    indications: [
+      "Wind-heat cold",
+      "High fever",
+      "Headache",
+      "Tinnitus",
+      "Deafness",
+      "Fever with jaundice",
+      "Dark yellow urine",
+      "Painful urination",
+      "Burning urination",
+      "Edema",
+      "Skin sores and itching",
+      "Allergies",
+    ],
     dosage: "Whole plant: 10-20g decoction. Can use fresh or dried powder",
     contraindications: ["No reports yet"],
-    origin: "Vietnam (grows wild everywhere and also cultivated as medicine). Propagate by seeds at beginning of rainy season",
-    description: "Coi Xay (also called Cây giằng xay, Quýnh ma, Kim hoa thảo, Ma bản thảo, Ma mãnh thảo, Nhĩ hương thảo, Co tó ép, Phao tôn) is a small perennial shrub of the Malvaceae family growing 1-1.5m tall with soft stellate hairs. Leaves alternate heart-shaped with long petiole, serrated margins. Yellow flowers solitary in leaf axils. Fruit resembles mortar with hairs, kidney-shaped seeds pale black. Contains phenolic compounds, flavonoid, triterpene, alkaloid and amide. Has effects of relieving surface heat, activating blood, diuretic. Treats wind-heat cold, high fever, headache, tinnitus, deafness, fever with jaundice, dark yellow urine, painful burning urination, edema, skin sores itching, allergies."
+    origin:
+      "Vietnam (grows wild everywhere and also cultivated as medicine). Propagate by seeds at beginning of rainy season",
+    description:
+      "Coi Xay (also called Cây giằng xay, Quýnh ma, Kim hoa thảo, Ma bản thảo, Ma mãnh thảo, Nhĩ hương thảo, Co tó ép, Phao tôn) is a small perennial shrub of the Malvaceae family growing 1-1.5m tall with soft stellate hairs. Leaves alternate heart-shaped with long petiole, serrated margins. Yellow flowers solitary in leaf axils. Fruit resembles mortar with hairs, kidney-shaped seeds pale black. Contains phenolic compounds, flavonoid, triterpene, alkaloid and amide. Has effects of relieving surface heat, activating blood, diuretic. Treats wind-heat cold, high fever, headache, tinnitus, deafness, fever with jaundice, dark yellow urine, painful burning urination, edema, skin sores itching, allergies.",
   },
   {
     id: 50,
     name: "Cot Khi",
     firstLetter: "C",
-    scientificName: "Reynoutria japonica Houtt. (Synonym: Polygonum cuspidatum Siebold & Zucc.)",
+    scientificName:
+      "Reynoutria japonica Houtt. (Synonym: Polygonum cuspidatum Siebold & Zucc.)",
     family: "Họ Rau răm (Polygonaceae)",
     categoryId: "polygonaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/cot-khi-cu.jpg",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/cot-khi-cu.jpg",
     usedParts: "Rhizome (Radix Polygoni cuspidati) - Harvest in autumn",
     properties: "Dispels dampness, stops cough, transforms phlegm",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Anthraglycosides (emodin, physcion and corresponding glucosides)", "Polydatin", "Resveratrol and derivatives"],
-    uses: ["Dispels dampness", "Stops cough", "Transforms phlegm", "Treats joint pain", "Treats jaundice", "Treats lung heat causing cough"],
-    indications: ["Joint pain", "Jaundice", "Lung heat causing cough", "Cough with much phlegm", "Boils and ulcers"],
+    mainIngredients: [
+      "Anthraglycosides (emodin, physcion and corresponding glucosides)",
+      "Polydatin",
+      "Resveratrol and derivatives",
+    ],
+    uses: [
+      "Dispels dampness",
+      "Stops cough",
+      "Transforms phlegm",
+      "Treats joint pain",
+      "Treats jaundice",
+      "Treats lung heat causing cough",
+    ],
+    indications: [
+      "Joint pain",
+      "Jaundice",
+      "Lung heat causing cough",
+      "Cough with much phlegm",
+      "Boils and ulcers",
+    ],
     dosage: "Rhizome: 9-15g decoction",
     contraindications: ["No reports yet"],
-    origin: "Vietnam (grows wild in many places especially abundant in Sapa, hills or roadsides, plains also has it and cultivated for rhizome as medicine). China (Jiangsu, Zhejiang). Planted by rhizome, very easy to grow",
-    description: "Cot Khi (also called Cốt khí củ, Củ điền thất, Hoạt huyết đan, Tử kim long, Nam Hoàng cầm) is a perennial herbaceous plant of the Polygonaceae family 1-1.5m tall, few branches, angular and ridged brown-red. Rhizome thick, large, horizontal cylindrical brown-black, inner flesh yellow. Leaves alternate broad ovate. Flower spike paniculate 3-9cm long, small white-green flowers. Achene brown-black 4-5mm long with 3 angles. Rhizome contains anthraglycosides (emodin, physcion), polydatin, resveratrol. Has effects of dispelling dampness, stopping cough, transforming phlegm. Treats joint pain, jaundice, lung heat causing cough, cough with much phlegm, boils and ulcers."
+    origin:
+      "Vietnam (grows wild in many places especially abundant in Sapa, hills or roadsides, plains also has it and cultivated for rhizome as medicine). China (Jiangsu, Zhejiang). Planted by rhizome, very easy to grow",
+    description:
+      "Cot Khi (also called Cốt khí củ, Củ điền thất, Hoạt huyết đan, Tử kim long, Nam Hoàng cầm) is a perennial herbaceous plant of the Polygonaceae family 1-1.5m tall, few branches, angular and ridged brown-red. Rhizome thick, large, horizontal cylindrical brown-black, inner flesh yellow. Leaves alternate broad ovate. Flower spike paniculate 3-9cm long, small white-green flowers. Achene brown-black 4-5mm long with 3 angles. Rhizome contains anthraglycosides (emodin, physcion), polydatin, resveratrol. Has effects of dispelling dampness, stopping cough, transforming phlegm. Treats joint pain, jaundice, lung heat causing cough, cough with much phlegm, boils and ulcers.",
   },
   {
     id: 51,
     name: "Cot Toai Bo",
     firstLetter: "C",
-    scientificName: "Drynaria roosii Nakaike (Synonym: Drynaria fortunei (Kunze ex Mett.) J.Sm.)",
+    scientificName:
+      "Drynaria roosii Nakaike (Synonym: Drynaria fortunei (Kunze ex Mett.) J.Sm.)",
     family: "Họ Dương xỉ (Polypodiaceae)",
     categoryId: "polypodiaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/c%E1%BB%91t%20to%C3%A1i%20b%E1%BB%95%201.jpg",
-    usedParts: "Rhizome/Tac ke da (Rhizoma Drynariae) - Harvest year-round, take rhizome, remove impurities, cut off small roots and remaining leaves, wash clean, select large rhizomes, cut into pieces then sun or oven dry. Can soak in honey, soak in wine and stir-fry or take sand and stir-fry dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/c%E1%BB%91t%20to%C3%A1i%20b%E1%BB%95%201.jpg",
+    usedParts:
+      "Rhizome/Tac ke da (Rhizoma Drynariae) - Harvest year-round, take rhizome, remove impurities, cut off small roots and remaining leaves, wash clean, select large rhizomes, cut into pieces then sun or oven dry. Can soak in honey, soak in wine and stir-fry or take sand and stir-fry dry",
     properties: "Bitter taste, warm nature",
     meridians: "Kidney, Liver meridians",
-    mainIngredients: ["Flavonoid (naringin, hesperidin, neoeriocitrin, luteolin, eriodictyol)", "Proanthocyanidin", "Phenolic acids (protocatechuic acid, neochlorogenic acid, p-hydroxybenzoic acid, chlorogenic acid)", "Triterpenoid", "Sterol"],
-    uses: ["Tonifies kidneys", "Heals bones", "Stops pain (analgesic)", "Prevents osteoporosis", "Prevents postmenopausal osteoporosis", "Treats baldness, alopecia (external)"],
-    indications: ["Kidney deficiency", "Lower back pain", "Tinnitus", "Deafness", "Loose teeth", "Pain from trauma", "Sprain", "Bone fracture", "Postmenopausal osteoporosis", "Baldness", "Alopecia"],
-    dosage: "Rhizome: 6-12g decoction. External: powder applied to scalp treats baldness, alopecia",
-    contraindications: ["People with yin deficiency excess fire use with caution"],
-    origin: "Vietnam (perennial, attached to other trees or rock walls), China, tropical Asia",
-    description: "Cot Toai Bo (also called Tổ rồng, Tổ phượng, Tắc kè đá, Ráng bay) is a perennial fern plant of the Polypodiaceae family, attached to trees or rock walls. Rhizome creeping short 1-2cm diameter. Leaves of 2 types: sterile leaves stacked on each other and fertile fronds pinnately divided with sporangia on underside. Rhizome contains many flavonoids (naringin, neoeriocitrin accounting for 1.5-1.6%), proanthocyanidin, phenolic acids. Naringin and neoeriocitrin have strong anti-osteoporosis activity by stimulating osteoblast cells and phytoestrogen effects. Has effects of tonifying kidneys, healing bones, stopping pain. Treats kidney deficiency, lower back pain, tinnitus, deafness, loose teeth, pain from trauma, sprain, bone fracture. External use treats baldness, alopecia."
+    mainIngredients: [
+      "Flavonoid (naringin, hesperidin, neoeriocitrin, luteolin, eriodictyol)",
+      "Proanthocyanidin",
+      "Phenolic acids (protocatechuic acid, neochlorogenic acid, p-hydroxybenzoic acid, chlorogenic acid)",
+      "Triterpenoid",
+      "Sterol",
+    ],
+    uses: [
+      "Tonifies kidneys",
+      "Heals bones",
+      "Stops pain (analgesic)",
+      "Prevents osteoporosis",
+      "Prevents postmenopausal osteoporosis",
+      "Treats baldness, alopecia (external)",
+    ],
+    indications: [
+      "Kidney deficiency",
+      "Lower back pain",
+      "Tinnitus",
+      "Deafness",
+      "Loose teeth",
+      "Pain from trauma",
+      "Sprain",
+      "Bone fracture",
+      "Postmenopausal osteoporosis",
+      "Baldness",
+      "Alopecia",
+    ],
+    dosage:
+      "Rhizome: 6-12g decoction. External: powder applied to scalp treats baldness, alopecia",
+    contraindications: [
+      "People with yin deficiency excess fire use with caution",
+    ],
+    origin:
+      "Vietnam (perennial, attached to other trees or rock walls), China, tropical Asia",
+    description:
+      "Cot Toai Bo (also called Tổ rồng, Tổ phượng, Tắc kè đá, Ráng bay) is a perennial fern plant of the Polypodiaceae family, attached to trees or rock walls. Rhizome creeping short 1-2cm diameter. Leaves of 2 types: sterile leaves stacked on each other and fertile fronds pinnately divided with sporangia on underside. Rhizome contains many flavonoids (naringin, neoeriocitrin accounting for 1.5-1.6%), proanthocyanidin, phenolic acids. Naringin and neoeriocitrin have strong anti-osteoporosis activity by stimulating osteoblast cells and phytoestrogen effects. Has effects of tonifying kidneys, healing bones, stopping pain. Treats kidney deficiency, lower back pain, tinnitus, deafness, loose teeth, pain from trauma, sprain, bone fracture. External use treats baldness, alopecia.",
   },
   {
     id: 52,
@@ -758,17 +2025,47 @@ export const medicines = [
     scientificName: "Pluchea indica Less.",
     family: "Họ Cúc (Asteraceae)",
     categoryId: "asteraceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/c%C3%BAc%20t%E1%BA%A7n/c%C3%BAc%20t%E1%BA%A7n%201.png",
-    usedParts: "Branches, leaves and roots (Ramnulus et Radix Plucheae Indicae) - Harvest year-round, wash clean, use fresh or sun dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/c%C3%BAc%20t%E1%BA%A7n/c%C3%BAc%20t%E1%BA%A7n%201.png",
+    usedParts:
+      "Branches, leaves and roots (Ramnulus et Radix Plucheae Indicae) - Harvest year-round, wash clean, use fresh or sun dry",
     properties: "Pungent, bitter taste, warm nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Terpene [(+)-linalool, linaloyl glucopyranoside, thymol]", "Sterols", "Caffeoylquinic acid derivatives", "Flavonoid", "Phenolic", "Lignan", "Thiophene"],
-    uses: ["Relieves surface", "Disperses cold", "Dispels dampness", "Stops pain", "Activates blood", "Mends bones"],
-    indications: ["Common cold", "Fever without sweating", "Urinary retention", "Wind-dampness numbness", "Bone pain", "Trauma", "Bone fracture", "Sprain", "Scabies"],
-    dosage: "Branches and leaves: 10-20g decoction. Roots: 15-30g decoction. External: crush fresh and apply or boil water for washing (treats scabies, trauma)",
+    mainIngredients: [
+      "Terpene [(+)-linalool, linaloyl glucopyranoside, thymol]",
+      "Sterols",
+      "Caffeoylquinic acid derivatives",
+      "Flavonoid",
+      "Phenolic",
+      "Lignan",
+      "Thiophene",
+    ],
+    uses: [
+      "Relieves surface",
+      "Disperses cold",
+      "Dispels dampness",
+      "Stops pain",
+      "Activates blood",
+      "Mends bones",
+    ],
+    indications: [
+      "Common cold",
+      "Fever without sweating",
+      "Urinary retention",
+      "Wind-dampness numbness",
+      "Bone pain",
+      "Trauma",
+      "Bone fracture",
+      "Sprain",
+      "Scabies",
+    ],
+    dosage:
+      "Branches and leaves: 10-20g decoction. Roots: 15-30g decoction. External: crush fresh and apply or boil water for washing (treats scabies, trauma)",
     contraindications: ["People allergic to essential oils use with caution"],
-    origin: "Vietnam (grows wild and also cultivated in plains as hedge and greenery). Planted by branches in spring, autumn. Tropical Asia",
-    description: "Cuc Tan (also called Cây từ bi, Lục, Lục ấn, Cây Đại bi, Đại ngải, Hoa mai não, Băng phiến ngải, Co mát, Phặc phà) is a shrub of the Asteraceae family 1-2m tall, slender branches. Leaves alternate nearly oval, serrated margins. Flower clusters pentagonal at branch tips, short peduncle purple. Achene cylindrical spindle with 10 angles. Entire plant with soft hair and fragrant smell. Flowers and fruits in months 2-6. Contains terpene (linalool, thymol), sterols, caffeoylquinic acid, flavonoid, phenolic, lignan and thiophene. Has effects of relieving surface, dispersing cold, dispelling dampness, stopping pain, activating blood, mending bones. Treats common cold, fever without sweating, urinary retention, wind-dampness numbness, bone pain, trauma, bone fracture, sprain and treats scabies."
+    origin:
+      "Vietnam (grows wild and also cultivated in plains as hedge and greenery). Planted by branches in spring, autumn. Tropical Asia",
+    description:
+      "Cuc Tan (also called Cây từ bi, Lục, Lục ấn, Cây Đại bi, Đại ngải, Hoa mai não, Băng phiến ngải, Co mát, Phặc phà) is a shrub of the Asteraceae family 1-2m tall, slender branches. Leaves alternate nearly oval, serrated margins. Flower clusters pentagonal at branch tips, short peduncle purple. Achene cylindrical spindle with 10 angles. Entire plant with soft hair and fragrant smell. Flowers and fruits in months 2-6. Contains terpene (linalool, thymol), sterols, caffeoylquinic acid, flavonoid, phenolic, lignan and thiophene. Has effects of relieving surface, dispersing cold, dispelling dampness, stopping pain, activating blood, mending bones. Treats common cold, fever without sweating, urinary retention, wind-dampness numbness, bone pain, trauma, bone fracture, sprain and treats scabies.",
   },
   {
     id: 53,
@@ -777,17 +2074,51 @@ export const medicines = [
     scientificName: "Hibiscus rosa-sinensis L.",
     family: "Họ Bông (Malvaceae)",
     categoryId: "malvaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2m%20b%E1%BB%A5t/d%C3%A2m%20b%E1%BB%A5t%201.png",
-    usedParts: "Root bark or roots, flowers and leaves (Cortex Radicis seu Radix, Flos et Folium Hibisci rosa-sinensis) - Harvest year-round, wash clean, use fresh or sun dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2m%20b%E1%BB%A5t/d%C3%A2m%20b%E1%BB%A5t%201.png",
+    usedParts:
+      "Root bark or roots, flowers and leaves (Cortex Radicis seu Radix, Flos et Folium Hibisci rosa-sinensis) - Harvest year-round, wash clean, use fresh or sun dry",
     properties: "Sweet taste, cool nature",
     meridians: "Spleen, Stomach, Liver meridians",
-    mainIngredients: ["Flavonoid (quercetin, kaempferol, cyanidin-3,5-diglucoside, cyanidin-3-sophoroside-3-glucoside)", "β-sitosterol", "Carotene", "Alkaloid", "Vitamins (thiamine, riboflavin, ascorbic acid, beta-carotene)", "Mucilage", "Cyclopropenoid compounds (Me sienculat, malvalat, 2-hydroxysterculat)", "Acetic acid esters"],
-    uses: ["Lowers blood pressure", "Antispasmodic", "Sedative", "Reduces fever", "Relieves pain", "Diuretic", "Treats gastric and intestinal mucositis", "Treats boils and abscesses"],
-    indications: ["Gastric and intestinal mucositis", "Bloody stool", "Dysentery", "Insomnia", "Polydipsia (diabetes)", "Leukorrhea", "Nocturnal emission", "Boils and abscesses", "Sores and itching", "Swelling"],
-    dosage: "Roots/root bark: 10-20g decoction. Flowers: 3-5 flowers decoction or eat fresh. Leaves: 15-30g decoction. External: fresh leaves and flowers crushed with little salt applied to festering boils",
+    mainIngredients: [
+      "Flavonoid (quercetin, kaempferol, cyanidin-3,5-diglucoside, cyanidin-3-sophoroside-3-glucoside)",
+      "β-sitosterol",
+      "Carotene",
+      "Alkaloid",
+      "Vitamins (thiamine, riboflavin, ascorbic acid, beta-carotene)",
+      "Mucilage",
+      "Cyclopropenoid compounds (Me sienculat, malvalat, 2-hydroxysterculat)",
+      "Acetic acid esters",
+    ],
+    uses: [
+      "Lowers blood pressure",
+      "Antispasmodic",
+      "Sedative",
+      "Reduces fever",
+      "Relieves pain",
+      "Diuretic",
+      "Treats gastric and intestinal mucositis",
+      "Treats boils and abscesses",
+    ],
+    indications: [
+      "Gastric and intestinal mucositis",
+      "Bloody stool",
+      "Dysentery",
+      "Insomnia",
+      "Polydipsia (diabetes)",
+      "Leukorrhea",
+      "Nocturnal emission",
+      "Boils and abscesses",
+      "Sores and itching",
+      "Swelling",
+    ],
+    dosage:
+      "Roots/root bark: 10-20g decoction. Flowers: 3-5 flowers decoction or eat fresh. Leaves: 15-30g decoction. External: fresh leaves and flowers crushed with little salt applied to festering boils",
     contraindications: ["Pregnant women use with caution"],
-    origin: "Vietnam (cultivated everywhere for ornamental purposes and hedges), tropical Asia, China",
-    description: "Dam But (also called Bụp) is a small woody plant of the Malvaceae family, erect growth. Large thick simple leaves 20-25×5-6cm alternate, base tapered, tip pointed, upper 2/3 leaf margin serrated. Flowers solitary in leaf axils at branch tips, regular, bisexual, 5 sepals, many stamens fused into tube, ovary with 2 separate carpels. Fruit with 2 follicles attached, when ripe black-brown, seeds tapered with thin wings. Entire plant has white latex. Leaves contain mucilage, β-sitosterol, carotene. Flowers contain flavonoid (quercetin, kaempferol, cyanidin), alkaloid, vitamins, mucilage. Has effects of lowering blood pressure, antispasmodic, sedative, reducing fever, relieving pain, diuretic. Treats gastric and intestinal mucositis, bloody stool, dysentery, insomnia, diabetes, leukorrhea, nocturnal emission, boils. People often use fresh leaves and flowers crushed with salt applied to festering boils."
+    origin:
+      "Vietnam (cultivated everywhere for ornamental purposes and hedges), tropical Asia, China",
+    description:
+      "Dam But (also called Bụp) is a small woody plant of the Malvaceae family, erect growth. Large thick simple leaves 20-25×5-6cm alternate, base tapered, tip pointed, upper 2/3 leaf margin serrated. Flowers solitary in leaf axils at branch tips, regular, bisexual, 5 sepals, many stamens fused into tube, ovary with 2 separate carpels. Fruit with 2 follicles attached, when ripe black-brown, seeds tapered with thin wings. Entire plant has white latex. Leaves contain mucilage, β-sitosterol, carotene. Flowers contain flavonoid (quercetin, kaempferol, cyanidin), alkaloid, vitamins, mucilage. Has effects of lowering blood pressure, antispasmodic, sedative, reducing fever, relieving pain, diuretic. Treats gastric and intestinal mucositis, bloody stool, dysentery, insomnia, diabetes, leukorrhea, nocturnal emission, boils. People often use fresh leaves and flowers crushed with salt applied to festering boils.",
   },
   {
     id: 54,
@@ -796,17 +2127,50 @@ export const medicines = [
     scientificName: "Gardenia jasminoides J. Ellis",
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A0nh%20d%C3%A0nh/d%C3%A0nh%20danh%201.png",
-    usedParts: "Fruit (Fructus Gardeniae), also use leaves (Folium Gardeniae) and roots (Radix Gardeniae) - Harvest fruit from months 5-12, wash clean, use fresh or sun dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A0nh%20d%C3%A0nh/d%C3%A0nh%20danh%201.png",
+    usedParts:
+      "Fruit (Fructus Gardeniae), also use leaves (Folium Gardeniae) and roots (Radix Gardeniae) - Harvest fruit from months 5-12, wash clean, use fresh or sun dry",
     properties: "Bitter taste, cold nature",
     meridians: "Heart, Liver, Lung, Stomach, Triple Burner meridians",
-    mainIngredients: ["Iridoid glycosides (gardenoside, geniposide, genipin)", "Carotenoid (crocin 1-4, crocetin, neocrocin A-J - yellow pigment components)", "Phenol", "Flavonoid", "Terpenoid", "Mannitol", "Organic acids", "Essential oil"],
-    uses: ["Clears heat eliminates vexation", "Diuretic", "Cools blood stops bleeding", "Reduces fever", "Treats jaundice", "Hemostatic"],
-    indications: ["High fever", "Vexation", "Jaundice with dark urine", "Bloody stool", "Vomiting blood", "Nosebleeds", "Red swollen painful eyes", "Swelling and pain from trauma"],
-    dosage: "Fruit: 6-12g decoction. Leaves: 10-20g decoction. Roots: 15-30g decoction. External: fresh fruit or leaves crushed and applied to treat swelling and pain from trauma",
-    contraindications: ["People with spleen-stomach deficiency cold, diarrhea must not use", "Pregnant women use with caution"],
-    origin: "Vietnam (grows wild and cultivated throughout country, some places use as ornamental plant or cultivate for dyeing), China, Japan, Asia",
-    description: "Danh Danh (also called Chi tử) is a medium plant of the Rubiaceae family over 1m tall, many branches. Leaves opposite or whorled in 3s, lanceolate or broad oval long, smooth shiny. Flowers solitary at branch tips, white fragrant. Fruit ovoid or spindle with 5-8 longitudinal ridges, 2.5-4.5cm long, orange-yellow to reddish-brown, fruit flesh orange-yellow, slightly sour-bitter taste. Flowers months 4-11, fruits months 5-12. Contains iridoid glycosides (gardenoside, geniposide, genipin) and carotenoid (crocin, crocetin - yellow pigment). Has effects of clearing heat eliminating vexation, diuretic, cooling blood stopping bleeding. Treats high fever, vexation, jaundice with dark urine, bloody stool, vomiting blood, nosebleeds, red swollen painful eyes. External use treats swelling and pain from trauma."
+    mainIngredients: [
+      "Iridoid glycosides (gardenoside, geniposide, genipin)",
+      "Carotenoid (crocin 1-4, crocetin, neocrocin A-J - yellow pigment components)",
+      "Phenol",
+      "Flavonoid",
+      "Terpenoid",
+      "Mannitol",
+      "Organic acids",
+      "Essential oil",
+    ],
+    uses: [
+      "Clears heat eliminates vexation",
+      "Diuretic",
+      "Cools blood stops bleeding",
+      "Reduces fever",
+      "Treats jaundice",
+      "Hemostatic",
+    ],
+    indications: [
+      "High fever",
+      "Vexation",
+      "Jaundice with dark urine",
+      "Bloody stool",
+      "Vomiting blood",
+      "Nosebleeds",
+      "Red swollen painful eyes",
+      "Swelling and pain from trauma",
+    ],
+    dosage:
+      "Fruit: 6-12g decoction. Leaves: 10-20g decoction. Roots: 15-30g decoction. External: fresh fruit or leaves crushed and applied to treat swelling and pain from trauma",
+    contraindications: [
+      "People with spleen-stomach deficiency cold, diarrhea must not use",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated throughout country, some places use as ornamental plant or cultivate for dyeing), China, Japan, Asia",
+    description:
+      "Danh Danh (also called Chi tử) is a medium plant of the Rubiaceae family over 1m tall, many branches. Leaves opposite or whorled in 3s, lanceolate or broad oval long, smooth shiny. Flowers solitary at branch tips, white fragrant. Fruit ovoid or spindle with 5-8 longitudinal ridges, 2.5-4.5cm long, orange-yellow to reddish-brown, fruit flesh orange-yellow, slightly sour-bitter taste. Flowers months 4-11, fruits months 5-12. Contains iridoid glycosides (gardenoside, geniposide, genipin) and carotenoid (crocin, crocetin - yellow pigment). Has effects of clearing heat eliminating vexation, diuretic, cooling blood stopping bleeding. Treats high fever, vexation, jaundice with dark urine, bloody stool, vomiting blood, nosebleeds, red swollen painful eyes. External use treats swelling and pain from trauma.",
   },
   {
     id: 55,
@@ -815,17 +2179,60 @@ export const medicines = [
     scientificName: "Morus alba L.",
     family: "Họ Dâu tằm (Moraceae)",
     categoryId: "moraceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2u%20t%E1%BA%B1m/d%C3%A2u%20t%E1%BA%B1m%201.png",
-    usedParts: "Leaves (Folium Mori/Tang diep), bark (Cortex Mori/Tang bach bi), branches (Herba Mori/Tang chi), fruit (Fructus Mori/Tang tham) - Harvest year-round. Also: mantis egg case on Mulberry tree (Tang phieu tieu), Mulberry mistletoe (Tang ky sinh) also used",
-    properties: "Leaves: Bitter, sweet taste, cold nature. Root bark: Sweet taste, cold nature. Fruit: Sweet taste, cold nature",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2u%20t%E1%BA%B1m/d%C3%A2u%20t%E1%BA%B1m%201.png",
+    usedParts:
+      "Leaves (Folium Mori/Tang diep), bark (Cortex Mori/Tang bach bi), branches (Herba Mori/Tang chi), fruit (Fructus Mori/Tang tham) - Harvest year-round. Also: mantis egg case on Mulberry tree (Tang phieu tieu), Mulberry mistletoe (Tang ky sinh) also used",
+    properties:
+      "Leaves: Bitter, sweet taste, cold nature. Root bark: Sweet taste, cold nature. Fruit: Sweet taste, cold nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Flavonoid (morusin, kuwanon H, quercetin, quercitrin, apigenin, mulberrin, mulberrochromen, cyclomulberrin, moracin A-M)", "Stilbene (resveratrol, oxy-trans resveratrol)", "Coumarin (umbelliferone, scopoletin, scopolin)", "Alkaloid [1-deoxynojirimycin (DNJ)]", "Triterpenoid", "Carotenoid", "Anthocyanidin", "Tannin", "Protein", "Sugars", "Calcium"],
-    uses: ["Leaves: Treats fever cold, cough, sore throat, hypertension", "Root bark: Treats asthma, edema, allergies", "Branches: Treat wind-dampness pain", "Fruit: Treats chronic hepatitis, anemia, neurasthenia", "Tang ky sinh: Treats lower back pain, body pain, limb numbness", "Mantis egg case: Treats seminal emission, frequent urination, impotence, child bedwetting"],
-    indications: ["Fever cold", "Cough", "Sore throat", "Hypertension", "Asthma", "Edema", "Allergies", "Wind-dampness pain", "Chronic hepatitis", "Anemia", "Neurasthenia", "Lower back pain", "Limb numbness", "Seminal emission", "Impotence", "Child bedwetting"],
-    dosage: "Leaves: 6-12g decoction. Root bark: 9-15g decoction. Branches: 10-15g decoction. Fruit: 9-15g decoction or eat fresh. Tang ky sinh: 9-15g decoction. Mantis egg case: 3-10g decoction",
-    contraindications: ["Leaves: People with spleen-stomach deficiency cold use with caution"],
+    mainIngredients: [
+      "Flavonoid (morusin, kuwanon H, quercetin, quercitrin, apigenin, mulberrin, mulberrochromen, cyclomulberrin, moracin A-M)",
+      "Stilbene (resveratrol, oxy-trans resveratrol)",
+      "Coumarin (umbelliferone, scopoletin, scopolin)",
+      "Alkaloid [1-deoxynojirimycin (DNJ)]",
+      "Triterpenoid",
+      "Carotenoid",
+      "Anthocyanidin",
+      "Tannin",
+      "Protein",
+      "Sugars",
+      "Calcium",
+    ],
+    uses: [
+      "Leaves: Treats fever cold, cough, sore throat, hypertension",
+      "Root bark: Treats asthma, edema, allergies",
+      "Branches: Treat wind-dampness pain",
+      "Fruit: Treats chronic hepatitis, anemia, neurasthenia",
+      "Tang ky sinh: Treats lower back pain, body pain, limb numbness",
+      "Mantis egg case: Treats seminal emission, frequent urination, impotence, child bedwetting",
+    ],
+    indications: [
+      "Fever cold",
+      "Cough",
+      "Sore throat",
+      "Hypertension",
+      "Asthma",
+      "Edema",
+      "Allergies",
+      "Wind-dampness pain",
+      "Chronic hepatitis",
+      "Anemia",
+      "Neurasthenia",
+      "Lower back pain",
+      "Limb numbness",
+      "Seminal emission",
+      "Impotence",
+      "Child bedwetting",
+    ],
+    dosage:
+      "Leaves: 6-12g decoction. Root bark: 9-15g decoction. Branches: 10-15g decoction. Fruit: 9-15g decoction or eat fresh. Tang ky sinh: 9-15g decoction. Mantis egg case: 3-10g decoction",
+    contraindications: [
+      "Leaves: People with spleen-stomach deficiency cold use with caution",
+    ],
     origin: "Vietnam (cultivated for long time), China, Japan, Asia",
-    description: "Dau Tam (also called Tang) is a small woody tree of the Moraceae family about 3m tall, brown or yellow. Leaves alternate, lanceolate blade 5-10cm long 4-8cm wide, heart-shaped base, blunt tip, triangular teeth. Flowers monoecious or dioecious, female flowers in catkins. Fruit complex of many achenes in fleshy sepals, white or pink. Flowering season months 4-5, fruit months 6-7. Contains flavonoid (morusin, quercetin, mulberrin), stilbene (resveratrol), coumarin, alkaloid (DNJ), carotenoid, anthocyanidin. Leaves treat fever cold, cough, sore throat, hypertension. Root bark treats asthma, edema, allergies. Branches treat wind-dampness pain. Fruit treats chronic hepatitis, anemia, neurasthenia. In Vietnam also has species Morus australis Poir. also called dau tam."
+    description:
+      "Dau Tam (also called Tang) is a small woody tree of the Moraceae family about 3m tall, brown or yellow. Leaves alternate, lanceolate blade 5-10cm long 4-8cm wide, heart-shaped base, blunt tip, triangular teeth. Flowers monoecious or dioecious, female flowers in catkins. Fruit complex of many achenes in fleshy sepals, white or pink. Flowering season months 4-5, fruit months 6-7. Contains flavonoid (morusin, quercetin, mulberrin), stilbene (resveratrol), coumarin, alkaloid (DNJ), carotenoid, anthocyanidin. Leaves treat fever cold, cough, sore throat, hypertension. Root bark treats asthma, edema, allergies. Branches treat wind-dampness pain. Fruit treats chronic hepatitis, anemia, neurasthenia. In Vietnam also has species Morus australis Poir. also called dau tam.",
   },
   {
     id: 56,
@@ -834,17 +2241,44 @@ export const medicines = [
     scientificName: "Hedera helix L.",
     family: "Họ Ngũ gia bì (Araliaceae)",
     categoryId: "araliaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2y%20th%C6%B0%E1%BB%9Dng%20xu%C3%A2n%201.jpg",
-    usedParts: "Leaves (Folium Hederae helicis) - Harvest year-round, wash clean, sun dry or use fresh",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%C3%A2y%20th%C6%B0%E1%BB%9Dng%20xu%C3%A2n%201.jpg",
+    usedParts:
+      "Leaves (Folium Hederae helicis) - Harvest year-round, wash clean, sun dry or use fresh",
     properties: "Bitter, pungent taste, slightly warm nature",
     meridians: "Lung meridian",
-    mainIngredients: ["Triterpenoid saponin (Hederacoside C - main active ingredient, α-hederin, β-hederin)", "Flavonoid", "Phenolic compounds"],
-    uses: ["Thins mucus", "Increases respiratory mucus secretion", "Expectorates phlegm", "Reduces bronchial spasm", "Treats dry cough", "Treats productive cough", "Treats bronchitis"],
-    indications: ["Dry cough", "Productive cough", "Bronchitis", "Chronic bronchitis", "Dyspnea due to phlegm"],
-    dosage: "Dried leaves: 1-2g decoction or tea infusion. Usually used as syrup extract preparations from Ivy leaves (use according to label instructions, including for young children)",
-    contraindications: ["Do not use fruit as it is toxic", "People sensitive to saponins use with caution", "Pregnant and breastfeeding women use with caution"],
-    origin: "Europe, Western Asia, North Africa. Now cultivated ornamentally in many places worldwide including Vietnam",
-    description: "Day Thuong Xuan (also called Vạn niên) is an evergreen climbing plant of the Araliaceae family, can grow 20-30m high. Climbs by aerial roots with strong flat adhesive discs. Leaves alternate 50-100mm long, 2 types: young leaves with 5 lobes like duck's foot and mature leaves undivided heart-shaped. Small yellow-green flowers in rounded umbels, bloom late summer to late autumn. Purple-black to yellow-orange berries 6-8mm diameter, ripen late winter. Leaves contain triterpenoid saponin (Hederacoside C, α-hederin, β-hederin), flavonoid and phenol. Saponins thin mucus, increase respiratory mucus secretion, reduce bronchial spasm. Syrup preparations from leaves treat dry cough, productive cough, chronic bronchitis, including in young children. Note: Fruit is toxic, do not use."
+    mainIngredients: [
+      "Triterpenoid saponin (Hederacoside C - main active ingredient, α-hederin, β-hederin)",
+      "Flavonoid",
+      "Phenolic compounds",
+    ],
+    uses: [
+      "Thins mucus",
+      "Increases respiratory mucus secretion",
+      "Expectorates phlegm",
+      "Reduces bronchial spasm",
+      "Treats dry cough",
+      "Treats productive cough",
+      "Treats bronchitis",
+    ],
+    indications: [
+      "Dry cough",
+      "Productive cough",
+      "Bronchitis",
+      "Chronic bronchitis",
+      "Dyspnea due to phlegm",
+    ],
+    dosage:
+      "Dried leaves: 1-2g decoction or tea infusion. Usually used as syrup extract preparations from Ivy leaves (use according to label instructions, including for young children)",
+    contraindications: [
+      "Do not use fruit as it is toxic",
+      "People sensitive to saponins use with caution",
+      "Pregnant and breastfeeding women use with caution",
+    ],
+    origin:
+      "Europe, Western Asia, North Africa. Now cultivated ornamentally in many places worldwide including Vietnam",
+    description:
+      "Day Thuong Xuan (also called Vạn niên) is an evergreen climbing plant of the Araliaceae family, can grow 20-30m high. Climbs by aerial roots with strong flat adhesive discs. Leaves alternate 50-100mm long, 2 types: young leaves with 5 lobes like duck's foot and mature leaves undivided heart-shaped. Small yellow-green flowers in rounded umbels, bloom late summer to late autumn. Purple-black to yellow-orange berries 6-8mm diameter, ripen late winter. Leaves contain triterpenoid saponin (Hederacoside C, α-hederin, β-hederin), flavonoid and phenol. Saponins thin mucus, increase respiratory mucus secretion, reduce bronchial spasm. Syrup preparations from leaves treat dry cough, productive cough, chronic bronchitis, including in young children. Note: Fruit is toxic, do not use.",
   },
   {
     id: 57,
@@ -853,17 +2287,48 @@ export const medicines = [
     scientificName: "Houttuynia cordata Thunb.",
     family: "Họ Lá giấp (Saururaceae)",
     categoryId: "saururaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BA%BFp%20c%C3%A1/d%E1%BA%A5p%20c%C3%A1%201.png",
-    usedParts: "Whole aerial parts (Herba Houttuyniae cordatae) - Harvest year-round, use fresh or sun dry. Entire plant has fishy smell",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BA%BFp%20c%C3%A1/d%E1%BA%A5p%20c%C3%A1%201.png",
+    usedParts:
+      "Whole aerial parts (Herba Houttuyniae cordatae) - Harvest year-round, use fresh or sun dry. Entire plant has fishy smell",
     properties: "Pungent taste, slightly cold nature",
     meridians: "Lung, Bladder, Large Intestine meridians",
-    mainIngredients: ["Flavonoid (quercitrin, rutin, hyperin)", "Essential oil (α-pinene, linalool)", "Alkaloid (N-(4-Hydroxystyryl) benzamide, aristolactam A-B, piperolactam A, norcepharadione B)"],
-    uses: ["Clears heat", "Detoxifies", "Eliminates inflammation", "Diuretic", "Urinary antiseptic", "Hemostatic", "Strengthens vessel walls (vitamin P effect)", "Antioxidant", "Antibacterial", "Anti-inflammatory", "Antiviral"],
-    indications: ["Constipation", "Hemorrhoids", "Red painful eyes", "Irregular menstruation", "Lower limb varicose veins", "Urinary tract inflammation", "Urinary tract infection"],
-    dosage: "Whole plant: 15-30g decoction. Fresh can use 30-60g. Also can use as fresh vegetable. External: crush fresh and apply to wounds, boils",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution"],
-    origin: "Vietnam (grows wild in mountain, midland and plain provinces, elevation up to 1500m. Also cultivated in many places as vegetable and medicine). China, Japan, Southeast Asia",
-    description: "Diep Ca (also called Dấp cá, Lá dấp, Ngư tinh thảo, Tập thái, Rau vẹn, Phiăc hoảy, Cù mua mín) is a perennial herbaceous plant of the Saururaceae family 20-40cm tall. Underground stem creeping white, upright stem smooth green or purple-red. Leaves alternate heart-shaped, upper surface dark green, lower surface purple, 7 main veins. Flower spike at stem tip 2-2.5cm long, small pale yellow flowers, 4 white bracts. Entire plant has fishy smell. Flowering-fruiting season months 5-7. Contains flavonoid (quercitrin, rutin, hyperin), essential oil (α-pinene, linalool), alkaloid. Flavonoid strengthens vessel walls (vitamin P), antioxidant, quercitrin has diuretic effects. Essential oil has antibacterial, anti-inflammatory, antiviral effects. Folk use clears heat, detoxifies, eliminates inflammation, treats constipation, hemorrhoids, hemostatic, treats red painful eyes, diuretic, urinary antiseptic, irregular menstruation, lower limb varicose veins. Can use as fresh vegetable."
+    mainIngredients: [
+      "Flavonoid (quercitrin, rutin, hyperin)",
+      "Essential oil (α-pinene, linalool)",
+      "Alkaloid (N-(4-Hydroxystyryl) benzamide, aristolactam A-B, piperolactam A, norcepharadione B)",
+    ],
+    uses: [
+      "Clears heat",
+      "Detoxifies",
+      "Eliminates inflammation",
+      "Diuretic",
+      "Urinary antiseptic",
+      "Hemostatic",
+      "Strengthens vessel walls (vitamin P effect)",
+      "Antioxidant",
+      "Antibacterial",
+      "Anti-inflammatory",
+      "Antiviral",
+    ],
+    indications: [
+      "Constipation",
+      "Hemorrhoids",
+      "Red painful eyes",
+      "Irregular menstruation",
+      "Lower limb varicose veins",
+      "Urinary tract inflammation",
+      "Urinary tract infection",
+    ],
+    dosage:
+      "Whole plant: 15-30g decoction. Fresh can use 30-60g. Also can use as fresh vegetable. External: crush fresh and apply to wounds, boils",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild in mountain, midland and plain provinces, elevation up to 1500m. Also cultivated in many places as vegetable and medicine). China, Japan, Southeast Asia",
+    description:
+      "Diep Ca (also called Dấp cá, Lá dấp, Ngư tinh thảo, Tập thái, Rau vẹn, Phiăc hoảy, Cù mua mín) is a perennial herbaceous plant of the Saururaceae family 20-40cm tall. Underground stem creeping white, upright stem smooth green or purple-red. Leaves alternate heart-shaped, upper surface dark green, lower surface purple, 7 main veins. Flower spike at stem tip 2-2.5cm long, small pale yellow flowers, 4 white bracts. Entire plant has fishy smell. Flowering-fruiting season months 5-7. Contains flavonoid (quercitrin, rutin, hyperin), essential oil (α-pinene, linalool), alkaloid. Flavonoid strengthens vessel walls (vitamin P), antioxidant, quercitrin has diuretic effects. Essential oil has antibacterial, anti-inflammatory, antiviral effects. Folk use clears heat, detoxifies, eliminates inflammation, treats constipation, hemorrhoids, hemostatic, treats red painful eyes, diuretic, urinary antiseptic, irregular menstruation, lower limb varicose veins. Can use as fresh vegetable.",
   },
   {
     id: 58,
@@ -872,17 +2337,39 @@ export const medicines = [
     scientificName: "Phyllanthus urinaria L.",
     family: "Họ Diệp hạ châu (Phyllanthaceae)",
     categoryId: "phyllanthaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%201.png",
-    usedParts: "Whole fresh or sun-dried plant (Herba Phyllanthi urinariae) - Harvest year-round",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%201.png",
+    usedParts:
+      "Whole fresh or sun-dried plant (Herba Phyllanthi urinariae) - Harvest year-round",
     properties: "Bitter, slightly sweet taste, cool nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Lignan (Phyllanthin, 5-Demethoxyniranthin, Niranthin)", "Tannin", "Flavonoid"],
-    uses: ["Detoxifies", "Antiseptic", "Eliminates inflammation", "Disperses stasis", "Opens blood", "Clears heat"],
-    indications: ["Sore throat", "Boils and abscesses", "Neurodermatitis", "Eczema", "Postpartum blood stasis abdominal pain"],
-    dosage: "Whole plant: 15-30g decoction. Fresh can use 30-60g. External: crush fresh and apply to boils, dermatitis",
+    mainIngredients: [
+      "Lignan (Phyllanthin, 5-Demethoxyniranthin, Niranthin)",
+      "Tannin",
+      "Flavonoid",
+    ],
+    uses: [
+      "Detoxifies",
+      "Antiseptic",
+      "Eliminates inflammation",
+      "Disperses stasis",
+      "Opens blood",
+      "Clears heat",
+    ],
+    indications: [
+      "Sore throat",
+      "Boils and abscesses",
+      "Neurodermatitis",
+      "Eczema",
+      "Postpartum blood stasis abdominal pain",
+    ],
+    dosage:
+      "Whole plant: 15-30g decoction. Fresh can use 30-60g. External: crush fresh and apply to boils, dermatitis",
     contraindications: ["Pregnant women use with caution"],
-    origin: "Vietnam (grows scattered everywhere except high cold mountains, moisture-loving and light-loving or slightly shade-tolerant, usually grows mixed in grasslands, high fields, hill farms, home gardens and hilly areas). Tropical Asia",
-    description: "Diep Ha Chau (also called Chó đẻ răng cưa) is an herbaceous plant of the Phyllanthaceae family about 30cm tall, stem nearly smooth, bearing many small slightly purple branches. Leaves alternate arranged in two close rows looking like pinnate compound leaves, lanceolate oval leaflets 5-15mm long, dark green upper surface, pale green lower surface. White flowers in leaf axils, unisexual, male flowers at branch tips, female flowers below. Capsule spherical up to 2mm diameter, bumpy, lying close under leaves, has six triangular pale brown seeds. Seedlings emerge from seeds at end of spring, grow rapidly in summer, wither in mid-autumn. Contains lignan (Phyllanthin, Niranthin), tannin, flavonoid. Has effects of detoxifying, antiseptic, eliminating inflammation, dispersing stasis, opening blood. Treats sore throat, boils and abscesses, neurodermatitis, eczema, postpartum blood stasis abdominal pain."
+    origin:
+      "Vietnam (grows scattered everywhere except high cold mountains, moisture-loving and light-loving or slightly shade-tolerant, usually grows mixed in grasslands, high fields, hill farms, home gardens and hilly areas). Tropical Asia",
+    description:
+      "Diep Ha Chau (also called Chó đẻ răng cưa) is an herbaceous plant of the Phyllanthaceae family about 30cm tall, stem nearly smooth, bearing many small slightly purple branches. Leaves alternate arranged in two close rows looking like pinnate compound leaves, lanceolate oval leaflets 5-15mm long, dark green upper surface, pale green lower surface. White flowers in leaf axils, unisexual, male flowers at branch tips, female flowers below. Capsule spherical up to 2mm diameter, bumpy, lying close under leaves, has six triangular pale brown seeds. Seedlings emerge from seeds at end of spring, grow rapidly in summer, wither in mid-autumn. Contains lignan (Phyllanthin, Niranthin), tannin, flavonoid. Has effects of detoxifying, antiseptic, eliminating inflammation, dispersing stasis, opening blood. Treats sore throat, boils and abscesses, neurodermatitis, eczema, postpartum blood stasis abdominal pain.",
   },
   {
     id: 59,
@@ -891,17 +2378,48 @@ export const medicines = [
     scientificName: "Phyllanthus amarus Schumach. & Thonn.",
     family: "Họ Diệp hạ châu (Phyllanthaceae)",
     categoryId: "phyllanthaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%20%C4%91%E1%BA%AFng/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%20%C4%91%E1%BA%AFng%201.png",
-    usedParts: "Whole fresh or sun/oven dried plant (Herba Phyllanthi amari) - Harvest year-round. Very bitter taste",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%20%C4%91%E1%BA%AFng/di%E1%BB%87p%20h%E1%BA%A1%20ch%C3%A2u%20%C4%91%E1%BA%AFng%201.png",
+    usedParts:
+      "Whole fresh or sun/oven dried plant (Herba Phyllanthi amari) - Harvest year-round. Very bitter taste",
     properties: "Bitter taste, cool nature",
     meridians: "Liver, Kidney, Bladder meridians",
-    mainIngredients: ["Bitter lignan compounds (phyllanthin, hypophyllanthin, niranthin, nirtetralin, phylltetralin)", "Alkaloid (nirurine, epibubialine, isoepibubialine)", "Flavonoid (4-methyl-nor quercetin)", "Saponin", "Tannin"],
-    uses: ["Detoxifies", "Antiseptic", "Disperses stasis", "Opens blood", "Diuretic", "Clears heat", "Liver protection"],
-    indications: ["Hepatitis", "Jaundice", "Fever", "Eye pain", "Urinary retention", "Painful urination", "Blocked milk", "Amenorrhea", "Boils and abscesses", "Skin sores and itching", "Snake bite"],
-    dosage: "Whole plant: 15-30g decoction. Fresh can use 30-60g. External: crush fresh and apply to boils, sores or snake bite",
+    mainIngredients: [
+      "Bitter lignan compounds (phyllanthin, hypophyllanthin, niranthin, nirtetralin, phylltetralin)",
+      "Alkaloid (nirurine, epibubialine, isoepibubialine)",
+      "Flavonoid (4-methyl-nor quercetin)",
+      "Saponin",
+      "Tannin",
+    ],
+    uses: [
+      "Detoxifies",
+      "Antiseptic",
+      "Disperses stasis",
+      "Opens blood",
+      "Diuretic",
+      "Clears heat",
+      "Liver protection",
+    ],
+    indications: [
+      "Hepatitis",
+      "Jaundice",
+      "Fever",
+      "Eye pain",
+      "Urinary retention",
+      "Painful urination",
+      "Blocked milk",
+      "Amenorrhea",
+      "Boils and abscesses",
+      "Skin sores and itching",
+      "Snake bite",
+    ],
+    dosage:
+      "Whole plant: 15-30g decoction. Fresh can use 30-60g. External: crush fresh and apply to boils, sores or snake bite",
     contraindications: ["Pregnant women use with caution"],
-    origin: "Vietnam (grows scattered everywhere except high cold mountains, moisture-loving and light-loving or slightly shade-tolerant, usually grows mixed in grasslands, high fields, hill farms, home gardens and hilly areas). Tropical Asia, tropical Africa",
-    description: "Diep Ha Chau Dang (also called Chó đẻ thân xanh) is an herbaceous plant of the Phyllanthaceae family 40-80cm tall, stem round smooth green, evenly branching. Leaves alternate arranged in 2 close rows looking like pinnate compound leaves, oval leaflets 5-10mm long 3-6mm wide, dark green upper surface, pale green lower surface. Male and female flowers in clusters. Capsule smooth spherical 1.8-2mm diameter, contains 6 triangular seeds with dorsal stripes. Flowering season months 4-6, fruit months 7-9. Contains bitter lignan compounds (phyllanthin, hypophyllanthin, niranthin), alkaloid (nirurine), flavonoid, saponin, tannin. Very bitter taste. Has effects of detoxifying, antiseptic, dispersing stasis, opening blood, diuretic, liver protection. Treats hepatitis, jaundice, fever, eye pain, urinary retention and painful urination, blocked milk, amenorrhea, boils and abscesses, skin sores and itching, snake bite."
+    origin:
+      "Vietnam (grows scattered everywhere except high cold mountains, moisture-loving and light-loving or slightly shade-tolerant, usually grows mixed in grasslands, high fields, hill farms, home gardens and hilly areas). Tropical Asia, tropical Africa",
+    description:
+      "Diep Ha Chau Dang (also called Chó đẻ thân xanh) is an herbaceous plant of the Phyllanthaceae family 40-80cm tall, stem round smooth green, evenly branching. Leaves alternate arranged in 2 close rows looking like pinnate compound leaves, oval leaflets 5-10mm long 3-6mm wide, dark green upper surface, pale green lower surface. Male and female flowers in clusters. Capsule smooth spherical 1.8-2mm diameter, contains 6 triangular seeds with dorsal stripes. Flowering season months 4-6, fruit months 7-9. Contains bitter lignan compounds (phyllanthin, hypophyllanthin, niranthin), alkaloid (nirurine), flavonoid, saponin, tannin. Very bitter taste. Has effects of detoxifying, antiseptic, dispersing stasis, opening blood, diuretic, liver protection. Treats hepatitis, jaundice, fever, eye pain, urinary retention and painful urination, blocked milk, amenorrhea, boils and abscesses, skin sores and itching, snake bite.",
   },
   {
     id: 138,
@@ -910,17 +2428,56 @@ export const medicines = [
     scientificName: "Polyscias fruticosa (L.) Harms.",
     family: "Họ Nhân sâm (Araliaceae)",
     categoryId: "araliaceae",
-    image: "https://duoclieupumat.com/wp-content/uploads/2018/11/15-09-17-45_54-_Copy-of-dinh-lang-la-nhon.jpg",
-    usedParts: "Roots (harvest from trees 3-5 years or older, dig roots, wash clean of sand and dirt, slice, sun dry or oven dry for medicinal use), Leaves (harvest year-round, use fresh or sun dried), Stem (can be used as medicinal ingredient)",
+    image:
+      "https://duoclieupumat.com/wp-content/uploads/2018/11/15-09-17-45_54-_Copy-of-dinh-lang-la-nhon.jpg",
+    usedParts:
+      "Roots (harvest from trees 3-5 years or older, dig roots, wash clean of sand and dirt, slice, sun dry or oven dry for medicinal use), Leaves (harvest year-round, use fresh or sun dried), Stem (can be used as medicinal ingredient)",
     properties: "Sweet, slightly bitter taste, cool nature",
     meridians: "Liver, Kidney, Spleen meridians",
-    mainIngredients: ["Saponin (similar to ginseng)", "Alkaloid", "Flavonoid", "Tannin", "Vitamin B1", "Vitamin B2", "Vitamin B6", "Amino acids", "Polyphenol compounds (in leaves)", "Vitamin C (in leaves)", "Carotene (in leaves)"],
-    uses: ["Tonifies the body", "Strengthens resistance", "Diuretic", "Anti-fatigue", "Improves memory", "Detoxifies", "Treats allergies", "Treats cough", "Treats fever", "Treats rashes and itching"],
-    indications: ["Body weakness", "Anemia", "Postpartum low milk supply", "Cough", "Fever", "Rashes and itching", "Fatigue", "Poor memory"],
-    dosage: "Roots: 10-20g decoction. Leaves: 15-30g decoction or eat fresh as side vegetable with dishes (commonly eaten with goi ca/fish salad). Roots can be soaked in alcohol as tonic similar to ginseng",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution"],
-    origin: "Vietnam (commonly cultivated everywhere, especially in plain and midland provinces as ornamental, hedge or for leaves as vegetables)",
-    description: "Dinh Lang (also called Goi ca tree, Nam duong sam, Southern ginseng) is a small shrub of the Araliaceae family about 0.8-1.5m tall, can be taller if grown for many years. Smooth stem, few branches, bark light gray. Leaves alternate, long petioles, leaf blade 2-3 times pinnately divided, small leaflets spade or oval shaped, margins irregularly serrated, upper surface dark green, lower surface lighter. Small white or white-green flowers in clusters at branch tips. Spherical fruit, purple-black when ripe. Roots contain saponin (similar to ginseng), alkaloid, flavonoid, tannin, vitamins B1, B2, B6 and some amino acids. Leaves contain saponin, vitamin C, carotene and polyphenol compounds. Sweet, slightly bitter taste, cool nature. Roots have effects of tonifying the body, strengthening resistance, diuretic, anti-fatigue, improving memory. Commonly used for people with body weakness, anemia, postpartum women with low milk supply. Leaves have detoxifying, anti-allergic effects, treat cough, fever, rashes and itching. Fresh leaves commonly eaten with goi ca (fish salad) or boiled as drinking water. Roots also soaked in alcohol as tonic similar to ginseng in folk medicine."
+    mainIngredients: [
+      "Saponin (similar to ginseng)",
+      "Alkaloid",
+      "Flavonoid",
+      "Tannin",
+      "Vitamin B1",
+      "Vitamin B2",
+      "Vitamin B6",
+      "Amino acids",
+      "Polyphenol compounds (in leaves)",
+      "Vitamin C (in leaves)",
+      "Carotene (in leaves)",
+    ],
+    uses: [
+      "Tonifies the body",
+      "Strengthens resistance",
+      "Diuretic",
+      "Anti-fatigue",
+      "Improves memory",
+      "Detoxifies",
+      "Treats allergies",
+      "Treats cough",
+      "Treats fever",
+      "Treats rashes and itching",
+    ],
+    indications: [
+      "Body weakness",
+      "Anemia",
+      "Postpartum low milk supply",
+      "Cough",
+      "Fever",
+      "Rashes and itching",
+      "Fatigue",
+      "Poor memory",
+    ],
+    dosage:
+      "Roots: 10-20g decoction. Leaves: 15-30g decoction or eat fresh as side vegetable with dishes (commonly eaten with goi ca/fish salad). Roots can be soaked in alcohol as tonic similar to ginseng",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+    ],
+    origin:
+      "Vietnam (commonly cultivated everywhere, especially in plain and midland provinces as ornamental, hedge or for leaves as vegetables)",
+    description:
+      "Dinh Lang (also called Goi ca tree, Nam duong sam, Southern ginseng) is a small shrub of the Araliaceae family about 0.8-1.5m tall, can be taller if grown for many years. Smooth stem, few branches, bark light gray. Leaves alternate, long petioles, leaf blade 2-3 times pinnately divided, small leaflets spade or oval shaped, margins irregularly serrated, upper surface dark green, lower surface lighter. Small white or white-green flowers in clusters at branch tips. Spherical fruit, purple-black when ripe. Roots contain saponin (similar to ginseng), alkaloid, flavonoid, tannin, vitamins B1, B2, B6 and some amino acids. Leaves contain saponin, vitamin C, carotene and polyphenol compounds. Sweet, slightly bitter taste, cool nature. Roots have effects of tonifying the body, strengthening resistance, diuretic, anti-fatigue, improving memory. Commonly used for people with body weakness, anemia, postpartum women with low milk supply. Leaves have detoxifying, anti-allergic effects, treat cough, fever, rashes and itching. Fresh leaves commonly eaten with goi ca (fish salad) or boiled as drinking water. Roots also soaked in alcohol as tonic similar to ginseng in folk medicine.",
   },
   {
     id: 60,
@@ -929,17 +2486,52 @@ export const medicines = [
     scientificName: "Ananas comosus (L.) Merr.",
     family: "Họ Dứa (Bromeliaceae)",
     categoryId: "bromeliaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%A9a/d%E1%BB%A9a%201.png",
-    usedParts: "Fruit, plant crown and roots (Fructus, Gemma et Radix Ananatis)",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%A9a/d%E1%BB%A9a%201.png",
+    usedParts:
+      "Fruit, plant crown and roots (Fructus, Gemma et Radix Ananatis)",
     properties: "Sweet, sour, slightly sour taste, cool nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Protein", "Lipid", "Sugars (sucrose, glucose)", "Organic acids (citric acid, malic acid)", "Vitamin A", "Vitamin B", "Vitamin C", "Enzyme (bromelain)"],
-    uses: ["Quenches thirst", "Generates body fluids", "Aids digestion", "Clears heat detoxifies", "Diuretic", "Supports inflammation treatment (thanks to bromelain)", "Reduces joint pain", "Reduces edema"],
-    indications: ["Indigestion", "Thirst", "Sinusitis", "Pneumonia", "Bronchitis", "Joint pain", "Edema", "Heat stress"],
-    dosage: "Fresh fruit: eat 100-200g or juice to drink. Plant crown and roots: 15-30g decoction",
-    contraindications: ["Pregnant women use with caution (may cause uterine contractions)", "People with gastric ulcers should not use much"],
-    origin: "Vietnam (widely cultivated in southern provinces, Central Highlands). Tropical Americas (Brazil), now cultivated throughout tropics",
-    description: "Dua (also called Khóm, Thơm) is a perennial herbaceous plant of the Bromeliaceae family 0.5-1.2m tall, with short stem. Leaves arranged in spiral, sword-shaped 40-100cm long, 3-7cm wide, spiny margins. Small purple or red flowers, clustered in cylindrical inflorescence at long peduncle end. Fruit is compound cylindrical or conical, yellow when ripe, fragrant, sweet-sour taste. Crown has small leaf cluster. Contains protein, lipid, sugars (sucrose, glucose), organic acids (citric acid, malic acid), vitamins A, B, C and enzyme bromelain. Sweet-sour taste, cool nature. Has effects of quenching thirst, generating body fluids, aiding digestion, clearing heat detoxifying, diuretic. Bromelain can support treatment of sinusitis, pneumonia, bronchitis, reduce joint pain and reduce edema."
+    mainIngredients: [
+      "Protein",
+      "Lipid",
+      "Sugars (sucrose, glucose)",
+      "Organic acids (citric acid, malic acid)",
+      "Vitamin A",
+      "Vitamin B",
+      "Vitamin C",
+      "Enzyme (bromelain)",
+    ],
+    uses: [
+      "Quenches thirst",
+      "Generates body fluids",
+      "Aids digestion",
+      "Clears heat detoxifies",
+      "Diuretic",
+      "Supports inflammation treatment (thanks to bromelain)",
+      "Reduces joint pain",
+      "Reduces edema",
+    ],
+    indications: [
+      "Indigestion",
+      "Thirst",
+      "Sinusitis",
+      "Pneumonia",
+      "Bronchitis",
+      "Joint pain",
+      "Edema",
+      "Heat stress",
+    ],
+    dosage:
+      "Fresh fruit: eat 100-200g or juice to drink. Plant crown and roots: 15-30g decoction",
+    contraindications: [
+      "Pregnant women use with caution (may cause uterine contractions)",
+      "People with gastric ulcers should not use much",
+    ],
+    origin:
+      "Vietnam (widely cultivated in southern provinces, Central Highlands). Tropical Americas (Brazil), now cultivated throughout tropics",
+    description:
+      "Dua (also called Khóm, Thơm) is a perennial herbaceous plant of the Bromeliaceae family 0.5-1.2m tall, with short stem. Leaves arranged in spiral, sword-shaped 40-100cm long, 3-7cm wide, spiny margins. Small purple or red flowers, clustered in cylindrical inflorescence at long peduncle end. Fruit is compound cylindrical or conical, yellow when ripe, fragrant, sweet-sour taste. Crown has small leaf cluster. Contains protein, lipid, sugars (sucrose, glucose), organic acids (citric acid, malic acid), vitamins A, B, C and enzyme bromelain. Sweet-sour taste, cool nature. Has effects of quenching thirst, generating body fluids, aiding digestion, clearing heat detoxifying, diuretic. Bromelain can support treatment of sinusitis, pneumonia, bronchitis, reduce joint pain and reduce edema.",
   },
   {
     id: 61,
@@ -948,17 +2540,45 @@ export const medicines = [
     scientificName: "Catharanthus roseus (L.) G. Don.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%ABa%20c%E1%BA%A1n/d%E1%BB%ABa%20c%E1%BA%A1n%201.png",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%ABa%20c%E1%BA%A1n/d%E1%BB%ABa%20c%E1%BA%A1n%201.png",
     usedParts: "Leaves and roots (Folium et Radix Catharanthi rosei)",
     properties: "Bitter taste, cold nature",
     meridians: "Liver meridian",
-    mainIngredients: ["Monomeric alkaloid (ajmalicine, serpentine, catharanthine, vidoline, amocaline)", "Dimeric alkaloid (vincaleukoblastine, vincristine)", "Flavonoid", "Saponin", "Triterpene", "Tannin"],
-    uses: ["Lowers blood pressure", "Sedative", "Detoxifies", "Treats diabetes", "Regulates menstruation", "Anti-leukemia"],
-    indications: ["Hypertension", "Diabetes", "Leukemia", "Irregular menstruation", "Dysentery", "Urinary retention"],
-    dosage: "Dried leaves or roots: 10-20g decoction. Fresh leaves: 20-40g decoction",
-    contraindications: ["Pregnant women absolutely must not use (contains toxic alkaloids)", "High doses can cause poisoning"],
-    origin: "Vietnam (grows wild and cultivated in many places). Tropical Asia, Africa, Americas",
-    description: "Dua Can (also called Bông dừa, Trường xuân hoa) is a small plant of the Apocynaceae family 0.4-0.8m tall, has very developed root system, woody stem at base, soft at upper part, grows in dense bush with upright branches. Leaves opposite, lanceolate long, slightly pointed tip, narrowed toward petiole, 3-8cm long, 1-2.5cm wide. White or pink fragrant flowers, solitary in upper leaf axils. Fruit of 2 follicles, 2-4cm long, 2-3mm wide, growing upright slightly leaning to sides, longitudinal striped peel, slightly blunt fruit tip, contains 12-20 small pale brown oval seeds. Flowering-fruiting season nearly year-round. Contains monomeric alkaloid (ajmalicine, serpentine, catharanthine, vidoline, amocaline), dimeric alkaloid (vincaleukoblastine, vincristine), flavonoid, saponin, triterpene, tannin. Bitter taste, cold nature. Roots used to lower blood pressure, sedate, detoxify. Leaves treat hypertension, diabetes, irregular menstruation, dysentery, urinary retention. Purified vinblastine alkaloid treats leukemia in modern medicine."
+    mainIngredients: [
+      "Monomeric alkaloid (ajmalicine, serpentine, catharanthine, vidoline, amocaline)",
+      "Dimeric alkaloid (vincaleukoblastine, vincristine)",
+      "Flavonoid",
+      "Saponin",
+      "Triterpene",
+      "Tannin",
+    ],
+    uses: [
+      "Lowers blood pressure",
+      "Sedative",
+      "Detoxifies",
+      "Treats diabetes",
+      "Regulates menstruation",
+      "Anti-leukemia",
+    ],
+    indications: [
+      "Hypertension",
+      "Diabetes",
+      "Leukemia",
+      "Irregular menstruation",
+      "Dysentery",
+      "Urinary retention",
+    ],
+    dosage:
+      "Dried leaves or roots: 10-20g decoction. Fresh leaves: 20-40g decoction",
+    contraindications: [
+      "Pregnant women absolutely must not use (contains toxic alkaloids)",
+      "High doses can cause poisoning",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated in many places). Tropical Asia, Africa, Americas",
+    description:
+      "Dua Can (also called Bông dừa, Trường xuân hoa) is a small plant of the Apocynaceae family 0.4-0.8m tall, has very developed root system, woody stem at base, soft at upper part, grows in dense bush with upright branches. Leaves opposite, lanceolate long, slightly pointed tip, narrowed toward petiole, 3-8cm long, 1-2.5cm wide. White or pink fragrant flowers, solitary in upper leaf axils. Fruit of 2 follicles, 2-4cm long, 2-3mm wide, growing upright slightly leaning to sides, longitudinal striped peel, slightly blunt fruit tip, contains 12-20 small pale brown oval seeds. Flowering-fruiting season nearly year-round. Contains monomeric alkaloid (ajmalicine, serpentine, catharanthine, vidoline, amocaline), dimeric alkaloid (vincaleukoblastine, vincristine), flavonoid, saponin, triterpene, tannin. Bitter taste, cold nature. Roots used to lower blood pressure, sedate, detoxify. Leaves treat hypertension, diabetes, irregular menstruation, dysentery, urinary retention. Purified vinblastine alkaloid treats leukemia in modern medicine.",
   },
   {
     id: 62,
@@ -967,17 +2587,40 @@ export const medicines = [
     scientificName: "Agave americana L.",
     family: "Họ Măng tây (Asparagaceae)",
     categoryId: "asparagaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%A9a%20m%E1%BB%B9/D%E1%BB%A9a%20m%E1%BB%B9%201.png",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/d%E1%BB%A9a%20m%E1%BB%B9/D%E1%BB%A9a%20m%E1%BB%B9%201.png",
     usedParts: "Leaves, roots",
     properties: "Bitter taste, cool nature",
     meridians: "Lung, Liver, Kidney meridians",
     mainIngredients: ["Steroid sapogenin (hecogenin, tigogenin)"],
-    uses: ["Anti-inflammatory", "Hemostatic", "Diuretic", "Treats fever", "Treats cough from tuberculosis", "Treats wheezing", "Relieves pain", "Treats rheumatic joint pain", "Treats wounds", "Treats ulcers"],
-    indications: ["Cough from tuberculosis", "Wheezing", "Fever", "Pain", "Rheumatic joint pain", "Wounds", "Ulcers", "Difficult urination"],
-    dosage: "Leaves or roots: 10-20g decoction. External use: pound and apply to wounds, ulcers",
+    uses: [
+      "Anti-inflammatory",
+      "Hemostatic",
+      "Diuretic",
+      "Treats fever",
+      "Treats cough from tuberculosis",
+      "Treats wheezing",
+      "Relieves pain",
+      "Treats rheumatic joint pain",
+      "Treats wounds",
+      "Treats ulcers",
+    ],
+    indications: [
+      "Cough from tuberculosis",
+      "Wheezing",
+      "Fever",
+      "Pain",
+      "Rheumatic joint pain",
+      "Wounds",
+      "Ulcers",
+      "Difficult urination",
+    ],
+    dosage:
+      "Leaves or roots: 10-20g decoction. External use: pound and apply to wounds, ulcers",
     contraindications: ["Pregnant women use with caution", "Do not overdose"],
     origin: "North and Central America. Vietnam: cultivated in many places",
-    description: "American Agave (also called Century Plant, Maguey, Dứa mỹ, Thùa, Dứa bà, Lưỡi lê, Long thiệt) is a large perennial herb of the Asparagaceae family with many shoots. 25-30 leaves, lanceolate 1-1.5m long green, leaf margins with black teeth, broad base with yellow edge along both sides. Flower stalk up to 10m tall, short horizontal branches, yellowish-green hexagonal flowers 2cm long; stamens with narrow raised filaments protruding outside. Capsule 4cm tall leathery or woody containing many black seeds. Flowers after 8-14 years in summer-autumn season. Contains steroid sapogenin mainly hecogenin and tigogenin. Bitter taste, cool nature. Used mainly as raw material source to extract hecogenin for semi-synthesis of anti-inflammatory drugs and steroid hormones. Leaves treat cough from tuberculosis, hemostatic, wheezing, treat fever, diuretic. Roots treat pain, rheumatic joint pain, wounds and ulcers."
+    description:
+      "American Agave (also called Century Plant, Maguey, Dứa mỹ, Thùa, Dứa bà, Lưỡi lê, Long thiệt) is a large perennial herb of the Asparagaceae family with many shoots. 25-30 leaves, lanceolate 1-1.5m long green, leaf margins with black teeth, broad base with yellow edge along both sides. Flower stalk up to 10m tall, short horizontal branches, yellowish-green hexagonal flowers 2cm long; stamens with narrow raised filaments protruding outside. Capsule 4cm tall leathery or woody containing many black seeds. Flowers after 8-14 years in summer-autumn season. Contains steroid sapogenin mainly hecogenin and tigogenin. Bitter taste, cool nature. Used mainly as raw material source to extract hecogenin for semi-synthesis of anti-inflammatory drugs and steroid hormones. Leaves treat cough from tuberculosis, hemostatic, wheezing, treat fever, diuretic. Roots treat pain, rheumatic joint pain, wounds and ulcers.",
   },
   {
     id: 63,
@@ -987,16 +2630,61 @@ export const medicines = [
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
     image: "https://caycanhhue.com/wp-content/uploads/2023/05/cay-su-dai-2.jpg",
-    usedParts: "Flowers (Flos Plumeriae rubrae), bark (Cortex Plumeriae rubrae), leaves (Folium Plumeriae rubrae), resin (Resin Plumeriae rubrae). Flowers harvested May-November, leaves and resin harvested year-round, bark peeled and sun dried",
+    usedParts:
+      "Flowers (Flos Plumeriae rubrae), bark (Cortex Plumeriae rubrae), leaves (Folium Plumeriae rubrae), resin (Resin Plumeriae rubrae). Flowers harvested May-November, leaves and resin harvested year-round, bark peeled and sun dried",
     properties: "Slightly sweet taste, cool nature",
     meridians: "Large Intestine, Lung, Liver meridians",
-    mainIngredients: ["Essential oil (geraniol, citronellal, linalool)", "Alkaloid (ajmalin, plumerinin)", "Triterpene (ursolic acid, oleanolic acid, β-amyrin acetate, betulinic acid, lupeol)", "Iridoid (fulvoplumierin, allamcin, allamandin, plumerin)", "Flavonoid flavan group", "Lignan (liriodendrin)", "Saponin"],
-    uses: ["Treats constipation", "Treats dysentery", "Hemostatic", "Reduces fever", "Treats cough", "Tonifies lungs", "Lowers blood pressure", "Reduces edema", "Diuretic", "Treats sprains", "Treats tendon injuries", "Treats boils", "Treats ulcers"],
-    indications: ["Constipation", "Bloody dysentery", "Fever", "Cough", "Weak lungs with phlegm", "High blood pressure", "Edema", "Urinary retention", "Sprains", "Tendon injuries", "Boils", "Ulcers", "Calluses", "Diarrhea"],
-    dosage: "Flowers: 6-12g decoction. Bark: 10-15g decoction. Leaves: pound and apply externally to sprains, tendon injuries, boils. Resin: external use with low dose, apply to calluses, ulcers",
-    contraindications: ["Pregnant women use with caution", "Resin contains alkaloid and saponin, use with caution", "Do not overdose resin"],
-    origin: "Vietnam (cultivated ornamentally around temples and parks). Tropical Americas",
-    description: "Frangipani (also called Đại sứ, Sứ, Sứ cùi, Chămpa) is a medium tree of the Apocynaceae family 3-7m tall. Erect stem, early branching, thick branches with many leaf scars. Large thick simple leaves 20-25×5-6cm alternate, usually clustered at branch tips, narrow base, pointed tip, pinnate venation. Umbellate flower clusters at branch tips, white flowers with yellow center or pink-purple very fragrant, small calyx, 5-petal corolla, narrow corolla tube flaring at throat, 5 stamens attached to corolla tube with very short filaments, ovary with 2 separate carpels. Fruit of 2 long follicles joined together, black-brown when ripe, narrow seeds with thin wing. Whole plant has white latex. Contains essential oil (geraniol, citronellal, linalool), alkaloid (ajmalin, plumerinin), triterpene (ursolic acid, oleanolic acid), iridoid, flavonoid, lignan, saponin. Slightly sweet taste, cool nature. Flowers treat constipation, bloody dysentery, fever, cough, weak lungs with phlegm, high blood pressure, edema, urinary retention. Leaves pounded and applied to sprains, tendon injuries, boils. Bark treats edema, diarrhea. Resin used like bark but lower dose, also used to treat calluses, ulcers."
+    mainIngredients: [
+      "Essential oil (geraniol, citronellal, linalool)",
+      "Alkaloid (ajmalin, plumerinin)",
+      "Triterpene (ursolic acid, oleanolic acid, β-amyrin acetate, betulinic acid, lupeol)",
+      "Iridoid (fulvoplumierin, allamcin, allamandin, plumerin)",
+      "Flavonoid flavan group",
+      "Lignan (liriodendrin)",
+      "Saponin",
+    ],
+    uses: [
+      "Treats constipation",
+      "Treats dysentery",
+      "Hemostatic",
+      "Reduces fever",
+      "Treats cough",
+      "Tonifies lungs",
+      "Lowers blood pressure",
+      "Reduces edema",
+      "Diuretic",
+      "Treats sprains",
+      "Treats tendon injuries",
+      "Treats boils",
+      "Treats ulcers",
+    ],
+    indications: [
+      "Constipation",
+      "Bloody dysentery",
+      "Fever",
+      "Cough",
+      "Weak lungs with phlegm",
+      "High blood pressure",
+      "Edema",
+      "Urinary retention",
+      "Sprains",
+      "Tendon injuries",
+      "Boils",
+      "Ulcers",
+      "Calluses",
+      "Diarrhea",
+    ],
+    dosage:
+      "Flowers: 6-12g decoction. Bark: 10-15g decoction. Leaves: pound and apply externally to sprains, tendon injuries, boils. Resin: external use with low dose, apply to calluses, ulcers",
+    contraindications: [
+      "Pregnant women use with caution",
+      "Resin contains alkaloid and saponin, use with caution",
+      "Do not overdose resin",
+    ],
+    origin:
+      "Vietnam (cultivated ornamentally around temples and parks). Tropical Americas",
+    description:
+      "Frangipani (also called Đại sứ, Sứ, Sứ cùi, Chămpa) is a medium tree of the Apocynaceae family 3-7m tall. Erect stem, early branching, thick branches with many leaf scars. Large thick simple leaves 20-25×5-6cm alternate, usually clustered at branch tips, narrow base, pointed tip, pinnate venation. Umbellate flower clusters at branch tips, white flowers with yellow center or pink-purple very fragrant, small calyx, 5-petal corolla, narrow corolla tube flaring at throat, 5 stamens attached to corolla tube with very short filaments, ovary with 2 separate carpels. Fruit of 2 long follicles joined together, black-brown when ripe, narrow seeds with thin wing. Whole plant has white latex. Contains essential oil (geraniol, citronellal, linalool), alkaloid (ajmalin, plumerinin), triterpene (ursolic acid, oleanolic acid), iridoid, flavonoid, lignan, saponin. Slightly sweet taste, cool nature. Flowers treat constipation, bloody dysentery, fever, cough, weak lungs with phlegm, high blood pressure, edema, urinary retention. Leaves pounded and applied to sprains, tendon injuries, boils. Bark treats edema, diarrhea. Resin used like bark but lower dose, also used to treat calluses, ulcers.",
   },
   {
     id: 64,
@@ -1005,17 +2693,36 @@ export const medicines = [
     scientificName: "Clitoria ternatea L.",
     family: "Họ Đậu (Fabaceae)",
     categoryId: "fabaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%E1%BA%ADu%20bi%E1%BA%BFc/hoa%20%C4%91%E1%BA%ADu%20bi%E1%BA%BFc%201.png",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%E1%BA%ADu%20bi%E1%BA%BFc/hoa%20%C4%91%E1%BA%ADu%20bi%E1%BA%BFc%201.png",
     usedParts: "Roots, flowers, seeds and leaves (harvest year-round)",
     properties: "Sweet taste, cool nature",
     meridians: "Liver, Lung meridians",
-    mainIngredients: ["Flavonoid (in flowers)", "Tannin (in roots)", "Taraxerol, taraxeron (in roots)", "Protein, fatty oil (in seeds)", "Alkaloid, flavonoid, steroid, glycoside (in leaves)"],
-    uses: ["Food coloring (flowers and roots)", "Anti-inflammatory", "Pain relief", "Laxative", "Purgative"],
+    mainIngredients: [
+      "Flavonoid (in flowers)",
+      "Tannin (in roots)",
+      "Taraxerol, taraxeron (in roots)",
+      "Protein, fatty oil (in seeds)",
+      "Alkaloid, flavonoid, steroid, glycoside (in leaves)",
+    ],
+    uses: [
+      "Food coloring (flowers and roots)",
+      "Anti-inflammatory",
+      "Pain relief",
+      "Laxative",
+      "Purgative",
+    ],
     indications: ["Inflammation", "Pain", "Constipation", "Parasitic worms"],
-    dosage: "Leaves: 10-15g decoction or pound and apply externally. Seeds: 6-10g used as laxative, purgative. Flowers and roots: used as food coloring",
-    contraindications: ["Pregnant women use seeds with caution (purgative effect)", "Do not overdose"],
-    origin: "Vietnam (scattered distribution in some mountainous provinces from North to South, grows mixed in tall grasslands, shrubs, hills, field edges and village bushes). Tropical Asia",
-    description: "Butterfly Pea is a perennial climbing herbaceous plant of the Fabaceae family 4-5m long. Soft cylindrical stem slightly hairy. Pinnate compound leaves alternate with 5-7 leaflets oval-shaped 2.5-4cm long 1.8-2.5cm wide, rounded base rounded or slightly notched tip entire margin, both surfaces scattered with appressed hairs, compound leaf petiole 5-6cm nearly smooth, stipules linear. Flowers solitary in leaf axils, 2 boat-shaped bracts, pink or white flowers about 5cm long, tubular calyx 1.8cm long with pointed oval teeth, corolla with oval standard petal middle yellow-orange edge constricted at base no claw 4.5cm long, side petals with 2cm long claw, keel petals with 1.2cm long claw, diadelphous stamens, elliptic anthers, hairy ovary, flattened style. Pod 10cm long with beak 1cm wide slightly constricted between seeds with small hairs, 5-10 kidney-shaped flattened seeds 6mm long green-black spotted. Flowering season June-August, fruiting season September-November. Contains flavonoid, tannin, taraxerol, taraxeron, protein, fatty oil, alkaloid, steroid, glycoside. Sweet taste, cool nature. Flowers and roots used as food coloring. Leaves anti-inflammatory, pain relief. Seeds used for laxative and purgative."
+    dosage:
+      "Leaves: 10-15g decoction or pound and apply externally. Seeds: 6-10g used as laxative, purgative. Flowers and roots: used as food coloring",
+    contraindications: [
+      "Pregnant women use seeds with caution (purgative effect)",
+      "Do not overdose",
+    ],
+    origin:
+      "Vietnam (scattered distribution in some mountainous provinces from North to South, grows mixed in tall grasslands, shrubs, hills, field edges and village bushes). Tropical Asia",
+    description:
+      "Butterfly Pea is a perennial climbing herbaceous plant of the Fabaceae family 4-5m long. Soft cylindrical stem slightly hairy. Pinnate compound leaves alternate with 5-7 leaflets oval-shaped 2.5-4cm long 1.8-2.5cm wide, rounded base rounded or slightly notched tip entire margin, both surfaces scattered with appressed hairs, compound leaf petiole 5-6cm nearly smooth, stipules linear. Flowers solitary in leaf axils, 2 boat-shaped bracts, pink or white flowers about 5cm long, tubular calyx 1.8cm long with pointed oval teeth, corolla with oval standard petal middle yellow-orange edge constricted at base no claw 4.5cm long, side petals with 2cm long claw, keel petals with 1.2cm long claw, diadelphous stamens, elliptic anthers, hairy ovary, flattened style. Pod 10cm long with beak 1cm wide slightly constricted between seeds with small hairs, 5-10 kidney-shaped flattened seeds 6mm long green-black spotted. Flowering season June-August, fruiting season September-November. Contains flavonoid, tannin, taraxerol, taraxeron, protein, fatty oil, alkaloid, steroid, glycoside. Sweet taste, cool nature. Flowers and roots used as food coloring. Leaves anti-inflammatory, pain relief. Seeds used for laxative and purgative.",
   },
   {
     id: 65,
@@ -1024,17 +2731,41 @@ export const medicines = [
     scientificName: "Kaempferia galanga L.",
     family: "Họ Gừng (Zingiberaceae)",
     categoryId: "zingiberaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F%201.png",
-    usedParts: "Rhizome (Rhizoma Kaempferiae). Harvest December-March, choose plants over 2 years old, wash clean, slice thinly, sulfur-fumigate one day then sun dry. Absolutely do not dry over charcoal",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F%201.png",
+    usedParts:
+      "Rhizome (Rhizoma Kaempferiae). Harvest December-March, choose plants over 2 years old, wash clean, slice thinly, sulfur-fumigate one day then sun dry. Absolutely do not dry over charcoal",
     properties: "Pungent taste, warm nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Essential oil (p-methoxyethylcinnamate accounts for 20-25%)"],
-    uses: ["Treats poor digestion", "Treats cold chest-abdomen pain", "Treats numbness edema", "Treats rheumatic numbness", "Treats headache", "Treats diarrhea", "Treats whooping cough"],
-    indications: ["Poor digestion", "Cold chest-abdomen pain", "Numbness edema", "Rheumatic numbness", "Headache", "Diarrhea", "Whooping cough"],
+    mainIngredients: [
+      "Essential oil (p-methoxyethylcinnamate accounts for 20-25%)",
+    ],
+    uses: [
+      "Treats poor digestion",
+      "Treats cold chest-abdomen pain",
+      "Treats numbness edema",
+      "Treats rheumatic numbness",
+      "Treats headache",
+      "Treats diarrhea",
+      "Treats whooping cough",
+    ],
+    indications: [
+      "Poor digestion",
+      "Cold chest-abdomen pain",
+      "Numbness edema",
+      "Rheumatic numbness",
+      "Headache",
+      "Diarrhea",
+      "Whooping cough",
+    ],
     dosage: "Rhizome: 6-12g decoction",
-    contraindications: ["People with yin deficiency fire excess use with caution", "Pregnant women use with caution"],
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "Pregnant women use with caution",
+    ],
     origin: "Vietnam (grows wild and cultivated everywhere). Tropical Asia",
-    description: "Aromatic Ginger (also called Sand Ginger, Củ thiền niền, Sơn nại, Địa liền) is a perennial herbaceous plant of the Zingiberaceae family without stem. Rhizome consists of many small oval tubers growing consecutively with many horizontal lines. 2-3 oval nearly round leaves spread flat on ground, blunt tip then pointed, base narrowed into short wide petiole with groove on upper surface, upper surface smooth shiny, lower surface with fine hairs, thin red margin, both surfaces with many round dots, leaf blade 8-10cm long 6-7cm wide. Sessile flower cluster hidden in leaf sheaths, boat-shaped pointed bracts, 6-12 white flowers with purple spots in middle arranged in wheel shape, calyx with 3 long narrow pointed teeth, corolla with long tube bearing 3 lobes, stamen without filament anther with 2 parallel chambers, sterile stamen large labellum split into 2 lobes. Flowering-fruiting season May-July. Whole plant especially rhizome has aromatic scent and hot taste. Contains essential oil with main component p-methoxyethylcinnamate 20-25%. Pungent taste, warm nature. Treats poor digestion, cold chest-abdomen pain, numbness edema, rheumatic numbness, headache, diarrhea, whooping cough. Aromatic ginger very easy to preserve, almost no mold or insects."
+    description:
+      "Aromatic Ginger (also called Sand Ginger, Củ thiền niền, Sơn nại, Địa liền) is a perennial herbaceous plant of the Zingiberaceae family without stem. Rhizome consists of many small oval tubers growing consecutively with many horizontal lines. 2-3 oval nearly round leaves spread flat on ground, blunt tip then pointed, base narrowed into short wide petiole with groove on upper surface, upper surface smooth shiny, lower surface with fine hairs, thin red margin, both surfaces with many round dots, leaf blade 8-10cm long 6-7cm wide. Sessile flower cluster hidden in leaf sheaths, boat-shaped pointed bracts, 6-12 white flowers with purple spots in middle arranged in wheel shape, calyx with 3 long narrow pointed teeth, corolla with long tube bearing 3 lobes, stamen without filament anther with 2 parallel chambers, sterile stamen large labellum split into 2 lobes. Flowering-fruiting season May-July. Whole plant especially rhizome has aromatic scent and hot taste. Contains essential oil with main component p-methoxyethylcinnamate 20-25%. Pungent taste, warm nature. Treats poor digestion, cold chest-abdomen pain, numbness edema, rheumatic numbness, headache, diarrhea, whooping cough. Aromatic ginger very easy to preserve, almost no mold or insects.",
   },
   {
     id: 66,
@@ -1043,17 +2774,42 @@ export const medicines = [
     scientificName: "Excoecaria cochinchinensis Lour.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F%201.png",
-    usedParts: "Leaves (Folium Excoecariae). Harvest year-round, mainly April-June, especially in 5th lunar month when leaves are large, thick, rich in latex, red-purple color, high active ingredient content. Leaves are harvested and cut small then sun dried or roasted yellow",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F/%C4%91%C6%A1n%20l%C3%A1%20%C4%91%E1%BB%8F%201.png",
+    usedParts:
+      "Leaves (Folium Excoecariae). Harvest year-round, mainly April-June, especially in 5th lunar month when leaves are large, thick, rich in latex, red-purple color, high active ingredient content. Leaves are harvested and cut small then sun dried or roasted yellow",
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Large Intestine meridians",
-    mainIngredients: ["Flavonoid (kaempferol, quercetin, isoscutellarein)", "Triterpenoid (arjunolic acid, oleanolic acid)", "Coumarin (scopoletin)", "Sterol", "Phenolic compounds"],
-    uses: ["Clears heat detoxifies", "Expels wind eliminates dampness", "Diuretic", "Pain relief"],
-    indications: ["Boils", "Itching rash", "Urticaria", "Chronic watery diarrhea", "Bloody stool"],
-    dosage: "Leaves: 10-20g decoction. Fresh use: 20-40g. External use: pound and apply to boils, itching rash",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (cultivated in many localities as ornamental plant and for medicinal leaves). Tropical Asia",
-    description: "Red Excoecaria (also called Đơn mặt trời, Đơn tía) is a small plant of the Euphorbiaceae family about 1m tall. Leaves opposite obovate narrowing, upper surface green shiny, lower surface purple, serrated margins. Flowers in clusters in leaf axils or at apex, monoecious or dioecious. Capsule 3-valved, spherical brown seeds. Plant flowers in summer. Contains flavonoid (kaempferol, quercetin, isoscutellarein), triterpenoid (arjunolic acid, oleanolic acid), coumarin (scopoletin), sterol and phenolic compounds. Bitter taste, cold nature. Clears heat detoxifies, expels wind eliminates dampness, diuretic, pain relief. Mainly treats boils, itching rash, urticaria, chronic watery diarrhea, bloody stool."
+    mainIngredients: [
+      "Flavonoid (kaempferol, quercetin, isoscutellarein)",
+      "Triterpenoid (arjunolic acid, oleanolic acid)",
+      "Coumarin (scopoletin)",
+      "Sterol",
+      "Phenolic compounds",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Expels wind eliminates dampness",
+      "Diuretic",
+      "Pain relief",
+    ],
+    indications: [
+      "Boils",
+      "Itching rash",
+      "Urticaria",
+      "Chronic watery diarrhea",
+      "Bloody stool",
+    ],
+    dosage:
+      "Leaves: 10-20g decoction. Fresh use: 20-40g. External use: pound and apply to boils, itching rash",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (cultivated in many localities as ornamental plant and for medicinal leaves). Tropical Asia",
+    description:
+      "Red Excoecaria (also called Đơn mặt trời, Đơn tía) is a small plant of the Euphorbiaceae family about 1m tall. Leaves opposite obovate narrowing, upper surface green shiny, lower surface purple, serrated margins. Flowers in clusters in leaf axils or at apex, monoecious or dioecious. Capsule 3-valved, spherical brown seeds. Plant flowers in summer. Contains flavonoid (kaempferol, quercetin, isoscutellarein), triterpenoid (arjunolic acid, oleanolic acid), coumarin (scopoletin), sterol and phenolic compounds. Bitter taste, cold nature. Clears heat detoxifies, expels wind eliminates dampness, diuretic, pain relief. Mainly treats boils, itching rash, urticaria, chronic watery diarrhea, bloody stool.",
   },
   {
     id: 139,
@@ -1062,36 +2818,88 @@ export const medicines = [
     scientificName: "Rhizophora apiculata Bl.",
     family: "Rhizophoraceae (Mangrove)",
     categoryId: "rhizophoraceae",
-    image: "https://dantocmiennui-media.baotintuc.vn/images/57c5aab70c5efc5a98d240302ffc6edba650419a22ef4e43451defc60ac264ec686fa08bc9936d08d64033868d8eca1e/150035-1-1.jpg",
-    usedParts: "Bark, Roots. Harvest bark year-round from mature trees, peel off outer bark, dry in sun or oven. Dig up roots in dry season, wash clean, cut into sections, sun dry",
+    image:
+      "https://dantocmiennui-media.baotintuc.vn/images/57c5aab70c5efc5a98d240302ffc6edba650419a22ef4e43451defc60ac264ec686fa08bc9936d08d64033868d8eca1e/150035-1-1.jpg",
+    usedParts:
+      "Bark, Roots. Harvest bark year-round from mature trees, peel off outer bark, dry in sun or oven. Dig up roots in dry season, wash clean, cut into sections, sun dry",
     properties: "Bitter, astringent taste, cool nature",
     meridians: "Not clearly determined",
-    mainIngredients: ["Tannin", "Organic acids", "Flavonoids", "Phenolic compounds", "Saponins"],
-    uses: ["Astringent", "Hemostatic", "Anti-inflammatory", "Antibacterial", "Regulates blood sugar", "Reduces joint pain"],
-    indications: ["Pharyngitis", "Tonsillitis", "Diarrhea", "Dysentery", "Hematuria", "Diabetes", "Rheumatism", "Arthritis", "External wounds"],
-    dosage: "Dried bark: 10-20g decoction, drink 2-3 times daily. Roots: 15-30g decoction. External use: decoct concentrated solution for gargling to treat pharyngitis, or apply to wounds to stop bleeding",
-    contraindications: ["People with weak digestive system", "Pregnant women", "People with constipation"],
-    origin: "Vietnam (mangrove forests in coastal areas of Northern, Central and Southern regions). Distributed in tropical coastal areas of Asia, Africa, Australia",
-    description: "Red Mangrove, also called Mangrove tree, belongs to the Rhizophoraceae family (Rhizophora apiculata Bl.), is a tree species living in mangrove forests, characterized by its stilt root system and viviparous reproduction (seeds germinate while still on the tree). This tree plays an important role in protecting coastlines, preventing erosion, and providing habitat for many marine species. Mangrove trees can reach 20-30m in height, with smooth gray-brown bark. Leaves are opposite, oval-lanceolate, thick and leathery, dark green shiny upper surface, lighter lower surface, with clear parallel veins. Flowers are small, pale yellow, growing in clusters in leaf axils. The most distinctive feature is the viviparous fruit: seeds germinate while still attached to parent tree, developing into long seedlings (hypocotyls) 20-30cm before falling into mud to take root. The stilt root system spreads widely, creating a solid support structure for the tree in soft muddy substrate and regular tidal flooding. In traditional medicine, mangrove bark and roots are commonly used. Bark contains high tannin content, giving it astringent properties, used to treat diarrhea, dysentery, and stop bleeding. Bark decoction is used for gargling to treat pharyngitis, tonsillitis thanks to its anti-inflammatory and antibacterial effects. Roots are used to treat diabetes and rheumatism. Studies show mangrove extracts have blood sugar regulating effects and reduce joint pain in arthritis. However, due to high tannin content, mangrove should not be used by people with weak digestive systems or constipation. Pregnant women should also avoid using this herb. Ecologically, mangrove forests provide tens of tons of dry leaves per hectare annually, creating humus as food for shrimp and fish. Mangroves also absorb CO2 and produce oxygen, contributing to climate change mitigation. In Vietnam, besides Rhizophora apiculata, there are other mangrove species in the same family such as Pointed Mangrove (R. mucronata) and Loop-root Mangrove (R. stylosa), all with similar medicinal uses. Conservation and sustainable exploitation of mangrove forests is extremely important, both for protecting coastal ecosystems and preserving valuable medicinal resources."
+    mainIngredients: [
+      "Tannin",
+      "Organic acids",
+      "Flavonoids",
+      "Phenolic compounds",
+      "Saponins",
+    ],
+    uses: [
+      "Astringent",
+      "Hemostatic",
+      "Anti-inflammatory",
+      "Antibacterial",
+      "Regulates blood sugar",
+      "Reduces joint pain",
+    ],
+    indications: [
+      "Pharyngitis",
+      "Tonsillitis",
+      "Diarrhea",
+      "Dysentery",
+      "Hematuria",
+      "Diabetes",
+      "Rheumatism",
+      "Arthritis",
+      "External wounds",
+    ],
+    dosage:
+      "Dried bark: 10-20g decoction, drink 2-3 times daily. Roots: 15-30g decoction. External use: decoct concentrated solution for gargling to treat pharyngitis, or apply to wounds to stop bleeding",
+    contraindications: [
+      "People with weak digestive system",
+      "Pregnant women",
+      "People with constipation",
+    ],
+    origin:
+      "Vietnam (mangrove forests in coastal areas of Northern, Central and Southern regions). Distributed in tropical coastal areas of Asia, Africa, Australia",
+    description:
+      "Red Mangrove, also called Mangrove tree, belongs to the Rhizophoraceae family (Rhizophora apiculata Bl.), is a tree species living in mangrove forests, characterized by its stilt root system and viviparous reproduction (seeds germinate while still on the tree). This tree plays an important role in protecting coastlines, preventing erosion, and providing habitat for many marine species. Mangrove trees can reach 20-30m in height, with smooth gray-brown bark. Leaves are opposite, oval-lanceolate, thick and leathery, dark green shiny upper surface, lighter lower surface, with clear parallel veins. Flowers are small, pale yellow, growing in clusters in leaf axils. The most distinctive feature is the viviparous fruit: seeds germinate while still attached to parent tree, developing into long seedlings (hypocotyls) 20-30cm before falling into mud to take root. The stilt root system spreads widely, creating a solid support structure for the tree in soft muddy substrate and regular tidal flooding. In traditional medicine, mangrove bark and roots are commonly used. Bark contains high tannin content, giving it astringent properties, used to treat diarrhea, dysentery, and stop bleeding. Bark decoction is used for gargling to treat pharyngitis, tonsillitis thanks to its anti-inflammatory and antibacterial effects. Roots are used to treat diabetes and rheumatism. Studies show mangrove extracts have blood sugar regulating effects and reduce joint pain in arthritis. However, due to high tannin content, mangrove should not be used by people with weak digestive systems or constipation. Pregnant women should also avoid using this herb. Ecologically, mangrove forests provide tens of tons of dry leaves per hectare annually, creating humus as food for shrimp and fish. Mangroves also absorb CO2 and produce oxygen, contributing to climate change mitigation. In Vietnam, besides Rhizophora apiculata, there are other mangrove species in the same family such as Pointed Mangrove (R. mucronata) and Loop-root Mangrove (R. stylosa), all with similar medicinal uses. Conservation and sustainable exploitation of mangrove forests is extremely important, both for protecting coastal ecosystems and preserving valuable medicinal resources.",
   },
   {
     id: 140,
     name: "Trang",
     firstLetter: "T",
-    scientificName: "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
+    scientificName:
+      "Kandelia obovata Sheue, Liu & Young / K. candel (L.) Druce",
     family: "Rhizophoraceae (Mangrove)",
     categoryId: "rhizophoraceae",
-    image: "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
-    usedParts: "Bark, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest ripe fruits for livestock feed",
+    image:
+      "https://cdn-i.doisongphapluat.com.vn/resize/th/upload/2024/12/13/ky-la-loai-cay-duy-nhat-o-viet-nam-co-kha-nang-sinh-va-nuoi-con-dspl-3-15020710.jpg",
+    usedParts:
+      "Bark, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest ripe fruits for livestock feed",
     properties: "Bitter, astringent taste, cool nature",
     meridians: "Not clearly determined",
-    mainIngredients: ["Tannin", "Organic acids", "Flavonoids", "Phenolic compounds"],
-    uses: ["Dyeing fishing nets", "Treats diabetes", "Coastal dike protection", "Beekeeping", "Livestock feed"],
+    mainIngredients: [
+      "Tannin",
+      "Organic acids",
+      "Flavonoids",
+      "Phenolic compounds",
+    ],
+    uses: [
+      "Dyeing fishing nets",
+      "Treats diabetes",
+      "Coastal dike protection",
+      "Beekeeping",
+      "Livestock feed",
+    ],
     indications: ["Diabetes", "Digestive disorders"],
-    dosage: "Bark: 10-15g combined with dried ginger, black pepper and rose water decoction to treat diabetes (Indian traditional method). Fruit: used as pig feed",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Do not overdose"],
-    origin: "Vietnam (mangrove forests from Quang Ninh to Long An, Minh Hai, Kien Giang; planted by residents in Thai Binh, Ha Nam for dike protection). Southeast Asia, China coast, India",
-    description: "Kandelia tree, also called Vet dia, Vet khang, belongs to genus Kandelia in the Rhizophoraceae (Mangrove) family. Vietnam has 2 species: Kandelia in Northern Vietnam belongs to species K. obovata Sheue, Liu & Young, and Kandelia in Southern Vietnam belongs to species K. candel (L.) Druce. This is a small woody tree 5-7m tall, living in areas with daily tidal flooding, without breathing roots. Leaves opposite, oblong blade 5-12cm long, 2.5-5cm wide, leaf margins usually rolled downward, stipules 2cm long. Flower clusters are dichasial cymes, bearing many white flowers, petals 14mm long, split in two with fringed long threads; many stamens; flower stalk 2.5-5mm long. Fruit 1-1.5cm long, with recurved calyx. Cylindrical hypocotyl (seedling root) 15-30cm long at tip of each fruit (when dropped, penetrates mud and develops into new tree - viviparous plant). Flowering and fruiting season: May-October. This species is distributed in Southeast Asian countries, also found on coasts of China and India. In Vietnam, Kandelia grows in mangrove forests from Quang Ninh to Long An, Minh Hai, Kien Giang. Coastal residents in Thai Binh and Ha Nam plant it to protect coastal dikes and for beekeeping. Kandelia bark contains tannin, used for dyeing fishing nets. In India, people combine Kandelia bark with dried ginger, black pepper and rose water to make diabetes treatment medicine. Kandelia fruit is edible, commonly used to feed pigs. Both Kandelia and Red Mangrove (Rhizophora) belong to the Rhizophoraceae family, both live in mangrove forests, have long hypocotyls (viviparous), both contain tannin in bark and have similar medicinal effects. However, Kandelia is smaller (5-7m compared to 20-30m for Rhizophora), does not have stilt roots like Rhizophora, and Kandelia fruit can be used as livestock feed. Both species play important roles in protecting coastlines, preventing erosion and providing habitat for marine organisms."
+    dosage:
+      "Bark: 10-15g combined with dried ginger, black pepper and rose water decoction to treat diabetes (Indian traditional method). Fruit: used as pig feed",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Do not overdose",
+    ],
+    origin:
+      "Vietnam (mangrove forests from Quang Ninh to Long An, Minh Hai, Kien Giang; planted by residents in Thai Binh, Ha Nam for dike protection). Southeast Asia, China coast, India",
+    description:
+      "Kandelia tree, also called Vet dia, Vet khang, belongs to genus Kandelia in the Rhizophoraceae (Mangrove) family. Vietnam has 2 species: Kandelia in Northern Vietnam belongs to species K. obovata Sheue, Liu & Young, and Kandelia in Southern Vietnam belongs to species K. candel (L.) Druce. This is a small woody tree 5-7m tall, living in areas with daily tidal flooding, without breathing roots. Leaves opposite, oblong blade 5-12cm long, 2.5-5cm wide, leaf margins usually rolled downward, stipules 2cm long. Flower clusters are dichasial cymes, bearing many white flowers, petals 14mm long, split in two with fringed long threads; many stamens; flower stalk 2.5-5mm long. Fruit 1-1.5cm long, with recurved calyx. Cylindrical hypocotyl (seedling root) 15-30cm long at tip of each fruit (when dropped, penetrates mud and develops into new tree - viviparous plant). Flowering and fruiting season: May-October. This species is distributed in Southeast Asian countries, also found on coasts of China and India. In Vietnam, Kandelia grows in mangrove forests from Quang Ninh to Long An, Minh Hai, Kien Giang. Coastal residents in Thai Binh and Ha Nam plant it to protect coastal dikes and for beekeeping. Kandelia bark contains tannin, used for dyeing fishing nets. In India, people combine Kandelia bark with dried ginger, black pepper and rose water to make diabetes treatment medicine. Kandelia fruit is edible, commonly used to feed pigs. Both Kandelia and Red Mangrove (Rhizophora) belong to the Rhizophoraceae family, both live in mangrove forests, have long hypocotyls (viviparous), both contain tannin in bark and have similar medicinal effects. However, Kandelia is smaller (5-7m compared to 20-30m for Rhizophora), does not have stilt roots like Rhizophora, and Kandelia fruit can be used as livestock feed. Both species play important roles in protecting coastlines, preventing erosion and providing habitat for marine organisms.",
   },
   {
     id: 141,
@@ -1100,17 +2908,37 @@ export const medicines = [
     scientificName: "Ceriops tagal (Perr.) C. B. Rob.",
     family: "Rhizophoraceae (Mangrove)",
     categoryId: "rhizophoraceae",
-    image: "https://tracuuduoclieu.vn/wp-content/uploads/2018/03/ceriops20tagal20perr-20c-b-20rob.jpg",
-    usedParts: "Bark, Young shoots, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest young shoots as needed. Harvest ripe fruits",
+    image:
+      "https://tracuuduoclieu.vn/wp-content/uploads/2018/03/ceriops20tagal20perr-20c-b-20rob.jpg",
+    usedParts:
+      "Bark, Young shoots, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest young shoots as needed. Harvest ripe fruits",
     properties: "Bitter, astringent taste, cool nature",
     meridians: "Not clearly determined",
-    mainIngredients: ["Tannin", "Organic acids", "Flavonoids", "Phenolic compounds"],
-    uses: ["Astringent", "Hemostatic", "Treats malaria", "Dyeing nets, sails, fishing lines", "Tanning leather", "Betel chewing ingredient"],
+    mainIngredients: [
+      "Tannin",
+      "Organic acids",
+      "Flavonoids",
+      "Phenolic compounds",
+    ],
+    uses: [
+      "Astringent",
+      "Hemostatic",
+      "Treats malaria",
+      "Dyeing nets, sails, fishing lines",
+      "Tanning leather",
+      "Betel chewing ingredient",
+    ],
     indications: ["Bleeding wounds", "Malaria", "External bleeding"],
-    dosage: "Bark: external application to stop bleeding from wounds. Young shoot decoction: drink to treat malaria (African traditional method). Fruit: edible",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Do not overdose"],
-    origin: "East Africa to South Asia, Australia, Melanesia. In Vietnam: coastal mudflats, often grows mixed with Rhizophora and Kandelia (or forms pure stands)",
-    description: "Yellow Mangrove, also called Da voi, Da do, Da net (Ceriops tagal (Perr.) C. B. Rob.) belongs to the Rhizophoraceae (Mangrove) family. Yellow Mangrove is distributed from East Africa to South Asia, Australia and Melanesia. In Vietnam, this tree is found in coastal mudflats, often growing mixed with Red Mangrove (Rhizophora) and Kandelia (or forming pure stands). This is a medium-sized woody tree, sometimes reaching 10-15m tall, trunk diameter up to 20cm. Trunk bark is light gray. Around the base there are also many small stilt roots. Leaves simple ovate, opposite, concentrated at the ends of branches. Stipules lanceolate. Flower cluster is a cyme in leaf axils or branch tips, consisting of 5-10 flowers. Calyx united, persistent on fruit. Petals long, thin, joined at base, white color, later turning brown, apex with 3 club-shaped appendages. Stamens twice the number of petals, unequal. Ovary half-inferior, 3 chambers, each chamber contains 2 ovules. Fruit ovoid, hypocotyl long cylindrical, slightly angular (viviparous plant). Fruiting season May-August. Yellow Mangrove bark contains high tannin content, has astringent properties, used as external application to stop bleeding from wounds. In Africa, some places use young shoot decoction to treat malaria. Yellow Mangrove bark is also used for betel chewing, dyeing nets, sails and fishing lines. Can be mixed with other dyes to produce red or black colors. Yellow Mangrove wood is used in construction, boat building and as charcoal fuel with high heat output. Yellow Mangrove fruit is also edible. Yellow Mangrove belongs to the same family as Red Mangrove (Rhizophora) and Kandelia (Rhizophoraceae), all live in mangrove forests, have long hypocotyls (viviparous), contain tannin in bark. Yellow Mangrove has medium size (10-15m) between Kandelia (5-7m) and Red Mangrove (20-30m), has small stilt roots, bark used to treat malaria and dye multiple colors."
+    dosage:
+      "Bark: external application to stop bleeding from wounds. Young shoot decoction: drink to treat malaria (African traditional method). Fruit: edible",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Do not overdose",
+    ],
+    origin:
+      "East Africa to South Asia, Australia, Melanesia. In Vietnam: coastal mudflats, often grows mixed with Rhizophora and Kandelia (or forms pure stands)",
+    description:
+      "Yellow Mangrove, also called Da voi, Da do, Da net (Ceriops tagal (Perr.) C. B. Rob.) belongs to the Rhizophoraceae (Mangrove) family. Yellow Mangrove is distributed from East Africa to South Asia, Australia and Melanesia. In Vietnam, this tree is found in coastal mudflats, often growing mixed with Red Mangrove (Rhizophora) and Kandelia (or forming pure stands). This is a medium-sized woody tree, sometimes reaching 10-15m tall, trunk diameter up to 20cm. Trunk bark is light gray. Around the base there are also many small stilt roots. Leaves simple ovate, opposite, concentrated at the ends of branches. Stipules lanceolate. Flower cluster is a cyme in leaf axils or branch tips, consisting of 5-10 flowers. Calyx united, persistent on fruit. Petals long, thin, joined at base, white color, later turning brown, apex with 3 club-shaped appendages. Stamens twice the number of petals, unequal. Ovary half-inferior, 3 chambers, each chamber contains 2 ovules. Fruit ovoid, hypocotyl long cylindrical, slightly angular (viviparous plant). Fruiting season May-August. Yellow Mangrove bark contains high tannin content, has astringent properties, used as external application to stop bleeding from wounds. In Africa, some places use young shoot decoction to treat malaria. Yellow Mangrove bark is also used for betel chewing, dyeing nets, sails and fishing lines. Can be mixed with other dyes to produce red or black colors. Yellow Mangrove wood is used in construction, boat building and as charcoal fuel with high heat output. Yellow Mangrove fruit is also edible. Yellow Mangrove belongs to the same family as Red Mangrove (Rhizophora) and Kandelia (Rhizophoraceae), all live in mangrove forests, have long hypocotyls (viviparous), contain tannin in bark. Yellow Mangrove has medium size (10-15m) between Kandelia (5-7m) and Red Mangrove (20-30m), has small stilt roots, bark used to treat malaria and dye multiple colors.",
   },
   {
     id: 142,
@@ -1120,16 +2948,45 @@ export const medicines = [
     family: "Rhizophoraceae (Mangrove)",
     categoryId: "rhizophoraceae",
     image: "https://caythuoc.org/wp-content/uploads/2020/12/cay-vet-dia.jpg",
-    usedParts: "Bark, Leaves, Hypocotyls, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest leaves as needed. Harvest ripe hypocotyls to process into livestock feed",
+    usedParts:
+      "Bark, Leaves, Hypocotyls, Fruit. Harvest bark year-round from mature trees, peel off outer bark, sun or oven dry. Harvest leaves as needed. Harvest ripe hypocotyls to process into livestock feed",
     properties: "Astringent, bitter taste, cool nature",
     meridians: "Not clearly determined",
-    mainIngredients: ["Tannin", "Organic acids", "Flavonoids", "Phenolic compounds", "Starch (in hypocotyls)"],
-    uses: ["Astringent", "Hemostatic", "Treats diarrhea", "Treats malaria", "Improves tumors", "Treats burns and ulcers", "Dyeing fabrics and nets", "Tanning leather"],
-    indications: ["Diarrhea", "Malaria", "Bleeding", "Burns", "Malignant ulcers", "Tumors"],
-    dosage: "Bark: 10-20g decoction to treat diarrhea and malaria. External use: apply crushed bark to stop bleeding or treat burns and ulcers. Black Mangrove leaves: use to improve tumors. Hypocotyls: process into livestock feed. Fruit: used for betel chewing",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Do not overdose"],
-    origin: "Tropical Asia. In Vietnam: muddy soil with tidal flooding, along coastal areas of Central region, Southern provinces from Dong Nai to Ca Mau. Can also grow on dry saline soil rarely flooded by tides",
-    description: "Orange Mangrove (Bruguiera gymnorrhiza (L.) Lam.) belongs to the Rhizophoraceae (Mangrove) family. Orange Mangrove is mainly distributed in tropical Asian countries. In Vietnam, this tree commonly grows in muddy soil with tidal flooding, along coastal areas of the Central region and Southern provinces from Dong Nai to Ca Mau. The tree can also grow on dry saline soil rarely flooded by tides. Orange Mangrove is a woody tree, about 10m tall, with cylindrical breathing roots curved like knees (different from the stilt roots of Red Mangrove). Leaves leathery, ovate, 8-11cm long, 3-5cm wide, blunt at base, pointed at apex, petiole 2-4cm long. Flowers solitary in leaf axils, white color later turning brown, drooping. Fruit rhomboid-shaped, hypocotyl plump, pointed tip, slightly angular (viviparous plant). Flowering and fruiting season: March-June, some trees flower almost year-round. Orange Mangrove bark contains high tannin content, astringent taste, has astringent properties, used for dyeing fabrics, nets and tanning leather. Black Mangrove leaves (Bruguiera sexangula) can be used to improve tumors. Black Mangrove bark is used to treat diarrhea and malaria. In Cambodia, Orange Mangrove bark is used as medicine to treat diarrhea. Hypocotyls contain high starch content, can be processed into livestock feed. Fruit is used for betel chewing. In India, Orange Mangrove bark is used to stop bleeding or treat burns and malignant ulcers. Orange Mangrove wood is hard and strong, used for house construction, lumber, making boat ribs and firewood. Charcoal from Red Mangrove and Orange Mangrove trees is highly favored because it produces little smoke and high heat output (1 kg Red Mangrove charcoal produces 6675 Kcal, Orange Mangrove charcoal produces 6375 Kcal). Some species in the same genus include Black Mangrove (Bruguiera sexangula (Lour.) Poir.), 30-40m tall, fast-growing. Cylindrical Mangrove (B. cylindrica (L.) Bl.) also has similar uses. Young roots of Cylindrical Mangrove can be cooked and eaten as vegetables. Orange Mangrove belongs to the same family as Red Mangrove, Kandelia and Yellow Mangrove (Rhizophoraceae), all live in mangrove forests, have long hypocotyls (viviparous), contain tannin in bark. The distinctive feature of Orange Mangrove is its cylindrical breathing roots curved like knees, different from the widely spreading stilt roots of Red Mangrove."
+    mainIngredients: [
+      "Tannin",
+      "Organic acids",
+      "Flavonoids",
+      "Phenolic compounds",
+      "Starch (in hypocotyls)",
+    ],
+    uses: [
+      "Astringent",
+      "Hemostatic",
+      "Treats diarrhea",
+      "Treats malaria",
+      "Improves tumors",
+      "Treats burns and ulcers",
+      "Dyeing fabrics and nets",
+      "Tanning leather",
+    ],
+    indications: [
+      "Diarrhea",
+      "Malaria",
+      "Bleeding",
+      "Burns",
+      "Malignant ulcers",
+      "Tumors",
+    ],
+    dosage:
+      "Bark: 10-20g decoction to treat diarrhea and malaria. External use: apply crushed bark to stop bleeding or treat burns and ulcers. Black Mangrove leaves: use to improve tumors. Hypocotyls: process into livestock feed. Fruit: used for betel chewing",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Do not overdose",
+    ],
+    origin:
+      "Tropical Asia. In Vietnam: muddy soil with tidal flooding, along coastal areas of Central region, Southern provinces from Dong Nai to Ca Mau. Can also grow on dry saline soil rarely flooded by tides",
+    description:
+      "Orange Mangrove (Bruguiera gymnorrhiza (L.) Lam.) belongs to the Rhizophoraceae (Mangrove) family. Orange Mangrove is mainly distributed in tropical Asian countries. In Vietnam, this tree commonly grows in muddy soil with tidal flooding, along coastal areas of the Central region and Southern provinces from Dong Nai to Ca Mau. The tree can also grow on dry saline soil rarely flooded by tides. Orange Mangrove is a woody tree, about 10m tall, with cylindrical breathing roots curved like knees (different from the stilt roots of Red Mangrove). Leaves leathery, ovate, 8-11cm long, 3-5cm wide, blunt at base, pointed at apex, petiole 2-4cm long. Flowers solitary in leaf axils, white color later turning brown, drooping. Fruit rhomboid-shaped, hypocotyl plump, pointed tip, slightly angular (viviparous plant). Flowering and fruiting season: March-June, some trees flower almost year-round. Orange Mangrove bark contains high tannin content, astringent taste, has astringent properties, used for dyeing fabrics, nets and tanning leather. Black Mangrove leaves (Bruguiera sexangula) can be used to improve tumors. Black Mangrove bark is used to treat diarrhea and malaria. In Cambodia, Orange Mangrove bark is used as medicine to treat diarrhea. Hypocotyls contain high starch content, can be processed into livestock feed. Fruit is used for betel chewing. In India, Orange Mangrove bark is used to stop bleeding or treat burns and malignant ulcers. Orange Mangrove wood is hard and strong, used for house construction, lumber, making boat ribs and firewood. Charcoal from Red Mangrove and Orange Mangrove trees is highly favored because it produces little smoke and high heat output (1 kg Red Mangrove charcoal produces 6675 Kcal, Orange Mangrove charcoal produces 6375 Kcal). Some species in the same genus include Black Mangrove (Bruguiera sexangula (Lour.) Poir.), 30-40m tall, fast-growing. Cylindrical Mangrove (B. cylindrica (L.) Bl.) also has similar uses. Young roots of Cylindrical Mangrove can be cooked and eaten as vegetables. Orange Mangrove belongs to the same family as Red Mangrove, Kandelia and Yellow Mangrove (Rhizophoraceae), all live in mangrove forests, have long hypocotyls (viviparous), contain tannin in bark. The distinctive feature of Orange Mangrove is its cylindrical breathing roots curved like knees, different from the widely spreading stilt roots of Red Mangrove.",
   },
   {
     id: 67,
@@ -1138,17 +2995,43 @@ export const medicines = [
     scientificName: "Boehmeria nivea (L.) Gaudich.",
     family: "Họ Gai (Urticaceae)",
     categoryId: "urticaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%81c/Gai/gai%201.png",
-    usedParts: "Root tuber (Radix Boehmeriae). Harvest in summer or autumn. Dig up roots, wash clean of soil, cut off fibrous roots, use whole or slice, use fresh or sun dry, oven dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%81c/Gai/gai%201.png",
+    usedParts:
+      "Root tuber (Radix Boehmeriae). Harvest in summer or autumn. Dig up roots, wash clean of soil, cut off fibrous roots, use whole or slice, use fresh or sun dry, oven dry",
     properties: "Sweet taste, cold nature",
     meridians: "Heart, Liver, Bladder meridians",
-    mainIngredients: ["Phenolic acids (chlorogenic acid, caffeic acid, quinic acid, protocatechuic acid)", "Flavonoid (rutin, quercetin)", "Polysaccharide"],
-    uses: ["Clears heat detoxifies", "Stops bleeding", "Calms fetus", "Diuretic"],
-    indications: ["Hematuria", "Hematemesis", "Hematochezia", "Leukorrhea", "Boils", "Threatened abortion with bleeding", "Swelling pain from insect bites", "Trauma"],
-    dosage: "Root tuber: 15-30g decoction. Fresh use can use 30-60g. External use: pound and apply to boils, swelling pain",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Do not overdose for pregnant women"],
-    origin: "Vietnam (cultivated relatively widely to harvest leaves for making cakes and root tubers for medicine). Asia",
-    description: "Ramie (also called China Grass, Gai, Trữ ma, Gai tuyết, Gai làm bánh) is a small plant of the Urticaceae family 1-2m tall. Stem hardened woody at base, branches pale red covered with appressed hairs. Leaves alternate oval or ovate base rounded or heart-shaped apex pointed 7-15cm long 4-8cm wide, when young covered with soft hairs on both surfaces, when old upper surface smooth dark green lower surface hairs become silvery white, margin with triangular teeth, 3 basal veins, slender red petiole with soft hairs, linear pointed stipules easily deciduous. Flower clusters monoecious or dioecious shorter than leaves growing in leaf axils arranged in simple spikes, sometimes forming dense clusters. Achene pear-shaped with many hairs, oily seed. Flowering-fruiting season November-January. Contains phenolic acids (chlorogenic, caffeic, quinic, protocatechuic), flavonoid (rutin, quercetin) and polysaccharide. Sweet taste, cold nature. Clears heat detoxifies, stops bleeding, calms fetus, diuretic. Mainly treats hematuria, hematemesis, hematochezia, leukorrhea, boils, threatened abortion with bleeding, swelling pain from insect bites, trauma."
+    mainIngredients: [
+      "Phenolic acids (chlorogenic acid, caffeic acid, quinic acid, protocatechuic acid)",
+      "Flavonoid (rutin, quercetin)",
+      "Polysaccharide",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Stops bleeding",
+      "Calms fetus",
+      "Diuretic",
+    ],
+    indications: [
+      "Hematuria",
+      "Hematemesis",
+      "Hematochezia",
+      "Leukorrhea",
+      "Boils",
+      "Threatened abortion with bleeding",
+      "Swelling pain from insect bites",
+      "Trauma",
+    ],
+    dosage:
+      "Root tuber: 15-30g decoction. Fresh use can use 30-60g. External use: pound and apply to boils, swelling pain",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Do not overdose for pregnant women",
+    ],
+    origin:
+      "Vietnam (cultivated relatively widely to harvest leaves for making cakes and root tubers for medicine). Asia",
+    description:
+      "Ramie (also called China Grass, Gai, Trữ ma, Gai tuyết, Gai làm bánh) is a small plant of the Urticaceae family 1-2m tall. Stem hardened woody at base, branches pale red covered with appressed hairs. Leaves alternate oval or ovate base rounded or heart-shaped apex pointed 7-15cm long 4-8cm wide, when young covered with soft hairs on both surfaces, when old upper surface smooth dark green lower surface hairs become silvery white, margin with triangular teeth, 3 basal veins, slender red petiole with soft hairs, linear pointed stipules easily deciduous. Flower clusters monoecious or dioecious shorter than leaves growing in leaf axils arranged in simple spikes, sometimes forming dense clusters. Achene pear-shaped with many hairs, oily seed. Flowering-fruiting season November-January. Contains phenolic acids (chlorogenic, caffeic, quinic, protocatechuic), flavonoid (rutin, quercetin) and polysaccharide. Sweet taste, cold nature. Clears heat detoxifies, stops bleeding, calms fetus, diuretic. Mainly treats hematuria, hematemesis, hematochezia, leukorrhea, boils, threatened abortion with bleeding, swelling pain from insect bites, trauma.",
   },
   {
     id: 68,
@@ -1157,17 +3040,39 @@ export const medicines = [
     scientificName: "Euphorbia tirucalli L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/Giao/giao%201.png",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/Giao/giao%201.png",
     usedParts: "Whole plant (Herba Euphorbiae Tirucalli)",
     properties: "Pungent slightly sour taste, cool nature, slightly toxic",
     meridians: "Liver, Spleen meridians",
     mainIngredients: ["Phenolic compounds", "Flavonoid", "Proanthocyanidin"],
-    uses: ["Promotes lactation", "Sterilizes", "Expels wind", "Reduces inflammation", "Detoxifies"],
-    indications: ["Postpartum insufficient milk", "Infections", "Wind-dampness", "Inflammation", "Poisoning"],
-    dosage: "Whole plant: 6-10g decoction (use with caution). Plant latex for external use with very small dose (carefully avoid contact with eyes and skin)",
-    contraindications: ["Plant latex very toxic, can cause blindness", "Latex causes swelling, makes skin hot and red", "Pregnant women and children do not use", "Do not overdose", "Avoid latex contact with eyes and skin"],
-    origin: "Africa (Madagascar). Vietnam: imported and cultivated as ornamental plant, hedges",
-    description: "Pencil Tree (also called Milk Bush, Giao, Xương khô) is a medium plant of the Euphorbiaceae family about 2m tall. Stem thick as wrist, many branches growing almost in rings cylindrical long green, resembling coral branches. Small branches have leaves. Narrow leaves fall very early 12-16mm long 2mm wide. Flower cluster with small involucre, 5 oval glands, many stamens, pistil with 3 split styles with head-shaped stigmas. Capsule slightly hairy with 3 convex valves, oval smooth seeds. Contains phenolic compounds, flavonoid and proanthocyanidin. Pungent slightly sour taste, cool nature, slightly toxic. Promotes lactation, sterilizes, expels wind, reduces inflammation, detoxifies. Plant latex very toxic can cause blindness, causes swelling makes skin hot and red. This latex will dry and solidify in sunlight and when soaked in water will give rubber-like latex."
+    uses: [
+      "Promotes lactation",
+      "Sterilizes",
+      "Expels wind",
+      "Reduces inflammation",
+      "Detoxifies",
+    ],
+    indications: [
+      "Postpartum insufficient milk",
+      "Infections",
+      "Wind-dampness",
+      "Inflammation",
+      "Poisoning",
+    ],
+    dosage:
+      "Whole plant: 6-10g decoction (use with caution). Plant latex for external use with very small dose (carefully avoid contact with eyes and skin)",
+    contraindications: [
+      "Plant latex very toxic, can cause blindness",
+      "Latex causes swelling, makes skin hot and red",
+      "Pregnant women and children do not use",
+      "Do not overdose",
+      "Avoid latex contact with eyes and skin",
+    ],
+    origin:
+      "Africa (Madagascar). Vietnam: imported and cultivated as ornamental plant, hedges",
+    description:
+      "Pencil Tree (also called Milk Bush, Giao, Xương khô) is a medium plant of the Euphorbiaceae family about 2m tall. Stem thick as wrist, many branches growing almost in rings cylindrical long green, resembling coral branches. Small branches have leaves. Narrow leaves fall very early 12-16mm long 2mm wide. Flower cluster with small involucre, 5 oval glands, many stamens, pistil with 3 split styles with head-shaped stigmas. Capsule slightly hairy with 3 convex valves, oval smooth seeds. Contains phenolic compounds, flavonoid and proanthocyanidin. Pungent slightly sour taste, cool nature, slightly toxic. Promotes lactation, sterilizes, expels wind, reduces inflammation, detoxifies. Plant latex very toxic can cause blindness, causes swelling makes skin hot and red. This latex will dry and solidify in sunlight and when soaked in water will give rubber-like latex.",
   },
   {
     id: 69,
@@ -1176,17 +3081,58 @@ export const medicines = [
     scientificName: "Zingiber officinale Roscoe.",
     family: "Họ Gừng (Zingiberaceae)",
     categoryId: "zingiberaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/G%E1%BB%ABng/g%E1%BB%ABng%201.png",
-    usedParts: "Rhizome (Rhizoma Zingiberis) use fresh (fresh ginger), dried (dried ginger), roasted yellow or roasted charred (charred ginger). Harvest when plant about to wither, dig up rhizome, cut off stem leaves and fibrous roots, wash clean, sun dry",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/G%E1%BB%ABng/g%E1%BB%ABng%201.png",
+    usedParts:
+      "Rhizome (Rhizoma Zingiberis) use fresh (fresh ginger), dried (dried ginger), roasted yellow or roasted charred (charred ginger). Harvest when plant about to wither, dig up rhizome, cut off stem leaves and fibrous roots, wash clean, sun dry",
     properties: "Pungent taste, warm nature",
     meridians: "Lung, Spleen, Stomach meridians",
-    mainIngredients: ["Essential oil 1-3% (d-camphor, β-phelandrene, zingiberene, citral, borneol, geraniol)", "Oleoresin (gingerol derivatives, shogaol)", "Protease enzyme", "Starch"],
-    uses: ["Treats cold abdomen", "Treats bloating", "Treats poor digestion", "Treats abdominal pain diarrhea", "Anti-nausea", "Anti-motion sickness", "Treats common cold flu", "Induces perspiration", "Treats headache", "Treats cough voice loss", "Treats cold hands feet (roasted yellow ginger)", "Treats pain numbness paralysis", "Treats rheumatism"],
-    indications: ["Cold abdomen", "Bloating", "Poor digestion", "Abdominal pain diarrhea", "Nausea vomiting", "Motion sickness", "Common cold flu", "Headache", "Cough voice loss", "Cold hands feet", "Pain numbness paralysis", "Rheumatism"],
-    dosage: "Fresh rhizome (fresh ginger): 10-20g decoction or press for juice. Dried rhizome (dried ginger): 3-10g decoction. Roasted yellow ginger: 3-10g decoction. External use: moxibustion (in acupuncture), scraping therapy",
-    contraindications: ["People with yin deficiency fire excess use with caution", "People with stomach ulcer disease use with caution", "Pregnant women do not overdose"],
-    origin: "Vietnam (cultivated in all localities from high mountains to plains and offshore islands). China, India, Japan, Southeast Asia and South Asia",
-    description: "Ginger (also called Khương) is a herbaceous plant of the Zingiberaceae family up to 1m tall. Rhizome thin and branching spreading like hand shape almost on same plane, yellow color, aromatic. Leaves alternate sessile lanceolate with whitish midvein when crushed has aromatic scent. Inflorescence about 20cm long bearing flower cluster shaped like spike consisting of many flowers growing close together. Flower has yellow-green corolla with lobes nearly equal pointed. Labellum shorter than corolla lobes purple with yellow spots. Stamen purple. Berry fruit rarely seen. Contains essential oil 1-3% (d-camphor, β-phelandrene, zingiberene, citral, borneol, geraniol), oleoresin (gingerol, shogaol), protease enzyme and starch. Pungent taste, warm nature. Treats cold abdomen, bloating, poor digestion, abdominal pain diarrhea, anti-nausea, anti-motion sickness. Treats common cold flu, induces perspiration, treats headache, cough voice loss. Roasted yellow ginger treats cold hands feet, pain numbness paralysis, rheumatism. External use for moxibustion (in acupuncture), scraping therapy."
+    mainIngredients: [
+      "Essential oil 1-3% (d-camphor, β-phelandrene, zingiberene, citral, borneol, geraniol)",
+      "Oleoresin (gingerol derivatives, shogaol)",
+      "Protease enzyme",
+      "Starch",
+    ],
+    uses: [
+      "Treats cold abdomen",
+      "Treats bloating",
+      "Treats poor digestion",
+      "Treats abdominal pain diarrhea",
+      "Anti-nausea",
+      "Anti-motion sickness",
+      "Treats common cold flu",
+      "Induces perspiration",
+      "Treats headache",
+      "Treats cough voice loss",
+      "Treats cold hands feet (roasted yellow ginger)",
+      "Treats pain numbness paralysis",
+      "Treats rheumatism",
+    ],
+    indications: [
+      "Cold abdomen",
+      "Bloating",
+      "Poor digestion",
+      "Abdominal pain diarrhea",
+      "Nausea vomiting",
+      "Motion sickness",
+      "Common cold flu",
+      "Headache",
+      "Cough voice loss",
+      "Cold hands feet",
+      "Pain numbness paralysis",
+      "Rheumatism",
+    ],
+    dosage:
+      "Fresh rhizome (fresh ginger): 10-20g decoction or press for juice. Dried rhizome (dried ginger): 3-10g decoction. Roasted yellow ginger: 3-10g decoction. External use: moxibustion (in acupuncture), scraping therapy",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "People with stomach ulcer disease use with caution",
+      "Pregnant women do not overdose",
+    ],
+    origin:
+      "Vietnam (cultivated in all localities from high mountains to plains and offshore islands). China, India, Japan, Southeast Asia and South Asia",
+    description:
+      "Ginger (also called Khương) is a herbaceous plant of the Zingiberaceae family up to 1m tall. Rhizome thin and branching spreading like hand shape almost on same plane, yellow color, aromatic. Leaves alternate sessile lanceolate with whitish midvein when crushed has aromatic scent. Inflorescence about 20cm long bearing flower cluster shaped like spike consisting of many flowers growing close together. Flower has yellow-green corolla with lobes nearly equal pointed. Labellum shorter than corolla lobes purple with yellow spots. Stamen purple. Berry fruit rarely seen. Contains essential oil 1-3% (d-camphor, β-phelandrene, zingiberene, citral, borneol, geraniol), oleoresin (gingerol, shogaol), protease enzyme and starch. Pungent taste, warm nature. Treats cold abdomen, bloating, poor digestion, abdominal pain diarrhea, anti-nausea, anti-motion sickness. Treats common cold flu, induces perspiration, treats headache, cough voice loss. Roasted yellow ginger treats cold hands feet, pain numbness paralysis, rheumatism. External use for moxibustion (in acupuncture), scraping therapy.",
   },
   {
     id: 70,
@@ -1195,17 +3141,48 @@ export const medicines = [
     scientificName: "Jasminum sambac (L.) Aiton.",
     family: "Họ Nhài (Oleaceae)",
     categoryId: "oleaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/Nh%C3%A0i/nh%C3%A0i%201.png",
-    usedParts: "Roots (harvest year-round, best in autumn-winter, wash clean, sun or oven dry), flowers and leaves",
-    properties: "Flowers: pungent sweet taste, warm nature. Roots: bitter taste, warm nature",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/Nh%C3%A0i/nh%C3%A0i%201.png",
+    usedParts:
+      "Roots (harvest year-round, best in autumn-winter, wash clean, sun or oven dry), flowers and leaves",
+    properties:
+      "Flowers: pungent sweet taste, warm nature. Roots: bitter taste, warm nature",
     meridians: "Spleen, Stomach, Liver meridians",
-    mainIngredients: ["Roots: dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, jasminoids A-D", "Leaves: flavonoid (rutin, quercetin, isoquercetin), α-amyrin, β-sitosterol", "Flowers: benzyl alcohol, linalool, benzyl acetate, jasmin lactone, α-farnesene, methyl jasmonate, benzyl benzoate, isophytol"],
-    uses: ["Regulates qi", "Relieves depression", "Harmonizes middle", "Removes turbidity", "Relieves pain", "Anesthetic", "Treats red swollen painful eyes", "Treats abdominal pain", "Treats dysentery"],
-    indications: ["Red swollen painful eyes", "Abdominal pain", "Dysentery", "Tendon bone injuries", "Headache", "Toothache", "Insomnia"],
-    dosage: "Flowers: steep in tea or flavor food, decoct or brew like tea to drink. Roots: 6-12g decoction for pain relief. Fresh flowers: use decoction water to wash eyes treating red swollen painful eyes",
-    contraindications: ["People with yin deficiency fire excess use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (cultivated everywhere to get flowers for scenting tea or flavoring food). Tropical Asia",
-    description: "Hoa Nhai (jasmine, also called Bông lài, Mạt lị) is a small shrub of the Oleaceae family with many spreading branches. Ovate leaves pointed at tip and petiole end, 3-7cm long 20-35mm wide, both surfaces glossy, minor vein grooves on lower surface hairy. Few-flowered clusters at branch tips. Berry fruit 2-chambered spherical 6mm diameter black color, surrounded by calyx covering. Roots contain dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, jasminoids A-D. Leaves contain flavonoid (rutin, quercetin, isoquercetin), α-amyrin, β-sitosterol. Flowers contain benzyl alcohol, linalool, benzyl acetate, jasmin lactone, α-farnesene, methyl jasmonate, benzyl benzoate, isophytol. Flowers have pungent sweet taste warm nature, regulate qi, relieve depression, harmonize middle, remove turbidity, used to scent tea flavor food, wash eyes treating red swollen painful eyes, drink treating abdominal pain dysentery. Roots have bitter taste warm nature, relieve pain, anesthetic, used as pain medicine in tendon bone injuries, headache, toothache, insomnia."
+    mainIngredients: [
+      "Roots: dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, jasminoids A-D",
+      "Leaves: flavonoid (rutin, quercetin, isoquercetin), α-amyrin, β-sitosterol",
+      "Flowers: benzyl alcohol, linalool, benzyl acetate, jasmin lactone, α-farnesene, methyl jasmonate, benzyl benzoate, isophytol",
+    ],
+    uses: [
+      "Regulates qi",
+      "Relieves depression",
+      "Harmonizes middle",
+      "Removes turbidity",
+      "Relieves pain",
+      "Anesthetic",
+      "Treats red swollen painful eyes",
+      "Treats abdominal pain",
+      "Treats dysentery",
+    ],
+    indications: [
+      "Red swollen painful eyes",
+      "Abdominal pain",
+      "Dysentery",
+      "Tendon bone injuries",
+      "Headache",
+      "Toothache",
+      "Insomnia",
+    ],
+    dosage:
+      "Flowers: steep in tea or flavor food, decoct or brew like tea to drink. Roots: 6-12g decoction for pain relief. Fresh flowers: use decoction water to wash eyes treating red swollen painful eyes",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere to get flowers for scenting tea or flavoring food). Tropical Asia",
+    description:
+      "Hoa Nhai (jasmine, also called Bông lài, Mạt lị) is a small shrub of the Oleaceae family with many spreading branches. Ovate leaves pointed at tip and petiole end, 3-7cm long 20-35mm wide, both surfaces glossy, minor vein grooves on lower surface hairy. Few-flowered clusters at branch tips. Berry fruit 2-chambered spherical 6mm diameter black color, surrounded by calyx covering. Roots contain dotriacontanoic acid, dotriacontanol, oleanolic acid, daucosterol, hesperidin, jasminoids A-D. Leaves contain flavonoid (rutin, quercetin, isoquercetin), α-amyrin, β-sitosterol. Flowers contain benzyl alcohol, linalool, benzyl acetate, jasmin lactone, α-farnesene, methyl jasmonate, benzyl benzoate, isophytol. Flowers have pungent sweet taste warm nature, regulate qi, relieve depression, harmonize middle, remove turbidity, used to scent tea flavor food, wash eyes treating red swollen painful eyes, drink treating abdominal pain dysentery. Roots have bitter taste warm nature, relieve pain, anesthetic, used as pain medicine in tendon bone injuries, headache, toothache, insomnia.",
   },
   {
     id: 71,
@@ -1214,23 +3191,44 @@ export const medicines = [
     scientificName: "Strobilanthes schomburgkii (Craib) J.R.I.Wood.",
     family: "Họ Ô rô (Acanthaceae)",
     categoryId: "acanthaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ho%C3%A0n%20ng%E1%BB%8Dc%20hoa%20%C4%91%E1%BB%8F/ho%C3%A0n%20ng%E1%BB%8Dc%20hoa%20%C4%91%E1%BB%8F%201.png",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ho%C3%A0n%20ng%E1%BB%8Dc%20hoa%20%C4%91%E1%BB%8F/ho%C3%A0n%20ng%E1%BB%8Dc%20hoa%20%C4%91%E1%BB%8F%201.png",
     usedParts: "Branches and leaves",
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Stomach, Large Intestine meridians",
     mainIngredients: ["No detailed information on chemical composition yet"],
-    uses: ["Treats hepatitis", "Detoxifies", "Treats digestive diseases", "Treats indigestion", "Treats abdominal distension", "Treats acid reflux"],
-    indications: ["Hepatitis", "Indigestion", "Abdominal distension", "Acid reflux", "Stomach diseases", "Digestive diseases"],
+    uses: [
+      "Treats hepatitis",
+      "Detoxifies",
+      "Treats digestive diseases",
+      "Treats indigestion",
+      "Treats abdominal distension",
+      "Treats acid reflux",
+    ],
+    indications: [
+      "Hepatitis",
+      "Indigestion",
+      "Abdominal distension",
+      "Acid reflux",
+      "Stomach diseases",
+      "Digestive diseases",
+    ],
     dosage: "Branches and leaves: 15-30g decoction. Fresh can use 30-60g",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (distributed widely in Yen Bai, Lang Son, Bac Kan, Thai Nguyen, Hanoi, Thua Thien-Hue, Ba Ria-Vung Tau, Dak Lak, Binh Phuoc provinces). Thailand, Cambodia",
-    description: "Hoan Ngoc Hoa Do (also called Xuân hoa đỏ, Hồng ngọc) is a herbaceous shrub or trailing plant of the Acanthaceae family up to 2m. Young branches nearly square, old branches nearly cylindrical with 2 longitudinal grooves. Leaf blade lanceolate size 4-15x1-3cm, both leaf surfaces smooth, leaf base wedge-shaped running along petiole, leaf tip pointed or cuspidate, lateral veins 4-6 pairs prominent on lower surface, petiole 0.2-0.5cm long. Dense spike-like flower clusters at branch tips, bracts awl-shaped-lanceolate size 10-13mm with dense stiff white hairs. Corolla white-pink 2.5-3cm long. Stamens 4, ovary smooth 3mm long, style 1.8-2.2cm long. Bitter taste, cold nature. According to folk medicine has effects treating hepatitis, detoxifying medicine, digestive diseases, stomach diseases like indigestion, abdominal distension, acid reflux."
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (distributed widely in Yen Bai, Lang Son, Bac Kan, Thai Nguyen, Hanoi, Thua Thien-Hue, Ba Ria-Vung Tau, Dak Lak, Binh Phuoc provinces). Thailand, Cambodia",
+    description:
+      "Hoan Ngoc Hoa Do (also called Xuân hoa đỏ, Hồng ngọc) is a herbaceous shrub or trailing plant of the Acanthaceae family up to 2m. Young branches nearly square, old branches nearly cylindrical with 2 longitudinal grooves. Leaf blade lanceolate size 4-15x1-3cm, both leaf surfaces smooth, leaf base wedge-shaped running along petiole, leaf tip pointed or cuspidate, lateral veins 4-6 pairs prominent on lower surface, petiole 0.2-0.5cm long. Dense spike-like flower clusters at branch tips, bracts awl-shaped-lanceolate size 10-13mm with dense stiff white hairs. Corolla white-pink 2.5-3cm long. Stamens 4, ovary smooth 3mm long, style 1.8-2.2cm long. Bitter taste, cold nature. According to folk medicine has effects treating hepatitis, detoxifying medicine, digestive diseases, stomach diseases like indigestion, abdominal distension, acid reflux.",
   },
   {
     id: 72,
     name: "Hoe",
     firstLetter: "H",
-    scientificName: "Styphnolobium japonicum (L.) Schott (Synonym: Sophora japonica L.)",
+    scientificName:
+      "Styphnolobium japonicum (L.) Schott (Synonym: Sophora japonica L.)",
     family: "Họ Đậu (Fabaceae)",
     categoryId: "fabaceae",
     image: "https://thaythuocvietnam.vn/wp-content/uploads/2018/11/hoa-hoe.jpg",
@@ -1238,31 +3236,78 @@ export const medicines = [
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Large Intestine meridians",
     mainIngredients: ["Flavonoid (rutin, quercetin)"],
-    uses: ["Cools blood stops bleeding", "Clears liver purges fire", "Anti-allergy", "Treats rheumatism", "Treats skin damage from radiation"],
-    indications: ["Various bleeding conditions", "Nosebleed", "Hemoptysis", "Metrorrhagia", "Hematochezia hematuria", "Headache", "Dizziness", "Red eyes", "Allergies", "Rheumatism", "Skin radiation damage"],
-    dosage: "Flower buds: 10-15g decoction. Infusion form (Rutin tea). Extract rutin as medicine (Rutin C, Rutascorbon, troxerutin)",
-    contraindications: ["Must not use in cases of vascular obstruction", "Do not use when blood has high clotting"],
-    origin: "Vietnam (grows wild and cultivated everywhere, previously used for cooling drink and yellow dyeing, recently developed cultivation for export). East Asia",
-    description: "Hoe (also called Lài luồng, Hòe hoa, Hòe mễ) is a medium-sized tree of the Fabaceae family evergreen 5-7m tall, sometimes up to 10m. Trunk bark slightly cracked and horizontal branches. Cylindrical smooth branches pale green color with white spots. Odd-pinnate compound leaves alternate, 11-17 leaflets opposite ovate-awl shaped, round base slightly pointed tip 3-4cm long 1.2-2cm wide pale green especially lower surface slightly hairy. Flower clusters at branch tips in panicles 20cm long much branched, small white or pale yellow flowers, calyx bell-shaped nearly smooth, petals short-clawed flag petal wide heart-shaped truncate at base curved up margin, stamens 10 separate, anthers oval-shaped. Legume pod necklace-shaped with irregular constrictions between seeds smooth unopened even with short point tip, seeds 2-5 oval slightly flattened shiny black. Flowering season May-August, fruiting season September-November. Contains flavonoid (rutin, quercetin). Bitter taste, cold nature. Cools blood stops bleeding, clears liver purges fire. Treats various bleeding conditions, nosebleed, hemoptysis, metrorrhagia, hematochezia hematuria, headache, dizziness, red eyes. Used for anti-allergy, rheumatism, skin damage from radiation. Propagated by seeds or branch cuttings, after 3-4 years begins harvesting."
+    uses: [
+      "Cools blood stops bleeding",
+      "Clears liver purges fire",
+      "Anti-allergy",
+      "Treats rheumatism",
+      "Treats skin damage from radiation",
+    ],
+    indications: [
+      "Various bleeding conditions",
+      "Nosebleed",
+      "Hemoptysis",
+      "Metrorrhagia",
+      "Hematochezia hematuria",
+      "Headache",
+      "Dizziness",
+      "Red eyes",
+      "Allergies",
+      "Rheumatism",
+      "Skin radiation damage",
+    ],
+    dosage:
+      "Flower buds: 10-15g decoction. Infusion form (Rutin tea). Extract rutin as medicine (Rutin C, Rutascorbon, troxerutin)",
+    contraindications: [
+      "Must not use in cases of vascular obstruction",
+      "Do not use when blood has high clotting",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated everywhere, previously used for cooling drink and yellow dyeing, recently developed cultivation for export). East Asia",
+    description:
+      "Hoe (also called Lài luồng, Hòe hoa, Hòe mễ) is a medium-sized tree of the Fabaceae family evergreen 5-7m tall, sometimes up to 10m. Trunk bark slightly cracked and horizontal branches. Cylindrical smooth branches pale green color with white spots. Odd-pinnate compound leaves alternate, 11-17 leaflets opposite ovate-awl shaped, round base slightly pointed tip 3-4cm long 1.2-2cm wide pale green especially lower surface slightly hairy. Flower clusters at branch tips in panicles 20cm long much branched, small white or pale yellow flowers, calyx bell-shaped nearly smooth, petals short-clawed flag petal wide heart-shaped truncate at base curved up margin, stamens 10 separate, anthers oval-shaped. Legume pod necklace-shaped with irregular constrictions between seeds smooth unopened even with short point tip, seeds 2-5 oval slightly flattened shiny black. Flowering season May-August, fruiting season September-November. Contains flavonoid (rutin, quercetin). Bitter taste, cold nature. Cools blood stops bleeding, clears liver purges fire. Treats various bleeding conditions, nosebleed, hemoptysis, metrorrhagia, hematochezia hematuria, headache, dizziness, red eyes. Used for anti-allergy, rheumatism, skin damage from radiation. Propagated by seeds or branch cuttings, after 3-4 years begins harvesting.",
   },
   {
     id: 73,
     name: "Hung Chanh",
     firstLetter: "H",
-    scientificName: "Coleus amboinicus Lour. (Synonym: Plectranthus amboinicus (Lour.) Spreng.)",
+    scientificName:
+      "Coleus amboinicus Lour. (Synonym: Plectranthus amboinicus (Lour.) Spreng.)",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://wikiduoclieu.org/wp-content/uploads/2019/03/hung-chanh-584.jpg",
-    usedParts: "Leaves, young shoots (Folium et Gemma Plectranthi) fresh or shade dry",
+    image:
+      "https://wikiduoclieu.org/wp-content/uploads/2019/03/hung-chanh-584.jpg",
+    usedParts:
+      "Leaves, young shoots (Folium et Gemma Plectranthi) fresh or shade dry",
     properties: "Pungent taste, warm nature",
     meridians: "Lung, Stomach meridians",
-    mainIngredients: ["Essential oil (main components: carvacrol, thymol)", "Phenolic acid", "Flavonoid", "Monoterpene hydrocarbon", "Sesquiterpene hydrocarbon", "Oxygenated monoterpene", "Esters"],
-    uses: ["As spice", "Expels phlegm", "Relieves cold", "Induces perspiration", "Treats cough", "Treats sore throat"],
+    mainIngredients: [
+      "Essential oil (main components: carvacrol, thymol)",
+      "Phenolic acid",
+      "Flavonoid",
+      "Monoterpene hydrocarbon",
+      "Sesquiterpene hydrocarbon",
+      "Oxygenated monoterpene",
+      "Esters",
+    ],
+    uses: [
+      "As spice",
+      "Expels phlegm",
+      "Relieves cold",
+      "Induces perspiration",
+      "Treats cough",
+      "Treats sore throat",
+    ],
     indications: ["Cough", "Sore throat", "Flu cold", "Phlegm"],
-    dosage: "Fresh leaves, young shoots: 15-30g decoction or eat raw as spice. Dried leaves: 10-15g decoction",
-    contraindications: ["People with yin deficiency fire excess use with caution", "Pregnant women use with caution"],
+    dosage:
+      "Fresh leaves, young shoots: 15-30g decoction or eat raw as spice. Dried leaves: 10-15g decoction",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "Pregnant women use with caution",
+    ],
     origin: "Vietnam (widely cultivated). Southeast Asia, South Asia",
-    description: "Hung Chanh (also called Tần dày lá, Thơm lông, Dương tử tô) is a perennial herbaceous plant of the Lamiaceae family 20-50cm tall. Stem erect or reclining, base part woody. Leaves opposite thick succulent broadly ovate, wedge-shaped base slightly pointed or blunt tip 3-6cm long 2-5cm wide margin crenate. Flower clusters at stem and branch tips in dense spikes, whorls bearing flowers very close together, small purple-pink flowers, calyx short bell-shaped hairy 5-toothed upper tooth broadly ovate lower and side teeth nearly equal, corolla curved funnel-shaped tube hairy outside smooth inside, lower lip long like corolla tube upper lip short 3-lobed upper lobe wide two side lobes lanceolate, stamens 4 protruding outside corolla. Nutlet small spherical brown. Entire plant has very fine hairs lemon-like aroma. Flowering fruiting season March-May. Contains essential oil (carvacrol, thymol), phenolic acid, flavonoid, monoterpene hydrocarbon, sesquiterpene hydrocarbon, oxygenated monoterpene and esters. Pungent taste, warm nature. Used as spice, expels phlegm, relieves cold, induces perspiration. Treats cough, sore throat."
+    description:
+      "Hung Chanh (also called Tần dày lá, Thơm lông, Dương tử tô) is a perennial herbaceous plant of the Lamiaceae family 20-50cm tall. Stem erect or reclining, base part woody. Leaves opposite thick succulent broadly ovate, wedge-shaped base slightly pointed or blunt tip 3-6cm long 2-5cm wide margin crenate. Flower clusters at stem and branch tips in dense spikes, whorls bearing flowers very close together, small purple-pink flowers, calyx short bell-shaped hairy 5-toothed upper tooth broadly ovate lower and side teeth nearly equal, corolla curved funnel-shaped tube hairy outside smooth inside, lower lip long like corolla tube upper lip short 3-lobed upper lobe wide two side lobes lanceolate, stamens 4 protruding outside corolla. Nutlet small spherical brown. Entire plant has very fine hairs lemon-like aroma. Flowering fruiting season March-May. Contains essential oil (carvacrol, thymol), phenolic acid, flavonoid, monoterpene hydrocarbon, sesquiterpene hydrocarbon, oxygenated monoterpene and esters. Pungent taste, warm nature. Used as spice, expels phlegm, relieves cold, induces perspiration. Treats cough, sore throat.",
   },
   {
     id: 74,
@@ -1272,16 +3317,48 @@ export const medicines = [
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
     image: "https://images.unsplash.com/photo-1618375569909-3c8616cf7733?w=800",
-    usedParts: "Top branch segments with or without flowers (Herba Ocimi sancti). Harvest when plant has flowers, shade dry or lightly oven dry until dried. If extracting essential oil can use fresh",
+    usedParts:
+      "Top branch segments with or without flowers (Herba Ocimi sancti). Harvest when plant has flowers, shade dry or lightly oven dry until dried. If extracting essential oil can use fresh",
     properties: "Pungent slightly bitter taste, warm nature",
     meridians: "Lung, Stomach meridians",
-    mainIngredients: ["Essential oil 0.2-0.3% (eugenol 40-50% or methyl eugenol 50-70%)", "Flavonoid", "Ocimumosid", "Coumarin (ocimarin)", "Polysaccharide"],
-    uses: ["Reduces fever", "Treats cold", "Antibacterial", "Anti-inflammatory", "Relieves pain", "Treats parasites", "Treats sunstroke", "Treats heatstroke"],
-    indications: ["Fever", "Flu cold", "Sunstroke", "Heatstroke", "Headache", "Abdominal pain", "Nausea vomiting", "Infections", "Parasites"],
-    dosage: "Dried top branches: 10-20g decoction. Fresh: 20-40g decoction. Essential oil: external use for antibacterial, local pain relief (in dentistry)",
-    contraindications: ["People with yin deficiency fire excess use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (cultivated everywhere for medicine). India, Southeast Asia",
-    description: "Huong Nhu Tia (also called É tía, É rừng, É đỏ) is a small herbaceous plant of the Lamiaceae family can reach nearly 2m tall. Square stem, young part purple-red colored, hairy. Leaves opposite in cross arrangement, small ovate leaf blade 2-5cm long 1-3cm wide margin serrate, both surfaces hairy. Purple flowers in terminal spike-like inflorescences arranged in whorls of 5-6 on inflorescence, calyx 3-5mm long, corolla slightly wavy petals at margin, stamens 4 protruding outside corolla. Nutlet nearly spherical slightly flattened pale brown or red with small black spots enclosed in persistent calyx. Entire plant aromatic. Contains essential oil 0.2-0.3% (eugenol 40-50% or methyl eugenol 50-70%), flavonoid, ocimumosid, coumarin (ocimarin), polysaccharide. Pungent slightly bitter taste, warm nature. Essential oil capable of inhibiting E. coli, B. anthracis, Pseudomonas aeruginosa, anti-inflammatory, pain relief, fever reduction, treats parasites. Used in folk medicine to reduce fever, treat colds, especially sunstroke, heatstroke, headache, abdominal pain, nausea vomiting. Eugenol used in dentistry for antibacterial, local pain relief and as raw material to synthesize vanillin."
+    mainIngredients: [
+      "Essential oil 0.2-0.3% (eugenol 40-50% or methyl eugenol 50-70%)",
+      "Flavonoid",
+      "Ocimumosid",
+      "Coumarin (ocimarin)",
+      "Polysaccharide",
+    ],
+    uses: [
+      "Reduces fever",
+      "Treats cold",
+      "Antibacterial",
+      "Anti-inflammatory",
+      "Relieves pain",
+      "Treats parasites",
+      "Treats sunstroke",
+      "Treats heatstroke",
+    ],
+    indications: [
+      "Fever",
+      "Flu cold",
+      "Sunstroke",
+      "Heatstroke",
+      "Headache",
+      "Abdominal pain",
+      "Nausea vomiting",
+      "Infections",
+      "Parasites",
+    ],
+    dosage:
+      "Dried top branches: 10-20g decoction. Fresh: 20-40g decoction. Essential oil: external use for antibacterial, local pain relief (in dentistry)",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere for medicine). India, Southeast Asia",
+    description:
+      "Huong Nhu Tia (also called É tía, É rừng, É đỏ) is a small herbaceous plant of the Lamiaceae family can reach nearly 2m tall. Square stem, young part purple-red colored, hairy. Leaves opposite in cross arrangement, small ovate leaf blade 2-5cm long 1-3cm wide margin serrate, both surfaces hairy. Purple flowers in terminal spike-like inflorescences arranged in whorls of 5-6 on inflorescence, calyx 3-5mm long, corolla slightly wavy petals at margin, stamens 4 protruding outside corolla. Nutlet nearly spherical slightly flattened pale brown or red with small black spots enclosed in persistent calyx. Entire plant aromatic. Contains essential oil 0.2-0.3% (eugenol 40-50% or methyl eugenol 50-70%), flavonoid, ocimumosid, coumarin (ocimarin), polysaccharide. Pungent slightly bitter taste, warm nature. Essential oil capable of inhibiting E. coli, B. anthracis, Pseudomonas aeruginosa, anti-inflammatory, pain relief, fever reduction, treats parasites. Used in folk medicine to reduce fever, treat colds, especially sunstroke, heatstroke, headache, abdominal pain, nausea vomiting. Eugenol used in dentistry for antibacterial, local pain relief and as raw material to synthesize vanillin.",
   },
   {
     id: 75,
@@ -1290,17 +3367,52 @@ export const medicines = [
     scientificName: "Ocimum gratissimum L.",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://vietplantex.vn/wp-content/uploads/2024/06/5tinh_dau_huong_nhu_vietplantex-3.png",
-    usedParts: "Top branch segments with or without flowers (Herba Ocimi gratissimi). Harvest, shade dry or lightly oven dry until dried",
+    image:
+      "https://vietplantex.vn/wp-content/uploads/2024/06/5tinh_dau_huong_nhu_vietplantex-3.png",
+    usedParts:
+      "Top branch segments with or without flowers (Herba Ocimi gratissimi). Harvest, shade dry or lightly oven dry until dried",
     properties: "Pungent taste, warm nature",
     meridians: "Lung, Spleen, Stomach meridians",
-    mainIngredients: ["Essential oil 0.6-0.8% (eugenol 45-70%, methyl eugenol 20% or thymol 30-50%)", "Flavonoid", "Lactone", "Xanthene"],
-    uses: ["Induces perspiration", "Clears heat", "Disperses dampness promotes urination", "Regulates qi stops pain", "Strengthens spleen stops vomiting", "Sterilizes", "Local pain relief"],
-    indications: ["Sunstroke", "Fever chills", "Headache", "Abdominal pain diarrhea", "Chest tightness", "Nausea vomiting", "Muscle cramps", "Beriberi edema", "Spleen deficiency diarrhea", "Eczema", "Dermatitis", "Venomous snake bite", "Toothache", "Decay"],
-    dosage: "Dried top branches: 10-20g decoction. Essential oil: external use for sterilization, local pain relief, preventing treating decay, treating toothache",
-    contraindications: ["People with yin deficiency fire excess use with caution"],
-    origin: "Vietnam (cultivated in many places). Africa, India, Southeast Asia",
-    description: "Huong Nhu Trang (also called É trắng, É lá lớn) is a small shrub of the Lamiaceae family about 1.5-2.5m tall. Green stem, square cross-section, woody at base, many hairs on young parts. Leaves opposite ovate-awl pointed, narrow wedge-shaped base, hairy on both surfaces, margin serrate. Flowers in terminal or axillary spike-like inflorescences, white flowers arranged in close circular whorls on inflorescence each whorl has 5-6 flowers, flower stalk covered with hairs, calyx 5mm long hairy, corolla lobes with rounded teeth at margin, stamens 4 protruding outside corolla. Nutlet spherical brown, rough outer surface, soaking in water has mucilage swells. Entire plant covered with fine white hairs, aromatic. Flowering fruiting season May-July. Origin possibly from tropical Africa region or India. Contains essential oil 0.6-0.8% (eugenol 45-70%, methyl eugenol 20% or thymol 30-50%), flavonoid, lactone, xanthene. Pungent taste, warm nature. Used to induce perspiration, clear heat, disperse dampness promote urination, regulate qi stop pain, strengthen spleen stop vomiting. Treats sunstroke, fever chills, headache, abdominal pain diarrhea, chest tightness, nausea vomiting, muscle cramps, beriberi edema, spleen deficiency diarrhea, eczema, dermatitis, venomous snake bite. Essential oil liquid pale yellow, aromatic, pungent numbing taste, exposed to air turns brown-black, has effects of local pain relief, sterilization, used as medicine preventing treating decay, medicine treating toothache."
+    mainIngredients: [
+      "Essential oil 0.6-0.8% (eugenol 45-70%, methyl eugenol 20% or thymol 30-50%)",
+      "Flavonoid",
+      "Lactone",
+      "Xanthene",
+    ],
+    uses: [
+      "Induces perspiration",
+      "Clears heat",
+      "Disperses dampness promotes urination",
+      "Regulates qi stops pain",
+      "Strengthens spleen stops vomiting",
+      "Sterilizes",
+      "Local pain relief",
+    ],
+    indications: [
+      "Sunstroke",
+      "Fever chills",
+      "Headache",
+      "Abdominal pain diarrhea",
+      "Chest tightness",
+      "Nausea vomiting",
+      "Muscle cramps",
+      "Beriberi edema",
+      "Spleen deficiency diarrhea",
+      "Eczema",
+      "Dermatitis",
+      "Venomous snake bite",
+      "Toothache",
+      "Decay",
+    ],
+    dosage:
+      "Dried top branches: 10-20g decoction. Essential oil: external use for sterilization, local pain relief, preventing treating decay, treating toothache",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+    ],
+    origin:
+      "Vietnam (cultivated in many places). Africa, India, Southeast Asia",
+    description:
+      "Huong Nhu Trang (also called É trắng, É lá lớn) is a small shrub of the Lamiaceae family about 1.5-2.5m tall. Green stem, square cross-section, woody at base, many hairs on young parts. Leaves opposite ovate-awl pointed, narrow wedge-shaped base, hairy on both surfaces, margin serrate. Flowers in terminal or axillary spike-like inflorescences, white flowers arranged in close circular whorls on inflorescence each whorl has 5-6 flowers, flower stalk covered with hairs, calyx 5mm long hairy, corolla lobes with rounded teeth at margin, stamens 4 protruding outside corolla. Nutlet spherical brown, rough outer surface, soaking in water has mucilage swells. Entire plant covered with fine white hairs, aromatic. Flowering fruiting season May-July. Origin possibly from tropical Africa region or India. Contains essential oil 0.6-0.8% (eugenol 45-70%, methyl eugenol 20% or thymol 30-50%), flavonoid, lactone, xanthene. Pungent taste, warm nature. Used to induce perspiration, clear heat, disperse dampness promote urination, regulate qi stop pain, strengthen spleen stop vomiting. Treats sunstroke, fever chills, headache, abdominal pain diarrhea, chest tightness, nausea vomiting, muscle cramps, beriberi edema, spleen deficiency diarrhea, eczema, dermatitis, venomous snake bite. Essential oil liquid pale yellow, aromatic, pungent numbing taste, exposed to air turns brown-black, has effects of local pain relief, sterilization, used as medicine preventing treating decay, medicine treating toothache.",
   },
   {
     id: 76,
@@ -1310,16 +3422,39 @@ export const medicines = [
     family: "Họ Cói (Cyperaceae)",
     categoryId: "cyperaceae",
     image: "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?w=800",
-    usedParts: "Rhizome after removing fibrous roots and hairs (Rhizoma Cyperi). Harvest in autumn, take medicine material back, sun dry, burn off all stems leaves hairs and fibrous roots, then wash clean sun dry. Huong phu: Crush or moisten and cover overnight to soften then slice thinly, oven dry. Processed huong phu: Divide evenly into 4 parts, soak 1 part with 5% salt water, 1 part with 5% ginger water, 1 part with vinegar and 1 part with wine, cover each part separately for 12h then stir-fry yellow until aromatic",
+    usedParts:
+      "Rhizome after removing fibrous roots and hairs (Rhizoma Cyperi). Harvest in autumn, take medicine material back, sun dry, burn off all stems leaves hairs and fibrous roots, then wash clean sun dry. Huong phu: Crush or moisten and cover overnight to soften then slice thinly, oven dry. Processed huong phu: Divide evenly into 4 parts, soak 1 part with 5% salt water, 1 part with 5% ginger water, 1 part with vinegar and 1 part with wine, cover each part separately for 12h then stir-fry yellow until aromatic",
     properties: "Pungent slightly bitter taste, warm nature",
     meridians: "Liver, Spleen, Stomach meridians",
-    mainIngredients: ["Essential oil 0.5-1.5% (sesquiterpene: cyperene, α-cyperone, β-selinene, patchoulenone, mustakone, cyperol, rotundone)", "Flavonoid", "Steroid", "Organic acid"],
-    uses: ["Regulates qi stops pain", "Relieves depression regulates menstruation", "Strengthens stomach promotes digestion"],
-    indications: ["Stomach pain", "Poor digestion", "Muscle pain", "Chest rib pain", "Peripheral nerve pain", "Headache", "Dysmenorrhea", "Menstrual disorders"],
-    dosage: "Dried rhizome: 6-12g decoction. Processed huong phu: 6-12g decoction or grind to powder drink",
-    contraindications: ["People with qi deficiency, yin deficiency use with caution"],
+    mainIngredients: [
+      "Essential oil 0.5-1.5% (sesquiterpene: cyperene, α-cyperone, β-selinene, patchoulenone, mustakone, cyperol, rotundone)",
+      "Flavonoid",
+      "Steroid",
+      "Organic acid",
+    ],
+    uses: [
+      "Regulates qi stops pain",
+      "Relieves depression regulates menstruation",
+      "Strengthens stomach promotes digestion",
+    ],
+    indications: [
+      "Stomach pain",
+      "Poor digestion",
+      "Muscle pain",
+      "Chest rib pain",
+      "Peripheral nerve pain",
+      "Headache",
+      "Dysmenorrhea",
+      "Menstrual disorders",
+    ],
+    dosage:
+      "Dried rhizome: 6-12g decoction. Processed huong phu: 6-12g decoction or grind to powder drink",
+    contraindications: [
+      "People with qi deficiency, yin deficiency use with caution",
+    ],
     origin: "Vietnam (grows wild everywhere). Asia, Africa, Oceania",
-    description: "Huong Phu (also called Cỏ cú, Cỏ gấu, Củ gấu) is a perennial plant of the Cyperaceae family. Slender creeping rhizome, elliptical tubers. Solitary plants rarely 2-3 plants cluster sparsely, 15-90cm tall, rather slender, triangular cross-section, smooth, swollen base forming tuber, leaves at base portion. Leaves as long as or shorter than stem, brown sheaths often torn into fibers, green leaf blade tinged blue-green 2-5mm wide slightly flat. Involucral bracts 2-3 (sometimes 5), longer than or sometimes shorter than inflorescence. Simple or compound umbel inflorescence, flower branches (2-)3-10 mainly up to 12cm long uneven, spreading horizontally. Spike wedge-shaped inverse, bearing 3-10 spikelets arranged sparsely. Spikelets oblique elongate 1-3cm long 1.5-2mm wide bearing 8-28 flowers, rachis white rather wide translucent. Glume blood-red to purple-brown on both surfaces but middle green, densely imbricate ovate to awl-ovate about 3mm long with 5-7 veins (fading towards margin), tip pointed to blunt and no cusp. Stamens 3, anthers linear, connective tissue protruding outside anther. Style long, stigma 3 longer than style protruding outside glume. Achene obovate-awl long 1/3-2/5 of corresponding glume, 3-angled, with glandular dots. Contains sesquiterpenoid and essential oil 0.5-1.5% (mainly sesquiterpene: cyperene, α-cyperone - accounts for high proportion, β-selinene, patchoulenone, mustakone, cyperol, rotundone - creates characteristic aroma), flavonoid, steroid, organic acid. Pungent slightly bitter taste, warm nature. Has effects regulating qi stopping pain, relieving depression regulating menstruation, strengthening stomach promoting digestion. Treats stomach pain, poor digestion, muscle pain, chest rib pain, peripheral nerve pain, headache, dysmenorrhea, menstrual disorders."
+    description:
+      "Huong Phu (also called Cỏ cú, Cỏ gấu, Củ gấu) is a perennial plant of the Cyperaceae family. Slender creeping rhizome, elliptical tubers. Solitary plants rarely 2-3 plants cluster sparsely, 15-90cm tall, rather slender, triangular cross-section, smooth, swollen base forming tuber, leaves at base portion. Leaves as long as or shorter than stem, brown sheaths often torn into fibers, green leaf blade tinged blue-green 2-5mm wide slightly flat. Involucral bracts 2-3 (sometimes 5), longer than or sometimes shorter than inflorescence. Simple or compound umbel inflorescence, flower branches (2-)3-10 mainly up to 12cm long uneven, spreading horizontally. Spike wedge-shaped inverse, bearing 3-10 spikelets arranged sparsely. Spikelets oblique elongate 1-3cm long 1.5-2mm wide bearing 8-28 flowers, rachis white rather wide translucent. Glume blood-red to purple-brown on both surfaces but middle green, densely imbricate ovate to awl-ovate about 3mm long with 5-7 veins (fading towards margin), tip pointed to blunt and no cusp. Stamens 3, anthers linear, connective tissue protruding outside anther. Style long, stigma 3 longer than style protruding outside glume. Achene obovate-awl long 1/3-2/5 of corresponding glume, 3-angled, with glandular dots. Contains sesquiterpenoid and essential oil 0.5-1.5% (mainly sesquiterpene: cyperene, α-cyperone - accounts for high proportion, β-selinene, patchoulenone, mustakone, cyperol, rotundone - creates characteristic aroma), flavonoid, steroid, organic acid. Pungent slightly bitter taste, warm nature. Has effects regulating qi stopping pain, relieving depression regulating menstruation, strengthening stomach promoting digestion. Treats stomach pain, poor digestion, muscle pain, chest rib pain, peripheral nerve pain, headache, dysmenorrhea, menstrual disorders.",
   },
   {
     id: 77,
@@ -1332,32 +3467,76 @@ export const medicines = [
     usedParts: "Leaves (Folium Cordyline) fresh or sun dry",
     properties: "Sweet taste, cool nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Flavonoid (quercetin glycoside, apigenin glycoside)", "Steroid saponin (fruticoside H-J)", "Anthocyanin"],
+    mainIngredients: [
+      "Flavonoid (quercetin glycoside, apigenin glycoside)",
+      "Steroid saponin (fruticoside H-J)",
+      "Anthocyanin",
+    ],
     uses: ["Stops bleeding", "Expels phlegm", "Sterilizes"],
-    indications: ["Metrorrhagia", "Hematemesis", "Hemoptysis", "Hemorrhoids", "Dysentery"],
-    dosage: "Fresh leaves: 20-40g decoction or mash apply externally. Dried leaves: 10-20g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution"],
-    origin: "Vietnam (grows wild or cultivated ornamentally in many places). Southeast Asia, Pacific",
-    description: "Huyet Du (also called Phất dũ, Thiết thụ) is a small plant of the Asparagaceae family about 2m tall. Slender stem, bearing many nodal scars, little branching. Leaves clustered at top, arranged in 2 rows, sword-shaped 20-50cm long 5-10cm wide, base constricted, tip tapered pointed, entire margin wavy, both surfaces purple-red colored, some varieties only one side red other side gray-green; long petiole with sheath and groove on upper surface. Flower clusters at stem tip in panicle or spike branching 30-40cm long, each branch bearing many white flowers purple outside; sepals 3 awl-shaped pointed, petals 3 slightly constricted in middle; stamens 6 protruding outside corolla; ovary with 3 chambers. Berry fruit spherical. Flowering fruiting season December-January. Contains flavonoid (quercetin glycoside, apigenin glycoside), steroid saponin (fruticoside H-J), anthocyanin. Sweet taste, cool nature. Used as hemostatic medicine, treats metrorrhagia, hematemesis, hemoptysis, hemorrhoids, dysentery. Also has effects expelling phlegm, sterilizing."
+    indications: [
+      "Metrorrhagia",
+      "Hematemesis",
+      "Hemoptysis",
+      "Hemorrhoids",
+      "Dysentery",
+    ],
+    dosage:
+      "Fresh leaves: 20-40g decoction or mash apply externally. Dried leaves: 10-20g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild or cultivated ornamentally in many places). Southeast Asia, Pacific",
+    description:
+      "Huyet Du (also called Phất dũ, Thiết thụ) is a small plant of the Asparagaceae family about 2m tall. Slender stem, bearing many nodal scars, little branching. Leaves clustered at top, arranged in 2 rows, sword-shaped 20-50cm long 5-10cm wide, base constricted, tip tapered pointed, entire margin wavy, both surfaces purple-red colored, some varieties only one side red other side gray-green; long petiole with sheath and groove on upper surface. Flower clusters at stem tip in panicle or spike branching 30-40cm long, each branch bearing many white flowers purple outside; sepals 3 awl-shaped pointed, petals 3 slightly constricted in middle; stamens 6 protruding outside corolla; ovary with 3 chambers. Berry fruit spherical. Flowering fruiting season December-January. Contains flavonoid (quercetin glycoside, apigenin glycoside), steroid saponin (fruticoside H-J), anthocyanin. Sweet taste, cool nature. Used as hemostatic medicine, treats metrorrhagia, hematemesis, hemoptysis, hemorrhoids, dysentery. Also has effects expelling phlegm, sterilizing.",
   },
   {
     id: 78,
     name: "Ich Mau",
     firstLetter: "I",
-    scientificName: "Leonurus japonicus Houtt. (Synonym: Leonurus heterophyllus Sweet)",
+    scientificName:
+      "Leonurus japonicus Houtt. (Synonym: Leonurus heterophyllus Sweet)",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://mplant.ump.edu.vn/wp-content/uploads/2021/01/ichmau-816x459.jpg",
-    usedParts: "Above-ground parts (Herba Leonuri); fruit (also called Sung úy tử – Fructus Leonuri)",
+    image:
+      "https://mplant.ump.edu.vn/wp-content/uploads/2021/01/ichmau-816x459.jpg",
+    usedParts:
+      "Above-ground parts (Herba Leonuri); fruit (also called Sung úy tử – Fructus Leonuri)",
     properties: "Bitter, pungent taste, slightly cold nature",
     meridians: "Liver, Pericardium, Spleen meridians",
-    mainIngredients: ["Essential oil (diterpene, sesquiterpene: caryophyllane, aromadendran, cadinan)", "Alkaloid (leonurin, stachydrin)", "Flavonoid (rutin, wogonin)", "Saponin"],
-    uses: ["Activates blood eliminates stasis", "Promotes urination reduces edema", "Diuretic"],
-    indications: ["Menstrual disorders", "Dysmenorrhea", "Amenorrhea", "Qi deficiency leukorrhea", "Lochiorrhea", "Metrorrhagia", "Incomplete lochia discharge", "Edema", "Urination difficulties", "Glaucoma"],
-    dosage: "Dried whole plant: 10-30g decoction. Fruit (Sung úy tử): 6-12g decoction",
-    contraindications: ["Pregnant women", "People with blood deficiency use with caution"],
-    origin: "Vietnam (grows wild along streams, rivers, abandoned fields, roadsides). Asia",
-    description: "Ich Mau (also called Sung uý, Chói đèn) is an annual or biennial herbaceous plant of the Lamiaceae family 0.6-1m tall. Name Ich Mau means beneficial for mothers (ich is beneficial, mau is mother). Name Leonurus from Greek leon is lion, oura is tail, heterophyllus is leaves with variable shape, because motherwort plant resembles lion's tail with variable shaped leaves. Square stem, little branching, entire plant covered with small short hairs. Leaves opposite, leaf shape varies depending on whether basal, mid-stem or branch tip leaves. Basal leaves long petiole, heart-shaped blade, margin with coarse deep serrations; stem leaves shorter petiole, blade usually deeply 3-lobed, each lobe with sparse serrations; uppermost leaves mostly unlobed and nearly sessile. Flowers in whorls at leaf axils. Corolla pink or purple-pink, divided into two nearly equal lips. Small fruit 3-angled, gray-brown coat. Contains essential oil (mainly diterpene, sesquiterpene: caryophyllane, aromadendran, cadinan), alkaloid (leonurin, stachydrin), flavonoid (rutin, wogonin), saponin. Bitter pungent taste, slightly cold nature. Has effects activating blood eliminating stasis, promoting urination reducing edema. Treats menstrual disorders, dysmenorrhea, amenorrhea, qi deficiency leukorrhea, lochiorrhea, metrorrhagia, incomplete lochia discharge, edema, urination difficulties. Fruit Sung úy tử also used as diuretic medicine, treats edema, glaucoma. Note: Do not use for pregnant women."
+    mainIngredients: [
+      "Essential oil (diterpene, sesquiterpene: caryophyllane, aromadendran, cadinan)",
+      "Alkaloid (leonurin, stachydrin)",
+      "Flavonoid (rutin, wogonin)",
+      "Saponin",
+    ],
+    uses: [
+      "Activates blood eliminates stasis",
+      "Promotes urination reduces edema",
+      "Diuretic",
+    ],
+    indications: [
+      "Menstrual disorders",
+      "Dysmenorrhea",
+      "Amenorrhea",
+      "Qi deficiency leukorrhea",
+      "Lochiorrhea",
+      "Metrorrhagia",
+      "Incomplete lochia discharge",
+      "Edema",
+      "Urination difficulties",
+      "Glaucoma",
+    ],
+    dosage:
+      "Dried whole plant: 10-30g decoction. Fruit (Sung úy tử): 6-12g decoction",
+    contraindications: [
+      "Pregnant women",
+      "People with blood deficiency use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild along streams, rivers, abandoned fields, roadsides). Asia",
+    description:
+      "Ich Mau (also called Sung uý, Chói đèn) is an annual or biennial herbaceous plant of the Lamiaceae family 0.6-1m tall. Name Ich Mau means beneficial for mothers (ich is beneficial, mau is mother). Name Leonurus from Greek leon is lion, oura is tail, heterophyllus is leaves with variable shape, because motherwort plant resembles lion's tail with variable shaped leaves. Square stem, little branching, entire plant covered with small short hairs. Leaves opposite, leaf shape varies depending on whether basal, mid-stem or branch tip leaves. Basal leaves long petiole, heart-shaped blade, margin with coarse deep serrations; stem leaves shorter petiole, blade usually deeply 3-lobed, each lobe with sparse serrations; uppermost leaves mostly unlobed and nearly sessile. Flowers in whorls at leaf axils. Corolla pink or purple-pink, divided into two nearly equal lips. Small fruit 3-angled, gray-brown coat. Contains essential oil (mainly diterpene, sesquiterpene: caryophyllane, aromadendran, cadinan), alkaloid (leonurin, stachydrin), flavonoid (rutin, wogonin), saponin. Bitter pungent taste, slightly cold nature. Has effects activating blood eliminating stasis, promoting urination reducing edema. Treats menstrual disorders, dysmenorrhea, amenorrhea, qi deficiency leukorrhea, lochiorrhea, metrorrhagia, incomplete lochia discharge, edema, urination difficulties. Fruit Sung úy tử also used as diuretic medicine, treats edema, glaucoma. Note: Do not use for pregnant women.",
   },
   {
     id: 79,
@@ -1366,17 +3545,35 @@ export const medicines = [
     scientificName: "Averrhoa carambola L.",
     family: "Họ Chua me đất (Oxalidaceae)",
     categoryId: "oxalidaceae",
-    image: "https://trangtrisanvuon.vn/wp-content/uploads/2023/10/khe-ngot-min.jpg",
-    usedParts: "Leaves, bark harvest year-round. Leaves use fresh, bark stir-fry yellow. Flowers, fruit harvest in summer, autumn, use fresh",
+    image:
+      "https://trangtrisanvuon.vn/wp-content/uploads/2023/10/khe-ngot-min.jpg",
+    usedParts:
+      "Leaves, bark harvest year-round. Leaves use fresh, bark stir-fry yellow. Flowers, fruit harvest in summer, autumn, use fresh",
     properties: "Sour, astringent taste, neutral nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Protein 0.5%", "Oil 0.2%", "Carbohydrate 4.8%", "Total sugar 3.5-11%", "Oxalic acid", "Vitamin A, C, B1, B2, P"],
+    mainIngredients: [
+      "Protein 0.5%",
+      "Oil 0.2%",
+      "Carbohydrate 4.8%",
+      "Total sugar 3.5-11%",
+      "Oxalic acid",
+      "Vitamin A, C, B1, B2, P",
+    ],
     uses: ["Clears heat", "Cools blood", "Reduces inflammation", "Diuretic"],
-    indications: ["Urushiol dermatitis (poison ivy)", "Rash itching", "Ulcers swelling pain from allergies", "Scurvy"],
-    dosage: "Fresh leaves: mash apply externally on areas affected by poison ivy, rash itching, ulcers. Fruit: juice to drink for cooling, treating scurvy",
-    contraindications: ["People with kidney stones use with caution (contains oxalic acid)"],
+    indications: [
+      "Urushiol dermatitis (poison ivy)",
+      "Rash itching",
+      "Ulcers swelling pain from allergies",
+      "Scurvy",
+    ],
+    dosage:
+      "Fresh leaves: mash apply externally on areas affected by poison ivy, rash itching, ulcers. Fruit: juice to drink for cooling, treating scurvy",
+    contraindications: [
+      "People with kidney stones use with caution (contains oxalic acid)",
+    ],
     origin: "Vietnam (grows wild and cultivated everywhere). Southeast Asia",
-    description: "Khe (also called Khế chua, Ngũ liễm) is a medium-sized tree of the Oxalidaceae family 5-7m tall, sometimes larger. Cylindrical trunk, scaly bark gray-black color. Leaves alternate, odd-pinnate compound, 7-11 leaflets thin ovate, leaflets gradually larger toward tip. Flower clusters at leaf axils in short cymes shorter than leaves; small lanceolate bracts; pink or purple-pink flowers; calyx 5 short separate teeth half corolla length; corolla 5 thin petals joined at base; stamens 5 opposite sepals, abortive stamens opposite petals, filaments swollen attached to base; hairy ovate ovary, 5 chambers. Large fruit, elongate awl-shaped, persistent calyx, 5 sharp vertical ridges forming star shape when cross-sectioned, yellow when ripe, small flat brown-yellow seeds. Flowering fruiting season May-September. Star fruit contains protein 0.5%, oil 0.2%, carbohydrate 4.8%, total sugar 3.5-11%, oxalic acid, vitamins A, C, B1, B2, P. Star fruit leaves have sour astringent taste, neutral nature with effects clearing heat, cooling blood, reducing inflammation, diuretic. Folk medicine commonly uses star fruit leaves mashed finely to apply on areas affected by urushiol dermatitis (poison ivy). Can also use fruit mashed to get juice to apply. Also used to treat rash itching, ulcers swelling pain from allergies. Fruit used to juice drink for cooling, treating scurvy."
+    description:
+      "Khe (also called Khế chua, Ngũ liễm) is a medium-sized tree of the Oxalidaceae family 5-7m tall, sometimes larger. Cylindrical trunk, scaly bark gray-black color. Leaves alternate, odd-pinnate compound, 7-11 leaflets thin ovate, leaflets gradually larger toward tip. Flower clusters at leaf axils in short cymes shorter than leaves; small lanceolate bracts; pink or purple-pink flowers; calyx 5 short separate teeth half corolla length; corolla 5 thin petals joined at base; stamens 5 opposite sepals, abortive stamens opposite petals, filaments swollen attached to base; hairy ovate ovary, 5 chambers. Large fruit, elongate awl-shaped, persistent calyx, 5 sharp vertical ridges forming star shape when cross-sectioned, yellow when ripe, small flat brown-yellow seeds. Flowering fruiting season May-September. Star fruit contains protein 0.5%, oil 0.2%, carbohydrate 4.8%, total sugar 3.5-11%, oxalic acid, vitamins A, C, B1, B2, P. Star fruit leaves have sour astringent taste, neutral nature with effects clearing heat, cooling blood, reducing inflammation, diuretic. Folk medicine commonly uses star fruit leaves mashed finely to apply on areas affected by urushiol dermatitis (poison ivy). Can also use fruit mashed to get juice to apply. Also used to treat rash itching, ulcers swelling pain from allergies. Fruit used to juice drink for cooling, treating scurvy.",
   },
   {
     id: 80,
@@ -1385,17 +3582,45 @@ export const medicines = [
     scientificName: "Rhinacanthus nasutus (L.) Kurz",
     family: "Họ Ô rô (Acanthaceae)",
     categoryId: "acanthaceae",
-    image: "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ki%E1%BA%BFn%20c%C3%B2/ki%E1%BA%BFn%20c%C3%B2%201.png",
-    usedParts: "Commonly use roots (Radix Rhinacanthi). Harvest stems leaves year-round",
+    image:
+      "https://pharmacy.tdtu.edu.vn/sites/pharmacy/files/pharmacy/C%C3%A2y%20thu%E1%BB%91c/ki%E1%BA%BFn%20c%C3%B2/ki%E1%BA%BFn%20c%C3%B2%201.png",
+    usedParts:
+      "Commonly use roots (Radix Rhinacanthi). Harvest stems leaves year-round",
     properties: "Bitter, pungent taste, cool nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Naphthoquinone (rhinacanthin A-Q, cherry red color)", "Triterpenoid", "Sterol", "Coumarin", "Anthranoid"],
-    uses: ["Anti-inflammatory", "Analgesic", "Antibacterial", "Antifungal", "Anti-cancer", "Anti-diabetes"],
-    indications: ["Tinea versicolor", "Ringworm", "Impetigo", "Chronic eczema", "Skin bacterial infections", "Skin fungal infections", "Blood sugar control support"],
-    dosage: "Fresh or dried roots: mash finely, soak in alcohol or vinegar 7-10 days then apply on diseased skin areas. Can use as topical ointment form",
-    contraindications: ["Pregnant women use with caution", "People with weak constitution use with caution"],
+    mainIngredients: [
+      "Naphthoquinone (rhinacanthin A-Q, cherry red color)",
+      "Triterpenoid",
+      "Sterol",
+      "Coumarin",
+      "Anthranoid",
+    ],
+    uses: [
+      "Anti-inflammatory",
+      "Analgesic",
+      "Antibacterial",
+      "Antifungal",
+      "Anti-cancer",
+      "Anti-diabetes",
+    ],
+    indications: [
+      "Tinea versicolor",
+      "Ringworm",
+      "Impetigo",
+      "Chronic eczema",
+      "Skin bacterial infections",
+      "Skin fungal infections",
+      "Blood sugar control support",
+    ],
+    dosage:
+      "Fresh or dried roots: mash finely, soak in alcohol or vinegar 7-10 days then apply on diseased skin areas. Can use as topical ointment form",
+    contraindications: [
+      "Pregnant women use with caution",
+      "People with weak constitution use with caution",
+    ],
     origin: "Vietnam (cultivated). India, Asia",
-    description: "Kien Co (also called Bạch hạc) is a medium-sized plant of the Acanthaceae family 1.5m tall. Stem grows upright, many branches. Leaves opposite petiolate, ovate-awl blade, blunt petiole end, long pointed tip 2-9cm long 1-3cm wide, upper surface smooth, lower surface slightly hairy. Small white flowers slightly pink spotted in many-flowered cymes at branch or stem tips. Capsule fruit, lower part flat seedless, upper part contains 4 seeds sometimes only 2 seeds, ovate seeds convex on both surfaces. Originates from India, common in Asia. Roots contain many groups of Naphthoquinone compounds (rhinacanthin A-Q group, usually cherry red color), triterpenoid, sterol, coumarin, anthranoid. Rhinacanthin-C and -D have anti-inflammatory, analgesic effects. Rhinacanthin-rich extracts effectively inhibit many bacteria (Streptococcus mutans, S. epidermidis, Propionibacterium acnes, Staphylococcus aureus) and skin pathogenic fungi. Derivatives like rhinacanthin-C and rhinacanthone capable of inhibiting proliferation, inducing apoptosis and anti-metastasis in some cancer cell lines (such as bile duct cancer, cervical cancer). Rhinacanthin-C strongly inhibits α-glucosidase enzyme helping control blood sugar, reduce fat accumulation and improve lipid, insulin indices. According to Prof. Do Tat Loi, roots used to treat tinea versicolor, ringworm, impetigo, chronic eczema. Use fresh or dried roots mashed finely, soak in alcohol or vinegar 7-10 days then apply. Can use as ointment form."
+    description:
+      "Kien Co (also called Bạch hạc) is a medium-sized plant of the Acanthaceae family 1.5m tall. Stem grows upright, many branches. Leaves opposite petiolate, ovate-awl blade, blunt petiole end, long pointed tip 2-9cm long 1-3cm wide, upper surface smooth, lower surface slightly hairy. Small white flowers slightly pink spotted in many-flowered cymes at branch or stem tips. Capsule fruit, lower part flat seedless, upper part contains 4 seeds sometimes only 2 seeds, ovate seeds convex on both surfaces. Originates from India, common in Asia. Roots contain many groups of Naphthoquinone compounds (rhinacanthin A-Q group, usually cherry red color), triterpenoid, sterol, coumarin, anthranoid. Rhinacanthin-C and -D have anti-inflammatory, analgesic effects. Rhinacanthin-rich extracts effectively inhibit many bacteria (Streptococcus mutans, S. epidermidis, Propionibacterium acnes, Staphylococcus aureus) and skin pathogenic fungi. Derivatives like rhinacanthin-C and rhinacanthone capable of inhibiting proliferation, inducing apoptosis and anti-metastasis in some cancer cell lines (such as bile duct cancer, cervical cancer). Rhinacanthin-C strongly inhibits α-glucosidase enzyme helping control blood sugar, reduce fat accumulation and improve lipid, insulin indices. According to Prof. Do Tat Loi, roots used to treat tinea versicolor, ringworm, impetigo, chronic eczema. Use fresh or dried roots mashed finely, soak in alcohol or vinegar 7-10 days then apply. Can use as ointment form.",
   },
   {
     id: 81,
@@ -1404,17 +3629,40 @@ export const medicines = [
     scientificName: "Lonicera japonica Thunb.",
     family: "Họ Cơm cháy (Caprifoliaceae)",
     categoryId: "caprifoliaceae",
-    image: "https://vuonducvuong.com/wp-content/uploads/2022/12/cay-kim-ngan-hoa-7.jpg",
-    usedParts: "Flower buds about to open (Kim ngân hoa – Flos Lonicerae). Medicine material is long narrow tubular flower buds, slightly swollen at tip, yellow slightly green to yellow-brown color; proportion of opened flowers not exceeding 10%. Branches and leaves (Herba Lonicerae) also used",
+    image:
+      "https://vuonducvuong.com/wp-content/uploads/2022/12/cay-kim-ngan-hoa-7.jpg",
+    usedParts:
+      "Flower buds about to open (Kim ngân hoa – Flos Lonicerae). Medicine material is long narrow tubular flower buds, slightly swollen at tip, yellow slightly green to yellow-brown color; proportion of opened flowers not exceeding 10%. Branches and leaves (Herba Lonicerae) also used",
     properties: "Sweet taste, cold nature",
     meridians: "Lung, Stomach, Large Intestine meridians",
-    mainIngredients: ["Flavonoid (lonicerin, luteolin)", "Phenolic acid (chlorogenic acid, caffeic acid, trans-cinnamic, trans-ferulic)", "Essential oil", "Triterpenoid", "Saponin", "Iridoid (loganin, secologanin)"],
+    mainIngredients: [
+      "Flavonoid (lonicerin, luteolin)",
+      "Phenolic acid (chlorogenic acid, caffeic acid, trans-cinnamic, trans-ferulic)",
+      "Essential oil",
+      "Triterpenoid",
+      "Saponin",
+      "Iridoid (loganin, secologanin)",
+    ],
     uses: ["Clears heat", "Detoxifies", "Anti-inflammatory"],
-    indications: ["Abscesses boils", "Measles rash", "Urticaria", "Itching eruptions", "Wind-heat common cold", "Febrile disease fever", "Heat toxin bloody dysentery"],
-    dosage: "Dried flowers: 10-20g decoction or infusion. Can soak in wine make pills powder. Branches leaves: 15-30g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (distributed mainly in northern mountainous and midland areas: Quang Ninh, Cao Bang, Lang Son, Bac Giang, Ha Tay). Southeast Asia, China, Japan, Korea",
-    description: "Kim Ngan (also called Nhẫn đông) is a climbing vine plant of the Caprifoliaceae family. Young branches covered with hair layer of short simple hairs and stalked glandular hairs, slightly red colored with stripes. Leaves opposite rather thick lanceolate-ovate 4-7cm long 2-4cm wide, round base pointed tip, wrinkled except lower surface on veins, petiole 5-6mm long hairy. Flower clusters at terminal leaf axils in two-flowered cymes; bracts like small leaves lanceolate-shaped, round bracteoles with sparse hairs on margin 5 slender teeth sometimes unequal hairy; corolla white later turning yellow hairy and glandular outside, fragrant, corolla tube 1.8-2cm long, lip 1.5-1.8cm long, stamens 5 protruding outside attached at corolla throat, dorsifixed anthers. Spherical black fruit. Flowering season March-May, fruiting season June-August. Originates from Southeast Asia region. Plant prefers light, usually grows in secondary forests, shrublands and limestone mountain forests. Flower buds contain mainly flavonoids (lonicerin, luteolin) and phenolic acids (chlorogenic acid, caffeic acid, trans-cinnamic, trans-ferulic and derivatives), essential oil, triterpenoid, saponin, iridoid. Leaves contain iridoid loganin and secologanin. Has effects clearing heat, detoxifying, anti-inflammatory; used in treating abscesses boils, measles rash, urticaria, itching eruptions, wind-heat common cold, febrile disease fever, heat toxin bloody dysentery. Used as decoction or infusion; can soak in wine make pills powder."
+    indications: [
+      "Abscesses boils",
+      "Measles rash",
+      "Urticaria",
+      "Itching eruptions",
+      "Wind-heat common cold",
+      "Febrile disease fever",
+      "Heat toxin bloody dysentery",
+    ],
+    dosage:
+      "Dried flowers: 10-20g decoction or infusion. Can soak in wine make pills powder. Branches leaves: 15-30g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (distributed mainly in northern mountainous and midland areas: Quang Ninh, Cao Bang, Lang Son, Bac Giang, Ha Tay). Southeast Asia, China, Japan, Korea",
+    description:
+      "Kim Ngan (also called Nhẫn đông) is a climbing vine plant of the Caprifoliaceae family. Young branches covered with hair layer of short simple hairs and stalked glandular hairs, slightly red colored with stripes. Leaves opposite rather thick lanceolate-ovate 4-7cm long 2-4cm wide, round base pointed tip, wrinkled except lower surface on veins, petiole 5-6mm long hairy. Flower clusters at terminal leaf axils in two-flowered cymes; bracts like small leaves lanceolate-shaped, round bracteoles with sparse hairs on margin 5 slender teeth sometimes unequal hairy; corolla white later turning yellow hairy and glandular outside, fragrant, corolla tube 1.8-2cm long, lip 1.5-1.8cm long, stamens 5 protruding outside attached at corolla throat, dorsifixed anthers. Spherical black fruit. Flowering season March-May, fruiting season June-August. Originates from Southeast Asia region. Plant prefers light, usually grows in secondary forests, shrublands and limestone mountain forests. Flower buds contain mainly flavonoids (lonicerin, luteolin) and phenolic acids (chlorogenic acid, caffeic acid, trans-cinnamic, trans-ferulic and derivatives), essential oil, triterpenoid, saponin, iridoid. Leaves contain iridoid loganin and secologanin. Has effects clearing heat, detoxifying, anti-inflammatory; used in treating abscesses boils, measles rash, urticaria, itching eruptions, wind-heat common cold, febrile disease fever, heat toxin bloody dysentery. Used as decoction or infusion; can soak in wine make pills powder.",
   },
   {
     id: 82,
@@ -1423,17 +3671,39 @@ export const medicines = [
     scientificName: "Barleria lupulina Lindl.",
     family: "Họ Ô rô (Acanthaceae)",
     categoryId: "acanthaceae",
-    image: "https://giadinh.mediacdn.vn/Images/Uploaded/Share/2011/03/18/72ckimvang.jpg",
-    usedParts: "Mainly use leaves (Folium Caulis Barleriae); commonly use fresh, harvest year-round",
+    image:
+      "https://giadinh.mediacdn.vn/Images/Uploaded/Share/2011/03/18/72ckimvang.jpg",
+    usedParts:
+      "Mainly use leaves (Folium Caulis Barleriae); commonly use fresh, harvest year-round",
     properties: "Bitter taste, cool nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Iridoid glycoside (Barlerin, Acetylbarlerin, Ipolamiide)", "Phenylpropanoid (Verbascoside, Forsythoside B, Poliumoside)"],
-    uses: ["Lowers blood sugar", "Anti-inflammatory", "Analgesic", "Treats venomous snake bites"],
-    indications: ["Venomous snake bites", "Insect bites", "Herpes simplex (cold sores)", "Herpes zoster (shingles)", "Blood sugar lowering support"],
-    dosage: "Fresh leaves: 20-35g mash crush, squeeze to get juice for snake bite victims to drink, residue apply on snake bite area. External skin use: mash fresh leaves apply on insect bite areas, herpes simplex, herpes zoster",
-    contraindications: ["Pregnant women use with caution", "People with low blood pressure use with caution"],
-    origin: "Vietnam (grows wild in southern provinces, cultivated ornamentally or as hedges). India, Indonesia",
-    description: "Kim Vang (also called Gai kim bóng, Trâm vàng, Hoa chuông vàng) is a small upright plant of the Acanthaceae family. Square branches hairless. Entire leaves hairless, stipules transformed into straight pointed thorns. Terminal spike inflorescences, combined bracts 2cm tall. Soft pale yellow petals. Each spike usually has 18-20 flowers but usually don't bloom all at once. Each day only 2 flowers bloom. Takes 7 days to fully bloom one spike. Capsule fruit with flat seeds, seeds enclosed by hard shell. When fruit ripens dry, explodes shooting seeds far away. Kim vang plant grows wild in southern Vietnam provinces, many households grow ornamentally either in pots or as hedges because has pointed thorns, some people trim plant into spherical shape. Recently many people have cultivated to get leaves for treating venomous snake bites. Entire above-ground plant contains mainly Iridoid glycoside group (Barlerin, Acetylbarlerin, Ipolamiide), also contains phenylpropanoid group (Verbascoside, Forsythoside B, Poliumoside). Kim vang extract has blood sugar lowering, anti-inflammatory, analgesic effects. According to folk experience, fresh leaves (20-35g) mashed crushed, squeeze to get juice for snake bite victims to drink, residue apply on snake bite area (Prof. Do Tat Loi). In Thai traditional medicine, this plant used externally with anti-inflammatory effects for insect bite cases, herpes simplex (cold sores) and herpes zoster (shingles)."
+    mainIngredients: [
+      "Iridoid glycoside (Barlerin, Acetylbarlerin, Ipolamiide)",
+      "Phenylpropanoid (Verbascoside, Forsythoside B, Poliumoside)",
+    ],
+    uses: [
+      "Lowers blood sugar",
+      "Anti-inflammatory",
+      "Analgesic",
+      "Treats venomous snake bites",
+    ],
+    indications: [
+      "Venomous snake bites",
+      "Insect bites",
+      "Herpes simplex (cold sores)",
+      "Herpes zoster (shingles)",
+      "Blood sugar lowering support",
+    ],
+    dosage:
+      "Fresh leaves: 20-35g mash crush, squeeze to get juice for snake bite victims to drink, residue apply on snake bite area. External skin use: mash fresh leaves apply on insect bite areas, herpes simplex, herpes zoster",
+    contraindications: [
+      "Pregnant women use with caution",
+      "People with low blood pressure use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild in southern provinces, cultivated ornamentally or as hedges). India, Indonesia",
+    description:
+      "Kim Vang (also called Gai kim bóng, Trâm vàng, Hoa chuông vàng) is a small upright plant of the Acanthaceae family. Square branches hairless. Entire leaves hairless, stipules transformed into straight pointed thorns. Terminal spike inflorescences, combined bracts 2cm tall. Soft pale yellow petals. Each spike usually has 18-20 flowers but usually don't bloom all at once. Each day only 2 flowers bloom. Takes 7 days to fully bloom one spike. Capsule fruit with flat seeds, seeds enclosed by hard shell. When fruit ripens dry, explodes shooting seeds far away. Kim vang plant grows wild in southern Vietnam provinces, many households grow ornamentally either in pots or as hedges because has pointed thorns, some people trim plant into spherical shape. Recently many people have cultivated to get leaves for treating venomous snake bites. Entire above-ground plant contains mainly Iridoid glycoside group (Barlerin, Acetylbarlerin, Ipolamiide), also contains phenylpropanoid group (Verbascoside, Forsythoside B, Poliumoside). Kim vang extract has blood sugar lowering, anti-inflammatory, analgesic effects. According to folk experience, fresh leaves (20-35g) mashed crushed, squeeze to get juice for snake bite victims to drink, residue apply on snake bite area (Prof. Do Tat Loi). In Thai traditional medicine, this plant used externally with anti-inflammatory effects for insect bite cases, herpes simplex (cold sores) and herpes zoster (shingles).",
   },
   {
     id: 83,
@@ -1442,17 +3712,30 @@ export const medicines = [
     scientificName: "Pandanus amaryllifolius Roxb.",
     family: "Họ Dứa dại (Pandanaceae)",
     categoryId: "pandanaceae",
-    image: "https://sasaki.com.vn/wp-content/uploads/2024/06/cach-trong-cay-la-dua-01.jpg",
+    image:
+      "https://sasaki.com.vn/wp-content/uploads/2024/06/cach-trong-cay-la-dua-01.jpg",
     usedParts: "Fresh or dried leaves. Harvest year-round",
     properties: "Sweet taste, neutral nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Tannin", "Alkaloid", "Flavonoid", "Polyphenol", "2-Acetyl-1-pyrroline (characteristic aromatic compound)"],
+    mainIngredients: [
+      "Tannin",
+      "Alkaloid",
+      "Flavonoid",
+      "Polyphenol",
+      "2-Acetyl-1-pyrroline (characteristic aromatic compound)",
+    ],
     uses: ["Stabilizes blood sugar", "Flavors food"],
     indications: ["Type 2 diabetes", "Blood sugar stabilization support"],
-    dosage: "Dried leaves: 10-20g boil drink like tea. Can combine with dried milk thistle boil tea. Fresh leaves: use to flavor candies cakes, food, alcohol",
-    contraindications: ["People with low blood pressure use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (grows wild and cultivated especially in southern provinces). Southeast Asia",
-    description: "La Dua (also called Dứa thơm) is a clumping plant of the Pandanaceae family can be 1m tall, stem diameter 1-3cm, branching. Sword-shaped smooth leaves arranged in trough shape 40-50cm long 3-4cm wide, margin thornless, lower surface lighter colored, many veins 1mm apart, fragrant like sticky rice aroma. Dried more fragrant. Plant grows wild and cultivated especially in southern provinces to get fresh or dried leaves to put in food like cakes, candies, alcohol. Leaves contain tannin, alkaloid, flavonoid and polyphenol. Especially characteristic fragrance of pandan leaves is from aromatic compound 2-Acetyl-1-pyrroline. Folk medicine uses to flavor candies cakes, food, brew hot water drink like tea. Additionally dried pandan leaves and dried milk thistle plant boiled together as drink to stabilize blood sugar for people with type 2 diabetes very effectively."
+    dosage:
+      "Dried leaves: 10-20g boil drink like tea. Can combine with dried milk thistle boil tea. Fresh leaves: use to flavor candies cakes, food, alcohol",
+    contraindications: [
+      "People with low blood pressure use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated especially in southern provinces). Southeast Asia",
+    description:
+      "La Dua (also called Dứa thơm) is a clumping plant of the Pandanaceae family can be 1m tall, stem diameter 1-3cm, branching. Sword-shaped smooth leaves arranged in trough shape 40-50cm long 3-4cm wide, margin thornless, lower surface lighter colored, many veins 1mm apart, fragrant like sticky rice aroma. Dried more fragrant. Plant grows wild and cultivated especially in southern provinces to get fresh or dried leaves to put in food like cakes, candies, alcohol. Leaves contain tannin, alkaloid, flavonoid and polyphenol. Especially characteristic fragrance of pandan leaves is from aromatic compound 2-Acetyl-1-pyrroline. Folk medicine uses to flavor candies cakes, food, brew hot water drink like tea. Additionally dried pandan leaves and dried milk thistle plant boiled together as drink to stabilize blood sugar for people with type 2 diabetes very effectively.",
   },
   {
     id: 84,
@@ -1461,17 +3744,43 @@ export const medicines = [
     scientificName: "Calotropis gigantea (L.) Dryand.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/zoom/600_315/Images/_OLD/2015/bao-khi-khang-la-hen-1440040093848-crop1440040145954p.jpg",
-    usedParts: "Leaves sun or oven dry (Folium Calotropis). Harvest September to November. Wipe clean white powder on leaf underside. Sun dry. When using wash clean, drain water, cut into strips, stir-fry or soak with honey, stir-fry yellow",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/zoom/600_315/Images/_OLD/2015/bao-khi-khang-la-hen-1440040093848-crop1440040145954p.jpg",
+    usedParts:
+      "Leaves sun or oven dry (Folium Calotropis). Harvest September to November. Wipe clean white powder on leaf underside. Sun dry. When using wash clean, drain water, cut into strips, stir-fry or soak with honey, stir-fry yellow",
     properties: "Bitter, pungent taste, warm nature, slightly toxic",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Cardiac glycoside (gofruside, calotropin, calactin)", "Flavonoid", "Terpene", "Pregnanone (calotropone)"],
-    uses: ["Expels phlegm", "Reduces cough", "Descends rebellious qi", "Detoxifies"],
-    indications: ["Asthma with cough", "Excessive phlegm", "Itching eruptions", "Boils abscesses", "Toothache", "Snake bite"],
-    dosage: "Dried leaves: 3-6g decoction. External use: fresh leaves mash apply on affected areas (itching eruptions, boils abscesses). Use plant latex apply on painful teeth",
-    contraindications: ["Pregnant women absolutely must not use", "People with heart disease use with caution", "Poisoning note: drink milk or rice porridge water and inject atropine to relieve pain"],
-    origin: "Vietnam (grows wild and cultivated in many places as hedges or to get leaves for medicine). Asia",
-    description: "La Hen (also called Bồng bồng, Bông bông, Nam tỳ bà) is a small plant of the Apocynaceae family 2-3m tall. Upright stem many branches. Young bark furrowed pale yellow, old bark gray-white. Branches covered with white powder-like hairs. Leaves opposite with petiolate blade, entire margin, very short petiole or nearly sessile, heart-shaped base, both surfaces gray-green colored, lower surface with white powder-like hairs. At leaf base upper surface has glands and row of brown hairs. Flower clusters at leaf axils and branch tips in cymes of many umbels, white flowers; calyx 5 ovate lobes hairy outside; corolla united wheel-shaped, lanceolate lobes, filaments fused into tube covering pistil. Fruit of 2 sharp awl-shaped follicles tapering toward tip, contains many hairy seeds. Entire plant has milky latex. Flowering fruiting season May-August. Leaves, stem latex, roots contain cardiac glycoside (gofruside, calotropin, calactin), flavonoid, terpene, pregnanone (calotropone). Bitter pungent taste, warm nature, slightly toxic. Has effects expelling phlegm, reducing cough, descending rebellious qi, detoxifying. Treats asthma with cough, excessive phlegm; external use treats skin diseases: itching eruptions, boils abscesses, toothache, snake bite. Do not use for pregnant women. In case of poisoning need drink milk or rice porridge water and inject atropine to relieve pain."
+    mainIngredients: [
+      "Cardiac glycoside (gofruside, calotropin, calactin)",
+      "Flavonoid",
+      "Terpene",
+      "Pregnanone (calotropone)",
+    ],
+    uses: [
+      "Expels phlegm",
+      "Reduces cough",
+      "Descends rebellious qi",
+      "Detoxifies",
+    ],
+    indications: [
+      "Asthma with cough",
+      "Excessive phlegm",
+      "Itching eruptions",
+      "Boils abscesses",
+      "Toothache",
+      "Snake bite",
+    ],
+    dosage:
+      "Dried leaves: 3-6g decoction. External use: fresh leaves mash apply on affected areas (itching eruptions, boils abscesses). Use plant latex apply on painful teeth",
+    contraindications: [
+      "Pregnant women absolutely must not use",
+      "People with heart disease use with caution",
+      "Poisoning note: drink milk or rice porridge water and inject atropine to relieve pain",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated in many places as hedges or to get leaves for medicine). Asia",
+    description:
+      "La Hen (also called Bồng bồng, Bông bông, Nam tỳ bà) is a small plant of the Apocynaceae family 2-3m tall. Upright stem many branches. Young bark furrowed pale yellow, old bark gray-white. Branches covered with white powder-like hairs. Leaves opposite with petiolate blade, entire margin, very short petiole or nearly sessile, heart-shaped base, both surfaces gray-green colored, lower surface with white powder-like hairs. At leaf base upper surface has glands and row of brown hairs. Flower clusters at leaf axils and branch tips in cymes of many umbels, white flowers; calyx 5 ovate lobes hairy outside; corolla united wheel-shaped, lanceolate lobes, filaments fused into tube covering pistil. Fruit of 2 sharp awl-shaped follicles tapering toward tip, contains many hairy seeds. Entire plant has milky latex. Flowering fruiting season May-August. Leaves, stem latex, roots contain cardiac glycoside (gofruside, calotropin, calactin), flavonoid, terpene, pregnanone (calotropone). Bitter pungent taste, warm nature, slightly toxic. Has effects expelling phlegm, reducing cough, descending rebellious qi, detoxifying. Treats asthma with cough, excessive phlegm; external use treats skin diseases: itching eruptions, boils abscesses, toothache, snake bite. Do not use for pregnant women. In case of poisoning need drink milk or rice porridge water and inject atropine to relieve pain.",
   },
   {
     id: 85,
@@ -1480,17 +3789,43 @@ export const medicines = [
     scientificName: "Piper sarmentosum Roxb. (Synonym: Piper lolot C.DC.)",
     family: "Họ Hồ tiêu (Piperaceae)",
     categoryId: "piperaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/2014/la-lot-1411793674278.jpg",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/2014/la-lot-1411793674278.jpg",
     usedParts: "Above-ground parts fresh or sun oven dry (Herba Piperis)",
     properties: "Pungent taste, warm nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Volatile components", "Alkaloid (sarmentamide A-C)", "Alkylamide", "Lignan", "Simple phenol derivatives"],
-    uses: ["Antibacterial", "Anti-inflammatory", "Detoxifies", "Treats rheumatism"],
-    indications: ["Rheumatism", "Back pain", "Body aches", "Digestive disorders", "Diarrhea", "Mushroom poisoning", "Snake bite"],
-    dosage: "Dried above-ground parts: 10-20g decoction. Treats rheumatism, back pain: combine with mugwort, mash then steam hot, apply locally. Fresh leaves: use as spice",
-    contraindications: ["People with deficiency fire use with caution", "Pregnant women use with caution"],
-    origin: "Vietnam (grows wild and cultivated in many places, especially moist areas). Southeast Asia",
-    description: "La Lot (also called Tất bát) is a soft plant of the Piperaceae family growing up to 1m tall, stem slightly hairy. Broadly ovate leaves, heart-shaped base, pointed leaf tip, transparent dots when held to light, leaf blade 13cm long 8.5cm wide, upper surface smooth, lower surface slightly hairy on veins, petiole about 2.5cm long. Flower clusters in spikes, female spike about 1cm long, stalk 1cm long. La lot plant grows wild and cultivated in many places in Vietnam, especially moist areas. Leaves contain volatile components, alkaloid (sarmentamide A-C), alkylamide, lignan, simple phenol derivatives. Pungent taste, warm nature. Has antibacterial anti-inflammatory effects, inhibits bacteria. Treats rheumatism, back pain, body aches (combine with mugwort, mash then steam hot, apply locally), digestive disorders, diarrhea, detoxifies mushroom poisoning, treats snake bite. La lot also used as spice."
+    mainIngredients: [
+      "Volatile components",
+      "Alkaloid (sarmentamide A-C)",
+      "Alkylamide",
+      "Lignan",
+      "Simple phenol derivatives",
+    ],
+    uses: [
+      "Antibacterial",
+      "Anti-inflammatory",
+      "Detoxifies",
+      "Treats rheumatism",
+    ],
+    indications: [
+      "Rheumatism",
+      "Back pain",
+      "Body aches",
+      "Digestive disorders",
+      "Diarrhea",
+      "Mushroom poisoning",
+      "Snake bite",
+    ],
+    dosage:
+      "Dried above-ground parts: 10-20g decoction. Treats rheumatism, back pain: combine with mugwort, mash then steam hot, apply locally. Fresh leaves: use as spice",
+    contraindications: [
+      "People with deficiency fire use with caution",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated in many places, especially moist areas). Southeast Asia",
+    description:
+      "La Lot (also called Tất bát) is a soft plant of the Piperaceae family growing up to 1m tall, stem slightly hairy. Broadly ovate leaves, heart-shaped base, pointed leaf tip, transparent dots when held to light, leaf blade 13cm long 8.5cm wide, upper surface smooth, lower surface slightly hairy on veins, petiole about 2.5cm long. Flower clusters in spikes, female spike about 1cm long, stalk 1cm long. La lot plant grows wild and cultivated in many places in Vietnam, especially moist areas. Leaves contain volatile components, alkaloid (sarmentamide A-C), alkylamide, lignan, simple phenol derivatives. Pungent taste, warm nature. Has antibacterial anti-inflammatory effects, inhibits bacteria. Treats rheumatism, back pain, body aches (combine with mugwort, mash then steam hot, apply locally), digestive disorders, diarrhea, detoxifies mushroom poisoning, treats snake bite. La lot also used as spice.",
   },
   {
     id: 86,
@@ -1499,17 +3834,33 @@ export const medicines = [
     scientificName: "Passiflora foetida L.",
     family: "Họ Lạc tiên (Passifloraceae)",
     categoryId: "passifloraceae",
-    image: "https://spart.vn/wp-content/uploads/2023/10/hinh-anh-cay-lac-tien.jpg",
-    usedParts: "Above-ground parts (Herba Passiflorae), best is leaf-bearing stem segments",
+    image:
+      "https://spart.vn/wp-content/uploads/2023/10/hinh-anh-cay-lac-tien.jpg",
+    usedParts:
+      "Above-ground parts (Herba Passiflorae), best is leaf-bearing stem segments",
     properties: "Bitter taste, neutral nature",
     meridians: "Heart, Liver meridians",
-    mainIngredients: ["Alkaloid (harman, harmine, harmol, harmaline, harmalol)", "Flavonoid (saponarin, saponaretin, vitexin, xylosyl vitexin)", "Cyanogenic compounds"],
+    mainIngredients: [
+      "Alkaloid (harman, harmine, harmol, harmaline, harmalol)",
+      "Flavonoid (saponarin, saponaretin, vitexin, xylosyl vitexin)",
+      "Cyanogenic compounds",
+    ],
     uses: ["Calms spirit", "Clears heat", "Cools liver"],
-    indications: ["Neurasthenia", "Heart palpitations", "Insomnia", "Dream-disturbed sleep"],
-    dosage: "Dried above-ground parts: 10-15g decoction. Can use fresh: 20-30g decoction",
-    contraindications: ["Pregnant women use with caution", "People with low blood pressure use with caution"],
+    indications: [
+      "Neurasthenia",
+      "Heart palpitations",
+      "Insomnia",
+      "Dream-disturbed sleep",
+    ],
+    dosage:
+      "Dried above-ground parts: 10-15g decoction. Can use fresh: 20-30g decoction",
+    contraindications: [
+      "Pregnant women use with caution",
+      "People with low blood pressure use with caution",
+    ],
     origin: "Vietnam (grows wild everywhere). Southeast Asia, Americas",
-    description: "Lac Tien (also called Nhãn lồng, Chùm bao) is a climbing vine plant of the Passifloraceae family, soft stem, very many soft hairs. Soft alternate heart-shaped leaves 6-10cm long 5-8cm wide, wavy margin and slightly deeply 3-lobed, heart-shaped base, fine hairs on leaf margin, petiole 7-8cm long. Tendril tips spiral. Solitary 5-petaled white or slightly pale purple flowers, 5.5cm diameter, white sepals with green veins below, below sepals 3 main veins with auxiliary veins looking like leaves but no blade. Disk with 2 tiers of filaments, upper filament surface purple inside yellow, innermost with fine hairs, stamens 5 with yellow anthers drooping down. Ovate or oval fruit 2-3cm long. Flowering season April-May, fruiting season May-July. Lac tien leaves contain alkaloids (harman, harmine, harmol, harmaline, harmalol), flavonoids (saponarin, saponaretin, vitexin, xylosyl vitexin) and cyanogenic compounds. Content of substances in stems lower than leaves. Bitter taste, neutral nature. Has effects calming spirit, clearing heat, cooling liver. Treats neurasthenia, heart palpitations, insomnia, dream-disturbed sleep."
+    description:
+      "Lac Tien (also called Nhãn lồng, Chùm bao) is a climbing vine plant of the Passifloraceae family, soft stem, very many soft hairs. Soft alternate heart-shaped leaves 6-10cm long 5-8cm wide, wavy margin and slightly deeply 3-lobed, heart-shaped base, fine hairs on leaf margin, petiole 7-8cm long. Tendril tips spiral. Solitary 5-petaled white or slightly pale purple flowers, 5.5cm diameter, white sepals with green veins below, below sepals 3 main veins with auxiliary veins looking like leaves but no blade. Disk with 2 tiers of filaments, upper filament surface purple inside yellow, innermost with fine hairs, stamens 5 with yellow anthers drooping down. Ovate or oval fruit 2-3cm long. Flowering season April-May, fruiting season May-July. Lac tien leaves contain alkaloids (harman, harmine, harmol, harmaline, harmalol), flavonoids (saponarin, saponaretin, vitexin, xylosyl vitexin) and cyanogenic compounds. Content of substances in stems lower than leaves. Bitter taste, neutral nature. Has effects calming spirit, clearing heat, cooling liver. Treats neurasthenia, heart palpitations, insomnia, dream-disturbed sleep.",
   },
   {
     id: 87,
@@ -1522,13 +3873,20 @@ export const medicines = [
     usedParts: "Leaves, flowers. Harvest year-round",
     properties: "Pungent taste, warm nature",
     meridians: "Lung, Stomach meridians",
-    mainIngredients: ["Sulfur compounds (create garlic odor)", "Flavonoid", "Alkaloid"],
+    mainIngredients: [
+      "Sulfur compounds (create garlic odor)",
+      "Flavonoid",
+      "Alkaloid",
+    ],
     uses: ["Anti-inflammatory", "Antibacterial", "Analgesic"],
     indications: ["Musculoskeletal joint pain", "Flu cold", "Infections"],
-    dosage: "Fresh leaves: 15-30g decoction. Dried leaves: 10-20g decoction or grind to powder drink",
+    dosage:
+      "Fresh leaves: 15-30g decoction. Dried leaves: 10-20g decoction or grind to powder drink",
     contraindications: ["Pregnant women use with caution"],
-    origin: "Vietnam (imported, cultivated ornamentally in many places). South America",
-    description: "Lan Toi (also called Hoa chuông tỏi, Thiên lý tỏi, Chuông tỏi, Chuông tím, Hoa bâng khuâng) is a woody climbing vine plant of the Bignoniaceae family, can be 2-5 meters long. Symmetrically opposite leaves with garlic-like fragrance hence called garlic orchid. Purple flowers, growing in clusters from leaf axils, each cluster has 10-15 flowers. Plant originates from South America, imported into Vietnam and cultivated ornamentally in many places. Leaves and flowers contain sulfur compounds creating characteristic garlic odor, flavonoid and alkaloid. Pungent taste, warm nature. According to folk medicine, plant has anti-inflammatory, antibacterial, analgesic effects. Used to treat musculoskeletal joint pain, flu cold, infections."
+    origin:
+      "Vietnam (imported, cultivated ornamentally in many places). South America",
+    description:
+      "Lan Toi (also called Hoa chuông tỏi, Thiên lý tỏi, Chuông tỏi, Chuông tím, Hoa bâng khuâng) is a woody climbing vine plant of the Bignoniaceae family, can be 2-5 meters long. Symmetrically opposite leaves with garlic-like fragrance hence called garlic orchid. Purple flowers, growing in clusters from leaf axils, each cluster has 10-15 flowers. Plant originates from South America, imported into Vietnam and cultivated ornamentally in many places. Leaves and flowers contain sulfur compounds creating characteristic garlic odor, flavonoid and alkaloid. Pungent taste, warm nature. According to folk medicine, plant has anti-inflammatory, antibacterial, analgesic effects. Used to treat musculoskeletal joint pain, flu cold, infections.",
   },
   {
     id: 88,
@@ -1537,17 +3895,41 @@ export const medicines = [
     scientificName: "Tradescantia spathacea Sw.",
     family: "Họ Thài lài (Commelinaceae)",
     categoryId: "commelinaceae",
-    image: "https://cayxanhhoacanh.com/wp-content/uploads/2018/12/1-cay-le-ban-800-533-cayxanhhoacanh.com_.png",
+    image:
+      "https://cayxanhhoacanh.com/wp-content/uploads/2018/12/1-cay-le-ban-800-533-cayxanhhoacanh.com_.png",
     usedParts: "Flowers and leaves, harvest year-round, use fresh or sun dry",
     properties: "Sweet bland taste, cold nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Coumarin", "Alkaloid", "Saponin", "Flavonoid", "Terpenoid"],
-    uses: ["Clears heat", "Moistens lungs", "Transforms phlegm", "Stops cough", "Cools blood", "Detoxifies"],
-    indications: ["Cough", "Excessive phlegm", "Internal heat", "Bronchitis", "Hemoptysis"],
-    dosage: "Fresh flowers and leaves: 20-40g decoction. Dried flowers and leaves: 10-20g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold use with caution"],
+    mainIngredients: [
+      "Coumarin",
+      "Alkaloid",
+      "Saponin",
+      "Flavonoid",
+      "Terpenoid",
+    ],
+    uses: [
+      "Clears heat",
+      "Moistens lungs",
+      "Transforms phlegm",
+      "Stops cough",
+      "Cools blood",
+      "Detoxifies",
+    ],
+    indications: [
+      "Cough",
+      "Excessive phlegm",
+      "Internal heat",
+      "Bronchitis",
+      "Hemoptysis",
+    ],
+    dosage:
+      "Fresh flowers and leaves: 20-40g decoction. Dried flowers and leaves: 10-20g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold use with caution",
+    ],
     origin: "Vietnam (widely cultivated ornamentally). Tropical Americas",
-    description: "Le Ban (also called Sò huyết, Bạng hoa) is a perennial herbaceous plant of the Commelinaceae family 30-40cm tall. Stout smooth unbranched stem, many transverse short nodal leaf scars. Leaves with broad sheath clasping stem 15-30cm long 3-5cm wide, blunt or pointed tip, thick stiff blade, concave and green colored on upper surface, convex and purple colored on lower surface, parallel leaf veins. Flower clusters at leaf axils in umbel enclosed by two boat-shaped bracts, white-yellow flowers, perianth of 3 sepals, 3 similar petals, 6 nearly equal stamens, 3-chambered ovary. Capsule fruit when ripe splits into 3 shell pieces, seeds with rough wings. Le ban originates from tropical Americas region, cultivated or naturalized in tropical and subtropical regions worldwide. Currently plant widely cultivated in Vietnam ornamentally. Le ban is light-loving plant with high drought tolerance, can grow on many soil types in plains, coastal, midland and mountain areas. Contains coumarin, alkaloid, saponin, flavonoid and terpenoid. Sweet bland taste, cold nature. Has effects clearing heat, moistening lungs, transforming phlegm, stopping cough, cooling blood, detoxifying."
+    description:
+      "Le Ban (also called Sò huyết, Bạng hoa) is a perennial herbaceous plant of the Commelinaceae family 30-40cm tall. Stout smooth unbranched stem, many transverse short nodal leaf scars. Leaves with broad sheath clasping stem 15-30cm long 3-5cm wide, blunt or pointed tip, thick stiff blade, concave and green colored on upper surface, convex and purple colored on lower surface, parallel leaf veins. Flower clusters at leaf axils in umbel enclosed by two boat-shaped bracts, white-yellow flowers, perianth of 3 sepals, 3 similar petals, 6 nearly equal stamens, 3-chambered ovary. Capsule fruit when ripe splits into 3 shell pieces, seeds with rough wings. Le ban originates from tropical Americas region, cultivated or naturalized in tropical and subtropical regions worldwide. Currently plant widely cultivated in Vietnam ornamentally. Le ban is light-loving plant with high drought tolerance, can grow on many soil types in plains, coastal, midland and mountain areas. Contains coumarin, alkaloid, saponin, flavonoid and terpenoid. Sweet bland taste, cold nature. Has effects clearing heat, moistening lungs, transforming phlegm, stopping cough, cooling blood, detoxifying.",
   },
   {
     id: 89,
@@ -1557,16 +3939,37 @@ export const medicines = [
     family: "Họ Lô hội (Asphodelaceae)",
     categoryId: "asphodelaceae",
     image: "https://bancaycanhdep.com/uploads/news/cay-lo-hoi.jpg",
-    usedParts: ["Aloe latex (exuded sap from leaves after cutting concentrated into dry resin)", "Fresh leaf pulp (leaf pulp after removing skin and mucilage)"],
+    usedParts: [
+      "Aloe latex (exuded sap from leaves after cutting concentrated into dry resin)",
+      "Fresh leaf pulp (leaf pulp after removing skin and mucilage)",
+    ],
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Large Intestine meridians",
     mainIngredients: ["Anthraglycoside (aloin A, aloin B 15-30%)", "Mucilage"],
-    uses: ["Stimulates digestion (small dose)", "Moistens intestines", "Purgative (high dose)", "Promotes bile flow", "Treats burns (leaf pulp)", "Used in cosmetics"],
-    indications: ["Constipation", "Indigestion", "Bile stasis", "Burns (leaf pulp)"],
-    dosage: "Aloe latex: Small dose 0.05-0.1g stimulates digestion, moistens intestines. High dose 0.15-2g has purgative effect. Fresh leaf pulp: Apply directly on burns",
-    contraindications: ["Pregnant women", "Women during menstruation", "People with bleeding hemorrhoids"],
+    uses: [
+      "Stimulates digestion (small dose)",
+      "Moistens intestines",
+      "Purgative (high dose)",
+      "Promotes bile flow",
+      "Treats burns (leaf pulp)",
+      "Used in cosmetics",
+    ],
+    indications: [
+      "Constipation",
+      "Indigestion",
+      "Bile stasis",
+      "Burns (leaf pulp)",
+    ],
+    dosage:
+      "Aloe latex: Small dose 0.05-0.1g stimulates digestion, moistens intestines. High dose 0.15-2g has purgative effect. Fresh leaf pulp: Apply directly on burns",
+    contraindications: [
+      "Pregnant women",
+      "Women during menstruation",
+      "People with bleeding hemorrhoids",
+    ],
     origin: "Imported (mainly aloe used in Vietnam is imported from abroad)",
-    description: "Lo Hoi (also called Nha đam, Tượng đảm, Hổ thiệt) is a perennial plant of the Asphodelaceae family, stem can become woody, upper part bearing leaves clustered in rosette shape. Thick succulent lanceolate leaves, much mucilage so holds much water allowing plant to adapt to arid areas. When flowering, flower stalk protrudes from center of leaf bundle, bearing yellow or red flower clusters. Aloe ferox Mill. has 2-5m tall stem, thick leaves in rosette 15-50cm long, 10cm wide at base, thorns on leaf underside and leaf margins, red flowers. Aloe vera (L.) Burm.f. has short 30-50cm stem, leaves only have thorns on 2 margins, yellow flowers. Main active ingredient in aloe latex is anthraglycoside (mainly aloin A and aloin B) accounting for 15-30% is main component of aloe latex. Aloe at small dose (0.05-0.1g) has digestive stimulating, intestine moistening effects. High dose (0.15-2g) is purgative medicine. Aloe also has bile promoting effect. Mucilage in leaves used to treat burns and used in cosmetics. Aloe used in Vietnam (both traditional and western medicine) is mainly imported from abroad."
+    description:
+      "Lo Hoi (also called Nha đam, Tượng đảm, Hổ thiệt) is a perennial plant of the Asphodelaceae family, stem can become woody, upper part bearing leaves clustered in rosette shape. Thick succulent lanceolate leaves, much mucilage so holds much water allowing plant to adapt to arid areas. When flowering, flower stalk protrudes from center of leaf bundle, bearing yellow or red flower clusters. Aloe ferox Mill. has 2-5m tall stem, thick leaves in rosette 15-50cm long, 10cm wide at base, thorns on leaf underside and leaf margins, red flowers. Aloe vera (L.) Burm.f. has short 30-50cm stem, leaves only have thorns on 2 margins, yellow flowers. Main active ingredient in aloe latex is anthraglycoside (mainly aloin A and aloin B) accounting for 15-30% is main component of aloe latex. Aloe at small dose (0.05-0.1g) has digestive stimulating, intestine moistening effects. High dose (0.15-2g) is purgative medicine. Aloe also has bile promoting effect. Mucilage in leaves used to treat burns and used in cosmetics. Aloe used in Vietnam (both traditional and western medicine) is mainly imported from abroad.",
   },
   {
     id: 90,
@@ -1575,17 +3978,54 @@ export const medicines = [
     scientificName: "Cinnamomum camphora (L.) Presl",
     family: "Họ Long não (Lauraceae)",
     categoryId: "lauraceae",
-    image: "https://file.hstatic.net/200000199139/file/oxi-house-cay-long-nao-3_7b684811bec44772b89d352a47f3edb2_grande.jpg",
-    usedParts: ["Wood and leaves (Lignum et folium Cinnamomi Camphorae)", "Roots", "Fruit"],
+    image:
+      "https://file.hstatic.net/200000199139/file/oxi-house-cay-long-nao-3_7b684811bec44772b89d352a47f3edb2_grande.jpg",
+    usedParts: [
+      "Wood and leaves (Lignum et folium Cinnamomi Camphorae)",
+      "Roots",
+      "Fruit",
+    ],
     properties: "Pungent, aromatic taste, warm nature",
     meridians: "Spleen, Stomach, Lung meridians",
     mainIngredients: ["Essential oil d-camphor (natural camphor)"],
-    uses: ["Dispels wind-dampness", "Opens channels activates collaterals", "Stops pain", "Promotes digestion", "Descends phlegm", "Promotes urination defecation", "Prevents bloating", "Induces perspiration", "Eliminates dysentery", "Reduces inflammation", "Detoxifies"],
-    indications: ["Flu cold", "Headache", "Stomach pain", "Abdominal distension", "Rheumatism", "Injuries from falls", "Indigestion", "Abdominal bloating", "Gastritis, enteritis", "Boils abscesses", "Scalp ringworm", "Itching", "Centipede bite"],
-    dosage: "Roots, wood: 10-20g decoction. Fruit: 5-10g decoction. Bark of trunk, branches, leaves: External use wash or apply. Leaves and seeds: Burn to get vapor fumigate repel mosquitoes. Essential oil: Apply externally on skin",
-    contraindications: ["People with yin deficiency fire excess use with caution", "Pregnant women should not use essential oil"],
-    origin: "Vietnam (Ha Giang, Tuyen Quang, Vinh Phu, Phu Tho, Cao Bang, Lang Son). South cultivated ornamentally",
-    description: "Long Nao (also called Dã hương, Chương não) is a large tree 10-15m tall or more up to 40-50m of the Lauraceae family, trunk diameter can exceed 2m, sparse smooth branches, alternate leaves, oval shaped with prominent main vein, both sides with prominent auxiliary veins, at auxiliary vein and main vein angle has prominent gland tubercle, glossy; petiole 2.5-3.5cm long. Small flowers, growing in panicles at axils, shorter than leaves. Spherical fruit, size of peppercorn, below with small cup-shaped stalk. Camphor tree cultivated in many northern Vietnam provinces like Ha Giang, Tuyen Quang, Vinh Phu, Phu Tho, Cao Bang, Lang Son. Currently tree widely cultivated in South ornamentally. Roots, trunk, leaves contain essential oil with main component d-camphor, is solid essential oil constituent at room temperature. Roots, wood treat flu cold, headache, stomach pain, abdominal distension, rheumatism, injuries from falls. Fruit treats stomach pain, indigestion, abdominal bloating, gastritis, enteritis. Bark of trunk, branches, leaves used to treat boils abscesses, scalp ringworm, itching, centipede bite. Leaves and seeds used to burn get vapor fumigate repel mosquitoes. Essential oil has pungent, aromatic taste, warm nature; has effects dispelling wind-dampness, opening channels activating collaterals, stopping pain, promoting digestion, descending phlegm, promoting urination defecation, preventing bloating, inducing perspiration, eliminating dysentery. Essential oil from wood has inflammation reducing, detoxifying effects."
+    uses: [
+      "Dispels wind-dampness",
+      "Opens channels activates collaterals",
+      "Stops pain",
+      "Promotes digestion",
+      "Descends phlegm",
+      "Promotes urination defecation",
+      "Prevents bloating",
+      "Induces perspiration",
+      "Eliminates dysentery",
+      "Reduces inflammation",
+      "Detoxifies",
+    ],
+    indications: [
+      "Flu cold",
+      "Headache",
+      "Stomach pain",
+      "Abdominal distension",
+      "Rheumatism",
+      "Injuries from falls",
+      "Indigestion",
+      "Abdominal bloating",
+      "Gastritis, enteritis",
+      "Boils abscesses",
+      "Scalp ringworm",
+      "Itching",
+      "Centipede bite",
+    ],
+    dosage:
+      "Roots, wood: 10-20g decoction. Fruit: 5-10g decoction. Bark of trunk, branches, leaves: External use wash or apply. Leaves and seeds: Burn to get vapor fumigate repel mosquitoes. Essential oil: Apply externally on skin",
+    contraindications: [
+      "People with yin deficiency fire excess use with caution",
+      "Pregnant women should not use essential oil",
+    ],
+    origin:
+      "Vietnam (Ha Giang, Tuyen Quang, Vinh Phu, Phu Tho, Cao Bang, Lang Son). South cultivated ornamentally",
+    description:
+      "Long Nao (also called Dã hương, Chương não) is a large tree 10-15m tall or more up to 40-50m of the Lauraceae family, trunk diameter can exceed 2m, sparse smooth branches, alternate leaves, oval shaped with prominent main vein, both sides with prominent auxiliary veins, at auxiliary vein and main vein angle has prominent gland tubercle, glossy; petiole 2.5-3.5cm long. Small flowers, growing in panicles at axils, shorter than leaves. Spherical fruit, size of peppercorn, below with small cup-shaped stalk. Camphor tree cultivated in many northern Vietnam provinces like Ha Giang, Tuyen Quang, Vinh Phu, Phu Tho, Cao Bang, Lang Son. Currently tree widely cultivated in South ornamentally. Roots, trunk, leaves contain essential oil with main component d-camphor, is solid essential oil constituent at room temperature. Roots, wood treat flu cold, headache, stomach pain, abdominal distension, rheumatism, injuries from falls. Fruit treats stomach pain, indigestion, abdominal bloating, gastritis, enteritis. Bark of trunk, branches, leaves used to treat boils abscesses, scalp ringworm, itching, centipede bite. Leaves and seeds used to burn get vapor fumigate repel mosquitoes. Essential oil has pungent, aromatic taste, warm nature; has effects dispelling wind-dampness, opening channels activating collaterals, stopping pain, promoting digestion, descending phlegm, promoting urination defecation, preventing bloating, inducing perspiration, eliminating dysentery. Essential oil from wood has inflammation reducing, detoxifying effects.",
   },
   {
     id: 91,
@@ -1595,16 +4035,50 @@ export const medicines = [
     family: "Họ Bằng lăng (Lythraceae)",
     categoryId: "lythraceae",
     image: "https://cdn.vnfarm.com.vn/hoi-dap/cach-trong-cay-luu-1.jpg",
-    usedParts: ["Trunk bark, branch bark (Cortex Punicae)", "Root bark (Cortex Punicae radicis)", "Fruit peel (Pericarpium Punicae)"],
+    usedParts: [
+      "Trunk bark, branch bark (Cortex Punicae)",
+      "Root bark (Cortex Punicae radicis)",
+      "Fruit peel (Pericarpium Punicae)",
+    ],
     properties: "Sour, sweet astringent taste, warm nature",
     meridians: "Large Intestine, Kidney meridians",
-    mainIngredients: ["Pyrogalic tannin", "Alkaloid (pelletierine, iso-pelletierine)", "Tannin", "Ellagitannin", "Gallotannin", "Ellagic acid", "Catechin", "Anthocyanin", "Quercetin"],
-    uses: ["Treats tapeworms", "Treats toothache", "Treats dysentery", "Treats diarrhea", "Stops bleeding", "Sterilizes"],
-    indications: ["Tapeworms", "Toothache", "Dysentery", "Chronic diarrhea", "Hemorrhage"],
-    dosage: "Root bark, trunk bark: 6-12g decoction (treats tapeworms). Fruit peel: 6-10g decoction (treats dysentery, diarrhea). Trunk bark: Hold in mouth treats toothache",
-    contraindications: ["Pregnant women (root bark)", "Children (root bark)", "Pomegranate root bark is toxic - use with caution"],
-    origin: "Vietnam (cultivated everywhere ornamentally and for fruit). Propagated by branch cuttings",
-    description: "Luu (also called Bạch lựu, Thạch lựu) is a small tree about 3-4m tall of the Lythraceae family, sometimes has thorns. Long small soft thin simple leaves, entire margin sometimes growing in clusters but usually alternate or slightly opposite, short petiole. Summer blooms bright red or white flowers (white pomegranate) either solitary or cymes of about 3 flowers. Fruit fist-sized. Fruit top with 4-5 persistent sepals. Thick peel, outer skin green colored, when ripe has yellow-red speckles. Inside fruit has 8 chambers arranged in two tiers, upper tier has 5 chambers lower tier has 3. Chamber types separated by thin membranes, very many seeds, 5-angled shaped, pink-white colored. Cultivated everywhere in country ornamentally and for fruit. Trunk bark contains pyrogalic tannin. Root bark has main active ingredient alkaloid (pelletierine, iso-pelletierine), tannin. Fruit peel contains many phenolic compounds like ellagitannin, gallotannin, ellagic acid, gallagic acid, catechin, anthocyanin, ferulic acid, quercetin. Fruit juice contains glucose, fructose, organic acid, pectin, ascorbic acid, flavonoid, anthocyanin (delphinidin, cyanidin and pelargonidin) and amino acid. Root bark, trunk bark used to treat tapeworms, medicine to hold in mouth treats toothache. Fruit peel treats dysentery, chronic diarrhea. Pomegranate root bark is toxic, use with caution, do not use for pregnant women and children."
+    mainIngredients: [
+      "Pyrogalic tannin",
+      "Alkaloid (pelletierine, iso-pelletierine)",
+      "Tannin",
+      "Ellagitannin",
+      "Gallotannin",
+      "Ellagic acid",
+      "Catechin",
+      "Anthocyanin",
+      "Quercetin",
+    ],
+    uses: [
+      "Treats tapeworms",
+      "Treats toothache",
+      "Treats dysentery",
+      "Treats diarrhea",
+      "Stops bleeding",
+      "Sterilizes",
+    ],
+    indications: [
+      "Tapeworms",
+      "Toothache",
+      "Dysentery",
+      "Chronic diarrhea",
+      "Hemorrhage",
+    ],
+    dosage:
+      "Root bark, trunk bark: 6-12g decoction (treats tapeworms). Fruit peel: 6-10g decoction (treats dysentery, diarrhea). Trunk bark: Hold in mouth treats toothache",
+    contraindications: [
+      "Pregnant women (root bark)",
+      "Children (root bark)",
+      "Pomegranate root bark is toxic - use with caution",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere ornamentally and for fruit). Propagated by branch cuttings",
+    description:
+      "Luu (also called Bạch lựu, Thạch lựu) is a small tree about 3-4m tall of the Lythraceae family, sometimes has thorns. Long small soft thin simple leaves, entire margin sometimes growing in clusters but usually alternate or slightly opposite, short petiole. Summer blooms bright red or white flowers (white pomegranate) either solitary or cymes of about 3 flowers. Fruit fist-sized. Fruit top with 4-5 persistent sepals. Thick peel, outer skin green colored, when ripe has yellow-red speckles. Inside fruit has 8 chambers arranged in two tiers, upper tier has 5 chambers lower tier has 3. Chamber types separated by thin membranes, very many seeds, 5-angled shaped, pink-white colored. Cultivated everywhere in country ornamentally and for fruit. Trunk bark contains pyrogalic tannin. Root bark has main active ingredient alkaloid (pelletierine, iso-pelletierine), tannin. Fruit peel contains many phenolic compounds like ellagitannin, gallotannin, ellagic acid, gallagic acid, catechin, anthocyanin, ferulic acid, quercetin. Fruit juice contains glucose, fructose, organic acid, pectin, ascorbic acid, flavonoid, anthocyanin (delphinidin, cyanidin and pelargonidin) and amino acid. Root bark, trunk bark used to treat tapeworms, medicine to hold in mouth treats toothache. Fruit peel treats dysentery, chronic diarrhea. Pomegranate root bark is toxic, use with caution, do not use for pregnant women and children.",
   },
   {
     id: 92,
@@ -1614,16 +4088,44 @@ export const medicines = [
     family: "Họ Mã đề (Plantaginaceae)",
     categoryId: "plantaginaceae",
     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800",
-    usedParts: "Whole plant (Herba Plantaginis majoris), seeds (Semen Plantaginis)",
-    properties: "Whole plant: sweet taste, cold nature. Seeds: sweet taste, slightly cold nature",
+    usedParts:
+      "Whole plant (Herba Plantaginis majoris), seeds (Semen Plantaginis)",
+    properties:
+      "Whole plant: sweet taste, cold nature. Seeds: sweet taste, slightly cold nature",
     meridians: "Liver, Kidney, Small Intestine, Lung meridians",
-    mainIngredients: ["Whole plant: iridoid glycoside (aucubin, catalpol), flavonoid (baicalein, apigenin), polysaccharide, tannin", "Seeds: plantago mucilage, fatty oil, protein, aucubin"],
-    uses: ["Clears heat", "Promotes urination", "Brightens eyes", "Expels phlegm", "Stops cough", "Cools blood", "Detoxifies"],
-    indications: ["Urinary tract infection", "Difficult urination", "Edema", "Jaundice", "Diarrhea", "Hot painful urination", "Red eyes blurred vision", "Cough with phlegm", "Boils carbuncles"],
-    dosage: "Whole plant fresh: 30-60g decoction or juice. Whole plant dried: 9-15g decoction. Seeds: 5-10g decoction",
-    contraindications: ["People with kidney yang deficiency", "People with seminal emission"],
+    mainIngredients: [
+      "Whole plant: iridoid glycoside (aucubin, catalpol), flavonoid (baicalein, apigenin), polysaccharide, tannin",
+      "Seeds: plantago mucilage, fatty oil, protein, aucubin",
+    ],
+    uses: [
+      "Clears heat",
+      "Promotes urination",
+      "Brightens eyes",
+      "Expels phlegm",
+      "Stops cough",
+      "Cools blood",
+      "Detoxifies",
+    ],
+    indications: [
+      "Urinary tract infection",
+      "Difficult urination",
+      "Edema",
+      "Jaundice",
+      "Diarrhea",
+      "Hot painful urination",
+      "Red eyes blurred vision",
+      "Cough with phlegm",
+      "Boils carbuncles",
+    ],
+    dosage:
+      "Whole plant fresh: 30-60g decoction or juice. Whole plant dried: 9-15g decoction. Seeds: 5-10g decoction",
+    contraindications: [
+      "People with kidney yang deficiency",
+      "People with seminal emission",
+    ],
     origin: "Vietnam (grows wild everywhere). Worldwide distribution",
-    description: "Ma De (plantain, also called Xa tiền thảo, Ngũ căn thảo) is a perennial herbaceous plant of the Plantaginaceae family. Leaves grow from base in rosette, broadly ovate or elliptic 6-15cm long 3-8cm wide, 5-7 main veins, entire or wavy margins, long petiole. Flower spike simple cylindrical 5-30cm long on leafless stalk taller than leaves, small greenish-white flowers densely arranged. Capsule fruit ovoid 4-5mm long with lid, contains 4-8 dark brown seeds. Flowering period May-August, fruiting August-September. Grows wild everywhere in Vietnam in fields, roadsides, vacant land, common weed. Whole plant contains iridoid glycoside (aucubin, catalpol), flavonoid (baicalein, apigenin), polysaccharide, tannin. Seeds contain plantago mucilage, fatty oil, protein, aucubin. Has diuretic, brightens eyes, expels phlegm, cools blood, detoxifies effects. Treats urinary tract infection, difficult urination, edema, jaundice, diarrhea, hot painful urination, red eyes blurred vision, cough with phlegm, boils carbuncles."
+    description:
+      "Ma De (plantain, also called Xa tiền thảo, Ngũ căn thảo) is a perennial herbaceous plant of the Plantaginaceae family. Leaves grow from base in rosette, broadly ovate or elliptic 6-15cm long 3-8cm wide, 5-7 main veins, entire or wavy margins, long petiole. Flower spike simple cylindrical 5-30cm long on leafless stalk taller than leaves, small greenish-white flowers densely arranged. Capsule fruit ovoid 4-5mm long with lid, contains 4-8 dark brown seeds. Flowering period May-August, fruiting August-September. Grows wild everywhere in Vietnam in fields, roadsides, vacant land, common weed. Whole plant contains iridoid glycoside (aucubin, catalpol), flavonoid (baicalein, apigenin), polysaccharide, tannin. Seeds contain plantago mucilage, fatty oil, protein, aucubin. Has diuretic, brightens eyes, expels phlegm, cools blood, detoxifies effects. Treats urinary tract infection, difficult urination, edema, jaundice, diarrhea, hot painful urination, red eyes blurred vision, cough with phlegm, boils carbuncles.",
   },
   {
     id: 93,
@@ -1632,17 +4134,45 @@ export const medicines = [
     scientificName: "Strychnos nux-vomica L.",
     family: "Họ Mã tiền (Loganiaceae)",
     categoryId: "loganiaceae",
-    image: "https://www.vinmec.com/static/uploads/small_20211130_141117_214600_cay_ma_tien_5_max_1800x1800_jpg_6cc5426ecc.jpg",
+    image:
+      "https://www.vinmec.com/static/uploads/small_20211130_141117_214600_cay_ma_tien_5_max_1800x1800_jpg_6cc5426ecc.jpg",
     usedParts: "Seeds (Semen Strychni)",
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Alkaloid (strychnine 1.2-1.5%, brucine 1-2%, vomicine, α-colubrine, β-colubrine, novacine, icajine, strychnicine)", "Chlorogenic acid", "Fatty oil"],
-    uses: ["Opens channels unblocks collaterals", "Disperses knots relieves pain", "Powerful toxic stimulant", "Analgesic"],
-    indications: ["Rheumatic joint pain", "Numbness paralysis", "Traumatic injuries", "Carbuncles swellings", "Throat swelling pain", "Severe pain conditions"],
-    dosage: "Seeds processed dried: 0.3-0.6g powdered taken, NEVER exceed 1g/day. External use: grind powder mix ointment apply affected area. CAUTION: Toxic medicine, must be processed, strictly follow dosage, medical supervision required",
-    contraindications: ["Pregnant women ABSOLUTELY MUST NOT use", "Nursing mothers", "Children", "Elderly weak people", "Liver-kidney dysfunction", "Do not use long-term", "TOXIC - can cause poisoning death if overdosed"],
-    origin: "Vietnam (cultivated in southern region). India, Myanmar, Thailand, Sri Lanka",
-    description: "Ma Tien (nux-vomica, also called Mã tiền tử, Khổ mộc, Phiên mộc biết) is a climbing woody vine or small tree of the Loganiaceae family up to 12m. Trunk diameter 20-30cm. Leaves opposite, ovate-elliptic 6-12cm long, leathery, 3-5 curved veins. Small greenish-white flowers in axillary cymes, fragrant. Berry fruit spherical orange when ripe 4-6cm diameter, hard peel, contains 1-5 flat circular seeds 1.5-3cm diameter. Seeds contain strychnine 1.2-1.5%, brucine 1-2%, other alkaloids. These alkaloids are powerful nerve stimulants, small doses stimulate central nervous system, increase muscle contraction, relieve pain. Large doses cause convulsions, respiratory paralysis, death. EXTREMELY TOXIC medicine, folk medicine uses processed seeds treat severe rheumatic pain, paralysis, traumatic pain. Must be processed by soaking in water changing water multiple times, then roasting with ginger juice or sesame oil to reduce toxicity. Even after processing still very toxic, MUST strictly follow dosage 0.3-0.6g/day, NEVER exceed 1g/day. Poisoning signs: initial muscle stiffness, facial twitching, then severe convulsions throughout body, jaw locked, breathing difficulty. If not rescued promptly leads to respiratory paralysis death. Poisoning treatment: immediately gastric lavage, activated charcoal, IV diazepam stop convulsions, respiratory support. ABSOLUTELY DO NOT use for pregnant women, children, weak people."
+    mainIngredients: [
+      "Alkaloid (strychnine 1.2-1.5%, brucine 1-2%, vomicine, α-colubrine, β-colubrine, novacine, icajine, strychnicine)",
+      "Chlorogenic acid",
+      "Fatty oil",
+    ],
+    uses: [
+      "Opens channels unblocks collaterals",
+      "Disperses knots relieves pain",
+      "Powerful toxic stimulant",
+      "Analgesic",
+    ],
+    indications: [
+      "Rheumatic joint pain",
+      "Numbness paralysis",
+      "Traumatic injuries",
+      "Carbuncles swellings",
+      "Throat swelling pain",
+      "Severe pain conditions",
+    ],
+    dosage:
+      "Seeds processed dried: 0.3-0.6g powdered taken, NEVER exceed 1g/day. External use: grind powder mix ointment apply affected area. CAUTION: Toxic medicine, must be processed, strictly follow dosage, medical supervision required",
+    contraindications: [
+      "Pregnant women ABSOLUTELY MUST NOT use",
+      "Nursing mothers",
+      "Children",
+      "Elderly weak people",
+      "Liver-kidney dysfunction",
+      "Do not use long-term",
+      "TOXIC - can cause poisoning death if overdosed",
+    ],
+    origin:
+      "Vietnam (cultivated in southern region). India, Myanmar, Thailand, Sri Lanka",
+    description:
+      "Ma Tien (nux-vomica, also called Mã tiền tử, Khổ mộc, Phiên mộc biết) is a climbing woody vine or small tree of the Loganiaceae family up to 12m. Trunk diameter 20-30cm. Leaves opposite, ovate-elliptic 6-12cm long, leathery, 3-5 curved veins. Small greenish-white flowers in axillary cymes, fragrant. Berry fruit spherical orange when ripe 4-6cm diameter, hard peel, contains 1-5 flat circular seeds 1.5-3cm diameter. Seeds contain strychnine 1.2-1.5%, brucine 1-2%, other alkaloids. These alkaloids are powerful nerve stimulants, small doses stimulate central nervous system, increase muscle contraction, relieve pain. Large doses cause convulsions, respiratory paralysis, death. EXTREMELY TOXIC medicine, folk medicine uses processed seeds treat severe rheumatic pain, paralysis, traumatic pain. Must be processed by soaking in water changing water multiple times, then roasting with ginger juice or sesame oil to reduce toxicity. Even after processing still very toxic, MUST strictly follow dosage 0.3-0.6g/day, NEVER exceed 1g/day. Poisoning signs: initial muscle stiffness, facial twitching, then severe convulsions throughout body, jaw locked, breathing difficulty. If not rescued promptly leads to respiratory paralysis death. Poisoning treatment: immediately gastric lavage, activated charcoal, IV diazepam stop convulsions, respiratory support. ABSOLUTELY DO NOT use for pregnant women, children, weak people.",
   },
   {
     id: 94,
@@ -1655,13 +4185,40 @@ export const medicines = [
     usedParts: "Leaves, roots",
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Spleen, Stomach meridians",
-    mainIngredients: ["Sesquiterpene lactone", "Flavonoid", "Tannin", "Saponin"],
-    uses: ["Clears heat detoxifies", "Cools blood", "Promotes digestion", "Expels phlegm", "Relieves cough"],
-    indications: ["Fever", "Sore throat", "Cough", "Indigestion", "Abdominal distension", "Diarrhea", "Dysentery", "Skin infections", "Boils carbuncles"],
-    dosage: "Leaves fresh: 20-40g decoction or juice. Leaves dried: 10-20g decoction. Roots: 10-15g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold", "Pregnant women use with caution"],
-    origin: "Vietnam (grows wild in mountainous areas, roadsides). India, China, Southeast Asia",
-    description: "Mat Gau (also called Cúc dại, Cúc rừng) is a perennial herbaceous plant of the Asteraceae family 0.5-1.5m tall. Stem erect branched. Leaves alternate, lanceolate or ovate-lanceolate 10-20cm long 3-8cm wide, serrate margins, both surfaces hairy. Flower heads purple or white in terminal corymbs. Achene fruit small with pappus. Has very bitter taste hence the name 'bear's bile' (Mật gấu). Leaves and roots used medicinally. Has effects clearing heat detoxifying, cooling blood, promoting digestion. Treats fever, sore throat, cough, indigestion, abdominal distension, diarrhea, dysentery. External use treats skin infections, boils carbuncles. Bitter taste stimulates digestion, increases bile secretion, improves appetite."
+    mainIngredients: [
+      "Sesquiterpene lactone",
+      "Flavonoid",
+      "Tannin",
+      "Saponin",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Cools blood",
+      "Promotes digestion",
+      "Expels phlegm",
+      "Relieves cough",
+    ],
+    indications: [
+      "Fever",
+      "Sore throat",
+      "Cough",
+      "Indigestion",
+      "Abdominal distension",
+      "Diarrhea",
+      "Dysentery",
+      "Skin infections",
+      "Boils carbuncles",
+    ],
+    dosage:
+      "Leaves fresh: 20-40g decoction or juice. Leaves dried: 10-20g decoction. Roots: 10-15g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild in mountainous areas, roadsides). India, China, Southeast Asia",
+    description:
+      "Mat Gau (also called Cúc dại, Cúc rừng) is a perennial herbaceous plant of the Asteraceae family 0.5-1.5m tall. Stem erect branched. Leaves alternate, lanceolate or ovate-lanceolate 10-20cm long 3-8cm wide, serrate margins, both surfaces hairy. Flower heads purple or white in terminal corymbs. Achene fruit small with pappus. Has very bitter taste hence the name 'bear's bile' (Mật gấu). Leaves and roots used medicinally. Has effects clearing heat detoxifying, cooling blood, promoting digestion. Treats fever, sore throat, cough, indigestion, abdominal distension, diarrhea, dysentery. External use treats skin infections, boils carbuncles. Bitter taste stimulates digestion, increases bile secretion, improves appetite.",
   },
   {
     id: 95,
@@ -1670,17 +4227,49 @@ export const medicines = [
     scientificName: "Saccharum officinarum L.",
     family: "Họ Lúa (Poaceae)",
     categoryId: "poaceae",
-    image: "https://ktmt.vnmediacdn.com/images/2022/10/21/67-1666363337-tim-hieu-ve-cay-mia-trong-nganh-cong-nghiep-san-xuat-duong-1-min.jpg",
+    image:
+      "https://ktmt.vnmediacdn.com/images/2022/10/21/67-1666363337-tim-hieu-ve-cay-mia-trong-nganh-cong-nghiep-san-xuat-duong-1-min.jpg",
     usedParts: "Stem juice (Succus Sacchari), roots",
     properties: "Sweet taste, cold nature",
     meridians: "Lung, Stomach meridians",
-    mainIngredients: ["Sucrose (17-18%)", "Glucose", "Fructose", "Protein", "Fat", "Calcium", "Phosphorus", "Iron", "Vitamin C", "Vitamin B"],
-    uses: ["Clears heat generates fluids", "Moistens dryness", "Harmonizes middle tonifies deficiency", "Detoxifies"],
-    indications: ["Fever thirst", "Dry mouth dry throat", "Dry cough", "Stomach pain", "Constipation", "Vomiting", "Alcohol intoxication"],
-    dosage: "Fresh juice: drink 100-200ml each time, can drink multiple times daily. Cooked into syrup: 30-50g",
-    contraindications: ["People with spleen-stomach deficiency cold", "Phlegm-dampness constitution", "Diabetes patients limit use"],
-    origin: "Vietnam (cultivated everywhere especially Central and South regions). Tropical regions worldwide",
-    description: "Mia (sugarcane) is a tall perennial grass of the Poaceae family 2-5m tall. Stem solid cylindrical 2-5cm diameter, nodes prominent, internodes long. Leaves long linear 1-1.5m long 4-6cm wide arising from nodes, leaf sheath wraps stem. Panicle inflorescence at stem tip with silky hairs. Cultivated everywhere in Vietnam especially Central and South regions as industrial crop and food. Stem contains 17-18% sucrose, glucose, fructose, also protein, fat, minerals (calcium, phosphorus, iron), vitamins (C, B). Fresh juice has sweet taste cold nature, clears heat generates fluids, moistens dryness. Drinks sugarcane juice when fever thirsty, dry mouth throat, dry cough, stomach pain, constipation, drunk. Also detoxifies alcohol, treats vomiting. Black sugarcane variety (Mía lau) has stronger medicinal effects clearing heat cooling blood. In traditional medicine sugarcane roots also used treat urinary tract infection, difficult urination, edema."
+    mainIngredients: [
+      "Sucrose (17-18%)",
+      "Glucose",
+      "Fructose",
+      "Protein",
+      "Fat",
+      "Calcium",
+      "Phosphorus",
+      "Iron",
+      "Vitamin C",
+      "Vitamin B",
+    ],
+    uses: [
+      "Clears heat generates fluids",
+      "Moistens dryness",
+      "Harmonizes middle tonifies deficiency",
+      "Detoxifies",
+    ],
+    indications: [
+      "Fever thirst",
+      "Dry mouth dry throat",
+      "Dry cough",
+      "Stomach pain",
+      "Constipation",
+      "Vomiting",
+      "Alcohol intoxication",
+    ],
+    dosage:
+      "Fresh juice: drink 100-200ml each time, can drink multiple times daily. Cooked into syrup: 30-50g",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Phlegm-dampness constitution",
+      "Diabetes patients limit use",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere especially Central and South regions). Tropical regions worldwide",
+    description:
+      "Mia (sugarcane) is a tall perennial grass of the Poaceae family 2-5m tall. Stem solid cylindrical 2-5cm diameter, nodes prominent, internodes long. Leaves long linear 1-1.5m long 4-6cm wide arising from nodes, leaf sheath wraps stem. Panicle inflorescence at stem tip with silky hairs. Cultivated everywhere in Vietnam especially Central and South regions as industrial crop and food. Stem contains 17-18% sucrose, glucose, fructose, also protein, fat, minerals (calcium, phosphorus, iron), vitamins (C, B). Fresh juice has sweet taste cold nature, clears heat generates fluids, moistens dryness. Drinks sugarcane juice when fever thirsty, dry mouth throat, dry cough, stomach pain, constipation, drunk. Also detoxifies alcohol, treats vomiting. Black sugarcane variety (Mía lau) has stronger medicinal effects clearing heat cooling blood. In traditional medicine sugarcane roots also used treat urinary tract infection, difficult urination, edema.",
   },
   {
     id: 96,
@@ -1693,13 +4282,40 @@ export const medicines = [
     usedParts: "Rhizome (Rhizoma Costi), whole plant",
     properties: "Pungent bitter taste, cool nature",
     meridians: "Liver, Spleen, Stomach, Large Intestine meridians",
-    mainIngredients: ["Diosgenin", "Saponin (costunolide, dehydrocostus lactone)", "Alkaloid", "Flavonoid", "Tannin"],
-    uses: ["Regulates qi relieves pain", "Promotes digestion", "Clears heat", "Promotes urination", "Kills parasites"],
-    indications: ["Abdominal distension pain", "Indigestion", "Diarrhea", "Dysentery", "Difficult urination", "Rheumatic pain", "Skin infections", "Intestinal parasites"],
-    dosage: "Rhizome dried: 6-12g decoction. Whole plant fresh: 20-40g decoction or juice",
-    contraindications: ["People with yin deficiency fire excess", "Pregnant women"],
-    origin: "Vietnam (grows wild in forests, roadsides in mountainous areas, also cultivated). India, China, Southeast Asia",
-    description: "Mia Do (crepe ginger, also called Gừng bàn, Gừng dại, Bình bát) is a perennial herbaceous plant of the Costaceae family 1-2m tall. Rhizome thick fleshy cylindrical. Stem erect, leaves spiral around stem hence also called 'spiral ginger'. Leaves oblong-lanceolate 15-25cm long 6-10cm wide, smooth both surfaces, entire margins. Large white flowers with yellow center at stem tip, very beautiful. Rhizome contains diosgenin (precursor for hormone synthesis), saponin (costunolide, dehydrocostus lactone), alkaloid, flavonoid, tannin. Has regulating qi relieving pain, promoting digestion effects. Treats abdominal distension pain, indigestion, diarrhea, dysentery. Also promotes urination treats difficult urination, edema. External use treats rheumatic pain, skin infections. Research shows diosgenin in Mia Do has anti-inflammatory, anti-diabetic effects, lowers blood sugar. Also has anthelmintic effects treats intestinal parasites."
+    mainIngredients: [
+      "Diosgenin",
+      "Saponin (costunolide, dehydrocostus lactone)",
+      "Alkaloid",
+      "Flavonoid",
+      "Tannin",
+    ],
+    uses: [
+      "Regulates qi relieves pain",
+      "Promotes digestion",
+      "Clears heat",
+      "Promotes urination",
+      "Kills parasites",
+    ],
+    indications: [
+      "Abdominal distension pain",
+      "Indigestion",
+      "Diarrhea",
+      "Dysentery",
+      "Difficult urination",
+      "Rheumatic pain",
+      "Skin infections",
+      "Intestinal parasites",
+    ],
+    dosage:
+      "Rhizome dried: 6-12g decoction. Whole plant fresh: 20-40g decoction or juice",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Pregnant women",
+    ],
+    origin:
+      "Vietnam (grows wild in forests, roadsides in mountainous areas, also cultivated). India, China, Southeast Asia",
+    description:
+      "Mia Do (crepe ginger, also called Gừng bàn, Gừng dại, Bình bát) is a perennial herbaceous plant of the Costaceae family 1-2m tall. Rhizome thick fleshy cylindrical. Stem erect, leaves spiral around stem hence also called 'spiral ginger'. Leaves oblong-lanceolate 15-25cm long 6-10cm wide, smooth both surfaces, entire margins. Large white flowers with yellow center at stem tip, very beautiful. Rhizome contains diosgenin (precursor for hormone synthesis), saponin (costunolide, dehydrocostus lactone), alkaloid, flavonoid, tannin. Has regulating qi relieving pain, promoting digestion effects. Treats abdominal distension pain, indigestion, diarrhea, dysentery. Also promotes urination treats difficult urination, edema. External use treats rheumatic pain, skin infections. Research shows diosgenin in Mia Do has anti-inflammatory, anti-diabetic effects, lowers blood sugar. Also has anthelmintic effects treats intestinal parasites.",
   },
   {
     id: 97,
@@ -1712,13 +4328,40 @@ export const medicines = [
     usedParts: "Whole plant (Herba Paederiae), leaves",
     properties: "Pungent bitter taste, neutral nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Iridoid glycoside (paederoside, asperuloside)", "Alkaloid", "Flavonoid", "Tannin", "Volatile sulfur compounds (causing foul odor)"],
-    uses: ["Dispels wind eliminates dampness", "Activates blood unblocks channels", "Relieves pain", "Promotes digestion", "Detoxifies"],
-    indications: ["Rheumatic joint pain", "Traumatic injuries", "Back and leg pain", "Indigestion", "Abdominal pain diarrhea", "Boils carbuncles", "Snake bites", "Skin itching"],
-    dosage: "Whole plant dried: 15-30g decoction. Fresh leaves: 30-60g decoction or pounded applied externally. To reduce foul odor can cook or process before use",
-    contraindications: ["People with yin deficiency fire excess", "Pregnant women use with caution"],
-    origin: "Vietnam (grows wild everywhere in fields, roadsides, fences). Widely distributed tropical and subtropical Asia",
-    description: "Mo Tam The (stinkvine, also called Mơ lông, Rau rút) is a climbing vine of the Rubiaceae family up to several meters. Stem slender twining. Leaves opposite, ovate-lanceolate 5-12cm long 2-6cm wide, pointed tip. Small pink or purple flowers in axillary cymes. Berry fruit spherical yellow when ripe. Whole plant crushed has very foul fetid odor due to volatile sulfur compounds, hence name 'three corpses stench'. Despite foul smell has many medicinal uses. Contains iridoid glycoside (paederoside, asperuloside), alkaloid, flavonoid, tannin. Has dispelling wind eliminating dampness, activating blood unblocking channels, relieving pain effects. Treats rheumatic joint pain, traumatic injuries, back leg pain. Also promotes digestion treats indigestion, abdominal pain diarrhea. External use treats boils carbuncles, snake bites, skin itching. Young shoots and leaves used as food after cooking (cooking eliminates foul odor). Folk medicine also uses treat hemorrhoids, dysentery, jaundice. Modern research shows has anti-inflammatory, analgesic, antimicrobial effects."
+    mainIngredients: [
+      "Iridoid glycoside (paederoside, asperuloside)",
+      "Alkaloid",
+      "Flavonoid",
+      "Tannin",
+      "Volatile sulfur compounds (causing foul odor)",
+    ],
+    uses: [
+      "Dispels wind eliminates dampness",
+      "Activates blood unblocks channels",
+      "Relieves pain",
+      "Promotes digestion",
+      "Detoxifies",
+    ],
+    indications: [
+      "Rheumatic joint pain",
+      "Traumatic injuries",
+      "Back and leg pain",
+      "Indigestion",
+      "Abdominal pain diarrhea",
+      "Boils carbuncles",
+      "Snake bites",
+      "Skin itching",
+    ],
+    dosage:
+      "Whole plant dried: 15-30g decoction. Fresh leaves: 30-60g decoction or pounded applied externally. To reduce foul odor can cook or process before use",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Pregnant women use with caution",
+    ],
+    origin:
+      "Vietnam (grows wild everywhere in fields, roadsides, fences). Widely distributed tropical and subtropical Asia",
+    description:
+      "Mo Tam The (stinkvine, also called Mơ lông, Rau rút) is a climbing vine of the Rubiaceae family up to several meters. Stem slender twining. Leaves opposite, ovate-lanceolate 5-12cm long 2-6cm wide, pointed tip. Small pink or purple flowers in axillary cymes. Berry fruit spherical yellow when ripe. Whole plant crushed has very foul fetid odor due to volatile sulfur compounds, hence name 'three corpses stench'. Despite foul smell has many medicinal uses. Contains iridoid glycoside (paederoside, asperuloside), alkaloid, flavonoid, tannin. Has dispelling wind eliminating dampness, activating blood unblocking channels, relieving pain effects. Treats rheumatic joint pain, traumatic injuries, back leg pain. Also promotes digestion treats indigestion, abdominal pain diarrhea. External use treats boils carbuncles, snake bites, skin itching. Young shoots and leaves used as food after cooking (cooking eliminates foul odor). Folk medicine also uses treat hemorrhoids, dysentery, jaundice. Modern research shows has anti-inflammatory, analgesic, antimicrobial effects.",
   },
   {
     id: 98,
@@ -1731,13 +4374,39 @@ export const medicines = [
     usedParts: "Leaves, roots, whole plant",
     properties: "Pungent bitter taste, warm nature",
     meridians: "Lung, Liver, Spleen meridians",
-    mainIngredients: ["Coumarin (clausenin, clausenidin, xanthoxyletin)", "Carbazole alkaloid (clausine, heptaphylline)", "Essential oil", "Flavonoid"],
-    uses: ["Dispels wind eliminates dampness", "Activates blood relieves pain", "Regulates qi harmonizes stomach", "Detoxifies reduces swelling"],
-    indications: ["Rheumatic joint pain", "Traumatic injuries", "Abdominal pain", "Indigestion", "Common cold cough", "Headache", "Toothache", "Snake bites", "Skin infections"],
-    dosage: "Whole plant or roots dried: 10-20g decoction. Fresh leaves: 15-30g decoction or pounded juice. External use: fresh leaves pounded applied affected area",
-    contraindications: ["Pregnant women", "People with yin deficiency fire excess"],
-    origin: "Vietnam (grows wild in forests, roadsides southern and central regions). India, China, Southeast Asia",
-    description: "Moc Mat (wampee, also called Táo rừng, Táo dại) is a shrub or small tree of the Rutaceae family 2-4m tall. Leaves alternate pinnate compound with 5-11 leaflets, ovate-lanceolate leaflets 3-8cm long. Small white flowers in terminal or axillary panicles, fragrant. Berry fruit ovoid 1-2cm long, white or pale yellow when ripe, edible sweet-sour taste. Whole plant crushed has characteristic aromatic odor. Contains coumarin (clausenin, clausenidin, xanthoxyletin), carbazole alkaloid (clausine, heptaphylline), essential oil, flavonoid. Has dispelling wind eliminating dampness, activating blood relieving pain effects. Treats rheumatic joint pain, traumatic injuries. Also regulates qi harmonizes stomach treats abdominal pain, indigestion. Treats common cold cough, headache, toothache. External use treats snake bites, skin infections. Ripe fruits eaten fresh or made into jam. Research shows extracts have anti-inflammatory, analgesic, antimicrobial, antitumor effects."
+    mainIngredients: [
+      "Coumarin (clausenin, clausenidin, xanthoxyletin)",
+      "Carbazole alkaloid (clausine, heptaphylline)",
+      "Essential oil",
+      "Flavonoid",
+    ],
+    uses: [
+      "Dispels wind eliminates dampness",
+      "Activates blood relieves pain",
+      "Regulates qi harmonizes stomach",
+      "Detoxifies reduces swelling",
+    ],
+    indications: [
+      "Rheumatic joint pain",
+      "Traumatic injuries",
+      "Abdominal pain",
+      "Indigestion",
+      "Common cold cough",
+      "Headache",
+      "Toothache",
+      "Snake bites",
+      "Skin infections",
+    ],
+    dosage:
+      "Whole plant or roots dried: 10-20g decoction. Fresh leaves: 15-30g decoction or pounded juice. External use: fresh leaves pounded applied affected area",
+    contraindications: [
+      "Pregnant women",
+      "People with yin deficiency fire excess",
+    ],
+    origin:
+      "Vietnam (grows wild in forests, roadsides southern and central regions). India, China, Southeast Asia",
+    description:
+      "Moc Mat (wampee, also called Táo rừng, Táo dại) is a shrub or small tree of the Rutaceae family 2-4m tall. Leaves alternate pinnate compound with 5-11 leaflets, ovate-lanceolate leaflets 3-8cm long. Small white flowers in terminal or axillary panicles, fragrant. Berry fruit ovoid 1-2cm long, white or pale yellow when ripe, edible sweet-sour taste. Whole plant crushed has characteristic aromatic odor. Contains coumarin (clausenin, clausenidin, xanthoxyletin), carbazole alkaloid (clausine, heptaphylline), essential oil, flavonoid. Has dispelling wind eliminating dampness, activating blood relieving pain effects. Treats rheumatic joint pain, traumatic injuries. Also regulates qi harmonizes stomach treats abdominal pain, indigestion. Treats common cold cough, headache, toothache. External use treats snake bites, skin infections. Ripe fruits eaten fresh or made into jam. Research shows extracts have anti-inflammatory, analgesic, antimicrobial, antitumor effects.",
   },
   {
     id: 99,
@@ -1750,13 +4419,35 @@ export const medicines = [
     usedParts: "Leaves (fresh or dried)",
     properties: "Bitter taste, cold nature",
     meridians: "Liver, Large Intestine meridians",
-    mainIngredients: ["Anthraglycosides (chrysophanol, aloe-emodin)", "Anthraquinone", "Tannin", "Flavonoid"],
-    uses: ["Laxative", "Benefits liver-gallbladder", "Detoxifies", "Anti-inflammatory", "Antimicrobial", "Relieves itching"],
-    indications: ["Constipation (use fresh)", "Hepatitis jaundice (use processed dried)", "Tinea", "Neurodermatitis", "Itching", "Skin infections"],
-    dosage: "Fresh leaves: 20-30g decoction drink or pounded treats constipation. Dried leaves (already processed): 10-15g decoction treats hepatitis, jaundice. External use: fresh leaves pounded applied or decoction wash treats tinea, neurodermatitis, itching",
+    mainIngredients: [
+      "Anthraglycosides (chrysophanol, aloe-emodin)",
+      "Anthraquinone",
+      "Tannin",
+      "Flavonoid",
+    ],
+    uses: [
+      "Laxative",
+      "Benefits liver-gallbladder",
+      "Detoxifies",
+      "Anti-inflammatory",
+      "Antimicrobial",
+      "Relieves itching",
+    ],
+    indications: [
+      "Constipation (use fresh)",
+      "Hepatitis jaundice (use processed dried)",
+      "Tinea",
+      "Neurodermatitis",
+      "Itching",
+      "Skin infections",
+    ],
+    dosage:
+      "Fresh leaves: 20-30g decoction drink or pounded treats constipation. Dried leaves (already processed): 10-15g decoction treats hepatitis, jaundice. External use: fresh leaves pounded applied or decoction wash treats tinea, neurodermatitis, itching",
     contraindications: ["Pregnant women", "People with diarrhea"],
-    origin: "South America (now cultivated throughout tropical countries, common in Vietnam especially South, Central regions and some North provinces like Thanh Hoa, Nghe An, Ha Tinh)",
-    description: "Muong Trau (also called Muồng lác, coffee senna) is a subshrub about 1m or taller of the Fabaceae family, diameter can reach 10-12cm. Pinnate compound leaves 30-40cm long, with 8-12 pairs of ovate or narrow elliptic leaflets round at both ends, leaflets 5-13cm long, 2.5-7cm wide, gradually larger toward apex. Short petiole slightly swollen at base. Pinnate veins. Upper leaf surface dark green, lower surface lighter green, both surfaces smooth. Entire margins. Many-flowered inflorescence in axillary racemes up to 30-40cm long, pale brownish-yellow flowers. Flat legume pod 8-16cm long, 15-17mm wide, with two ridges along pod length. Contains up to 60 seeds, rhomboidal shaped. Origin in South America, now cultivated throughout tropical countries. In Vietnam this plant grows wild and cultivated in many places, most in South, Central regions and some North provinces (Thanh Hoa, Nghe An, Ha Tinh). Also found in Laos and Cambodia. Leaves, fruits, wood and seeds all contain anthraglycosides (chrysophanol, aloe-emodin). Leaves have laxative, liver-gallbladder benefiting, detoxifying, anti-inflammatory, antimicrobial, anti-itch effects. Treats constipation (use fresh), hepatitis, jaundice (use processed dried medicine). External use treats tinea, neurodermatitis, itching. Upper and lower epidermis of midrib and blade have simple unicellular protective hairs short with pointed tips, lower leaf surface has denser hairs. Blade has cuticular papillae and stomata on both surfaces. Cubic calcium oxalate crystals located in parenchyma cells adjacent to sclerenchyma arcs."
+    origin:
+      "South America (now cultivated throughout tropical countries, common in Vietnam especially South, Central regions and some North provinces like Thanh Hoa, Nghe An, Ha Tinh)",
+    description:
+      "Muong Trau (also called Muồng lác, coffee senna) is a subshrub about 1m or taller of the Fabaceae family, diameter can reach 10-12cm. Pinnate compound leaves 30-40cm long, with 8-12 pairs of ovate or narrow elliptic leaflets round at both ends, leaflets 5-13cm long, 2.5-7cm wide, gradually larger toward apex. Short petiole slightly swollen at base. Pinnate veins. Upper leaf surface dark green, lower surface lighter green, both surfaces smooth. Entire margins. Many-flowered inflorescence in axillary racemes up to 30-40cm long, pale brownish-yellow flowers. Flat legume pod 8-16cm long, 15-17mm wide, with two ridges along pod length. Contains up to 60 seeds, rhomboidal shaped. Origin in South America, now cultivated throughout tropical countries. In Vietnam this plant grows wild and cultivated in many places, most in South, Central regions and some North provinces (Thanh Hoa, Nghe An, Ha Tinh). Also found in Laos and Cambodia. Leaves, fruits, wood and seeds all contain anthraglycosides (chrysophanol, aloe-emodin). Leaves have laxative, liver-gallbladder benefiting, detoxifying, anti-inflammatory, antimicrobial, anti-itch effects. Treats constipation (use fresh), hepatitis, jaundice (use processed dried medicine). External use treats tinea, neurodermatitis, itching. Upper and lower epidermis of midrib and blade have simple unicellular protective hairs short with pointed tips, lower leaf surface has denser hairs. Blade has cuticular papillae and stomata on both surfaces. Cubic calcium oxalate crystals located in parenchyma cells adjacent to sclerenchyma arcs.",
   },
   {
     id: 100,
@@ -1765,17 +4456,37 @@ export const medicines = [
     scientificName: "Crinum asiaticum L.",
     family: "Họ Thủy tiên (Amaryllidaceae)",
     categoryId: "amaryllidaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2021/01/nang-hoa-trang-2.jpg",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2021/01/nang-hoa-trang-2.jpg",
     usedParts: "Leaves (Folium Crini), bulb (Bulbus Crini)",
     properties: "Slightly bitter taste, neutral nature",
     meridians: "Liver, Kidney meridians",
     mainIngredients: ["Alkaloid (lycorin, crinamin)"],
-    uses: ["Activates blood disperses stasis", "Reduces swelling relieves pain", "Eliminates dampness unblocks channels", "Reduces prostate enlargement"],
-    indications: ["Blood bruising from trauma", "Tendon sprain strain from falls", "Joint bone swelling pain", "Rheumatic numbness", "Limb muscle aching", "Prostate enlargement"],
-    dosage: "External use: fresh leaves and bulb pounded applied externally to injured swollen painful area. Internal use: dried leaves and bulb 6-10g decoction (caution alkaloid toxicity)",
-    contraindications: ["Pregnant women", "Should only use externally, careful when taking internally due to toxic alkaloids", "Do not use high doses"],
-    origin: "Vietnam (grows wild at limestone mountain bases or coastal wasteland areas, cultivated ornamentally)",
-    description: "Nang Hoa Trang (giant crinum lily, also called Đại tướng quân, Tỏi lơi, Náng) is a large herbaceous plant of the Amaryllidaceae family, large spherical or ovoid bulb up to 10cm diameter, constricted at top. Leaves grow straight from bulb, long linear shape, thick blade, 1m or longer, 5-10cm wide, wide sheath at base, pointed tip, entire undulate margins, parallel veins, midvein prominent on lower surface, both surfaces pale green. Flower cluster grows from center of leaf tuft in umbel, on thick flat stalk 40-60cm long, with many large fragrant white flowers, perianth tube narrow green 7-10cm long, 3-merous. Tepals (calyx and petals) similar, long narrow linear; 6 stamens, filaments purple-red; ovary fusiform. Capsule fruit nearly spherical 3-5cm diameter, usually contains only 1 seed. Flowering fruiting season: June-August. In Vietnam, giant crinum lily grows wild at limestone mountain bases or coastal wasteland areas, cultivated ornamentally due to beautiful fragrant flowers. Giant crinum lily is moisture-loving, light-loving plant that can tolerate some heat, grows vigorously in rainy humid season; can produce 4-6 new leaves annually, replacing old leaves that appeared 1 to 1.5 years earlier. In winter plant stops growing. Plant flowers fruits annually. Fruit set rate only about 40-50%. Plant has strong suckering ability from basal shoots. Whole plant especially bulb contains many alkaloids (lycorin, crinamin). Giant crinum lily used externally treats blood bruises from trauma causing pain, tendon sprain strain from falls, joint bone swelling pain, or massage when having rheumatic numbness, limb muscle aching. Recent research shows giant crinum lily also reduces enlarged prostate size. Leaf powder light brown, odorless, slightly bitter taste. Contains very many needle-shaped calcium oxalate crystals, pointed both ends, about 100-110µm long, about 2-3µm diameter, solitary or clustered in bundles."
+    uses: [
+      "Activates blood disperses stasis",
+      "Reduces swelling relieves pain",
+      "Eliminates dampness unblocks channels",
+      "Reduces prostate enlargement",
+    ],
+    indications: [
+      "Blood bruising from trauma",
+      "Tendon sprain strain from falls",
+      "Joint bone swelling pain",
+      "Rheumatic numbness",
+      "Limb muscle aching",
+      "Prostate enlargement",
+    ],
+    dosage:
+      "External use: fresh leaves and bulb pounded applied externally to injured swollen painful area. Internal use: dried leaves and bulb 6-10g decoction (caution alkaloid toxicity)",
+    contraindications: [
+      "Pregnant women",
+      "Should only use externally, careful when taking internally due to toxic alkaloids",
+      "Do not use high doses",
+    ],
+    origin:
+      "Vietnam (grows wild at limestone mountain bases or coastal wasteland areas, cultivated ornamentally)",
+    description:
+      "Nang Hoa Trang (giant crinum lily, also called Đại tướng quân, Tỏi lơi, Náng) is a large herbaceous plant of the Amaryllidaceae family, large spherical or ovoid bulb up to 10cm diameter, constricted at top. Leaves grow straight from bulb, long linear shape, thick blade, 1m or longer, 5-10cm wide, wide sheath at base, pointed tip, entire undulate margins, parallel veins, midvein prominent on lower surface, both surfaces pale green. Flower cluster grows from center of leaf tuft in umbel, on thick flat stalk 40-60cm long, with many large fragrant white flowers, perianth tube narrow green 7-10cm long, 3-merous. Tepals (calyx and petals) similar, long narrow linear; 6 stamens, filaments purple-red; ovary fusiform. Capsule fruit nearly spherical 3-5cm diameter, usually contains only 1 seed. Flowering fruiting season: June-August. In Vietnam, giant crinum lily grows wild at limestone mountain bases or coastal wasteland areas, cultivated ornamentally due to beautiful fragrant flowers. Giant crinum lily is moisture-loving, light-loving plant that can tolerate some heat, grows vigorously in rainy humid season; can produce 4-6 new leaves annually, replacing old leaves that appeared 1 to 1.5 years earlier. In winter plant stops growing. Plant flowers fruits annually. Fruit set rate only about 40-50%. Plant has strong suckering ability from basal shoots. Whole plant especially bulb contains many alkaloids (lycorin, crinamin). Giant crinum lily used externally treats blood bruises from trauma causing pain, tendon sprain strain from falls, joint bone swelling pain, or massage when having rheumatic numbness, limb muscle aching. Recent research shows giant crinum lily also reduces enlarged prostate size. Leaf powder light brown, odorless, slightly bitter taste. Contains very many needle-shaped calcium oxalate crystals, pointed both ends, about 100-110µm long, about 2-3µm diameter, solitary or clustered in bundles.",
   },
   {
     id: 101,
@@ -1788,13 +4499,43 @@ export const medicines = [
     usedParts: "Shoot tips dried or oven dried (Herba Artemisiae vulgaris)",
     properties: "Bitter pungent taste, warm nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Essential oil (cineol, borneol, thymol)", "Flavonoid", "Tannin", "Amino acids (adenine, choline)"],
-    uses: ["Warms channels stops bleeding", "Regulates menstruation", "Calms fetus", "Aids digestion", "Relieves pain", "Makes moxa in acupuncture"],
-    indications: ["Irregular menstruation", "Uterine bleeding", "Metrorrhagia", "Hematemesis", "Qi deficiency leucorrhea", "Threatened miscarriage", "Enteritis", "Dysentery", "Abdominal pain", "Vomiting", "Traumatic pain"],
-    dosage: "Dried shoot tips: 6-12g decoction. External use: decoction wash or hot compress treats traumatic pain. For moxa: roll dried leaves into cones for burning in acupuncture",
-    contraindications: ["People with yin deficiency fire excess", "Pregnant women (need caution)"],
-    origin: "Vietnam (grows wild in many places, also found in many other countries in Asia and Europe)",
-    description: "Ngai Cuu (mugwort, also called Thuốc cứu, Ngải diệp) is a perennial herbaceous plant of the Asteraceae family 50-60cm tall, stem grooved longitudinally with fine hairs. Leaves alternate, various forms: upper leaves entire lanceolate; lower leaves dissected once or twice pinnately, broad blade divided 5 lobes, 2-3 times, upper surface smooth dark green, lower surface ashy white due to many fine white hairs. Flowers in compound clusters of many capitula; bearing female or bisexual flowers, usually female; female flowers tubular corolla, blunt or toothed at tip, bisexual flowers funnel-shaped corolla, 5 lobes, curved outward; 5 stamens. Achene fruit small spindle-shaped. Flowering fruiting season October-December. Mugwort grows wild in many places in Vietnam, also found in many other countries in Asia, and Europe too. Shoot tips dried or oven dried harvested when plant has flowers, use fresh or shade dry or lightly oven dry until dried. Plant contains essential oil (cineol, borneol, thymol), flavonoid, tannin, amino acids (adenine, choline). Mugwort has warming channels stopping bleeding, regulating menstruation, calming fetus, aiding digestion, relieving pain effects. Treats irregular menstruation, uterine bleeding, metrorrhagia, hematemesis, qi deficiency leucorrhea, threatened miscarriage, enteritis, dysentery. Also used as digestive aid medicine treats abdominal pain, vomiting, makes moxa in acupuncture. External use hot compress treats traumatic pain. Epidermis bears 2 types of multicellular protective hairs: uniseriate multicellular hair and T-shaped multicellular hair (hair tip has 1 fusiform cell lying horizontally, hair base multicellular attached to middle of fusiform cell). Has secretory hair with tip having one cell, base having 3 cells. Contains sclerenchyma fibers spindle-shaped thick walls, wide lumen, with distinct pits."
+    mainIngredients: [
+      "Essential oil (cineol, borneol, thymol)",
+      "Flavonoid",
+      "Tannin",
+      "Amino acids (adenine, choline)",
+    ],
+    uses: [
+      "Warms channels stops bleeding",
+      "Regulates menstruation",
+      "Calms fetus",
+      "Aids digestion",
+      "Relieves pain",
+      "Makes moxa in acupuncture",
+    ],
+    indications: [
+      "Irregular menstruation",
+      "Uterine bleeding",
+      "Metrorrhagia",
+      "Hematemesis",
+      "Qi deficiency leucorrhea",
+      "Threatened miscarriage",
+      "Enteritis",
+      "Dysentery",
+      "Abdominal pain",
+      "Vomiting",
+      "Traumatic pain",
+    ],
+    dosage:
+      "Dried shoot tips: 6-12g decoction. External use: decoction wash or hot compress treats traumatic pain. For moxa: roll dried leaves into cones for burning in acupuncture",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Pregnant women (need caution)",
+    ],
+    origin:
+      "Vietnam (grows wild in many places, also found in many other countries in Asia and Europe)",
+    description:
+      "Ngai Cuu (mugwort, also called Thuốc cứu, Ngải diệp) is a perennial herbaceous plant of the Asteraceae family 50-60cm tall, stem grooved longitudinally with fine hairs. Leaves alternate, various forms: upper leaves entire lanceolate; lower leaves dissected once or twice pinnately, broad blade divided 5 lobes, 2-3 times, upper surface smooth dark green, lower surface ashy white due to many fine white hairs. Flowers in compound clusters of many capitula; bearing female or bisexual flowers, usually female; female flowers tubular corolla, blunt or toothed at tip, bisexual flowers funnel-shaped corolla, 5 lobes, curved outward; 5 stamens. Achene fruit small spindle-shaped. Flowering fruiting season October-December. Mugwort grows wild in many places in Vietnam, also found in many other countries in Asia, and Europe too. Shoot tips dried or oven dried harvested when plant has flowers, use fresh or shade dry or lightly oven dry until dried. Plant contains essential oil (cineol, borneol, thymol), flavonoid, tannin, amino acids (adenine, choline). Mugwort has warming channels stopping bleeding, regulating menstruation, calming fetus, aiding digestion, relieving pain effects. Treats irregular menstruation, uterine bleeding, metrorrhagia, hematemesis, qi deficiency leucorrhea, threatened miscarriage, enteritis, dysentery. Also used as digestive aid medicine treats abdominal pain, vomiting, makes moxa in acupuncture. External use hot compress treats traumatic pain. Epidermis bears 2 types of multicellular protective hairs: uniseriate multicellular hair and T-shaped multicellular hair (hair tip has 1 fusiform cell lying horizontally, hair base multicellular attached to middle of fusiform cell). Has secretory hair with tip having one cell, base having 3 cells. Contains sclerenchyma fibers spindle-shaped thick walls, wide lumen, with distinct pits.",
   },
   {
     id: 102,
@@ -1803,17 +4544,46 @@ export const medicines = [
     scientificName: "Curcuma longa L.",
     family: "Họ Gừng (Zingiberaceae)",
     categoryId: "zingiberaceae",
-    image: "https://thuocdantoc.vn/wp-content/uploads/2019/05/cay-nghe-den-1.jpg",
-    usedParts: "Rhizome (Rhizoma Curcumae longae), Khương hoàng (rhizome attached to leaf base), Uất kim (root tubers growing from rhizome)",
+    image:
+      "https://thuocdantoc.vn/wp-content/uploads/2019/05/cay-nghe-den-1.jpg",
+    usedParts:
+      "Rhizome (Rhizoma Curcumae longae), Khương hoàng (rhizome attached to leaf base), Uất kim (root tubers growing from rhizome)",
     properties: "Bitter pungent taste, warm nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Curcuminoids (curcumin I, II, III)", "Essential oil [sesquiterpenes: zingiberene, turmerone, arturmerone]", "Starch"],
-    uses: ["Activates blood moves qi", "Opens channels relieves pain", "Anti-inflammatory", "Benefits gallbladder", "Treats stomach ulcers", "Heals wounds"],
-    indications: ["Gastric ulcers inflammation", "Jaundice from bile obstruction", "Irregular menstruation", "Amenorrhea", "Blood stasis after childbirth", "Traumatic injury blood stasis", "Carbuncles abscesses", "Scabies sores", "External skin inflammation ulceration"],
-    dosage: "Dried rhizome: 6-12g decoction. External use: fresh turmeric juice applied to carbuncles, external skin inflammation ulceration, or pounded applied to wounds",
-    contraindications: ["People with spleen-stomach deficiency cold", "Pregnant women"],
-    origin: "Vietnam (cultivated everywhere throughout country as spice and medicine)",
-    description: "Nghe (turmeric, also called Khương hoàng) is a perennial herbaceous plant of the Zingiberaceae family about 1m tall. Rhizome develops into blocky tuber, many branching tuberous roots orange-yellow color. Thick roots growing from rhizome, terminal segment always swells into fusiform shape. Leaves alternate; leaf sheaths broad strap-shaped overlapping like short pseudostem. Tubular flowers yellow arranged in cylindrical spike at pseudostem tip; bracts green or pale white at base, pink-tinged at upper part. Fruit spherical with 3 chambers. Cultivated everywhere throughout Vietnam as spice and medicine. Rhizome attached to leaf base usually called Khương hoàng; root tubers growing from rhizome Turmeric called Uất kim. Turmeric rhizome contains curcuminoids (including curcumin I, II, III), essential oil including sesquiterpenes like zingiberene, turmerone, arturmerone. Also contains starch. Turmeric used to treat gastric ulcers inflammation, jaundice from bile obstruction, irregular menstruation, amenorrhea, blood stasis after childbirth, traumatic injury blood stasis. External use helps wounds, carbuncles abscesses, scabies sores quickly grow new skin. External use, take fresh turmeric juice to apply carbuncles, external skin inflammation ulceration. Cork layer thick consisting of many rows flat cells, scattered among them some yellow or gray-green cells, outer layer scattered with long unicellular hairs. Cortex parenchyma consists of large round thin-walled cells, containing starch granules and scattered in parenchyma are essential oil secretory cells yellow color and small phloem-xylem bundles. Starch granules ovate 12-50µm long, 8-21µm wide, with concentric striations and eccentric hilum."
+    mainIngredients: [
+      "Curcuminoids (curcumin I, II, III)",
+      "Essential oil [sesquiterpenes: zingiberene, turmerone, arturmerone]",
+      "Starch",
+    ],
+    uses: [
+      "Activates blood moves qi",
+      "Opens channels relieves pain",
+      "Anti-inflammatory",
+      "Benefits gallbladder",
+      "Treats stomach ulcers",
+      "Heals wounds",
+    ],
+    indications: [
+      "Gastric ulcers inflammation",
+      "Jaundice from bile obstruction",
+      "Irregular menstruation",
+      "Amenorrhea",
+      "Blood stasis after childbirth",
+      "Traumatic injury blood stasis",
+      "Carbuncles abscesses",
+      "Scabies sores",
+      "External skin inflammation ulceration",
+    ],
+    dosage:
+      "Dried rhizome: 6-12g decoction. External use: fresh turmeric juice applied to carbuncles, external skin inflammation ulceration, or pounded applied to wounds",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Pregnant women",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere throughout country as spice and medicine)",
+    description:
+      "Nghe (turmeric, also called Khương hoàng) is a perennial herbaceous plant of the Zingiberaceae family about 1m tall. Rhizome develops into blocky tuber, many branching tuberous roots orange-yellow color. Thick roots growing from rhizome, terminal segment always swells into fusiform shape. Leaves alternate; leaf sheaths broad strap-shaped overlapping like short pseudostem. Tubular flowers yellow arranged in cylindrical spike at pseudostem tip; bracts green or pale white at base, pink-tinged at upper part. Fruit spherical with 3 chambers. Cultivated everywhere throughout Vietnam as spice and medicine. Rhizome attached to leaf base usually called Khương hoàng; root tubers growing from rhizome Turmeric called Uất kim. Turmeric rhizome contains curcuminoids (including curcumin I, II, III), essential oil including sesquiterpenes like zingiberene, turmerone, arturmerone. Also contains starch. Turmeric used to treat gastric ulcers inflammation, jaundice from bile obstruction, irregular menstruation, amenorrhea, blood stasis after childbirth, traumatic injury blood stasis. External use helps wounds, carbuncles abscesses, scabies sores quickly grow new skin. External use, take fresh turmeric juice to apply carbuncles, external skin inflammation ulceration. Cork layer thick consisting of many rows flat cells, scattered among them some yellow or gray-green cells, outer layer scattered with long unicellular hairs. Cortex parenchyma consists of large round thin-walled cells, containing starch granules and scattered in parenchyma are essential oil secretory cells yellow color and small phloem-xylem bundles. Starch granules ovate 12-50µm long, 8-21µm wide, with concentric striations and eccentric hilum.",
   },
   {
     id: 103,
@@ -1823,16 +4593,41 @@ export const medicines = [
     family: "Họ Cà phê (Rubiaceae)",
     categoryId: "rubiaceae",
     image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800",
-    usedParts: "Roots (Radix Morindae), fruits (Fructus Morindae), leaves (Folium Morindae), bark (Cortex Morindae)",
+    usedParts:
+      "Roots (Radix Morindae), fruits (Fructus Morindae), leaves (Folium Morindae), bark (Cortex Morindae)",
     properties: "Sweet bitter taste, cool nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Anthraquinone glycosides [morindin, damnacanthal, alizarin]", "Organic acids (caproic acid, caprylic acid)", "Alkaloid (xeronine)"],
-    uses: ["Laxative", "Diuretic", "Regulates menstruation", "Activates blood", "Dispels wind-dampness", "Soothes liver descends rebellious qi", "Reduces fever", "Enhances immunity"],
-    indications: ["Constipation", "Urinary retention", "Menstrual disorders", "Cough asthma", "Joint bone pain", "High blood pressure", "Postpartum weakness in women"],
-    dosage: "Dried fruits: 10-15g decoction. Dried roots: 10-20g decoction. Fresh fruits: 30-60g eat directly or juice drink",
+    mainIngredients: [
+      "Anthraquinone glycosides [morindin, damnacanthal, alizarin]",
+      "Organic acids (caproic acid, caprylic acid)",
+      "Alkaloid (xeronine)",
+    ],
+    uses: [
+      "Laxative",
+      "Diuretic",
+      "Regulates menstruation",
+      "Activates blood",
+      "Dispels wind-dampness",
+      "Soothes liver descends rebellious qi",
+      "Reduces fever",
+      "Enhances immunity",
+    ],
+    indications: [
+      "Constipation",
+      "Urinary retention",
+      "Menstrual disorders",
+      "Cough asthma",
+      "Joint bone pain",
+      "High blood pressure",
+      "Postpartum weakness in women",
+    ],
+    dosage:
+      "Dried fruits: 10-15g decoction. Dried roots: 10-20g decoction. Fresh fruits: 30-60g eat directly or juice drink",
     contraindications: ["People with deficiency cold", "Chronic diarrhea"],
-    origin: "Vietnam (commonly found in South region, not seen in North region)",
-    description: "Nhau (noni, also called Nhàu núi, Cây ngao, Cây mặt quỷ) is a small tree 6-8m tall of the Rubiaceae family, smooth trunk with many branches. Leaves shiny green, opposite ovate-oblong 12-30cm long, 6-15cm wide, undulate margins, petiole 0.5-1.2cm long; large stipules 0.8-1.3cm. Flower clusters in leaf axils or opposite leaves forming round or oblong heads 2-4cm, white flowers forming mass stuck together by calyx; corolla tube 0.7-1.2cm long, hairy at throat, 5 lanceolate petals, 5 stamens, short hairy filaments, 2-chambered ovary. Syncarp fruit formed by many individual fruits tightly stuck together. Fruit ovoid somewhat elongated, size 4-8cm long, 2.5-5cm wide; stalk about 0.5-1cm long, easily drops when ripe. Mature fruit green color, firm texture, bumpy surface with many polygonal eyes, each 'eye' is one individual fruit consisting of soft pulp layer surrounding one ovate seed. When ripe, fruit white or pale yellow color, soft texture, easily crumbles, fishy smell. Seeds ovate, about 0.5-1cm long, outer shell shiny brown, seed kernel white, contains much fatty oil. Commonly found in South Vietnam, not seen in North region. Roots, fruits, leaves all contain anthraquinone glycosides of dye group (morindin, damnacanthal, alizarin). Additionally, Noni contains organic acids (caproic acid, caprylic acid), alkaloid (xeronine) and other compounds. Fruits have laxative, diuretic, regulating menstruation, activating blood effects. Treats constipation, urinary retention, regulates menstruation, reduces fever, treats cough asthma; also used to enhance immunity, increase body resistance. Roots have dispelling wind-dampness, laxative, soothing liver descending rebellious qi effects. Treats joint bone pain, high blood pressure, postpartum weakness in women; also used to enhance immunity, increase body resistance. Fruit epidermis has stomata, parenchyma contains needle-shaped calcium oxalate crystals clustered in bundles. Seeds contain very many fatty oil droplets in endosperm."
+    origin:
+      "Vietnam (commonly found in South region, not seen in North region)",
+    description:
+      "Nhau (noni, also called Nhàu núi, Cây ngao, Cây mặt quỷ) is a small tree 6-8m tall of the Rubiaceae family, smooth trunk with many branches. Leaves shiny green, opposite ovate-oblong 12-30cm long, 6-15cm wide, undulate margins, petiole 0.5-1.2cm long; large stipules 0.8-1.3cm. Flower clusters in leaf axils or opposite leaves forming round or oblong heads 2-4cm, white flowers forming mass stuck together by calyx; corolla tube 0.7-1.2cm long, hairy at throat, 5 lanceolate petals, 5 stamens, short hairy filaments, 2-chambered ovary. Syncarp fruit formed by many individual fruits tightly stuck together. Fruit ovoid somewhat elongated, size 4-8cm long, 2.5-5cm wide; stalk about 0.5-1cm long, easily drops when ripe. Mature fruit green color, firm texture, bumpy surface with many polygonal eyes, each 'eye' is one individual fruit consisting of soft pulp layer surrounding one ovate seed. When ripe, fruit white or pale yellow color, soft texture, easily crumbles, fishy smell. Seeds ovate, about 0.5-1cm long, outer shell shiny brown, seed kernel white, contains much fatty oil. Commonly found in South Vietnam, not seen in North region. Roots, fruits, leaves all contain anthraquinone glycosides of dye group (morindin, damnacanthal, alizarin). Additionally, Noni contains organic acids (caproic acid, caprylic acid), alkaloid (xeronine) and other compounds. Fruits have laxative, diuretic, regulating menstruation, activating blood effects. Treats constipation, urinary retention, regulates menstruation, reduces fever, treats cough asthma; also used to enhance immunity, increase body resistance. Roots have dispelling wind-dampness, laxative, soothing liver descending rebellious qi effects. Treats joint bone pain, high blood pressure, postpartum weakness in women; also used to enhance immunity, increase body resistance. Fruit epidermis has stomata, parenchyma contains needle-shaped calcium oxalate crystals clustered in bundles. Seeds contain very many fatty oil droplets in endosperm.",
   },
   {
     id: 104,
@@ -1842,16 +4637,50 @@ export const medicines = [
     family: "Họ Long não (Lauraceae)",
     categoryId: "lauraceae",
     image: "https://images.unsplash.com/photo-1599909245889-89520d4a47bb?w=800",
-    usedParts: "Bark (Quế nhục - Cortex Cinnamomi), small branches (Quế chi - Caulis Cinnamomi), cinnamon essential oil (Oleum Cinnamomi)",
+    usedParts:
+      "Bark (Quế nhục - Cortex Cinnamomi), small branches (Quế chi - Caulis Cinnamomi), cinnamon essential oil (Oleum Cinnamomi)",
     properties: "Pungent sweet taste, warm hot nature",
     meridians: "Liver, Kidney, Spleen, Heart meridians",
-    mainIngredients: ["Essential oil 1-3% [cinnamic aldehyde ≥85%]", "Diterpenoid", "Phenylpropanoid", "Mucilage", "Flavonoid", "Tannin", "Lignan", "Coumarin"],
-    uses: ["Warms middle disperses cold", "Tonifies fire assists yang", "Opens vessels relieves pain", "Warms channels opens vessels", "Treats common cold wind-cold"],
-    indications: ["Cold back knee pain", "Cold abdominal pain", "Vomiting", "Diarrhea", "Amenorrhea", "Menstrual abdominal pain", "Edema swelling", "Urinary disorders (urination not smooth, frequent urination)", "Common cold wind-cold"],
-    dosage: "Cinnamon bark (Quế nhục): 3-6g decoction or powder drink. Cinnamon twigs (Quế chi): 6-10g decoction. Should not decoct long to preserve essential oil content",
-    contraindications: ["Pregnant women", "People with yin deficiency fire excess", "Nosebleed, coughing blood", "Do not use high doses or long-term"],
-    origin: "Vietnam (originated from Vietnam, cultivated long ago in some Central and North provinces)",
-    description: "Que (Vietnamese cinnamon, also called Quế Việt Nam, Quế Sài Gòn, Quế Thanh) is a large tree of the Lauraceae family 10-20m tall. Branches cylindrical, smooth, brown color. Leaves alternate, thick hard and tough, lanceolate 12-25cm long, 4-8cm wide, narrow base, pointed tip, upper surface smooth shiny dark green, lower surface ashy gray, slightly hairy when young; 3 curved veins, prominent on lower surface, lateral veins extending to leaf tip, many parallel minor veins; petiole thick 1.5-2cm long, grooved on upper surface. Flower clusters in leaf axils near branch tips forming panicles 7-15cm long; perianth consists of 6 nearly equal segments, white, 3mm long, hairy on outer surface. Drupe fruit ovate or ellipsoid with ridges 1.2-1.3cm long, sitting in persistent calyx either whole or lobed. Bark and leaves crushed have fragrant smell. Flowering season: April-July; fruiting season: October-December. Cinnamon originated in Vietnam, cultivated long ago in some Central and North Vietnam provinces. Cinnamon is light-loving and shade-tolerant tree, especially when young (1-5 years). Plant prefers hot humid tropical climate, average annual temperature 22-23°C; average air humidity about 80%; annual rainfall about 1,600mm or more. Plant grows on many types of moist humus-rich loose soil, pH 4.5-5.5. Harvest bark when tree planted 10 years or more, in April-May and September-October when tree has much sap, easy to peel. Cinnamon bark contains essential oil 1-3% with pungent sweet taste, main component is cinnamic aldehyde (not less than 85%). Also has diterpenoid, phenylpropanoid, mucilage, flavonoid, tannin, lignan and coumarin compounds. Quế nhục treats cold back knee pain, cold abdominal pain, vomiting, diarrhea, amenorrhea, menstrual abdominal pain, edema swelling, urinary disorders. Quế chi treats common cold wind-cold. Cork consists of many cell layers arranged in rows, in cortex parenchyma has essential oil secretory cells, mucilage secretory cells, small needle-shaped calcium oxalate crystals. Bark powder yellow-brown or dark brown, fragrant smell, pungent slightly sweet taste, contains many fibers and sclerenchyma cells."
+    mainIngredients: [
+      "Essential oil 1-3% [cinnamic aldehyde ≥85%]",
+      "Diterpenoid",
+      "Phenylpropanoid",
+      "Mucilage",
+      "Flavonoid",
+      "Tannin",
+      "Lignan",
+      "Coumarin",
+    ],
+    uses: [
+      "Warms middle disperses cold",
+      "Tonifies fire assists yang",
+      "Opens vessels relieves pain",
+      "Warms channels opens vessels",
+      "Treats common cold wind-cold",
+    ],
+    indications: [
+      "Cold back knee pain",
+      "Cold abdominal pain",
+      "Vomiting",
+      "Diarrhea",
+      "Amenorrhea",
+      "Menstrual abdominal pain",
+      "Edema swelling",
+      "Urinary disorders (urination not smooth, frequent urination)",
+      "Common cold wind-cold",
+    ],
+    dosage:
+      "Cinnamon bark (Quế nhục): 3-6g decoction or powder drink. Cinnamon twigs (Quế chi): 6-10g decoction. Should not decoct long to preserve essential oil content",
+    contraindications: [
+      "Pregnant women",
+      "People with yin deficiency fire excess",
+      "Nosebleed, coughing blood",
+      "Do not use high doses or long-term",
+    ],
+    origin:
+      "Vietnam (originated from Vietnam, cultivated long ago in some Central and North provinces)",
+    description:
+      "Que (Vietnamese cinnamon, also called Quế Việt Nam, Quế Sài Gòn, Quế Thanh) is a large tree of the Lauraceae family 10-20m tall. Branches cylindrical, smooth, brown color. Leaves alternate, thick hard and tough, lanceolate 12-25cm long, 4-8cm wide, narrow base, pointed tip, upper surface smooth shiny dark green, lower surface ashy gray, slightly hairy when young; 3 curved veins, prominent on lower surface, lateral veins extending to leaf tip, many parallel minor veins; petiole thick 1.5-2cm long, grooved on upper surface. Flower clusters in leaf axils near branch tips forming panicles 7-15cm long; perianth consists of 6 nearly equal segments, white, 3mm long, hairy on outer surface. Drupe fruit ovate or ellipsoid with ridges 1.2-1.3cm long, sitting in persistent calyx either whole or lobed. Bark and leaves crushed have fragrant smell. Flowering season: April-July; fruiting season: October-December. Cinnamon originated in Vietnam, cultivated long ago in some Central and North Vietnam provinces. Cinnamon is light-loving and shade-tolerant tree, especially when young (1-5 years). Plant prefers hot humid tropical climate, average annual temperature 22-23°C; average air humidity about 80%; annual rainfall about 1,600mm or more. Plant grows on many types of moist humus-rich loose soil, pH 4.5-5.5. Harvest bark when tree planted 10 years or more, in April-May and September-October when tree has much sap, easy to peel. Cinnamon bark contains essential oil 1-3% with pungent sweet taste, main component is cinnamic aldehyde (not less than 85%). Also has diterpenoid, phenylpropanoid, mucilage, flavonoid, tannin, lignan and coumarin compounds. Quế nhục treats cold back knee pain, cold abdominal pain, vomiting, diarrhea, amenorrhea, menstrual abdominal pain, edema swelling, urinary disorders. Quế chi treats common cold wind-cold. Cork consists of many cell layers arranged in rows, in cortex parenchyma has essential oil secretory cells, mucilage secretory cells, small needle-shaped calcium oxalate crystals. Bark powder yellow-brown or dark brown, fragrant smell, pungent slightly sweet taste, contains many fibers and sclerenchyma cells.",
   },
   {
     id: 105,
@@ -1864,13 +4693,46 @@ export const medicines = [
     usedParts: "Whole plant (Herba Centellae asiaticae)",
     properties: "Bitter taste, cool nature",
     meridians: "Liver, Spleen, Kidney meridians",
-    mainIngredients: ["Saponin (asiaticoside, madecassoside, asiatic acid, madecassic acid)", "Flavonoid", "Alkaloid (hydrocotylin)", "Essential oil"],
-    uses: ["Clears heat detoxifies", "Promotes urination unblocks strangury", "Activates blood", "Reduces swelling", "Heals wounds", "Lowers blood pressure", "Nourishes brain"],
-    indications: ["Fever", "Boils abscesses", "Liver disease jaundice", "Nosebleed", "Wounds", "Burns", "Constipation", "Cholera dysentery", "Painful difficult urination", "Qi deficiency leucorrhea", "Insufficient lactation", "High blood pressure", "Leprosy", "Tuberculosis"],
-    dosage: "Whole fresh plant: 30-60g decoction or pound juice drink. Whole dried plant: 10-20g decoction. External use: pound apply or juice apply to wounds, burns",
-    contraindications: ["People with deficiency cold", "Do not use high doses prolonged"],
+    mainIngredients: [
+      "Saponin (asiaticoside, madecassoside, asiatic acid, madecassic acid)",
+      "Flavonoid",
+      "Alkaloid (hydrocotylin)",
+      "Essential oil",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Promotes urination unblocks strangury",
+      "Activates blood",
+      "Reduces swelling",
+      "Heals wounds",
+      "Lowers blood pressure",
+      "Nourishes brain",
+    ],
+    indications: [
+      "Fever",
+      "Boils abscesses",
+      "Liver disease jaundice",
+      "Nosebleed",
+      "Wounds",
+      "Burns",
+      "Constipation",
+      "Cholera dysentery",
+      "Painful difficult urination",
+      "Qi deficiency leucorrhea",
+      "Insufficient lactation",
+      "High blood pressure",
+      "Leprosy",
+      "Tuberculosis",
+    ],
+    dosage:
+      "Whole fresh plant: 30-60g decoction or pound juice drink. Whole dried plant: 10-20g decoction. External use: pound apply or juice apply to wounds, burns",
+    contraindications: [
+      "People with deficiency cold",
+      "Do not use high doses prolonged",
+    ],
     origin: "Vietnam (grows wild everywhere)",
-    description: "Rau Ma (gotu kola, also called Tích tuyết thảo, Liên tiền thảo) is a creeping herbaceous plant of the Apiaceae family, branching. Roots grow from stem nodes. Leaves alternate, but usually clustered 2-5 leaves at one node; long petiole, blade reniform or round, margins crenate. Simple umbel flower clusters in leaf axils, small white or pinkish flowers; short filaments; spherical ovary. Fruit dark brown, depressed apex, 7-9 raised ridges, smooth or with small hairs, reticulate veins. Flowering fruiting season April-June. Grows wild everywhere in Vietnam. Whole plant use fresh, sun or oven dry. Plant contains saponin (asiaticoside, madecassoside, asiatic acid, madecassic acid). Also has flavonoid, alkaloid (hydrocotylin), essential oil. Gotu kola used to treat fever, detoxify, boils abscesses, liver disease jaundice, nosebleed, heals wounds, treats burns, constipation, cholera dysentery, painful difficult urination, qi deficiency leucorrhea, insufficient lactation, lowers blood pressure. Also treats leprosy and tuberculosis. Epidermis consists of 2-3 rows rectangular cells. Secretory duct adjacent to epidermis, diameter 23-24µm consists of 5-7 secretory cells. Collateral phloem-xylem bundles arranged in continuous circle, each bundle consists of sclerenchyma mass, phloem and xylem."
+    description:
+      "Rau Ma (gotu kola, also called Tích tuyết thảo, Liên tiền thảo) is a creeping herbaceous plant of the Apiaceae family, branching. Roots grow from stem nodes. Leaves alternate, but usually clustered 2-5 leaves at one node; long petiole, blade reniform or round, margins crenate. Simple umbel flower clusters in leaf axils, small white or pinkish flowers; short filaments; spherical ovary. Fruit dark brown, depressed apex, 7-9 raised ridges, smooth or with small hairs, reticulate veins. Flowering fruiting season April-June. Grows wild everywhere in Vietnam. Whole plant use fresh, sun or oven dry. Plant contains saponin (asiaticoside, madecassoside, asiatic acid, madecassic acid). Also has flavonoid, alkaloid (hydrocotylin), essential oil. Gotu kola used to treat fever, detoxify, boils abscesses, liver disease jaundice, nosebleed, heals wounds, treats burns, constipation, cholera dysentery, painful difficult urination, qi deficiency leucorrhea, insufficient lactation, lowers blood pressure. Also treats leprosy and tuberculosis. Epidermis consists of 2-3 rows rectangular cells. Secretory duct adjacent to epidermis, diameter 23-24µm consists of 5-7 secretory cells. Collateral phloem-xylem bundles arranged in continuous circle, each bundle consists of sclerenchyma mass, phloem and xylem.",
   },
   {
     id: 106,
@@ -1883,13 +4745,37 @@ export const medicines = [
     usedParts: "Stems branches bearing leaves, flowers (Herba Orthosiphonis)",
     properties: "Slightly bitter taste, cool nature",
     meridians: "Kidney, Bladder meridians",
-    mainIngredients: ["Saponin (orthosiphonin and derivatives)", "Flavonoid (sinensetin, tetramethylscutellarein)", "Caffeic acid derivatives (rosmarinic acid, 2,3-dicaffeoyltartaric acid)", "Potassium salts"],
-    uses: ["Diuretic", "Clears heat", "Anti-inflammatory", "Eliminates dampness", "Prevents kidney stones", "Inhibits tumor cells"],
-    indications: ["Kidney stones", "Gallstones", "Fever rash", "Influenza", "Rheumatic numbness", "Edema"],
-    dosage: "Dried stems branches leaves flowers: 10-20g decoction. Combining with Kim tien thao treats kidney stones, gallstones very well",
-    contraindications: ["People with low blood pressure", "Do not use on empty stomach"],
+    mainIngredients: [
+      "Saponin (orthosiphonin and derivatives)",
+      "Flavonoid (sinensetin, tetramethylscutellarein)",
+      "Caffeic acid derivatives (rosmarinic acid, 2,3-dicaffeoyltartaric acid)",
+      "Potassium salts",
+    ],
+    uses: [
+      "Diuretic",
+      "Clears heat",
+      "Anti-inflammatory",
+      "Eliminates dampness",
+      "Prevents kidney stones",
+      "Inhibits tumor cells",
+    ],
+    indications: [
+      "Kidney stones",
+      "Gallstones",
+      "Fever rash",
+      "Influenza",
+      "Rheumatic numbness",
+      "Edema",
+    ],
+    dosage:
+      "Dried stems branches leaves flowers: 10-20g decoction. Combining with Kim tien thao treats kidney stones, gallstones very well",
+    contraindications: [
+      "People with low blood pressure",
+      "Do not use on empty stomach",
+    ],
     origin: "Vietnam (grows wild and cultivated)",
-    description: "Rau Meo (cat's whiskers, also called Bông bạc) is a small plant of the Lamiaceae family, perennial, 0.5-1m tall. Plant has stamens and pistils of flowers protruding like cat whiskers. Stem square-angled, bearing many branches. Leaves opposite, each leaf pair grows crosswise to previous leaf pair. Petiole very short, about 2-5mm. Terminal erect flower clusters growing in whorls, flower color when young is white, later turns purple-blue. Flowers bloom throughout summer. Grows wild and cultivated in Vietnam. Propagate by seeds or stem cuttings. Plant contains saponin (orthosiphonin and derivatives), flavonoid (sinensetin), caffeic acid derivatives (rosmarinic acid, 2,3-dicaffeoyltartaric acid), potassium salts. Whole plant cat's whiskers extract has strong diuretic effect, clears heat, anti-inflammatory eliminates dampness. Flavonoids in cat's whiskers help promote urination. Active compound orthosiphonin and potassium salts keep uric acids and urate salts in dissolved form, prevent precipitation helps prevent kidney stone formation. Compounds sinensetin and tetramethylscutellarein have tumor cell inhibiting effects. Used as diuretic medicine in kidney stones, gallstones diseases, fever rash, influenza, rheumatic numbness, edema. Combining medicine Kim tien thao treats kidney stones, gallstones very well. Epidermis bears protective hairs and secretory hairs. Protective hairs consist of 2-6 cells, hair surface covered with bumpy cutin. Secretory hairs have short base 1-2 cells, head 2-4 cells."
+    description:
+      "Rau Meo (cat's whiskers, also called Bông bạc) is a small plant of the Lamiaceae family, perennial, 0.5-1m tall. Plant has stamens and pistils of flowers protruding like cat whiskers. Stem square-angled, bearing many branches. Leaves opposite, each leaf pair grows crosswise to previous leaf pair. Petiole very short, about 2-5mm. Terminal erect flower clusters growing in whorls, flower color when young is white, later turns purple-blue. Flowers bloom throughout summer. Grows wild and cultivated in Vietnam. Propagate by seeds or stem cuttings. Plant contains saponin (orthosiphonin and derivatives), flavonoid (sinensetin), caffeic acid derivatives (rosmarinic acid, 2,3-dicaffeoyltartaric acid), potassium salts. Whole plant cat's whiskers extract has strong diuretic effect, clears heat, anti-inflammatory eliminates dampness. Flavonoids in cat's whiskers help promote urination. Active compound orthosiphonin and potassium salts keep uric acids and urate salts in dissolved form, prevent precipitation helps prevent kidney stone formation. Compounds sinensetin and tetramethylscutellarein have tumor cell inhibiting effects. Used as diuretic medicine in kidney stones, gallstones diseases, fever rash, influenza, rheumatic numbness, edema. Combining medicine Kim tien thao treats kidney stones, gallstones very well. Epidermis bears protective hairs and secretory hairs. Protective hairs consist of 2-6 cells, hair surface covered with bumpy cutin. Secretory hairs have short base 1-2 cells, head 2-4 cells.",
   },
   {
     id: 107,
@@ -1898,17 +4784,41 @@ export const medicines = [
     scientificName: "Alpinia officinarum Hance.",
     family: "Họ Gừng (Zingiberaceae)",
     categoryId: "zingiberaceae",
-    image: "https://cayxanh.canhquannhaxanh.com/wp-content/uploads/2021/08/cay-rieng-tia-7.jpg",
+    image:
+      "https://cayxanh.canhquannhaxanh.com/wp-content/uploads/2021/08/cay-rieng-tia-7.jpg",
     usedParts: "Rhizome (Rhizoma Alpiniae)",
     properties: "Pungent taste, warm nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Essential oil (cineol, methyl cinnamate, galangol)", "Flavonoid (galangin, alpinin, kaempferol)"],
-    uses: ["Warms middle disperses cold", "Stimulates digestion", "Relieves pain", "Stops vomiting"],
-    indications: ["Abdominal distension", "Abdominal pain", "Vomiting", "Gastric and duodenal ulcers", "Chronic stomach pain", "Acute gastroenteritis", "Fever", "Malaria"],
-    dosage: "Dried rhizome: 3-6g decoction or powder. Used as spice in food preparation",
-    contraindications: ["People with yin deficiency fire excess", "Gastric ulcer due to heat"],
-    origin: "Vietnam (grows wild and cultivated everywhere as spice and medicine)",
-    description: "Rieng (galangal, also called Lương khương, Cao lương khương, Tiểu lương khương) is a plant of the Zingiberaceae family about 0.7-1.2m tall, rhizome creeps horizontally, long cylindrical 12-18mm diameter, reddish-brown, covered with many scales, divided into uneven segments, pale white color. Leaves without petiole, with sheath, lanceolate linear, smooth, 22-40cm long, 24mm wide. Spike-like flower cluster grows at branch tip with dense hairs about 10cm long. Flowers very close together, inner surface white, margin slightly thin, with two bract-like leaves, one green, one white. Corolla tubular with 3 blunt lobes, slender shape, 15-20mm long, 4-5mm wide, middle lobe only slightly larger than other lobes, lip petal ovate, 20mm long, 15-18mm wide, white with red-purple stripes. Fruit spherical with hairs. Seeds with aril. Galangal plant grows wild and cultivated throughout Vietnam as spice and medicine. Harvest old rhizomes from 1-year plants, cut off small roots, wash clean, cut into 4-6cm sections, sun dry or process then dry. Rhizome contains essential oil (cineol, methyl cinnamate and one pungent substance galangol), flavonoid (galangin, alpinin, kaempferol). Galangal used as spice helps stimulate digestion, treats abdominal distension, abdominal pain, vomiting. Treats gastric and duodenal ulcers, chronic stomach pain, acute gastroenteritis, treats fever, malaria. Epidermis consists of one layer of relatively evenly arranged small rectangular cells, some cells still contain reddish-brown resin masses. Many essential oil secretory cells scattered throughout inner cortex parenchyma and outer cortex parenchyma. Additionally there is Riềng tàu (Alpinia chinensis) and Riềng nếp (Alpinia galanga)."
+    mainIngredients: [
+      "Essential oil (cineol, methyl cinnamate, galangol)",
+      "Flavonoid (galangin, alpinin, kaempferol)",
+    ],
+    uses: [
+      "Warms middle disperses cold",
+      "Stimulates digestion",
+      "Relieves pain",
+      "Stops vomiting",
+    ],
+    indications: [
+      "Abdominal distension",
+      "Abdominal pain",
+      "Vomiting",
+      "Gastric and duodenal ulcers",
+      "Chronic stomach pain",
+      "Acute gastroenteritis",
+      "Fever",
+      "Malaria",
+    ],
+    dosage:
+      "Dried rhizome: 3-6g decoction or powder. Used as spice in food preparation",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Gastric ulcer due to heat",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated everywhere as spice and medicine)",
+    description:
+      "Rieng (galangal, also called Lương khương, Cao lương khương, Tiểu lương khương) is a plant of the Zingiberaceae family about 0.7-1.2m tall, rhizome creeps horizontally, long cylindrical 12-18mm diameter, reddish-brown, covered with many scales, divided into uneven segments, pale white color. Leaves without petiole, with sheath, lanceolate linear, smooth, 22-40cm long, 24mm wide. Spike-like flower cluster grows at branch tip with dense hairs about 10cm long. Flowers very close together, inner surface white, margin slightly thin, with two bract-like leaves, one green, one white. Corolla tubular with 3 blunt lobes, slender shape, 15-20mm long, 4-5mm wide, middle lobe only slightly larger than other lobes, lip petal ovate, 20mm long, 15-18mm wide, white with red-purple stripes. Fruit spherical with hairs. Seeds with aril. Galangal plant grows wild and cultivated throughout Vietnam as spice and medicine. Harvest old rhizomes from 1-year plants, cut off small roots, wash clean, cut into 4-6cm sections, sun dry or process then dry. Rhizome contains essential oil (cineol, methyl cinnamate and one pungent substance galangol), flavonoid (galangin, alpinin, kaempferol). Galangal used as spice helps stimulate digestion, treats abdominal distension, abdominal pain, vomiting. Treats gastric and duodenal ulcers, chronic stomach pain, acute gastroenteritis, treats fever, malaria. Epidermis consists of one layer of relatively evenly arranged small rectangular cells, some cells still contain reddish-brown resin masses. Many essential oil secretory cells scattered throughout inner cortex parenchyma and outer cortex parenchyma. Additionally there is Riềng tàu (Alpinia chinensis) and Riềng nếp (Alpinia galanga).",
   },
   {
     id: 108,
@@ -1918,16 +4828,29 @@ export const medicines = [
     family: "Họ Lúa (Poaceae)",
     categoryId: "poaceae",
     image: "https://images.unsplash.com/photo-1556911073-52527ac43761?w=800",
-    usedParts: "Whole plant (Herba Cymbopogonis citrati), essential oil (Oleum Cymbopogonis citrati)",
+    usedParts:
+      "Whole plant (Herba Cymbopogonis citrati), essential oil (Oleum Cymbopogonis citrati)",
     properties: "Pungent taste, warm nature",
     meridians: "Spleen, Stomach, Lung meridians",
-    mainIngredients: ["Essential oil [citral A (geranial), citral B (neral), myrcene, nerol, geraniol, citronellal, terpinolene, geranyl acetate, methylheptenone]", "Flavonoid (luteolin, isoorientin 2'-O-rhamnoside, quercetin, kaempferol, apigenin)"],
-    uses: ["Promotes urination", "Induces perspiration", "Aids digestion", "Deodorizes", "Repels flies mosquitoes"],
+    mainIngredients: [
+      "Essential oil [citral A (geranial), citral B (neral), myrcene, nerol, geraniol, citronellal, terpinolene, geranyl acetate, methylheptenone]",
+      "Flavonoid (luteolin, isoorientin 2'-O-rhamnoside, quercetin, kaempferol, apigenin)",
+    ],
+    uses: [
+      "Promotes urination",
+      "Induces perspiration",
+      "Aids digestion",
+      "Deodorizes",
+      "Repels flies mosquitoes",
+    ],
     indications: ["Abdominal distension", "Fever cold", "Urinary retention"],
-    dosage: "Fresh leaves: 20-30g decoction or infusion drink. Lemongrass bulb: 10-20g decoction. Essential oil: 3-5 drops drink or steam inhalation treats fever cold",
+    dosage:
+      "Fresh leaves: 20-30g decoction or infusion drink. Lemongrass bulb: 10-20g decoction. Essential oil: 3-5 drops drink or steam inhalation treats fever cold",
     contraindications: ["People with yin deficiency"],
-    origin: "Vietnam (cultivated everywhere, commonly used as spice and for essential oil extraction)",
-    description: "Sa (lemongrass, also called Cỏ sả, lá sả, hương mao, sả chanh) is a perennial grass species of the Poaceae family, grows in clumps, fibrous roots, 0.8-1.5m tall or more. Rhizome white or slightly purple, short nodes tightly wrapped by leaf sheaths forming lemongrass segments. Leaves narrow like rice leaves, prominent midvein, both surfaces and leaf margins with stiff hairs, rough. Leaf length varies by species, can be 0.2-1.2m. Panicle inflorescence consists of many small sessile spikelets, has 2 flower types on same plant: bisexual and male flowers. Whole plant has special fragrant smell. Lemongrass plant cultivated everywhere throughout Vietnam, commonly used as spice and for essential oil extraction. Essential oil has main components citral A (geranial) and citral B (neral), myrcene and other components (nerol, geraniol, citronellal, terpinolene, geranyl acetate, and methylheptenone) varying by lemongrass type. Characteristic lemongrass smell due to methylheptenone component in essential oil. Also contains flavonoid (luteolin, isoorientin 2'-O-rhamnoside, quercetin, kaempferol and apigenin). Lemongrass leaves used for infusion drink for refreshment and treats abdominal distension; lemongrass bulb promotes urination, induces perspiration, treats fever cold; lemongrass essential oil used as digestive aid medicine, steam inhalation treats fever cold, deodorizes fishy smells and repels flies, mosquitoes. Besides lemongrass species, also has Citronella lemongrass (Cymbopogon winterianus - Java lemongrass, Cymbopogon nardus - Srilanka lemongrass), Palmarosa lemongrass (Cymbopogon martini), and other Lemongrass species (Cymbopogon flexuosus)."
+    origin:
+      "Vietnam (cultivated everywhere, commonly used as spice and for essential oil extraction)",
+    description:
+      "Sa (lemongrass, also called Cỏ sả, lá sả, hương mao, sả chanh) is a perennial grass species of the Poaceae family, grows in clumps, fibrous roots, 0.8-1.5m tall or more. Rhizome white or slightly purple, short nodes tightly wrapped by leaf sheaths forming lemongrass segments. Leaves narrow like rice leaves, prominent midvein, both surfaces and leaf margins with stiff hairs, rough. Leaf length varies by species, can be 0.2-1.2m. Panicle inflorescence consists of many small sessile spikelets, has 2 flower types on same plant: bisexual and male flowers. Whole plant has special fragrant smell. Lemongrass plant cultivated everywhere throughout Vietnam, commonly used as spice and for essential oil extraction. Essential oil has main components citral A (geranial) and citral B (neral), myrcene and other components (nerol, geraniol, citronellal, terpinolene, geranyl acetate, and methylheptenone) varying by lemongrass type. Characteristic lemongrass smell due to methylheptenone component in essential oil. Also contains flavonoid (luteolin, isoorientin 2'-O-rhamnoside, quercetin, kaempferol and apigenin). Lemongrass leaves used for infusion drink for refreshment and treats abdominal distension; lemongrass bulb promotes urination, induces perspiration, treats fever cold; lemongrass essential oil used as digestive aid medicine, steam inhalation treats fever cold, deodorizes fishy smells and repels flies, mosquitoes. Besides lemongrass species, also has Citronella lemongrass (Cymbopogon winterianus - Java lemongrass, Cymbopogon nardus - Srilanka lemongrass), Palmarosa lemongrass (Cymbopogon martini), and other Lemongrass species (Cymbopogon flexuosus).",
   },
   {
     id: 109,
@@ -1940,13 +4863,36 @@ export const medicines = [
     usedParts: "Root tuber (Radix Puerariae)",
     properties: "Sweet pungent taste, cool nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Isoflavone (puerarin, daidzin, daidzein, genistin, genistein)", "Flavonoid", "Triterpenoid saponin", "Starch"],
-    uses: ["Releases muscles", "Vents heat", "Penetrates rashes", "Generates fluids stops thirst", "Raises spleen yang to stop diarrhea"],
-    indications: ["Fever", "Stiff neck", "Thirst", "Diabetes", "Measles not yet erupted", "Dysentery", "Diarrhea due to external pathogens"],
+    mainIngredients: [
+      "Isoflavone (puerarin, daidzin, daidzein, genistin, genistein)",
+      "Flavonoid",
+      "Triterpenoid saponin",
+      "Starch",
+    ],
+    uses: [
+      "Releases muscles",
+      "Vents heat",
+      "Penetrates rashes",
+      "Generates fluids stops thirst",
+      "Raises spleen yang to stop diarrhea",
+    ],
+    indications: [
+      "Fever",
+      "Stiff neck",
+      "Thirst",
+      "Diabetes",
+      "Measles not yet erupted",
+      "Dysentery",
+      "Diarrhea due to external pathogens",
+    ],
     dosage: "Dried root tuber: 9-15g decoction, combined with other medicines",
-    contraindications: ["People with stomach deficiency cold", "People with excessive sweating"],
+    contraindications: [
+      "People with stomach deficiency cold",
+      "People with excessive sweating",
+    ],
     origin: "Vietnam (cultivated and harvested in autumn or winter)",
-    description: "San Day (kudzu, also called Cát căn) is a perennial climbing vine species of the Fabaceae family. Roots develop into large long tubers also called kudzu root. Leaves and petioles slightly hairy. Compound leaves with 3 leaflets alternate entire or lobed. Flower clusters spike-shaped in leaf axils with many blue-purple fragrant flowers. Flat legume pod pale yellow, with soft hairs, constricted between seeds. Root tubers harvested in autumn or winter, dig up root tubers, wash clean, scrape off outer skin, sun or oven dry partially, cut into chunks or split tubers lengthwise or slice thick or pieces and sun or oven dry. Kudzu roots contain isoflavone (puerarin, daidzin, daidzein, genistin, genistein), flavonoid, triterpenoid saponin, starch. Kudzu has releasing muscles, venting heat, penetrating rashes, generating fluids stopping thirst, raising spleen yang to stop diarrhea effects. Treats fever, stiff neck, thirst, diabetes, measles not yet erupted, dysentery, diarrhea due to external pathogens. Cortex parenchyma consists of irregularly multi-angled thin-walled cells. In cortex parenchyma has tertiary phloem-xylem arranged in one concentric circle or small circles. Root powder white slightly yellow, contains many starch granules single hemispherical, nearly round or multi-angled shaped, 3-37µm diameter. Fibers usually clustered in bundles, thick walls lignified, surrounded by cells containing prismatic calcium oxalate crystals forming crystal fibers."
+    description:
+      "San Day (kudzu, also called Cát căn) is a perennial climbing vine species of the Fabaceae family. Roots develop into large long tubers also called kudzu root. Leaves and petioles slightly hairy. Compound leaves with 3 leaflets alternate entire or lobed. Flower clusters spike-shaped in leaf axils with many blue-purple fragrant flowers. Flat legume pod pale yellow, with soft hairs, constricted between seeds. Root tubers harvested in autumn or winter, dig up root tubers, wash clean, scrape off outer skin, sun or oven dry partially, cut into chunks or split tubers lengthwise or slice thick or pieces and sun or oven dry. Kudzu roots contain isoflavone (puerarin, daidzin, daidzein, genistin, genistein), flavonoid, triterpenoid saponin, starch. Kudzu has releasing muscles, venting heat, penetrating rashes, generating fluids stopping thirst, raising spleen yang to stop diarrhea effects. Treats fever, stiff neck, thirst, diabetes, measles not yet erupted, dysentery, diarrhea due to external pathogens. Cortex parenchyma consists of irregularly multi-angled thin-walled cells. In cortex parenchyma has tertiary phloem-xylem arranged in one concentric circle or small circles. Root powder white slightly yellow, contains many starch granules single hemispherical, nearly round or multi-angled shaped, 3-37µm diameter. Fibers usually clustered in bundles, thick walls lignified, surrounded by cells containing prismatic calcium oxalate crystals forming crystal fibers.",
   },
   {
     id: 110,
@@ -1955,17 +4901,47 @@ export const medicines = [
     scientificName: "Abelmoschus sagittifolius (Kurz) Merr.",
     family: "Họ Bông (Malvaceae)",
     categoryId: "malvaceae",
-    image: "https://cdn.tgdd.vn/Files/2023/10/17/1552197/sam-bo-chinh-la-gi-tac-dung-cua-cay-sam-bo-chinh-202310180815398326.jpg",
+    image:
+      "https://cdn.tgdd.vn/Files/2023/10/17/1552197/sam-bo-chinh-la-gi-tac-dung-cua-cay-sam-bo-chinh-202310180815398326.jpg",
     usedParts: "Root tuber (Radix Abelmoschi sagittifolii)",
     properties: "Sweet taste, neutral nature",
     meridians: "Spleen, Stomach, Lung meridians",
-    mainIngredients: ["Mucilage (30-40%)", "Sesquiterpenoid (acyl hibiscone, (R)-lasiodiplodin, hibiscone B)", "Phytosterol", "Coumarin", "Fatty acids", "Organic acids", "Protein"],
-    uses: ["Tonifies qi", "Nourishes blood", "Strengthens spleen", "Calms spirit", "Stops cough"],
-    indications: ["Body weakness", "Deficiency taxation", "Poor appetite", "Poor sleep", "Neurasthenia", "Blurred vision", "Dizziness", "Stomach pain", "Diarrhea", "Cough", "Sore throat", "Bronchitis"],
+    mainIngredients: [
+      "Mucilage (30-40%)",
+      "Sesquiterpenoid (acyl hibiscone, (R)-lasiodiplodin, hibiscone B)",
+      "Phytosterol",
+      "Coumarin",
+      "Fatty acids",
+      "Organic acids",
+      "Protein",
+    ],
+    uses: [
+      "Tonifies qi",
+      "Nourishes blood",
+      "Strengthens spleen",
+      "Calms spirit",
+      "Stops cough",
+    ],
+    indications: [
+      "Body weakness",
+      "Deficiency taxation",
+      "Poor appetite",
+      "Poor sleep",
+      "Neurasthenia",
+      "Blurred vision",
+      "Dizziness",
+      "Stomach pain",
+      "Diarrhea",
+      "Cough",
+      "Sore throat",
+      "Bronchitis",
+    ],
     dosage: "Dried root tuber: 10-30g decoction",
     contraindications: ["People with heat nature"],
-    origin: "Vietnam (grows wild and cultivated in many places, most in mountainous areas of Nam Dan, Thanh Chuong, Huong Son - Nghe An, Ha Tinh)",
-    description: "Sam Bo Chinh (also called Sâm thổ hào, Sâm báo, Nhân sâm Phú Yên, Sâm tiến vua) is a perennial herbaceous plant of the Malvaceae family 0.5-1m tall or more. Stem hairy. Leaves alternate, margins toothed, lower basal leaves lanceolate, undivided; middle and upper tip leaves usually divided into 5 narrow lobes, sometimes 3 lobes forming arrowhead shape; veins palmate. Stipules filiform. Flowers solitary in leaf axils, red or pink. Fruit ovate pointed, longitudinally grooved, covered with stiff hairs. Seeds kidney-shaped, brown. Sam Bo Chinh grows wild and cultivated in many places in Vietnam. North region has most in mountainous areas of Nam Dan, Thanh Chuong, Huong Son districts (Nghe An, Ha Tinh). A few localities in Quang Binh, Hoa Binh and Northwest. Root tubers harvested in autumn, winter, cut off small roots, process cooked then sun or oven dry. Roots contain mucilage (30-40%), sesquiterpenoid (acyl hibiscone, (R)-lasiodiplodin, hibiscone B), phytosterol, coumarin, fatty acids, organic acids, protein. Treats body weakness, deficiency taxation, poor appetite, poor sleep, neurasthenia, blurred vision, dizziness, stomach pain, diarrhea, cough, sore throat, bronchitis. Cork layer consists of 3-6 rows cells, sometimes up to 10-15 rows. Cortex parenchyma composed of multi-angled cells, contains starch granules. Scattered in parenchyma are spherical spiny calcium oxalate crystals and mucilage secretory sacs. Root powder ivory white or pale yellow, has many individual starch granules, changing shapes, size 12-34µm."
+    origin:
+      "Vietnam (grows wild and cultivated in many places, most in mountainous areas of Nam Dan, Thanh Chuong, Huong Son - Nghe An, Ha Tinh)",
+    description:
+      "Sam Bo Chinh (also called Sâm thổ hào, Sâm báo, Nhân sâm Phú Yên, Sâm tiến vua) is a perennial herbaceous plant of the Malvaceae family 0.5-1m tall or more. Stem hairy. Leaves alternate, margins toothed, lower basal leaves lanceolate, undivided; middle and upper tip leaves usually divided into 5 narrow lobes, sometimes 3 lobes forming arrowhead shape; veins palmate. Stipules filiform. Flowers solitary in leaf axils, red or pink. Fruit ovate pointed, longitudinally grooved, covered with stiff hairs. Seeds kidney-shaped, brown. Sam Bo Chinh grows wild and cultivated in many places in Vietnam. North region has most in mountainous areas of Nam Dan, Thanh Chuong, Huong Son districts (Nghe An, Ha Tinh). A few localities in Quang Binh, Hoa Binh and Northwest. Root tubers harvested in autumn, winter, cut off small roots, process cooked then sun or oven dry. Roots contain mucilage (30-40%), sesquiterpenoid (acyl hibiscone, (R)-lasiodiplodin, hibiscone B), phytosterol, coumarin, fatty acids, organic acids, protein. Treats body weakness, deficiency taxation, poor appetite, poor sleep, neurasthenia, blurred vision, dizziness, stomach pain, diarrhea, cough, sore throat, bronchitis. Cork layer consists of 3-6 rows cells, sometimes up to 10-15 rows. Cortex parenchyma composed of multi-angled cells, contains starch granules. Scattered in parenchyma are spherical spiny calcium oxalate crystals and mucilage secretory sacs. Root powder ivory white or pale yellow, has many individual starch granules, changing shapes, size 12-34µm.",
   },
   {
     id: 111,
@@ -1974,17 +4950,42 @@ export const medicines = [
     scientificName: "Eleutherine bulbosa (Mill.) Urb.",
     family: "Họ Lay dơn (Iridaceae)",
     categoryId: "iridaceae",
-    image: "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/07/sam-dai-hanh-2.jpg",
+    image:
+      "https://cdn.youmed.vn/tin-tuc/wp-content/uploads/2020/07/sam-dai-hanh-2.jpg",
     usedParts: "Bulb (Bulbus Eleutherinis subaphyllae)",
     properties: "Slightly bitter then sweet taste, neutral nature",
     meridians: "Liver, Heart meridians",
-    mainIngredients: ["Naphthoquinone (eleutherin, isoeleutherin, eleutherol)", "Flavonoid (Anthocyanin)"],
-    uses: ["Tonifies blood", "Activates blood", "Stops bleeding", "Stops cough"],
-    indications: ["Anemia", "Jaundice", "Blurred vision", "Headache", "Fatigue", "Uterine bleeding", "Coughing blood", "Traumatic blood stasis", "Whooping cough", "Sore throat", "Nutritional paralysis", "Boils abscesses", "Itching sores"],
-    dosage: "Dried bulb: 6-12g decoction. External use: pound apply to traumatic blood stasis",
+    mainIngredients: [
+      "Naphthoquinone (eleutherin, isoeleutherin, eleutherol)",
+      "Flavonoid (Anthocyanin)",
+    ],
+    uses: [
+      "Tonifies blood",
+      "Activates blood",
+      "Stops bleeding",
+      "Stops cough",
+    ],
+    indications: [
+      "Anemia",
+      "Jaundice",
+      "Blurred vision",
+      "Headache",
+      "Fatigue",
+      "Uterine bleeding",
+      "Coughing blood",
+      "Traumatic blood stasis",
+      "Whooping cough",
+      "Sore throat",
+      "Nutritional paralysis",
+      "Boils abscesses",
+      "Itching sores",
+    ],
+    dosage:
+      "Dried bulb: 6-12g decoction. External use: pound apply to traumatic blood stasis",
     contraindications: ["People with deficiency cold"],
     origin: "Americas (now widely cultivated in Vietnam)",
-    description: "Sam Dai Hanh (also called Sâm cau, tỏi lào, hành lào) is a perennial herbaceous plant of the Iridaceae family up to 30cm tall or more. Bulb ovate spindle-shaped, about 5cm long, 2.5-3cm diameter consisting of many thin scales, reddish-brown color. Leaves linear pointed, with parallel veins, resembling betel or coconut palm leaves. Flower cluster grows from bulb forming raceme 20cm long; bracts leaf-like; flowers white, stalked long; 3 sepals, narrow spindle-shaped, thin; 3 petals, slightly narrower than sepals; 3 stamens, erect, anthers yellow; ovary ovate, 3-chambered. Fruit rare. Flowering season: April-June. Sam Dai Hanh originated in Americas, now widely cultivated in Vietnam. Sam Dai Hanh is moisture-loving and light-loving plant. Sam Dai Hanh highly adaptable to hot humid tropical climate. Harvest when plant withers, slice thin, sun or lightly oven dry below 60°C until dried. Bulb round like onion bulb or long, diameter at widest point 1-2cm, length 4-5cm, outer layer has several dry scale layers, upper part brown, lower part red, inner layers bright red like blood. Cross-section of bulb shows pale red interspersed with white concentric circles. Contains naphthoquinone (eleutherin, isoeleutherin, eleutherol) and flavonoid (Anthocyanin). Treats anemia, jaundice, blurred vision, headache, fatigue, uterine bleeding, coughing blood. Traumatic blood stasis (pound apply), whooping cough sore throat, nutritional paralysis, boils abscesses, itching sores. Outer epidermis consists of one row evenly arranged rectangular cells. Whole bulb powder pink, taste initially slightly bitter, then sweet, contains many starch granules diverse sizes 1.6-40µm, calcium oxalate crystals rod-shaped."
+    description:
+      "Sam Dai Hanh (also called Sâm cau, tỏi lào, hành lào) is a perennial herbaceous plant of the Iridaceae family up to 30cm tall or more. Bulb ovate spindle-shaped, about 5cm long, 2.5-3cm diameter consisting of many thin scales, reddish-brown color. Leaves linear pointed, with parallel veins, resembling betel or coconut palm leaves. Flower cluster grows from bulb forming raceme 20cm long; bracts leaf-like; flowers white, stalked long; 3 sepals, narrow spindle-shaped, thin; 3 petals, slightly narrower than sepals; 3 stamens, erect, anthers yellow; ovary ovate, 3-chambered. Fruit rare. Flowering season: April-June. Sam Dai Hanh originated in Americas, now widely cultivated in Vietnam. Sam Dai Hanh is moisture-loving and light-loving plant. Sam Dai Hanh highly adaptable to hot humid tropical climate. Harvest when plant withers, slice thin, sun or lightly oven dry below 60°C until dried. Bulb round like onion bulb or long, diameter at widest point 1-2cm, length 4-5cm, outer layer has several dry scale layers, upper part brown, lower part red, inner layers bright red like blood. Cross-section of bulb shows pale red interspersed with white concentric circles. Contains naphthoquinone (eleutherin, isoeleutherin, eleutherol) and flavonoid (Anthocyanin). Treats anemia, jaundice, blurred vision, headache, fatigue, uterine bleeding, coughing blood. Traumatic blood stasis (pound apply), whooping cough sore throat, nutritional paralysis, boils abscesses, itching sores. Outer epidermis consists of one row evenly arranged rectangular cells. Whole bulb powder pink, taste initially slightly bitter, then sweet, contains many starch granules diverse sizes 1.6-40µm, calcium oxalate crystals rod-shaped.",
   },
   {
     id: 112,
@@ -1993,17 +4994,49 @@ export const medicines = [
     scientificName: "Nelumbo nucifera Gaertn.",
     family: "Họ Sen (Nelumbonaceae)",
     categoryId: "nelumbonaceae",
-    image: "https://png.pngtree.com/thumb_back/fh260/background/20230830/pngtree-the-lotus-is-also-represented-image_13145607.jpg",
-    usedParts: "Seeds (Liên nhục - Semen Nelumbinis), plumule (Liên tâm - Plumula Nelumbinis), leaves (Liên diệp - Folium Nelumbinis), receptacle (Receptaculum Nelumbinis), stamens (Stamen Nelumbinis), rhizome nodes (Nodus Nelumbinis rhizomatis)",
-    properties: "Seeds: sweet taste, neutral nature; Plumule: bitter taste, cold nature; Leaves: bitter taste, neutral nature",
-    meridians: "Seeds: Heart, Spleen, Kidney meridians; Plumule: Heart, Kidney meridians; Leaves: Heart, Liver, Spleen meridians",
-    mainIngredients: ["Seeds: starch, fat, protein, calcium, iron, phosphorus, fatty acids, amino acids", "Plumule: alkaloid (nuciferin, roemerin, anonain, N-nornuciferin)", "Leaves: alkaloid (nuciferin, roemerin, anonain, N-nornuciferin), flavonoid (quercetin-3-O-β-D-glucuronide, hyperoside, isoquercitrin), vitamin C", "Receptacle: protein, fat, carbohydrate", "Stamens: essential oil", "Rhizome nodes: vitamin C, A, B, P, starch, tannin"],
-    uses: ["Tonifies spleen", "Benefits kidney", "Nourishes heart", "Calms spirit", "Stops bleeding", "Clears heat", "Resolves summer-heat"],
-    indications: ["Seeds: Intestinal diseases, nocturnal emission seminal loss, palpitations insomnia, body weakness", "Plumule: Heart vexation insomnia, seminal emission, hematemesis", "Leaves: Sunstroke, diarrhea due to summer-heat dampness, vomiting blood, nosebleed, bloody urine due to blood heat", "Charred leaves: Stops bleeding transforms stasis, various bleeding, uterine bleeding metrorrhagia", "Stamens: Uterine bleeding, hematemesis", "Receptacle: Stops bleeding in uterine bleeding, metrorrhagia", "Rhizome nodes: Stops bleeding, treats diarrhea"],
-    dosage: "Seeds: 9-15g decoction or use as food; Plumule: 2-5g decoction; Leaves: 6-12g decoction, charred leaves 3-9g",
-    contraindications: ["People with abdominal fullness, constipation should not use seeds", "People with deficiency cold should not use plumule"],
+    image:
+      "https://png.pngtree.com/thumb_back/fh260/background/20230830/pngtree-the-lotus-is-also-represented-image_13145607.jpg",
+    usedParts:
+      "Seeds (Liên nhục - Semen Nelumbinis), plumule (Liên tâm - Plumula Nelumbinis), leaves (Liên diệp - Folium Nelumbinis), receptacle (Receptaculum Nelumbinis), stamens (Stamen Nelumbinis), rhizome nodes (Nodus Nelumbinis rhizomatis)",
+    properties:
+      "Seeds: sweet taste, neutral nature; Plumule: bitter taste, cold nature; Leaves: bitter taste, neutral nature",
+    meridians:
+      "Seeds: Heart, Spleen, Kidney meridians; Plumule: Heart, Kidney meridians; Leaves: Heart, Liver, Spleen meridians",
+    mainIngredients: [
+      "Seeds: starch, fat, protein, calcium, iron, phosphorus, fatty acids, amino acids",
+      "Plumule: alkaloid (nuciferin, roemerin, anonain, N-nornuciferin)",
+      "Leaves: alkaloid (nuciferin, roemerin, anonain, N-nornuciferin), flavonoid (quercetin-3-O-β-D-glucuronide, hyperoside, isoquercitrin), vitamin C",
+      "Receptacle: protein, fat, carbohydrate",
+      "Stamens: essential oil",
+      "Rhizome nodes: vitamin C, A, B, P, starch, tannin",
+    ],
+    uses: [
+      "Tonifies spleen",
+      "Benefits kidney",
+      "Nourishes heart",
+      "Calms spirit",
+      "Stops bleeding",
+      "Clears heat",
+      "Resolves summer-heat",
+    ],
+    indications: [
+      "Seeds: Intestinal diseases, nocturnal emission seminal loss, palpitations insomnia, body weakness",
+      "Plumule: Heart vexation insomnia, seminal emission, hematemesis",
+      "Leaves: Sunstroke, diarrhea due to summer-heat dampness, vomiting blood, nosebleed, bloody urine due to blood heat",
+      "Charred leaves: Stops bleeding transforms stasis, various bleeding, uterine bleeding metrorrhagia",
+      "Stamens: Uterine bleeding, hematemesis",
+      "Receptacle: Stops bleeding in uterine bleeding, metrorrhagia",
+      "Rhizome nodes: Stops bleeding, treats diarrhea",
+    ],
+    dosage:
+      "Seeds: 9-15g decoction or use as food; Plumule: 2-5g decoction; Leaves: 6-12g decoction, charred leaves 3-9g",
+    contraindications: [
+      "People with abdominal fullness, constipation should not use seeds",
+      "People with deficiency cold should not use plumule",
+    ],
     origin: "Vietnam (grows wild and cultivated everywhere)",
-    description: "Sen (lotus, also called Liên) is an aquatic perennial plant of the Nelumbonaceae family, grows underwater. Rhizome cylindrical grows in mud called lotus root or rhizome segments, edible. Leaves emerge above water surface, long petiole with small thorns, blade large peltate 60-70cm diameter with radiating veins. Large flowers white or pink-red, all bisexual. Calyx 3-5 green, corolla consists of many petals pink or white. Many stamens, anthers 2-chambered. Receptacle elongates forming inverted cone shape called lotus seed pod or receptacle. Fruit contains seeds called lotus seeds. Seeds rhomboid 1.1-1.3cm long, 0.9-1.1cm diameter, outer surface has thin brown membrane with many longitudinal veins. Peel outer membrane to reveal two equal cotyledons ivory white containing much starch. Embryo shoot also called plumule (lotus plumule) about 1cm long, 0.1cm wide, upper part is shoot bud dark green consisting of 4 young leaves, lower part is root and stem embryo cylindrical pale yellow. Upper leaf epidermis consists of one layer small rectangular cells, outer surface has protruding bumps. Lower epidermis has thick cuticle layer. Between parenchyma cells are many large lacunae, around each lacuna has many spherical spiny calcium oxalate crystals. Plumule powder dark green, bitter taste. Leaf powder has spherical spiny calcium oxalate crystals 25-36µm diameter. Seed powder has many ovate or round starch granules. Lotus seeds used as nutritious food, treats neurasthenia, insomnia. Plumule treats insomnia, seminal emission, hematemesis. Lotus leaves treat sunstroke, diarrhea, various bleeding. Rhizome nodes stop bleeding, treat diarrhea."
+    description:
+      "Sen (lotus, also called Liên) is an aquatic perennial plant of the Nelumbonaceae family, grows underwater. Rhizome cylindrical grows in mud called lotus root or rhizome segments, edible. Leaves emerge above water surface, long petiole with small thorns, blade large peltate 60-70cm diameter with radiating veins. Large flowers white or pink-red, all bisexual. Calyx 3-5 green, corolla consists of many petals pink or white. Many stamens, anthers 2-chambered. Receptacle elongates forming inverted cone shape called lotus seed pod or receptacle. Fruit contains seeds called lotus seeds. Seeds rhomboid 1.1-1.3cm long, 0.9-1.1cm diameter, outer surface has thin brown membrane with many longitudinal veins. Peel outer membrane to reveal two equal cotyledons ivory white containing much starch. Embryo shoot also called plumule (lotus plumule) about 1cm long, 0.1cm wide, upper part is shoot bud dark green consisting of 4 young leaves, lower part is root and stem embryo cylindrical pale yellow. Upper leaf epidermis consists of one layer small rectangular cells, outer surface has protruding bumps. Lower epidermis has thick cuticle layer. Between parenchyma cells are many large lacunae, around each lacuna has many spherical spiny calcium oxalate crystals. Plumule powder dark green, bitter taste. Leaf powder has spherical spiny calcium oxalate crystals 25-36µm diameter. Seed powder has many ovate or round starch granules. Lotus seeds used as nutritious food, treats neurasthenia, insomnia. Plumule treats insomnia, seminal emission, hematemesis. Lotus leaves treat sunstroke, diarrhea, various bleeding. Rhizome nodes stop bleeding, treat diarrhea.",
   },
   {
     id: 113,
@@ -2012,55 +5045,139 @@ export const medicines = [
     scientificName: "Carissa carandas L.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image: "https://cayxanhhuongloc.com.vn/wp-content/uploads/2018/05/282291756_4520326988069149_6700197738800965328_n-770x470-min.jpeg",
+    image:
+      "https://cayxanhhuongloc.com.vn/wp-content/uploads/2018/05/282291756_4520326988069149_6700197738800965328_n-770x470-min.jpeg",
     usedParts: "Ripe fruits",
     properties: "Sour sweet taste, cool nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Terpenoid (carisson, carindon, carissin)", "Iron", "Vitamin C", "Vitamin A", "Calcium", "Phosphorus"],
-    uses: ["Aids digestion", "Tonifies blood", "Nourishes yin", "Clears heat", "Detoxifies", "Kills parasites"],
-    indications: ["Indigestion", "Wounds and infections", "Skin diseases", "Urinary disorders", "Diabetic ulcers", "Frequent urination", "Stomach pain", "Constipation", "Anemia", "Poor appetite", "Memory decline", "Fever (leaves)", "Diarrhea (leaves)", "Ear pain (leaves)"],
-    dosage: "Fresh fruits: eat directly or process into jam, syrup, jelly. Leaves: 6-12g decoction. Roots: 10-20g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold", "Pregnant women use with caution"],
+    mainIngredients: [
+      "Terpenoid (carisson, carindon, carissin)",
+      "Iron",
+      "Vitamin C",
+      "Vitamin A",
+      "Calcium",
+      "Phosphorus",
+    ],
+    uses: [
+      "Aids digestion",
+      "Tonifies blood",
+      "Nourishes yin",
+      "Clears heat",
+      "Detoxifies",
+      "Kills parasites",
+    ],
+    indications: [
+      "Indigestion",
+      "Wounds and infections",
+      "Skin diseases",
+      "Urinary disorders",
+      "Diabetic ulcers",
+      "Frequent urination",
+      "Stomach pain",
+      "Constipation",
+      "Anemia",
+      "Poor appetite",
+      "Memory decline",
+      "Fever (leaves)",
+      "Diarrhea (leaves)",
+      "Ear pain (leaves)",
+    ],
+    dosage:
+      "Fresh fruits: eat directly or process into jam, syrup, jelly. Leaves: 6-12g decoction. Roots: 10-20g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Pregnant women use with caution",
+    ],
     origin: "South Asia (cultivated in southern provinces of Vietnam)",
-    description: "Si Ro (karanda, also called Xa tiền) is a small tree of the Apocynaceae family 2-4m tall, trunk has hard thorns. Leaves with oval blade. Karanda flowers year-round. Berry fruit 1.5-2.5cm long, 1-2cm diameter, red to dark purple when ripe. Karanda plant originated in South Asia region, cultivated in southern provinces of Vietnam. Ripe fruits harvested year-round. Plant mainly contains terpenoid group (carisson, carindon, carissin), very rich in iron, vitamin C, vitamin A, calcium and phosphorus. In India this species used extensively in medicine and food, processed into jelly, jam, syrup. Fruits used to treat indigestion, wounds and infections, skin diseases, urinary disorders and diabetic ulcers, frequent urination, stomach pain, constipation, anemia, skin diseases, poor appetite and memory decline. Leaf decoction used treats fever, diarrhea, ear pain. Roots act as stomach medicine, dewormer and insect repellent. Karanda fruits rich in antioxidants, boost immunity, protect liver, support digestion. Vitamin C in fruits helps enhance iron absorption, benefits anemic people. High calcium and phosphorus content benefits bones and teeth. In Vietnam, karanda plants grown ornamentally and for fruits. Fruits can be eaten fresh when ripe or processed into nutritious food products."
+    description:
+      "Si Ro (karanda, also called Xa tiền) is a small tree of the Apocynaceae family 2-4m tall, trunk has hard thorns. Leaves with oval blade. Karanda flowers year-round. Berry fruit 1.5-2.5cm long, 1-2cm diameter, red to dark purple when ripe. Karanda plant originated in South Asia region, cultivated in southern provinces of Vietnam. Ripe fruits harvested year-round. Plant mainly contains terpenoid group (carisson, carindon, carissin), very rich in iron, vitamin C, vitamin A, calcium and phosphorus. In India this species used extensively in medicine and food, processed into jelly, jam, syrup. Fruits used to treat indigestion, wounds and infections, skin diseases, urinary disorders and diabetic ulcers, frequent urination, stomach pain, constipation, anemia, skin diseases, poor appetite and memory decline. Leaf decoction used treats fever, diarrhea, ear pain. Roots act as stomach medicine, dewormer and insect repellent. Karanda fruits rich in antioxidants, boost immunity, protect liver, support digestion. Vitamin C in fruits helps enhance iron absorption, benefits anemic people. High calcium and phosphorus content benefits bones and teeth. In Vietnam, karanda plants grown ornamentally and for fruits. Fruits can be eaten fresh when ripe or processed into nutritious food products.",
   },
   {
     id: 114,
     name: "Su Quan Tu",
     firstLetter: "S",
-    scientificName: "Combretum indicum (L.) DeFilipps (Syn: Quisqualis indica L.)",
+    scientificName:
+      "Combretum indicum (L.) DeFilipps (Syn: Quisqualis indica L.)",
     family: "Họ Bàng (Combretaceae)",
     categoryId: "combretaceae",
-    image: "https://caydecor.com.vn/wp-content/uploads/2022/08/Su-quan-tu-4.jpg",
+    image:
+      "https://caydecor.com.vn/wp-content/uploads/2022/08/Su-quan-tu-4.jpg",
     usedParts: "Seeds (Semen Quisqualis)",
     properties: "Sweet taste, warm nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Fatty oil", "Quisqualic acid", "Flavonoid", "Steroid", "Saponins", "Phenolic acid", "Carbohydrate"],
+    mainIngredients: [
+      "Fatty oil",
+      "Quisqualic acid",
+      "Flavonoid",
+      "Steroid",
+      "Saponins",
+      "Phenolic acid",
+      "Carbohydrate",
+    ],
     uses: ["Expels parasites", "Disperses accumulation", "Strengthens spleen"],
-    indications: ["Roundworms", "Pinworms", "Infantile malnutrition (bloated belly, sallow skin, dull eyes nose discharge)", "Toothache"],
-    dosage: "Dried seeds: 3-12g as powder or decoction. Children: 3-6g. External use: hold in mouth treats toothache",
-    contraindications: ["People with spleen-stomach deficiency", "Do not overdose"],
+    indications: [
+      "Roundworms",
+      "Pinworms",
+      "Infantile malnutrition (bloated belly, sallow skin, dull eyes nose discharge)",
+      "Toothache",
+    ],
+    dosage:
+      "Dried seeds: 3-12g as powder or decoction. Children: 3-6g. External use: hold in mouth treats toothache",
+    contraindications: [
+      "People with spleen-stomach deficiency",
+      "Do not overdose",
+    ],
     origin: "Vietnam (grows wild in most North and Central provinces)",
-    description: "Su Quan Tu (rangoon creeper, also called Dây giun, cây Quả giun, Quả nấc) is a woody climbing vine of the Combretaceae family, climbs on other plants. Leaves opposite, simple, entire, ovate pointed tip, petiole base slightly round heart-shaped, 7-9cm long, 4-5cm wide, short petiole. Tubular flowers initially white, later turn pink and red, grow in clusters in leaf axils or branch tips, 4-10cm long. Dry fruit ovate pointed, 35mm long, 20mm thick, has 5 longitudinal 3-angled ridges, contains one seed. Seed long at bottom wide, tip slightly thin, has 5 longitudinal ridges running lengthwise. Rangoon creeper plant grows wild in most North and Central Vietnam provinces. In provinces, especially cities, some families grow ornamentally because plant green year-round, beautiful red flowers. Can propagate by seeds or stem cuttings. Harvest in September-November when fruits mature, shell to get seeds. Seeds spindle-shaped 1.5-2.5cm long, 0.5-1cm diameter, outer shell pale brown thin wrinkled easy to peel, two cotyledons ivory white. Seeds contain fatty oil, nitrogen derivatives (quisqualic acid), flavonoid, steroid, saponins, phenolic acid and carbohydrate. Seed powder ivory white, taste mild slightly sweet. Microscopy shows parenchyma fragments with spherical spiny calcium oxalate crystals, individual or tissue oil droplets, seed coat epidermis fragments multi-angled thick-walled, small spiral vessel fragments. Treats roundworms, pinworms, infantile malnutrition symptoms like bloated belly, sallow skin, dull eyes nose discharge. Daily use 3-12g as powder or decoction, usually combined with other medicines. Also used holding in mouth treats toothache. Su Quan Tu has strong anthelmintic effect, especially effective against roundworms and pinworms in children."
+    description:
+      "Su Quan Tu (rangoon creeper, also called Dây giun, cây Quả giun, Quả nấc) is a woody climbing vine of the Combretaceae family, climbs on other plants. Leaves opposite, simple, entire, ovate pointed tip, petiole base slightly round heart-shaped, 7-9cm long, 4-5cm wide, short petiole. Tubular flowers initially white, later turn pink and red, grow in clusters in leaf axils or branch tips, 4-10cm long. Dry fruit ovate pointed, 35mm long, 20mm thick, has 5 longitudinal 3-angled ridges, contains one seed. Seed long at bottom wide, tip slightly thin, has 5 longitudinal ridges running lengthwise. Rangoon creeper plant grows wild in most North and Central Vietnam provinces. In provinces, especially cities, some families grow ornamentally because plant green year-round, beautiful red flowers. Can propagate by seeds or stem cuttings. Harvest in September-November when fruits mature, shell to get seeds. Seeds spindle-shaped 1.5-2.5cm long, 0.5-1cm diameter, outer shell pale brown thin wrinkled easy to peel, two cotyledons ivory white. Seeds contain fatty oil, nitrogen derivatives (quisqualic acid), flavonoid, steroid, saponins, phenolic acid and carbohydrate. Seed powder ivory white, taste mild slightly sweet. Microscopy shows parenchyma fragments with spherical spiny calcium oxalate crystals, individual or tissue oil droplets, seed coat epidermis fragments multi-angled thick-walled, small spiral vessel fragments. Treats roundworms, pinworms, infantile malnutrition symptoms like bloated belly, sallow skin, dull eyes nose discharge. Daily use 3-12g as powder or decoction, usually combined with other medicines. Also used holding in mouth treats toothache. Su Quan Tu has strong anthelmintic effect, especially effective against roundworms and pinworms in children.",
   },
   {
     id: 115,
     name: "Tam That Nam",
     firstLetter: "T",
-    scientificName: "Curcuma clovisii Škorničk. (Syn: Stahlianthus thorelii Gagnep.)",
+    scientificName:
+      "Curcuma clovisii Škorničk. (Syn: Stahlianthus thorelii Gagnep.)",
     family: "Họ Gừng (Zingiberaceae)",
     categoryId: "zingiberaceae",
-    image: "https://caycanhhaidang.com/wp-content/uploads/2016/06/cay-tam-that-nam-1.jpg",
+    image:
+      "https://caycanhhaidang.com/wp-content/uploads/2016/06/cay-tam-that-nam-1.jpg",
     usedParts: "Rhizome",
     properties: "Pungent, slightly bitter taste, warm nature",
     meridians: "Liver, Spleen meridians",
-    mainIngredients: ["Essential oil (sesquiterpene: α-copaene 32.2%, (-)-allo-aromadendrene 11.3%, monoterpene)", "Starch"],
-    uses: ["Opens channels activates blood", "Anti-inflammatory", "Stops bleeding", "Aids digestion"],
-    indications: ["Delayed menstruation", "Dark blood clots not fresh", "Menstrual abdominal pain", "Hematemesis", "Nosebleed", "Excessive menstruation", "Poisonous insect bites", "Snake bites", "Swelling pain from falls", "Bone pain from wind-dampness", "Indigestion", "Vomiting fullness", "Anemia"],
+    mainIngredients: [
+      "Essential oil (sesquiterpene: α-copaene 32.2%, (-)-allo-aromadendrene 11.3%, monoterpene)",
+      "Starch",
+    ],
+    uses: [
+      "Opens channels activates blood",
+      "Anti-inflammatory",
+      "Stops bleeding",
+      "Aids digestion",
+    ],
+    indications: [
+      "Delayed menstruation",
+      "Dark blood clots not fresh",
+      "Menstrual abdominal pain",
+      "Hematemesis",
+      "Nosebleed",
+      "Excessive menstruation",
+      "Poisonous insect bites",
+      "Snake bites",
+      "Swelling pain from falls",
+      "Bone pain from wind-dampness",
+      "Indigestion",
+      "Vomiting fullness",
+      "Anemia",
+    ],
     dosage: "Dried rhizome: 4-8g as powder or decoction",
-    contraindications: ["Pregnant women use with caution", "People with bleeding without blood stasis"],
-    origin: "Vietnam (grows wild in moist shady places, stream banks, ravine crevices; commonly cultivated for medicinal tubers)",
-    description: "Tam That Nam (also called Tam thất gừng, Khương tam thất) is an herbaceous plant of the Zingiberaceae family, no stem, has thick rhizome covered by fallen leaf scars, usually branching bearing many small bird-egg-sized tubers arranged in chains, has fibrous roots. Leaves 3-5 separate stalked, appear after plant flowers. Blade long spindle-shaped, pointed tip, green color, green mixed brown or brown-purple, entire undulate margins. Flower cluster at base beside leaves, flower stalk 6-8cm long, at end has one tubular bract wrapping flowers. Flowers 4-5, with bracts and bracteoles membrane-like. Corolla white, throat yellow. Ovary smooth 3-chambered. Plant grows wild in moist shady places, stream banks, ravine crevices. Commonly cultivated for medicinal tubers. Tuber outer surface has black horizontal stripes, inside has white starchy substance ivory colored like Panax notoginseng tubers. Rhizome contains essential oil consisting of sesquiterpenes like α-copaene (32.2%) and (-)-allo-aromadendrene (11.3%) with monoterpenes, starch. Leaves also contain essential oil but in lower amounts. Tam That Nam has pungent, slightly bitter taste, warm nature, opens channels activates blood, anti-inflammatory, stops bleeding effects. Commonly used treats delayed menstruation, dark blood clots not fresh, menstrual abdominal pain, hematemesis, nosebleed, excessive menstruation, poisonous insect bites and snake bites, swelling pain from falls, bone pain from wind-dampness, indigestion, vomiting fullness. Also sometimes used as tonic medicine treats anemia. Dosage 4-8g as powder. Tubers have characteristic black horizontal stripes, distinguish from other tubers in Zingiberaceae family."
+    contraindications: [
+      "Pregnant women use with caution",
+      "People with bleeding without blood stasis",
+    ],
+    origin:
+      "Vietnam (grows wild in moist shady places, stream banks, ravine crevices; commonly cultivated for medicinal tubers)",
+    description:
+      "Tam That Nam (also called Tam thất gừng, Khương tam thất) is an herbaceous plant of the Zingiberaceae family, no stem, has thick rhizome covered by fallen leaf scars, usually branching bearing many small bird-egg-sized tubers arranged in chains, has fibrous roots. Leaves 3-5 separate stalked, appear after plant flowers. Blade long spindle-shaped, pointed tip, green color, green mixed brown or brown-purple, entire undulate margins. Flower cluster at base beside leaves, flower stalk 6-8cm long, at end has one tubular bract wrapping flowers. Flowers 4-5, with bracts and bracteoles membrane-like. Corolla white, throat yellow. Ovary smooth 3-chambered. Plant grows wild in moist shady places, stream banks, ravine crevices. Commonly cultivated for medicinal tubers. Tuber outer surface has black horizontal stripes, inside has white starchy substance ivory colored like Panax notoginseng tubers. Rhizome contains essential oil consisting of sesquiterpenes like α-copaene (32.2%) and (-)-allo-aromadendrene (11.3%) with monoterpenes, starch. Leaves also contain essential oil but in lower amounts. Tam That Nam has pungent, slightly bitter taste, warm nature, opens channels activates blood, anti-inflammatory, stops bleeding effects. Commonly used treats delayed menstruation, dark blood clots not fresh, menstrual abdominal pain, hematemesis, nosebleed, excessive menstruation, poisonous insect bites and snake bites, swelling pain from falls, bone pain from wind-dampness, indigestion, vomiting fullness. Also sometimes used as tonic medicine treats anemia. Dosage 4-8g as powder. Tubers have characteristic black horizontal stripes, distinguish from other tubers in Zingiberaceae family.",
   },
   {
     id: 116,
@@ -2069,17 +5186,45 @@ export const medicines = [
     scientificName: "Ziziphus mauritiana Lam.",
     family: "Họ Táo (Rhamnaceae)",
     categoryId: "rhamnaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/1/17/tac-dung-chua-benh-hieu-qua-tu-tao-ta-5800x4001-16739557094691342530451.jpg",
-    usedParts: "Seeds/Seed kernels (Táo nhân - Semen Ziziphi mauritiane), leaves, fruits, bark",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/1/17/tac-dung-chua-benh-hieu-qua-tu-tao-ta-5800x4001-16739557094691342530451.jpg",
+    usedParts:
+      "Seeds/Seed kernels (Táo nhân - Semen Ziziphi mauritiane), leaves, fruits, bark",
     properties: "Seed kernels: sweet sour taste, neutral nature",
     meridians: "Heart, Liver, Spleen meridians",
-    mainIngredients: ["C-glycoside (spinosin)", "Triterpene acid (epiceanothic acid, ceanothic acid)", "Saponin (jujuboside A, B)", "Fat", "Protein"],
-    uses: ["Calms spirit", "Nourishes heart", "Calms fright", "Stops sweating", "Generates fluids stops thirst"],
-    indications: ["Palpitations", "Vexation", "Insomnia", "Dreaminess", "Body weakness", "Excessive sweating", "Thirst due to damaged fluids"],
-    dosage: "Seed kernels: 6-15g decoction or crack open seed shell, get kernel (jujube kernel) sun dry use",
-    contraindications: ["People with excess heat", "People with abdominal fullness"],
-    origin: "Vietnam (cultivated everywhere except high mountain areas with subtropical climate)",
-    description: "Tao Ta (Indian jujube, also called Táo chua) is a large tree of the Rhamnaceae family 6-8m tall, trunk bark cracked. Branches spread horizontally with many thorns. Leaves alternate ovate or rhomboid, upper surface smooth dark green with dense hairs, lower surface pale yellow, margins toothed, 3 basal veins prominent on lower surface. Cyme flower clusters in leaf axils, pale white flowers. Drupe fruit spherical with smooth skin, when ripe pale yellow to reddish-brown. Seeds spherical or flattened ovate with one end slightly pointed, one side nearly flat, other side bulging lens-shaped, 5-8mm long, 4-6mm wide, 1-2mm thick. At pointed end has slightly depressed dark brown hilum. Outer surface reddish-brown or brownish-yellow, sometimes dark brown. Soft texture easy to cut across. Seed coat has two cell layers: outer layer epidermis evenly arranged, inner layer rectangular sclerenchyma thick-walled arranged vertically radially. Endosperm consists of multi-angled thin-walled cells, contains oil droplets and storage materials. Seed powder has large yellowish or yellow-brown sclerenchyma outer coat fragments, uneven thin-walled middle coat parenchyma fragments, endosperm fragments containing small starch granules and storage materials. In Vietnam, Indian jujube cultivated everywhere except high mountain areas with subtropical climate. Seed kernels contain C-glycoside (spinosin), triterpene acid (epiceanothic acid, ceanothic acid), saponin (jujuboside A, B), fat, protein. Jujube kernels treat palpitations, vexation, insomnia, dreaminess, body weakness from excessive sweating, thirst due to damaged fluids. When using crack open seed shell get kernel (jujube kernel) sun dry. Also use leaves, fruits and bark."
+    mainIngredients: [
+      "C-glycoside (spinosin)",
+      "Triterpene acid (epiceanothic acid, ceanothic acid)",
+      "Saponin (jujuboside A, B)",
+      "Fat",
+      "Protein",
+    ],
+    uses: [
+      "Calms spirit",
+      "Nourishes heart",
+      "Calms fright",
+      "Stops sweating",
+      "Generates fluids stops thirst",
+    ],
+    indications: [
+      "Palpitations",
+      "Vexation",
+      "Insomnia",
+      "Dreaminess",
+      "Body weakness",
+      "Excessive sweating",
+      "Thirst due to damaged fluids",
+    ],
+    dosage:
+      "Seed kernels: 6-15g decoction or crack open seed shell, get kernel (jujube kernel) sun dry use",
+    contraindications: [
+      "People with excess heat",
+      "People with abdominal fullness",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere except high mountain areas with subtropical climate)",
+    description:
+      "Tao Ta (Indian jujube, also called Táo chua) is a large tree of the Rhamnaceae family 6-8m tall, trunk bark cracked. Branches spread horizontally with many thorns. Leaves alternate ovate or rhomboid, upper surface smooth dark green with dense hairs, lower surface pale yellow, margins toothed, 3 basal veins prominent on lower surface. Cyme flower clusters in leaf axils, pale white flowers. Drupe fruit spherical with smooth skin, when ripe pale yellow to reddish-brown. Seeds spherical or flattened ovate with one end slightly pointed, one side nearly flat, other side bulging lens-shaped, 5-8mm long, 4-6mm wide, 1-2mm thick. At pointed end has slightly depressed dark brown hilum. Outer surface reddish-brown or brownish-yellow, sometimes dark brown. Soft texture easy to cut across. Seed coat has two cell layers: outer layer epidermis evenly arranged, inner layer rectangular sclerenchyma thick-walled arranged vertically radially. Endosperm consists of multi-angled thin-walled cells, contains oil droplets and storage materials. Seed powder has large yellowish or yellow-brown sclerenchyma outer coat fragments, uneven thin-walled middle coat parenchyma fragments, endosperm fragments containing small starch granules and storage materials. In Vietnam, Indian jujube cultivated everywhere except high mountain areas with subtropical climate. Seed kernels contain C-glycoside (spinosin), triterpene acid (epiceanothic acid, ceanothic acid), saponin (jujuboside A, B), fat, protein. Jujube kernels treat palpitations, vexation, insomnia, dreaminess, body weakness from excessive sweating, thirst due to damaged fluids. When using crack open seed shell get kernel (jujube kernel) sun dry. Also use leaves, fruits and bark.",
   },
   {
     id: 117,
@@ -2088,17 +5233,30 @@ export const medicines = [
     scientificName: "Synsepalum dulcificum (Schumach. & Thonn.) Daniell",
     family: "Họ Hồng xiêm (Sapotaceae)",
     categoryId: "sapotaceae",
-    image: "https://cayantraidetrong.com/wp-content/uploads/2023/11/cay-than-ky-8.jpg",
+    image:
+      "https://cayantraidetrong.com/wp-content/uploads/2023/11/cay-than-ky-8.jpg",
     usedParts: "Fruits",
     properties: "Sweet taste, neutral nature",
     meridians: "Spleen, Stomach meridians",
-    mainIngredients: ["Glycoprotein (miraculin) - can transform sour taste to sweet when eaten, effect lasts over 30 minutes"],
-    uses: ["Improves food flavor", "Natural sweetener", "Supports diabetics reducing sugar"],
-    indications: ["Supports diabetics (sugar substitute)", "Improves sour food palatability", "Enhances beverage flavor"],
-    dosage: "Fresh fruits: eat directly before eating sour foods. Dried fruits: use as sweetener",
+    mainIngredients: [
+      "Glycoprotein (miraculin) - can transform sour taste to sweet when eaten, effect lasts over 30 minutes",
+    ],
+    uses: [
+      "Improves food flavor",
+      "Natural sweetener",
+      "Supports diabetics reducing sugar",
+    ],
+    indications: [
+      "Supports diabetics (sugar substitute)",
+      "Improves sour food palatability",
+      "Enhances beverage flavor",
+    ],
+    dosage:
+      "Fresh fruits: eat directly before eating sour foods. Dried fruits: use as sweetener",
     contraindications: ["No clear contraindications"],
     origin: "West Africa (now grown ornamentally in few places in Vietnam)",
-    description: "Than Ki (miracle fruit or miracle berry, also called taami, asaa, ledidi) is a shrub plant of the Sapotaceae family 1.8-4.5m tall. Leaves grow clustered at branch tips, obovate, 5-10cm long, 2.0-3.7cm wide, upper surface dark green, lower surface lighter. They grow clustered at tips of side branches. White flowers. Red fruit 2cm long. Each fruit contains one seed. Plant originated in West Africa, now grown ornamentally in few places in Vietnam. Fruits contain glycoprotein (miraculin) - can transform sour-tasting foods to sweet when eaten and can last over 30 minutes. Miracle fruit has been used long-term by West African people in food preparation like improving flavor of sour cornbread, beverages and various foods, such as beer, cocktails, vinegar and pickles. In 2021, company Baïa Food Co. in Spain was licensed to introduce dried miracle fruit as sweetener to EU market. Miracle fruit has potential supporting diabetics reducing sugar consumption by making sour foods become sweet without adding sugar."
+    description:
+      "Than Ki (miracle fruit or miracle berry, also called taami, asaa, ledidi) is a shrub plant of the Sapotaceae family 1.8-4.5m tall. Leaves grow clustered at branch tips, obovate, 5-10cm long, 2.0-3.7cm wide, upper surface dark green, lower surface lighter. They grow clustered at tips of side branches. White flowers. Red fruit 2cm long. Each fruit contains one seed. Plant originated in West Africa, now grown ornamentally in few places in Vietnam. Fruits contain glycoprotein (miraculin) - can transform sour-tasting foods to sweet when eaten and can last over 30 minutes. Miracle fruit has been used long-term by West African people in food preparation like improving flavor of sour cornbread, beverages and various foods, such as beer, cocktails, vinegar and pickles. In 2021, company Baïa Food Co. in Spain was licensed to introduce dried miracle fruit as sweetener to EU market. Miracle fruit has potential supporting diabetics reducing sugar consumption by making sour foods become sweet without adding sugar.",
   },
   {
     id: 118,
@@ -2107,17 +5265,39 @@ export const medicines = [
     scientificName: "Ricinus communis L.",
     family: "Họ Thầu dầu (Euphorbiaceae)",
     categoryId: "euphorbiaceae",
-    image: "https://www.vinmec.com/static/uploads/20211227_132510_128191_cay_thau_dau_max_1800x1800_jpg_1f01b891e2.jpg",
-    usedParts: "Seeds (Fructus Ricini), oil pressed from seeds (Oleum Ricini), leaves (Folium Ricini), roots (Radix Ricini)",
-    properties: "Seed oil: sweet pungent taste, neutral nature; Leaves: pungent taste, neutral nature",
+    image:
+      "https://www.vinmec.com/static/uploads/20211227_132510_128191_cay_thau_dau_max_1800x1800_jpg_1f01b891e2.jpg",
+    usedParts:
+      "Seeds (Fructus Ricini), oil pressed from seeds (Oleum Ricini), leaves (Folium Ricini), roots (Radix Ricini)",
+    properties:
+      "Seed oil: sweet pungent taste, neutral nature; Leaves: pungent taste, neutral nature",
     meridians: "Large Intestine, Lung meridians",
-    mainIngredients: ["Fatty oil 45-50% (ricinoleic acid, isoricinoleic acid)", "Alkaloid (ricinine, N-demethylricinine)", "Protein ricin (EXTREMELY TOXIC)", "Flavonoid (kaempferon, quercetin, epicatechin)", "Gallic acid", "Ellagic acid"],
+    mainIngredients: [
+      "Fatty oil 45-50% (ricinoleic acid, isoricinoleic acid)",
+      "Alkaloid (ricinine, N-demethylricinine)",
+      "Protein ricin (EXTREMELY TOXIC)",
+      "Flavonoid (kaempferon, quercetin, epicatechin)",
+      "Gallic acid",
+      "Ellagic acid",
+    ],
     uses: ["Laxative", "Moisturizes", "Reduces swelling", "Detoxifies"],
-    indications: ["Constipation", "Abdominal pain after childbirth (leaves - external use)", "Retained placenta (leaves - external use)"],
-    dosage: "Seed oil: 5-15ml drink on empty stomach. Leaves: External use, apply locally. WARNING: ABSOLUTELY DO NOT EAT CASTOR SEEDS - can cause death if eating about 10 seeds",
-    contraindications: ["PROHIBITED to use castor seeds directly - EXTREMELY TOXIC", "Pregnant women", "People with diarrhea", "Weak people"],
-    origin: "Tropical regions (Vietnam: Ha Giang, Bac Ninh, Vinh Phuc, Phu Tho; India, North Africa, Brazil)",
-    description: "Thau Dau (castor bean, also called Đu đủ tía) is a perennial plant of the Euphorbiaceae family, weak stem but can reach 10-12m tall. Leaves alternate long-stalked, 2 stipules join forming membrane sac early deciduous, blade palmate consisting of 5-7-9 sometimes up to 11 deeply cut lobes, margins irregularly serrate. Flowers grow in multi-flowered panicles, lower panicles all male flowers, upper panicles all female flowers. Fruit 3-valved capsule 2-3cm long, 2cm wide, surface with many soft thorns, round tip with 3 impressed marks dividing 3 chambers, on back of each chamber has 1 shallow groove. Seeds ovate slightly flat, 8mm long, 6mm wide, has caruncle (aril of ovule opening) at tip. Seed surface smooth shiny gray-brown with reddish-brown or black patterns. Grows wild and cultivated in many tropical regions: Vietnam (Ha Giang, Bac Ninh, Vinh Phuc, Phu Tho), India, North Africa, Brazil. Seeds have 45-50% fatty oil with characteristic fatty acids ricinoleic acid, isoricinoleic acid, alkaloid (ricinine) and one extremely toxic protein ricin. Leaves have alkaloid (ricinine, N-demethylricinine), flavonoid (kaempferon, quercetin, epicatechin derivatives), gallic acid, ellagic acid. Seed oil has laxative, moisturizing effects. Leaves treat abdominal pain after childbirth, retained placenta (external use). IMPORTANT WARNING: Toxic protein ricin in castor seeds EXTREMELY DANGEROUS, can cause death if eating about 10 seeds (shelled or chewed). However, castor oil prepared by cold-press method is non-toxic and safe when used at proper dosage. ABSOLUTELY DO NOT self-use castor seeds."
+    indications: [
+      "Constipation",
+      "Abdominal pain after childbirth (leaves - external use)",
+      "Retained placenta (leaves - external use)",
+    ],
+    dosage:
+      "Seed oil: 5-15ml drink on empty stomach. Leaves: External use, apply locally. WARNING: ABSOLUTELY DO NOT EAT CASTOR SEEDS - can cause death if eating about 10 seeds",
+    contraindications: [
+      "PROHIBITED to use castor seeds directly - EXTREMELY TOXIC",
+      "Pregnant women",
+      "People with diarrhea",
+      "Weak people",
+    ],
+    origin:
+      "Tropical regions (Vietnam: Ha Giang, Bac Ninh, Vinh Phuc, Phu Tho; India, North Africa, Brazil)",
+    description:
+      "Thau Dau (castor bean, also called Đu đủ tía) is a perennial plant of the Euphorbiaceae family, weak stem but can reach 10-12m tall. Leaves alternate long-stalked, 2 stipules join forming membrane sac early deciduous, blade palmate consisting of 5-7-9 sometimes up to 11 deeply cut lobes, margins irregularly serrate. Flowers grow in multi-flowered panicles, lower panicles all male flowers, upper panicles all female flowers. Fruit 3-valved capsule 2-3cm long, 2cm wide, surface with many soft thorns, round tip with 3 impressed marks dividing 3 chambers, on back of each chamber has 1 shallow groove. Seeds ovate slightly flat, 8mm long, 6mm wide, has caruncle (aril of ovule opening) at tip. Seed surface smooth shiny gray-brown with reddish-brown or black patterns. Grows wild and cultivated in many tropical regions: Vietnam (Ha Giang, Bac Ninh, Vinh Phuc, Phu Tho), India, North Africa, Brazil. Seeds have 45-50% fatty oil with characteristic fatty acids ricinoleic acid, isoricinoleic acid, alkaloid (ricinine) and one extremely toxic protein ricin. Leaves have alkaloid (ricinine, N-demethylricinine), flavonoid (kaempferon, quercetin, epicatechin derivatives), gallic acid, ellagic acid. Seed oil has laxative, moisturizing effects. Leaves treat abdominal pain after childbirth, retained placenta (external use). IMPORTANT WARNING: Toxic protein ricin in castor seeds EXTREMELY DANGEROUS, can cause death if eating about 10 seeds (shelled or chewed). However, castor oil prepared by cold-press method is non-toxic and safe when used at proper dosage. ABSOLUTELY DO NOT self-use castor seeds.",
   },
   {
     id: 119,
@@ -2126,17 +5306,47 @@ export const medicines = [
     scientificName: "Asparagus cochinchinensis (Lour.) Merr.",
     family: "Họ Thiên môn (Asparagaceae)",
     categoryId: "asparagaceae",
-    image: "https://cayxanhhuongloc.com.vn/wp-content/uploads/2018/05/Asparagus-73.jpg",
+    image:
+      "https://cayxanhhuongloc.com.vn/wp-content/uploads/2018/05/Asparagus-73.jpg",
     usedParts: "Root tubers (Thiên đông - Radix Asparagi)",
     properties: "Sweet slightly bitter taste, cold nature",
     meridians: "Lung, Kidney meridians",
-    mainIngredients: ["Steroid saponin (sarsasapogenin, yamogenin)", "Free amino acid (asparagine)", "Flavonoid", "Starch", "Sugar", "Mucilage", "Minerals"],
-    uses: ["Clears heat", "Anti-inflammatory", "Expels phlegm", "Promotes urination", "Laxative"],
-    indications: ["Cough", "Sore throat", "Rhinitis", "Diabetes", "Boils abscesses", "Purulent dermatitis", "Snake bites (external use)", "Constipation"],
-    dosage: "Dried root tubers: 6-12g decoction. External use: pound fresh plant, apply externally on skin",
-    contraindications: ["People with spleen-stomach deficiency cold", "People with diarrhea"],
-    origin: "Vietnam (grows wild and cultivated everywhere, sometimes grown in pots ornamentally)",
-    description: "Thien Mon Dong (shiny asparagus, also called Dây tóc tiên) is a perennial climbing vine of the Asparagaceae family. Underground has very many spindle-shaped plump root tubers. Stem bears many 3-angled branches, long pointed, modified, resembling leaves. Stem bears many cylindrical branches twining together smooth with curved sharp thorns, small modified branches called cladodes sickle-shaped, 3-angled cross-section, 2-3cm long, pointed tip. Leaves very small looking like scales. In summer in leaf axils grow small white flowers. Fruit is red berry when ripe. Plant grows wild and cultivated everywhere throughout our country, sometimes grown in pots ornamentally. Root tubers called Thiên đông. After harvesting, roots soaked in water to soften, scrape off skin, process cooked, remove core then sun or oven dry. Root powder ivory white, characteristic smell, sweet slightly bitter taste. Microscopy shows parenchyma fragments composed of thin-walled cells containing calcium oxalate crystals. Needle-shaped calcium oxalate crystals arranged in bundles or scattered, 40-99µm long. Root tubers contain steroid saponin (sarsasapogenin, yamogenin) and free amino acids (asparagine). Also has flavonoid, starch, sugar, mucilage, minerals. Thien Mon Dong has clearing heat, anti-inflammatory, expelling phlegm, promoting urination, laxative effects. Commonly use Thiên môn to treat cough, sore throat, rhinitis, diabetes (decoction form), treat boils abscesses, purulent dermatitis, snake bites (pound fresh plant apply externally on skin), also used to treat constipation (decoction form)."
+    mainIngredients: [
+      "Steroid saponin (sarsasapogenin, yamogenin)",
+      "Free amino acid (asparagine)",
+      "Flavonoid",
+      "Starch",
+      "Sugar",
+      "Mucilage",
+      "Minerals",
+    ],
+    uses: [
+      "Clears heat",
+      "Anti-inflammatory",
+      "Expels phlegm",
+      "Promotes urination",
+      "Laxative",
+    ],
+    indications: [
+      "Cough",
+      "Sore throat",
+      "Rhinitis",
+      "Diabetes",
+      "Boils abscesses",
+      "Purulent dermatitis",
+      "Snake bites (external use)",
+      "Constipation",
+    ],
+    dosage:
+      "Dried root tubers: 6-12g decoction. External use: pound fresh plant, apply externally on skin",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "People with diarrhea",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated everywhere, sometimes grown in pots ornamentally)",
+    description:
+      "Thien Mon Dong (shiny asparagus, also called Dây tóc tiên) is a perennial climbing vine of the Asparagaceae family. Underground has very many spindle-shaped plump root tubers. Stem bears many 3-angled branches, long pointed, modified, resembling leaves. Stem bears many cylindrical branches twining together smooth with curved sharp thorns, small modified branches called cladodes sickle-shaped, 3-angled cross-section, 2-3cm long, pointed tip. Leaves very small looking like scales. In summer in leaf axils grow small white flowers. Fruit is red berry when ripe. Plant grows wild and cultivated everywhere throughout our country, sometimes grown in pots ornamentally. Root tubers called Thiên đông. After harvesting, roots soaked in water to soften, scrape off skin, process cooked, remove core then sun or oven dry. Root powder ivory white, characteristic smell, sweet slightly bitter taste. Microscopy shows parenchyma fragments composed of thin-walled cells containing calcium oxalate crystals. Needle-shaped calcium oxalate crystals arranged in bundles or scattered, 40-99µm long. Root tubers contain steroid saponin (sarsasapogenin, yamogenin) and free amino acids (asparagine). Also has flavonoid, starch, sugar, mucilage, minerals. Thien Mon Dong has clearing heat, anti-inflammatory, expelling phlegm, promoting urination, laxative effects. Commonly use Thiên môn to treat cough, sore throat, rhinitis, diabetes (decoction form), treat boils abscesses, purulent dermatitis, snake bites (pound fresh plant apply externally on skin), also used to treat constipation (decoction form).",
   },
   {
     id: 120,
@@ -2145,17 +5355,39 @@ export const medicines = [
     scientificName: "Homalomena occulta (Lour.) Schott",
     family: "Họ Ráy (Araceae)",
     categoryId: "araceae",
-    image: "https://trucvufarm.com.vn/wp-content/uploads/2025/06/thien-nien-kien-giam-dau-xuong-khop.jpg",
+    image:
+      "https://trucvufarm.com.vn/wp-content/uploads/2025/06/thien-nien-kien-giam-dau-xuong-khop.jpg",
     usedParts: "Rhizome (Rhizoma Homalomenae)",
     properties: "Pungent bitter taste, warm nature",
     meridians: "Liver, Kidney meridians",
-    mainIngredients: ["Essential oil 0.8-1% (Monoterpenoid: Linalool; Sesquiterpenoid: Cadinol, Cadinene)", "Phenolic acid (protocatechuic acid, vanilic acid, syringic acid, caffeic acid, ferulic acid, p-coumaric acid)", "Flavonoid (apigenin)"],
-    uses: ["Dispels wind-dampness", "Strengthens tendons bones", "Activates blood", "Relieves pain"],
-    indications: ["Wind cold dampness", "Cold back knee pain", "Cramped numb legs", "Joint pain", "Wind-dampness paralysis"],
-    dosage: "Dried rhizome: 4.5-9g decoction or combined in prescriptions, wine infusion. External use: fresh rhizome pounded, stir-fried hot massage on painful areas; or soak dried rhizome with wine massage painful areas, numbness and wind-dampness",
-    contraindications: ["People with yin deficiency fire excess", "Pregnant women"],
-    origin: "Vietnam (grows wild abundantly in mountainous forest areas, prefers moist places, beside streams or along streams)",
-    description: "Thien Nien Kien (also called Sơn thục) is a perennial plant of the Araceae family, has plump green rhizome 1-2cm diameter. Leaves alternate, petiole 18-25cm long, smooth soft green, lower petiole expands into pale yellow sheath. Blade arrowhead-shaped, 11-15cm long, 7-11cm wide, pointed tip, arrow-wing-shaped below, entire margins, upper leaf surface darker, both surfaces smooth, marginal veins all directed toward leaf apex. Flower cluster is a pale green spathe 4-5cm long, 10-15cm wide, each clump usually has 3-4 spathes, spathe stalk 5-15cm long, spadix shorter than spathe 3-4cm long. Flowering season: March-April. Fruiting season: May-June. Thien Nien Kien grows wild abundantly in mountainous forest areas of Vietnam, plant prefers moist places, beside streams or along streams. Harvest old rhizomes sun or oven dry. Cork layer yellow-brown. Parenchyma consists of round cells, thin-walled. From outside inward has large thick-walled fiber masses, phloem-xylem bundles with many different arrangement patterns. In parenchyma has essential oil secretory cells, cells containing needle-shaped and spherical spiny calcium oxalate crystals. Rhizome powder yellow-brown, microscopy shows many fiber bundles, sclerenchyma cells slightly thick-walled, parenchyma cell fragments containing spherical spiny or needle-shaped calcium oxalate crystal bundles, essential oil secretory cells dark yellow, many vessel fragments vascular network spiral vessels, starch granules rhomboid. Essential oil 0.8-1% pale yellow, pleasant fragrance, consists of Monoterpenoid (Linalool occupies largest content) and Sesquiterpenoid (Cadinol, Cadinene). Also has phenolic acid and flavonoid (apigenin). Thien Nien Kien dispels wind-dampness, strengthens tendons bones, treats wind cold dampness causing cold back knee pain, cramped numb legs. Daily use 4.5-9g combined in prescriptions or wine infusion. External use: fresh rhizome pounded stir-fried hot massage on painful areas, or soak dried rhizome with wine massage painful areas, numbness and wind-dampness."
+    mainIngredients: [
+      "Essential oil 0.8-1% (Monoterpenoid: Linalool; Sesquiterpenoid: Cadinol, Cadinene)",
+      "Phenolic acid (protocatechuic acid, vanilic acid, syringic acid, caffeic acid, ferulic acid, p-coumaric acid)",
+      "Flavonoid (apigenin)",
+    ],
+    uses: [
+      "Dispels wind-dampness",
+      "Strengthens tendons bones",
+      "Activates blood",
+      "Relieves pain",
+    ],
+    indications: [
+      "Wind cold dampness",
+      "Cold back knee pain",
+      "Cramped numb legs",
+      "Joint pain",
+      "Wind-dampness paralysis",
+    ],
+    dosage:
+      "Dried rhizome: 4.5-9g decoction or combined in prescriptions, wine infusion. External use: fresh rhizome pounded, stir-fried hot massage on painful areas; or soak dried rhizome with wine massage painful areas, numbness and wind-dampness",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Pregnant women",
+    ],
+    origin:
+      "Vietnam (grows wild abundantly in mountainous forest areas, prefers moist places, beside streams or along streams)",
+    description:
+      "Thien Nien Kien (also called Sơn thục) is a perennial plant of the Araceae family, has plump green rhizome 1-2cm diameter. Leaves alternate, petiole 18-25cm long, smooth soft green, lower petiole expands into pale yellow sheath. Blade arrowhead-shaped, 11-15cm long, 7-11cm wide, pointed tip, arrow-wing-shaped below, entire margins, upper leaf surface darker, both surfaces smooth, marginal veins all directed toward leaf apex. Flower cluster is a pale green spathe 4-5cm long, 10-15cm wide, each clump usually has 3-4 spathes, spathe stalk 5-15cm long, spadix shorter than spathe 3-4cm long. Flowering season: March-April. Fruiting season: May-June. Thien Nien Kien grows wild abundantly in mountainous forest areas of Vietnam, plant prefers moist places, beside streams or along streams. Harvest old rhizomes sun or oven dry. Cork layer yellow-brown. Parenchyma consists of round cells, thin-walled. From outside inward has large thick-walled fiber masses, phloem-xylem bundles with many different arrangement patterns. In parenchyma has essential oil secretory cells, cells containing needle-shaped and spherical spiny calcium oxalate crystals. Rhizome powder yellow-brown, microscopy shows many fiber bundles, sclerenchyma cells slightly thick-walled, parenchyma cell fragments containing spherical spiny or needle-shaped calcium oxalate crystal bundles, essential oil secretory cells dark yellow, many vessel fragments vascular network spiral vessels, starch granules rhomboid. Essential oil 0.8-1% pale yellow, pleasant fragrance, consists of Monoterpenoid (Linalool occupies largest content) and Sesquiterpenoid (Cadinol, Cadinene). Also has phenolic acid and flavonoid (apigenin). Thien Nien Kien dispels wind-dampness, strengthens tendons bones, treats wind cold dampness causing cold back knee pain, cramped numb legs. Daily use 4.5-9g combined in prescriptions or wine infusion. External use: fresh rhizome pounded stir-fried hot massage on painful areas, or soak dried rhizome with wine massage painful areas, numbness and wind-dampness.",
   },
   {
     id: 121,
@@ -2168,13 +5400,37 @@ export const medicines = [
     usedParts: "Whole plant excluding roots (Herba Pouzolziae)",
     properties: "Bitter sweet taste, cool nature",
     meridians: "Lung meridian",
-    mainIngredients: ["Phytosterol (beta-sitosterol, daucosterol)", "Coumarin (scopolin, scutellarein-7-O-alpha-L-rhamnoside, scopoletin)", "Flavonoid (quercetin, quercetin-3-O-beta-D-glucoside, apigenin, epicatechin)", "Triterpene (2-alpha-hydroxyursolic acid, oleanolic acid, alpha-amyrin)", "Eugenyl-beta-rutinoside"],
-    uses: ["Stops cough", "Expels phlegm", "Anti-inflammatory", "Moistens lungs"],
-    indications: ["Chronic cough", "Persistent cough", "Early tuberculosis cough", "Tuberculosis cough", "Sore throat", "Tracheobronchitis", "Dry cough"],
-    dosage: "Dried whole plant: 10-20g decoction. Fresh whole plant: 30-60g decoction",
-    contraindications: ["People with spleen-stomach deficiency cold", "Cough from wind-cold"],
+    mainIngredients: [
+      "Phytosterol (beta-sitosterol, daucosterol)",
+      "Coumarin (scopolin, scutellarein-7-O-alpha-L-rhamnoside, scopoletin)",
+      "Flavonoid (quercetin, quercetin-3-O-beta-D-glucoside, apigenin, epicatechin)",
+      "Triterpene (2-alpha-hydroxyursolic acid, oleanolic acid, alpha-amyrin)",
+      "Eugenyl-beta-rutinoside",
+    ],
+    uses: [
+      "Stops cough",
+      "Expels phlegm",
+      "Anti-inflammatory",
+      "Moistens lungs",
+    ],
+    indications: [
+      "Chronic cough",
+      "Persistent cough",
+      "Early tuberculosis cough",
+      "Tuberculosis cough",
+      "Sore throat",
+      "Tracheobronchitis",
+      "Dry cough",
+    ],
+    dosage:
+      "Dried whole plant: 10-20g decoction. Fresh whole plant: 30-60g decoction",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Cough from wind-cold",
+    ],
     origin: "Vietnam (grows wild everywhere)",
-    description: "Thuoc Gioi (also called Bọ mắm, Bơ nước tương, Đại kích biển) is a grass species of the Urticaceae family, soft branches, hairy stem. Leaves alternate, sometimes opposite with stipules, narrow lanceolate, hairs on veins and both surfaces especially lower surface, leaves 4-9cm long, 1.5-2.5cm wide. Has 3 veins emerging from petiole, petiole 5mm long with white hairs. Unisexual flower clusters growing in contracted axillary cymes with sessile flowers. Fruit ovate pointed, with hairy perianth. Plant grows wild everywhere in Vietnam. Harvest whole plant excluding roots year-round, use fresh or sun, oven dry. Chemical composition includes phytosterol (beta-sitosterol, daucosterol), coumarin (scopolin, scutellarein-7-O-alpha-L-rhamnoside, scopoletin), flavonoid (quercetin, quercetin-3-O-beta-D-glucoside, apigenin, epicatechin), triterpene (2-alpha-hydroxyursolic acid, oleanolic acid, alpha-amyrin, 2-alpha, 3-alpha, 9-alpha-trihydroxyurs-12-en-28-oic) and eugenyl-beta-rutinoside. Thuoc Gioi has stopping cough, expelling phlegm, anti-inflammatory, moistening lungs effects. Treats chronic cough, persistent cough, early tuberculosis cough, tuberculosis cough, sore throat, tracheobronchitis, dry cough. Thuoc Gioi is a precious medicine in Vietnamese traditional medicine, especially effective treating respiratory diseases. Use dried whole plant 10-20g or fresh whole plant 30-60g decoction daily. Plant has cool nature so should not use for people with spleen-stomach deficiency cold or cough from wind-cold."
+    description:
+      "Thuoc Gioi (also called Bọ mắm, Bơ nước tương, Đại kích biển) is a grass species of the Urticaceae family, soft branches, hairy stem. Leaves alternate, sometimes opposite with stipules, narrow lanceolate, hairs on veins and both surfaces especially lower surface, leaves 4-9cm long, 1.5-2.5cm wide. Has 3 veins emerging from petiole, petiole 5mm long with white hairs. Unisexual flower clusters growing in contracted axillary cymes with sessile flowers. Fruit ovate pointed, with hairy perianth. Plant grows wild everywhere in Vietnam. Harvest whole plant excluding roots year-round, use fresh or sun, oven dry. Chemical composition includes phytosterol (beta-sitosterol, daucosterol), coumarin (scopolin, scutellarein-7-O-alpha-L-rhamnoside, scopoletin), flavonoid (quercetin, quercetin-3-O-beta-D-glucoside, apigenin, epicatechin), triterpene (2-alpha-hydroxyursolic acid, oleanolic acid, alpha-amyrin, 2-alpha, 3-alpha, 9-alpha-trihydroxyurs-12-en-28-oic) and eugenyl-beta-rutinoside. Thuoc Gioi has stopping cough, expelling phlegm, anti-inflammatory, moistening lungs effects. Treats chronic cough, persistent cough, early tuberculosis cough, tuberculosis cough, sore throat, tracheobronchitis, dry cough. Thuoc Gioi is a precious medicine in Vietnamese traditional medicine, especially effective treating respiratory diseases. Use dried whole plant 10-20g or fresh whole plant 30-60g decoction daily. Plant has cool nature so should not use for people with spleen-stomach deficiency cold or cough from wind-cold.",
   },
   {
     id: 122,
@@ -2187,13 +5443,48 @@ export const medicines = [
     usedParts: "Rhizome (Rhizoma Acori)",
     properties: "Pungent bitter taste, warm nature",
     meridians: "Heart, Liver, Spleen meridians",
-    mainIngredients: ["Essential oil 1.5-3.5% (α-asaron, β-asaron, asaryl aldehyde, shyobunone)", "Organic acids", "Tannin", "Mucilage"],
-    uses: ["Awakens spleen", "Opens orifices", "Expels phlegm", "Calms spirit", "Relieves dampness", "Kills parasites"],
-    indications: ["Phlegm-dampness clouding orifices", "Lethargy", "Deafness", "Epilepsy", "Poor memory", "Insomnia", "Forgetfulness", "Abdominal distension fullness", "Poor appetite", "Diarrhea", "Dysentery", "Wind-dampness numbness pain", "Traumatic injuries", "Carbuncles swellings"],
-    dosage: "Dried rhizome: 3-9g decoction. External use: appropriate amount pounded or fried hot compress",
-    contraindications: ["People with yin deficiency fire excess", "Sweating due to yin deficiency", "Cough with hemoptysis", "Spermatorrhea and seminal emission"],
-    origin: "Vietnam (grows wild beside streams, ponds, wetlands throughout country)",
-    description: "Thuy Xuong Bo (sweet flag, also called Xương bồ) is a perennial herbaceous plant of the Araceae family 40-100cm tall. Rhizome horizontal cylindrical, nodes with fibrous roots, aromatic fragrance. Leaves linear 1.5-2cm wide, with prominent midvein, entire margins. Spadix inflorescence grows lateral on leaf-like stalk (actually a continuation of rhizome), cylindrical 4-7cm long, pale yellow-green. Flowers bisexual tightly packed on spadix. Fruit rarely forms. Sweet flag plant grows wild beside streams, ponds, wetlands throughout our country. Harvest rhizomes in autumn-winter or spring before sprouting, remove fibrous roots, wash clean, sun or oven dry, cut into sections. Rhizome contains 1.5-3.5% essential oil with main components α-asaron, β-asaron, asaryl aldehyde, shyobunone and other compounds, also has organic acids, tannin, mucilage. Sweet flag has awakening spleen, opening orifices, expelling phlegm, calming spirit effects. Treats phlegm-dampness clouding orifices causing lethargy, deafness, epilepsy, poor memory, insomnia, forgetfulness. Relieves dampness treats abdominal distension fullness, poor appetite, diarrhea, dysentery. Also treats wind-dampness numbness pain, traumatic injuries, carbuncles swellings (external use pounded or fried hot compress). Epidermis consists of one layer rectangular cells evenly arranged. In cortex parenchyma has many essential oil secretory cells appearing yellow-brown. Endodermis consists of one layer small rectangular cells. Central cylinder has scattered vascular bundles. In central cylinder parenchyma scattered needle-shaped calcium oxalate crystal bundles and spherical spiny calcium oxalate crystals. Rhizome powder pale yellow-brown with characteristic fragrance. Microscopy shows many essential oil secretory cell fragments, needle-shaped calcium oxalate crystal bundles, spherical spiny calcium oxalate crystals, parenchyma cell fragments, vessel fragments."
+    mainIngredients: [
+      "Essential oil 1.5-3.5% (α-asaron, β-asaron, asaryl aldehyde, shyobunone)",
+      "Organic acids",
+      "Tannin",
+      "Mucilage",
+    ],
+    uses: [
+      "Awakens spleen",
+      "Opens orifices",
+      "Expels phlegm",
+      "Calms spirit",
+      "Relieves dampness",
+      "Kills parasites",
+    ],
+    indications: [
+      "Phlegm-dampness clouding orifices",
+      "Lethargy",
+      "Deafness",
+      "Epilepsy",
+      "Poor memory",
+      "Insomnia",
+      "Forgetfulness",
+      "Abdominal distension fullness",
+      "Poor appetite",
+      "Diarrhea",
+      "Dysentery",
+      "Wind-dampness numbness pain",
+      "Traumatic injuries",
+      "Carbuncles swellings",
+    ],
+    dosage:
+      "Dried rhizome: 3-9g decoction. External use: appropriate amount pounded or fried hot compress",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Sweating due to yin deficiency",
+      "Cough with hemoptysis",
+      "Spermatorrhea and seminal emission",
+    ],
+    origin:
+      "Vietnam (grows wild beside streams, ponds, wetlands throughout country)",
+    description:
+      "Thuy Xuong Bo (sweet flag, also called Xương bồ) is a perennial herbaceous plant of the Araceae family 40-100cm tall. Rhizome horizontal cylindrical, nodes with fibrous roots, aromatic fragrance. Leaves linear 1.5-2cm wide, with prominent midvein, entire margins. Spadix inflorescence grows lateral on leaf-like stalk (actually a continuation of rhizome), cylindrical 4-7cm long, pale yellow-green. Flowers bisexual tightly packed on spadix. Fruit rarely forms. Sweet flag plant grows wild beside streams, ponds, wetlands throughout our country. Harvest rhizomes in autumn-winter or spring before sprouting, remove fibrous roots, wash clean, sun or oven dry, cut into sections. Rhizome contains 1.5-3.5% essential oil with main components α-asaron, β-asaron, asaryl aldehyde, shyobunone and other compounds, also has organic acids, tannin, mucilage. Sweet flag has awakening spleen, opening orifices, expelling phlegm, calming spirit effects. Treats phlegm-dampness clouding orifices causing lethargy, deafness, epilepsy, poor memory, insomnia, forgetfulness. Relieves dampness treats abdominal distension fullness, poor appetite, diarrhea, dysentery. Also treats wind-dampness numbness pain, traumatic injuries, carbuncles swellings (external use pounded or fried hot compress). Epidermis consists of one layer rectangular cells evenly arranged. In cortex parenchyma has many essential oil secretory cells appearing yellow-brown. Endodermis consists of one layer small rectangular cells. Central cylinder has scattered vascular bundles. In central cylinder parenchyma scattered needle-shaped calcium oxalate crystal bundles and spherical spiny calcium oxalate crystals. Rhizome powder pale yellow-brown with characteristic fragrance. Microscopy shows many essential oil secretory cell fragments, needle-shaped calcium oxalate crystal bundles, spherical spiny calcium oxalate crystals, parenchyma cell fragments, vessel fragments.",
   },
   {
     id: 123,
@@ -2202,17 +5493,46 @@ export const medicines = [
     scientificName: "Perilla frutescens (L.) Britton",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://ccc.vn/wp-content/uploads/2022/04/cay-tia-to-chua-benh.jpeg",
-    usedParts: "Leaves (Tía tô - Folium Perillae), stems (Perilla stem), seeds (Tử tô - Fructus Perillae)",
-    properties: "Leaves: pungent taste, warm nature; Seeds: pungent taste, warm nature",
-    meridians: "Leaves: Lung, Spleen meridians; Seeds: Lung, Large Intestine meridians",
-    mainIngredients: ["Essential oil (perillaldehyde, limonene, linalool, β-caryophyllene)", "Flavonoid (luteolin, apigenin, chrysoeriol)", "Rosmarinic acid", "Fatty acids (linolenic acid, linoleic acid, oleic acid)"],
-    uses: ["Releases exterior", "Disperses cold", "Rectifies qi", "Harmonizes middle", "Resolves fish-crab toxicity", "Calms fetus"],
-    indications: ["Wind-cold common cold", "Cough", "Vomiting", "Pregnancy vomiting", "Fish-crab poisoning", "Chest-abdominal fullness", "Phlegm-asthma"],
-    dosage: "Leaves: 4.5-9g decoction, should not decoct long. Seeds: 3-10g decoction or grind powder",
-    contraindications: ["People with qi deficiency exterior deficiency excessive sweating", "Seeds should not use for people with spleen deficiency loose stools"],
+    image:
+      "https://ccc.vn/wp-content/uploads/2022/04/cay-tia-to-chua-benh.jpeg",
+    usedParts:
+      "Leaves (Tía tô - Folium Perillae), stems (Perilla stem), seeds (Tử tô - Fructus Perillae)",
+    properties:
+      "Leaves: pungent taste, warm nature; Seeds: pungent taste, warm nature",
+    meridians:
+      "Leaves: Lung, Spleen meridians; Seeds: Lung, Large Intestine meridians",
+    mainIngredients: [
+      "Essential oil (perillaldehyde, limonene, linalool, β-caryophyllene)",
+      "Flavonoid (luteolin, apigenin, chrysoeriol)",
+      "Rosmarinic acid",
+      "Fatty acids (linolenic acid, linoleic acid, oleic acid)",
+    ],
+    uses: [
+      "Releases exterior",
+      "Disperses cold",
+      "Rectifies qi",
+      "Harmonizes middle",
+      "Resolves fish-crab toxicity",
+      "Calms fetus",
+    ],
+    indications: [
+      "Wind-cold common cold",
+      "Cough",
+      "Vomiting",
+      "Pregnancy vomiting",
+      "Fish-crab poisoning",
+      "Chest-abdominal fullness",
+      "Phlegm-asthma",
+    ],
+    dosage:
+      "Leaves: 4.5-9g decoction, should not decoct long. Seeds: 3-10g decoction or grind powder",
+    contraindications: [
+      "People with qi deficiency exterior deficiency excessive sweating",
+      "Seeds should not use for people with spleen deficiency loose stools",
+    ],
     origin: "Vietnam (cultivated everywhere for vegetable and medicine)",
-    description: "Tia To (perilla, also called Tía, Tử tô) is an annual herbaceous plant of the Lamiaceae family 60-90cm tall. Stem square-angled, green or purple. Leaves opposite, long-stalked, blade broadly ovate 7-13cm long, 4.5-10cm wide, apex acuminate, base rounded or broadly cuneate, margins coarsely serrate, both surfaces green or purple with glands, sparsely hairy. Terminal and axillary paniculate raceme inflorescences. Calyx bell-shaped with 5 teeth. Corolla pale red or white, 2-lipped. Nutlets small, grayish-brown. Perilla plant cultivated everywhere throughout our country for vegetable and medicine. Harvest leaves in summer-autumn before flowering or during flowering. Seeds harvested when fruits mature in autumn, sun dry, thresh to separate seeds. Leaves contain essential oil with main components perillaldehyde, limonene, linalool, β-caryophyllene, also has flavonoid (luteolin, apigenin, chrysoeriol), rosmarinic acid. Seeds contain fatty oil rich in linolenic acid (up to 60%), linoleic acid, oleic acid, also has essential oil. Perilla leaves have releasing exterior, dispersing cold, rectifying qi, harmonizing middle effects. Treat wind-cold common cold, cough, vomiting, pregnancy vomiting, fish-crab poisoning. Seeds descend qi, transform phlegm, moisten intestines. Treat phlegm-asthma, cough, chest-abdominal fullness, constipation. Upper leaf epidermis consists of polygonal cells with wavy walls. Lower epidermis has many stomata and glandular hairs. Glandular hairs have large 8-celled head and very short 1-2 celled stalk. Also has non-glandular hairs 1-8 celled. Leaf powder shows epidermal fragments with glandular hairs and non-glandular hairs, calcium oxalate cluster crystals."
+    description:
+      "Tia To (perilla, also called Tía, Tử tô) is an annual herbaceous plant of the Lamiaceae family 60-90cm tall. Stem square-angled, green or purple. Leaves opposite, long-stalked, blade broadly ovate 7-13cm long, 4.5-10cm wide, apex acuminate, base rounded or broadly cuneate, margins coarsely serrate, both surfaces green or purple with glands, sparsely hairy. Terminal and axillary paniculate raceme inflorescences. Calyx bell-shaped with 5 teeth. Corolla pale red or white, 2-lipped. Nutlets small, grayish-brown. Perilla plant cultivated everywhere throughout our country for vegetable and medicine. Harvest leaves in summer-autumn before flowering or during flowering. Seeds harvested when fruits mature in autumn, sun dry, thresh to separate seeds. Leaves contain essential oil with main components perillaldehyde, limonene, linalool, β-caryophyllene, also has flavonoid (luteolin, apigenin, chrysoeriol), rosmarinic acid. Seeds contain fatty oil rich in linolenic acid (up to 60%), linoleic acid, oleic acid, also has essential oil. Perilla leaves have releasing exterior, dispersing cold, rectifying qi, harmonizing middle effects. Treat wind-cold common cold, cough, vomiting, pregnancy vomiting, fish-crab poisoning. Seeds descend qi, transform phlegm, moisten intestines. Treat phlegm-asthma, cough, chest-abdominal fullness, constipation. Upper leaf epidermis consists of polygonal cells with wavy walls. Lower epidermis has many stomata and glandular hairs. Glandular hairs have large 8-celled head and very short 1-2 celled stalk. Also has non-glandular hairs 1-8 celled. Leaf powder shows epidermal fragments with glandular hairs and non-glandular hairs, calcium oxalate cluster crystals.",
   },
   {
     id: 124,
@@ -2221,17 +5541,52 @@ export const medicines = [
     scientificName: "Camellia sinensis (L.) Kuntze",
     family: "Họ Chè (Theaceae)",
     categoryId: "theaceae",
-    image: "https://file.hstatic.net/1000075078/file/1_fa908413779540f39a9a4f3418e41a23_grande.jpg",
+    image:
+      "https://file.hstatic.net/1000075078/file/1_fa908413779540f39a9a4f3418e41a23_grande.jpg",
     usedParts: "Young leaves and buds (Folium Camelliae sinensis)",
     properties: "Bitter sweet taste, cool nature",
     meridians: "Heart, Lung, Stomach meridians",
-    mainIngredients: ["Polyphenols 20-35% (catechins: EGCG - epigallocatechin gallate 10-15%, ECG - epicatechin gallate 3-6%, EGC - epigallocatechin 3-6%, EC - epicatechin 1-3%; theaflavins, thearubigins in fermented tea)", "Caffeine 2-4%", "L-theanine", "Essential oils", "Vitamins (C, E, K, B complex)", "Minerals (fluoride, manganese, potassium)"],
-    uses: ["Clears head and eyes", "Eliminates vexation and thirst", "Transforms phlegm", "Aids digestion", "Promotes urination", "Detoxifies", "Antioxidant", "Prevents cardiovascular disease", "Supports weight loss"],
-    indications: ["Headache", "Blurred vision", "Drowsiness", "Vexation thirst", "Indigestion", "Phlegm accumulation", "Dysentery", "Urinary dysfunction"],
-    dosage: "Dried leaves: 3-10g infusion drink, or appropriate amount for daily tea drinking. Should not drink too concentrated or on empty stomach",
-    contraindications: ["People with insomnia", "People with gastric ulcer", "Pregnant women should limit", "Should not drink strong tea on empty stomach"],
-    origin: "Vietnam (cultivated in many mountainous provinces, especially Thai Nguyen, Phu Tho, Yen Bai, Lam Dong)",
-    description: "Tra (tea plant) is an evergreen shrub or small tree of the Theaceae family 1-6m tall. Leaves alternate, short-stalked, leathery, elliptic or oblong-lanceolate 5-12cm long, 2-5cm wide, margins finely serrate, dark green shiny upper surface. White fragrant flowers solitary or 2-3 in leaf axils. Fruit is capsule. Tea plant cultivated in many mountainous provinces of Vietnam, especially Thai Nguyen, Phu Tho, Yen Bai, Lam Dong. Harvest young leaves and buds year-round, fresh leaves processed into various tea types: green tea (unfermented), oolong tea (partially fermented), black tea (fully fermented). Fresh tea leaves contain 20-35% polyphenols, mainly catechins with EGCG (epigallocatechin gallate) being most abundant and having strongest biological activity. During tea fermentation, catechins oxidize forming theaflavins (golden-yellow color, contributing to tea brightness and briskness) and thearubigins (reddish-brown color, contributing to tea body and depth). Also contains 2-4% caffeine stimulating central nervous system, L-theanine amino acid creating relaxation without drowsiness, essential oils, vitamins and minerals. Tea has clearing head and eyes, eliminating vexation and thirst, transforming phlegm, aiding digestion, promoting urination, detoxifying effects. Modern research shows tea polyphenols especially EGCG have strong antioxidant effects, prevent cardiovascular disease, support weight loss, antibacterial, anti-inflammatory. Catechins in green tea help reduce bad cholesterol (LDL), increase good cholesterol (HDL), protect blood vessels. Theaflavins in black tea also have cardiovascular protective effects. Treat headache, blurred vision, drowsiness, vexation thirst, indigestion, phlegm accumulation, dysentery. Daily tea drinking helps refresh mind, increase alertness, support digestion. However should not drink too concentrated or on empty stomach, people with insomnia or gastric ulcer should be cautious. Leaf epidermis has thick cuticle layer. Mesophyll has palisade tissue and spongy tissue. Throughout mesophyll scattered sclereid cells (stone cells) characteristic of tea leaves. Vascular bundles with surrounding fiber sheath. Leaf powder shows epidermal fragments, sclereid cells, vessel fragments, calcium oxalate cluster crystals."
+    mainIngredients: [
+      "Polyphenols 20-35% (catechins: EGCG - epigallocatechin gallate 10-15%, ECG - epicatechin gallate 3-6%, EGC - epigallocatechin 3-6%, EC - epicatechin 1-3%; theaflavins, thearubigins in fermented tea)",
+      "Caffeine 2-4%",
+      "L-theanine",
+      "Essential oils",
+      "Vitamins (C, E, K, B complex)",
+      "Minerals (fluoride, manganese, potassium)",
+    ],
+    uses: [
+      "Clears head and eyes",
+      "Eliminates vexation and thirst",
+      "Transforms phlegm",
+      "Aids digestion",
+      "Promotes urination",
+      "Detoxifies",
+      "Antioxidant",
+      "Prevents cardiovascular disease",
+      "Supports weight loss",
+    ],
+    indications: [
+      "Headache",
+      "Blurred vision",
+      "Drowsiness",
+      "Vexation thirst",
+      "Indigestion",
+      "Phlegm accumulation",
+      "Dysentery",
+      "Urinary dysfunction",
+    ],
+    dosage:
+      "Dried leaves: 3-10g infusion drink, or appropriate amount for daily tea drinking. Should not drink too concentrated or on empty stomach",
+    contraindications: [
+      "People with insomnia",
+      "People with gastric ulcer",
+      "Pregnant women should limit",
+      "Should not drink strong tea on empty stomach",
+    ],
+    origin:
+      "Vietnam (cultivated in many mountainous provinces, especially Thai Nguyen, Phu Tho, Yen Bai, Lam Dong)",
+    description:
+      "Tra (tea plant) is an evergreen shrub or small tree of the Theaceae family 1-6m tall. Leaves alternate, short-stalked, leathery, elliptic or oblong-lanceolate 5-12cm long, 2-5cm wide, margins finely serrate, dark green shiny upper surface. White fragrant flowers solitary or 2-3 in leaf axils. Fruit is capsule. Tea plant cultivated in many mountainous provinces of Vietnam, especially Thai Nguyen, Phu Tho, Yen Bai, Lam Dong. Harvest young leaves and buds year-round, fresh leaves processed into various tea types: green tea (unfermented), oolong tea (partially fermented), black tea (fully fermented). Fresh tea leaves contain 20-35% polyphenols, mainly catechins with EGCG (epigallocatechin gallate) being most abundant and having strongest biological activity. During tea fermentation, catechins oxidize forming theaflavins (golden-yellow color, contributing to tea brightness and briskness) and thearubigins (reddish-brown color, contributing to tea body and depth). Also contains 2-4% caffeine stimulating central nervous system, L-theanine amino acid creating relaxation without drowsiness, essential oils, vitamins and minerals. Tea has clearing head and eyes, eliminating vexation and thirst, transforming phlegm, aiding digestion, promoting urination, detoxifying effects. Modern research shows tea polyphenols especially EGCG have strong antioxidant effects, prevent cardiovascular disease, support weight loss, antibacterial, anti-inflammatory. Catechins in green tea help reduce bad cholesterol (LDL), increase good cholesterol (HDL), protect blood vessels. Theaflavins in black tea also have cardiovascular protective effects. Treat headache, blurred vision, drowsiness, vexation thirst, indigestion, phlegm accumulation, dysentery. Daily tea drinking helps refresh mind, increase alertness, support digestion. However should not drink too concentrated or on empty stomach, people with insomnia or gastric ulcer should be cautious. Leaf epidermis has thick cuticle layer. Mesophyll has palisade tissue and spongy tissue. Throughout mesophyll scattered sclereid cells (stone cells) characteristic of tea leaves. Vascular bundles with surrounding fiber sheath. Leaf powder shows epidermal fragments, sclereid cells, vessel fragments, calcium oxalate cluster crystals.",
   },
   {
     id: 125,
@@ -2240,17 +5595,48 @@ export const medicines = [
     scientificName: "Melaleuca cajuputi Powell",
     family: "Họ Sim (Myrtaceae)",
     categoryId: "myrtaceae",
-    image: "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/tram-2.jpg",
-    usedParts: "Leaves (Folium Melaleucae cajuputi), essential oil (Oleum Melaleucae cajuputi)",
+    image:
+      "https://trungtamthuocdantoc.com/wp-content/uploads/2019/10/tram-2.jpg",
+    usedParts:
+      "Leaves (Folium Melaleucae cajuputi), essential oil (Oleum Melaleucae cajuputi)",
     properties: "Pungent taste, warm nature",
     meridians: "Lung, Spleen, Bladder meridians",
-    mainIngredients: ["Essential oil (1,8-cineol/eucalyptol 45-60%, α-terpineol, terpinen-4-ol, limonene, α-pinene, β-pinene)", "Tannin", "Flavonoid"],
-    uses: ["Dispels wind-cold", "Warms middle", "Relieves pain", "Promotes urination", "Kills parasites", "Anti-inflammatory", "Antibacterial"],
-    indications: ["Wind-cold common cold", "Headache", "Stuffy nose", "Cough", "Abdominal pain", "Vomiting diarrhea", "Rheumatic pain", "Toothache", "Scabies itching", "Insect bites"],
-    dosage: "Leaves: 6-15g decoction. Essential oil: 3-5 drops in warm water drink or steam inhalation. External use: essential oil applied topically to painful areas or insect bites",
-    contraindications: ["People with yin deficiency fire excess", "Children under 2 years old should not use essential oil"],
-    origin: "Vietnam (grows wild and cultivated in coastal areas and wetlands, especially Mekong Delta)",
-    description: "Tram (cajuput tree, also called Tràm trắng) is a tree of the Myrtaceae family 10-25m tall. Bark white spongy peeling in many layers. Leaves alternate, narrow lanceolate or linear-lanceolate 5-15cm long, 0.5-2.5cm wide, with 3-7 longitudinal veins, entire margins, aromatic when crushed. White flowers in terminal or axillary spikes. Fruit is woody capsule. Cajuput tree grows wild and cultivated in coastal areas and wetlands throughout Vietnam, especially Mekong Delta. Harvest leaves year-round for essential oil distillation or use directly. Leaves contain essential oil with main component 1,8-cineol (eucalyptol) accounting for 45-60%, also has α-terpineol, terpinen-4-ol, limonene, α-pinene, β-pinene. Additionally contains tannin, flavonoid. Cajuput essential oil has strong antibacterial, anti-inflammatory, analgesic effects. Has dispelling wind-cold, warming middle, relieving pain, promoting urination effects. Treat wind-cold common cold, headache, stuffy nose, cough. Warms middle treats abdominal pain, vomiting diarrhea. External use treats rheumatic pain, toothache, scabies itching, insect bites. In Vietnam, cajuput oil is very popular traditional medicine, used for massage, steam inhalation treats cold, applied topically treats headache, muscle pain. Cajuput oil main component 1,8-cineol has expectorant, bronchodilator effects, helps relieve cough and respiratory congestion. Also has antimicrobial activity against many bacteria and fungi. Leaf epidermis has many essential oil glands. Cross-section shows prominent midrib with vascular bundles. Mesophyll has palisade tissue and spongy tissue containing many oil glands. Throughout mesophyll scattered calcium oxalate cluster crystals. Leaf powder shows epidermal fragments with oil glands, vessel fragments, fiber fragments, calcium oxalate cluster crystals."
+    mainIngredients: [
+      "Essential oil (1,8-cineol/eucalyptol 45-60%, α-terpineol, terpinen-4-ol, limonene, α-pinene, β-pinene)",
+      "Tannin",
+      "Flavonoid",
+    ],
+    uses: [
+      "Dispels wind-cold",
+      "Warms middle",
+      "Relieves pain",
+      "Promotes urination",
+      "Kills parasites",
+      "Anti-inflammatory",
+      "Antibacterial",
+    ],
+    indications: [
+      "Wind-cold common cold",
+      "Headache",
+      "Stuffy nose",
+      "Cough",
+      "Abdominal pain",
+      "Vomiting diarrhea",
+      "Rheumatic pain",
+      "Toothache",
+      "Scabies itching",
+      "Insect bites",
+    ],
+    dosage:
+      "Leaves: 6-15g decoction. Essential oil: 3-5 drops in warm water drink or steam inhalation. External use: essential oil applied topically to painful areas or insect bites",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Children under 2 years old should not use essential oil",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated in coastal areas and wetlands, especially Mekong Delta)",
+    description:
+      "Tram (cajuput tree, also called Tràm trắng) is a tree of the Myrtaceae family 10-25m tall. Bark white spongy peeling in many layers. Leaves alternate, narrow lanceolate or linear-lanceolate 5-15cm long, 0.5-2.5cm wide, with 3-7 longitudinal veins, entire margins, aromatic when crushed. White flowers in terminal or axillary spikes. Fruit is woody capsule. Cajuput tree grows wild and cultivated in coastal areas and wetlands throughout Vietnam, especially Mekong Delta. Harvest leaves year-round for essential oil distillation or use directly. Leaves contain essential oil with main component 1,8-cineol (eucalyptol) accounting for 45-60%, also has α-terpineol, terpinen-4-ol, limonene, α-pinene, β-pinene. Additionally contains tannin, flavonoid. Cajuput essential oil has strong antibacterial, anti-inflammatory, analgesic effects. Has dispelling wind-cold, warming middle, relieving pain, promoting urination effects. Treat wind-cold common cold, headache, stuffy nose, cough. Warms middle treats abdominal pain, vomiting diarrhea. External use treats rheumatic pain, toothache, scabies itching, insect bites. In Vietnam, cajuput oil is very popular traditional medicine, used for massage, steam inhalation treats cold, applied topically treats headache, muscle pain. Cajuput oil main component 1,8-cineol has expectorant, bronchodilator effects, helps relieve cough and respiratory congestion. Also has antimicrobial activity against many bacteria and fungi. Leaf epidermis has many essential oil glands. Cross-section shows prominent midrib with vascular bundles. Mesophyll has palisade tissue and spongy tissue containing many oil glands. Throughout mesophyll scattered calcium oxalate cluster crystals. Leaf powder shows epidermal fragments with oil glands, vessel fragments, fiber fragments, calcium oxalate cluster crystals.",
   },
   {
     id: 126,
@@ -2259,17 +5645,47 @@ export const medicines = [
     scientificName: "Piper betle L.",
     family: "Họ Hồ tiêu (Piperaceae)",
     categoryId: "piperaceae",
-    image: "https://chohoaonline.com/UserFiles/image/cay-trau-khong_cay-trau-khong-1.jpg",
+    image:
+      "https://chohoaonline.com/UserFiles/image/cay-trau-khong_cay-trau-khong-1.jpg",
     usedParts: "Leaves (Folium Piperis betle), stems",
     properties: "Pungent taste, warm nature",
     meridians: "Liver, Lung, Stomach meridians",
-    mainIngredients: ["Essential oil (eugenol, chavibetol, chavicol, caryophyllene, cadinene)", "Phenylpropanoid (chavibetol acetate, allylpyrocatechol)", "Tannin", "Starch"],
-    uses: ["Warms middle", "Disperses cold", "Eliminates dampness", "Kills parasites", "Stops cough", "Relieves pain"],
-    indications: ["Wind-cold cough", "Chest fullness", "Abdominal pain due to cold", "Vomiting diarrhea", "Headache", "Toothache", "Rheumatic pain", "Vaginal discharge", "Scabies", "Snake bites (external use)"],
-    dosage: "Leaves: 6-15g decoction or eaten fresh with betel nut. External use: fresh leaves pounded apply to affected areas",
-    contraindications: ["People with yin deficiency fire excess", "Excessive use can cause mouth heat"],
-    origin: "Vietnam (cultivated everywhere as traditional masticatory and medicine)",
-    description: "Trau Khong (betel leaf, also called Lá trầu) is a perennial climbing vine of the Piperaceae family. Stem cylindrical with nodes, climbs on supports by adventitious roots. Leaves alternate, long-stalked, blade broadly ovate or heart-shaped 6-15cm long, 5-12cm wide, apex acuminate, base deeply cordate, entire margins, 5-7 basal veins, aromatic when crushed. Unisexual flowers on separate plants (dioecious), arranged in slender cylindrical spikes opposite leaves. Male spikes longer, female spikes shorter. Fruit is drupe. Betel leaf cultivated everywhere throughout Vietnam as traditional masticatory (chewed with areca nut and lime) and medicine. Harvest leaves year-round, use fresh or dried. Leaves contain essential oil with main components eugenol, chavibetol (betel phenol), chavicol, caryophyllene, cadinene. Also has phenylpropanoid derivatives (chavibetol acetate, allylpyrocatechol), tannin, starch. Betel leaf has warming middle, dispersing cold, eliminating dampness, killing parasites effects. Treat wind-cold cough, chest fullness, abdominal pain due to cold, vomiting diarrhea, headache, toothache. External use treats rheumatic pain, vaginal discharge, scabies, snake bites (fresh leaves pounded apply). In Vietnamese traditional medicine, betel leaf also used to treat bad breath, strengthen teeth. Eugenol in betel leaf has antibacterial, analgesic, local anesthetic effects. However excessive chewing betel quid (betel leaf + areca nut + lime) can increase risk of oral cancer. Upper leaf epidermis consists of polygonal cells. Lower epidermis has stomata and essential oil cells. Mesophyll has palisade tissue and spongy tissue. Vascular bundles surrounded by fiber sheath. Throughout mesophyll scattered calcium oxalate cluster crystals and raphide bundles. Leaf powder shows epidermal fragments with oil cells, vessel fragments, fiber fragments, calcium oxalate crystals. Characteristic aromatic smell when crushed due to essential oil."
+    mainIngredients: [
+      "Essential oil (eugenol, chavibetol, chavicol, caryophyllene, cadinene)",
+      "Phenylpropanoid (chavibetol acetate, allylpyrocatechol)",
+      "Tannin",
+      "Starch",
+    ],
+    uses: [
+      "Warms middle",
+      "Disperses cold",
+      "Eliminates dampness",
+      "Kills parasites",
+      "Stops cough",
+      "Relieves pain",
+    ],
+    indications: [
+      "Wind-cold cough",
+      "Chest fullness",
+      "Abdominal pain due to cold",
+      "Vomiting diarrhea",
+      "Headache",
+      "Toothache",
+      "Rheumatic pain",
+      "Vaginal discharge",
+      "Scabies",
+      "Snake bites (external use)",
+    ],
+    dosage:
+      "Leaves: 6-15g decoction or eaten fresh with betel nut. External use: fresh leaves pounded apply to affected areas",
+    contraindications: [
+      "People with yin deficiency fire excess",
+      "Excessive use can cause mouth heat",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere as traditional masticatory and medicine)",
+    description:
+      "Trau Khong (betel leaf, also called Lá trầu) is a perennial climbing vine of the Piperaceae family. Stem cylindrical with nodes, climbs on supports by adventitious roots. Leaves alternate, long-stalked, blade broadly ovate or heart-shaped 6-15cm long, 5-12cm wide, apex acuminate, base deeply cordate, entire margins, 5-7 basal veins, aromatic when crushed. Unisexual flowers on separate plants (dioecious), arranged in slender cylindrical spikes opposite leaves. Male spikes longer, female spikes shorter. Fruit is drupe. Betel leaf cultivated everywhere throughout Vietnam as traditional masticatory (chewed with areca nut and lime) and medicine. Harvest leaves year-round, use fresh or dried. Leaves contain essential oil with main components eugenol, chavibetol (betel phenol), chavicol, caryophyllene, cadinene. Also has phenylpropanoid derivatives (chavibetol acetate, allylpyrocatechol), tannin, starch. Betel leaf has warming middle, dispersing cold, eliminating dampness, killing parasites effects. Treat wind-cold cough, chest fullness, abdominal pain due to cold, vomiting diarrhea, headache, toothache. External use treats rheumatic pain, vaginal discharge, scabies, snake bites (fresh leaves pounded apply). In Vietnamese traditional medicine, betel leaf also used to treat bad breath, strengthen teeth. Eugenol in betel leaf has antibacterial, analgesic, local anesthetic effects. However excessive chewing betel quid (betel leaf + areca nut + lime) can increase risk of oral cancer. Upper leaf epidermis consists of polygonal cells. Lower epidermis has stomata and essential oil cells. Mesophyll has palisade tissue and spongy tissue. Vascular bundles surrounded by fiber sheath. Throughout mesophyll scattered calcium oxalate cluster crystals and raphide bundles. Leaf powder shows epidermal fragments with oil cells, vessel fragments, fiber fragments, calcium oxalate crystals. Characteristic aromatic smell when crushed due to essential oil.",
   },
   {
     id: 127,
@@ -2278,17 +5694,45 @@ export const medicines = [
     scientificName: "Crinum latifolium L.",
     family: "Họ Hành (Amaryllidaceae)",
     categoryId: "amaryllidaceae",
-    image: "https://www.vinmec.com/static/uploads/20210704_091254_766114_cay_trinh_nu_hoang_max_1800x1800_jpg_69e37fa32a.jpg",
+    image:
+      "https://www.vinmec.com/static/uploads/20210704_091254_766114_cay_trinh_nu_hoang_max_1800x1800_jpg_69e37fa32a.jpg",
     usedParts: "Bulbs, leaves, flowers",
     properties: "Pungent bitter taste, cool nature, TOXIC",
     meridians: "Liver, Lung meridians",
-    mainIngredients: ["Alkaloids (lycorin, crinin, crinamin, hamayne, powellin, buphanisine)", "Flavonoid", "Saponin"],
-    uses: ["Clears heat", "Detoxifies", "Reduces swelling", "Relieves pain", "Anti-tumor"],
-    indications: ["Carbuncles", "Abscesses", "Swelling pain", "Snake bites", "Mastitis", "Lymphadenitis", "Supports cancer treatment (research)"],
-    dosage: "Dried bulbs: 3-6g decoction, use with caution. External use: fresh bulbs or leaves pounded apply to affected areas. WARNING: Plant contains TOXIC alkaloids, must use under medical supervision",
-    contraindications: ["TOXIC plant - use with extreme caution", "Pregnant women", "Children", "People with weak constitution", "Do not overdose - can cause vomiting, diarrhea, abdominal pain"],
-    origin: "Vietnam (grows wild and cultivated ornamentally in southern regions)",
-    description: "Trinh Nu Hoang Cung (giant crinum lily, also called Loa kèn, Củ nôi) is a perennial bulbous plant of the Amaryllidaceae family. Bulb large ovoid up to 15cm diameter. Leaves basal, long lanceolate 60-120cm long, 7-15cm wide, entire margins. Flower stalk tall bearing umbel inflorescence with many flowers. Flowers large white fragrant, perianth tube long, 6 tepals narrow lanceolate spreading or reflexed. Fruit is capsule. Plant grows wild and cultivated ornamentally in southern regions of Vietnam. Harvest bulbs year-round, wash clean, slice, sun or oven dry. Bulbs contain alkaloids including lycorin, crinin, crinamin, hamayne, powellin, buphanisine, also has flavonoid, saponin. These alkaloids have anti-tumor, antibacterial effects but are TOXIC. Giant crinum lily has clearing heat, detoxifying, reducing swelling, relieving pain effects. Mainly used externally treats carbuncles, abscesses, swelling pain, snake bites, mastitis, lymphadenitis (fresh bulbs or leaves pounded apply). Internal use with extreme caution, only under medical supervision, can support cancer treatment (modern research shows some alkaloids have anti-tumor activity). WARNING: Plant contains toxic alkaloids, especially lycorin and crinamin can cause vomiting, diarrhea, abdominal pain if overdosed. Absolutely must not use arbitrarily, need doctor guidance. Pregnant women, children, weak people absolutely prohibited from using. Bulb cross-section shows outer dry scales, inner fleshy scales containing mucilage. Throughout parenchyma scattered raphide bundles of calcium oxalate crystals. Also has vascular bundles scattered in parenchyma. Bulb powder shows parenchyma cell fragments, raphide bundles, vessel fragments, starch granules."
+    mainIngredients: [
+      "Alkaloids (lycorin, crinin, crinamin, hamayne, powellin, buphanisine)",
+      "Flavonoid",
+      "Saponin",
+    ],
+    uses: [
+      "Clears heat",
+      "Detoxifies",
+      "Reduces swelling",
+      "Relieves pain",
+      "Anti-tumor",
+    ],
+    indications: [
+      "Carbuncles",
+      "Abscesses",
+      "Swelling pain",
+      "Snake bites",
+      "Mastitis",
+      "Lymphadenitis",
+      "Supports cancer treatment (research)",
+    ],
+    dosage:
+      "Dried bulbs: 3-6g decoction, use with caution. External use: fresh bulbs or leaves pounded apply to affected areas. WARNING: Plant contains TOXIC alkaloids, must use under medical supervision",
+    contraindications: [
+      "TOXIC plant - use with extreme caution",
+      "Pregnant women",
+      "Children",
+      "People with weak constitution",
+      "Do not overdose - can cause vomiting, diarrhea, abdominal pain",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated ornamentally in southern regions)",
+    description:
+      "Trinh Nu Hoang Cung (giant crinum lily, also called Loa kèn, Củ nôi) is a perennial bulbous plant of the Amaryllidaceae family. Bulb large ovoid up to 15cm diameter. Leaves basal, long lanceolate 60-120cm long, 7-15cm wide, entire margins. Flower stalk tall bearing umbel inflorescence with many flowers. Flowers large white fragrant, perianth tube long, 6 tepals narrow lanceolate spreading or reflexed. Fruit is capsule. Plant grows wild and cultivated ornamentally in southern regions of Vietnam. Harvest bulbs year-round, wash clean, slice, sun or oven dry. Bulbs contain alkaloids including lycorin, crinin, crinamin, hamayne, powellin, buphanisine, also has flavonoid, saponin. These alkaloids have anti-tumor, antibacterial effects but are TOXIC. Giant crinum lily has clearing heat, detoxifying, reducing swelling, relieving pain effects. Mainly used externally treats carbuncles, abscesses, swelling pain, snake bites, mastitis, lymphadenitis (fresh bulbs or leaves pounded apply). Internal use with extreme caution, only under medical supervision, can support cancer treatment (modern research shows some alkaloids have anti-tumor activity). WARNING: Plant contains toxic alkaloids, especially lycorin and crinamin can cause vomiting, diarrhea, abdominal pain if overdosed. Absolutely must not use arbitrarily, need doctor guidance. Pregnant women, children, weak people absolutely prohibited from using. Bulb cross-section shows outer dry scales, inner fleshy scales containing mucilage. Throughout parenchyma scattered raphide bundles of calcium oxalate crystals. Also has vascular bundles scattered in parenchyma. Bulb powder shows parenchyma cell fragments, raphide bundles, vessel fragments, starch granules.",
   },
   {
     id: 128,
@@ -2297,17 +5741,40 @@ export const medicines = [
     scientificName: "Nerium oleander L.",
     family: "Họ Trúc đào (Apocynaceae)",
     categoryId: "apocynaceae",
-    image: "https://cdn.tgdd.vn/Files/2021/07/24/1370532/y-nghia-dac-diem-cach-trong-cay-hoa-truc-dao-va-nhung-dieu-can-luu-y-202107241654515704.jpg",
+    image:
+      "https://cdn.tgdd.vn/Files/2021/07/24/1370532/y-nghia-dac-diem-cach-trong-cay-hoa-truc-dao-va-nhung-dieu-can-luu-y-202107241654515704.jpg",
     usedParts: "Leaves (for oleandrin extraction only)",
     properties: "Bitter pungent taste, warm nature, EXTREMELY TOXIC",
     meridians: "Heart meridian",
-    mainIngredients: ["Cardiac glycosides (oleandrin/neriolin, folinerin)", "Saponin", "Flavonoid"],
-    uses: ["Treats heart failure (purified oleandrin only)", "Supports cardiovascular system", "Reduces cardiac edema. WARNING: Extremely toxic plant, do not use as decoction, only use purified oleandrin extract"],
-    indications: ["Heart failure", "Dyspnea due to heart disease", "Cardiac edema"],
-    dosage: "ONLY use purified oleandrin extracted from leaves. DO NOT use as decoction. Harvest leaves year-round for oleandrin extraction. Purified oleandrin dosage according to doctor's prescription",
-    contraindications: ["ABSOLUTELY DO NOT use whole plant or leaf decoction", "Extremely TOXIC plant", "Pregnant women", "Children", "People with liver failure", "People with kidney failure", "Only use purified oleandrin under medical supervision"],
+    mainIngredients: [
+      "Cardiac glycosides (oleandrin/neriolin, folinerin)",
+      "Saponin",
+      "Flavonoid",
+    ],
+    uses: [
+      "Treats heart failure (purified oleandrin only)",
+      "Supports cardiovascular system",
+      "Reduces cardiac edema. WARNING: Extremely toxic plant, do not use as decoction, only use purified oleandrin extract",
+    ],
+    indications: [
+      "Heart failure",
+      "Dyspnea due to heart disease",
+      "Cardiac edema",
+    ],
+    dosage:
+      "ONLY use purified oleandrin extracted from leaves. DO NOT use as decoction. Harvest leaves year-round for oleandrin extraction. Purified oleandrin dosage according to doctor's prescription",
+    contraindications: [
+      "ABSOLUTELY DO NOT use whole plant or leaf decoction",
+      "Extremely TOXIC plant",
+      "Pregnant women",
+      "Children",
+      "People with liver failure",
+      "People with kidney failure",
+      "Only use purified oleandrin under medical supervision",
+    ],
     origin: "Mediterranean coastal regions (introduced to Vietnam)",
-    description: "Truc Dao (oleander, also called Trước đào, Giáp trúc đào, Đào lê) is a shrub of the Apocynaceae family 4-5m tall. Young branches 3-angled green, older branches brown, with white sap. Leaves opposite or in whorls of 3, simple, entire margins, short petiole, blade lanceolate 7-20cm long, 1-4cm wide, leathery, dark green shiny upper surface, lighter lower surface, veins evenly parallel on both sides of midvein. Flowers pink or white, in terminal cymes. Fruit consists of two long follicles containing many seeds with much hair. Leaves contain cardiac glycosides mainly oleandrin (neriolin, folinerin), also has saponin, flavonoid. Oleander used to extract purified oleandrin for treating heart failure, dyspnea, cardiac edema. WARNING: Plant EXTREMELY TOXIC, absolutely DO NOT use as decoction. Only use purified oleandrin extracted from leaves under doctor's supervision. All parts of plant contain strong toxins that can be life-threatening if used incorrectly. Leaf epidermis has thick cuticle. Mesophyll has palisade tissue and spongy tissue. Midrib vascular bundles surrounded by fiber sheath. Throughout mesophyll scattered laticifer cells containing white latex. Also has calcium oxalate cluster crystals. Leaf powder shows epidermal fragments, fiber fragments, laticifer cell fragments, calcium oxalate cluster crystals."
+    description:
+      "Truc Dao (oleander, also called Trước đào, Giáp trúc đào, Đào lê) is a shrub of the Apocynaceae family 4-5m tall. Young branches 3-angled green, older branches brown, with white sap. Leaves opposite or in whorls of 3, simple, entire margins, short petiole, blade lanceolate 7-20cm long, 1-4cm wide, leathery, dark green shiny upper surface, lighter lower surface, veins evenly parallel on both sides of midvein. Flowers pink or white, in terminal cymes. Fruit consists of two long follicles containing many seeds with much hair. Leaves contain cardiac glycosides mainly oleandrin (neriolin, folinerin), also has saponin, flavonoid. Oleander used to extract purified oleandrin for treating heart failure, dyspnea, cardiac edema. WARNING: Plant EXTREMELY TOXIC, absolutely DO NOT use as decoction. Only use purified oleandrin extracted from leaves under doctor's supervision. All parts of plant contain strong toxins that can be life-threatening if used incorrectly. Leaf epidermis has thick cuticle. Mesophyll has palisade tissue and spongy tissue. Midrib vascular bundles surrounded by fiber sheath. Throughout mesophyll scattered laticifer cells containing white latex. Also has calcium oxalate cluster crystals. Leaf powder shows epidermal fragments, fiber fragments, laticifer cell fragments, calcium oxalate cluster crystals.",
   },
   {
     id: 129,
@@ -2316,17 +5783,47 @@ export const medicines = [
     scientificName: "Kalanchoe pinnata (Lam.) Pers.",
     family: "Họ Thuốc bỏng (Crassulaceae)",
     categoryId: "crassulaceae",
-    image: "https://cdn.tgdd.vn/Files/2021/07/23/1370260/y-nghia-cong-dung-va-cach-trong-cay-truong-sinh-tot-cho-phong-thuy-202107231112314172.jpg",
+    image:
+      "https://cdn.tgdd.vn/Files/2021/07/23/1370260/y-nghia-cong-dung-va-cach-trong-cay-truong-sinh-tot-cho-phong-thuy-202107231112314172.jpg",
     usedParts: "Leaves (Folium Kalanchoe)",
     properties: "Sour slightly bitter taste, cool nature",
     meridians: "Lung, Liver, Kidney meridians",
-    mainIngredients: ["Bufadienolide (bryophyllin A, B, C)", "Flavonoid", "Alkaloid", "Saponin", "Organic acids"],
-    uses: ["Clears heat", "Detoxifies", "Reduces swelling", "Stops bleeding", "Generates muscle. External use treats burns, wounds, ulcers. Internal use treats cough, lung infections, rheumatoid arthritis, red swollen painful eyes, bleeding, hypertension, dysentery"],
-    indications: ["Burns", "Wounds", "Ulcers", "Cough", "Lung infections", "Rheumatoid arthritis", "Red swollen painful eyes", "Bleeding", "Hypertension", "Dysentery"],
-    dosage: "Fresh leaves: 15-30g pounded drink with water or decoction. External use: fresh leaves pounded apply to burns, wounds, ulcers. Harvest leaves year-round, usually use fresh",
-    contraindications: ["Pregnant women", "People with spleen-stomach deficiency cold"],
-    origin: "Vietnam (cultivated everywhere for ornamental and medicinal purposes)",
-    description: "Truong Sinh (life plant, also called Sống đời, Thuốc bỏng, Dã bất tử, Diệp sinh căn) is a succulent herbaceous plant of the Crassulaceae family 0.4-1m tall. Leaves opposite in cross arrangement, thick, sometimes entire, sometimes divided into 3-5 lobes, blade 5-15cm long, 2-10cm wide, margins with large serrations, shiny surface, petiole 2.5-5cm long, lower part develops into stem buds. Flower clusters grow at apex or in leaf axils, purple-pink or red, pendulous. Flowers bloom February-May, fruits set March-June. Leaves contain bufadienolide (bryophyllin A, B, C), flavonoid, alkaloid, saponin, organic acids. Life plant cultivated everywhere throughout our country for ornamental and medicinal purposes. Harvest leaves year-round, usually use fresh. Used to treat burns, wounds, ulcers, cough, lung infections, rheumatoid arthritis, red swollen painful eyes, bleeding, hypertension, dysentery. Leaf epidermis consists of large polygonal cells. Mesophyll is homogeneous with large parenchyma cells containing mucilage. Vascular bundles scattered throughout mesophyll. Leaf cross-section shows thick cuticle layer on both surfaces. Contains calcium oxalate cluster crystals. Leaf powder shows epidermal cell fragments, parenchyma cell fragments containing mucilage, calcium oxalate cluster crystals, vessel fragments."
+    mainIngredients: [
+      "Bufadienolide (bryophyllin A, B, C)",
+      "Flavonoid",
+      "Alkaloid",
+      "Saponin",
+      "Organic acids",
+    ],
+    uses: [
+      "Clears heat",
+      "Detoxifies",
+      "Reduces swelling",
+      "Stops bleeding",
+      "Generates muscle. External use treats burns, wounds, ulcers. Internal use treats cough, lung infections, rheumatoid arthritis, red swollen painful eyes, bleeding, hypertension, dysentery",
+    ],
+    indications: [
+      "Burns",
+      "Wounds",
+      "Ulcers",
+      "Cough",
+      "Lung infections",
+      "Rheumatoid arthritis",
+      "Red swollen painful eyes",
+      "Bleeding",
+      "Hypertension",
+      "Dysentery",
+    ],
+    dosage:
+      "Fresh leaves: 15-30g pounded drink with water or decoction. External use: fresh leaves pounded apply to burns, wounds, ulcers. Harvest leaves year-round, usually use fresh",
+    contraindications: [
+      "Pregnant women",
+      "People with spleen-stomach deficiency cold",
+    ],
+    origin:
+      "Vietnam (cultivated everywhere for ornamental and medicinal purposes)",
+    description:
+      "Truong Sinh (life plant, also called Sống đời, Thuốc bỏng, Dã bất tử, Diệp sinh căn) is a succulent herbaceous plant of the Crassulaceae family 0.4-1m tall. Leaves opposite in cross arrangement, thick, sometimes entire, sometimes divided into 3-5 lobes, blade 5-15cm long, 2-10cm wide, margins with large serrations, shiny surface, petiole 2.5-5cm long, lower part develops into stem buds. Flower clusters grow at apex or in leaf axils, purple-pink or red, pendulous. Flowers bloom February-May, fruits set March-June. Leaves contain bufadienolide (bryophyllin A, B, C), flavonoid, alkaloid, saponin, organic acids. Life plant cultivated everywhere throughout our country for ornamental and medicinal purposes. Harvest leaves year-round, usually use fresh. Used to treat burns, wounds, ulcers, cough, lung infections, rheumatoid arthritis, red swollen painful eyes, bleeding, hypertension, dysentery. Leaf epidermis consists of large polygonal cells. Mesophyll is homogeneous with large parenchyma cells containing mucilage. Vascular bundles scattered throughout mesophyll. Leaf cross-section shows thick cuticle layer on both surfaces. Contains calcium oxalate cluster crystals. Leaf powder shows epidermal cell fragments, parenchyma cell fragments containing mucilage, calcium oxalate cluster crystals, vessel fragments.",
   },
   {
     id: 130,
@@ -2335,17 +5832,40 @@ export const medicines = [
     scientificName: "Premna serratifolia L.",
     family: "Họ Bạc hà (Lamiaceae)",
     categoryId: "lamiaceae",
-    image: "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/9/14/photo-1694703817710-1694703817824115449975.jpg",
+    image:
+      "https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/9/14/photo-1694703817710-1694703817824115449975.jpg",
     usedParts: "Leaves (Folium Premnae)",
     properties: "Bitter slightly pungent taste, cool nature",
     meridians: "Spleen, Stomach, Large Intestine, Bladder meridians",
-    mainIngredients: ["Essential oil 0.2-0.5% (limonene, β-caryophyllene)", "Flavonoid (apigenin, luteolin)", "Rosmarinic acid"],
-    uses: ["Clears intestines stops dysentery", "Promotes urination", "Clears heat", "Detoxifies", "Aids digestion", "Promotes lactation"],
-    indications: ["Bloody dysentery", "Stomach pain", "Poor digestion", "Difficult urination", "Insufficient lactation", "Fever", "Hepatitis", "Postpartum jaundice"],
-    dosage: "Dried leaves: 6-15g decoction. Harvest rice-cake leaves, sun or oven dry at 50-60°C. When using cut small, stir-fry until yellow. Harvest year-round",
+    mainIngredients: [
+      "Essential oil 0.2-0.5% (limonene, β-caryophyllene)",
+      "Flavonoid (apigenin, luteolin)",
+      "Rosmarinic acid",
+    ],
+    uses: [
+      "Clears intestines stops dysentery",
+      "Promotes urination",
+      "Clears heat",
+      "Detoxifies",
+      "Aids digestion",
+      "Promotes lactation",
+    ],
+    indications: [
+      "Bloody dysentery",
+      "Stomach pain",
+      "Poor digestion",
+      "Difficult urination",
+      "Insufficient lactation",
+      "Fever",
+      "Hepatitis",
+      "Postpartum jaundice",
+    ],
+    dosage:
+      "Dried leaves: 6-15g decoction. Harvest rice-cake leaves, sun or oven dry at 50-60°C. When using cut small, stir-fry until yellow. Harvest year-round",
     contraindications: ["Pregnant women", "People with diarrhea"],
     origin: "Vietnam (grows wild and cultivated everywhere)",
-    description: "Vong Cach (also called Lá cách, Lộc cách) is a shrub or woody plant of the Lamiaceae family (according to DĐVN V belongs to Verbenaceae family) 1-8m tall, grows erect or rarely climbs. Young branches have elliptic yellow lenticels, when young densely hairy, later nearly smooth. Leaves: petiole 0.3-5cm long, with fine hairs. Blade narrowly ovate to broadly ovate, size 3-15 × 2.5-9.5cm, papery texture, nearly smooth or only hairy along veins, leaf base broadly cuneate rounded or truncate, margins entire slightly wavy or with small serrations, leaf apex acute or rarely acuminate or obtuse. Flower clusters: size 1.5-15 × 2.5-24cm, inflorescence stalk 0.8-3cm long. Bracts linear to awl-shaped, up to 6mm long, with fine hairs. Calyx cup-shaped 1.5-3mm long divided into 2 lips, lower lip nearly entire to with 3 short teeth, upper lip longer and with 2 teeth, outer surface with fine hairs and yellow glands. Corolla yellow-green, outer surface with glands, throat with hairs slightly divided into 2 lips: lower lip divided into 3 nearly equal lobes or middle lobe slightly longer and wider, upper lip entire or notched at apex. Ovary smooth, apex with glands, style 3.5-4mm long. Fruit spherical 2-4mm diameter. Flowers and fruits from April-October. Leaves contain essential oil (0.2-0.5%) with limonene, β-caryophyllene, flavonoid (apigenin, luteolin), rosmarinic acid. Has clearing intestines stopping dysentery, promoting urination effects, treats bloody dysentery, stomach pain, poor digestion, difficult urination, insufficient lactation, also used to treat fever, hepatitis, postpartum jaundice. Leaf epidermis consists of one row evenly arranged rectangular cells. Below epidermis is collenchyma tissue. Throughout mesophyll scattered vascular bundles. Leaf powder pale green, aromatic smell, slightly bitter taste, shows epidermal fragments with stomata, covering hairs, secretory hairs, fiber bundles, vessel fragments."
+    description:
+      "Vong Cach (also called Lá cách, Lộc cách) is a shrub or woody plant of the Lamiaceae family (according to DĐVN V belongs to Verbenaceae family) 1-8m tall, grows erect or rarely climbs. Young branches have elliptic yellow lenticels, when young densely hairy, later nearly smooth. Leaves: petiole 0.3-5cm long, with fine hairs. Blade narrowly ovate to broadly ovate, size 3-15 × 2.5-9.5cm, papery texture, nearly smooth or only hairy along veins, leaf base broadly cuneate rounded or truncate, margins entire slightly wavy or with small serrations, leaf apex acute or rarely acuminate or obtuse. Flower clusters: size 1.5-15 × 2.5-24cm, inflorescence stalk 0.8-3cm long. Bracts linear to awl-shaped, up to 6mm long, with fine hairs. Calyx cup-shaped 1.5-3mm long divided into 2 lips, lower lip nearly entire to with 3 short teeth, upper lip longer and with 2 teeth, outer surface with fine hairs and yellow glands. Corolla yellow-green, outer surface with glands, throat with hairs slightly divided into 2 lips: lower lip divided into 3 nearly equal lobes or middle lobe slightly longer and wider, upper lip entire or notched at apex. Ovary smooth, apex with glands, style 3.5-4mm long. Fruit spherical 2-4mm diameter. Flowers and fruits from April-October. Leaves contain essential oil (0.2-0.5%) with limonene, β-caryophyllene, flavonoid (apigenin, luteolin), rosmarinic acid. Has clearing intestines stopping dysentery, promoting urination effects, treats bloody dysentery, stomach pain, poor digestion, difficult urination, insufficient lactation, also used to treat fever, hepatitis, postpartum jaundice. Leaf epidermis consists of one row evenly arranged rectangular cells. Below epidermis is collenchyma tissue. Throughout mesophyll scattered vascular bundles. Leaf powder pale green, aromatic smell, slightly bitter taste, shows epidermal fragments with stomata, covering hairs, secretory hairs, fiber bundles, vessel fragments.",
   },
   {
     id: 131,
@@ -2355,16 +5875,42 @@ export const medicines = [
     family: "Họ Sim (Myrtaceae)",
     categoryId: "myrtaceae",
     image: "https://cdn2.tuoitre.vn/thumb_w/480/2017/hinh-2-1505720328937.jpg",
-    usedParts: "Leaves and flower buds (Folium et Flos Cleistocalysis operculati)",
+    usedParts:
+      "Leaves and flower buds (Folium et Flos Cleistocalysis operculati)",
     properties: "Slightly astringent bitter taste, cool nature",
     meridians: "Spleen, Stomach, Large Intestine meridians",
-    mainIngredients: ["Terpenoid (cleistocalyxin, cleistocalyxic acid A, B, ursolic acid - oleanane and ursane framework)", "Flavonoid (kaempferol, quercetin, tamarixetin, luteolin - C-methylated flavonoid)", "Phloroglucinol (hariganetin, cleistocaltone A, B - polycyclic phloroglucinol)"],
-    uses: ["Aids digestion", "Disperses food stagnation", "Reduces fullness and abdominal pain", "Treats rectal dysentery", "Supports diabetes treatment. External use antiseptic, treats wounds, boils, itching sores"],
-    indications: ["Poor digestion", "Abdominal fullness", "Abdominal pain", "Rectal dysentery", "Diabetes", "Wounds", "Boils", "Itching sores"],
-    dosage: "Dried leaves and flower buds: 6-15g decoction. External use: boil water wash wounds, boils, itching sores. Harvest year-round",
-    contraindications: ["People with diarrhea", "People with spleen-stomach deficiency cold"],
-    origin: "Vietnam (grows wild and cultivated in most provinces, mainly for harvesting leaves to brew tea)",
-    description: "Voi is a shrub of the Myrtaceae family 5-6m tall or more, young branches round or slightly 4-angled, smooth. Leaves stalked long, leathery, broadly ovate 8-20cm long, 5-10cm wide, both surfaces with brown dots, petiole 1-1.5cm. Flowers nearly sessile, small, pale greenish-white, assembled into pyramidal clusters radiating from axils of fallen leaves. Fruit spherical or slightly ovate 7-12mm diameter. Flower buds ovate, both ends acuminate 4-6mm long, 2-3mm wide, yellow-brown. Calyx bell-shaped, gray, as long as 1/3-1/2 flower, upper part split into 4 shallow teeth. Small flowers pale greenish-white when fresh, after processing slightly grayish-yellow, characteristic fragrance, slightly astringent taste. Whole leaves, young branches and buds when crushed have pleasant characteristic voi fragrance. Leaves and flower buds contain terpenoid (cleistocalyxin, cleistocalyxic acid A, B, ursolic acid), flavonoid (kaempferol, quercetin, tamarixetin, luteolin), phloroglucinol (hariganetin, cleistocaltone A, B). Treats poor digestion, abdominal fullness, abdominal pain, rectal dysentery, diabetes. External use boil water wash wounds, boils, itching sores. Leaf midrib epidermis consists of one row small evenly arranged cells, outer surface has thick cuticle layer. Parenchyma consists of round thin-walled cells of uneven sizes, in cortex parenchyma has essential oil secretory sacs located close to epidermis layer. Sclerenchyma ring nearly continuous surrounding vascular bundle. Vascular bundle arc-shaped, phloem surrounds xylem, in phloem has spherical spiny calcium oxalate crystals scattered. Xylem consists of vessels, has 1-2 separate vessel bundles beside main arc-shaped vascular bundle. Leaf blade epidermis consists of one row small evenly arranged cells, outer surface has thick cuticle layer. Palisade tissue consists of one row cells arranged perpendicular to upper epidermis. Spongy parenchyma consists of round cells varying sizes thin-walled. Hypodermis consists of 2-3 rows small cells close to lower epidermis. Leaf powder brown astringent taste, has parenchyma fragments, essential oil secretory sacs, spiral vessel fragments, fibers standing alone or arranged in bundles, spherical spiny calcium oxalate crystals, polygonal thick-walled sclerenchyma cells."
+    mainIngredients: [
+      "Terpenoid (cleistocalyxin, cleistocalyxic acid A, B, ursolic acid - oleanane and ursane framework)",
+      "Flavonoid (kaempferol, quercetin, tamarixetin, luteolin - C-methylated flavonoid)",
+      "Phloroglucinol (hariganetin, cleistocaltone A, B - polycyclic phloroglucinol)",
+    ],
+    uses: [
+      "Aids digestion",
+      "Disperses food stagnation",
+      "Reduces fullness and abdominal pain",
+      "Treats rectal dysentery",
+      "Supports diabetes treatment. External use antiseptic, treats wounds, boils, itching sores",
+    ],
+    indications: [
+      "Poor digestion",
+      "Abdominal fullness",
+      "Abdominal pain",
+      "Rectal dysentery",
+      "Diabetes",
+      "Wounds",
+      "Boils",
+      "Itching sores",
+    ],
+    dosage:
+      "Dried leaves and flower buds: 6-15g decoction. External use: boil water wash wounds, boils, itching sores. Harvest year-round",
+    contraindications: [
+      "People with diarrhea",
+      "People with spleen-stomach deficiency cold",
+    ],
+    origin:
+      "Vietnam (grows wild and cultivated in most provinces, mainly for harvesting leaves to brew tea)",
+    description:
+      "Voi is a shrub of the Myrtaceae family 5-6m tall or more, young branches round or slightly 4-angled, smooth. Leaves stalked long, leathery, broadly ovate 8-20cm long, 5-10cm wide, both surfaces with brown dots, petiole 1-1.5cm. Flowers nearly sessile, small, pale greenish-white, assembled into pyramidal clusters radiating from axils of fallen leaves. Fruit spherical or slightly ovate 7-12mm diameter. Flower buds ovate, both ends acuminate 4-6mm long, 2-3mm wide, yellow-brown. Calyx bell-shaped, gray, as long as 1/3-1/2 flower, upper part split into 4 shallow teeth. Small flowers pale greenish-white when fresh, after processing slightly grayish-yellow, characteristic fragrance, slightly astringent taste. Whole leaves, young branches and buds when crushed have pleasant characteristic voi fragrance. Leaves and flower buds contain terpenoid (cleistocalyxin, cleistocalyxic acid A, B, ursolic acid), flavonoid (kaempferol, quercetin, tamarixetin, luteolin), phloroglucinol (hariganetin, cleistocaltone A, B). Treats poor digestion, abdominal fullness, abdominal pain, rectal dysentery, diabetes. External use boil water wash wounds, boils, itching sores. Leaf midrib epidermis consists of one row small evenly arranged cells, outer surface has thick cuticle layer. Parenchyma consists of round thin-walled cells of uneven sizes, in cortex parenchyma has essential oil secretory sacs located close to epidermis layer. Sclerenchyma ring nearly continuous surrounding vascular bundle. Vascular bundle arc-shaped, phloem surrounds xylem, in phloem has spherical spiny calcium oxalate crystals scattered. Xylem consists of vessels, has 1-2 separate vessel bundles beside main arc-shaped vascular bundle. Leaf blade epidermis consists of one row small evenly arranged cells, outer surface has thick cuticle layer. Palisade tissue consists of one row cells arranged perpendicular to upper epidermis. Spongy parenchyma consists of round cells varying sizes thin-walled. Hypodermis consists of 2-3 rows small cells close to lower epidermis. Leaf powder brown astringent taste, has parenchyma fragments, essential oil secretory sacs, spiral vessel fragments, fibers standing alone or arranged in bundles, spherical spiny calcium oxalate crystals, polygonal thick-walled sclerenchyma cells.",
   },
   {
     id: 132,
@@ -2373,17 +5919,31 @@ export const medicines = [
     scientificName: "Erythrina variegata L.",
     family: "Họ Đậu (Fabaceae)",
     categoryId: "fabaceae",
-    image: "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-vong-nem.jpg",
+    image:
+      "https://www.thuocdantoc.org/wp-content/uploads/2019/05/cay-vong-nem.jpg",
     usedParts: "Leaves (Folium Erythrinae), bark (Cortex Erythrinae)",
     properties: "Bitter taste, cool nature",
     meridians: "Heart, Liver meridians",
-    mainIngredients: ["Alkaloid (erythramin, erysopin, erysonin)", "Saponin", "Flavonoid", "Tannin"],
-    uses: ["Calms spirit", "Antiseptic", "Reduces inflammation", "Treats insomnia"],
+    mainIngredients: [
+      "Alkaloid (erythramin, erysopin, erysonin)",
+      "Saponin",
+      "Flavonoid",
+      "Tannin",
+    ],
+    uses: [
+      "Calms spirit",
+      "Antiseptic",
+      "Reduces inflammation",
+      "Treats insomnia",
+    ],
     indications: ["Insomnia", "Boils", "Ulcers", "Hemorrhoids", "Gonorrhea"],
-    dosage: "Leaves and bark: 4-6g decoction. Harvest leaves in spring-summer, sun or oven dry. Bark: take stem bark sun or oven dry, when using scrape off outer layer. External use: appropriate amount apply externally. Usually combined with other medicines",
+    dosage:
+      "Leaves and bark: 4-6g decoction. Harvest leaves in spring-summer, sun or oven dry. Bark: take stem bark sun or oven dry, when using scrape off outer layer. External use: appropriate amount apply externally. Usually combined with other medicines",
     contraindications: ["People with deficiency cold", "Pregnant women"],
-    origin: "Vietnam (grows everywhere, especially likes coastal areas, cultivated as hedge and for edible leaves)",
-    description: "Vong Nem (coral tree, also called Lá vông, Hải đồng, Thích đồng) is a tall tree of the Fabaceae family 10-20m tall, grows everywhere especially likes coastal areas, trunk has short thorns. Leaves long-stalked consisting of three leaflets. Each leaflet nearly triangular, apex acuminate, base obliquely rounded, entire margins, smooth surface, 6-13cm long, 6-15cm wide. Middle leaflet often has width greater than length. Bright red flowers assembled 1-3 into dense clusters. Pod 15-30cm long, black, slightly constricted between seeds, each pod has 5-6 kidney-shaped red or brown seeds, wide ovate hilum black with white rim. Leaves and bark contain alkaloid (erythramin, erysopin, erysonin), saponin, flavonoid, tannin. Has calming spirit, antiseptic effects, treats insomnia (oral use), boils, ulcers, hemorrhoids, gonorrhea (external application). Daily use 4-6g decoction form, usually combined with other medicines, external use appropriate amount. Leaf midrib epidermis consists of one layer evenly arranged cells, lower epidermis has stomata and very short single-celled stalk multi-cellular head ovate secretory hairs. Close to upper and lower epidermis has collenchyma tissue. In parenchyma scattered rhomboid and polygonal calcium oxalate crystals. Vascular bundles arranged in one ring in middle of leaf midrib, sclerenchyma ring surrounding outside vascular bundles. Parenchyma consists of large round thin-walled cells. Leaf blade below upper epidermis is palisade tissue consisting of 2 layers long cells, below is spongy tissue. Intermittently has small vein vascular bundles connecting upper and lower epidermis, cross-cutting palisade tissue and spongy tissue. Scattered rhomboid and polygonal calcium oxalate crystals. Leaf powder shows upper epidermis fragments consisting of many-angled tortuous thin-walled cells. Lower epidermis fragments have coffee bean type stomata and ovate multi-cellular head (4-6 cells stacked) very short single-celled stalk secretory hairs. Leaf midrib cell fragments rectangular thin-walled containing rhomboid and polygonal calcium oxalate crystals. Palisade tissue fragments, slightly thick-walled fiber bundles, reticulate vessel fragments, spiral vessel fragments."
+    origin:
+      "Vietnam (grows everywhere, especially likes coastal areas, cultivated as hedge and for edible leaves)",
+    description:
+      "Vong Nem (coral tree, also called Lá vông, Hải đồng, Thích đồng) is a tall tree of the Fabaceae family 10-20m tall, grows everywhere especially likes coastal areas, trunk has short thorns. Leaves long-stalked consisting of three leaflets. Each leaflet nearly triangular, apex acuminate, base obliquely rounded, entire margins, smooth surface, 6-13cm long, 6-15cm wide. Middle leaflet often has width greater than length. Bright red flowers assembled 1-3 into dense clusters. Pod 15-30cm long, black, slightly constricted between seeds, each pod has 5-6 kidney-shaped red or brown seeds, wide ovate hilum black with white rim. Leaves and bark contain alkaloid (erythramin, erysopin, erysonin), saponin, flavonoid, tannin. Has calming spirit, antiseptic effects, treats insomnia (oral use), boils, ulcers, hemorrhoids, gonorrhea (external application). Daily use 4-6g decoction form, usually combined with other medicines, external use appropriate amount. Leaf midrib epidermis consists of one layer evenly arranged cells, lower epidermis has stomata and very short single-celled stalk multi-cellular head ovate secretory hairs. Close to upper and lower epidermis has collenchyma tissue. In parenchyma scattered rhomboid and polygonal calcium oxalate crystals. Vascular bundles arranged in one ring in middle of leaf midrib, sclerenchyma ring surrounding outside vascular bundles. Parenchyma consists of large round thin-walled cells. Leaf blade below upper epidermis is palisade tissue consisting of 2 layers long cells, below is spongy tissue. Intermittently has small vein vascular bundles connecting upper and lower epidermis, cross-cutting palisade tissue and spongy tissue. Scattered rhomboid and polygonal calcium oxalate crystals. Leaf powder shows upper epidermis fragments consisting of many-angled tortuous thin-walled cells. Lower epidermis fragments have coffee bean type stomata and ovate multi-cellular head (4-6 cells stacked) very short single-celled stalk secretory hairs. Leaf midrib cell fragments rectangular thin-walled containing rhomboid and polygonal calcium oxalate crystals. Palisade tissue fragments, slightly thick-walled fiber bundles, reticulate vessel fragments, spiral vessel fragments.",
   },
   {
     id: 133,
@@ -2392,17 +5952,42 @@ export const medicines = [
     scientificName: "Abelmoschus moschatus Medik.",
     family: "Họ Bông (Malvaceae)",
     categoryId: "malvaceae",
-    image: "https://onplaza.vn/upload_images/images/Tin-tuc/c-duoc-lieu/cay-vong-vang.jpg",
-    usedParts: "Roots, leaves, flowers, seeds (Radix, Folium et Flos Abelmoschi moschati)",
+    image:
+      "https://onplaza.vn/upload_images/images/Tin-tuc/c-duoc-lieu/cay-vong-vang.jpg",
+    usedParts:
+      "Roots, leaves, flowers, seeds (Radix, Folium et Flos Abelmoschi moschati)",
     properties: "Sweet taste, cool nature",
     meridians: "Liver, Kidney, Bladder meridians",
-    mainIngredients: ["Seed essential oil contains ambretolide ((Z)-7-hexadecen-16-olide), ambretolic acid, farnesol, 12,13-epoxyoleic acid, malvalic acid, sterculic acid, fatty acids (oleic acid, palmitic acid, myristic acid). Seeds contain methionine sulfoxide, phospholipid (alpha-cephalin, phosphatidylserine, phosphatidylcholine plasmalogen), sterol (campesterol, sitosterol, stigmasterol, ergosterol, cholesterol)"],
-    uses: ["Leaves: disperses abscess toxins, hastens childbirth, treats constipation, edema. Roots: treat aching limbs, swollen hot red painful contracted joints, boils, gastroduodenal inflammation. Seeds: promote urination, reduce urinary pain, calm fright, treat seminal emission, unblock urination. Flowers: treat burns"],
-    indications: ["Constipation", "Edema", "Aching limbs", "Swollen hot red painful joints", "Boils", "Gastroduodenal inflammation", "Painful urination", "Frequent urination", "Kidney stones", "Bladder stones", "Constipation of stool and urine", "Seminal emission", "Burns"],
-    dosage: "Roots, leaves: use fresh or sun dried, appropriate amount decoction or pound apply externally. Seeds: take from mature fruits sun dry, pound add water drink or decoction, appropriate amount. Seeds also used to apply on boils and sores. Harvest roots, leaves year-round. Flowers: use fresh apply externally",
-    contraindications: ["Pregnant women (hastens childbirth)", "People with deficiency cold"],
+    mainIngredients: [
+      "Seed essential oil contains ambretolide ((Z)-7-hexadecen-16-olide), ambretolic acid, farnesol, 12,13-epoxyoleic acid, malvalic acid, sterculic acid, fatty acids (oleic acid, palmitic acid, myristic acid). Seeds contain methionine sulfoxide, phospholipid (alpha-cephalin, phosphatidylserine, phosphatidylcholine plasmalogen), sterol (campesterol, sitosterol, stigmasterol, ergosterol, cholesterol)",
+    ],
+    uses: [
+      "Leaves: disperses abscess toxins, hastens childbirth, treats constipation, edema. Roots: treat aching limbs, swollen hot red painful contracted joints, boils, gastroduodenal inflammation. Seeds: promote urination, reduce urinary pain, calm fright, treat seminal emission, unblock urination. Flowers: treat burns",
+    ],
+    indications: [
+      "Constipation",
+      "Edema",
+      "Aching limbs",
+      "Swollen hot red painful joints",
+      "Boils",
+      "Gastroduodenal inflammation",
+      "Painful urination",
+      "Frequent urination",
+      "Kidney stones",
+      "Bladder stones",
+      "Constipation of stool and urine",
+      "Seminal emission",
+      "Burns",
+    ],
+    dosage:
+      "Roots, leaves: use fresh or sun dried, appropriate amount decoction or pound apply externally. Seeds: take from mature fruits sun dry, pound add water drink or decoction, appropriate amount. Seeds also used to apply on boils and sores. Harvest roots, leaves year-round. Flowers: use fresh apply externally",
+    contraindications: [
+      "Pregnant women (hastens childbirth)",
+      "People with deficiency cold",
+    ],
     origin: "Vietnam (plant grows wild everywhere in our country)",
-    description: "Vong Vang (musk mallow, also called Bông vang, Bông vàng, Bụp vang, Hoàng quỳ) is a herbaceous plant of the Malvaceae family 0.6-1m tall, base slightly woody, stem slightly hairy. Leaves heart-shaped with edges or deeply divided lobes both surfaces covered with many hairs, has 5 triangular lobes, margins serrate, has 3-5 main veins. Yellow flowers, solitary in upper leaf axils, flower stalk hairy and slightly swollen near flower. Fruit narrow at top covered with pale white hairs, length 4-5cm, with 5 edges, inside also hairy, contains many flattened kidney-shaped seeds 3-4mm long 1-2mm wide, on surface has concentric wrinkled lines around seed hilum. Musk mallow is light-loving plant, can somewhat tolerate drought, usually grows mixed with other low grasses in fields, hillsides, wastelands or roadsides. Seedlings from seeds usually in April-May, grow rapidly in summer, by end of autumn have flowers fruits. Mature fruits self-open releasing seeds around, then whole plant withers. Exceptionally some plants living in moist soil only partially wither (branches leaves), remaining stem branches will sprout in spring next year. Seeds contain essential oil with musky substances mainly ambretolide and (Z)-5-tetradecen-14-olide. Roots, stems, leaves, seeds have complex microscopic structure with many schizogenous secretory cavities, spherical spiny calcium oxalate crystals size 12.5-25µm, diverse covering hairs and secretory hairs. Leaves treat constipation, edema, disperse abscess toxins, hasten childbirth. Roots treat aching limbs, swollen hot red painful contracted joints, boils, gastroduodenal inflammation. Seeds treat painful urination, frequent urination, kidney stones, bladder stones, constipation of stool and urine, facilitate childbirth, apply on boils and sores, calm fright, treat seminal emission. Flowers used to treat burns."
+    description:
+      "Vong Vang (musk mallow, also called Bông vang, Bông vàng, Bụp vang, Hoàng quỳ) is a herbaceous plant of the Malvaceae family 0.6-1m tall, base slightly woody, stem slightly hairy. Leaves heart-shaped with edges or deeply divided lobes both surfaces covered with many hairs, has 5 triangular lobes, margins serrate, has 3-5 main veins. Yellow flowers, solitary in upper leaf axils, flower stalk hairy and slightly swollen near flower. Fruit narrow at top covered with pale white hairs, length 4-5cm, with 5 edges, inside also hairy, contains many flattened kidney-shaped seeds 3-4mm long 1-2mm wide, on surface has concentric wrinkled lines around seed hilum. Musk mallow is light-loving plant, can somewhat tolerate drought, usually grows mixed with other low grasses in fields, hillsides, wastelands or roadsides. Seedlings from seeds usually in April-May, grow rapidly in summer, by end of autumn have flowers fruits. Mature fruits self-open releasing seeds around, then whole plant withers. Exceptionally some plants living in moist soil only partially wither (branches leaves), remaining stem branches will sprout in spring next year. Seeds contain essential oil with musky substances mainly ambretolide and (Z)-5-tetradecen-14-olide. Roots, stems, leaves, seeds have complex microscopic structure with many schizogenous secretory cavities, spherical spiny calcium oxalate crystals size 12.5-25µm, diverse covering hairs and secretory hairs. Leaves treat constipation, edema, disperse abscess toxins, hasten childbirth. Roots treat aching limbs, swollen hot red painful contracted joints, boils, gastroduodenal inflammation. Seeds treat painful urination, frequent urination, kidney stones, bladder stones, constipation of stool and urine, facilitate childbirth, apply on boils and sores, calm fright, treat seminal emission. Flowers used to treat burns.",
   },
   {
     id: 134,
@@ -2415,13 +6000,37 @@ export const medicines = [
     usedParts: "Rhizome (Rhizoma Belamcandae)",
     properties: "Bitter taste, cold nature",
     meridians: "Lung, Liver meridians",
-    mainIngredients: ["Flavonoid", "Isoflavonoid (irisflorentin, tectorigenin, tectoridin, irigenin)", "Stilbene", "Benzoquinone", "Xanthone", "Triterpenoid"],
-    uses: ["Clears heat detoxifies", "Transforms phlegm calms asthma", "Purifies blood"],
-    indications: ["Swollen painful throat", "Cough with phlegm", "Wheezing breathlessness", "Fever", "Blocked milk ducts", "Menstrual abdominal pain"],
-    dosage: "Dried rhizome: 6-10g decoction. Harvest in spring when plant buds or autumn when above-ground parts wither",
-    contraindications: ["People with spleen-stomach deficiency cold", "People with diarrhea"],
-    origin: "Vietnam (plant grows wild everywhere, some places cultivated ornamentally)",
-    description: "Xa Can (blackberry lily, also called Rẻ quạt) is a perennial herbaceous plant of the Iridaceae family 0.5-1m tall. Rhizome creeping, much branched. Stem short wrapped by leaf sheaths. Leaves linear, 30cm long, 2cm wide, base clasping overlapping, apex acute, parallel veins, all leaves arranged in one plane and spread out like fan. Branched flower cluster 30-40cm long, scale-like bracts, flowers long-stalked arranged on branches like simple umbels, orange color dotted purple. Calyx has small awl-shaped teeth, corolla has petals wider and longer than calyx, 3 stamens attached at base of petals, ovary 3-chambered. Capsule fruit ovate, many shiny black seeds. Flowering fruiting season July-October. Rhizome contains flavonoid, isoflavonoid (irisflorentin, tectorigenin, tectoridin, irigenin), stilbene, benzoquinone, xanthone, triterpenoid. Has clearing heat detoxifying, transforming phlegm calming asthma effects, treats swollen painful throat, cough with phlegm, wheezing breathlessness. Also used to treat fever, blocked milk ducts, menstrual abdominal pain and as blood purifying medicine. Rhizome cork layer consists of evenly arranged rectangular cells. Cortex parenchyma constructed of thin-walled cells containing many starch granules and prismatic calcium oxalate crystals, scattered are vascular bundle remnants of leaves. Endodermis consists of one layer small cells surrounding central cylinder. Concentric vascular bundles (xylem surrounding phloem) concentrated in zone close to endodermis, sparser in central part. Pith parenchyma consists of thin-walled cells containing starch granules and prismatic calcium oxalate crystals. Rhizome powder shows cork fragments consisting of many-angled thick-walled brown cells. Parenchyma fragments consist of cells containing starch granules. Small round and slightly oval starch granules, diameter 2-17µm, occasionally encounter compound starch granules consisting of 2-5 simple granules. Prismatic calcium oxalate crystals intact or broken."
+    mainIngredients: [
+      "Flavonoid",
+      "Isoflavonoid (irisflorentin, tectorigenin, tectoridin, irigenin)",
+      "Stilbene",
+      "Benzoquinone",
+      "Xanthone",
+      "Triterpenoid",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Transforms phlegm calms asthma",
+      "Purifies blood",
+    ],
+    indications: [
+      "Swollen painful throat",
+      "Cough with phlegm",
+      "Wheezing breathlessness",
+      "Fever",
+      "Blocked milk ducts",
+      "Menstrual abdominal pain",
+    ],
+    dosage:
+      "Dried rhizome: 6-10g decoction. Harvest in spring when plant buds or autumn when above-ground parts wither",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "People with diarrhea",
+    ],
+    origin:
+      "Vietnam (plant grows wild everywhere, some places cultivated ornamentally)",
+    description:
+      "Xa Can (blackberry lily, also called Rẻ quạt) is a perennial herbaceous plant of the Iridaceae family 0.5-1m tall. Rhizome creeping, much branched. Stem short wrapped by leaf sheaths. Leaves linear, 30cm long, 2cm wide, base clasping overlapping, apex acute, parallel veins, all leaves arranged in one plane and spread out like fan. Branched flower cluster 30-40cm long, scale-like bracts, flowers long-stalked arranged on branches like simple umbels, orange color dotted purple. Calyx has small awl-shaped teeth, corolla has petals wider and longer than calyx, 3 stamens attached at base of petals, ovary 3-chambered. Capsule fruit ovate, many shiny black seeds. Flowering fruiting season July-October. Rhizome contains flavonoid, isoflavonoid (irisflorentin, tectorigenin, tectoridin, irigenin), stilbene, benzoquinone, xanthone, triterpenoid. Has clearing heat detoxifying, transforming phlegm calming asthma effects, treats swollen painful throat, cough with phlegm, wheezing breathlessness. Also used to treat fever, blocked milk ducts, menstrual abdominal pain and as blood purifying medicine. Rhizome cork layer consists of evenly arranged rectangular cells. Cortex parenchyma constructed of thin-walled cells containing many starch granules and prismatic calcium oxalate crystals, scattered are vascular bundle remnants of leaves. Endodermis consists of one layer small cells surrounding central cylinder. Concentric vascular bundles (xylem surrounding phloem) concentrated in zone close to endodermis, sparser in central part. Pith parenchyma consists of thin-walled cells containing starch granules and prismatic calcium oxalate crystals. Rhizome powder shows cork fragments consisting of many-angled thick-walled brown cells. Parenchyma fragments consist of cells containing starch granules. Small round and slightly oval starch granules, diameter 2-17µm, occasionally encounter compound starch granules consisting of 2-5 simple granules. Prismatic calcium oxalate crystals intact or broken.",
   },
   {
     id: 135,
@@ -2430,17 +6039,24 @@ export const medicines = [
     scientificName: "Ehretia asperula Zoll. & Moritzi",
     family: "Họ Vòi voi (Boraginaceae)",
     categoryId: "boraginaceae",
-    image: "https://images.baodantoc.vn/uploads/2022/Th%C3%A1ng%209/Ng%C3%A0y_14/Thanh/1-2874.jpg",
+    image:
+      "https://images.baodantoc.vn/uploads/2022/Th%C3%A1ng%209/Ng%C3%A0y_14/Thanh/1-2874.jpg",
     usedParts: "Whole plant",
     properties: "Bitter taste, cool nature",
     meridians: "Liver meridian",
-    mainIngredients: ["Rosmarinic acid", "Lithospermic acid B", "Astragalin", "Kaempferol 3-rutinoside"],
+    mainIngredients: [
+      "Rosmarinic acid",
+      "Lithospermic acid B",
+      "Astragalin",
+      "Kaempferol 3-rutinoside",
+    ],
     uses: ["Treats tumors", "Treats liver disease", "Reduces postpartum pain"],
     indications: ["Tumors", "Liver disease", "Postpartum abdominal pain"],
     dosage: "Whole plant: appropriate amount decoction. Harvest year-round",
     contraindications: ["Pregnant women", "People with deficiency cold"],
     origin: "Vietnam (Hoa Binh, Son La, Yen Bai, Thai Nguyen, Quang Ninh, Hue)",
-    description: "Xa Den Hoa Binh (also called Dót, Xạ đen) is a small climbing plant of the Boraginaceae family. Young branches round smooth pale gray later grayish-brown. Leaves alternate, rhomboid or nearly oval 6-11cm long, 2-5cm wide, base narrowed apex acute, margins with fine sharp serrations, veins prominent on both leaf surfaces, short petiole. Flower clusters grow at apex or in leaf axils forming panicles 5-10cm long, calyx with 5 nearly round teeth. Dioecious flowers: male flowers have 5 stamens, slightly flattened filaments, disk at apex, ovate anthers, cup-shaped nectary disk; female flowers have 5 smaller stamens, nectary disk with 5 lobes, ovate ovary 3-chambered, style as long as head, stigma divided into 3 lobes. Capsule fruit ovate or nearly spherical 5-9mm long, 4.5-6mm wide, with persistent calyx, splits into 3 longitudinal slits when ripe. Flowering season March-May, fruiting season August-December. Xa Den is creeping shrub type, if grows in shaded place branches elongate and climb. Plant likes moisture, somewhat shade-tolerant, usually grows mixed with other herbaceous and shrub species at forest edges on limestone mountains, sometimes also seen in schist mountain regions. Distribution altitude can reach 600m. Plant flowers and fruits annually. Natural regeneration mainly by seeds and has strong sprouting ability from base, stem and branches after being cut. Main compounds are rosmarinic acid, lithospermic acid B, astragalin and kaempferol 3-rutinoside. According to folk experience, Xa Den Hoa Binh used to treat tumors, treat liver disease, women's postpartum abdominal pain."
+    description:
+      "Xa Den Hoa Binh (also called Dót, Xạ đen) is a small climbing plant of the Boraginaceae family. Young branches round smooth pale gray later grayish-brown. Leaves alternate, rhomboid or nearly oval 6-11cm long, 2-5cm wide, base narrowed apex acute, margins with fine sharp serrations, veins prominent on both leaf surfaces, short petiole. Flower clusters grow at apex or in leaf axils forming panicles 5-10cm long, calyx with 5 nearly round teeth. Dioecious flowers: male flowers have 5 stamens, slightly flattened filaments, disk at apex, ovate anthers, cup-shaped nectary disk; female flowers have 5 smaller stamens, nectary disk with 5 lobes, ovate ovary 3-chambered, style as long as head, stigma divided into 3 lobes. Capsule fruit ovate or nearly spherical 5-9mm long, 4.5-6mm wide, with persistent calyx, splits into 3 longitudinal slits when ripe. Flowering season March-May, fruiting season August-December. Xa Den is creeping shrub type, if grows in shaded place branches elongate and climb. Plant likes moisture, somewhat shade-tolerant, usually grows mixed with other herbaceous and shrub species at forest edges on limestone mountains, sometimes also seen in schist mountain regions. Distribution altitude can reach 600m. Plant flowers and fruits annually. Natural regeneration mainly by seeds and has strong sprouting ability from base, stem and branches after being cut. Main compounds are rosmarinic acid, lithospermic acid B, astragalin and kaempferol 3-rutinoside. According to folk experience, Xa Den Hoa Binh used to treat tumors, treat liver disease, women's postpartum abdominal pain.",
   },
   {
     id: 136,
@@ -2449,17 +6065,47 @@ export const medicines = [
     scientificName: "Andrographis paniculata (Burm.f.) Wall. ex Nees",
     family: "Họ Ô rô (Acanthaceae)",
     categoryId: "acanthaceae",
-    image: "https://viencaytrongtrunguong.com/wp-content/uploads/2021/07/khong-ngo-xuyen-tam-lien-nhieu-cong-dung-nhu-vay-600x401.jpg",
+    image:
+      "https://viencaytrongtrunguong.com/wp-content/uploads/2021/07/khong-ngo-xuyen-tam-lien-nhieu-cong-dung-nhu-vay-600x401.jpg",
     usedParts: "Whole above-ground plant (Herba Andrographii)",
     properties: "Bitter taste, cold nature",
     meridians: "Lung, Stomach, Large Intestine, Small Intestine meridians",
-    mainIngredients: ["Diterpenoid lactone (andrographolide, neoandrographolide)", "Flavonoid (wogonin, panicolin, moslosooflavone)"],
-    uses: ["Clears heat detoxifies", "Anti-inflammatory", "Antibacterial", "Enhances immunity", "Protects liver"],
-    indications: ["Enteritis", "Acute dysentery", "Pneumonia", "Pharyngitis", "Tonsillitis", "Cough", "Whooping cough", "Viral hepatitis", "Urinary tract infections", "Boils", "Carbuncles abscesses toxins", "Venomous snake bites"],
-    dosage: "Dried whole plant: 9-15g decoction. Remove impurities, wash clean, cut into sections, sun or oven dry. Harvest year-round",
-    contraindications: ["People with spleen-stomach deficiency cold", "Pregnant women", "People with diarrhea"],
-    origin: "Originated from India, later spread to several Asian countries including Vietnam",
-    description: "Xuyen Tam Lien (green chiretta, also called Công cộng, Nguyễn cộng, Lam khái liên, Khổ đảm thảo, Hùng bút, Lãm hạch liên) is a small annual plant of the Acanthaceae family 0.4-1m tall. Stem square, grows erect, much branched smooth. Leaves opposite, short-stalked, lanceolate 3-10cm long, 1-2cm wide, base narrowed, apex long-acuminate, both surfaces smooth, upper surface dark blackish-green. Flower clusters grow in leaf axils and branch tips forming sparse panicles, white flowers dotted purple-pink. Calyx has 5 small hairy teeth, corolla fused below into narrow cylindrical hairy tube, upper part flaring divided into 2 lips: upper lip narrow long, lower lip split into 3 wide acute lobes. Two stamens attached at corolla throat, ovary 2-chambered. Capsule fruit narrow spindle-shaped about 1.5cm long, with sparse fine hairs, round seeds. Flowering season September-December, fruiting season January-February. Xuyen Tam Lien originated from India, grows from seeds in April or early May, grows rapidly in spring-summer. When plant about to flower, leaves gradually smaller and fall early. Mature fruits self-open releasing seeds. Plant likes light, or can be partially shaded during day. Contains diterpenoid lactone (andrographolide, neoandrographolide) and flavonoid (wogonin, panicolin, moslosooflavone). Treats enteritis, acute dysentery, pneumonia, pharyngitis, tonsillitis, cough, whooping cough, viral hepatitis, urinary tract infections, boils, carbuncles abscesses toxins, venomous snake bites. Upper leaf epidermis cells nearly square or rectangular, lower leaf epidermis cells relatively smaller, both epidermal surfaces have enlarged cells containing round, oval or club-shaped cystoliths up to 36µm diameter and 180µm long. Has secretory hairs, sometimes has covering hairs. Secretory hair head flat has 4, 6 or 8 cells, diameter up to 40µm, stalk very short. Covering hairs consist of 1-4 cells, up to 160µm long, 40µm diameter, surface with large cuticle tubercles. Stomata numerous on lower epidermis, subsidiary cells vary greatly in size. Collenchyma tissue located close to upper and lower epidermis of leaf midrib. Vascular bundles located in middle of leaf midrib, xylem vessels above and phloem below. Palisade tissue consists of one row rectangular cells arranged vertically. Spongy tissue occupies 2/3 thickness of leaf blade. Stem epidermis has secretory hairs and covering hairs. Collenchyma concentrated at four corners of stem. Endodermis consists of one row thick-walled small cells. Pith consists of large parenchyma cells. Small needle-shaped calcium oxalate crystals scattered in cortex parenchyma and pith parenchyma. Powder green, mild characteristic smell, very bitter taste. Microscopy shows: upper leaf epidermis cell fragments with palisade tissue and cystoliths below; lower epidermis has stomatal cells, cystoliths and secretory hairs. Trapezoidal vessel fragments, spiral vessels, dotted vessels. Fiber bundles. Scattered cystoliths, unicellular and multicellular hairs. Spherical pollen grains 4-6µm diameter yellow-brown."
+    mainIngredients: [
+      "Diterpenoid lactone (andrographolide, neoandrographolide)",
+      "Flavonoid (wogonin, panicolin, moslosooflavone)",
+    ],
+    uses: [
+      "Clears heat detoxifies",
+      "Anti-inflammatory",
+      "Antibacterial",
+      "Enhances immunity",
+      "Protects liver",
+    ],
+    indications: [
+      "Enteritis",
+      "Acute dysentery",
+      "Pneumonia",
+      "Pharyngitis",
+      "Tonsillitis",
+      "Cough",
+      "Whooping cough",
+      "Viral hepatitis",
+      "Urinary tract infections",
+      "Boils",
+      "Carbuncles abscesses toxins",
+      "Venomous snake bites",
+    ],
+    dosage:
+      "Dried whole plant: 9-15g decoction. Remove impurities, wash clean, cut into sections, sun or oven dry. Harvest year-round",
+    contraindications: [
+      "People with spleen-stomach deficiency cold",
+      "Pregnant women",
+      "People with diarrhea",
+    ],
+    origin:
+      "Originated from India, later spread to several Asian countries including Vietnam",
+    description:
+      "Xuyen Tam Lien (green chiretta, also called Công cộng, Nguyễn cộng, Lam khái liên, Khổ đảm thảo, Hùng bút, Lãm hạch liên) is a small annual plant of the Acanthaceae family 0.4-1m tall. Stem square, grows erect, much branched smooth. Leaves opposite, short-stalked, lanceolate 3-10cm long, 1-2cm wide, base narrowed, apex long-acuminate, both surfaces smooth, upper surface dark blackish-green. Flower clusters grow in leaf axils and branch tips forming sparse panicles, white flowers dotted purple-pink. Calyx has 5 small hairy teeth, corolla fused below into narrow cylindrical hairy tube, upper part flaring divided into 2 lips: upper lip narrow long, lower lip split into 3 wide acute lobes. Two stamens attached at corolla throat, ovary 2-chambered. Capsule fruit narrow spindle-shaped about 1.5cm long, with sparse fine hairs, round seeds. Flowering season September-December, fruiting season January-February. Xuyen Tam Lien originated from India, grows from seeds in April or early May, grows rapidly in spring-summer. When plant about to flower, leaves gradually smaller and fall early. Mature fruits self-open releasing seeds. Plant likes light, or can be partially shaded during day. Contains diterpenoid lactone (andrographolide, neoandrographolide) and flavonoid (wogonin, panicolin, moslosooflavone). Treats enteritis, acute dysentery, pneumonia, pharyngitis, tonsillitis, cough, whooping cough, viral hepatitis, urinary tract infections, boils, carbuncles abscesses toxins, venomous snake bites. Upper leaf epidermis cells nearly square or rectangular, lower leaf epidermis cells relatively smaller, both epidermal surfaces have enlarged cells containing round, oval or club-shaped cystoliths up to 36µm diameter and 180µm long. Has secretory hairs, sometimes has covering hairs. Secretory hair head flat has 4, 6 or 8 cells, diameter up to 40µm, stalk very short. Covering hairs consist of 1-4 cells, up to 160µm long, 40µm diameter, surface with large cuticle tubercles. Stomata numerous on lower epidermis, subsidiary cells vary greatly in size. Collenchyma tissue located close to upper and lower epidermis of leaf midrib. Vascular bundles located in middle of leaf midrib, xylem vessels above and phloem below. Palisade tissue consists of one row rectangular cells arranged vertically. Spongy tissue occupies 2/3 thickness of leaf blade. Stem epidermis has secretory hairs and covering hairs. Collenchyma concentrated at four corners of stem. Endodermis consists of one row thick-walled small cells. Pith consists of large parenchyma cells. Small needle-shaped calcium oxalate crystals scattered in cortex parenchyma and pith parenchyma. Powder green, mild characteristic smell, very bitter taste. Microscopy shows: upper leaf epidermis cell fragments with palisade tissue and cystoliths below; lower epidermis has stomatal cells, cystoliths and secretory hairs. Trapezoidal vessel fragments, spiral vessels, dotted vessels. Fiber bundles. Scattered cystoliths, unicellular and multicellular hairs. Spherical pollen grains 4-6µm diameter yellow-brown.",
   },
   {
     id: 137,
@@ -2472,25 +6118,55 @@ export const medicines = [
     usedParts: "Seed kernel (Semen Coicis)",
     properties: "Sweet bland taste, slightly cold nature",
     meridians: "Spleen, Lung, Kidney meridians",
-    mainIngredients: ["Starch 50-79%", "Protein 16-19%", "Fatty oil 2-7%", "Amino acids", "Thiamin", "Coixenolide", "Coixol", "Coixan A, B, C", "Alpha-monolinolein", "Benzoxazolone"],
-    uses: ["Strengthens spleen tonifies lung", "Promotes water penetrates dampness", "Clears heat expels pus", "Anti-cancer", "Anti-inflammatory", "Lowers blood sugar"],
-    indications: ["Edema", "Rheumatic numbness contracted limbs", "Digestive disorders", "Diarrhea", "Appendicitis", "Body nourishment", "Promotes lactation for postpartum women", "Tonifies elderly and children"],
-    dosage: "Dried seed kernel: 9-30g decoction or cook porridge. Harvest in autumn when fruits mature, cut to take fruits, sun dry, thresh to get seeds sun dry, remove immature, shriveled seeds. Mill to get white kernels, sun or oven dry",
+    mainIngredients: [
+      "Starch 50-79%",
+      "Protein 16-19%",
+      "Fatty oil 2-7%",
+      "Amino acids",
+      "Thiamin",
+      "Coixenolide",
+      "Coixol",
+      "Coixan A, B, C",
+      "Alpha-monolinolein",
+      "Benzoxazolone",
+    ],
+    uses: [
+      "Strengthens spleen tonifies lung",
+      "Promotes water penetrates dampness",
+      "Clears heat expels pus",
+      "Anti-cancer",
+      "Anti-inflammatory",
+      "Lowers blood sugar",
+    ],
+    indications: [
+      "Edema",
+      "Rheumatic numbness contracted limbs",
+      "Digestive disorders",
+      "Diarrhea",
+      "Appendicitis",
+      "Body nourishment",
+      "Promotes lactation for postpartum women",
+      "Tonifies elderly and children",
+    ],
+    dosage:
+      "Dried seed kernel: 9-30g decoction or cook porridge. Harvest in autumn when fruits mature, cut to take fruits, sun dry, thresh to get seeds sun dry, remove immature, shriveled seeds. Mill to get white kernels, sun or oven dry",
     contraindications: ["Pregnant women", "People with constipation"],
-    origin: "Vietnam (grows wild everywhere in cool moist mountainous areas, stream banks, ravine banks)",
-    description: "Y Di (Job's tears, also called Bo bo, Hạt cườm, Cườm gạo, Dĩ mễ, Dĩ nhân) is a clumping herbaceous grass of the Poaceae family up to 2m tall. Stem few branches, smooth, with longitudinal grooves, spongy pith. Leaves alternate, apex acuminate, margins wavy, leaf veins parallel prominent on lower surface, leaf margin sharp, long wide leaf sheath, small ligule. Unisexual monoecious flowers, grow in inflorescences in leaf axils; male flowers above (2-3 overlapping, short pale green); female flowers below (ovate, enclosed by thick bract). Fruit caryopsis ovate, one flat surface one convex, rounded base pointed apex, outer soft smooth shiny shell easy to peel pale gray, when ripe brown-black then white very hard, white kernel. When fruits ripen, whole plant withers, remaining base continues to regenerate new sprout generations for next year. Seeds short ovate or slightly round, 0.5-0.8cm long, 0.2-0.5cm diameter. Outer surface white or ivory slightly shiny, sometimes still has remnant reddish-brown fruit shell fragments. Inner surface has groove-shaped channel, sometimes still has remnant shell, at end of groove has dark brown dot. Hard solid texture. Break surface ivory white with powder. Seed kernel microscopy (longitudinal section along groove): endosperm occupies most white with much starch, narrow long embryo located on one side of groove. Seed powder: many starch granules. Commonly see simple disc-shaped starch granules, some ring-shaped granules, diameter 2-21µm, hilum often branched star-shaped, rarely see compound starch granules, if any usually compound 2 or 3. Job's tears grows wild everywhere in cool moist mountainous areas of our country, usually grows on stream banks ravine banks. Likes alluvial soil, sandy soil with much humus, evenly moist but not waterlogged. Plant by seeds in late spring. Seed kernels contain starch (50-79%), protein (16-19%), fatty oil (2-7%), amino acids, thiamin, coixenolide, coixol, coixan A, B, C, alpha-monolinolein. Roots contain lignan derivatives and syringyl glycerol. Leaves and roots also contain benzoxazolone. Coixenolide and alpha-monolinolein have anti-cancer effects. Benzoxazolone anti-inflammatory. Coixan A, B and C lower blood sugar. Strengthens spleen tonifies lung, body nourishing medicine, used to tonify elderly and children, promotes lactation for postpartum women. Promotes urination, treats edema, rheumatic numbness contracted limbs, digestive disorders, diarrhea, appendicitis. Upper leaf epidermis consists of one layer small rectangular cells, outer surface has protruding bumps. Lower epidermis has thick cuticle layer. Between parenchyma cells are many large lacunae, around each lacuna has many spherical spiny calcium oxalate crystals. Seed powder has many ovate or round starch granules."
+    origin:
+      "Vietnam (grows wild everywhere in cool moist mountainous areas, stream banks, ravine banks)",
+    description:
+      "Y Di (Job's tears, also called Bo bo, Hạt cườm, Cườm gạo, Dĩ mễ, Dĩ nhân) is a clumping herbaceous grass of the Poaceae family up to 2m tall. Stem few branches, smooth, with longitudinal grooves, spongy pith. Leaves alternate, apex acuminate, margins wavy, leaf veins parallel prominent on lower surface, leaf margin sharp, long wide leaf sheath, small ligule. Unisexual monoecious flowers, grow in inflorescences in leaf axils; male flowers above (2-3 overlapping, short pale green); female flowers below (ovate, enclosed by thick bract). Fruit caryopsis ovate, one flat surface one convex, rounded base pointed apex, outer soft smooth shiny shell easy to peel pale gray, when ripe brown-black then white very hard, white kernel. When fruits ripen, whole plant withers, remaining base continues to regenerate new sprout generations for next year. Seeds short ovate or slightly round, 0.5-0.8cm long, 0.2-0.5cm diameter. Outer surface white or ivory slightly shiny, sometimes still has remnant reddish-brown fruit shell fragments. Inner surface has groove-shaped channel, sometimes still has remnant shell, at end of groove has dark brown dot. Hard solid texture. Break surface ivory white with powder. Seed kernel microscopy (longitudinal section along groove): endosperm occupies most white with much starch, narrow long embryo located on one side of groove. Seed powder: many starch granules. Commonly see simple disc-shaped starch granules, some ring-shaped granules, diameter 2-21µm, hilum often branched star-shaped, rarely see compound starch granules, if any usually compound 2 or 3. Job's tears grows wild everywhere in cool moist mountainous areas of our country, usually grows on stream banks ravine banks. Likes alluvial soil, sandy soil with much humus, evenly moist but not waterlogged. Plant by seeds in late spring. Seed kernels contain starch (50-79%), protein (16-19%), fatty oil (2-7%), amino acids, thiamin, coixenolide, coixol, coixan A, B, C, alpha-monolinolein. Roots contain lignan derivatives and syringyl glycerol. Leaves and roots also contain benzoxazolone. Coixenolide and alpha-monolinolein have anti-cancer effects. Benzoxazolone anti-inflammatory. Coixan A, B and C lower blood sugar. Strengthens spleen tonifies lung, body nourishing medicine, used to tonify elderly and children, promotes lactation for postpartum women. Promotes urination, treats edema, rheumatic numbness contracted limbs, digestive disorders, diarrhea, appendicitis. Upper leaf epidermis consists of one layer small rectangular cells, outer surface has protruding bumps. Lower epidermis has thick cuticle layer. Between parenchyma cells are many large lacunae, around each lacuna has many spherical spiny calcium oxalate crystals. Seed powder has many ovate or round starch granules.",
   },
 ];
 
 // Auto-counting for categories
 alphabetCategories.forEach((cat) => {
   cat.count = medicines.filter(
-    (m) => cat.id === "all" || m.firstLetter === cat.letter
+    (m) => cat.id === "all" || m.firstLetter === cat.letter,
   ).length;
 });
 
 familyCategories.forEach((cat) => {
   cat.count = medicines.filter(
-    (m) => cat.id === "all" || m.categoryId === cat.id
+    (m) => cat.id === "all" || m.categoryId === cat.id,
   ).length;
 });
