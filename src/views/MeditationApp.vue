@@ -195,6 +195,8 @@ const messages = computed(() => [
   t.value("message10"),
   t.value("message11"),
   t.value("message12"),
+  t.value("message13"),
+  t.value("message14"),
 ]);
 
 const currentMessageIndex = ref(0);

@@ -112,7 +112,7 @@ async function handleSubmit() {
       templateId: EMAILJS_CONFIG.templateId
     })
     
-    // Gửi email qua EmailJS (từ hieusob@gmail.com đến hieusob@gmail.com)
+    // Gửi email qua EmailJS
     const response = await emailjs.send(
       EMAILJS_CONFIG.serviceId,
       EMAILJS_CONFIG.templateId,
@@ -120,7 +120,7 @@ async function handleSubmit() {
         from_name: formData.name || t.value('msgAnonymousUser'),
         message: formData.message,
         timestamp: timestamp,
-        to_email: 'hieussob@gmail.com'
+        to_email: 'ayunaretreat@gmail.com'
       }
     )
     
