@@ -120,7 +120,7 @@ async function handleSubmit() {
         from_name: formData.name || t.value('msgAnonymousUser'),
         message: formData.message,
         timestamp: timestamp,
-        to_email: 'ayunaretreat@gmail.com'
+        to_email: 'hieussob@gmail.com'
       }
     )
     
