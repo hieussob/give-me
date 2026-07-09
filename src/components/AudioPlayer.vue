@@ -1,14 +1,19 @@
 <template>
   <div class="audio-player">
-    <button type="button" @click="togglePlay" class="audio-btn" :class="{ playing: isPlaying }">
-      <svg v-if="!isPlaying" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <button type="button" @click="togglePlay" class="audio-btn" :class="{ playing: isPlaying }" :title="isPlaying ? 'Tạm dừng nhạc' : 'Phát nhạc'">
+      <!-- Music bars when playing -->
+      <div v-if="isPlaying" class="music-bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <!-- Play icon when paused -->
+      <svg v-else width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
         <path d="M8 5v14l11-7z"/>
       </svg>
-      <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-      </svg>
     </button>
-    
+
     <audio ref="audioRef" loop>
       <source :src="audioSrc" type="audio/mpeg">
     </audio>
@@ -20,7 +25,6 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const audioRef = ref(null)
 const isPlaying = ref(false)
-// Using local audio file
 const audioSrc = '/ahihi.mp3'
 
 let fadeInTimer = null
@@ -31,7 +35,6 @@ const playOnFirstInteraction = async (event) => {
   const audio = audioRef.value
   if (!audio || isPlaying.value) return
 
-  // Skip clicks on the player itself to avoid double toggle with the button click handler.
   const target = event?.target
   if (target && typeof target.closest === 'function' && target.closest('.audio-player')) {
     return
@@ -47,7 +50,6 @@ const playOnFirstInteraction = async (event) => {
     }
   } catch (err) {
     syncPlayingState()
-    // Keep listeners active so the next user interaction can retry.
   }
 }
 
@@ -64,13 +66,8 @@ const bindFirstInteractionListeners = () => {
   }
 }
 
-const handlePageShow = () => {
-  syncPlayingState()
-}
-
-const handleVisibilityChange = () => {
-  syncPlayingState()
-}
+const handlePageShow = () => { syncPlayingState() }
+const handleVisibilityChange = () => { syncPlayingState() }
 
 const syncPlayingState = () => {
   const audio = audioRef.value
@@ -81,13 +78,8 @@ const bindAudioStateListeners = () => {
   const audio = audioRef.value
   if (!audio) return
 
-  const onPlay = () => {
-    isPlaying.value = true
-  }
-
-  const onPauseLike = () => {
-    isPlaying.value = false
-  }
+  const onPlay = () => { isPlaying.value = true }
+  const onPauseLike = () => { isPlaying.value = false }
 
   audio.addEventListener('play', onPlay)
   audio.addEventListener('playing', onPlay)
@@ -120,14 +112,13 @@ const togglePlay = async () => {
       await audio.play()
       fadeInVolume()
     } catch (err) {
-      console.error('Khong the phat nhac:', err)
+      console.error('Không thể phát nhạc:', err)
     } finally {
       syncPlayingState()
     }
   }
 }
 
-// Hàm để set volume (bắt đầu từ 0 rồi tăng dần)
 const fadeInVolume = () => {
   if (!audioRef.value) return
   if (fadeInTimer) clearInterval(fadeInTimer)
@@ -137,11 +128,7 @@ const fadeInVolume = () => {
   fadeInTimer = setInterval(() => {
     if (vol < 1) {
       vol += 0.1
-      if (!audioRef.value) {
-        clearInterval(fadeInTimer)
-        fadeInTimer = null
-        return
-      }
+      if (!audioRef.value) { clearInterval(fadeInTimer); fadeInTimer = null; return }
       audioRef.value.volume = Math.min(vol, 1)
     } else {
       clearInterval(fadeInTimer)
@@ -150,7 +137,6 @@ const fadeInVolume = () => {
   }, 100)
 }
 
-// Hàm để bật nhạc từ bên ngoài
 const playMusic = () => {
   if (audioRef.value && !isPlaying.value) {
     audioRef.value.play().then(() => {
@@ -163,7 +149,6 @@ const playMusic = () => {
   }
 }
 
-// Hàm để tắt nhạc từ bên ngoài
 const pauseMusic = () => {
   if (audioRef.value && isPlaying.value) {
     audioRef.value.pause()
@@ -171,10 +156,8 @@ const pauseMusic = () => {
   }
 }
 
-// Expose playMusic và pauseMusic để component cha có thể gọi
 defineExpose({ playMusic, pauseMusic })
 
-// Keep initial state paused; user explicitly clicks to play.
 onMounted(() => {
   if (audioRef.value) {
     bindAudioStateListeners()
@@ -185,30 +168,17 @@ onMounted(() => {
     syncPlayingState()
   }
 
-  // Lắng nghe sự kiện bật/tắt nhạc
   window.addEventListener('play-music', playMusic)
   window.addEventListener('stop-music', pauseMusic)
   window.addEventListener('pageshow', handlePageShow)
   document.addEventListener('visibilitychange', handleVisibilityChange)
 })
 
-// Cleanup khi component unmount
 onBeforeUnmount(() => {
-  if (removeAudioStateListeners) {
-    removeAudioStateListeners()
-    removeAudioStateListeners = null
-  }
-  if (removeFirstInteractionListeners) {
-    removeFirstInteractionListeners()
-    removeFirstInteractionListeners = null
-  }
-  if (fadeInTimer) {
-    clearInterval(fadeInTimer)
-    fadeInTimer = null
-  }
-  if (audioRef.value) {
-    audioRef.value.pause()
-  }
+  if (removeAudioStateListeners) { removeAudioStateListeners(); removeAudioStateListeners = null }
+  if (removeFirstInteractionListeners) { removeFirstInteractionListeners(); removeFirstInteractionListeners = null }
+  if (fadeInTimer) { clearInterval(fadeInTimer); fadeInTimer = null }
+  if (audioRef.value) audioRef.value.pause()
   window.removeEventListener('play-music', playMusic)
   window.removeEventListener('stop-music', pauseMusic)
   window.removeEventListener('pageshow', handlePageShow)
@@ -225,60 +195,90 @@ onBeforeUnmount(() => {
 }
 
 .audio-btn {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-   */
-  background: linear-gradient(to bottom, #F7E7A9 0%, #FFD700 40%, #C9A227 70%, #A67C00 100%);
-
-  border: none;
-  color: white;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #34d399;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
-  transition: all 0.3s ease;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  backdrop-filter: blur(12px);
   position: relative;
   overflow: hidden;
 }
 
-.audio-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(102, 126, 234, 0.6);
-}
-
-.audio-btn.playing::before {
+.audio-btn::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  animation: pulse 1.5s ease-out infinite;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(0.8);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-  }
+.audio-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.audio-btn:hover::before { opacity: 1; }
+
+.audio-btn.playing {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.15);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    0 0 24px rgba(16, 185, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Music Bars Animation */
+.music-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+
+.bar {
+  display: block;
+  width: 3px;
+  border-radius: 2px;
+  background: #34d399;
+  animation: barDance 0.8s ease-in-out infinite;
+}
+
+.bar:nth-child(1) { height: 8px;  animation-delay: 0s; }
+.bar:nth-child(2) { height: 18px; animation-delay: 0.15s; }
+.bar:nth-child(3) { height: 12px; animation-delay: 0.3s; }
+.bar:nth-child(4) { height: 6px;  animation-delay: 0.1s; }
+
+@keyframes barDance {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.6; }
+  50%       { transform: scaleY(1);   opacity: 1; }
 }
 
 @media (max-width: 768px) {
   .audio-player {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
   }
-  
   .audio-btn {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
   }
 }
 </style>

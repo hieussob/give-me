@@ -24,6 +24,7 @@ let time = 0
 
 function initCanvas() {
   const c = canvas.value
+  if (!c) return
   ctx = c.getContext('2d')
   resize()
   // Reduce object count on mobile to maintain smooth frame rate
@@ -413,6 +414,7 @@ function drawMist() {
 }
 
 function draw() {
+  if (!ctx) return
   ctx.clearRect(0, 0, width, height)
   
   // Background gradient với màu ấm hơn
@@ -464,6 +466,7 @@ function draw() {
 }
 
 onMounted(() => {
+  if (!canvas.value || !wrap.value) return
   initCanvas()
   window.addEventListener('resize', resize)
 

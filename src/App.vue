@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <router-view v-slot="{ Component, route }">
+    <component :is="Component" :key="route.path" />
+  </router-view>
   <AudioPlayer />
   <LanguageSwitcher />
 </template>
@@ -16,9 +18,10 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
-  background: #020617;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #030712;
   color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 #app {
   min-height: 100vh;
