@@ -59,7 +59,7 @@
             <div class="card__icon-ring card__icon-ring--mind">
               <span class="card__emoji">💌</span>
             </div>
-            <span class="card__tag card__tag--soon">Sắp ra mắt</span>
+            <span class="card__tag card__tag--soon">Trải nghiệm</span>
           </div>
           <h2 class="card__title">{{ t('meditationTitle') }}</h2>
           <p class="card__desc">{{ t('meditationDesc') }}</p>
